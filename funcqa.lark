@@ -1,9 +1,12 @@
 ?start: functioncall
-    ?functioncall: name "(" args ")"
-    args: (value ",")* value?
-    value: number
+    ?functioncall: "<T>" name "(" args ")" "</T>"
+    name: "multiply" | "add" | "subtract" | "divide"
+    args: (value "," value)
+    value: INT+
 
-    %import common.ESCAPED_STRING
+    %import common.STRING
     %import common.SIGNED_NUMBER
+    %import common.DIGIT
+    %import common.INT
     %import common.WS
     %ignore WS

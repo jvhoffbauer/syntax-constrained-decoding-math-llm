@@ -16,7 +16,7 @@ class IntermediateParsingState:
     current_terminal_start_index: int
 
     def __str__(self) -> str:
-        return f"({self.current_terminal_start_index}, {self.active_terminal_names})"
+        return f"State(start_idx={self.current_terminal_start_index}, terminals={self.active_terminal_names})"
     
     def __repr__(self) -> str:
         return str(self)
@@ -67,10 +67,30 @@ class ParsingStepper():
                 # Now, this exception means that we have characters that do not match any of the terminals (yet). 
                 # This means that we have a partial token.
                 # Return the set of tokens that would be valid before that partial token 
-                print("Second catch")
                 return interactive.accepts(), ee.pos_in_stream
             # Return the token 
-            return interactive.accepts(), e.pos_in_stream
+            return interactive.accepts(), len(input_str)
  
         # If we get here, the input is complete
         return [], len(input_str)
+
+
+def create_parsing_stepper(cfg_definition: str, tokenizer):
+    lark_parser = Lark(
+        cfg_definition, 
+        parser='lalr',
+        # Using the basic lexer isn't required, and isn't usually recommended.
+        # But, it's good enough for JSON, and it's slightly faster.
+        lexer='basic',
+        # Disabling propagate_positions and placeholders slightly improves speed
+        propagate_positions=False,
+        maybe_placeholders=False,
+        regex=True
+    )
+
+    # Get the vocabulary from the tokenizer
+    vocab = tokenizer.get_vocab()
+
+    parsing_stepper = ParsingStepper(lark_parser, vocab, tokenizer.eos_token)
+
+    return parsing_stepper
