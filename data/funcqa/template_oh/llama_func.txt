@@ -1,0 +1,16 @@
+Answer the following question with <add>, <subtract>, <multiply>, <divide>, <power>, <sqrt>, <log>, <lcm>, <gcd>, <ln>, <choose>, <remainder>, <permutate>:
+
+Q: If Amy's income increases by 4% annually, how many times will it multiply in 11 years?
+A: In 11 years, Amy's income will increase by 1.04^11 = <power>(1.04,11)=1.54 times. So, the answer is 1.54.
+
+Q: If a store sells 147 bananas today and 354 more bananas tomorrow, how many bananas does the store sell in total?
+A: The store sells 147 bananas today and 354 more bananas tomorrow, so the total number of bananas sold is 147+354=<add>(147,354)=501. So, the answer is 501.
+
+Q: A man had 789.4 dollars in his wallet. He spent 11.99 dollars on a movie ticket. How much money does he have left now?
+A: The man had 789.4 dollars in his wallet and spent 11.99 dollars on a movie ticket, so he has 789.4-11.99=<subtract>(789.4,11.99)=777.41 dollars left. So, the answer is 777.41.
+
+Q: If a cake weighs 3.77 pounds and is divided into 13 equal pieces, how much does each piece weight?
+A: Each piece of the cake weighs 3.77/13=<divide>(3.77,13)=0.29 pounds. So, the answer is 0.29.
+
+Q: [QUESTION]
+A:
