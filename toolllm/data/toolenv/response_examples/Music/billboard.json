@@ -1,0 +1,57 @@
+{
+    "api_list": [
+        {
+            "name": "Billboard Global Excl. US",
+            "schema": {
+                "artist": "str",
+                "title": "str",
+                "rank": "str",
+                "award": "bool",
+                "peak_position": "str",
+                "weeks_on_chart": "str"
+            }
+        },
+        {
+            "name": "Hot 100",
+            "schema": {
+                "artist": "str",
+                "title": "str",
+                "rank": "str",
+                "peak_position": "str",
+                "weeks_on_chart": "str"
+            }
+        },
+        {
+            "name": "Artist 100",
+            "schema": {
+                "artist": "str",
+                "rank": "str",
+                "award": "bool",
+                "peak_position": "str",
+                "weeks_on_chart": "str"
+            }
+        },
+        {
+            "name": "Billboard 200",
+            "schema": {
+                "artist": "str",
+                "title": "str",
+                "rank": "str",
+                "award": "bool",
+                "peak_position": "str",
+                "weeks_on_chart": "str"
+            }
+        },
+        {
+            "name": "Billboard Global 200",
+            "schema": {
+                "artist": "str",
+                "title": "str",
+                "rank": "str",
+                "award": "bool",
+                "peak_position": "str",
+                "weeks_on_chart": "str"
+            }
+        }
+    ]
+}

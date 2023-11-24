@@ -1,0 +1,10 @@
+{
+    "api_list": [
+        {
+            "name": "No watermark",
+            "schema": {
+                "message": "str"
+            }
+        }
+    ]
+}

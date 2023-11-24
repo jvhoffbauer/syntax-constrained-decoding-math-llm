@@ -1,0 +1,25 @@
+{
+    "api_list": [
+        {
+            "name": "Phishing Url Detection API",
+            "schema": {
+                "@ Symbol in URL": "bool",
+                "Ai_model_phishing_predict_score": "str",
+                "Ai_model_phishing_risk_class": "str",
+                "Domain of the URL": "str",
+                "Phishing Alert": "str",
+                "Url Reputation": "str",
+                "Depth of URL": "bool",
+                "Domain Age Risk": "bool",
+                "End Period of Domain": "bool",
+                "IFrame Redirection": "bool",
+                "Low Web_Traffic Risk": "bool",
+                "Mouse Over Risk": "bool",
+                "Prefix or Suffix in Domain": "bool",
+                "Redirection in URL Risk": "bool",
+                "Right Click Risk": "bool",
+                "Website Forwarding Risk": "bool"
+            }
+        }
+    ]
+}

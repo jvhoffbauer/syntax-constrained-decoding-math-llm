@@ -1,0 +1,81 @@
+{
+    "api_list": [
+        {
+            "name": "Trending",
+            "schema": {
+                "coins": [
+                    {
+                        "id": "str",
+                        "name": "str",
+                        "slug": "str",
+                        "symbol": "str",
+                        "birth_date": "str",
+                        "image_url": "str",
+                        "price": "str",
+                        "marketcap": "int",
+                        "supply": "str",
+                        "decimals": "str",
+                        "daily_change": "int",
+                        "network": "str",
+                        "address": "str",
+                        "dex_provider": "str",
+                        "presale": "bool",
+                        "presale_start": "str",
+                        "presale_end": "str",
+                        "status": "str",
+                        "approved_at": "str"
+                    }
+                ],
+                "total": "int"
+            }
+        },
+        {
+            "name": "Today Best",
+            "schema": {
+                "coins": [
+                    {
+                        "name": "str",
+                        "symbol": "str",
+                        "price": "str",
+                        "marketcap": "float",
+                        "supply": "str",
+                        "daily_change": "int",
+                        "network": "str",
+                        "dex_provider": "str",
+                        "presale": "bool",
+                        "fair_launch": "bool",
+                        "safu_rug_score": "float",
+                        "safu_honey_score": "float",
+                        "safu_total_score": "float",
+                        "status": "str",
+                        "approved_at": "str"
+                    }
+                ],
+                "total": "int"
+            }
+        },
+        {
+            "name": "Fresh potential gems",
+            "schema": {
+                "coins": [
+                    {
+                        "name": "str",
+                        "symbol": "str",
+                        "price": "str",
+                        "marketcap": "str",
+                        "supply": "str",
+                        "daily_change": "str",
+                        "network": "str",
+                        "dex_provider": "str",
+                        "listings": [
+                            "list of str with length 1"
+                        ],
+                        "status": "str",
+                        "approved_at": "str"
+                    }
+                ],
+                "total": "str"
+            }
+        }
+    ]
+}

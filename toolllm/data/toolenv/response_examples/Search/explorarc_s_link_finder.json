@@ -1,0 +1,14 @@
+{
+    "api_list": [
+        {
+            "name": "Links Finder",
+            "schema": {
+                "query": "str",
+                "total": "int",
+                "links": [
+                    "list of str with length 1"
+                ]
+            }
+        }
+    ]
+}

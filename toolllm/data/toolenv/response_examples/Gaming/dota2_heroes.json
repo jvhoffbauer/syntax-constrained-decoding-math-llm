@@ -1,0 +1,16 @@
+{
+    "api_list": [
+        {
+            "name": "Heroes List",
+            "schema": {
+                "id": "int",
+                "name": "str",
+                "name_loc": "str",
+                "primary_attr": "int",
+                "complexity": "int",
+                "image": "str",
+                "attribute_img": "str"
+            }
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "api_list": [
+        {
+            "name": "article",
+            "schema": {
+                "result": {
+                    "title": "str",
+                    "summary": "str",
+                    "keywords": [
+                        "list of str with length 1"
+                    ]
+                }
+            }
+        }
+    ]
+}

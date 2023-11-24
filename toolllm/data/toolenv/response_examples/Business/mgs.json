@@ -1,0 +1,89 @@
+{
+    "api_list": [
+        {
+            "name": "mgs_products",
+            "schema": {
+                "products": {
+                    "data": [
+                        {
+                            "id": "str",
+                            "name": "str",
+                            "description": "str",
+                            "images": "str",
+                            "manufacturer": "str",
+                            "caliber": "str",
+                            "weight": "str",
+                            "barrel_length": "str",
+                            "capacity": "str",
+                            "model": "str",
+                            "upc": "str",
+                            "gauge": "str",
+                            "action": "str",
+                            "finish": "str",
+                            "price": "str",
+                            "discounted_price": "str",
+                            "current_price": "str",
+                            "condition_status": "str",
+                            "used_condition": "str",
+                            "shipping": "str",
+                            "shipping_fee": "str",
+                            "payment_methods": "str",
+                            "category_id": "str",
+                            "in_stock": "str",
+                            "slug": "str",
+                            "created_at": "str",
+                            "updated_at": "str",
+                            "user_id": "str",
+                            "is_published": "str",
+                            "subcategory_id": "str",
+                            "sku": "str",
+                            "category": {
+                                "id": "str",
+                                "name": "str"
+                            },
+                            "user": {
+                                "id": "str",
+                                "name": "str",
+                                "slug": "str",
+                                "is_shipping": "str",
+                                "avg_rating": "str"
+                            }
+                        }
+                    ],
+                    "per_page": "str",
+                    "total": "str",
+                    "last_page": "str"
+                },
+                "action_data": [
+                    {
+                        "name": "str",
+                        "product_count": "str"
+                    }
+                ],
+                "categories": [
+                    {
+                        "id": "str",
+                        "name": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "blogs_copy",
+            "schema": {
+                "id": "str",
+                "title": "str",
+                "post_body": "str",
+                "short_description": "str",
+                "is_published": "str",
+                "image": "str",
+                "video": "str",
+                "view_count": "str",
+                "author": "str",
+                "post_category": {
+                    "name": "str"
+                }
+            }
+        }
+    ]
+}

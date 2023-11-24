@@ -1,0 +1,14 @@
+{
+    "api_list": [
+        {
+            "name": "Weather_dataSet",
+            "schema": {
+                "weather_id": "str",
+                "date": "str",
+                "temperature": "str",
+                "humidity": "str",
+                "air_quality": "str"
+            }
+        }
+    ]
+}

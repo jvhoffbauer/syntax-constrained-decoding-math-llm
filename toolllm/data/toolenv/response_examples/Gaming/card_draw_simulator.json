@@ -1,0 +1,10 @@
+{
+    "api_list": [
+        {
+            "name": "Cards",
+            "schema": {
+                "cards": "empty list"
+            }
+        }
+    ]
+}

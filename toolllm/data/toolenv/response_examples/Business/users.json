@@ -1,0 +1,21 @@
+{
+    "api_list": [
+        {
+            "name": "User Listing",
+            "schema": {
+                "id": "int",
+                "username": "str",
+                "name": "str",
+                "email": "str",
+                "phone": "int",
+                "website": "str",
+                "address": {
+                    "city": "str"
+                },
+                "company": {
+                    "name": "str"
+                }
+            }
+        }
+    ]
+}

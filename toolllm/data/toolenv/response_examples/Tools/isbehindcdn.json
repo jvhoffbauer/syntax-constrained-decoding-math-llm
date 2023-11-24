@@ -1,0 +1,11 @@
+{
+    "api_list": [
+        {
+            "name": "isbehindcdn",
+            "schema": {
+                "IsBehindCDN": "str",
+                "CDNName": "str"
+            }
+        }
+    ]
+}

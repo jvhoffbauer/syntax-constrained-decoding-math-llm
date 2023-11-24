@@ -1,0 +1,398 @@
+{
+    "api_list": [
+        {
+            "name": "/zones/{type}/{zoneId}/forecast",
+            "schema": {
+                "title": "str",
+                "type": "str",
+                "status": "int",
+                "detail": "str",
+                "instance": "str"
+            }
+        },
+        {
+            "name": "/products/types/{typeId}/locations/{locationId}",
+            "schema": {
+                "title": "str",
+                "type": "str",
+                "status": "int",
+                "detail": "str"
+            }
+        },
+        {
+            "name": "/products/types/{typeId}",
+            "schema": {
+                "title": "str",
+                "type": "str",
+                "status": "int",
+                "detail": "str",
+                "instance": "str"
+            }
+        },
+        {
+            "name": "/points/{point}/forecast/hourly",
+            "schema": {
+                "title": "str",
+                "type": "str",
+                "status": "int",
+                "detail": "str"
+            }
+        },
+        {
+            "name": "/gridpoints/{wfo}/{x},{y}",
+            "schema": {
+                "title": "str",
+                "status": "str",
+                "detail": "str"
+            }
+        },
+        {
+            "name": "/alerts/active/zone/{zoneId}",
+            "schema": {
+                "title": "str",
+                "type": "str",
+                "status": "int",
+                "detail": "str"
+            }
+        },
+        {
+            "name": "/products/{productId}",
+            "schema": {
+                "title": "str",
+                "type": "str",
+                "status": "int",
+                "detail": "str"
+            }
+        },
+        {
+            "name": "/stations/{stationId}/observations",
+            "schema": {
+                "title": "str",
+                "type": "str",
+                "status": "int",
+                "detail": "str",
+                "instance": "str"
+            }
+        },
+        {
+            "name": "/products/types",
+            "schema": {
+                "@graph": [
+                    {
+                        "productCode": "str",
+                        "productName": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "/points/{point}/stations",
+            "schema": {
+                "title": "str",
+                "type": "str",
+                "status": "int",
+                "detail": "str"
+            }
+        },
+        {
+            "name": "/alerts/{alertId}",
+            "schema": {
+                "title": "str",
+                "type": "str",
+                "status": "int",
+                "detail": "str"
+            }
+        },
+        {
+            "name": "/alerts/active/count",
+            "schema": {
+                "total": "str",
+                "land": "str",
+                "marine": "str",
+                "regions": {
+                    "AL": "str",
+                    "AT": "str",
+                    "GL": "str",
+                    "GM": "str",
+                    "PA": "str",
+                    "PI": "str"
+                },
+                "areas": {
+                    "AK": "str",
+                    "AL": "str",
+                    "AM": "str",
+                    "AN": "str",
+                    "AR": "str",
+                    "AZ": "str",
+                    "CA": "str",
+                    "CO": "str",
+                    "DE": "str",
+                    "FL": "str",
+                    "GA": "str",
+                    "GM": "str",
+                    "IA": "str",
+                    "ID": "str",
+                    "IN": "str",
+                    "KS": "str",
+                    "KY": "str",
+                    "LA": "str",
+                    "LE": "str",
+                    "MD": "str",
+                    "ME": "str",
+                    "MI": "str",
+                    "MO": "str",
+                    "MS": "str",
+                    "NC": "str",
+                    "NE": "str",
+                    "NH": "str",
+                    "NJ": "str",
+                    "NM": "str",
+                    "NV": "str",
+                    "NY": "str",
+                    "OH": "str",
+                    "OK": "str",
+                    "PA": "str",
+                    "PH": "str",
+                    "PK": "str",
+                    "PR": "str",
+                    "PZ": "str",
+                    "SD": "str",
+                    "TN": "str",
+                    "TX": "str",
+                    "VA": "str",
+                    "VI": "str",
+                    "WY": "str"
+                },
+                "zones": {}
+            }
+        },
+        {
+            "name": "/products/locations",
+            "schema": {
+                "locations": {
+                    "001": "str",
+                    "01": "str",
+                    "02": "str",
+                    "03": "str",
+                    "04": "str",
+                    "0F2": "str",
+                    "0J4": "str",
+                    "11R": "str",
+                    "12N": "str",
+                    "1S3": "str",
+                    "1V4": "str",
+                    "1Y7": "str",
+                    "1Y8": "str",
+                    "20V": "str",
+                    "2R9": "str",
+                    "2WX": "str",
+                    "30D": "str",
+                    "33V": "str",
+                    "38S": "str",
+                    "3T5": "str",
+                    "3U3": "str",
+                    "40B": "str",
+                    "4U6": "str",
+                    "55N": "str",
+                    "5C1": "str",
+                    "5T9": "str",
+                    "6P9": "str",
+                    "6R6": "str",
+                    "6S5": "str",
+                    "6S8": "str",
+                    "79J": "str",
+                    "8D3": "str",
+                    "90D": "str",
+                    "90S": "str",
+                    "9S2": "str",
+                    "9S5": "str",
+                    "9V9": "str",
+                    "A0A": "str",
+                    "A0B": "str",
+                    "A0C": "str",
+                    "A0D": "str",
+                    "A0E": "str",
+                    "A0F": "str",
+                    "A0G": "str",
+                    "A0H": "str",
+                    "A0I": "str",
+                    "A0J": "str",
+                    "A0K": "str",
+                    "A0L": "str",
+                    "A0M": "str",
+                    "AAF": "str"
+                }
+            }
+        },
+        {
+            "name": "/alerts/active",
+            "schema": {
+                "features": [
+                    {
+                        "id": "str",
+                        "type": "str",
+                        "geometry": {
+                            "type": "str",
+                            "coordinates": [
+                                "list of str with length 1"
+                            ]
+                        },
+                        "properties": {
+                            "@id": "str",
+                            "id": "str",
+                            "areaDesc": "str",
+                            "geocode": {
+                                "SAME": [
+                                    "list of str with length 1"
+                                ],
+                                "UGC": [
+                                    "list of str with length 1"
+                                ]
+                            },
+                            "affectedZones": [
+                                "list of str with length 1"
+                            ],
+                            "references": "str",
+                            "sent": "str",
+                            "effective": "str",
+                            "onset": "str",
+                            "expires": "str",
+                            "status": "str",
+                            "messageType": "str",
+                            "category": "str",
+                            "severity": "str",
+                            "certainty": "str",
+                            "urgency": "str",
+                            "event": "str",
+                            "sender": "str",
+                            "senderName": "str",
+                            "headline": "str",
+                            "description": "str",
+                            "parameters": {
+                                "AWIPSidentifier": [
+                                    "list of str with length 1"
+                                ],
+                                "WMOidentifier": [
+                                    "list of str with length 1"
+                                ],
+                                "eventMotionDescription": [
+                                    "list of str with length 1"
+                                ]
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "/zones/{type}/{zoneId}",
+            "schema": {
+                "title": "str",
+                "type": "str",
+                "status": "int",
+                "detail": "str"
+            }
+        },
+        {
+            "name": "/alerts/active/area/{area}",
+            "schema": {
+                "title": "str",
+                "type": "str",
+                "status": "int",
+                "detail": "str",
+                "instance": "str"
+            }
+        },
+        {
+            "name": "/points/{point}/forecast",
+            "schema": {
+                "title": "str",
+                "type": "str",
+                "status": "int",
+                "detail": "str"
+            }
+        },
+        {
+            "name": "/products/locations/{locationId}/types",
+            "schema": {
+                "title": "str",
+                "type": "str",
+                "status": "int",
+                "detail": "str"
+            }
+        },
+        {
+            "name": "/stations/{stationId}/observations/{recordId}",
+            "schema": {
+                "title": "str",
+                "type": "str",
+                "status": "int",
+                "detail": "str"
+            }
+        },
+        {
+            "name": "/stations",
+            "schema": {
+                "title": "str",
+                "type": "str",
+                "status": "int",
+                "detail": "str"
+            }
+        },
+        {
+            "name": "/alerts?{parameters}",
+            "schema": {
+                "title": "str",
+                "type": "str",
+                "status": "int",
+                "detail": "str"
+            }
+        },
+        {
+            "name": "/alerts/active/region/{region}",
+            "schema": {
+                "title": "str",
+                "type": "str",
+                "status": "int",
+                "detail": "str"
+            }
+        },
+        {
+            "name": "/points/{point}",
+            "schema": {
+                "title": "str",
+                "type": "str",
+                "status": "int",
+                "detail": "str"
+            }
+        },
+        {
+            "name": "/products/types/{typeId}/locations",
+            "schema": {
+                "title": "str",
+                "type": "str",
+                "status": "int",
+                "detail": "str"
+            }
+        },
+        {
+            "name": "/stations/{stationId}/observations/current",
+            "schema": {
+                "title": "str",
+                "type": "str",
+                "status": "int",
+                "detail": "str",
+                "instance": "str"
+            }
+        },
+        {
+            "name": "/stations/{stationId}",
+            "schema": {
+                "title": "str",
+                "type": "str",
+                "status": "int",
+                "detail": "str"
+            }
+        }
+    ]
+}

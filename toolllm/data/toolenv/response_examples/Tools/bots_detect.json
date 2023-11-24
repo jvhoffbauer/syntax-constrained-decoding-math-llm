@@ -1,0 +1,13 @@
+{
+    "api_list": [
+        {
+            "name": "bots/crawlers/spiders detect",
+            "schema": {
+                "status": "bool",
+                "isBot": "str",
+                "botName": "str",
+                "useragent": "str"
+            }
+        }
+    ]
+}

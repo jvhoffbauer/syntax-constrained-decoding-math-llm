@@ -1,0 +1,10 @@
+{
+    "api_list": [
+        {
+            "name": "Product Offers",
+            "schema": {
+                "message": "str"
+            }
+        }
+    ]
+}

@@ -1,0 +1,12 @@
+{
+    "api_list": [
+        {
+            "name": "/v1/convertcurrency",
+            "schema": {
+                "new_amount": "float",
+                "new_currency": "str",
+                "old_currency": "str"
+            }
+        }
+    ]
+}

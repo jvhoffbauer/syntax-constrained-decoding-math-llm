@@ -1,0 +1,11 @@
+{
+    "api_list": [
+        {
+            "name": "Generate Invoice",
+            "schema": {
+                "success": "bool",
+                "url": "str"
+            }
+        }
+    ]
+}

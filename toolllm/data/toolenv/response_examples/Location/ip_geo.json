@@ -1,0 +1,17 @@
+{
+    "api_list": [
+        {
+            "name": "Location IP",
+            "schema": {
+                "ip": "str",
+                "country_code": "str",
+                "country_name": "str",
+                "region_name": "str",
+                "city_name": "str",
+                "latitude": "str",
+                "longitude": "str",
+                "timezone": "str"
+            }
+        }
+    ]
+}

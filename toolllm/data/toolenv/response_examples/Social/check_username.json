@@ -1,0 +1,190 @@
+{
+    "api_list": [
+        {
+            "name": "Vimeo",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Check all domains at once",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": ".io",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": ".us",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": ".co",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": ".org",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": ".net",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": ".com",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Snapchat",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "shopify",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Username for",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Random username",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Dev.to",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Wikipedia",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Tumblr",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Dockerhub",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Askfm",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Linktree",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Soundcloud",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Etsy",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Patreon",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Minecraft",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Medium",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Twitch",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Steam",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Reddit",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "GitHub",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Pinterest",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Facebook",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Instagram",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Check usernames on all Platforms",
+            "schema": {
+                "message": "str"
+            }
+        }
+    ]
+}

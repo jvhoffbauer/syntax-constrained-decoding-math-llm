@@ -1,0 +1,61 @@
+{
+    "api_list": [
+        {
+            "name": "list all countries",
+            "schema": {
+                "status": "str",
+                "data": {
+                    "country_name": "str",
+                    "iso2": "str",
+                    "iso3": "str",
+                    "capital": "str",
+                    "currency_code": "str",
+                    "currency_name": "str",
+                    "surface_area": "str"
+                }
+            }
+        },
+        {
+            "name": "get time zone",
+            "schema": {
+                "status": "str",
+                "data": {
+                    "Country Name": "str",
+                    "Time Zone in Capital": "str"
+                }
+            }
+        },
+        {
+            "name": "get language",
+            "schema": {
+                "status": "str",
+                "data": {
+                    "Country Name": "str",
+                    "Languages": "str",
+                    "Language Codes": "str"
+                }
+            }
+        },
+        {
+            "name": "get geo",
+            "schema": {
+                "status": "str",
+                "data": {
+                    "Country Name": "str",
+                    "Capital": "str",
+                    "Continent": "str",
+                    "Area KM2": "int"
+                }
+            }
+        },
+        {
+            "name": "get capital",
+            "schema": {
+                "data": {
+                    "Country Name": "str",
+                    "Capital": "str"
+                }
+            }
+        }
+    ]
+}

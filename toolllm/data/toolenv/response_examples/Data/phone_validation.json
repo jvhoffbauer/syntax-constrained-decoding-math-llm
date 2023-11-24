@@ -1,0 +1,15 @@
+{
+    "api_list": [
+        {
+            "name": "/{phone}",
+            "schema": {
+                "status": "str",
+                "phone": "str",
+                "international": "str",
+                "national": "str",
+                "country_code": "int",
+                "blacklisted": "bool"
+            }
+        }
+    ]
+}

@@ -1,0 +1,185 @@
+{
+    "api_list": [
+        {
+            "name": "retrievegetMoviesByContentRating",
+            "schema": {
+                "count": "int",
+                "results": "str"
+            }
+        },
+        {
+            "name": "listgetUpcomingMovies",
+            "schema": {
+                "count": "int",
+                "results": "str"
+            }
+        },
+        {
+            "name": "retrievegetMoviesByGenre",
+            "schema": {
+                "count": "int",
+                "results": "str"
+            }
+        },
+        {
+            "name": "listgetSeriesOrderByPopularitys",
+            "schema": {
+                "count": "int",
+                "results": [
+                    {
+                        "imdb_id": "str",
+                        "title": "str",
+                        "popularity": "int"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "retrievegetSeriesByContentRating",
+            "schema": {
+                "count": "int",
+                "results": "str"
+            }
+        },
+        {
+            "name": "retrievegetSeriesByKeywords",
+            "schema": {
+                "count": "int",
+                "results": "str"
+            }
+        },
+        {
+            "name": "retrievegetMoviesByKeywords",
+            "schema": {
+                "count": "int",
+                "results": "str"
+            }
+        },
+        {
+            "name": "listgetMoviesOrderByRatings",
+            "schema": {
+                "count": "int",
+                "results": [
+                    {
+                        "imdb_id": "str",
+                        "title": "str",
+                        "rating": "float"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "listgetSeriesOrderByRatings",
+            "schema": {
+                "count": "int",
+                "results": [
+                    {
+                        "imdb_id": "str",
+                        "title": "str",
+                        "rating": "float"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "listgetMoviesKnownForByIds",
+            "schema": {
+                "count": "int",
+                "results": "str"
+            }
+        },
+        {
+            "name": "listgetMoviesOrderByPopularitys",
+            "schema": {
+                "count": "int",
+                "results": [
+                    {
+                        "imdb_id": "str",
+                        "title": "str",
+                        "popularity": "int"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "retrievegetSeriesByGenre",
+            "schema": {
+                "count": "int",
+                "results": "str"
+            }
+        },
+        {
+            "name": "listgetAwardsBySeriesIds",
+            "schema": {
+                "count": "int",
+                "results": "str"
+            }
+        },
+        {
+            "name": "retrievegetMoviesByActorId",
+            "schema": {
+                "count": "int",
+                "results": "str"
+            }
+        },
+        {
+            "name": "listgetAwardsByMovieIds",
+            "schema": {
+                "count": "int",
+                "results": "str"
+            }
+        },
+        {
+            "name": "listgetUpcomingSeries",
+            "schema": {
+                "count": "int",
+                "results": "str"
+            }
+        },
+        {
+            "name": "retrievegetSeriesByActorId",
+            "schema": {
+                "count": "int",
+                "results": "str"
+            }
+        },
+        {
+            "name": "listgetBirthdayTodays",
+            "schema": {
+                "count": "int",
+                "results": "str"
+            }
+        },
+        {
+            "name": "listgetSeriesKnownForByIds",
+            "schema": {
+                "count": "int",
+                "results": "str"
+            }
+        },
+        {
+            "name": "listgetGenres",
+            "schema": {
+                "results": [
+                    {
+                        "genre": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "listgetAwardsByIds",
+            "schema": {
+                "count": "int",
+                "results": "str"
+            }
+        },
+        {
+            "name": "listgetAllRolesByIds",
+            "schema": {
+                "count": "int",
+                "results": "str"
+            }
+        }
+    ]
+}

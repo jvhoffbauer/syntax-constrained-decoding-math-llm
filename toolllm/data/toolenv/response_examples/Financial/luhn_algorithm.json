@@ -1,0 +1,12 @@
+{
+    "api_list": [
+        {
+            "name": "Validate card number",
+            "schema": {
+                "card_number": "str",
+                "is_valid": "bool",
+                "issuing_network": "str"
+            }
+        }
+    ]
+}

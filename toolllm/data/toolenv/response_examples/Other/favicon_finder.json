@@ -1,0 +1,15 @@
+{
+    "api_list": [
+        {
+            "name": "Find Favicon",
+            "schema": {
+                "url": "str",
+                "icons": [
+                    {
+                        "src": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

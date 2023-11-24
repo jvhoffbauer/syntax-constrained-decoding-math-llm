@@ -1,0 +1,57 @@
+{
+    "api_list": [
+        {
+            "name": "Location By City",
+            "schema": {
+                "CityName": "str",
+                "CountryCode": "str",
+                "latitude": "str",
+                "longitude": "str"
+            }
+        },
+        {
+            "name": "ZipCode By City",
+            "schema": {
+                "CityName": "str",
+                "CountryCode": "str",
+                "zip": [
+                    "list of str with length 1"
+                ]
+            }
+        },
+        {
+            "name": "cities By State",
+            "schema": {
+                "CityName": "str",
+                "StateCode": "str",
+                "CountryCode": "str"
+            }
+        },
+        {
+            "name": "states By Country",
+            "schema": {
+                "StateName": "str",
+                "StateCode": "str",
+                "CountryCode": "str"
+            }
+        },
+        {
+            "name": "Currency By Country",
+            "schema": {
+                "CountryCode": "str",
+                "Currency": "str",
+                "CurrencySymbol": "str"
+            }
+        },
+        {
+            "name": "CountriesList",
+            "schema": {
+                "countryName": "str",
+                "CountryCode": "str",
+                "numericCode": "str",
+                "Region": "str",
+                "SubRegion": "str"
+            }
+        }
+    ]
+}

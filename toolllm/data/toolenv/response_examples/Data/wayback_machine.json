@@ -1,0 +1,79 @@
+{
+    "api_list": [
+        {
+            "name": "Sparkline",
+            "schema": {
+                "years": {
+                    "1998": "empty list",
+                    "1999": "empty list",
+                    "2000": "empty list",
+                    "2001": "empty list",
+                    "2002": "empty list",
+                    "2003": "empty list",
+                    "2004": "empty list",
+                    "2005": "empty list",
+                    "2006": "empty list",
+                    "2007": "empty list",
+                    "2008": "empty list",
+                    "2009": "empty list",
+                    "2010": "empty list",
+                    "2011": "empty list",
+                    "2012": "empty list",
+                    "2013": "empty list",
+                    "2014": "empty list",
+                    "2015": "empty list",
+                    "2016": "empty list",
+                    "2017": "empty list",
+                    "2018": "empty list",
+                    "2019": "empty list",
+                    "2020": "empty list",
+                    "2021": "empty list",
+                    "2022": "empty list",
+                    "2023": "empty list"
+                }
+            }
+        },
+        {
+            "name": "Search",
+            "schema": {
+                "hosts": [
+                    {
+                        "display_name": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Content",
+            "schema": {
+                "status_code": "str",
+                "content_type": "str",
+                "date": "str",
+                "content": "str"
+            }
+        },
+        {
+            "name": "Captures",
+            "schema": {
+                "items": [
+                    {
+                        "date": "str",
+                        "status_code": "int"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Calendar",
+            "schema": {
+                "items": [
+                    {
+                        "date": "str",
+                        "status_code": "int",
+                        "snapshots": "int"
+                    }
+                ]
+            }
+        }
+    ]
+}

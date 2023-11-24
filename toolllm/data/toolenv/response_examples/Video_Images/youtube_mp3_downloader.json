@@ -1,0 +1,20 @@
+{
+    "api_list": [
+        {
+            "name": "Download mp3 (custom audio quality)",
+            "schema": {
+                "messages": "str",
+                "info": "str"
+            }
+        },
+        {
+            "name": "Download YouTube Mp3",
+            "schema": {
+                "title": "str",
+                "link": "str",
+                "length": "str",
+                "size": "str"
+            }
+        }
+    ]
+}

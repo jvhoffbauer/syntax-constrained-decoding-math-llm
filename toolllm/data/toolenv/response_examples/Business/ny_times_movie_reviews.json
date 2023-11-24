@@ -1,0 +1,28 @@
+{
+    "api_list": [
+        {
+            "name": "/reviews/search.json",
+            "schema": {
+                "fault": {
+                    "faultstring": "str"
+                }
+            }
+        },
+        {
+            "name": "/critics/{reviewer}.json",
+            "schema": {
+                "fault": {
+                    "faultstring": "str"
+                }
+            }
+        },
+        {
+            "name": "/reviews/{type}.json",
+            "schema": {
+                "fault": {
+                    "faultstring": "str"
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,420 @@
+{
+    "api_list": [
+        {
+            "name": "Search Giphy(gif)",
+            "schema": {
+                "data": {
+                    "giphy_gifs": [
+                        {
+                            "type": "str",
+                            "id": "str",
+                            "url": "str",
+                            "slug": "str",
+                            "bitly_gif_url": "str",
+                            "bitly_url": "str",
+                            "embed_url": "str",
+                            "username": "str",
+                            "source": "str",
+                            "title": "str",
+                            "rating": "str",
+                            "content_url": "str",
+                            "tags": [
+                                "list of str with length 1"
+                            ],
+                            "featured_tags": [
+                                "list of str with length 1"
+                            ],
+                            "user_tags": "str",
+                            "source_tld": "str",
+                            "source_post_url": "str",
+                            "images": {
+                                "original": {
+                                    "url": "str"
+                                },
+                                "downsized": {
+                                    "url": "str"
+                                },
+                                "downsized_large": {
+                                    "url": "str"
+                                },
+                                "downsized_medium": {
+                                    "url": "str"
+                                },
+                                "downsized_small": {
+                                    "url": "str"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Get Facebook page, Facebook Account connected to Instagram account by Insta user_id",
+            "schema": {
+                "data": {
+                    "ig_id": "str",
+                    "ig_username": "str",
+                    "fb_page_id": "int",
+                    "fb_page_name": "str",
+                    "page_id": "int",
+                    "page_name": "str",
+                    "fb_page_url": "str"
+                }
+            }
+        },
+        {
+            "name": "Get insights of post/reel by shortcode",
+            "schema": {
+                "data": {
+                    "media_id": "str",
+                    "media_owner_id": "str",
+                    "creation_time": "int",
+                    "thumbnail": "str",
+                    "comment_count": "int",
+                    "like_count": "int",
+                    "save_count": "int",
+                    "share_count": "int"
+                },
+                "status": "str"
+            }
+        },
+        {
+            "name": "Get insights of post/reel by media_id",
+            "schema": {
+                "data": {
+                    "media_id": "str",
+                    "media_owner_id": "str",
+                    "creation_time": "int",
+                    "thumbnail": "str",
+                    "comment_count": "int",
+                    "like_count": "int",
+                    "save_count": "int",
+                    "share_count": "int"
+                },
+                "status": "str"
+            }
+        },
+        {
+            "name": "Search Music(Audio)",
+            "schema": {
+                "data": [
+                    {
+                        "track": {
+                            "audio_cluster_id": "str",
+                            "id": "str",
+                            "title": "str",
+                            "display_artist": "str",
+                            "cover_artwork_uri": "str",
+                            "cover_artwork_thumbnail_uri": "str",
+                            "progressive_download_url": "str",
+                            "fast_start_progressive_download_url": "str",
+                            "is_explicit": "str",
+                            "has_lyrics": "str",
+                            "audio_asset_id": "str",
+                            "duration_in_ms": "str",
+                            "allows_saving": "str",
+                            "territory_validity_periods": "str"
+                        },
+                        "metadata": {
+                            "is_bookmarked": "str",
+                            "allow_media_creation_with_music": "str",
+                            "is_trending_in_clips": "str",
+                            "formatted_clips_media_count": "str"
+                        }
+                    }
+                ],
+                "status": "str"
+            }
+        },
+        {
+            "name": "Get place ids from city names",
+            "schema": {
+                "data": {
+                    "items": [
+                        {
+                            "location": {
+                                "pk": "int",
+                                "short_name": "str",
+                                "name": "str",
+                                "lng": "float",
+                                "lat": "float"
+                            },
+                            "title": "str"
+                        }
+                    ],
+                    "has_more": "bool",
+                    "rank_token": "str"
+                }
+            }
+        },
+        {
+            "name": "Search Hashtags",
+            "schema": {
+                "data": [
+                    {
+                        "name": "str",
+                        "media_count": "int",
+                        "formatted_media_count": "str",
+                        "search_result_subtitle": "str"
+                    }
+                ],
+                "status": "str"
+            }
+        },
+        {
+            "name": "Hashtag Posts",
+            "schema": {
+                "data": {
+                    "medias": [
+                        {
+                            "taken_at": "str",
+                            "pk": "str",
+                            "id": "str",
+                            "media_type": "str",
+                            "code": "str",
+                            "caption": {
+                                "text": "str",
+                                "user": {
+                                    "username": "str",
+                                    "full_name": "str"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Location posts",
+            "schema": {
+                "data": {
+                    "medias": [
+                        {
+                            "taken_at": "str",
+                            "pk": "str",
+                            "id": "str",
+                            "media_type": "str",
+                            "code": "str",
+                            "caption": {
+                                "text": "str",
+                                "user": {
+                                    "username": "str",
+                                    "full_name": "str",
+                                    "is_private": "str"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "User ID(pk) to Username - Fast Response",
+            "schema": {
+                "data": {
+                    "username": "str",
+                    "full_name": "str",
+                    "is_private": "bool",
+                    "is_verified": "bool",
+                    "profile_pic_url": "str"
+                }
+            }
+        },
+        {
+            "name": "Get user tags posts by user_id",
+            "schema": {
+                "status": "str",
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get hashtags followed by an user using user_id",
+            "schema": {
+                "data": {
+                    "tags": [
+                        {
+                            "id": "str",
+                            "name": "str",
+                            "media_count": "str",
+                            "follow_status": "str"
+                        }
+                    ]
+                },
+                "status": "str"
+            }
+        },
+        {
+            "name": "User info from user_id",
+            "schema": {
+                "data": {
+                    "follower_count": "str",
+                    "media_count": "str",
+                    "following_count": "str",
+                    "following_tag_count": "str",
+                    "can_use_affiliate_partnership_messaging_as_creator": "str",
+                    "can_use_affiliate_partnership_messaging_as_brand": "str",
+                    "has_collab_collections": "str",
+                    "has_private_collections": "str",
+                    "has_music_on_profile": "str",
+                    "is_potential_business": "str",
+                    "can_use_branded_content_discovery_as_creator": "str",
+                    "can_use_branded_content_discovery_as_brand": "str",
+                    "fbid_v2": "str",
+                    "pronouns": "str",
+                    "whatsapp_number": "str"
+                }
+            }
+        },
+        {
+            "name": "Username to User ID",
+            "schema": {
+                "data": {
+                    "id": "str",
+                    "followers": "int",
+                    "full_name": "str",
+                    "username": "str",
+                    "media_count": "int"
+                }
+            }
+        },
+        {
+            "name": "Get media(story, post, reel & other) info by media_id",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get all media of a highlight using highlight_id",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "No CORS HD profile photo",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "No CORS images from shortcode",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "No CORS images from media_id",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Search user",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get active, archived stories of user by date wise using user_id",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get comments of media by shortcode",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get comments by media_id",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get like details of any media by shortcode",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get like details of any media by media id",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get all stories by username",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get reel by media_id",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get reel by shortcode",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get media(story, post, reel & other) info by shortcode",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get user highlights tray by user_id",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get all stories by user_id",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get user reels by username",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get user reels by user_id",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get user posts by user_id",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get user followings by user_id",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get user followers by user_id",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get public contact details by user_id",
+            "schema": {
+                "message": "str"
+            }
+        }
+    ]
+}

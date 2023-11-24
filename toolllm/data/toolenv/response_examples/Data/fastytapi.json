@@ -1,0 +1,140 @@
+{
+    "api_list": [
+        {
+            "name": "Video and recommendations",
+            "schema": {
+                "data": {
+                    "video": {
+                        "videoId": "str",
+                        "title": "str",
+                        "lengthSeconds": "str",
+                        "channelId": "str",
+                        "shortDescription": "str",
+                        "viewCount": "str",
+                        "author": "str",
+                        "isLiveContent": "str",
+                        "keywords": "str",
+                        "thumbnails": [
+                            {
+                                "url": "str"
+                            }
+                        ],
+                        "likes": "str",
+                        "date": "str",
+                        "subs": "str",
+                        "handle": "str",
+                        "verified": "str",
+                        "comments": "str",
+                        "category": "str",
+                        "monetized": "str"
+                    },
+                    "recommended": [
+                        {
+                            "videoId": "str",
+                            "title": "str",
+                            "dateApprox": "str",
+                            "viewCount": "str",
+                            "lengthSeconds": "str",
+                            "author": "str",
+                            "channelId": "str",
+                            "handle": "str",
+                            "verified": "str"
+                        }
+                    ],
+                    "pagination": "str"
+                }
+            }
+        },
+        {
+            "name": "Channel's videos/streams/shorts ids (w/ pagination)",
+            "schema": {
+                "data": {
+                    "videos": [
+                        {
+                            "videoId": "str",
+                            "title": "str",
+                            "dateApprox": "str",
+                            "viewCount": "int",
+                            "lengthSeconds": "int",
+                            "verified": "bool"
+                        }
+                    ],
+                    "pagination": "str"
+                }
+            }
+        },
+        {
+            "name": "Search channel",
+            "schema": {
+                "data": [
+                    {
+                        "channelId": "str",
+                        "handle": "str",
+                        "title": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Recommended channels",
+            "schema": {
+                "data": {
+                    "channels": [
+                        {
+                            "tags": "empty list",
+                            "monetized": "str",
+                            "isFamilySafe": "str",
+                            "tabs": "empty list",
+                            "subs": "str",
+                            "thumbnailsTvBanner": "empty list",
+                            "thumbnailsMobileBanner": "empty list",
+                            "thumbnailsAvatar": "empty list",
+                            "videos": "str",
+                            "thumbnailsBanner": "empty list",
+                            "badges": "empty list",
+                            "views": "str",
+                            "hasBusinessEmail": "str",
+                            "handle": "str",
+                            "description": "str",
+                            "title": "str",
+                            "date": "str",
+                            "channelId": "str",
+                            "country": "str",
+                            "links": {},
+                            "ts": "str",
+                            "recommendedScore": "str"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Channel",
+            "schema": {
+                "data": {
+                    "tags": [
+                        "list of str with length 1"
+                    ],
+                    "monetized": "str",
+                    "isFamilySafe": "str",
+                    "tabs": [
+                        "list of str with length 1"
+                    ],
+                    "subs": "str",
+                    "videos": "str",
+                    "badges": "str",
+                    "views": "str",
+                    "hasBusinessEmail": "str",
+                    "handle": "str",
+                    "description": "str",
+                    "title": "str",
+                    "date": "str",
+                    "channelId": "str",
+                    "country": "str",
+                    "links": {},
+                    "ts": "str"
+                }
+            }
+        }
+    ]
+}

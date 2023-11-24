@@ -1,0 +1,54 @@
+{
+    "api_list": [
+        {
+            "name": "Search Product",
+            "schema": {
+                "query": "str",
+                "results": [
+                    {
+                        "title": "str",
+                        "link": "str",
+                        "image": "str",
+                        "price": "str",
+                        "rating": "float",
+                        "sold": "int"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Get Product Detail",
+            "schema": {
+                "title": "str",
+                "image": "str",
+                "video": "str",
+                "price": "str",
+                "variants": [
+                    {
+                        "type": "str",
+                        "value": "str",
+                        "label": "str"
+                    }
+                ],
+                "description": "str",
+                "seller": {
+                    "name": "str",
+                    "city": "str",
+                    "rate": "str",
+                    "badge": "str"
+                },
+                "otherProducts": [
+                    {
+                        "title": "str",
+                        "link": "str",
+                        "slug": "str",
+                        "image": "str",
+                        "price": "str",
+                        "location": "str",
+                        "rating": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

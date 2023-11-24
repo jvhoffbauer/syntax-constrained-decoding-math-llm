@@ -1,0 +1,34 @@
+{
+    "api_list": [
+        {
+            "name": "Random Jokes",
+            "schema": {
+                "success": "bool",
+                "body": [
+                    {
+                        "setup": "str",
+                        "punchline": "str",
+                        "type": "str",
+                        "approved": "bool",
+                        "NSFW": "bool",
+                        "shareableLink": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Random Joke PNG",
+            "schema": {
+                "success": "str",
+                "body": {
+                    "_id": "str",
+                    "setup": "str",
+                    "punchline": "str",
+                    "author": {
+                        "name": "str"
+                    }
+                }
+            }
+        }
+    ]
+}

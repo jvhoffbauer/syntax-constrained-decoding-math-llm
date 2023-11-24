@@ -1,0 +1,48 @@
+{
+    "api_list": [
+        {
+            "name": "listPortfolios",
+            "schema": {
+                "detail": [
+                    {
+                        "msg": "str",
+                        "type": "str",
+                        "ctx": {
+                            "enum_values": [
+                                "list of str with length 1"
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "getPortfolioInfo",
+            "schema": {
+                "detail": [
+                    {
+                        "loc": [
+                            "list of str with length 1"
+                        ],
+                        "msg": "str",
+                        "type": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "getTraderPositions",
+            "schema": {
+                "detail": [
+                    {
+                        "loc": [
+                            "list of str with length 1"
+                        ],
+                        "msg": "str",
+                        "type": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

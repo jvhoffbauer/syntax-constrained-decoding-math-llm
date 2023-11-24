@@ -1,0 +1,77 @@
+{
+    "api_list": [
+        {
+            "name": "Blockchains",
+            "schema": {
+                "btc": "str",
+                "bch": "str",
+                "eth": "str",
+                "bsv": "str",
+                "ltc": "str",
+                "trx": "str",
+                "xrp": "str",
+                "zec": "str",
+                "doge": "str",
+                "neo": "str",
+                "eos": "str",
+                "dash": "str",
+                "etc": "str",
+                "xtz": "str",
+                "bnb": "str",
+                "xlm": "str",
+                "grs": "str",
+                "icx": "str",
+                "steem": "str",
+                "atom": "str",
+                "dcr": "str",
+                "xvg": "str",
+                "hc": "str",
+                "sc": "str"
+            }
+        },
+        {
+            "name": "Transactions feed",
+            "schema": {
+                "context": {
+                    "total": "int",
+                    "next": "int"
+                },
+                "data": [
+                    {
+                        "symbol": "str",
+                        "amount": "int",
+                        "amount_usd": "int",
+                        "transaction_type": "str",
+                        "indexed_at": "str",
+                        "blockchain": "str",
+                        "from_alias": "str",
+                        "id": "int",
+                        "hash": "str",
+                        "timestamp": "int"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Specific transactions",
+            "schema": {
+                "tx": {
+                    "symbol": "str",
+                    "amount": "str",
+                    "amount_usd": "str",
+                    "transaction_type": "str",
+                    "blockchain": "str",
+                    "id": "str",
+                    "hash": "str",
+                    "timestamp": "str"
+                },
+                "explorers": [
+                    {
+                        "name": "str",
+                        "uri": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,60 @@
+{
+    "api_list": [
+        {
+            "name": "Team Roster",
+            "schema": {
+                "player": "str",
+                "position": "str",
+                "number": "str",
+                "teamAbb": "str"
+            }
+        },
+        {
+            "name": "Positions",
+            "schema": {
+                "QB": "str",
+                "RB": "str",
+                "FB": "str",
+                "WR": "str",
+                "TE": "str",
+                "C": "str",
+                "OT": "str",
+                "G": "str",
+                "DE": "str",
+                "DT": "str",
+                "LB": "str",
+                "CB": "str",
+                "S": "str",
+                "PK": "str",
+                "P": "str",
+                "LS": "str"
+            }
+        },
+        {
+            "name": "Player",
+            "schema": {
+                "player": "str",
+                "position": "str",
+                "number": "str",
+                "team": "str"
+            }
+        },
+        {
+            "name": "All Players",
+            "schema": {
+                "player": "str",
+                "position": "str",
+                "number": "str",
+                "team": "str"
+            }
+        },
+        {
+            "name": "Players at Position",
+            "schema": {
+                "player": "str",
+                "number": "str",
+                "team": "str"
+            }
+        }
+    ]
+}

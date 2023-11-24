@@ -1,0 +1,60 @@
+{
+    "api_list": [
+        {
+            "name": "getQuestionsandAnswers",
+            "schema": {
+                "status": "str",
+                "data": [
+                    {
+                        "questionId": "int",
+                        "typeDescription": "str",
+                        "questionDescription": "str",
+                        "exam": "str",
+                        "choiceId": "int",
+                        "choiceDescription": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "getQuestionsByExam",
+            "schema": {
+                "status": "str",
+                "data": [
+                    {
+                        "questionId": "int",
+                        "typeDescription": "str",
+                        "questionDescription": "str",
+                        "exam": "str",
+                        "choices": [
+                            {
+                                "choiceId": "int",
+                                "choiceDescription": "str"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "name": "getOneQuestionWithAnswers",
+            "schema": {
+                "status": "str",
+                "data": [
+                    {
+                        "questionId": "int",
+                        "typeDescription": "str",
+                        "questionDescription": "str",
+                        "exam": "str",
+                        "choices": [
+                            {
+                                "choiceId": "int",
+                                "choiceDescription": "str"
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}

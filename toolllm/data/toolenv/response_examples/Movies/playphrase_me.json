@@ -1,0 +1,12 @@
+{
+    "api_list": [
+        {
+            "name": "Get  Video",
+            "schema": {
+                "count": "int",
+                "phrases": "str",
+                "subscription": "bool"
+            }
+        }
+    ]
+}

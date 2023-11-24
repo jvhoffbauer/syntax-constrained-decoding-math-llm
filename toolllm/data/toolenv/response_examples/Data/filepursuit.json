@@ -1,0 +1,34 @@
+{
+    "api_list": [
+        {
+            "name": "pursuit",
+            "schema": {
+                "status": "str",
+                "files_found": [
+                    {
+                        "file_id": "str",
+                        "file_type": "str",
+                        "file_name": "str",
+                        "file_link": "str",
+                        "date_added": "str",
+                        "time_ago": "str",
+                        "file_size": "str",
+                        "file_size_bytes": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "discover",
+            "schema": {
+                "status": "str",
+                "result": [
+                    {
+                        "domain_name": "str",
+                        "domain_link": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

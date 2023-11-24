@@ -1,0 +1,32 @@
+{
+    "api_list": [
+        {
+            "name": "Get Watches By Brand Family Model",
+            "schema": {
+                "id": "int",
+                "title": "str",
+                "watchName": "str",
+                "brand": "str",
+                "family": "str",
+                "model": "str",
+                "caseMaterial": "str",
+                "caseGlass": "str",
+                "caseBack": "str",
+                "caseDiameter": "str",
+                "dialColor": "str",
+                "dialIndexes": "str",
+                "dialHands": "str",
+                "movementBrand": "str",
+                "movementCaliber": "str",
+                "movementDate": "str",
+                "movementDiameter": "str",
+                "movementDisplay": "str",
+                "movementFrequency": "str",
+                "movementJewels": "str",
+                "movementReserve": "str",
+                "movementTime": "str",
+                "movementType": "str"
+            }
+        }
+    ]
+}

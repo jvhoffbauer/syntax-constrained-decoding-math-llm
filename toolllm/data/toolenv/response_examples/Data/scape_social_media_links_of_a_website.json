@@ -1,0 +1,14 @@
+{
+    "api_list": [
+        {
+            "name": "Scrape Social Links",
+            "schema": {
+                "socials": {
+                    "linkedin": "str",
+                    "twitter": "str"
+                },
+                "success": "bool"
+            }
+        }
+    ]
+}

@@ -1,0 +1,146 @@
+{
+    "api_list": [
+        {
+            "name": "Latest Posts",
+            "schema": {
+                "count": "str",
+                "next": "str",
+                "previous": "str",
+                "results": [
+                    {
+                        "category": {
+                            "title": "str",
+                            "categoryDesc": "str"
+                        },
+                        "title": "str",
+                        "excerpt": "str",
+                        "tags": "str",
+                        "date_published": "str",
+                        "image": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Blogs by category",
+            "schema": {
+                "count": "str",
+                "next": "str",
+                "previous": "str",
+                "results": [
+                    {
+                        "category": {
+                            "title": "str"
+                        },
+                        "title": "str",
+                        "body": "str",
+                        "excerpt": "str",
+                        "tags": "str",
+                        "image": "str",
+                        "date_published": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Search Tags",
+            "schema": {
+                "count": "str",
+                "next": "str",
+                "previous": "str",
+                "results": [
+                    {
+                        "category": {
+                            "title": "str",
+                            "categoryDesc": "str",
+                            "categoryImage": "str"
+                        },
+                        "title": "str",
+                        "excerpt": "str",
+                        "tags": "str",
+                        "image": "str",
+                        "date_published": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Single Category",
+            "schema": {
+                "id": "int",
+                "title": "str",
+                "categoryImage": "str"
+            }
+        },
+        {
+            "name": "Categories",
+            "schema": {
+                "id": "int",
+                "title": "str",
+                "categoryDesc": "str",
+                "categoryImage": "str"
+            }
+        },
+        {
+            "name": "Search",
+            "schema": {
+                "count": "str",
+                "results": [
+                    {
+                        "category": {
+                            "title": "str"
+                        },
+                        "title": "str",
+                        "body": "str",
+                        "excerpt": "str",
+                        "tags": "str",
+                        "image": "str",
+                        "date_published": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Single blog",
+            "schema": {
+                "count": "str",
+                "results": [
+                    {
+                        "id": "str",
+                        "category": {
+                            "title": "str"
+                        },
+                        "title": "str",
+                        "body": "str",
+                        "excerpt": "str",
+                        "tags": "str",
+                        "image": "str",
+                        "date_published": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "All blogs",
+            "schema": {
+                "count": "str",
+                "next": "str",
+                "previous": "str",
+                "results": [
+                    {
+                        "id": "str",
+                        "category": {
+                            "title": "str"
+                        },
+                        "title": "str",
+                        "body": "str",
+                        "excerpt": "str",
+                        "tags": "str",
+                        "image": "str",
+                        "date_published": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "api_list": [
+        {
+            "name": "getNews",
+            "schema": {
+                "title": "str",
+                "description": "str",
+                "url": "str",
+                "date": "str"
+            }
+        }
+    ]
+}

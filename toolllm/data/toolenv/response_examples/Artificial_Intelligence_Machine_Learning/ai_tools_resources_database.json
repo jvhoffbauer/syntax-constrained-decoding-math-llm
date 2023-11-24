@@ -1,0 +1,66 @@
+{
+    "api_list": [
+        {
+            "name": "News",
+            "schema": {
+                "_id": "str",
+                "favCount": "int",
+                "featured": "bool",
+                "title": "str",
+                "articleLink": "str",
+                "contributor": "str",
+                "categories": [
+                    "list of str with length 1"
+                ],
+                "publishedAt": "str"
+            }
+        },
+        {
+            "name": "Tags",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Tools / apps",
+            "schema": {
+                "_id": "str",
+                "favCount": "str",
+                "featured": "str",
+                "mainImage": {
+                    "_type": "str",
+                    "asset": {
+                        "_ref": "str",
+                        "_type": "str"
+                    }
+                },
+                "publishedAt": "str",
+                "publishedAt_timestamp": "str",
+                "reviewStats": {
+                    "reviewCount": "str",
+                    "reviewScore": "str"
+                },
+                "slug": {
+                    "_type": "str",
+                    "current": "str"
+                },
+                "socialLinks": [
+                    "list of str with length 1"
+                ],
+                "startingPrice": "str",
+                "status": "str",
+                "tagsIndex": [
+                    "list of str with length 1"
+                ],
+                "toolCategories": [
+                    {
+                        "categoryCode": "str",
+                        "categoryDescription": [
+                            "list of str with length 1"
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}

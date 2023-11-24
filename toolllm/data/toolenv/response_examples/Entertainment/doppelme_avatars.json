@@ -1,0 +1,41 @@
+{
+    "api_list": [
+        {
+            "name": "List Assets",
+            "schema": {
+                "status": "str",
+                "asset_ids": [
+                    {
+                        "id": "str",
+                        "type": "str",
+                        "colorable": "str",
+                        "thumbnailSrc": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "List Asset Types",
+            "schema": {
+                "status": "str",
+                "asset_style": [
+                    {
+                        "type": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "List Body Types",
+            "schema": {
+                "status": "str",
+                "bodytypes": [
+                    {
+                        "id": "int",
+                        "imageSrc": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

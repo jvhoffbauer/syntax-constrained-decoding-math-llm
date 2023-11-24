@@ -1,0 +1,118 @@
+{
+    "api_list": [
+        {
+            "name": "Get User Profile",
+            "schema": {
+                "about": "str",
+                "avatarUrl": "str",
+                "fullName": "str",
+                "isActivePro": "bool",
+                "isActiveProPlus": "bool",
+                "isVerifiedAccount": "bool",
+                "profileUrl": "str",
+                "userId": "str",
+                "username": "str"
+            }
+        },
+        {
+            "name": "Get Post Data (Download Video/Photo)",
+            "schema": {
+                "annotationTags": "empty list",
+                "awardState": "str",
+                "awardUsersCount": "str",
+                "commentsCount": "str",
+                "creationTs": "str",
+                "creator": {
+                    "accountId": "str",
+                    "fullName": "str",
+                    "profileUrl": "str",
+                    "userId": "str",
+                    "username": "str"
+                },
+                "description": "str",
+                "downVoteCount": "str",
+                "hasLongPostCover": "str",
+                "id": "str",
+                "images": {
+                    "image460": {
+                        "height": "str",
+                        "url": "str",
+                        "webpUrl": "str",
+                        "width": "str"
+                    },
+                    "image460sv": {
+                        "hasAudio": "str",
+                        "height": "str",
+                        "url": "str"
+                    }
+                }
+            }
+        },
+        {
+            "name": "Get Posts From Page",
+            "schema": {
+                "nextCursor": "str",
+                "posts": [
+                    {
+                        "awardState": "str",
+                        "awardUsersCount": "str",
+                        "comment": {
+                            "canAnonymous": "str",
+                            "latestCommentText": "str",
+                            "listType": "str",
+                            "opToken": "str",
+                            "pinnedCommentCount": "str",
+                            "updateTs": "str"
+                        },
+                        "commentsCount": "str",
+                        "creationTs": "str",
+                        "creator": {
+                            "about": "str",
+                            "accountId": "str",
+                            "activeTs": "str",
+                            "avatarUrl": "str",
+                            "creationTs": "str",
+                            "emojiStatus": "str",
+                            "fullName": "str",
+                            "isActivePro": "str",
+                            "isActiveProPlus": "str",
+                            "isVerifiedAccount": "str",
+                            "profileUrl": "str",
+                            "userId": "str",
+                            "username": "str"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Get Posts From Category",
+            "schema": {
+                "interest": {
+                    "backgroundImageUrl": "str",
+                    "name": "str",
+                    "url": "str",
+                    "description": "str",
+                    "imageUrl": "str",
+                    "ctaButtonName": "str",
+                    "ctaButtonUrl": "str"
+                },
+                "nextCursor": "str",
+                "posts": [
+                    {
+                        "awardState": "str",
+                        "commentsCount": "str",
+                        "creationTs": "str",
+                        "creator": {
+                            "accountId": "str",
+                            "fullName": "str"
+                        },
+                        "media": {
+                            "imageUrl": "str"
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

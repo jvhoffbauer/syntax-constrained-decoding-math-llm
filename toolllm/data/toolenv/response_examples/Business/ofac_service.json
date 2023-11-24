@@ -1,0 +1,44 @@
+{
+    "api_list": [
+        {
+            "name": "GET /data/entity/{uid}",
+            "schema": {
+                "info": {
+                    "total_entry_count": "int"
+                },
+                "entity": {
+                    "uid": "int",
+                    "first_name": "str",
+                    "last_name": "str",
+                    "type": "str",
+                    "remarks": "str",
+                    "score": "int",
+                    "alt_names": "str",
+                    "addresses": "str",
+                    "ids": [
+                        {
+                            "id_type": "str",
+                            "id_number": "str",
+                            "id_country": "str"
+                        }
+                    ],
+                    "birth_dates": [
+                        {
+                            "birth_date": "str",
+                            "main_entry": "bool"
+                        }
+                    ]
+                },
+                "ErrorCode": "NoneType",
+                "ErrorMessage": "NoneType",
+                "Success": "bool"
+            }
+        },
+        {
+            "name": "GET /data/info",
+            "schema": {
+                "message": "str"
+            }
+        }
+    ]
+}

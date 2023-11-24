@@ -1,0 +1,20 @@
+{
+    "api_list": [
+        {
+            "name": "Categories",
+            "schema": {
+                "category_name": "str",
+                "parent_category": "str",
+                "words": "str"
+            }
+        },
+        {
+            "name": "Languages",
+            "schema": {
+                "id": "str",
+                "language_name": "str",
+                "words": "str"
+            }
+        }
+    ]
+}

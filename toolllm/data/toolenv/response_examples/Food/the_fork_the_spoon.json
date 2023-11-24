@@ -1,0 +1,264 @@
+{
+    "api_list": [
+        {
+            "name": "restaurants/auto-complete (Deprecated)",
+            "schema": {
+                "data": {
+                    "autocomplete": [
+                        {
+                            "name": {
+                                "text": "str"
+                            },
+                            "categoryId": "str"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "locations/auto-complete (Deprecated)",
+            "schema": {
+                "data": {
+                    "geolocation": [
+                        {
+                            "name": {
+                                "text": "str"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "reviews/get-stat",
+            "schema": {
+                "result": "int",
+                "result_msg": "str"
+            }
+        },
+        {
+            "name": "reviews/list",
+            "schema": {
+                "result": "int",
+                "result_code": "str",
+                "result_msg": "str"
+            }
+        },
+        {
+            "name": "reviews/list-best",
+            "schema": {
+                "result": "int",
+                "result_msg": "str"
+            }
+        },
+        {
+            "name": "restaurants/v2/list",
+            "schema": {
+                "data": [
+                    {
+                        "name": "str",
+                        "slug": "str",
+                        "geo": {
+                            "longitude": "str",
+                            "latitude": "str"
+                        },
+                        "servesCuisine": "str",
+                        "priceRange": "str",
+                        "currenciesAccepted": "str",
+                        "address": {
+                            "street": "str",
+                            "postalCode": "str",
+                            "locality": "str",
+                            "country": "str"
+                        },
+                        "aggregateRatings": {
+                            "thefork": {
+                                "ratingValue": "str",
+                                "reviewCount": "str"
+                            },
+                            "tripadvisor": {
+                                "ratingValue": "str",
+                                "reviewCount": "str"
+                            }
+                        },
+                        "mainPhotoSrc": "str",
+                        "hasLoyaltyProgram": "str",
+                        "isBookable": "str",
+                        "isInsider": "str",
+                        "uuid": "str",
+                        "canBurnYums": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "locations/list (Deprecated)",
+            "schema": {
+                "coordinates": {
+                    "latitude": "float",
+                    "longitude": "float"
+                },
+                "prediction": {
+                    "address_components": [
+                        {
+                            "long_name": "str",
+                            "short_name": "str",
+                            "types": [
+                                "list of str with length 1"
+                            ]
+                        }
+                    ],
+                    "formatted_address": "str",
+                    "geometry": {
+                        "location": {
+                            "lat": "float",
+                            "lng": "float"
+                        },
+                        "location_type": "str"
+                    },
+                    "place_id": "str",
+                    "types": [
+                        "list of str with length 1"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "locations/v2/list",
+            "schema": {
+                "coordinates": {
+                    "latitude": "float",
+                    "longitude": "float"
+                },
+                "id_city": "int",
+                "prediction": {
+                    "address_components": [
+                        {
+                            "long_name": "str",
+                            "short_name": "str"
+                        }
+                    ],
+                    "formatted_address": "str",
+                    "geometry": {
+                        "location": {
+                            "lat": "float",
+                            "lng": "float"
+                        },
+                        "location_type": "str",
+                        "viewport": {
+                            "northeast": {
+                                "lat": "float",
+                                "lng": "float"
+                            },
+                            "southwest": {
+                                "lat": "float",
+                                "lng": "float"
+                            }
+                        }
+                    },
+                    "place_id": "str"
+                }
+            }
+        },
+        {
+            "name": "locations/v2/auto-complete",
+            "schema": {
+                "data": {
+                    "geolocation": [
+                        {
+                            "type": "str",
+                            "id": {
+                                "id": "str",
+                                "type": "str"
+                            },
+                            "name": {
+                                "text": "str"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "restaurants/v2/get-info",
+            "schema": {
+                "errors": [
+                    {
+                        "extensions": {
+                            "code": "str"
+                        }
+                    }
+                ],
+                "data": {
+                    "restaurant": "NoneType"
+                }
+            }
+        },
+        {
+            "name": "restaurants/list (Deprecated)",
+            "schema": {
+                "data": [
+                    {
+                        "name": "str",
+                        "slug": "str",
+                        "geo": {
+                            "longitude": "str",
+                            "latitude": "str"
+                        },
+                        "servesCuisine": "str",
+                        "priceRange": "str",
+                        "currenciesAccepted": "str",
+                        "address": {
+                            "street": "str",
+                            "postalCode": "str",
+                            "locality": "str",
+                            "country": "str"
+                        },
+                        "aggregateRatings": {
+                            "thefork": {
+                                "ratingValue": "str",
+                                "reviewCount": "str"
+                            },
+                            "tripadvisor": {
+                                "ratingValue": "str",
+                                "reviewCount": "str"
+                            }
+                        },
+                        "mainPhoto": {
+                            "612x344": "str",
+                            "480x270": "str"
+                        },
+                        "hasLoyaltyProgram": "str",
+                        "isBookable": "str",
+                        "bestOffer": {
+                            "name": "str",
+                            "label": "str"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "restaurants/v2/auto-complete",
+            "schema": {
+                "data": {
+                    "autocomplete": [
+                        {
+                            "id": "str",
+                            "name": {
+                                "text": "str",
+                                "highlight": [
+                                    {
+                                        "offset": "int",
+                                        "length": "int"
+                                    }
+                                ]
+                            },
+                            "categoryId": "str"
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

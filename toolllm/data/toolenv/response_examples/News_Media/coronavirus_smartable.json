@@ -1,0 +1,71 @@
+{
+    "api_list": [
+        {
+            "name": "GetNews",
+            "schema": {
+                "location": {
+                    "countryOrRegion": "str",
+                    "isoCode": "str"
+                },
+                "updatedDateTime": "str",
+                "news": [
+                    {
+                        "title": "str",
+                        "excerpt": "str",
+                        "webUrl": "str",
+                        "images": [
+                            {
+                                "url": "str"
+                            }
+                        ],
+                        "type": "str",
+                        "publishedDateTime": "str",
+                        "provider": {
+                            "name": "str",
+                            "domain": "str"
+                        },
+                        "locale": "str",
+                        "categories": [
+                            "list of str with length 1"
+                        ],
+                        "topics": [
+                            "list of str with length 1"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "name": "GetStats",
+            "schema": {
+                "location": {
+                    "countryOrRegion": "str",
+                    "isoCode": "str"
+                },
+                "updatedDateTime": "str",
+                "stats": {
+                    "totalConfirmedCases": "int",
+                    "newlyConfirmedCases": "int",
+                    "totalDeaths": "int",
+                    "newDeaths": "int",
+                    "totalRecoveredCases": "int",
+                    "newlyRecoveredCases": "int"
+                },
+                "breakdowns": [
+                    {
+                        "location": {
+                            "countryOrRegion": "str",
+                            "provinceOrState": "str"
+                        },
+                        "totalConfirmedCases": "int",
+                        "newlyConfirmedCases": "int",
+                        "totalDeaths": "int",
+                        "newDeaths": "int",
+                        "totalRecoveredCases": "int",
+                        "newlyRecoveredCases": "int"
+                    }
+                ]
+            }
+        }
+    ]
+}

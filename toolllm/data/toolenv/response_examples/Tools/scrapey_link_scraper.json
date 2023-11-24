@@ -1,0 +1,16 @@
+{
+    "api_list": [
+        {
+            "name": "Scrape Links",
+            "schema": {
+                "status": "str",
+                "data": [
+                    {
+                        "text": "str",
+                        "href": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

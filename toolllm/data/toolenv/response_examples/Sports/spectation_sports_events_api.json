@@ -1,0 +1,104 @@
+{
+    "api_list": [
+        {
+            "name": "Fighters",
+            "schema": {
+                "fighters": [
+                    {
+                        "id": "int",
+                        "slug": "str",
+                        "name": "str",
+                        "weightClass": "str",
+                        "level": "str",
+                        "win": "int",
+                        "loss": "int",
+                        "draw": "int"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Fights",
+            "schema": {
+                "fights": "str",
+                "meta": {
+                    "total": "int",
+                    "pageSize": "int",
+                    "totalPages": "int"
+                }
+            }
+        },
+        {
+            "name": "Event",
+            "schema": {
+                "id": "int",
+                "title": "str",
+                "promotion": "str",
+                "location": "str",
+                "startTime": "str",
+                "endTime": "str",
+                "venueName": "str",
+                "fights": [
+                    {
+                        "title": "str",
+                        "sport": "str",
+                        "category": "str",
+                        "startTime": "str",
+                        "redCorner": "int",
+                        "blueCorner": "int",
+                        "winner": "int",
+                        "outcome": "str",
+                        "method": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Events",
+            "schema": {
+                "events": [
+                    {
+                        "id": "str",
+                        "title": "str",
+                        "slug": "str",
+                        "promotion": "str",
+                        "location": "str",
+                        "startTime": "str",
+                        "endTime": "str",
+                        "venueName": "str",
+                        "venueCapacity": "str",
+                        "enclosureType": "str",
+                        "fights": [
+                            {
+                                "id": "str",
+                                "slug": "str",
+                                "title": "str",
+                                "sport": "str",
+                                "category": "str",
+                                "startTime": "str",
+                                "endTime": "str",
+                                "event": "str",
+                                "level": "str",
+                                "scheduledRounds": "str",
+                                "titleBout": "str",
+                                "redCorner": "str",
+                                "blueCorner": "str",
+                                "winner": "str",
+                                "outcome": "str",
+                                "method": "str"
+                            }
+                        ]
+                    }
+                ],
+                "meta": {
+                    "total": "str",
+                    "page": "str",
+                    "pageSize": "str",
+                    "totalPages": "str",
+                    "nextPage": "str",
+                    "prevPage": "str"
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,20 @@
+{
+    "api_list": [
+        {
+            "name": "Age Calculator",
+            "schema": {
+                "age": "int",
+                "year": "int",
+                "month": "int",
+                "day": "int",
+                "timeZone": "str"
+            }
+        },
+        {
+            "name": "Usable Time Zones",
+            "schema": {
+                "timezones": "str"
+            }
+        }
+    ]
+}

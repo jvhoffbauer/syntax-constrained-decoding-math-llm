@@ -1,0 +1,24 @@
+{
+    "api_list": [
+        {
+            "name": "Get OHLC history",
+            "schema": {
+                "history": [
+                    {
+                        "Date": "str",
+                        "Close": "str",
+                        "Open": "str",
+                        "High": "str",
+                        "Low": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Get Symbols",
+            "schema": {
+                "symbols": "empty list"
+            }
+        }
+    ]
+}

@@ -1,0 +1,193 @@
+{
+    "api_list": [
+        {
+            "name": "Get all employees' payment cards.",
+            "schema": {
+                "data": [
+                    {
+                        "cardTypeCode": "str",
+                        "issuingBank": "str",
+                        "cardNumber": "int",
+                        "cardHolderName": "str",
+                        "expiryDate": "str",
+                        "creditLimit": "int"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Get a specific employee by employee ID.",
+            "schema": {
+                "data": {
+                    "empID": "int",
+                    "namePrefix": "str",
+                    "firstName": "str",
+                    "lastName": "str",
+                    "gender": "str",
+                    "email": "str",
+                    "dateOfBirth": "str",
+                    "dateOfJoining": "str",
+                    "salary": "int",
+                    "ssn": "str",
+                    "phoneNumber": "str",
+                    "placeName": "str",
+                    "city": "str",
+                    "state": "str",
+                    "zip": "int",
+                    "region": "str",
+                    "username": "str",
+                    "bankCardNumber": "int"
+                }
+            }
+        },
+        {
+            "name": "Get a specific payment card by card number.",
+            "schema": {
+                "data": {
+                    "cardTypeCode": "str",
+                    "cardTypeFullName": "str",
+                    "issuingBank": "str",
+                    "cardNumber": "int",
+                    "cardHolderName": "str",
+                    "ccv_ccv2": "int",
+                    "issueDate": "str",
+                    "expiryDate": "str",
+                    "creditLimit": "int",
+                    "cardHolderID": "int"
+                }
+            }
+        },
+        {
+            "name": "Paginate through campany employees information.",
+            "schema": {
+                "metadata": {
+                    "message": "str",
+                    "start": "str",
+                    "end": "str",
+                    "previousPage": "str",
+                    "currentPage": "str",
+                    "nextPage": "str",
+                    "totalPages": "str"
+                },
+                "data": [
+                    {
+                        "empID": "str",
+                        "namePrefix": "str",
+                        "firstName": "str",
+                        "lastName": "str",
+                        "email": "str",
+                        "dateOfJoining": "str",
+                        "ageInCompany_Years": "str",
+                        "salary": "str",
+                        "placeName": "str",
+                        "city": "str",
+                        "state": "str",
+                        "zip": "str",
+                        "username": "str",
+                        "password": "str",
+                        "bankCardNumber": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Paginate through  employees payment cards infomation.",
+            "schema": {
+                "metadata": {
+                    "message": "str",
+                    "start": "int",
+                    "end": "int",
+                    "previousPage": "NoneType",
+                    "currentPage": "int",
+                    "nextPage": "int",
+                    "totalPages": "int"
+                },
+                "data": [
+                    {
+                        "cardTypeCode": "str",
+                        "issuingBank": "str",
+                        "cardNumber": "int",
+                        "cardHolderName": "str",
+                        "ccv_ccv2": "int",
+                        "expiryDate": "str",
+                        "creditLimit": "int",
+                        "cardHolderID": "int"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Get employee information associated with a specific payment card.",
+            "schema": {
+                "metadata": {
+                    "message": "str"
+                },
+                "data": {
+                    "empID": "int",
+                    "namePrefix": "str",
+                    "firstName": "str",
+                    "lastName": "str",
+                    "gender": "str",
+                    "email": "str",
+                    "dateOfBirth": "str",
+                    "dateOfJoining": "str",
+                    "salary": "int",
+                    "ssn": "str",
+                    "phoneNumber": "str",
+                    "placeName": "str",
+                    "state": "str",
+                    "zip": "int",
+                    "username": "str",
+                    "password": "str",
+                    "bankCardNumber": "int"
+                }
+            }
+        },
+        {
+            "name": "Get payment cards information associated with a specific employee.",
+            "schema": {
+                "data": {
+                    "cardTypeCode": "str",
+                    "cardTypeFullName": "str",
+                    "issuingBank": "str",
+                    "cardNumber": "int",
+                    "cardHolderName": "str",
+                    "ccv_ccv2": "int",
+                    "issueDate": "str",
+                    "expiryDate": "str",
+                    "creditLimit": "int",
+                    "cardHolderID": "int"
+                }
+            }
+        },
+        {
+            "name": "Get all campany employees information.",
+            "schema": {
+                "metadata": {
+                    "message": "str"
+                },
+                "data": [
+                    {
+                        "empID": "int",
+                        "namePrefix": "str",
+                        "firstName": "str",
+                        "lastName": "str",
+                        "email": "str",
+                        "dateOfBirth": "str",
+                        "dateOfJoining": "str",
+                        "salary": "int",
+                        "ssn": "str",
+                        "phoneNumber": "str",
+                        "placeName": "str",
+                        "city": "str",
+                        "state": "str",
+                        "zip": "int",
+                        "username": "str",
+                        "password": "str",
+                        "bankCardNumber": "int"
+                    }
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "api_list": [
+        {
+            "name": "regions",
+            "schema": {
+                "status": "str",
+                "regions": [
+                    {
+                        "code": "str",
+                        "name": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

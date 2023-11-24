@@ -1,0 +1,64 @@
+{
+    "api_list": [
+        {
+            "name": "Current Mail",
+            "schema": {
+                "mail_get_user": "str",
+                "mail_get_mail": "str",
+                "mail_get_host": "str",
+                "mail_get_time": "int",
+                "mail_get_duetime": "int",
+                "mail_server_time": "int",
+                "mail_get_key": "str",
+                "mail_left_time": "int",
+                "permalink": {
+                    "host": "str",
+                    "mail": "str",
+                    "url": "str",
+                    "key": "str",
+                    "time": "int"
+                },
+                "mail_list": [
+                    {
+                        "mail_id": "str",
+                        "from": "str",
+                        "subject": "str",
+                        "datetime": "str",
+                        "datetime2": "str",
+                        "timeago": "int",
+                        "isread": "bool"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "getNewEmail10",
+            "schema": {
+                "mail_get_user": "str",
+                "mail_get_mail": "str",
+                "mail_get_host": "str",
+                "mail_get_time": "int",
+                "mail_get_duetime": "int",
+                "mail_server_time": "int",
+                "mail_get_key": "str",
+                "mail_left_time": "int",
+                "permalink": {
+                    "host": "str",
+                    "mail": "str",
+                    "url": "str",
+                    "key": "str",
+                    "time": "int"
+                },
+                "mail_list": [
+                    {
+                        "mail_id": "str",
+                        "from": "str",
+                        "subject": "str",
+                        "datetime": "str",
+                        "isread": "bool"
+                    }
+                ]
+            }
+        }
+    ]
+}

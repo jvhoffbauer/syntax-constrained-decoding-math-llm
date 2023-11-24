@@ -1,0 +1,11 @@
+{
+    "api_list": [
+        {
+            "name": "Weather Data",
+            "schema": {
+                "statusCode": "int",
+                "message": "str"
+            }
+        }
+    ]
+}

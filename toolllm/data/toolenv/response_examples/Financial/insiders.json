@@ -1,0 +1,67 @@
+{
+    "api_list": [
+        {
+            "name": "gedetailedtinsiders",
+            "schema": {
+                "CIK": "str",
+                "issuerName": "str",
+                "issuerTradingSymbols": [
+                    "list of str with length 1"
+                ],
+                "LastTransaction": "str",
+                "insideTransactions": [
+                    {
+                        "CIK": "str",
+                        "reportingOwner": [
+                            {
+                                "name": "str",
+                                "reportingOwnerCik": "str",
+                                "Director": "str",
+                                "Officer": "str",
+                                "title": "str"
+                            }
+                        ],
+                        "periodOfReport": "str",
+                        "accessionNumber": "str",
+                        "SECDocumentURL": "str",
+                        "transactions": [
+                            {
+                                "type": "str",
+                                "description": "str"
+                            }
+                        ]
+                    }
+                ],
+                "compnayTransactions": [
+                    {
+                        "CIK": "str",
+                        "reportingOwner": [
+                            {
+                                "name": "str",
+                                "reportingOwnerCik": "str",
+                                "10% Owner": "str",
+                                "title": "str"
+                            }
+                        ],
+                        "periodOfReport": "str",
+                        "accessionNumber": "str",
+                        "SECDocumentURL": "str",
+                        "transactions": [
+                            {
+                                "type": "str",
+                                "description": "str",
+                                "transactions": [
+                                    {
+                                        "securityTitle": "str",
+                                        "transactionShares": "str",
+                                        "transactionPricePerShare": "str"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}

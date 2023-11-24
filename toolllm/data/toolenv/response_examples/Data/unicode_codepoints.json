@@ -1,0 +1,88 @@
+{
+    "api_list": [
+        {
+            "name": "Codepoint",
+            "schema": {
+                "cp": "str",
+                "age": "str",
+                "na": "str",
+                "blk": "str",
+                "gc": "str",
+                "sc": "str",
+                "bc": "str",
+                "ccc": "str",
+                "dt": "str",
+                "dm": "str",
+                "Lower": "str",
+                "slc": "str",
+                "lc": "str",
+                "Upper": "str",
+                "suc": "str",
+                "uc": "str",
+                "stc": "str",
+                "tc": "str",
+                "cf": "str",
+                "AHex": "str",
+                "Alpha": "str",
+                "Bidi_C": "str",
+                "Bidi_M": "str",
+                "CE": "str",
+                "CI": "str",
+                "CWCF": "str",
+                "CWCM": "str",
+                "CWKCF": "str",
+                "CWL": "str",
+                "CWT": "str",
+                "CWU": "str",
+                "Cased": "str",
+                "Comp_Ex": "str",
+                "DI": "str",
+                "Dash": "str",
+                "Dep": "str",
+                "Dia": "str",
+                "EBase": "str",
+                "EComp": "str",
+                "EMod": "str",
+                "EPres": "str",
+                "Emoji": "str",
+                "Ext": "str",
+                "ExtPict": "str",
+                "FC_NFKC": "str",
+                "GCB": "str",
+                "Gr_Base": "str",
+                "Gr_Ext": "str",
+                "Gr_Link": "str",
+                "Hex": "str",
+                "Hyphen": "str",
+                "IDC": "str",
+                "IDS": "str",
+                "IDSB": "str",
+                "IDST": "str",
+                "Ideo": "str",
+                "JSN": "str",
+                "Join_C": "str",
+                "LOE": "str",
+                "Math": "str",
+                "NChar": "str",
+                "NFC_QC": "str",
+                "NFD_QC": "str"
+            }
+        },
+        {
+            "name": "Script",
+            "schema": {
+                "name": "str",
+                "abstract": "str",
+                "src": "str"
+            }
+        },
+        {
+            "name": "Block",
+            "schema": {
+                "name": "str",
+                "first": "int",
+                "last": "int"
+            }
+        }
+    ]
+}

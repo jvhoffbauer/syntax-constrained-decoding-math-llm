@@ -1,0 +1,19 @@
+{
+    "api_list": [
+        {
+            "name": "Bouncer Email Checker",
+            "schema": {
+                "status": "str",
+                "domain": "str",
+                "email_address": "str",
+                "data": {
+                    "valid_syntax": "bool",
+                    "webmail": "bool",
+                    "catch_all": "bool",
+                    "deliverable": "bool"
+                },
+                "tools": "str"
+            }
+        }
+    ]
+}

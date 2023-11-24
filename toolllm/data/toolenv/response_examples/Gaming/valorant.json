@@ -1,0 +1,17 @@
+{
+    "api_list": [
+        {
+            "name": "Valorant Players",
+            "schema": {
+                "id": "int",
+                "Rank": "int",
+                "Player": "str",
+                "Gold": "int",
+                "Silver": "int",
+                "Bronze": "int",
+                "S_Tier": "int",
+                "Earnings": "str"
+            }
+        }
+    ]
+}

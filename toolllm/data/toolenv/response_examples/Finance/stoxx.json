@@ -1,0 +1,55 @@
+{
+    "api_list": [
+        {
+            "name": "Get Company Historical Data",
+            "schema": {
+                "symbol": "str",
+                "date": "str",
+                "open": "float",
+                "high": "float",
+                "low": "float",
+                "close": "float",
+                "volume": "int"
+            }
+        },
+        {
+            "name": "Get Company Quote / Price Data",
+            "schema": {
+                "exchange": "str",
+                "high52w": "float",
+                "low52w": "float",
+                "marketCap": "int",
+                "name": "str",
+                "pe": "float",
+                "symbol": "str",
+                "volume": "int"
+            }
+        },
+        {
+            "name": "Get Company Market Performance",
+            "schema": {
+                "performance": "float",
+                "sector": "str",
+                "symbol": "str"
+            }
+        },
+        {
+            "name": "Get Company Competition",
+            "schema": {
+                "company": "str",
+                "competition": "empty list"
+            }
+        },
+        {
+            "name": "Get Company Information",
+            "schema": {
+                "companyName": "str",
+                "country": "str",
+                "industry": "str",
+                "sector": "str",
+                "symbol": "str",
+                "website": "str"
+            }
+        }
+    ]
+}

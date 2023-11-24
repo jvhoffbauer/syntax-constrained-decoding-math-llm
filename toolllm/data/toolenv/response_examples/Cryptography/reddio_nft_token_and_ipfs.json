@@ -1,0 +1,14 @@
+{
+    "api_list": [
+        {
+            "name": "Getwallets",
+            "schema": {
+                "wallets": [
+                    {
+                        "stark_key": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

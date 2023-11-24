@@ -1,0 +1,26 @@
+{
+    "api_list": [
+        {
+            "name": "YMM",
+            "schema": {
+                "data": [
+                    {
+                        "attributes": {
+                            "Year": "int",
+                            "Make": "str",
+                            "Model": "str"
+                        }
+                    }
+                ],
+                "meta": {
+                    "pagination": {
+                        "page": "int",
+                        "pageSize": "int",
+                        "pageCount": "int",
+                        "total": "int"
+                    }
+                }
+            }
+        }
+    ]
+}

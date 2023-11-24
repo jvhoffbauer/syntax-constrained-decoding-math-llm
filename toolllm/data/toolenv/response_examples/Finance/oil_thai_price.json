@@ -1,0 +1,63 @@
+{
+    "api_list": [
+        {
+            "name": "Get latest price",
+            "schema": {
+                "info": {
+                    "lastupdate": "str",
+                    "diffdays": "str"
+                },
+                "Premium Diesel B7": {
+                    "latest": "str",
+                    "change": "str"
+                },
+                "Diesel B10": {
+                    "latest": "str",
+                    "change": "str"
+                },
+                "Normal Diesel": {
+                    "latest": "str",
+                    "change": "str"
+                },
+                "Diesel B20": {
+                    "latest": "str",
+                    "change": "str"
+                },
+                "Gasohol E85": {
+                    "latest": "str",
+                    "change": "str"
+                },
+                "Gasohol E20": {
+                    "latest": "str",
+                    "change": "str"
+                },
+                "Gasohol 91": {
+                    "latest": "str",
+                    "change": "str"
+                },
+                "Gasohol 95": {
+                    "latest": "str",
+                    "change": "str"
+                },
+                "ULG": {
+                    "latest": "str",
+                    "change": "str"
+                },
+                "Hi Premium 97 Gasohol 95": {
+                    "latest": "str",
+                    "change": "str"
+                },
+                "Super Power Gasohol 95": {
+                    "latest": "str",
+                    "change": "str"
+                }
+            }
+        },
+        {
+            "name": "Get image result today price",
+            "schema": {
+                "messages": "str"
+            }
+        }
+    ]
+}

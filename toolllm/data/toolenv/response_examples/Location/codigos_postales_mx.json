@@ -1,0 +1,22 @@
+{
+    "api_list": [
+        {
+            "name": "Obtener CP",
+            "schema": {
+                "codigoPostal": "str",
+                "municipio": {
+                    "nombre": "str",
+                    "clave": "str"
+                },
+                "colonia": "str",
+                "estado": {
+                    "nombre": "str"
+                },
+                "asenta": {
+                    "tipo": "str"
+                },
+                "tipoDeZona": "str"
+            }
+        }
+    ]
+}

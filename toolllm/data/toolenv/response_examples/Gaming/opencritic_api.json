@@ -1,0 +1,477 @@
+{
+    "api_list": [
+        {
+            "name": "Reviews for Game (legacy fix)",
+            "schema": {
+                "_id": "str",
+                "magic": "str",
+                "isChosen": "str",
+                "title": "str",
+                "publishedDate": "str",
+                "externalUrl": "str",
+                "snippet": "str",
+                "language": "str",
+                "score": "str",
+                "npScore": "str",
+                "isQuoteManual": "str",
+                "Authors": [
+                    {
+                        "_id": "str",
+                        "name": "str"
+                    }
+                ],
+                "ScoreFormat": {
+                    "name": "str",
+                    "shortName": "str",
+                    "scoreDisplay": "str",
+                    "isNumeric": "str",
+                    "isSelect": "str",
+                    "isStars": "str"
+                },
+                "Platforms": [
+                    {
+                        "_id": "str",
+                        "name": "str",
+                        "shortName": "str"
+                    }
+                ],
+                "alias": "str",
+                "game": {
+                    "id": "str",
+                    "name": "str"
+                },
+                "Outlet": {
+                    "name": "str",
+                    "isContributor": "str",
+                    "id": "str"
+                },
+                "createdAt": "str",
+                "updatedAt": "str"
+            }
+        },
+        {
+            "name": "/game/{id}",
+            "schema": {
+                "images": {
+                    "box": {
+                        "og": "str",
+                        "sm": "str"
+                    },
+                    "square": {
+                        "og": "str",
+                        "xs": "str",
+                        "sm": "str",
+                        "lg": "str"
+                    },
+                    "masthead": {
+                        "og": "str",
+                        "xs": "str",
+                        "sm": "str",
+                        "md": "str",
+                        "lg": "str",
+                        "xl": "str"
+                    },
+                    "banner": {
+                        "og": "str",
+                        "sm": "str"
+                    },
+                    "logo": {
+                        "og": "str"
+                    },
+                    "screenshots": [
+                        {
+                            "og": "str",
+                            "sm": "str"
+                        }
+                    ]
+                },
+                "Rating": {
+                    "imageSrc": "str"
+                },
+                "hasLootBoxes": "str",
+                "percentRecommended": "str",
+                "numReviews": "str",
+                "numTopCriticReviews": "str",
+                "medianScore": "str",
+                "topCriticScore": "str",
+                "percentile": "str",
+                "tier": "str",
+                "name": "str",
+                "description": "str",
+                "screenshots": [
+                    {
+                        "fullRes": "str",
+                        "thumbnail": "str"
+                    }
+                ],
+                "trailers": [
+                    {
+                        "isOpenCritic": "str",
+                        "isSpecial": "str",
+                        "title": "str",
+                        "videoId": "str",
+                        "externalUrl": "str"
+                    }
+                ],
+                "mastheadScreenshot": {
+                    "fullRes": "str",
+                    "thumbnail": "str"
+                }
+            }
+        },
+        {
+            "name": "/game/hall-of-fame",
+            "schema": {
+                "name": "str",
+                "id": "int",
+                "firstReleaseDate": "str",
+                "tier": "str",
+                "topCriticScore": "int"
+            }
+        },
+        {
+            "name": "All Outlet Profiles",
+            "schema": {
+                "imageSrc": {
+                    "og": "str",
+                    "sm": "str",
+                    "lg": "str"
+                },
+                "ScoreFormat": {
+                    "id": "int",
+                    "name": "str",
+                    "scoreDisplay": "str",
+                    "isNumeric": "bool",
+                    "base": "int"
+                },
+                "language": "str",
+                "percentRecommended": "float",
+                "numReviews": "int",
+                "medianScore": "int",
+                "averageScore": "float",
+                "name": "str",
+                "externalUrl": "str",
+                "domain": "str",
+                "recommendedCutoff": "int",
+                "id": "int"
+            }
+        },
+        {
+            "name": "/game/popular",
+            "schema": {
+                "topCriticScore": "float",
+                "tier": "str",
+                "name": "str",
+                "id": "int"
+            }
+        },
+        {
+            "name": "/game",
+            "schema": {
+                "name": "str",
+                "percentRecommended": "float",
+                "numReviews": "int",
+                "topCriticScore": "float",
+                "tier": "str",
+                "Platforms": [
+                    {
+                        "name": "str",
+                        "releaseDate": "str"
+                    }
+                ],
+                "id": "int",
+                "firstReleaseDate": "str",
+                "url": "str"
+            }
+        },
+        {
+            "name": "Score Format",
+            "schema": {
+                "name": "str",
+                "shortName": "str",
+                "scoreDisplay": "str",
+                "isNumeric": "bool",
+                "isSelect": "bool",
+                "isStars": "bool",
+                "numDecimals": "int",
+                "base": "int",
+                "options": "NoneType"
+            }
+        },
+        {
+            "name": "/game/reviewed-this-week",
+            "schema": {
+                "images": {
+                    "box": {
+                        "og": "str",
+                        "sm": "str"
+                    },
+                    "square": {
+                        "og": "str",
+                        "xs": "str",
+                        "sm": "str",
+                        "lg": "str"
+                    },
+                    "masthead": {
+                        "og": "str",
+                        "xs": "str",
+                        "sm": "str",
+                        "md": "str",
+                        "lg": "str",
+                        "xl": "str"
+                    },
+                    "banner": {
+                        "og": "str",
+                        "sm": "str"
+                    },
+                    "screenshots": [
+                        {
+                            "og": "str",
+                            "sm": "str"
+                        }
+                    ]
+                },
+                "topCriticScore": "float",
+                "tier": "str",
+                "name": "str",
+                "id": "int",
+                "firstReleaseDate": "str",
+                "recentReviewCount": "int"
+            }
+        },
+        {
+            "name": "Platform",
+            "schema": {
+                "name": "str",
+                "shortName": "str",
+                "order": "int",
+                "imageSrcV2": "str"
+            }
+        },
+        {
+            "name": "Reviews for Outlet",
+            "schema": {
+                "Outlet": {
+                    "name": "str",
+                    "isContributor": "str",
+                    "id": "str"
+                },
+                "ScoreFormat": {
+                    "name": "str",
+                    "scoreDisplay": "str",
+                    "isNumeric": "str",
+                    "isSelect": "str",
+                    "isStars": "str"
+                },
+                "game": {
+                    "id": "str",
+                    "name": "str"
+                },
+                "language": "str",
+                "Platforms": "str",
+                "Authors": [
+                    {
+                        "name": "str"
+                    }
+                ],
+                "publishedDate": "str",
+                "title": "str",
+                "score": "str",
+                "snippet": "str",
+                "createdAt": "str"
+            }
+        },
+        {
+            "name": "Reviews for Author",
+            "schema": {
+                "Outlet": {
+                    "name": "str",
+                    "id": "str"
+                },
+                "ScoreFormat": {
+                    "name": "str",
+                    "shortName": "str",
+                    "scoreDisplay": "str",
+                    "isNumeric": "str",
+                    "isSelect": "str",
+                    "isStars": "str"
+                },
+                "game": {
+                    "name": "str",
+                    "id": "str"
+                },
+                "_id": "str",
+                "isChosen": "str",
+                "overrideRecommendation": "str",
+                "externalUrl": "str",
+                "language": "str",
+                "Platforms": "str",
+                "Authors": [
+                    {
+                        "name": "str",
+                        "id": "str"
+                    }
+                ],
+                "title": "str",
+                "publishedDate": "str",
+                "snippet": "str",
+                "score": "str",
+                "alias": "str",
+                "npScore": "str"
+            }
+        },
+        {
+            "name": "Outlet Profile",
+            "schema": {
+                "imageSrc": {
+                    "og": "str",
+                    "sm": "str",
+                    "lg": "str"
+                },
+                "ScoreFormat": {
+                    "name": "str",
+                    "shortName": "str",
+                    "isNumeric": "bool",
+                    "isSelect": "bool",
+                    "isStars": "bool",
+                    "numDecimals": "int",
+                    "base": "int"
+                },
+                "language": "str",
+                "usesFixedCutoff": "bool",
+                "percentRecommended": "float",
+                "numReviews": "int",
+                "medianScore": "int",
+                "averageScore": "float",
+                "name": "str",
+                "externalUrl": "str",
+                "domain": "str",
+                "recommendedCutoff": "int",
+                "id": "int"
+            }
+        },
+        {
+            "name": "Author Profile",
+            "schema": {
+                "imageSrc": {
+                    "og": "str",
+                    "sm": "str",
+                    "lg": "str"
+                },
+                "name": "str",
+                "percentRecommended": "float",
+                "numReviews": "int",
+                "medianScore": "int",
+                "averageScore": "float",
+                "externalUrl": "NoneType",
+                "twitter": "str",
+                "steam": "str",
+                "xboxLive": "str",
+                "psn": "str",
+                "nintendoFriendCode": "str",
+                "bio": "str",
+                "hometown": "str",
+                "id": "int"
+            }
+        },
+        {
+            "name": "/game/reviewed-today",
+            "schema": {
+                "topCriticScore": "float",
+                "tier": "str",
+                "name": "str",
+                "id": "int",
+                "firstReleaseDate": "str",
+                "recentReviewCount": "int"
+            }
+        },
+        {
+            "name": "/game/hall-of-fame/{year}",
+            "schema": {
+                "name": "str",
+                "id": "int",
+                "firstReleaseDate": "str",
+                "tier": "str",
+                "topCriticScore": "int",
+                "images": {
+                    "box": {
+                        "og": "str",
+                        "sm": "str"
+                    },
+                    "banner": {
+                        "og": "str",
+                        "sm": "str"
+                    }
+                }
+            }
+        },
+        {
+            "name": "/game/recently-released",
+            "schema": {
+                "name": "str",
+                "firstReleaseDate": "str",
+                "tier": "str",
+                "images": {
+                    "box": {
+                        "og": "str"
+                    },
+                    "banner": {
+                        "og": "str"
+                    }
+                },
+                "topCriticScore": "int"
+            }
+        },
+        {
+            "name": "/game/upcoming",
+            "schema": {
+                "name": "str",
+                "id": "int",
+                "firstReleaseDate": "str",
+                "topCriticScore": "int"
+            }
+        },
+        {
+            "name": "Reviews for Game",
+            "schema": {
+                "_id": "str",
+                "magic": "str",
+                "isChosen": "str",
+                "title": "str",
+                "publishedDate": "str",
+                "externalUrl": "str",
+                "snippet": "str",
+                "language": "str",
+                "score": "str",
+                "npScore": "str",
+                "isQuoteManual": "str",
+                "Authors": [
+                    {
+                        "_id": "str",
+                        "name": "str"
+                    }
+                ],
+                "ScoreFormat": {
+                    "name": "str",
+                    "shortName": "str",
+                    "scoreDisplay": "str"
+                },
+                "Platforms": [
+                    {
+                        "name": "str",
+                        "shortName": "str"
+                    }
+                ],
+                "alias": "str",
+                "game": {
+                    "id": "str",
+                    "name": "str"
+                },
+                "Outlet": {
+                    "name": "str"
+                },
+                "blend_magic": "str"
+            }
+        }
+    ]
+}

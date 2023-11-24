@@ -1,0 +1,36 @@
+{
+    "api_list": [
+        {
+            "name": "/viewed/{period}.json",
+            "schema": {
+                "fault": {
+                    "faultstring": "str"
+                }
+            }
+        },
+        {
+            "name": "/emailed/{period}.json",
+            "schema": {
+                "fault": {
+                    "faultstring": "str"
+                }
+            }
+        },
+        {
+            "name": "/shared/{period}.json",
+            "schema": {
+                "fault": {
+                    "faultstring": "str"
+                }
+            }
+        },
+        {
+            "name": "/shared/{period}/{share_type}.json",
+            "schema": {
+                "fault": {
+                    "faultstring": "str"
+                }
+            }
+        }
+    ]
+}

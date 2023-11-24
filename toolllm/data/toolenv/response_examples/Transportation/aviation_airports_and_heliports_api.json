@@ -1,0 +1,42 @@
+{
+    "api_list": [
+        {
+            "name": "Search airport",
+            "schema": {
+                "errors": {
+                    "keyword": [
+                        "list of str with length 1"
+                    ]
+                },
+                "title": "str",
+                "status": "int"
+            }
+        },
+        {
+            "name": "Get All Airports",
+            "schema": {
+                "api_version": "str",
+                "count": "int",
+                "limit": "int",
+                "page": "int",
+                "items": [
+                    {
+                        "ident": "str",
+                        "type": "str",
+                        "name": "str",
+                        "latitude_deg": "str",
+                        "longitude_deg": "str",
+                        "elevation_ft": "str",
+                        "continent": "str",
+                        "iso_country": "str",
+                        "iso_region": "str",
+                        "scheduled_service": "str",
+                        "gps_code": "str",
+                        "iata_code": "str",
+                        "local_code": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

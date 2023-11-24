@@ -1,0 +1,20 @@
+{
+    "api_list": [
+        {
+            "name": "Get News From All News Sources Related to Artificial Intelligence",
+            "schema": {
+                "title": "str",
+                "link": "str",
+                "source": "str"
+            }
+        },
+        {
+            "name": "Get Recent News From a Single News Source",
+            "schema": {
+                "title": "str",
+                "url": "str",
+                "source": "str"
+            }
+        }
+    ]
+}

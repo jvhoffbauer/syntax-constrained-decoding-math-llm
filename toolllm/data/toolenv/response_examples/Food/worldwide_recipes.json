@@ -1,0 +1,43 @@
+{
+    "api_list": [
+        {
+            "name": "Recipes by author",
+            "schema": {
+                "success": "bool",
+                "message": "str"
+            }
+        },
+        {
+            "name": "Review",
+            "schema": {
+                "success": "bool",
+                "message": "str"
+            }
+        },
+        {
+            "name": "Search",
+            "schema": {
+                "success": "bool",
+                "message": "str"
+            }
+        },
+        {
+            "name": "Explore",
+            "schema": {
+                "success": "bool",
+                "message": "str"
+            }
+        },
+        {
+            "name": "Suggestions",
+            "schema": {
+                "success": "bool",
+                "message": "str",
+                "results": {
+                    "ingredients": "empty list",
+                    "searches": "empty list"
+                }
+            }
+        }
+    ]
+}

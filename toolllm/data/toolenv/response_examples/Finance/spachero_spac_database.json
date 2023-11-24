@@ -1,0 +1,50 @@
+{
+    "api_list": [
+        {
+            "name": "SPAC Top-10 Rankings",
+            "schema": {
+                "Gainers": [
+                    {
+                        "Commons_Symbol": "str",
+                        "Commons_Daily_Change_Percent": "str",
+                        "Commons_Price": "str",
+                        "Commons_Volume": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Latest SPAC Deals, IPOs, Closings",
+            "schema": {
+                "Name": "str",
+                "Ticker": "str",
+                "Underwriters": "str",
+                "Country": "str",
+                "Unit_Split": "str",
+                "Status": "str",
+                "IPO_Date": "str",
+                "Definitive_Agreement_Date": "str",
+                "Target_Name": "str",
+                "Trust_Size": "str",
+                "Target_Details": "str",
+                "Initial_S1_Date": "str",
+                "Registration_Date": "str"
+            }
+        },
+        {
+            "name": "SPAC SEC Filings",
+            "schema": {
+                "ticker": "str",
+                "form_type": "str",
+                "filing_date": "str",
+                "document_link": "str"
+            }
+        },
+        {
+            "name": "SPAC Price Targets",
+            "schema": {
+                "message": "str"
+            }
+        }
+    ]
+}

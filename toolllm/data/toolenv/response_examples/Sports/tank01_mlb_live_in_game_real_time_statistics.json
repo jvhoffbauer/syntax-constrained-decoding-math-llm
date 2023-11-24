@@ -1,0 +1,215 @@
+{
+    "api_list": [
+        {
+            "name": "Get Player Information",
+            "schema": {
+                "statusCode": "int",
+                "body": [
+                    {
+                        "espnID": "str",
+                        "mlbLink": "str",
+                        "espnName": "str",
+                        "espnHeadshot": "str",
+                        "throw": "str",
+                        "weight": "str",
+                        "pos": "str",
+                        "jerseyNum": "str",
+                        "longName": "str",
+                        "bat": "str",
+                        "height": "str",
+                        "lastGamePlayed": "str",
+                        "mlbID": "str",
+                        "playerID": "str",
+                        "team": "str",
+                        "mlbHeadshot": "str",
+                        "espnLink": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Get MLB Games and Stats For a Single Player",
+            "schema": {
+                "statusCode": "str",
+                "body": {
+                    "20230603_NYY@LAD": {
+                        "Pitching": {
+                            "Balk": "str",
+                            "Groundouts": "str",
+                            "Wild Pitch": "str",
+                            "Flyouts": "str",
+                            "Inherited Runners": "str",
+                            "Batters Faced": "str",
+                            "Pitches": "str",
+                            "Strikes": "str",
+                            "Inherited Runners Scored": "str"
+                        },
+                        "startingPosition": "str",
+                        "Hitting": {
+                            "BB": "str",
+                            "AB": "str",
+                            "battingOrder": "str",
+                            "H": "str",
+                            "IBB": "str",
+                            "substitutionOrder": "str",
+                            "HR": "str",
+                            "TB": "str",
+                            "3B": "str",
+                            "GIDP": "str",
+                            "2B": "str",
+                            "R": "str",
+                            "AVG": "str",
+                            "SF": "str",
+                            "SAC": "str",
+                            "HBP": "str",
+                            "RBI": "str",
+                            "SO": "str",
+                            "LOB": "str"
+                        },
+                        "allPositionsPlayed": "str",
+                        "started": "str",
+                        "Fielding": {
+                            "Passed Ball": "str",
+                            "Outfield assists": "str",
+                            "E": "str",
+                            "Pickoffs": "str"
+                        },
+                        "BaseRunning": {
+                            "CS": "str",
+                            "SB": "str",
+                            "PO": "str"
+                        },
+                        "mlbID": "str",
+                        "playerID": "str",
+                        "team": "str",
+                        "gameID": "str"
+                    }
+                }
+            }
+        },
+        {
+            "name": "Get Team Roster",
+            "schema": {
+                "statusCode": "int",
+                "body": {
+                    "team": "str",
+                    "roster": [
+                        {
+                            "jerseyNum": "str",
+                            "espnHeadshot": "str",
+                            "espnID": "str",
+                            "mlbLink": "str",
+                            "mlbHeadshot": "str",
+                            "weight": "str",
+                            "team": "str",
+                            "mlbID": "str",
+                            "bat": "str",
+                            "throw": "str",
+                            "pos": "str",
+                            "bDay": "str",
+                            "longName": "str",
+                            "height": "str",
+                            "playerID": "str"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Get General Game Information",
+            "schema": {
+                "statusCode": "int",
+                "body": {
+                    "gameStatus": "str",
+                    "season": "str",
+                    "gameDate": "str",
+                    "venue": "str",
+                    "teamIDHome": "str",
+                    "gameTime": "str",
+                    "teamIDAway": "str",
+                    "away": "str",
+                    "mlbID": "str",
+                    "gameType": "str",
+                    "gameID": "str",
+                    "home": "str"
+                }
+            }
+        },
+        {
+            "name": "Get Line Score - Real Time",
+            "schema": {
+                "statusCode": "int",
+                "body": {
+                    "gameStatus": "str",
+                    "gameDate": "str",
+                    "awayResult": "str",
+                    "homeResult": "str",
+                    "away": "str",
+                    "home": "str",
+                    "gameID": "str",
+                    "currentInning": "str"
+                }
+            }
+        },
+        {
+            "name": "Get Daily Schedule",
+            "schema": {
+                "statusCode": "int",
+                "body": [
+                    {
+                        "gameID": "str",
+                        "gameType": "str",
+                        "away": "str",
+                        "gameTime": "str",
+                        "gameDate": "str",
+                        "teamIDHome": "str",
+                        "teamIDAway": "str",
+                        "home": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Get Player List",
+            "schema": {
+                "statusCode": "int",
+                "body": [
+                    {
+                        "espnID": "str",
+                        "pos": "str",
+                        "jerseyNum": "str",
+                        "longName": "str",
+                        "height": "str",
+                        "mlbID": "str",
+                        "playerID": "str",
+                        "team": "str",
+                        "mlbHeadshot": "str",
+                        "weight": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Get Teams",
+            "schema": {
+                "statusCode": "int",
+                "body": [
+                    {
+                        "teamAbv": "str",
+                        "teamCity": "str",
+                        "teamName": "str",
+                        "division": "str",
+                        "conferenceAbv": "str",
+                        "conference": "str",
+                        "wins": "str",
+                        "loss": "str",
+                        "RA": "str",
+                        "RS": "str",
+                        "DIFF": "str",
+                        "teamID": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,10 @@
+{
+    "api_list": [
+        {
+            "name": "Video no watermark",
+            "schema": {
+                "no_watermark": "str"
+            }
+        }
+    ]
+}

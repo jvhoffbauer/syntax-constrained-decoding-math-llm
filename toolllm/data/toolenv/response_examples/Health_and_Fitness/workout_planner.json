@@ -1,0 +1,53 @@
+{
+    "api_list": [
+        {
+            "name": "Get Customized Plan",
+            "schema": {
+                "Warm Up": [
+                    {
+                        "Exercise": "str",
+                        "Time": "str"
+                    }
+                ],
+                "Exercises": [
+                    {
+                        "Exercise": "str",
+                        "Sets": "str",
+                        "Reps": "str"
+                    }
+                ],
+                "Cool Down": [
+                    {
+                        "Exercise": "str",
+                        "Time": "str"
+                    }
+                ],
+                "key": "str"
+            }
+        },
+        {
+            "name": "Get Workout Plan",
+            "schema": {
+                "Warm Up": [
+                    {
+                        "Exercise": "str",
+                        "Time": "str"
+                    }
+                ],
+                "Exercises": [
+                    {
+                        "Exercise": "str",
+                        "Sets": "str",
+                        "Reps": "str"
+                    }
+                ],
+                "Cool Down": [
+                    {
+                        "Exercise": "str",
+                        "Time": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

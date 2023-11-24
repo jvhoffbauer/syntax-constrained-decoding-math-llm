@@ -1,0 +1,15 @@
+{
+    "api_list": [
+        {
+            "name": "Email Validation",
+            "schema": {
+                "block": "bool",
+                "valid": "bool",
+                "domain": "str",
+                "disposable": "bool",
+                "text": "str",
+                "reason": "str"
+            }
+        }
+    ]
+}

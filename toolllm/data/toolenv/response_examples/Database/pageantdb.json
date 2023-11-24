@@ -1,0 +1,113 @@
+{
+    "api_list": [
+        {
+            "name": "Single Country",
+            "schema": {
+                "id": "int",
+                "country": "str",
+                "flag": "str"
+            }
+        },
+        {
+            "name": "Search Country",
+            "schema": {
+                "country": "str",
+                "flag": "str"
+            }
+        },
+        {
+            "name": "Countries",
+            "schema": {
+                "country": "str",
+                "flag": "str"
+            }
+        },
+        {
+            "name": "Search",
+            "schema": {
+                "id": "int",
+                "title": "str",
+                "year": "int",
+                "country": {
+                    "country": "str",
+                    "flag": "str"
+                },
+                "winner_name": {
+                    "name": "str",
+                    "birth_date": "str",
+                    "birth_place": "str",
+                    "height": "float"
+                },
+                "national_title": "str",
+                "age": "int",
+                "hometown": "str",
+                "won_on_date": "str",
+                "entrants": "int",
+                "images": [
+                    {
+                        "image": "str",
+                        "creative_commons": "bool"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Single contest",
+            "schema": {
+                "id": "int",
+                "title": "str",
+                "year": "int",
+                "country": {
+                    "country": "str",
+                    "flag": "str"
+                },
+                "winner_name": {
+                    "name": "str",
+                    "alternate_name": "str",
+                    "birth_date": "str",
+                    "height": "float",
+                    "star_sign": "str"
+                },
+                "national_title": "str",
+                "age": "int",
+                "hometown": "str",
+                "won_on_date": "str",
+                "entrants": "int",
+                "images": [
+                    {
+                        "image": "str",
+                        "imageAttributionLink": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "All pageant contests",
+            "schema": {
+                "id": "int",
+                "title": "str",
+                "year": "int",
+                "country": {
+                    "country": "str",
+                    "flag": "str"
+                },
+                "winner_name": {
+                    "name": "str",
+                    "birth_date": "str",
+                    "height": "float",
+                    "star_sign": "str"
+                },
+                "national_title": "str",
+                "age": "int",
+                "hometown": "str",
+                "won_on_date": "str",
+                "entrants": "int",
+                "images": [
+                    {
+                        "image": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

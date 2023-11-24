@@ -1,0 +1,10 @@
+{
+    "api_list": [
+        {
+            "name": "Index",
+            "schema": {
+                "message": "str"
+            }
+        }
+    ]
+}

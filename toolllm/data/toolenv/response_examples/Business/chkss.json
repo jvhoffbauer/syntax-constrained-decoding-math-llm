@@ -1,0 +1,15 @@
+{
+    "api_list": [
+        {
+            "name": "checkss",
+            "schema": {
+                "errorCode": "int",
+                "happyApiStatus": "str",
+                "result": {
+                    "errorCode": "int",
+                    "result": "str"
+                }
+            }
+        }
+    ]
+}

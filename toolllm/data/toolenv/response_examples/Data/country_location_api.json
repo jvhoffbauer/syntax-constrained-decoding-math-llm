@@ -1,0 +1,22 @@
+{
+    "api_list": [
+        {
+            "name": "Country Location API",
+            "schema": {
+                "location": {
+                    "name": "str",
+                    "capital": "str",
+                    "region": "str",
+                    "subregion": "str",
+                    "population": "int",
+                    "currencies": [
+                        "list of str with length 1"
+                    ],
+                    "languages": [
+                        "list of str with length 1"
+                    ]
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,12 @@
+{
+    "api_list": [
+        {
+            "name": "Get Latest  Anime",
+            "schema": {
+                "anime_id": "str",
+                "name": "str",
+                "img_url": "str"
+            }
+        }
+    ]
+}

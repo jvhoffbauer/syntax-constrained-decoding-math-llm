@@ -1,0 +1,23 @@
+{
+    "api_list": [
+        {
+            "name": "/summarize",
+            "schema": {
+                "summary": "str"
+            }
+        },
+        {
+            "name": "/extract",
+            "schema": {
+                "url": "str",
+                "title": "str",
+                "description": "str",
+                "image": "str",
+                "content": "str",
+                "author": "str",
+                "source": "str",
+                "published": "str"
+            }
+        }
+    ]
+}

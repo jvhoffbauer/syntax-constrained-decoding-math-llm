@@ -1,0 +1,23 @@
+{
+    "api_list": [
+        {
+            "name": "Search",
+            "schema": {
+                "meta": {
+                    "status": "int",
+                    "query": "str",
+                    "googleURL": "str"
+                },
+                "totalResults": "int",
+                "organic_results": [
+                    {
+                        "position": "int",
+                        "title": "str",
+                        "description": "str",
+                        "link": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

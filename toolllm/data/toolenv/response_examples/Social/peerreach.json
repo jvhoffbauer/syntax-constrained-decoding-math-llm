@@ -1,0 +1,29 @@
+{
+    "api_list": [
+        {
+            "name": "User lookup",
+            "schema": {
+                "screen_name": "str",
+                "user_id": "str",
+                "followers": "str",
+                "country": "str",
+                "gender": "str",
+                "peergroups": [
+                    {
+                        "topic": "str",
+                        "region": "str",
+                        "score": "str",
+                        "rank": "str"
+                    }
+                ],
+                "subjects": [
+                    {
+                        "name": "str",
+                        "subject_id": "str",
+                        "score": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,10 @@
+{
+    "api_list": [
+        {
+            "name": "Supported Locations",
+            "schema": {
+                "message": "str"
+            }
+        }
+    ]
+}

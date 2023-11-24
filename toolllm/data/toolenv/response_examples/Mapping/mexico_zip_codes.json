@@ -1,0 +1,18 @@
+{
+    "api_list": [
+        {
+            "name": "Search zip codes",
+            "schema": {
+                "codigos_postales": "empty list"
+            }
+        },
+        {
+            "name": "Zip Code Information",
+            "schema": {
+                "codigo_postal": "str",
+                "municipio": "str",
+                "estado": "str"
+            }
+        }
+    ]
+}

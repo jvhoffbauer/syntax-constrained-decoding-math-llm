@@ -1,0 +1,16 @@
+{
+    "api_list": [
+        {
+            "name": "Is whatsapp for business?",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Is registered on whatsapp?",
+            "schema": {
+                "message": "str"
+            }
+        }
+    ]
+}

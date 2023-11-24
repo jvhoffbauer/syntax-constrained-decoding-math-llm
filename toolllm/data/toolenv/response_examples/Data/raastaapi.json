@@ -1,0 +1,12 @@
+{
+    "api_list": [
+        {
+            "name": "getPoints",
+            "schema": {
+                "Points": [
+                    "list of str with length 1"
+                ]
+            }
+        }
+    ]
+}

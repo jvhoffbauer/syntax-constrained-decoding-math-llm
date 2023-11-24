@@ -1,0 +1,12 @@
+{
+    "api_list": [
+        {
+            "name": "/api/Search/{query}",
+            "schema": {
+                "title": "str",
+                "link": "str",
+                "description": "str"
+            }
+        }
+    ]
+}

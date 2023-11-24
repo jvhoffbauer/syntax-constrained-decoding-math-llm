@@ -1,0 +1,21 @@
+{
+    "api_list": [
+        {
+            "name": "/people",
+            "schema": {
+                "data": [
+                    {
+                        "id": "int",
+                        "firstName": "str",
+                        "lastName": "str",
+                        "job": "str",
+                        "salary": "int",
+                        "currency": "str",
+                        "country": "str",
+                        "city": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

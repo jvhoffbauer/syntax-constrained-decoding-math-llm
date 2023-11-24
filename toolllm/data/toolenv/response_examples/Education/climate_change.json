@@ -1,0 +1,20 @@
+{
+    "api_list": [
+        {
+            "name": "specific news",
+            "schema": {
+                "title": "str",
+                "url": "str",
+                "source": "str"
+            }
+        },
+        {
+            "name": "Get Latest Climate Change News",
+            "schema": {
+                "title": "str",
+                "url": "str",
+                "source": "str"
+            }
+        }
+    ]
+}

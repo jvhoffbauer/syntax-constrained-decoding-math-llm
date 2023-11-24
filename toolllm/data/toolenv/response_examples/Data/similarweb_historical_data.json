@@ -1,0 +1,35 @@
+{
+    "api_list": [
+        {
+            "name": "/api/getCountries",
+            "schema": {
+                "isSuccess": "bool",
+                "domain": "str",
+                "months": [
+                    {
+                        "date": "str",
+                        "countries": [
+                            {
+                                "name": "str",
+                                "share": "float"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "name": "/api/getVisits",
+            "schema": {
+                "isSuccess": "bool",
+                "domain": "str",
+                "months": [
+                    {
+                        "date": "str",
+                        "visits": "int"
+                    }
+                ]
+            }
+        }
+    ]
+}

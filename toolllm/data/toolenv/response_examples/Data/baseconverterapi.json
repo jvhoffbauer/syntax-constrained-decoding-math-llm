@@ -1,0 +1,53 @@
+{
+    "api_list": [
+        {
+            "name": "getAlphabets",
+            "schema": {
+                "binary": {
+                    "0": "int",
+                    "1": "int"
+                },
+                "octal": {
+                    "0": "int",
+                    "1": "int",
+                    "2": "int",
+                    "3": "int",
+                    "4": "int",
+                    "5": "int",
+                    "6": "int",
+                    "7": "int"
+                },
+                "hexadecimal": {
+                    "0": "int",
+                    "1": "int",
+                    "2": "int",
+                    "3": "int",
+                    "4": "int",
+                    "5": "int",
+                    "6": "int",
+                    "7": "int",
+                    "8": "int",
+                    "9": "int",
+                    "A": "int",
+                    "B": "int",
+                    "C": "int",
+                    "D": "int",
+                    "E": "int",
+                    "F": "int"
+                },
+                "decimal": {
+                    "0": "int",
+                    "1": "int",
+                    "2": "int",
+                    "3": "int",
+                    "4": "int",
+                    "5": "int",
+                    "6": "int",
+                    "7": "int",
+                    "8": "int",
+                    "9": "int"
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,15 @@
+{
+    "api_list": [
+        {
+            "name": "MAC Lookup",
+            "schema": {
+                "result": [
+                    {
+                        "name": "str",
+                        "address": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

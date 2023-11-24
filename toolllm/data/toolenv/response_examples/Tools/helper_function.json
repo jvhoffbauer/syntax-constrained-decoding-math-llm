@@ -1,0 +1,10 @@
+{
+    "api_list": [
+        {
+            "name": "Generate UUID",
+            "schema": {
+                "result": "empty list"
+            }
+        }
+    ]
+}

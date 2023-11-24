@@ -1,0 +1,12 @@
+{
+    "api_list": [
+        {
+            "name": "GetArchiveReport",
+            "schema": {
+                "fault": {
+                    "faultstring": "str"
+                }
+            }
+        }
+    ]
+}

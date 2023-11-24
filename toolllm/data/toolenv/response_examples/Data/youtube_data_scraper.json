@@ -1,0 +1,107 @@
+{
+    "api_list": [
+        {
+            "name": "Video Full Information",
+            "schema": {
+                "items": [
+                    {
+                        "id": "str",
+                        "snippet": {
+                            "publishedAt": "str",
+                            "title": "str",
+                            "description": "str",
+                            "thumbnails": {
+                                "default": {
+                                    "url": "str"
+                                }
+                            },
+                            "channelTitle": "str",
+                            "tags": [
+                                "list of str with length 1"
+                            ],
+                            "categoryId": "str"
+                        },
+                        "status": {
+                            "privacyStatus": "str"
+                        },
+                        "statistics": {
+                            "viewCount": "str",
+                            "likeCount": "str",
+                            "favoriteCount": "str",
+                            "commentCount": "str"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Video Status",
+            "schema": {
+                "uploadStatus": "str",
+                "privacyStatus": "str",
+                "embeddable": "bool",
+                "madeForKids": "bool"
+            }
+        },
+        {
+            "name": "Video Content Details",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Video Player",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Channel Branding Settings",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Channel Status",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Channel Statistics",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Channel Content Details",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Channel Snippet",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Channel Full Information",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Video Statistics",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Video Snippet",
+            "schema": {
+                "message": "str"
+            }
+        }
+    ]
+}

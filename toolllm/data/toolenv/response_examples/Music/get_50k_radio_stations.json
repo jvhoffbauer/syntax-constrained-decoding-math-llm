@@ -1,0 +1,40 @@
+{
+    "api_list": [
+        {
+            "name": "Get Cities",
+            "schema": {
+                "success": "bool",
+                "total": "int",
+                "data": [
+                    {
+                        "city": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Get Countries",
+            "schema": {
+                "success": "bool",
+                "total": "int",
+                "data": [
+                    {
+                        "country": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Get Genres",
+            "schema": {
+                "success": "bool",
+                "total": "int",
+                "data": [
+                    {
+                        "name": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

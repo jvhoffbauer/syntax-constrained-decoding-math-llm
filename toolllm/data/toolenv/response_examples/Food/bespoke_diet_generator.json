@@ -1,0 +1,16 @@
+{
+    "api_list": [
+        {
+            "name": "get-ingredients",
+            "schema": {
+                "id": "str",
+                "name": "str",
+                "ingredients": [
+                    {
+                        "name": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

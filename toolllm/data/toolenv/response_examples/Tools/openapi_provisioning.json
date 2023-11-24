@@ -1,0 +1,400 @@
+{
+    "api_list": [
+        {
+            "name": "Get Multiple Users",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get Billing Plan Version",
+            "schema": {
+                "status": "int",
+                "message": "str",
+                "correlationId": "str",
+                "data": "str"
+            }
+        },
+        {
+            "name": "Get all Roles",
+            "schema": {
+                "status": "int",
+                "message": "str",
+                "data": "str"
+            }
+        },
+        {
+            "name": "Get Organization",
+            "schema": {
+                "status": "int",
+                "message": "str",
+                "data": "str"
+            }
+        },
+        {
+            "name": "Get all Organizations (Environment Admin)",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get All APIs",
+            "schema": {
+                "category": "str",
+                "name": "str",
+                "ownerId": "str",
+                "pricing": "str",
+                "slugifiedName": "str",
+                "status": "str",
+                "type": "str",
+                "description": "str",
+                "longDescription": "str"
+            }
+        },
+        {
+            "name": "Get API Subscription",
+            "schema": {
+                "status": "int",
+                "message": "str",
+                "data": "str"
+            }
+        },
+        {
+            "name": "Get All Teams",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get App",
+            "schema": {
+                "status": "int",
+                "message": "str",
+                "data": "str"
+            }
+        },
+        {
+            "name": "Get all API Docs",
+            "schema": {
+                "status": "int",
+                "message": "str",
+                "data": "str"
+            }
+        },
+        {
+            "name": "Get All Apps",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get all App Keys",
+            "schema": {
+                "status": "int",
+                "message": "str",
+                "data": "str"
+            }
+        },
+        {
+            "name": "Get all Transactions",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get all Developers for a Billing Plan",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get all Api Developers",
+            "schema": {
+                "status": "int",
+                "message": "str",
+                "data": "str"
+            }
+        },
+        {
+            "name": "Get Tag Definition",
+            "schema": {
+                "status": "int",
+                "message": "str",
+                "correlationId": "str",
+                "timestamp": "str",
+                "path": "str",
+                "data": {
+                    "errors": [
+                        {
+                            "status": "int",
+                            "title": "str",
+                            "details": "str"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Get Organization Audit Log",
+            "schema": {
+                "status": "int",
+                "message": "str",
+                "data": "str"
+            }
+        },
+        {
+            "name": "Get Endpoint",
+            "schema": {
+                "status": "int",
+                "message": "str",
+                "data": "str"
+            }
+        },
+        {
+            "name": "Get Category",
+            "schema": {
+                "status": "int",
+                "message": "str",
+                "data": {
+                    "errors": [
+                        {
+                            "status": "int",
+                            "title": "str",
+                            "details": "str"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Get all Entity Roles",
+            "schema": {
+                "status": "int",
+                "message": "str",
+                "data": "str"
+            }
+        },
+        {
+            "name": "Get OpenAPI",
+            "schema": {
+                "status": "int",
+                "message": "str",
+                "data": "str"
+            }
+        },
+        {
+            "name": "Get User Subscription",
+            "schema": {
+                "status": "int",
+                "message": "str",
+                "data": "str"
+            }
+        },
+        {
+            "name": "Get All User Subscriptions",
+            "schema": {
+                "status": "int",
+                "message": "str",
+                "data": "str"
+            }
+        },
+        {
+            "name": "Get all Collections",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get API",
+            "schema": {
+                "status": "int",
+                "message": "str",
+                "data": "str"
+            }
+        },
+        {
+            "name": "Get Collection",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get API Log Details",
+            "schema": {
+                "status": "int",
+                "message": "str",
+                "correlationId": "str",
+                "path": "str",
+                "data": "str"
+            }
+        },
+        {
+            "name": "Get API by external custom ID",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get All API Versions",
+            "schema": {
+                "status": "int",
+                "message": "str",
+                "data": "str"
+            }
+        },
+        {
+            "name": "Progress of API Version file upload",
+            "schema": {
+                "status": "int",
+                "message": "str",
+                "correlationId": "str"
+            }
+        },
+        {
+            "name": "Search for public APIs",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get API Version",
+            "schema": {
+                "status": "int",
+                "message": "str",
+                "data": "str"
+            }
+        },
+        {
+            "name": "Get Requesting User Details",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get API Subscriptions",
+            "schema": {
+                "status": "int",
+                "message": "str",
+                "data": "str"
+            }
+        },
+        {
+            "name": "Get Team Users",
+            "schema": {
+                "status": "int",
+                "message": "str",
+                "data": "str"
+            }
+        },
+        {
+            "name": "Get Quota Export",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get User Teams",
+            "schema": {
+                "status": "int",
+                "message": "str",
+                "data": "str"
+            }
+        },
+        {
+            "name": "Get Single User",
+            "schema": {
+                "status": "int",
+                "message": "str",
+                "data": "str"
+            }
+        },
+        {
+            "name": "Get all Api Tags",
+            "schema": {
+                "status": "int",
+                "message": "str",
+                "data": "str"
+            }
+        },
+        {
+            "name": "Get all Gateways",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get API Logs",
+            "schema": {
+                "status": "int",
+                "message": "str",
+                "correlationId": "str",
+                "timestamp": "str",
+                "data": "str"
+            }
+        },
+        {
+            "name": "Get Team",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get API Current Version",
+            "schema": {
+                "status": "int",
+                "message": "str",
+                "data": "str"
+            }
+        },
+        {
+            "name": "Get Requesting User Teams",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get API Version OpenAPI",
+            "schema": {
+                "status": "int",
+                "message": "str",
+                "timestamp": "str"
+            }
+        },
+        {
+            "name": "Get API Spotlight",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get Api Tag",
+            "schema": {
+                "status": "int",
+                "message": "str",
+                "data": "str"
+            }
+        },
+        {
+            "name": "Get User Audit Login",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get API Version OpenAPI",
+            "schema": {
+                "status": "int",
+                "message": "str",
+                "data": "str"
+            }
+        },
+        {
+            "name": "Get all Billing Plans",
+            "schema": {
+                "status": "int",
+                "message": "str",
+                "data": "str"
+            }
+        }
+    ]
+}

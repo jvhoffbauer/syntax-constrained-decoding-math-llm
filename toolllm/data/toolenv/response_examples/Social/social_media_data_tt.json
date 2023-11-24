@@ -1,0 +1,278 @@
+{
+    "api_list": [
+        {
+            "name": "Video post comments V2",
+            "schema": {
+                "has_more": "str",
+                "total_comments": "str",
+                "max_cursor": "str",
+                "comments": [
+                    {
+                        "digg_count": "str",
+                        "reply_comment_total": "str",
+                        "reply_to_reply_id": "str",
+                        "no_show": "str",
+                        "create_time": "str",
+                        "user": {
+                            "prevent_download": "str",
+                            "react_setting": "str",
+                            "following_count": "str",
+                            "region": "str",
+                            "shield_digg_notice": "str",
+                            "duet_setting": "str",
+                            "room_id": "str",
+                            "user_tags": "str",
+                            "verification_type": "str",
+                            "is_phone_binded": "str",
+                            "total_favorited": "str",
+                            "follower_status": "str",
+                            "live_commerce": "str",
+                            "commerce_user_level": "str",
+                            "user_rate": "str",
+                            "custom_verify": "str",
+                            "is_discipline_member": "str",
+                            "special_lock": "str",
+                            "enterprise_verify_reason": "str",
+                            "is_ad_fake": "str",
+                            "has_orders": "str",
+                            "with_shop_entry": "str",
+                            "mention": "str"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Music feed (Video posts)",
+            "schema": {
+                "has_more": "str",
+                "max_cursor": "str",
+                "media": [
+                    {
+                        "video_id": "str",
+                        "create_time": "str",
+                        "description": "str",
+                        "author": {
+                            "unique_id": "str",
+                            "nickname": "str",
+                            "is_private": "str",
+                            "language": "str",
+                            "avatar_large": "str",
+                            "avatar_thumb": "str",
+                            "region": "str"
+                        },
+                        "video": {
+                            "video_no_watermark": "str",
+                            "video_with_watermark": "str",
+                            "cover": "str",
+                            "dynamic_cover": "str",
+                            "duration": "str"
+                        },
+                        "statistics": {
+                            "play_count": "str",
+                            "whatsapp_share_count": "str",
+                            "comment_count": "str",
+                            "forward_count": "str",
+                            "like_count": "str",
+                            "share_count": "str",
+                            "download_count": "str"
+                        },
+                        "music": {
+                            "id": "str",
+                            "title": "str",
+                            "playUrl": "str",
+                            "coverThumb": "str",
+                            "coverMedium": "str",
+                            "coverLarge": "str",
+                            "authorName": "str",
+                            "original": "str",
+                            "duration": "str"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "User followers list",
+            "schema": {
+                "has_more": "bool",
+                "total_followers": "int",
+                "max_cursor": "str",
+                "followers": [
+                    {
+                        "unique_id": "str",
+                        "nickname": "str",
+                        "sec_uid": "str",
+                        "is_private": "bool",
+                        "country": "str",
+                        "avatar_medium": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "User followings list",
+            "schema": {
+                "has_more": "bool",
+                "total_following": "int",
+                "max_cursor": "str",
+                "following": [
+                    {
+                        "unique_id": "str",
+                        "uid": "str",
+                        "nickname": "str",
+                        "sec_uid": "str",
+                        "is_private": "bool",
+                        "country": "str",
+                        "avatar_medium": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "User feed (Video posts)",
+            "schema": {
+                "has_more": "str",
+                "max_cursor": "str",
+                "media": [
+                    {
+                        "video_id": "str",
+                        "create_time": "str",
+                        "description": "str",
+                        "author": {
+                            "unique_id": "str",
+                            "nickname": "str",
+                            "is_private": "str",
+                            "avatar_large": "str",
+                            "avatar_thumb": "str",
+                            "following_count": "str",
+                            "follower_count": "str",
+                            "aweme_count": "str"
+                        },
+                        "video": {
+                            "video_no_watermark": "str",
+                            "video_with_watermark": "str",
+                            "cover": "str",
+                            "dynamic_cover": "str",
+                            "duration": "str"
+                        },
+                        "statistics": {
+                            "play_count": "str",
+                            "whatsapp_share_count": "str",
+                            "comment_count": "str",
+                            "forward_count": "str",
+                            "like_count": "str",
+                            "share_count": "str",
+                            "download_count": "str"
+                        },
+                        "music": {
+                            "id": "str",
+                            "title": "str",
+                            "playUrl": "str",
+                            "coverThumb": "str",
+                            "coverMedium": "str",
+                            "coverLarge": "str"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Real-time hashtag search",
+            "schema": {
+                "result": [
+                    {
+                        "cha_name": "str",
+                        "view_count": "int"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Hashtag feed (Video posts)",
+            "schema": {
+                "has_more": "str",
+                "max_cursor": "str",
+                "media": [
+                    {
+                        "video_id": "str",
+                        "create_time": "str",
+                        "description": "str",
+                        "desc_language": "str",
+                        "author": {
+                            "unique_id": "str",
+                            "nickname": "str",
+                            "is_private": "str",
+                            "language": "str",
+                            "uid": "str",
+                            "sec_uid": "str",
+                            "region": "str"
+                        },
+                        "video": {
+                            "video_no_watermark": "str",
+                            "cover": "str",
+                            "dynamic_cover": "str",
+                            "duration": "str"
+                        },
+                        "statistics": {
+                            "play_count": "str",
+                            "whatsapp_share_count": "str",
+                            "comment_count": "str",
+                            "forward_count": "str",
+                            "like_count": "str",
+                            "share_count": "str",
+                            "download_count": "str"
+                        },
+                        "music": {
+                            "id": "str",
+                            "title": "str",
+                            "playUrl": "str",
+                            "coverThumb": "str",
+                            "coverMedium": "str",
+                            "coverLarge": "str"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Hashtag metadata (information)",
+            "schema": {
+                "challenge": {
+                    "id": "str",
+                    "title": "str",
+                    "desc": "str",
+                    "isCommerce": "bool"
+                },
+                "stats": {
+                    "videoCount": "int",
+                    "viewCount": "int"
+                }
+            }
+        },
+        {
+            "name": "Trending feed (Video posts)",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Hashtag feed (Video posts) V2",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Video post metadata",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Video post metadata V2",
+            "schema": {
+                "message": "str"
+            }
+        }
+    ]
+}

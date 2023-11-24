@@ -1,0 +1,11 @@
+{
+    "api_list": [
+        {
+            "name": "qrcode",
+            "schema": {
+                "errorCode": "int",
+                "result": "str"
+            }
+        }
+    ]
+}

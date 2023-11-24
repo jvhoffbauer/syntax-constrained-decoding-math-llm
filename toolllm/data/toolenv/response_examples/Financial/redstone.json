@@ -1,0 +1,20 @@
+{
+    "api_list": [
+        {
+            "name": "Prices",
+            "schema": {
+                "id": "str",
+                "symbol": "str",
+                "provider": "str",
+                "value": "str",
+                "source": {
+                    "binance": "str",
+                    "coingecko": "str",
+                    "hitbtc": "str",
+                    "huobipro": "str"
+                },
+                "timestamp": "str"
+            }
+        }
+    ]
+}

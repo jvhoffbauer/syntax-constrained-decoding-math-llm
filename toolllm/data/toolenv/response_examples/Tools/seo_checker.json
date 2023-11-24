@@ -1,0 +1,101 @@
+{
+    "api_list": [
+        {
+            "name": "Analyze V2",
+            "schema": {
+                "loading_experience": {
+                    "metrics": {
+                        "CUMULATIVE_LAYOUT_SHIFT_SCORE": {
+                            "percentile": "str",
+                            "category": "str"
+                        },
+                        "EXPERIMENTAL_INTERACTION_TO_NEXT_PAINT": {
+                            "percentile": "str",
+                            "category": "str"
+                        },
+                        "EXPERIMENTAL_TIME_TO_FIRST_BYTE": {
+                            "percentile": "str",
+                            "category": "str"
+                        },
+                        "FIRST_CONTENTFUL_PAINT_MS": {
+                            "percentile": "str",
+                            "category": "str"
+                        },
+                        "FIRST_INPUT_DELAY_MS": {
+                            "percentile": "str",
+                            "category": "str"
+                        },
+                        "INTERACTION_TO_NEXT_PAINT": {
+                            "percentile": "str",
+                            "category": "str"
+                        },
+                        "LARGEST_CONTENTFUL_PAINT_MS": {
+                            "percentile": "str",
+                            "category": "str"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "Analyze",
+            "schema": {
+                "unused-javascript": {
+                    "title": "str",
+                    "score": "str",
+                    "scoreDisplayMode": "str",
+                    "displayValue": "str",
+                    "details": {
+                        "overallSavingsMs": "str",
+                        "overallSavingsBytes": "str"
+                    },
+                    "numericValue": "str",
+                    "numericUnit": "str"
+                },
+                "network-rtt": {
+                    "title": "str",
+                    "description": "str",
+                    "score": "str",
+                    "scoreDisplayMode": "str",
+                    "displayValue": "str",
+                    "numericValue": "str",
+                    "numericUnit": "str"
+                },
+                "offscreen-images": {
+                    "title": "str",
+                    "score": "str",
+                    "scoreDisplayMode": "str",
+                    "details": {
+                        "overallSavingsMs": "str",
+                        "overallSavingsBytes": "str"
+                    }
+                }
+            }
+        },
+        {
+            "name": "Summary",
+            "schema": {
+                "page": {
+                    "title": "str",
+                    "meta": {
+                        "viewport": "str",
+                        "description": "str",
+                        "og:title": "str",
+                        "og:description": "str",
+                        "og:url": "str",
+                        "canonical": "str",
+                        "language": "str",
+                        "author": "str",
+                        "keywords": [
+                            "list of str with length 1"
+                        ]
+                    }
+                },
+                "heading_count": "int",
+                "word_count": "int",
+                "external_links": "int",
+                "internal_links": "int"
+            }
+        }
+    ]
+}

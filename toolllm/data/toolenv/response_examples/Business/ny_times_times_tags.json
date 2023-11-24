@@ -1,0 +1,12 @@
+{
+    "api_list": [
+        {
+            "name": "/timestags",
+            "schema": {
+                "fault": {
+                    "faultstring": "str"
+                }
+            }
+        }
+    ]
+}

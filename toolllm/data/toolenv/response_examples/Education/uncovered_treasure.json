@@ -1,0 +1,62 @@
+{
+    "api_list": [
+        {
+            "name": "/topics",
+            "schema": {
+                "results": [
+                    {
+                        "name": "str",
+                        "description": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "/random",
+            "schema": {
+                "results": [
+                    {
+                        "date": "str",
+                        "context": "str",
+                        "text": "str",
+                        "bookOrder": "int"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "/verse/{verse}",
+            "schema": {
+                "results": [
+                    {
+                        "date": "str",
+                        "context": "str",
+                        "scriptures": [
+                            "list of str with length 1"
+                        ],
+                        "text": "str",
+                        "topics": [
+                            "list of str with length 1"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "name": "/today",
+            "schema": {
+                "results": [
+                    {
+                        "date": "str",
+                        "context": "str",
+                        "scriptures": [
+                            "list of str with length 1"
+                        ],
+                        "text": "str",
+                        "bookOrder": "int"
+                    }
+                ]
+            }
+        }
+    ]
+}

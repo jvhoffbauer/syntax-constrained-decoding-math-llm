@@ -1,0 +1,11 @@
+{
+    "api_list": [
+        {
+            "name": "Get Variable Value",
+            "schema": {
+                "Message": "str",
+                "ExceptionMessage": "str"
+            }
+        }
+    ]
+}

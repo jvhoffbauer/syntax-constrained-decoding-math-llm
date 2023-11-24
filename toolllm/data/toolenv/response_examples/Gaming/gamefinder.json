@@ -1,0 +1,16 @@
+{
+    "api_list": [
+        {
+            "name": "Factorio - Servers Online",
+            "schema": {
+                "messages": "str"
+            }
+        },
+        {
+            "name": "Factorio - Server Details",
+            "schema": {
+                "messages": "str"
+            }
+        }
+    ]
+}

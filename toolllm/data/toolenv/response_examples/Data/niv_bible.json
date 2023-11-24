@@ -1,0 +1,21 @@
+{
+    "api_list": [
+        {
+            "name": "GetSingleVerse",
+            "schema": {
+                "Book": {
+                    "0": "str"
+                },
+                "Chapter": {
+                    "0": "int"
+                },
+                "Text": {
+                    "0": "str"
+                },
+                "Verse": {
+                    "0": "int"
+                }
+            }
+        }
+    ]
+}

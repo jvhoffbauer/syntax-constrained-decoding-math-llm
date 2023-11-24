@@ -1,0 +1,16 @@
+{
+    "api_list": [
+        {
+            "name": "GetHistoricalPrices",
+            "schema": {
+                "dateTime": "str",
+                "open": "float",
+                "high": "float",
+                "low": "float",
+                "close": "float",
+                "volume": "int",
+                "adjustedClose": "float"
+            }
+        }
+    ]
+}

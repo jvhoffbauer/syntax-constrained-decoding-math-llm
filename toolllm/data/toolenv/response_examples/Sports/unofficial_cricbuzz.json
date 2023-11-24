@@ -1,0 +1,1088 @@
+{
+    "api_list": [
+        {
+            "name": "series/get-seasons",
+            "schema": {
+                "seasons": [
+                    {
+                        "name": "str",
+                        "season": "str",
+                        "startDate": "str",
+                        "endDate": "str",
+                        "winner": {
+                            "teamName": "str",
+                            "teamSName": "str"
+                        },
+                        "runnerUp": {
+                            "teamName": "str",
+                            "teamSName": "str"
+                        },
+                        "seriesType": "str",
+                        "host": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "series/get-stats-filters",
+            "schema": {
+                "statsData": [
+                    {
+                        "name": "str"
+                    }
+                ],
+                "appIndex": {
+                    "webURL": "str"
+                }
+            }
+        },
+        {
+            "name": "matches/get-team",
+            "schema": {
+                "player": [
+                    {
+                        "player": [
+                            {
+                                "name": "str",
+                                "role": "str",
+                                "teamName": "str"
+                            }
+                        ],
+                        "category": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "matches/get-scorecard",
+            "schema": {
+                "scorecard": [
+                    {
+                        "inningsId": "int",
+                        "batsman": [
+                            {
+                                "name": "str",
+                                "outDec": "str"
+                            }
+                        ],
+                        "bowler": [
+                            {
+                                "name": "str"
+                            }
+                        ],
+                        "fow": [
+                            {
+                                "batsmanName": "str"
+                            }
+                        ],
+                        "extras": {
+                            "total": "int"
+                        },
+                        "pp": [
+                            {
+                                "ppType": "str"
+                            }
+                        ],
+                        "score": "int",
+                        "wickets": "int",
+                        "overs": "float",
+                        "runRate": "float",
+                        "batTeamName": "str",
+                        "ballNbr": "int",
+                        "rpb": "float"
+                    }
+                ],
+                "isMatchComplete": "bool",
+                "status": "str"
+            }
+        },
+        {
+            "name": "matches/get-hscorecard",
+            "schema": {
+                "scorecard": [
+                    {
+                        "inningsId": "int",
+                        "batsman": [
+                            {
+                                "name": "str",
+                                "outDec": "str"
+                            }
+                        ],
+                        "bowler": [
+                            {
+                                "name": "str",
+                                "wickets": "int",
+                                "runs": "int",
+                                "economy": "str"
+                            }
+                        ],
+                        "fow": [
+                            {
+                                "batsmanId": "int",
+                                "batsmanName": "str"
+                            }
+                        ],
+                        "extras": {
+                            "total": "int"
+                        },
+                        "score": "int",
+                        "wickets": "int",
+                        "overs": "float",
+                        "runRate": "float",
+                        "batTeamName": "str",
+                        "batTeamSName": "str",
+                        "ballNbr": "int",
+                        "rpb": "float"
+                    }
+                ],
+                "appIndex": {
+                    "seoTitle": "str",
+                    "webURL": "str"
+                },
+                "status": "str"
+            }
+        },
+        {
+            "name": "matches/get-highlights",
+            "schema": {
+                "commentaryLines": [
+                    {
+                        "commentary": {
+                            "commtxt": "str",
+                            "timestamp": "str",
+                            "overNum": "str",
+                            "eventType": "str"
+                        }
+                    }
+                ],
+                "matchHeaders": {
+                    "state": "str",
+                    "status": "str",
+                    "matchFormat": "str",
+                    "matchStartTimestamp": "str",
+                    "teamDetails": {
+                        "batTeamName": "str",
+                        "bowlTeamName": "str"
+                    },
+                    "winningTeamId": "str",
+                    "matchEndTimeStamp": "str",
+                    "seriesName": "str"
+                },
+                "appIndex": {
+                    "seoTitle": "str",
+                    "webURL": "str"
+                },
+                "responseLastUpdated": "str"
+            }
+        },
+        {
+            "name": "matches/get-overs",
+            "schema": {
+                "miniscore": {
+                    "batsmanStriker": {
+                        "name": "str",
+                        "strkRate": "str"
+                    },
+                    "batsmanNonStriker": {
+                        "strkRate": "str"
+                    },
+                    "bowlerStriker": {
+                        "name": "str",
+                        "overs": "str",
+                        "economy": "str"
+                    },
+                    "bowlerNonStriker": {
+                        "name": "str",
+                        "overs": "str",
+                        "economy": "str"
+                    },
+                    "crr": "str",
+                    "inningsScores": [
+                        {
+                            "inningsScore": [
+                                {
+                                    "batTeamShortName": "str",
+                                    "runs": "str",
+                                    "wickets": "str",
+                                    "overs": "str",
+                                    "target": "str"
+                                }
+                            ]
+                        }
+                    ],
+                    "performance": [
+                        {
+                            "runs": "str",
+                            "wickets": "str",
+                            "label": "str"
+                        }
+                    ],
+                    "partnership": "str",
+                    "pp": [
+                        {
+                            "powerPlay": [
+                                {
+                                    "ppType": "str",
+                                    "run": "str"
+                                }
+                            ]
+                        }
+                    ],
+                    "target": "str",
+                    "custStatus": "str"
+                }
+            }
+        },
+        {
+            "name": "matches/get-commentaries",
+            "schema": {
+                "commentaryLines": [
+                    {
+                        "commtxt": "str",
+                        "timestamp": "str",
+                        "inningsId": "str",
+                        "eventType": "str"
+                    }
+                ],
+                "miniscore": {
+                    "batsmanStriker": {
+                        "id": "str",
+                        "runs": "str",
+                        "fours": "str",
+                        "strkRate": "str",
+                        "name": "str",
+                        "nickName": "str"
+                    },
+                    "bowlerStriker": {
+                        "id": "str",
+                        "overs": "str",
+                        "wickets": "str",
+                        "runs": "str",
+                        "economy": "str",
+                        "name": "str"
+                    },
+                    "crr": "str",
+                    "inningsScores": [
+                        {
+                            "runs": "str",
+                            "wickets": "str"
+                        }
+                    ],
+                    "performance": [
+                        {
+                            "runs": "str",
+                            "wickets": "str"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "matches/get-info",
+            "schema": {
+                "matchId": "str",
+                "seriesId": "str",
+                "seriesName": "str",
+                "matchDesc": "str",
+                "matchFormat": "str",
+                "startDate": "str",
+                "endDate": "str",
+                "state": "str",
+                "status": "str",
+                "team1": {
+                    "teamId": "str",
+                    "teamName": "str",
+                    "teamSName": "str"
+                },
+                "team2": {
+                    "teamId": "str",
+                    "teamName": "str",
+                    "teamSName": "str"
+                },
+                "venueInfo": {
+                    "ground": "str",
+                    "city": "str",
+                    "country": "str"
+                },
+                "appIndex": {
+                    "seoTitle": "str",
+                    "webURL": "str"
+                }
+            }
+        },
+        {
+            "name": "matches/get-schedules",
+            "schema": {
+                "scheduleAdWrapper": [
+                    {
+                        "matchScheduleMap": {
+                            "date": "str",
+                            "matchScheduleList": [
+                                {
+                                    "seriesName": "str",
+                                    "matchInfo": [
+                                        {
+                                            "matchId": "int",
+                                            "seriesId": "int",
+                                            "matchDesc": "str",
+                                            "matchFormat": "str",
+                                            "startDate": "str",
+                                            "endDate": "str",
+                                            "team1": {
+                                                "teamName": "str",
+                                                "teamSName": "str",
+                                                "isFullMember": "bool"
+                                            },
+                                            "team2": {
+                                                "teamName": "str",
+                                                "teamSName": "str",
+                                                "isFullMember": "bool"
+                                            },
+                                            "venueInfo": {
+                                                "ground": "str",
+                                                "city": "str",
+                                                "country": "str",
+                                                "timezone": "str"
+                                            }
+                                        }
+                                    ],
+                                    "seriesId": "int"
+                                }
+                            ],
+                            "matchDate": "str"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "matches/get-hcommentaries",
+            "schema": {
+                "commentaryLines": [
+                    {
+                        "commentary": {
+                            "timestamp": "str",
+                            "eventType": "str"
+                        }
+                    }
+                ],
+                "responseLastUpdated": "str"
+            }
+        },
+        {
+            "name": "matches/get-hhighlights",
+            "schema": {
+                "matchHeaders": {
+                    "state": "str",
+                    "status": "str",
+                    "matchFormat": "str",
+                    "matchStartTimestamp": "str",
+                    "teamDetails": {
+                        "batTeamId": "str",
+                        "batTeamName": "str",
+                        "bowlTeamId": "str",
+                        "bowlTeamName": "str"
+                    },
+                    "winningTeamId": "str",
+                    "matchEndTimeStamp": "str",
+                    "seriesId": "str",
+                    "matchDesc": "str",
+                    "seriesName": "str"
+                },
+                "appIndex": {
+                    "seoTitle": "str",
+                    "webURL": "str"
+                },
+                "responseLastUpdated": "str"
+            }
+        },
+        {
+            "name": "stats/get-records",
+            "schema": {
+                "filter": {
+                    "matchtype": [
+                        {
+                            "matchTypeId": "str",
+                            "matchTypeDesc": "str"
+                        }
+                    ],
+                    "team": [
+                        {
+                            "teamId": "str",
+                            "teamSName": "str"
+                        }
+                    ],
+                    "selectedMatchType": "str"
+                },
+                "headers": [
+                    "list of str with length 1"
+                ],
+                "values": [
+                    {
+                        "values": [
+                            "list of str with length 1"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "name": "stats/get-icc-standings",
+            "schema": {
+                "headers": [
+                    "list of str with length 1"
+                ],
+                "values": [
+                    {
+                        "value": [
+                            "list of str with length 1"
+                        ]
+                    }
+                ],
+                "seasonStandings": [
+                    {
+                        "id": "int",
+                        "name": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "news/get-categories",
+            "schema": {
+                "storyType": [
+                    {
+                        "name": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "players/get-news",
+            "schema": {
+                "newsList": [
+                    {
+                        "story": {
+                            "hline": "str",
+                            "intro": "str",
+                            "pubTime": "str",
+                            "source": "str",
+                            "storyType": "str",
+                            "seoHeadline": "str",
+                            "context": "str",
+                            "coverImage": {
+                                "caption": "str",
+                                "source": "str"
+                            }
+                        }
+                    }
+                ],
+                "lastUpdatedTime": "str"
+            }
+        },
+        {
+            "name": "players/get-batting",
+            "schema": {
+                "headers": [
+                    "list of str with length 1"
+                ],
+                "values": [
+                    {
+                        "values": [
+                            "list of str with length 1"
+                        ]
+                    }
+                ],
+                "appIndex": {
+                    "webURL": "str"
+                }
+            }
+        },
+        {
+            "name": "series/get-matches",
+            "schema": {
+                "adWrapper": [
+                    {
+                        "matchDetails": {
+                            "key": "str",
+                            "matches": [
+                                {
+                                    "matchInfo": {
+                                        "matchId": "str",
+                                        "seriesId": "str",
+                                        "seriesName": "str",
+                                        "matchDesc": "str",
+                                        "matchFormat": "str",
+                                        "startDate": "str",
+                                        "endDate": "str",
+                                        "state": "str",
+                                        "status": "str",
+                                        "team1": {
+                                            "teamName": "str",
+                                            "teamSName": "str",
+                                            "imageId": "str"
+                                        },
+                                        "team2": {
+                                            "teamName": "str",
+                                            "teamSName": "str",
+                                            "imageId": "str"
+                                        },
+                                        "venueInfo": {
+                                            "ground": "str",
+                                            "city": "str",
+                                            "timezone": "str"
+                                        },
+                                        "currentBatTeamId": "str"
+                                    },
+                                    "matchScore": {
+                                        "team1Score": {
+                                            "inngs1": {
+                                                "runs": "str",
+                                                "wickets": "str",
+                                                "overs": "str"
+                                            }
+                                        },
+                                        "team2Score": {
+                                            "inngs1": {
+                                                "runs": "str",
+                                                "wickets": "str",
+                                                "overs": "str",
+                                                "isDeclared": "str"
+                                            },
+                                            "inngs2": {
+                                                "runs": "str",
+                                                "overs": "str"
+                                            }
+                                        }
+                                    }
+                                }
+                            ],
+                            "seriesId": "str"
+                        }
+                    }
+                ],
+                "appIndex": {
+                    "seoTitle": "str",
+                    "webURL": "str"
+                }
+            }
+        },
+        {
+            "name": "series/get-news",
+            "schema": {
+                "newsList": [
+                    {
+                        "story": {
+                            "hline": "str",
+                            "intro": "str",
+                            "pubTime": "str",
+                            "source": "str",
+                            "storyType": "str",
+                            "seoHeadline": "str",
+                            "context": "str",
+                            "coverImage": {
+                                "caption": "str",
+                                "source": "str"
+                            }
+                        }
+                    }
+                ],
+                "lastUpdatedTime": "str"
+            }
+        },
+        {
+            "name": "series/list-archives",
+            "schema": {
+                "seriesMap": [
+                    {
+                        "date": "str",
+                        "series": [
+                            {
+                                "name": "str",
+                                "startDt": "str",
+                                "endDt": "str"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "name": "teams/get-stats",
+            "schema": {
+                "filter": {
+                    "matchtype": [
+                        {
+                            "matchTypeId": "str",
+                            "matchTypeDesc": "str"
+                        }
+                    ],
+                    "team": [
+                        {
+                            "teamId": "str",
+                            "teamSName": "str"
+                        }
+                    ],
+                    "selectedMatchType": "str",
+                    "selectedTeam": "str"
+                },
+                "headers": [
+                    "list of str with length 1"
+                ],
+                "values": [
+                    {
+                        "values": [
+                            "list of str with length 1"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "name": "stats/get-record-filters",
+            "schema": {
+                "topStats": [
+                    {
+                        "statsData": [
+                            {
+                                "value": "str",
+                                "name": "str"
+                            }
+                        ],
+                        "category": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "stats/get-icc-rankings",
+            "schema": {
+                "rank": [
+                    {
+                        "name": "str",
+                        "country": "str",
+                        "rating": "str",
+                        "points": "str"
+                    }
+                ],
+                "appIndex": {
+                    "seoTitle": "str",
+                    "webURL": "str"
+                }
+            }
+        },
+        {
+            "name": "news/get-topics",
+            "schema": {
+                "topics": [
+                    {
+                        "headline": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "news/detail",
+            "schema": {
+                "id": "str",
+                "headline": "str",
+                "publishTime": "str",
+                "coverImage": {
+                    "source": "str"
+                },
+                "content": [
+                    {
+                        "contentType": "str"
+                    }
+                ],
+                "images": [
+                    {
+                        "imageCaption": "str"
+                    }
+                ],
+                "authors": [
+                    {
+                        "name": "str",
+                        "twitterHandle": "str"
+                    }
+                ],
+                "tags": [
+                    {
+                        "itemName": "str"
+                    }
+                ],
+                "appIndex": {
+                    "seoTitle": "str",
+                    "webURL": "str"
+                },
+                "storyType": "str"
+            }
+        },
+        {
+            "name": "news/list",
+            "schema": {
+                "newsList": [
+                    {
+                        "story": {
+                            "id": "int",
+                            "hline": "str",
+                            "intro": "str",
+                            "pubTime": "str",
+                            "source": "str",
+                            "storyType": "str",
+                            "seoHeadline": "str",
+                            "context": "str",
+                            "coverImage": {
+                                "caption": "str",
+                                "source": "str"
+                            }
+                        }
+                    }
+                ],
+                "lastUpdatedTime": "str"
+            }
+        },
+        {
+            "name": "players/get-career",
+            "schema": {
+                "values": [
+                    {
+                        "name": "str",
+                        "debut": "str",
+                        "lastPlayed": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "players/get-bowling",
+            "schema": {
+                "headers": [
+                    "list of str with length 1"
+                ],
+                "values": [
+                    {
+                        "values": [
+                            "list of str with length 1"
+                        ]
+                    }
+                ],
+                "appIndex": {
+                    "webURL": "str"
+                },
+                "seriesSpinner": [
+                    {
+                        "seriesName": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "players/get-info",
+            "schema": {
+                "id": "str",
+                "name": "str",
+                "nickName": "str",
+                "role": "str",
+                "intlTeam": [
+                    "list of str with length 1"
+                ],
+                "teams": [
+                    "list of str with length 1"
+                ],
+                "DoB": "str",
+                "image": "str",
+                "bio": "str",
+                "currRank": {
+                    "bat": {
+                        "testRank": "str",
+                        "testBestRank": "str"
+                    },
+                    "bowl": {
+                        "testBestRank": "str",
+                        "odiBestRank": "str",
+                        "t20BestRank": "str"
+                    }
+                },
+                "DoBFormat": "str",
+                "faceImageId": "str"
+            }
+        },
+        {
+            "name": "players/search",
+            "schema": {
+                "player": [
+                    {
+                        "name": "str",
+                        "teamName": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "players/list-trending",
+            "schema": {
+                "player": [
+                    {
+                        "name": "str",
+                        "teamName": "str"
+                    }
+                ],
+                "category": "str"
+            }
+        },
+        {
+            "name": "venues/get-info",
+            "schema": {
+                "ground": "str",
+                "city": "str",
+                "country": "str",
+                "capacity": "str",
+                "homeTeam": "str"
+            }
+        },
+        {
+            "name": "teams/get-stats-filters",
+            "schema": {
+                "statsData": [
+                    {
+                        "name": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "teams/get-players",
+            "schema": {
+                "player": [
+                    {
+                        "name": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "teams/get-news",
+            "schema": {
+                "newsList": [
+                    {
+                        "story": {
+                            "hline": "str",
+                            "intro": "str",
+                            "pubTime": "str",
+                            "source": "str",
+                            "storyType": "str",
+                            "seoHeadline": "str",
+                            "context": "str",
+                            "coverImage": {
+                                "caption": "str",
+                                "source": "str"
+                            }
+                        }
+                    }
+                ],
+                "lastUpdatedTime": "str"
+            }
+        },
+        {
+            "name": "teams/get-results",
+            "schema": {
+                "adWrapper": [
+                    {
+                        "matchDetails": {
+                            "matches": [
+                                {
+                                    "matchInfo": {
+                                        "matchId": "str",
+                                        "seriesName": "str",
+                                        "matchDesc": "str",
+                                        "startDate": "str",
+                                        "endDate": "str",
+                                        "status": "str",
+                                        "team1": {
+                                            "teamName": "str",
+                                            "teamSName": "str"
+                                        },
+                                        "team2": {
+                                            "teamName": "str",
+                                            "teamSName": "str"
+                                        },
+                                        "venueInfo": {
+                                            "ground": "str",
+                                            "city": "str"
+                                        },
+                                        "seriesStartDt": "str",
+                                        "seriesEndDt": "str"
+                                    },
+                                    "matchScore": {
+                                        "team1Score": {
+                                            "inngs1": {
+                                                "runs": "str",
+                                                "wickets": "str",
+                                                "overs": "str"
+                                            },
+                                            "inngs2": {
+                                                "runs": "str",
+                                                "wickets": "str",
+                                                "overs": "str"
+                                            }
+                                        },
+                                        "team2Score": {
+                                            "inngs1": {
+                                                "runs": "str",
+                                                "wickets": "str",
+                                                "overs": "str"
+                                            },
+                                            "inngs2": {
+                                                "runs": "str",
+                                                "wickets": "str",
+                                                "overs": "str"
+                                            }
+                                        }
+                                    }
+                                }
+                            ],
+                            "seriesId": "str"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "teams/get-schedules",
+            "schema": {
+                "adWrapper": [
+                    {
+                        "matchDetails": {
+                            "key": "str",
+                            "matches": [
+                                {
+                                    "matchInfo": {
+                                        "matchId": "int",
+                                        "seriesName": "str",
+                                        "matchDesc": "str",
+                                        "matchFormat": "str",
+                                        "startDate": "str",
+                                        "endDate": "str",
+                                        "state": "str",
+                                        "team1": {
+                                            "teamId": "int",
+                                            "teamName": "str",
+                                            "teamSName": "str"
+                                        },
+                                        "team2": {
+                                            "teamId": "int",
+                                            "teamName": "str",
+                                            "teamSName": "str"
+                                        },
+                                        "venueInfo": {
+                                            "ground": "str",
+                                            "city": "str"
+                                        },
+                                        "seriesStartDt": "str",
+                                        "seriesEndDt": "str"
+                                    }
+                                }
+                            ],
+                            "seriesId": "int"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "teams/list",
+            "schema": {
+                "teamData": [
+                    {
+                        "teamName": "str"
+                    }
+                ],
+                "appIndex": {
+                    "webURL": "str"
+                }
+            }
+        },
+        {
+            "name": "series/get-points-table",
+            "schema": {
+                "pointsTable": [
+                    {
+                        "groupName": "str",
+                        "pointsTableInfo": [
+                            {
+                                "teamName": "str",
+                                "matchesPlayed": "int",
+                                "matchesWon": "int",
+                                "matchesDrawn": "int",
+                                "points": "int",
+                                "nrr": "str"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "name": "series/get-venues",
+            "schema": {
+                "venue": [
+                    {
+                        "ground": "str",
+                        "city": "str",
+                        "country": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "series/get-stats",
+            "schema": {
+                "testStats": [
+                    {
+                        "headers": [
+                            "list of str with length 1"
+                        ],
+                        "values": [
+                            {
+                                "values": [
+                                    "list of str with length 1"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "name": "series/get-squads",
+            "schema": {
+                "squadAnnouncedList": [
+                    {
+                        "squadType": "str"
+                    }
+                ],
+                "appIndex": {
+                    "seoTitle": "str"
+                }
+            }
+        },
+        {
+            "name": "series/list",
+            "schema": {
+                "seriesMap": [
+                    {
+                        "date": "str",
+                        "series": [
+                            {
+                                "name": "str",
+                                "startDt": "str",
+                                "endDt": "str"
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}

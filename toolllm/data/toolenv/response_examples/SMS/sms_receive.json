@@ -1,0 +1,40 @@
+{
+    "api_list": [
+        {
+            "name": "/SetTag",
+            "schema": {
+                "status": "int",
+                "errors": {
+                    "tag": [
+                        "list of str with length 1"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "/GetUpdates",
+            "schema": {
+                "success": "bool",
+                "message": "str"
+            }
+        },
+        {
+            "name": "/GetTag",
+            "schema": {
+                "success": "bool",
+                "message": "str"
+            }
+        },
+        {
+            "name": "/GetMessage",
+            "schema": {
+                "status": "int",
+                "errors": {
+                    "message_id": [
+                        "list of str with length 1"
+                    ]
+                }
+            }
+        }
+    ]
+}

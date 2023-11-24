@@ -1,0 +1,100 @@
+{
+    "api_list": [
+        {
+            "name": "Domain Data",
+            "schema": {
+                "age": {
+                    "domainAge": "str",
+                    "expiredDate": "str"
+                },
+                "whois": "str"
+            }
+        },
+        {
+            "name": "Loading Speed Data",
+            "schema": {
+                "data": {
+                    "url": "str",
+                    "http_code": "str",
+                    "total_time": "str",
+                    "download_content_length": "str",
+                    "upload_content_length": "str",
+                    "starttransfer_time": "str",
+                    "primary_ip": "str",
+                    "primary_port": "str"
+                },
+                "speed": {
+                    "url": "str",
+                    "loadingExperience": "str",
+                    "userAgent": "str",
+                    "timing": "str",
+                    "score": "str",
+                    "warning": "str"
+                },
+                "audit": [
+                    {
+                        "title": "str",
+                        "description": "str",
+                        "score": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Onpage SEO Analyze",
+            "schema": {
+                "basic": {
+                    "websiteurl": "str",
+                    "title": "str",
+                    "favicon": "str"
+                },
+                "webtitle": {
+                    "title": "str",
+                    "length": "str"
+                },
+                "metadescription": {
+                    "description": "str",
+                    "length": "str"
+                },
+                "metakeywords": {
+                    "keywords": "str",
+                    "counts": "str"
+                },
+                "headings": {
+                    "h1": {
+                        "count": "str"
+                    },
+                    "h2": {
+                        "count": "str"
+                    },
+                    "h3": {
+                        "count": "str"
+                    },
+                    "h4": {
+                        "count": "str"
+                    },
+                    "h5": {
+                        "count": "str"
+                    },
+                    "h6": {
+                        "count": "str"
+                    }
+                },
+                "sitemap_robots": [
+                    "list of str with length 1"
+                ],
+                "iframe": {
+                    "count": "str"
+                },
+                "underscoreurl": "str",
+                "urlrewrite": "str",
+                "images": {
+                    "count": "str"
+                },
+                "links": {
+                    "count": "str"
+                }
+            }
+        }
+    ]
+}

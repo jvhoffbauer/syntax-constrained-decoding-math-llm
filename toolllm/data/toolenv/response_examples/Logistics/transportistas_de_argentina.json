@@ -1,0 +1,22 @@
+{
+    "api_list": [
+        {
+            "name": "/tracking/correo_argentino/create_task/:service/:tracking_code",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "/offices/postcode/:service/:postCode",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "/offices/search/:service/:stateIsoCode/:keyword",
+            "schema": {
+                "message": "str"
+            }
+        }
+    ]
+}

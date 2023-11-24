@@ -1,0 +1,11 @@
+{
+    "api_list": [
+        {
+            "name": "/meta/harley",
+            "schema": {
+                "message": "str",
+                "info": "str"
+            }
+        }
+    ]
+}

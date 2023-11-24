@@ -1,0 +1,121 @@
+{
+    "api_list": [
+        {
+            "name": "/v1/list/currencies",
+            "schema": {
+                "status": "str",
+                "data": [
+                    {
+                        "code": "str",
+                        "title": "str",
+                        "verbal": "str",
+                        "symbol": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "/v1/list/bank_types",
+            "schema": {
+                "status": "str",
+                "data": [
+                    {
+                        "alias": "str",
+                        "title": "str",
+                        "rate": "int"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "/v1/list/banks",
+            "schema": {
+                "status": "str",
+                "data": [
+                    {
+                        "title": "str",
+                        "rate": "int"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "/v1/rates/today",
+            "schema": {
+                "status": "str",
+                "data": {
+                    "124": {
+                        "avg": {
+                            "value": "str"
+                        },
+                        "commercial": {
+                            "value": "str"
+                        },
+                        "government": {
+                            "value": "str"
+                        }
+                    },
+                    "392": {
+                        "avg": {
+                            "value": "str"
+                        },
+                        "commercial": {
+                            "value": "str"
+                        },
+                        "government": {
+                            "value": "str"
+                        }
+                    },
+                    "643": {
+                        "avg": {
+                            "value": "str"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "/v1/rates/averages",
+            "schema": {
+                "data": {
+                    "2023-06-07": {
+                        "124": {
+                            "avg": {
+                                "value": "str",
+                                "diff": "str"
+                            },
+                            "commercial": {
+                                "value": "str",
+                                "diff": "str"
+                            },
+                            "government": {
+                                "value": "str",
+                                "diff": "str"
+                            }
+                        },
+                        "392": {
+                            "avg": {
+                                "value": "str",
+                                "diff": "str"
+                            },
+                            "commercial": {
+                                "value": "str",
+                                "diff": "str"
+                            },
+                            "government": {
+                                "value": "str",
+                                "diff": "str"
+                            }
+                        },
+                        "643": {
+                            "avg": {
+                                "value": "str",
+                                "diff": "str"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

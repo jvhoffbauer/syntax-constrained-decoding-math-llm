@@ -1,0 +1,19 @@
+{
+    "api_list": [
+        {
+            "name": "ip_to_location",
+            "schema": {
+                "coordinates": {
+                    "latitude": "float",
+                    "longitude": "float"
+                },
+                "ip": "str",
+                "isp": "str",
+                "country": "str",
+                "region": "str",
+                "city": "str",
+                "country_code": "str"
+            }
+        }
+    ]
+}

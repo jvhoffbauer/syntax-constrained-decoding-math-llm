@@ -1,0 +1,103 @@
+{
+    "api_list": [
+        {
+            "name": "Footballers By ID",
+            "schema": {
+                "results": [
+                    {
+                        "name": "str",
+                        "position": "str",
+                        "nationality": "str",
+                        "club": "str"
+                    }
+                ],
+                "totalResultsCount": "int"
+            }
+        },
+        {
+            "name": "FootballersByClub",
+            "schema": {
+                "results": [
+                    {
+                        "name": "str",
+                        "position": "str",
+                        "nationality": "str",
+                        "club": "str"
+                    }
+                ],
+                "totalResultsCount": "int"
+            }
+        },
+        {
+            "name": "FootballersByName",
+            "schema": {
+                "results": [
+                    {
+                        "name": "str",
+                        "position": "str",
+                        "nationality": "str",
+                        "club": "str"
+                    }
+                ],
+                "totalResultsCount": "int"
+            }
+        },
+        {
+            "name": "GameweekGamesById",
+            "schema": {
+                "results": [
+                    {
+                        "club1": "str",
+                        "club2": "str",
+                        "club1Score": "str",
+                        "club2Score": "str",
+                        "finalScore": "str",
+                        "winner": "NoneType",
+                        "isLive": "bool",
+                        "isFuture": "bool",
+                        "gw": "str"
+                    }
+                ],
+                "totalResultsCount": "int"
+            }
+        },
+        {
+            "name": "GameweekGamesByClub",
+            "schema": {
+                "results": [
+                    {
+                        "comp_name": "str",
+                        "game_week": "str",
+                        "home": "str",
+                        "away": "str",
+                        "status": "str",
+                        "venue": "str",
+                        "home_score": "str",
+                        "away_score": "str",
+                        "home_tries": "str",
+                        "away_tries": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "GameweekGames",
+            "schema": {
+                "results": [
+                    {
+                        "club1": "str",
+                        "club2": "str",
+                        "club1Score": "str",
+                        "club2Score": "str",
+                        "finalScore": "str",
+                        "winner": "NoneType",
+                        "isLive": "bool",
+                        "isFuture": "bool",
+                        "gw": "str"
+                    }
+                ],
+                "totalResultsCount": "int"
+            }
+        }
+    ]
+}

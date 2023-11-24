@@ -1,0 +1,54 @@
+{
+    "api_list": [
+        {
+            "name": "Geo Ping Global IP lookup",
+            "schema": {
+                "california-US-ipv6": {
+                    "results": {
+                        "ip": "str",
+                        "type": "str",
+                        "global_unicast": "str",
+                        "latitude": "str",
+                        "longitude": "str",
+                        "isp": "str",
+                        "city": "str",
+                        "country_code": "str",
+                        "icmp": "str",
+                        "webtime": "str",
+                        "ssltime": "str"
+                    }
+                },
+                "new-york-us-ipv6": {
+                    "results": {
+                        "ip": "str",
+                        "type": "str",
+                        "global_unicast": "str",
+                        "latitude": "str",
+                        "longitude": "str",
+                        "isp": "str",
+                        "city": "str",
+                        "country_code": "str",
+                        "icmp": "str",
+                        "webtime": "str",
+                        "ssltime": "str"
+                    }
+                },
+                "bahrain-UAE-ipv6": {
+                    "results": {
+                        "ip": "str",
+                        "type": "str",
+                        "global_unicast": "str",
+                        "latitude": "str",
+                        "longitude": "str",
+                        "isp": "str",
+                        "city": "str",
+                        "country_code": "str",
+                        "icmp": "str",
+                        "webtime": "str",
+                        "ssltime": "str"
+                    }
+                }
+            }
+        }
+    ]
+}

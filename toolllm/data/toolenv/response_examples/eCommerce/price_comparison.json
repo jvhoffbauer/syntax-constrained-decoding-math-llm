@@ -1,0 +1,48 @@
+{
+    "api_list": [
+        {
+            "name": "details",
+            "schema": {
+                "ID": "str",
+                "ASIN": "str",
+                "Title": "str",
+                "BasePrice": "str",
+                "FormattedBasePrice": "str",
+                "BestPrice": "str",
+                "FormattedBestPrice": "str",
+                "ProductCategories": [
+                    {
+                        "Name": "str",
+                        "FullName": "str"
+                    }
+                ],
+                "Media": {
+                    "XImage": "str",
+                    "OriginalWidth": "str",
+                    "OriginalHeight": "str",
+                    "AverageColor": "str",
+                    "DominantColor": "str"
+                },
+                "Attributes": [
+                    {
+                        "Type": "str",
+                        "Key": "str",
+                        "Value": "str"
+                    }
+                ],
+                "Offers": [
+                    {
+                        "Merchant": "str",
+                        "ProductID": "str",
+                        "Quality": "str",
+                        "Venue": "str",
+                        "Price": "str",
+                        "FormattedPrice": "str",
+                        "Link": "str",
+                        "InStockStatus": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

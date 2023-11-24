@@ -1,0 +1,15 @@
+{
+    "api_list": [
+        {
+            "name": "Get list of languages",
+            "schema": {
+                "results": [
+                    {
+                        "text": "str",
+                        "value": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,73 @@
+{
+    "api_list": [
+        {
+            "name": "GET quotes by actor",
+            "schema": {
+                "id": "int",
+                "quote": "str",
+                "character": "str",
+                "quoteFrom": "str",
+                "actor": "str"
+            }
+        },
+        {
+            "name": "GET a random quote",
+            "schema": {
+                "quote": "str",
+                "character": "str",
+                "quoteFrom": "str",
+                "actor": "str",
+                "year": "int"
+            }
+        },
+        {
+            "name": "GET quote by movie or TV show name",
+            "schema": {
+                "quote": "str",
+                "character": "str",
+                "quoteFrom": "str",
+                "year": "int"
+            }
+        },
+        {
+            "name": "GET quote by Year",
+            "schema": {
+                "quote": "str",
+                "character": "str",
+                "actor": "str",
+                "quoteFrom": "str",
+                "year": "int"
+            }
+        },
+        {
+            "name": "Get quote by character",
+            "schema": {
+                "quote": "str",
+                "character": "str",
+                "actor": "str",
+                "quoteFrom": "str",
+                "year": "int"
+            }
+        },
+        {
+            "name": "Get individual quotes by quote ID",
+            "schema": {
+                "quote": "str",
+                "character": "str",
+                "actor": "str",
+                "quoteFrom": "str",
+                "year": "int"
+            }
+        },
+        {
+            "name": "Get all quotes",
+            "schema": {
+                "quote": "str",
+                "character": "str",
+                "actor": "str",
+                "quoteFrom": "str",
+                "year": "int"
+            }
+        }
+    ]
+}

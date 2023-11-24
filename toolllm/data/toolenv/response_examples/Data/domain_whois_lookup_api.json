@@ -1,0 +1,11 @@
+{
+    "api_list": [
+        {
+            "name": "domain_name",
+            "schema": {
+                "domain": "str",
+                "text": "str"
+            }
+        }
+    ]
+}

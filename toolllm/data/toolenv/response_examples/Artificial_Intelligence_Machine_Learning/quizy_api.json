@@ -1,0 +1,18 @@
+{
+    "api_list": [
+        {
+            "name": "/generateQuiz",
+            "schema": {
+                "body": [
+                    {
+                        "question": "str",
+                        "options": [
+                            "list of str with length 1"
+                        ],
+                        "correct_answer": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

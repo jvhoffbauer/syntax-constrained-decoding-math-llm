@@ -1,0 +1,13 @@
+{
+    "api_list": [
+        {
+            "name": "Extract Data",
+            "schema": {
+                "invalidHeaders": [
+                    "list of str with length 1"
+                ],
+                "invalidQueryParams": {}
+            }
+        }
+    ]
+}

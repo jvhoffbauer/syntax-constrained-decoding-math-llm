@@ -1,0 +1,45 @@
+{
+    "api_list": [
+        {
+            "name": "Get m3u8 Links",
+            "schema": {
+                "quality": "str",
+                "resolution": "str",
+                "url": "str"
+            }
+        },
+        {
+            "name": "Get Channel Profile Pic HTML Element",
+            "schema": {
+                "img_element": {
+                    "smallProfilePicture": "str",
+                    "mediumProfilePicture": "str",
+                    "bigProfilePicture": "str"
+                }
+            }
+        },
+        {
+            "name": "Get Channel Profile Pic URL",
+            "schema": {
+                "img_urls": {
+                    "smallProfilePicture": "str",
+                    "mediumProfilePicture": "str",
+                    "bigProfilePicture": "str"
+                }
+            }
+        },
+        {
+            "name": "Get All Channel Infos",
+            "schema": {
+                "id": "str",
+                "login": "str",
+                "display_name": "str",
+                "type": "str",
+                "broadcaster_type": "str",
+                "profile_image_url": "str",
+                "view_count": "str",
+                "created_at": "str"
+            }
+        }
+    ]
+}

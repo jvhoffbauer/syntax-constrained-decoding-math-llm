@@ -1,0 +1,454 @@
+{
+    "api_list": [
+        {
+            "name": "Get futured playlists",
+            "schema": {
+                "uri": "str",
+                "id": "str",
+                "name": "str",
+                "description": "str",
+                "images": [
+                    {
+                        "url": "str"
+                    }
+                ],
+                "owner": {
+                    "external_urls": {
+                        "spotify": "str"
+                    },
+                    "id": "str",
+                    "uri": "str",
+                    "display_name": "str"
+                },
+                "collaborative": "bool",
+                "external_urls": {
+                    "spotify": "str"
+                },
+                "total_tracks": "int"
+            }
+        },
+        {
+            "name": "Get user profile and public playlists",
+            "schema": {
+                "display_name": "str",
+                "externalUrls": {
+                    "spotify": "str"
+                },
+                "followers_count": "int",
+                "id": "str",
+                "type": "str",
+                "uri": "str",
+                "playlists": [
+                    {
+                        "uri": "str",
+                        "id": "str",
+                        "name": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Get show",
+            "schema": {
+                "uri": "str",
+                "id": "str",
+                "name": "str",
+                "description": "str",
+                "explicit": "bool",
+                "is_externally_hosted": "bool",
+                "images": [
+                    {
+                        "url": "str",
+                        "width": "int",
+                        "height": "int"
+                    }
+                ],
+                "total_episodes": "int",
+                "media_type": "str",
+                "publisher": "str",
+                "externalUrls": {
+                    "spotify": "str"
+                },
+                "episodes": [
+                    {
+                        "uri": "str",
+                        "id": "str",
+                        "name": "str",
+                        "description": "str",
+                        "duration_ms": "int"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Get episode",
+            "schema": {
+                "uri": "str",
+                "id": "str",
+                "name": "str",
+                "description": "str",
+                "external_urls": {
+                    "spotify": "str"
+                },
+                "duration_ms": "str",
+                "explicit": "str",
+                "release_date": "str",
+                "release_date_precision": "str",
+                "languages": [
+                    "list of str with length 1"
+                ],
+                "audio_preview_url": "str",
+                "show": {
+                    "uri": "str",
+                    "id": "str",
+                    "name": "str",
+                    "description": "str"
+                }
+            }
+        },
+        {
+            "name": "Get track audo futures",
+            "schema": {
+                "acousticness": "float",
+                "danceability": "float",
+                "duration_ms": "int",
+                "energy": "float",
+                "id": "str",
+                "instrumentalness": "float",
+                "key": "int",
+                "liveness": "float",
+                "loudness": "float",
+                "mode": "int",
+                "speechiness": "float",
+                "tempo": "float",
+                "time_signature": "int",
+                "valence": "float"
+            }
+        },
+        {
+            "name": "Get tracks",
+            "schema": {
+                "uri": "str",
+                "id": "str",
+                "name": "str",
+                "artists": [
+                    {
+                        "name": "str"
+                    }
+                ],
+                "duration_ms": "str",
+                "album": {
+                    "name": "str",
+                    "release_date": "str",
+                    "artists": [
+                        {
+                            "name": "str"
+                        }
+                    ],
+                    "total_tracks": "str"
+                },
+                "explicit": "str",
+                "disc_number": "str",
+                "track_number": "str",
+                "type": "str",
+                "preview_url": "str",
+                "external_urls": {
+                    "spotify": "str"
+                },
+                "external_ids": {
+                    "isrc": "str"
+                },
+                "is_local": "str",
+                "is_playable": "str"
+            }
+        },
+        {
+            "name": "Get playlist by category",
+            "schema": {
+                "uri": "str",
+                "id": "str",
+                "name": "str",
+                "description": "str",
+                "images": [
+                    {
+                        "url": "str"
+                    }
+                ],
+                "owner": {
+                    "external_urls": {
+                        "spotify": "str"
+                    },
+                    "id": "str",
+                    "uri": "str",
+                    "display_name": "str"
+                },
+                "collaborative": "bool",
+                "external_urls": {
+                    "spotify": "str"
+                },
+                "total_tracks": "int"
+            }
+        },
+        {
+            "name": "Get playlist",
+            "schema": {
+                "uri": "str",
+                "id": "str",
+                "name": "str",
+                "description": "str",
+                "images": [
+                    {
+                        "url": "str",
+                        "width": "str",
+                        "height": "str"
+                    }
+                ],
+                "owner": {
+                    "external_urls": {
+                        "spotify": "str"
+                    },
+                    "id": "str",
+                    "uri": "str",
+                    "display_name": "str"
+                },
+                "tracks": [
+                    {
+                        "uri": "str",
+                        "id": "str",
+                        "name": "str",
+                        "duration_ms": "str"
+                    }
+                ],
+                "type": "str",
+                "collaborative": "str",
+                "external_urls": {
+                    "spotify": "str"
+                },
+                "followers": {
+                    "total": "str"
+                },
+                "public": "str"
+            }
+        },
+        {
+            "name": "Get new releases",
+            "schema": {
+                "uri": "str",
+                "id": "str",
+                "name": "str",
+                "release_date": "str",
+                "artists": [
+                    {
+                        "name": "str"
+                    }
+                ],
+                "album_type": "str",
+                "total_tracks": "int",
+                "release_date_precision": "str"
+            }
+        },
+        {
+            "name": "Get album tracks",
+            "schema": {
+                "uri": "str",
+                "id": "str",
+                "name": "str",
+                "artists": [
+                    {
+                        "name": "str"
+                    }
+                ],
+                "duration_ms": "int",
+                "explicit": "bool",
+                "disc_number": "int",
+                "track_number": "int"
+            }
+        },
+        {
+            "name": "Get album",
+            "schema": {
+                "uri": "str",
+                "id": "str",
+                "images": [
+                    {
+                        "url": "str",
+                        "width": "str",
+                        "height": "str"
+                    }
+                ],
+                "name": "str",
+                "release_date": "str",
+                "artists": [
+                    {
+                        "uri": "str",
+                        "id": "str",
+                        "name": "str",
+                        "external_urls": {
+                            "spotify": "str"
+                        }
+                    }
+                ],
+                "album_type": "str",
+                "copyrights": [
+                    {
+                        "text": "str",
+                        "type": "str"
+                    }
+                ],
+                "label": "str",
+                "external_ids": {
+                    "upc": "str"
+                },
+                "popularity": "str",
+                "external_urls": {
+                    "spotify": "str"
+                },
+                "tracks": [
+                    {
+                        "uri": "str",
+                        "id": "str",
+                        "name": "str",
+                        "artists": [
+                            {
+                                "name": "str"
+                            }
+                        ],
+                        "disc_number": "str",
+                        "track_number": "str",
+                        "external_urls": {
+                            "spotify": "str"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Get artist related artists",
+            "schema": {
+                "uri": "str",
+                "id": "str",
+                "name": "str",
+                "images": [
+                    {
+                        "url": "str",
+                        "width": "int",
+                        "height": "int"
+                    }
+                ],
+                "external_urls": {
+                    "spotify": "str"
+                },
+                "followers": {
+                    "total": "int"
+                },
+                "genres": [
+                    "list of str with length 1"
+                ],
+                "popularity": "int"
+            }
+        },
+        {
+            "name": "Get artist top tracks",
+            "schema": {
+                "uri": "str",
+                "id": "str",
+                "name": "str",
+                "artists": [
+                    {
+                        "name": "str"
+                    }
+                ],
+                "duration_ms": "str",
+                "album": {
+                    "name": "str",
+                    "release_date": "str",
+                    "artists": [
+                        {
+                            "name": "str"
+                        }
+                    ],
+                    "album_type": "str",
+                    "external_urls": {
+                        "spotify": "str"
+                    },
+                    "total_tracks": "str",
+                    "release_date_precision": "str"
+                },
+                "explicit": "str",
+                "disc_number": "str",
+                "track_number": "str",
+                "type": "str",
+                "preview_url": "str",
+                "external_urls": {
+                    "spotify": "str"
+                },
+                "external_ids": {
+                    "isrc": "str"
+                },
+                "is_local": "str",
+                "is_playable": "str"
+            }
+        },
+        {
+            "name": "Get multiple artists",
+            "schema": {
+                "uri": "str",
+                "id": "str",
+                "name": "str",
+                "external_urls": {
+                    "spotify": "str"
+                },
+                "followers": {
+                    "total": "int"
+                },
+                "genres": [
+                    "list of str with length 1"
+                ],
+                "popularity": "int",
+                "type": "str"
+            }
+        },
+        {
+            "name": "Get artist",
+            "schema": {
+                "uri": "str",
+                "id": "str",
+                "name": "str",
+                "images": [
+                    {
+                        "url": "str",
+                        "width": "int",
+                        "height": "int"
+                    }
+                ],
+                "external_urls": {
+                    "spotify": "str"
+                },
+                "followers": {
+                    "total": "int"
+                },
+                "genres": [
+                    "list of str with length 1"
+                ],
+                "popularity": "int"
+            }
+        },
+        {
+            "name": "Search",
+            "schema": {
+                "totalCount": "int",
+                "items": [
+                    {
+                        "uri": "str",
+                        "id": "str",
+                        "name": "str",
+                        "description": "str",
+                        "total_episodes": "int",
+                        "media_type": "str",
+                        "publisher": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

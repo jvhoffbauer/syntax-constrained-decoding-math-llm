@@ -1,0 +1,18 @@
+{
+    "api_list": [
+        {
+            "name": "Timezone",
+            "schema": {
+                "get": "str",
+                "errors": {
+                    "token": "str"
+                },
+                "results": "int",
+                "paging": {
+                    "current": "int",
+                    "total": "int"
+                }
+            }
+        }
+    ]
+}

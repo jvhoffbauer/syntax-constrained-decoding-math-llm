@@ -1,0 +1,27 @@
+{
+    "api_list": [
+        {
+            "name": "crypto-arb",
+            "schema": {
+                "arbitrage_profit": "float",
+                "order_sell": {
+                    "exchange": "str",
+                    "bid": "float",
+                    "fees": "int",
+                    "datetime": "str"
+                },
+                "order_buy": {
+                    "exchange": "str",
+                    "ask": "float",
+                    "fees": "int",
+                    "datetime": "str"
+                },
+                "pair": "str",
+                "considered_exchanges": [
+                    "list of str with length 1"
+                ],
+                "warning": "str"
+            }
+        }
+    ]
+}

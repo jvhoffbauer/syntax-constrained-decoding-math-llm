@@ -1,0 +1,23 @@
+{
+    "api_list": [
+        {
+            "name": "config",
+            "schema": {
+                "users": [
+                    {
+                        "firstName": "str",
+                        "lastName": "str",
+                        "emailAddress": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "cat",
+            "schema": {
+                "cid": "int",
+                "category_name": "str"
+            }
+        }
+    ]
+}

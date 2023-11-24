@@ -1,0 +1,25 @@
+{
+    "api_list": [
+        {
+            "name": "tesst",
+            "schema": {
+                "status": "str",
+                "article": {
+                    "source_url": "str",
+                    "published": "str",
+                    "title": "str",
+                    "text": "str",
+                    "authors": "str",
+                    "images": [
+                        "list of str with length 1"
+                    ],
+                    "top_image": "str",
+                    "meta_lang": "str",
+                    "title_lang": "str",
+                    "text_lang": "str",
+                    "meta_favicon": "str"
+                }
+            }
+        }
+    ]
+}

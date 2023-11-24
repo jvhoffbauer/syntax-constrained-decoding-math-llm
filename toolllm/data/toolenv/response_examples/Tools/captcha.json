@@ -1,0 +1,11 @@
+{
+    "api_list": [
+        {
+            "name": "Generate Captcha",
+            "schema": {
+                "uuid": "str",
+                "captcha": "str"
+            }
+        }
+    ]
+}

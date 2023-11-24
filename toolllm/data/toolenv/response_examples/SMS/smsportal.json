@@ -1,0 +1,15 @@
+{
+    "api_list": [
+        {
+            "name": "Balance",
+            "schema": {
+                "statusCode": "int",
+                "errors": [
+                    {
+                        "errorMessage": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

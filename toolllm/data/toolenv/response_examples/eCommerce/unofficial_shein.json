@@ -1,0 +1,374 @@
+{
+    "api_list": [
+        {
+            "name": "products/get-extra-info",
+            "schema": {
+                "info": {
+                    "goods_id": "str",
+                    "return_title": "str",
+                    "is_support_return": "str",
+                    "shipping_countryname": "str",
+                    "goodsFreeLimit": {
+                        "free_policy_limit": "str",
+                        "free_activity_limit": "str",
+                        "freight_activity_limit": "str"
+                    },
+                    "multiRangeShippingList": [
+                        {
+                            "shippingDays": "str",
+                            "transportType": "str",
+                            "shippingThreshold": "str",
+                            "shippingDateTime": "str"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "products/get-filters",
+            "schema": {
+                "info": {
+                    "categories": [
+                        {
+                            "children": [
+                                {
+                                    "children": [
+                                        {
+                                            "cat_id": "str",
+                                            "cat_name": "str",
+                                            "url_cat_id": "str",
+                                            "cat_url_name": "str",
+                                            "parent_id": "str",
+                                            "is_leaf": "str"
+                                        }
+                                    ],
+                                    "cat_id": "str",
+                                    "cat_name": "str",
+                                    "url_cat_id": "str",
+                                    "cat_url_name": "str",
+                                    "parent_id": "str",
+                                    "is_leaf": "str"
+                                }
+                            ],
+                            "cat_id": "str",
+                            "cat_name": "str",
+                            "parent_id": "str"
+                        }
+                    ],
+                    "attribute": [
+                        {
+                            "attr_id": "str",
+                            "attr_name": "str",
+                            "attr_value": "str",
+                            "attr_value_id": "str"
+                        }
+                    ],
+                    "currency_symbol": "str",
+                    "isPlusSize": "bool",
+                    "max_price": "float",
+                    "min_price": "float"
+                }
+            }
+        },
+        {
+            "name": "products/search",
+            "schema": {
+                "code": "str",
+                "msg": "str",
+                "info": {
+                    "action": "str",
+                    "status": "str",
+                    "url": "str",
+                    "page_name": "str",
+                    "page_id": "str",
+                    "page_type": "str"
+                },
+                "products": [
+                    {
+                        "goods_id": "str",
+                        "goods_sn": "str",
+                        "goods_img": "str",
+                        "goods_name": "str",
+                        "goods_url_name": "str",
+                        "cat_id": "str",
+                        "stock": "str",
+                        "is_on_sale": "str",
+                        "retailPrice": {
+                            "amount": "str",
+                            "amountWithSymbol": "str"
+                        },
+                        "salePrice": {
+                            "amount": "str",
+                            "amountWithSymbol": "str"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "products/get-reviews",
+            "schema": {
+                "info": {
+                    "shopRank": "str",
+                    "storeRatingSource": "str",
+                    "goods_id": "str",
+                    "comments_overview": {
+                        "comment_num": "str",
+                        "comment_rank_average": "str",
+                        "percent_overall_fit": {
+                            "true_size": "str",
+                            "large": "str",
+                            "small": "str"
+                        },
+                        "size_tips": {
+                            "true_size": "str",
+                            "large": "str",
+                            "small": "str"
+                        },
+                        "hasFit": "str"
+                    },
+                    "trans_mode": "str",
+                    "source_language": [
+                        "list of str with length 1"
+                    ],
+                    "translate_language": [
+                        {
+                            "translate_language": "str",
+                            "display_language": "str"
+                        }
+                    ],
+                    "product_comments": [
+                        {
+                            "localFlag": "str",
+                            "spu": "str",
+                            "add_time": "str"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "products/detail",
+            "schema": {
+                "code": "str",
+                "msg": "str",
+                "info": {
+                    "mallInfoList": [
+                        {
+                            "stock": "str",
+                            "retailPrice": {
+                                "amount": "str",
+                                "amountWithSymbol": "str"
+                            },
+                            "salePrice": {
+                                "amount": "str",
+                                "amountWithSymbol": "str"
+                            },
+                            "mall_code": "str",
+                            "mall_name": "str",
+                            "mall_sort": "str"
+                        }
+                    ],
+                    "cateIds": "str",
+                    "ruleType": "str",
+                    "storeCode": "str",
+                    "goodsCategoryType": "str"
+                }
+            }
+        },
+        {
+            "name": "products/list",
+            "schema": {
+                "code": "str",
+                "msg": "str",
+                "info": {
+                    "num": "str",
+                    "products": [
+                        {
+                            "goods_id": "str",
+                            "goods_sn": "str",
+                            "goods_name": "str",
+                            "goods_url_name": "str",
+                            "cat_id": "str",
+                            "stock": "str",
+                            "is_on_sale": "str",
+                            "retailPrice": {
+                                "amount": "str",
+                                "amountWithSymbol": "str"
+                            },
+                            "salePrice": {
+                                "amount": "str",
+                                "amountWithSymbol": "str"
+                            },
+                            "relatedColor": [
+                                {
+                                    "goods_id": "str",
+                                    "goods_relation_id": "str",
+                                    "goods_color_image": "str"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "navigations/get-node-content",
+            "schema": {
+                "code": "str",
+                "msg": "str",
+                "info": {
+                    "content": [
+                        {
+                            "level": "str",
+                            "id": "str",
+                            "name": "str",
+                            "style": {
+                                "remark": "str"
+                            }
+                        }
+                    ],
+                    "firstLevelId": "str",
+                    "hashData": "str"
+                }
+            }
+        },
+        {
+            "name": "navigations/get-root",
+            "schema": {
+                "code": "str",
+                "msg": "str",
+                "info": {
+                    "content": [
+                        {
+                            "name": "str",
+                            "id": "str",
+                            "type": "str",
+                            "navNodeId": "str",
+                            "enName": "str",
+                            "is_recommend": "str",
+                            "hrefType": "str",
+                            "child": [
+                                {
+                                    "type": "str",
+                                    "name": "str",
+                                    "hrefType": "str",
+                                    "navNodeId": "str",
+                                    "isAutoRec": "str",
+                                    "trackHrefType": "str",
+                                    "trackHrefTarget": "str",
+                                    "isRecommendation": "str"
+                                }
+                            ]
+                        }
+                    ],
+                    "hitSite": {
+                        "lang": "str",
+                        "site": "str",
+                        "siteUid": "str"
+                    },
+                    "id": "str"
+                }
+            }
+        },
+        {
+            "name": "navigations/get-tabs",
+            "schema": {
+                "code": "str",
+                "msg": "str",
+                "info": {
+                    "tabs": [
+                        {
+                            "id": "str",
+                            "name": "str",
+                            "channelName": "str",
+                            "cat_id": "str",
+                            "is_default": "str",
+                            "isAllTab": "str"
+                        }
+                    ],
+                    "crowd_abt": {
+                        "abt-type": "str",
+                        "abt-poskey": "str",
+                        "abt-params": "str",
+                        "abt-expid": "str",
+                        "abt-branchid": "str",
+                        "poskeyTraceInfo": "str",
+                        "child": "str"
+                    },
+                    "crowdId": "str",
+                    "contentCacheEnable": "str"
+                }
+            }
+        },
+        {
+            "name": "countries/detail",
+            "schema": {
+                "info": {
+                    "support_language_list": [
+                        {
+                            "language": "str",
+                            "languageTip": "str"
+                        }
+                    ],
+                    "language_full_name_in_header": {
+                        "language": "str"
+                    },
+                    "suppport_currency_list": [
+                        {
+                            "code": "str",
+                            "symbol_left": "str",
+                            "value": "str",
+                            "default": "str",
+                            "decimal_place": "str"
+                        }
+                    ],
+                    "current_country_full_name": "str"
+                }
+            }
+        },
+        {
+            "name": "countries/list",
+            "schema": {
+                "info": {
+                    "country": {
+                        "hotcountry": [
+                            {
+                                "value": "str",
+                                "country": "str"
+                            }
+                        ],
+                        "item_cates": [
+                            {
+                                "value": "str",
+                                "country": "str"
+                            }
+                        ],
+                        "dc_switch": "int"
+                    }
+                }
+            }
+        },
+        {
+            "name": "auto-complete",
+            "schema": {
+                "code": "str",
+                "msg": "str",
+                "info": {
+                    "guideWords": [
+                        {
+                            "word": "str",
+                            "categories": [
+                                {
+                                    "cateId": "str",
+                                    "cateName": "str"
+                                }
+                            ]
+                        }
+                    ],
+                    "is_suggested": "bool"
+                }
+            }
+        }
+    ]
+}

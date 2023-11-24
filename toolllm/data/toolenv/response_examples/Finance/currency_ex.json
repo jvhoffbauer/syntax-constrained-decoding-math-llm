@@ -1,0 +1,15 @@
+{
+    "api_list": [
+        {
+            "name": "Currency List",
+            "schema": {
+                "currencies": [
+                    {
+                        "code": "str",
+                        "name": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

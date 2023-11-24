@@ -1,0 +1,10 @@
+{
+    "api_list": [
+        {
+            "name": "First 25 teams",
+            "schema": {
+                "message": "str"
+            }
+        }
+    ]
+}

@@ -1,0 +1,264 @@
+{
+    "api_list": [
+        {
+            "name": "historical_weather",
+            "schema": {
+                "lat": "str",
+                "lon": "str",
+                "timezone": "str",
+                "units": "str",
+                "data": [
+                    {
+                        "date": "str",
+                        "weather": "str",
+                        "icon": "int",
+                        "temperature": "float",
+                        "feels_like": "float",
+                        "wind_chill": "float",
+                        "dew_point": "float",
+                        "wind": {
+                            "speed": "float",
+                            "angle": "int",
+                            "dir": "str"
+                        },
+                        "cloud_cover": "int",
+                        "pressure": "float",
+                        "precipitation": {
+                            "total": "float"
+                        },
+                        "humidity": "float"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "weather_statistics",
+            "schema": {
+                "lat": "str",
+                "lon": "str",
+                "units": "str",
+                "statistics": {
+                    "data": [
+                        {
+                            "day": "str",
+                            "temperature": {
+                                "avg": "float",
+                                "avg_min": "float",
+                                "avg_max": "float"
+                            },
+                            "wind": {
+                                "avg_speed": "float",
+                                "avg_dir": "str"
+                            },
+                            "precipitation": {
+                                "avg": "float",
+                                "probability": "int"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "hourly",
+            "schema": {
+                "lat": "str",
+                "lon": "str",
+                "timezone": "str",
+                "units": "str",
+                "hourly": {
+                    "data": [
+                        {
+                            "date": "str",
+                            "weather": "str",
+                            "icon": "int",
+                            "summary": "str",
+                            "temperature": "float",
+                            "feels_like": "float",
+                            "wind_chill": "float",
+                            "dew_point": "float",
+                            "wind": {
+                                "speed": "float",
+                                "gusts": "float",
+                                "dir": "str",
+                                "angle": "int"
+                            },
+                            "cloud_cover": "int",
+                            "pressure": "float",
+                            "precipitation": {
+                                "total": "float",
+                                "type": "str"
+                            },
+                            "ozone": "float",
+                            "uv_index": "float",
+                            "humidity": "int",
+                            "visibility": "float"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "current",
+            "schema": {
+                "lat": "str",
+                "lon": "str",
+                "timezone": "str",
+                "units": "str",
+                "current": {
+                    "icon": "str",
+                    "summary": "str",
+                    "temperature": "float",
+                    "feels_like": "float",
+                    "wind_chill": "float",
+                    "dew_point": "float",
+                    "wind": {
+                        "speed": "float",
+                        "gusts": "float",
+                        "angle": "int",
+                        "dir": "str"
+                    },
+                    "precipitation": {
+                        "total": "float",
+                        "type": "str"
+                    },
+                    "cloud_cover": "int",
+                    "ozone": "float",
+                    "pressure": "float",
+                    "uv_index": "float",
+                    "humidity": "int",
+                    "visibility": "float"
+                }
+            }
+        },
+        {
+            "name": "daily",
+            "schema": {
+                "lat": "str",
+                "lon": "str",
+                "units": "str",
+                "daily": {
+                    "data": [
+                        {
+                            "day": "str",
+                            "weather": "str",
+                            "icon": "int",
+                            "summary": "str",
+                            "temperature": "float",
+                            "temperature_min": "float",
+                            "temperature_max": "float",
+                            "feels_like": "float",
+                            "feels_like_min": "float",
+                            "feels_like_max": "float",
+                            "wind_chill": "float",
+                            "dew_point": "float",
+                            "wind": {
+                                "speed": "float",
+                                "gusts": "float",
+                                "dir": "str",
+                                "angle": "int"
+                            },
+                            "cloud_cover": "int",
+                            "pressure": "float",
+                            "precipitation": {
+                                "total": "float",
+                                "type": "str"
+                            },
+                            "humidity": "int",
+                            "visibility": "float"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "minutely",
+            "schema": {
+                "lat": "str",
+                "lon": "str",
+                "timezone": "str",
+                "minutely": {
+                    "summary": "str",
+                    "data": [
+                        {
+                            "date": "str",
+                            "precipitation": "float"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "alerts",
+            "schema": {
+                "lat": "str",
+                "lon": "str",
+                "timezone": "str",
+                "alerts": {
+                    "data": "str"
+                }
+            }
+        },
+        {
+            "name": "find_places",
+            "schema": {
+                "name": "str",
+                "place_id": "str",
+                "adm_area1": "str",
+                "country": "str",
+                "lat": "str",
+                "lon": "str",
+                "timezone": "str",
+                "type": "str"
+            }
+        },
+        {
+            "name": "find_places_prefix",
+            "schema": {
+                "name": "str",
+                "place_id": "str",
+                "adm_area1": "str",
+                "country": "str",
+                "lat": "str",
+                "lon": "str",
+                "timezone": "str",
+                "type": "str"
+            }
+        },
+        {
+            "name": "nearest_place",
+            "schema": {
+                "name": "str",
+                "place_id": "str",
+                "adm_area1": "str",
+                "country": "str",
+                "lat": "str",
+                "lon": "str",
+                "timezone": "str"
+            }
+        },
+        {
+            "name": "astro",
+            "schema": {
+                "lat": "str",
+                "lon": "str",
+                "astro": {
+                    "data": [
+                        {
+                            "day": "str",
+                            "sun": {
+                                "rise": "str",
+                                "set": "str"
+                            },
+                            "moon": {
+                                "phase": "str",
+                                "rise": "str",
+                                "set": "str"
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

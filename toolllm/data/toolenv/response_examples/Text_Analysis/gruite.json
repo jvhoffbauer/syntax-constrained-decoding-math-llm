@@ -1,0 +1,22 @@
+{
+    "api_list": [
+        {
+            "name": "Synonym",
+            "schema": {
+                "word": "str",
+                "synonym": [
+                    "list of str with length 1"
+                ]
+            }
+        },
+        {
+            "name": "Meanings",
+            "schema": {
+                "word": "str",
+                "meaning": [
+                    "list of str with length 1"
+                ]
+            }
+        }
+    ]
+}

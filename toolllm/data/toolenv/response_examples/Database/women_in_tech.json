@@ -1,0 +1,19 @@
+{
+    "api_list": [
+        {
+            "name": "getCompanies",
+            "schema": {
+                "companies": [
+                    {
+                        "id": "int",
+                        "title": "str",
+                        "callToActionUrl": "str",
+                        "description": "str",
+                        "category": "str",
+                        "votes": "int"
+                    }
+                ]
+            }
+        }
+    ]
+}

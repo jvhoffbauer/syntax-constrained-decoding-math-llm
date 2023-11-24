@@ -1,0 +1,11 @@
+{
+    "api_list": [
+        {
+            "name": "getCategories",
+            "schema": {
+                "categories": "empty list",
+                "languages": "empty list"
+            }
+        }
+    ]
+}

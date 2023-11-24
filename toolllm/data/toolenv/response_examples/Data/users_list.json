@@ -1,0 +1,16 @@
+{
+    "api_list": [
+        {
+            "name": "Users list",
+            "schema": {
+                "data": [
+                    {
+                        "first_name": "str",
+                        "last_name": "str",
+                        "email": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

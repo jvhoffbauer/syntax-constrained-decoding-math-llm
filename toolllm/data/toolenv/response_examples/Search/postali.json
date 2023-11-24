@@ -1,0 +1,12 @@
+{
+    "api_list": [
+        {
+            "name": "Codes",
+            "schema": {
+                "code": "str",
+                "city": "str",
+                "state": "str"
+            }
+        }
+    ]
+}

@@ -1,0 +1,21 @@
+{
+    "api_list": [
+        {
+            "name": "Products",
+            "schema": {
+                "id": "str",
+                "brand": "str",
+                "name": "str",
+                "price": "str",
+                "image_link": "str",
+                "product_link": "str",
+                "description": "str",
+                "category": "str",
+                "product_type": "str",
+                "tag_list": [
+                    "list of str with length 1"
+                ]
+            }
+        }
+    ]
+}

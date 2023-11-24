@@ -1,0 +1,34 @@
+{
+    "api_list": [
+        {
+            "name": "Get a daily horoscope",
+            "schema": {
+                "title": "str",
+                "date": "str",
+                "text": "str"
+            }
+        },
+        {
+            "name": "Glossary",
+            "schema": {
+                "request_example": {
+                    "method": "str",
+                    "endpoint": "str"
+                },
+                "url_parameters": {
+                    "langId": {
+                        "required": "str"
+                    },
+                    "signId": {
+                        "required": "str"
+                    }
+                },
+                "response_example": {
+                    "title": "str",
+                    "date": "str",
+                    "text": "str"
+                }
+            }
+        }
+    ]
+}

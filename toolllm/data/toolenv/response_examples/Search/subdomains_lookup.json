@@ -1,0 +1,14 @@
+{
+    "api_list": [
+        {
+            "name": "Subdomains lookup",
+            "schema": {
+                "rootDomain": "str",
+                "numFound": "str",
+                "subdomains": [
+                    "list of str with length 1"
+                ]
+            }
+        }
+    ]
+}

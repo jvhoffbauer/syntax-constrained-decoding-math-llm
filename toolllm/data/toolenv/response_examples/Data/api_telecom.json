@@ -1,0 +1,17 @@
+{
+    "api_list": [
+        {
+            "name": "/products",
+            "schema": {
+                "products": [
+                    {
+                        "name": "str",
+                        "description": "str",
+                        "price": "int",
+                        "image": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "api_list": [
+        {
+            "name": "Spell Check",
+            "schema": {
+                "errors": [
+                    {
+                        "code": "str",
+                        "subCode": "str",
+                        "message": "str",
+                        "parameter": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

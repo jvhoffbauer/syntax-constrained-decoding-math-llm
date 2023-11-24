@@ -1,0 +1,16 @@
+{
+    "api_list": [
+        {
+            "name": "SearchJobs",
+            "schema": {
+                "company_name": "str",
+                "date": "str",
+                "job_location": "str",
+                "job_title": "str",
+                "job_url": "str",
+                "page_number": "str",
+                "salary": "str"
+            }
+        }
+    ]
+}

@@ -1,0 +1,72 @@
+{
+    "api_list": [
+        {
+            "name": "getNFTs_byaddress",
+            "schema": {
+                "ownedNfts": [
+                    {
+                        "contract": {
+                            "address": "str"
+                        },
+                        "id": {
+                            "tokenId": "str"
+                        },
+                        "balance": "str",
+                        "title": "str",
+                        "tokenUri": {
+                            "gateway": "str"
+                        },
+                        "timeLastUpdated": "str",
+                        "contractMetadata": {
+                            "name": "str",
+                            "symbol": "str",
+                            "contractDeployer": "str"
+                        }
+                    }
+                ],
+                "totalCount": "str"
+            }
+        },
+        {
+            "name": "getNFTs_metadata",
+            "schema": {
+                "contract": {
+                    "address": "str"
+                },
+                "id": {
+                    "tokenId": "str",
+                    "tokenMetadata": {
+                        "tokenType": "str"
+                    }
+                },
+                "title": "str",
+                "description": "str",
+                "tokenUri": {
+                    "gateway": "str"
+                },
+                "media": [
+                    {
+                        "gateway": "str",
+                        "thumbnail": "str"
+                    }
+                ],
+                "metadata": {
+                    "attributes": [
+                        {
+                            "value": "str",
+                            "trait_type": "str"
+                        }
+                    ]
+                },
+                "timeLastUpdated": "str",
+                "contractMetadata": {
+                    "symbol": "str",
+                    "totalSupply": "str",
+                    "openSea": {
+                        "collectionName": "str"
+                    }
+                }
+            }
+        }
+    ]
+}

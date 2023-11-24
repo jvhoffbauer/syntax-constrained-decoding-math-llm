@@ -1,0 +1,98 @@
+{
+    "api_list": [
+        {
+            "name": "Search",
+            "schema": {
+                "body": "str",
+                "created": "str",
+                "domain": "str",
+                "id": "str",
+                "score": "float",
+                "title": "str",
+                "url": "str"
+            }
+        },
+        {
+            "name": "News / Latest",
+            "schema": {
+                "body": "str",
+                "domain": "str",
+                "favicon": "str",
+                "id": "str",
+                "img": {
+                    "o": "str"
+                },
+                "title": "str",
+                "url": "str"
+            }
+        },
+        {
+            "name": "News / Hot",
+            "schema": {
+                "posts": [
+                    {
+                        "title": "str",
+                        "url": "str",
+                        "img": {
+                            "o": "str"
+                        },
+                        "favicon": "str",
+                        "domain": "str"
+                    }
+                ],
+                "tldr": "str",
+                "topic": "str"
+            }
+        },
+        {
+            "name": "Tag / News",
+            "schema": {
+                "body": "str",
+                "created": "str",
+                "domain": "str",
+                "favicon": "str",
+                "id": "str",
+                "img": {
+                    "s": "str"
+                },
+                "tags": [
+                    "list of str with length 1"
+                ],
+                "title": "str",
+                "url": "str"
+            }
+        },
+        {
+            "name": "News / Latest / Page",
+            "schema": {
+                "body": "str",
+                "domain": "str",
+                "favicon": "str",
+                "id": "str",
+                "img": {
+                    "o": "str",
+                    "s": "str",
+                    "t": "str",
+                    "w": "str"
+                },
+                "title": "str",
+                "url": "str"
+            }
+        },
+        {
+            "name": "News / Source",
+            "schema": {
+                "binary": "bool",
+                "body": "str",
+                "created": "str",
+                "favicon": "str",
+                "id": "str",
+                "img": {
+                    "o": "str"
+                },
+                "title": "str",
+                "url": "str"
+            }
+        }
+    ]
+}

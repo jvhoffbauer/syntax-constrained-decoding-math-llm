@@ -1,0 +1,35 @@
+{
+    "api_list": [
+        {
+            "name": "all",
+            "schema": {
+                "features": [
+                    {
+                        "attributes": {
+                            "ASSESSMENT_TYPE": "str",
+                            "GRADE_OF_ENROLLMENT": "str",
+                            "LEA_CODE": "str",
+                            "LEA_NAME": "str",
+                            "PERCENT_LEVEL_3_": "str",
+                            "SCHOOL_CODE": "str",
+                            "SCHOOL_NAME": "str",
+                            "SCHOOL_WARD": "str",
+                            "SCHOOL_YEAR": "str",
+                            "SUBGROUP": "str",
+                            "SUBGROUP_VALUE": "str",
+                            "SUBJECT": "str",
+                            "TESTED_GRADE_SUBJECT": "str",
+                            "TOTAL_NUMBER_VALID_TEST_TAKERS": "str"
+                        }
+                    }
+                ],
+                "fieldAliases": {
+                    "ASSESSMENT_TYPE": "str",
+                    "GRADE_OF_ENROLLMENT": "str",
+                    "LEA_CODE": "str",
+                    "LEA_NAME": "str"
+                }
+            }
+        }
+    ]
+}

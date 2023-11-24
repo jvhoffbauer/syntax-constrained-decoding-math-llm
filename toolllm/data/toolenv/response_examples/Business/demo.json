@@ -1,0 +1,36 @@
+{
+    "api_list": [
+        {
+            "name": "getTeam",
+            "schema": {
+                "teams": [
+                    {
+                        "name": "str",
+                        "venue": {
+                            "city": "str"
+                        },
+                        "abbreviation": "str",
+                        "teamName": "str",
+                        "locationName": "str",
+                        "firstYearOfPlay": "str",
+                        "division": {
+                            "name": "str",
+                            "nameShort": "str"
+                        },
+                        "conference": {
+                            "name": "str"
+                        },
+                        "franchise": {
+                            "franchiseId": "int",
+                            "teamName": "str"
+                        },
+                        "shortName": "str",
+                        "officialSiteUrl": "str",
+                        "franchiseId": "int",
+                        "active": "bool"
+                    }
+                ]
+            }
+        }
+    ]
+}

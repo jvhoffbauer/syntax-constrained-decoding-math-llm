@@ -1,0 +1,58 @@
+{
+    "api_list": [
+        {
+            "name": "cellular automata",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Concentric Rings",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "scattered rings",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "circular",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "hightrans",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "spiral",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "random mask",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "random pixel",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "random diamond",
+            "schema": {
+                "message": "str"
+            }
+        }
+    ]
+}

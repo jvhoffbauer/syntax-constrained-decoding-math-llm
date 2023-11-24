@@ -1,0 +1,588 @@
+{
+    "api_list": [
+        {
+            "name": "Get Concert",
+            "schema": {
+                "concert": {
+                    "id": "str",
+                    "artistUris": [
+                        "list of str with length 1"
+                    ],
+                    "artists": [
+                        {
+                            "name": "str"
+                        }
+                    ],
+                    "date": "str",
+                    "title": "str",
+                    "location": "str",
+                    "venue": "str",
+                    "lat": "str",
+                    "lon": "str",
+                    "startDate": {
+                        "date": "str",
+                        "localDate": "str"
+                    },
+                    "festival": "str",
+                    "ticketing": [
+                        {
+                            "minPrice": "str",
+                            "maxPrice": "str"
+                        }
+                    ],
+                    "artistNameTitle": "str",
+                    "carouselImage": "str",
+                    "carouselArtistName": "str",
+                    "isParent": "str",
+                    "category": "str"
+                },
+                "clickThruUrl": "str",
+                "artists": [
+                    {
+                        "name": "str",
+                        "imageUri": "str",
+                        "topTrackUri": "str",
+                        "bio": "str",
+                        "monthlyListeners": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Genre View",
+            "schema": {
+                "content": {
+                    "items": [
+                        {
+                            "content": {
+                                "limit": "int",
+                                "total": "int"
+                            },
+                            "id": "str",
+                            "images": [
+                                {
+                                    "height": "int",
+                                    "name": "str",
+                                    "url": "str",
+                                    "width": "int"
+                                }
+                            ],
+                            "name": "str",
+                            "type": "str"
+                        }
+                    ],
+                    "limit": "int",
+                    "total": "int"
+                },
+                "id": "str",
+                "type": "str"
+            }
+        },
+        {
+            "name": "Episode Sound",
+            "schema": {
+                "url": [
+                    "list of str with length 1"
+                ],
+                "format": "str",
+                "passthrough": "str",
+                "passthroughUrl": "str",
+                "fileId": "str"
+            }
+        },
+        {
+            "name": "Get playlist",
+            "schema": {
+                "collaborative": "bool",
+                "description": "str",
+                "followers": {
+                    "total": "int"
+                },
+                "images": [
+                    {
+                        "url": "str"
+                    }
+                ],
+                "name": "str",
+                "public": "bool",
+                "tracks": {
+                    "total": "int"
+                },
+                "uri": "str"
+            }
+        },
+        {
+            "name": "Track lyrics",
+            "schema": {
+                "lyrics": {
+                    "syncType": "str",
+                    "lines": [
+                        {
+                            "startTimeMs": "str",
+                            "words": "str",
+                            "endTimeMs": "str"
+                        }
+                    ],
+                    "provider": "str",
+                    "providerDisplayName": "str",
+                    "language": "str"
+                }
+            }
+        },
+        {
+            "name": "Album metadata",
+            "schema": {
+                "data": {
+                    "album": {
+                        "uri": "str",
+                        "name": "str",
+                        "artists": {
+                            "totalCount": "str",
+                            "items": [
+                                {
+                                    "uri": "str",
+                                    "profile": {
+                                        "name": "str"
+                                    },
+                                    "visuals": {
+                                        "avatarImage": {
+                                            "sources": [
+                                                {
+                                                    "url": "str",
+                                                    "width": "str",
+                                                    "height": "str"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    "sharingInfo": {
+                                        "shareUrl": "str"
+                                    }
+                                }
+                            ]
+                        },
+                        "coverArt": {
+                            "sources": [
+                                {
+                                    "url": "str",
+                                    "width": "str",
+                                    "height": "str"
+                                }
+                            ]
+                        },
+                        "discs": {
+                            "totalCount": "str"
+                        },
+                        "tracks": {
+                            "totalCount": "str"
+                        },
+                        "releases": {
+                            "totalCount": "str"
+                        },
+                        "type": "str",
+                        "date": {
+                            "isoString": "str",
+                            "precision": "str"
+                        },
+                        "playability": {
+                            "playable": "str",
+                            "reason": "str"
+                        },
+                        "label": "str",
+                        "copyright": {
+                            "totalCount": "str",
+                            "items": [
+                                {
+                                    "type": "str",
+                                    "text": "str"
+                                }
+                            ]
+                        },
+                        "courtesyLine": "str",
+                        "saved": "str",
+                        "sharingInfo": {
+                            "shareUrl": "str",
+                            "shareId": "str"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "Get albums",
+            "schema": {
+                "albums": [
+                    {
+                        "album_type": "str",
+                        "artists": [
+                            {
+                                "id": "str",
+                                "name": "str"
+                            }
+                        ],
+                        "external_ids": {
+                            "upc": "str"
+                        },
+                        "external_urls": {
+                            "spotify": "str"
+                        },
+                        "genres": "str",
+                        "id": "str",
+                        "images": [
+                            {
+                                "url": "str"
+                            }
+                        ],
+                        "is_playable": "str",
+                        "label": "str",
+                        "name": "str",
+                        "popularity": "str",
+                        "release_date": "str",
+                        "release_date_precision": "str",
+                        "total_tracks": "str",
+                        "tracks": {
+                            "total": "str"
+                        },
+                        "type": "str",
+                        "uri": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Get radio playlist",
+            "schema": {
+                "total": "int",
+                "mediaItems": [
+                    {
+                        "uri": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "User followers",
+            "schema": {
+                "profiles": [
+                    {
+                        "name": "str",
+                        "followers_count": "int"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "User profile",
+            "schema": {
+                "uri": "str",
+                "name": "str",
+                "image_url": "str",
+                "followers_count": "int",
+                "following_count": "int",
+                "public_playlists": [
+                    {
+                        "uri": "str",
+                        "name": "str",
+                        "image_url": "str",
+                        "followers_count": "int"
+                    }
+                ],
+                "total_public_playlists_count": "int",
+                "is_verified": "bool"
+            }
+        },
+        {
+            "name": "Playlist tracks",
+            "schema": {
+                "items": [
+                    {
+                        "added_at": "str",
+                        "added_by": {
+                            "id": "str",
+                            "type": "str",
+                            "uri": "str"
+                        },
+                        "track": {
+                            "album": {
+                                "album_type": "str",
+                                "name": "str",
+                                "release_date": "str",
+                                "total_tracks": "str"
+                            },
+                            "artists": [
+                                {
+                                    "id": "str",
+                                    "name": "str",
+                                    "type": "str",
+                                    "uri": "str"
+                                }
+                            ],
+                            "disc_number": "str",
+                            "duration_ms": "str",
+                            "explicit": "str",
+                            "external_ids": {
+                                "isrc": "str"
+                            },
+                            "external_urls": {
+                                "spotify": "str"
+                            },
+                            "id": "str",
+                            "name": "str",
+                            "popularity": "str"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Track credits",
+            "schema": {
+                "trackUri": "str",
+                "trackTitle": "str",
+                "roleCredits": [
+                    {
+                        "roleTitle": "str",
+                        "artists": [
+                            {
+                                "uri": "str",
+                                "name": "str"
+                            }
+                        ]
+                    }
+                ],
+                "sourceNames": [
+                    "list of str with length 1"
+                ]
+            }
+        },
+        {
+            "name": "Get tracks",
+            "schema": {
+                "tracks": [
+                    {
+                        "album": {
+                            "artists": [
+                                {
+                                    "name": "str"
+                                }
+                            ],
+                            "name": "str",
+                            "type": "str"
+                        },
+                        "artists": [
+                            {
+                                "name": "str"
+                            }
+                        ],
+                        "disc_number": "str",
+                        "duration_ms": "str",
+                        "explicit": "str",
+                        "external_urls": {
+                            "spotify": "str"
+                        },
+                        "id": "str",
+                        "name": "str",
+                        "popularity": "str",
+                        "track_number": "str",
+                        "type": "str",
+                        "uri": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Artist related",
+            "schema": {
+                "artists": [
+                    {
+                        "external_urls": {
+                            "spotify": "str"
+                        },
+                        "followers": {
+                            "total": "int"
+                        },
+                        "genres": [
+                            "list of str with length 1"
+                        ],
+                        "id": "str",
+                        "images": [
+                            {
+                                "height": "int",
+                                "url": "str",
+                                "width": "int"
+                            }
+                        ],
+                        "name": "str",
+                        "popularity": "int",
+                        "type": "str",
+                        "uri": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Artist singles",
+            "schema": {
+                "data": {
+                    "artist": {
+                        "discography": {
+                            "singles": {
+                                "totalCount": "int",
+                                "items": [
+                                    {
+                                        "releases": {
+                                            "items": [
+                                                {
+                                                    "name": "str",
+                                                    "type": "str",
+                                                    "date": {
+                                                        "year": "int",
+                                                        "isoString": "str"
+                                                    },
+                                                    "playability": {
+                                                        "playable": "bool"
+                                                    },
+                                                    "sharingInfo": {
+                                                        "shareUrl": "str"
+                                                    },
+                                                    "tracks": {
+                                                        "totalCount": "int"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "Artist discography overview",
+            "schema": {
+                "data": {
+                    "artist": {
+                        "id": "str",
+                        "profile": {
+                            "name": "str"
+                        },
+                        "discography": {
+                            "albums": {
+                                "totalCount": "int"
+                            },
+                            "singles": {
+                                "totalCount": "int"
+                            },
+                            "compilations": {
+                                "totalCount": "int"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "Get artists",
+            "schema": {
+                "artists": [
+                    {
+                        "external_urls": {
+                            "spotify": "str"
+                        },
+                        "followers": {
+                            "total": "int"
+                        },
+                        "genres": [
+                            "list of str with length 1"
+                        ],
+                        "id": "str",
+                        "images": [
+                            {
+                                "height": "int",
+                                "url": "str",
+                                "width": "int"
+                            }
+                        ],
+                        "name": "str",
+                        "popularity": "int",
+                        "type": "str",
+                        "uri": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Album tracks",
+            "schema": {
+                "data": {
+                    "album": {
+                        "tracks": {
+                            "totalCount": "int",
+                            "items": [
+                                {
+                                    "track": {
+                                        "uri": "str",
+                                        "name": "str",
+                                        "playcount": "str",
+                                        "discNumber": "int",
+                                        "trackNumber": "int",
+                                        "duration": {
+                                            "totalMilliseconds": "int"
+                                        },
+                                        "playability": {
+                                            "playable": "bool"
+                                        },
+                                        "artists": {
+                                            "items": [
+                                                {
+                                                    "uri": "str",
+                                                    "profile": {
+                                                        "name": "str"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "Search",
+            "schema": {
+                "albums": {
+                    "totalCount": "int"
+                },
+                "artists": {
+                    "totalCount": "int"
+                },
+                "episodes": {
+                    "totalCount": "int"
+                },
+                "genres": {
+                    "totalCount": "int"
+                },
+                "playlists": {
+                    "totalCount": "int"
+                },
+                "podcasts": {
+                    "totalCount": "int"
+                },
+                "topResults": {
+                    "featured": "str"
+                },
+                "tracks": {
+                    "totalCount": "int"
+                },
+                "users": {
+                    "totalCount": "int"
+                }
+            }
+        }
+    ]
+}

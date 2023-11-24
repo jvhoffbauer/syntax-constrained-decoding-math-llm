@@ -1,0 +1,37 @@
+{
+    "api_list": [
+        {
+            "name": "Get Restaurant by Link",
+            "schema": {
+                "cheapMealId": "str",
+                "id": "str",
+                "legacyId": "str",
+                "name": "str",
+                "sections": [
+                    {
+                        "id": "str",
+                        "index": "str",
+                        "legacyId": "str",
+                        "name": "str",
+                        "products": [
+                            {
+                                "description": "str",
+                                "id": "str",
+                                "legacyId": "str",
+                                "name": "str",
+                                "price": {
+                                    "currency": "str",
+                                    "finalPrice": "str"
+                                },
+                                "rating": "str"
+                            }
+                        ],
+                        "requiresAgeCheck": "str"
+                    }
+                ],
+                "business_id": "str",
+                "last_update": "str"
+            }
+        }
+    ]
+}

@@ -1,0 +1,64 @@
+{
+    "api_list": [
+        {
+            "name": "Getallsign",
+            "schema": {
+                "Aquarius": {
+                    "date": "str",
+                    "personality": "str"
+                },
+                "Aries": {
+                    "date": "str",
+                    "personality": "str"
+                },
+                "Cancer": {
+                    "date": "str",
+                    "personality": "str"
+                },
+                "Capricorn": {
+                    "date": "str",
+                    "personality": "str"
+                },
+                "Gemini": {
+                    "date": "str",
+                    "personality": "str"
+                },
+                "Leo": {
+                    "date": "str",
+                    "personality": "str"
+                },
+                "Libra": {
+                    "date": "str",
+                    "personality": "str"
+                },
+                "Pisces": {
+                    "date": "str",
+                    "personality": "str"
+                },
+                "Sagittarius": {
+                    "date": "str",
+                    "personality": "str"
+                },
+                "Scorpio": {
+                    "date": "str",
+                    "personality": "str"
+                },
+                "Taurus": {
+                    "date": "str",
+                    "personality": "str"
+                },
+                "Virgo": {
+                    "date": "str",
+                    "personality": "str"
+                }
+            }
+        },
+        {
+            "name": "SearchZodiacbySign",
+            "schema": {
+                "date": "str",
+                "personality": "str"
+            }
+        }
+    ]
+}

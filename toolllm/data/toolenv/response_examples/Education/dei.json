@@ -1,0 +1,182 @@
+{
+    "api_list": [
+        {
+            "name": "GetNewsletters",
+            "schema": {
+                "title": "str",
+                "path": "str",
+                "page": "int"
+            }
+        },
+        {
+            "name": "GetPeople",
+            "schema": {
+                "title": "str",
+                "page": "str",
+                "value": [
+                    {
+                        "title": "str",
+                        "excerpt": "str",
+                        "sourceUrl": "str",
+                        "webUrl": "str",
+                        "name": "str",
+                        "bio": "str",
+                        "location": "str",
+                        "website": "str",
+                        "linkedin": {
+                            "url": "str"
+                        },
+                        "affiliation": {
+                            "name": "str"
+                        },
+                        "topics": [
+                            "list of str with length 1"
+                        ],
+                        "heat": "str",
+                        "images": [
+                            {
+                                "url": "str"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "name": "GetSamples",
+            "schema": {
+                "title": "str",
+                "path": "str",
+                "page": "str",
+                "value": [
+                    {
+                        "title": "str",
+                        "sourceUrl": "str",
+                        "webUrl": "str",
+                        "provider": {
+                            "name": "str",
+                            "domain": "str"
+                        },
+                        "publishedDateTime": "str",
+                        "heat": "str",
+                        "type": "str",
+                        "topics": [
+                            "list of str with length 1"
+                        ]
+                    }
+                ],
+                "nextPage": "str"
+            }
+        },
+        {
+            "name": "GetLearningResourcesByTopic",
+            "schema": {
+                "title": "str",
+                "page": "str",
+                "value": [
+                    {
+                        "title": "str",
+                        "excerpt": "str",
+                        "sourceUrl": "str",
+                        "webUrl": "str",
+                        "provider": {
+                            "name": "str",
+                            "domain": "str"
+                        },
+                        "topItems": [
+                            {
+                                "title": "str",
+                                "excerpt": "str",
+                                "sourceUrl": "str",
+                                "webUrl": "str",
+                                "length": "str",
+                                "provider": {
+                                    "name": "str",
+                                    "domain": "str"
+                                },
+                                "publishedDateTime": "str",
+                                "heat": "str",
+                                "images": [
+                                    {
+                                        "url": "str",
+                                        "width": "str",
+                                        "height": "str"
+                                    }
+                                ],
+                                "type": "str",
+                                "price": "str",
+                                "topics": [
+                                    "list of str with length 1"
+                                ]
+                            }
+                        ],
+                        "size": "str",
+                        "heat": "str",
+                        "images": [
+                            {
+                                "url": "str",
+                                "width": "str",
+                                "height": "str"
+                            }
+                        ],
+                        "type": "str",
+                        "topics": [
+                            "list of str with length 1"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "name": "GetLearningResources",
+            "schema": {
+                "title": "str",
+                "path": "str",
+                "page": "str",
+                "value": [
+                    {
+                        "path": "str",
+                        "title": "str",
+                        "excerpt": "str",
+                        "sourceUrl": "str",
+                        "webUrl": "str",
+                        "provider": {
+                            "name": "str",
+                            "domain": "str"
+                        },
+                        "publishedDateTime": "str",
+                        "heat": "str",
+                        "images": [
+                            {
+                                "url": "str"
+                            }
+                        ],
+                        "type": "str",
+                        "topics": [
+                            "list of str with length 1"
+                        ]
+                    }
+                ],
+                "nextPage": "str"
+            }
+        },
+        {
+            "name": "GetTopics",
+            "schema": {
+                "value": [
+                    {
+                        "name": "str",
+                        "shortname": "str",
+                        "id": "str",
+                        "services": [
+                            {
+                                "name": "str",
+                                "endpoint": "str"
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}

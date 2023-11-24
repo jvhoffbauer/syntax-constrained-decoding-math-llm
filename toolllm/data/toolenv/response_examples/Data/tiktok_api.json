@@ -1,0 +1,114 @@
+{
+    "api_list": [
+        {
+            "name": "Collection Videos/Details",
+            "schema": {
+                "collection_id": "str",
+                "author": "str",
+                "title": "str",
+                "description": "str",
+                "videos": [
+                    {
+                        "id": "str",
+                        "createTime": "str",
+                        "playAddr": "str",
+                        "downloadAddr": "str",
+                        "bitrate": "str",
+                        "definition": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "User's Videos",
+            "schema": {
+                "username": "str",
+                "secondary_id": "str",
+                "continuation_token": "str",
+                "videos": [
+                    {
+                        "video_id": "str",
+                        "description": "str",
+                        "create_time": "str",
+                        "author": "str",
+                        "author_name": "str",
+                        "statistics": {
+                            "number_of_comments": "str",
+                            "number_of_hearts": "str",
+                            "number_of_plays": "str",
+                            "number_of_reposts": "str"
+                        },
+                        "cover": "str",
+                        "video_definition": "str",
+                        "duration": "str",
+                        "avatar_thumb": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "User's Details",
+            "schema": {
+                "username": "str",
+                "profile_image": "str",
+                "followers": "int",
+                "verified": "bool",
+                "description": "str",
+                "region": "str",
+                "bio_link": {
+                    "link": "str",
+                    "risk": "int"
+                }
+            }
+        },
+        {
+            "name": "Search Videos",
+            "schema": {
+                "query": "str",
+                "videos": [
+                    {
+                        "video_id": "str",
+                        "description": "str",
+                        "create_time": "str",
+                        "author": {
+                            "id": "str",
+                            "nickname": "str",
+                            "verified": "str"
+                        },
+                        "statistics": {
+                            "number_of_comments": "str",
+                            "number_of_hearts": "str",
+                            "number_of_plays": "str",
+                            "number_of_reposts": "str"
+                        },
+                        "cover": "str",
+                        "download_url": "str",
+                        "video_definition": "str",
+                        "bitrate": "str",
+                        "duration": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Search Accounts",
+            "schema": {
+                "detail": [
+                    {
+                        "msg": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Video Details",
+            "schema": {
+                "detail": [
+                    {
+                        "msg": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

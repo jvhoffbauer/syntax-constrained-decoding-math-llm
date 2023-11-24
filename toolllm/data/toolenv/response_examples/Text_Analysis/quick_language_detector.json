@@ -1,0 +1,13 @@
+{
+    "api_list": [
+        {
+            "name": "Detect Language",
+            "schema": {
+                "status": "str",
+                "data": [
+                    "list of str with length 1"
+                ]
+            }
+        }
+    ]
+}

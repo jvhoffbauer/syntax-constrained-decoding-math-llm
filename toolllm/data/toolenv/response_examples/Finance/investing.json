@@ -1,0 +1,484 @@
+{
+    "api_list": [
+        {
+            "name": "Futures Expiration Calendar",
+            "schema": {
+                "data": [
+                    {
+                        "Contract": "str",
+                        "Instrument": "str",
+                        "Month": "str",
+                        "Settlement": "str"
+                    }
+                ],
+                "message": "str",
+                "status": "int"
+            }
+        },
+        {
+            "name": "Stock Split Calendar",
+            "schema": {
+                "data": [
+                    {
+                        "Company": "str",
+                        "Split date": "str",
+                        "Split ratio": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Dividends Calendar",
+            "schema": {
+                "data": [
+                    {
+                        "Company": "str",
+                        "Dividend": "str",
+                        "Ex-Dividend Date": "str",
+                        "Payment Date": "str",
+                        "Yield": "str"
+                    }
+                ],
+                "status": "int"
+            }
+        },
+        {
+            "name": "IPO calendar",
+            "schema": {
+                "data": [
+                    {
+                        "Company": "str",
+                        "Exchange": "str",
+                        "IPO Listing": "str",
+                        "IPO Price": "str",
+                        "IPO Value": "NoneType",
+                        "Last": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Earnings Calendar",
+            "schema": {
+                "data": [
+                    {
+                        "Company": "str",
+                        "EPS": "str",
+                        "EPS Forecast": "str",
+                        "Market Cap": "str",
+                        "Revenue": "str",
+                        "Revenue Forecast": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Holiday Calendar",
+            "schema": {
+                "data": [
+                    {
+                        "Country": "str",
+                        "Date": "str",
+                        "Holiday": "str"
+                    }
+                ],
+                "message": "str",
+                "status": "int"
+            }
+        },
+        {
+            "name": "Economic Calendar",
+            "schema": {
+                "data": [
+                    {
+                        "Event": "str",
+                        "Time": "str"
+                    }
+                ],
+                "status": "int"
+            }
+        },
+        {
+            "name": "Get List Countries",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "World News",
+            "schema": {
+                "data": [
+                    {
+                        "title": "str",
+                        "when": "str"
+                    }
+                ],
+                "message": "str",
+                "status": "int"
+            }
+        },
+        {
+            "name": "Politics News",
+            "schema": {
+                "data": [
+                    {
+                        "link": "str",
+                        "publisher": "str",
+                        "title": "str",
+                        "when": "str"
+                    }
+                ],
+                "status": "int"
+            }
+        },
+        {
+            "name": "Economic Indicators News",
+            "schema": {
+                "data": [
+                    {
+                        "link": "str",
+                        "publisher": "str",
+                        "title": "str",
+                        "when": "str"
+                    }
+                ],
+                "status": "int"
+            }
+        },
+        {
+            "name": "Economy News",
+            "schema": {
+                "data": [
+                    {
+                        "link": "str",
+                        "publisher": "str",
+                        "title": "str",
+                        "when": "str"
+                    }
+                ],
+                "message": "str",
+                "status": "int"
+            }
+        },
+        {
+            "name": "Currency News",
+            "schema": {
+                "data": [
+                    {
+                        "link": "str",
+                        "publisher": "str",
+                        "title": "str",
+                        "when": "str"
+                    }
+                ],
+                "message": "str",
+                "status": "int"
+            }
+        },
+        {
+            "name": "Commodities News",
+            "schema": {
+                "data": [
+                    {
+                        "title": "str",
+                        "publisher": "str",
+                        "when": "str",
+                        "shortDescription": "str",
+                        "link": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Stock Market News",
+            "schema": {
+                "data": [
+                    {
+                        "link": "str",
+                        "publisher": "str",
+                        "title": "str",
+                        "when": "str"
+                    }
+                ],
+                "message": "str",
+                "status": "int"
+            }
+        },
+        {
+            "name": "Cryptocurrency News",
+            "schema": {
+                "data": [
+                    {
+                        "title": "str",
+                        "publisher": "str",
+                        "when": "str"
+                    }
+                ],
+                "status": "int"
+            }
+        },
+        {
+            "name": "Latest News",
+            "schema": {
+                "data": [
+                    {
+                        "link": "str",
+                        "title": "str",
+                        "when": "str"
+                    }
+                ],
+                "message": "str",
+                "status": "int"
+            }
+        },
+        {
+            "name": "Popular News",
+            "schema": {
+                "data": [
+                    {
+                        "link": "str",
+                        "title": "str",
+                        "when": "str"
+                    }
+                ],
+                "message": "str",
+                "status": "int"
+            }
+        },
+        {
+            "name": "Metals Futures Prices",
+            "schema": {
+                "data": {
+                    "EUREX Futures Market Quotes": [
+                        {
+                            "Commodity": "str",
+                            "High": "float",
+                            "Last": "float",
+                            "Low": "float",
+                            "Month": "str",
+                            "Prev.": "float",
+                            "Time": "str"
+                        }
+                    ],
+                    "MCX Futures Market Quotes": [
+                        {
+                            "Commodity": "str",
+                            "High": "float",
+                            "Last": "float",
+                            "Low": "float",
+                            "Month": "str",
+                            "Prev.": "float",
+                            "Time": "str"
+                        }
+                    ],
+                    "Real Time Streaming Futures Quotes": [
+                        {
+                            "Commodity": "str",
+                            "High": "float",
+                            "Last": "float",
+                            "Low": "float",
+                            "Month": "NoneType",
+                            "Prev.": "float",
+                            "Time": "str"
+                        }
+                    ],
+                    "US Futures Market Quotes (10-minute Delayed)": [
+                        {
+                            "High": "float",
+                            "Last": "str",
+                            "Low": "float",
+                            "Month": "str",
+                            "Name": "str",
+                            "Open": "float",
+                            "Time": "str"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Softs Futures Prices",
+            "schema": {
+                "data": {
+                    "MCX Futures Market Quotes": [
+                        {
+                            "Commodity": "str",
+                            "High": "float",
+                            "Last": "float",
+                            "Low": "float",
+                            "Month": "str"
+                        }
+                    ],
+                    "Real Time Streaming Futures Quotes": [
+                        {
+                            "Commodity": "str",
+                            "High": "float",
+                            "Last": "float",
+                            "Low": "float",
+                            "Month": "str"
+                        }
+                    ],
+                    "US Futures Market Quotes (10-minute Delayed)": [
+                        {
+                            "High": "float",
+                            "Last": "float",
+                            "Low": "float",
+                            "Month": "str",
+                            "Name": "str"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Energy Futures Prices",
+            "schema": {
+                "data": {
+                    "MCX Futures Market Quotes": [
+                        {
+                            "Area": "str",
+                            "Chg. %": "str",
+                            "Commodity": "str",
+                            "High": "float",
+                            "Last": "float",
+                            "Low": "float",
+                            "Month": "str",
+                            "Time": "str"
+                        }
+                    ],
+                    "Real Time Streaming Futures Quotes": [
+                        {
+                            "Area": "str",
+                            "Chg. %": "str",
+                            "Commodity": "str",
+                            "High": "float",
+                            "Last": "float",
+                            "Low": "float",
+                            "Month": "str",
+                            "Time": "str"
+                        }
+                    ],
+                    "US Futures Market Quotes (10-minute Delayed)": [
+                        {
+                            "Chg. %": "str",
+                            "High": "float",
+                            "Last": "str",
+                            "Low": "float",
+                            "Month": "str",
+                            "Name": "str",
+                            "Time": "str"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Get Commodities",
+            "schema": {
+                "data": [
+                    {
+                        "currency": "str",
+                        "full_name": "str",
+                        "name": "str",
+                        "title": "str"
+                    }
+                ],
+                "message": "str",
+                "status": "int"
+            }
+        },
+        {
+            "name": "Commodity Groups",
+            "schema": {
+                "data": "empty list",
+                "status": "int"
+            }
+        },
+        {
+            "name": "Grains Futures Prices",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Commodity Indices",
+            "schema": {
+                "data": [
+                    {
+                        "Index": "str",
+                        "Last": "float",
+                        "High": "float",
+                        "Low": "float",
+                        "Chg. %": "str",
+                        "Time": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Meats Futures Prices",
+            "schema": {
+                "data": {
+                    "Real Time Streaming Futures Quotes": [
+                        {
+                            "Area": "str",
+                            "Chg.": "float",
+                            "Chg. %": "str",
+                            "Commodity": "str",
+                            "High": "float",
+                            "Last": "float",
+                            "Low": "float",
+                            "Month": "str",
+                            "Prev.": "float",
+                            "Time": "str"
+                        }
+                    ],
+                    "US Futures Market Quotes (10-minute Delayed)": [
+                        {
+                            "Chg.": "float",
+                            "High": "float",
+                            "Last": "str",
+                            "Low": "float",
+                            "Month": "str",
+                            "Name": "str",
+                            "Open": "float",
+                            "Time": "str"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Real Time Commodity Futures Prices",
+            "schema": {
+                "data": [
+                    {
+                        "Name": "str",
+                        "Month": "str",
+                        "High": "float",
+                        "Low": "float",
+                        "Last": "float",
+                        "Chg.": "float",
+                        "Chg. %": "str",
+                        "Time": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "List of Countries for Stocks",
+            "schema": {
+                "data": [
+                    "list of str with length 1"
+                ],
+                "status": "int"
+            }
+        },
+        {
+            "name": "List Markets",
+            "schema": {
+                "message": "str"
+            }
+        }
+    ]
+}

@@ -1,0 +1,182 @@
+{
+    "api_list": [
+        {
+            "name": "Address history",
+            "schema": {
+                "data": {
+                    "history_list": [
+                        {
+                            "chain": "str",
+                            "receives": "str",
+                            "sends": [
+                                {
+                                    "amount": "str",
+                                    "token_id": "str"
+                                }
+                            ],
+                            "time_at": "str",
+                            "tx": {
+                                "from_addr": "str",
+                                "to_addr": "str",
+                                "value": "str"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Address projects",
+            "schema": {
+                "data": [
+                    {
+                        "chain": "str",
+                        "name": "str",
+                        "portfolio_item_list": [
+                            {
+                                "asset_dict": {},
+                                "asset_token_list": [
+                                    {
+                                        "amount": "str",
+                                        "chain": "str",
+                                        "decimals": "str",
+                                        "id": "str",
+                                        "logo_url": "str",
+                                        "name": "str",
+                                        "symbol": "str"
+                                    }
+                                ],
+                                "detail": {
+                                    "supply_token_list": [
+                                        {
+                                            "amount": "str",
+                                            "chain": "str",
+                                            "decimals": "str",
+                                            "id": "str",
+                                            "logo_url": "str",
+                                            "name": "str",
+                                            "symbol": "str"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Address balance",
+            "schema": {
+                "data": [
+                    {
+                        "amount": "float",
+                        "balance": "int",
+                        "chain": "str",
+                        "decimals": "int",
+                        "name": "str",
+                        "price": "float",
+                        "symbol": "str"
+                    }
+                ],
+                "error_code": "int"
+            }
+        },
+        {
+            "name": "Address net worth sparklines",
+            "schema": {
+                "data": {
+                    "usd_value_list": [
+                        "list of str with length 1"
+                    ]
+                },
+                "error_code": "int"
+            }
+        },
+        {
+            "name": "Address info",
+            "schema": {
+                "data": {
+                    "desc": {
+                        "name": "str",
+                        "protocol": {},
+                        "tags": "str",
+                        "thirdparty_names": {},
+                        "usd_value": "str",
+                        "user": {
+                            "logo_is_nft": "str",
+                            "logo_thumbnail_url": "str",
+                            "logo_url": "str",
+                            "memo": "str",
+                            "web3_id": "str"
+                        }
+                    },
+                    "email_verified": "str",
+                    "follower_count": "str",
+                    "following_count": "str",
+                    "id": "str",
+                    "is_contract": "str",
+                    "is_editor": "str",
+                    "is_followed": "str",
+                    "is_following": "str",
+                    "is_mine": "str",
+                    "is_multisig_addr": "str",
+                    "tvf": "str",
+                    "usd_value": "str",
+                    "used_chains": [
+                        "list of str with length 1"
+                    ]
+                },
+                "error_code": "str"
+            }
+        },
+        {
+            "name": "Whale portfolios",
+            "schema": {
+                "data": {
+                    "total_count": "str",
+                    "whales": [
+                        {
+                            "desc": {
+                                "usd_value": "str"
+                            },
+                            "id": "str",
+                            "stats": {
+                                "effective_usd_value": "str",
+                                "top_coins": [
+                                    {
+                                        "amount": "str",
+                                        "id": "str",
+                                        "symbol": "str",
+                                        "usd_value": "str"
+                                    }
+                                ],
+                                "top_tokens": [
+                                    {
+                                        "amount": "str",
+                                        "chain_id": "str",
+                                        "id": "str",
+                                        "symbol": "str",
+                                        "usd_value": "str"
+                                    }
+                                ],
+                                "usd_value": "str"
+                            },
+                            "usd_value": "str"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Trade signals",
+            "schema": {
+                "data": {
+                    "activities": "str",
+                    "total_count": "int"
+                },
+                "error_code": "int"
+            }
+        }
+    ]
+}

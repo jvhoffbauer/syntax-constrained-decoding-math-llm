@@ -1,0 +1,16 @@
+{
+    "api_list": [
+        {
+            "name": "getarchive",
+            "schema": {
+                "id": "int",
+                "template": "str",
+                "category": "str",
+                "page": "str",
+                "language": "str",
+                "contentKey": "str",
+                "content": "str"
+            }
+        }
+    ]
+}

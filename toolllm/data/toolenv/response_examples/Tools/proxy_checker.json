@@ -1,0 +1,26 @@
+{
+    "api_list": [
+        {
+            "name": "Retrieve Proxy Information",
+            "schema": {
+                "data": {
+                    "user_request_id": "str",
+                    "proxy_address": "str",
+                    "callback_url": "str",
+                    "callback_state": "str",
+                    "testing_status": "str",
+                    "test_result": {
+                        "is_online": "str",
+                        "is_http_anonymous": "str",
+                        "is_https_anonymous": "str",
+                        "is_http_proxy": "str",
+                        "is_https_proxy": "str",
+                        "is_altering_http": "str",
+                        "is_altering_https": "str",
+                        "recorded_at": "str"
+                    }
+                }
+            }
+        }
+    ]
+}

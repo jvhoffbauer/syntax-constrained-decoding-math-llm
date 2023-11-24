@@ -1,0 +1,19 @@
+{
+    "api_list": [
+        {
+            "name": "Get accessibility issues",
+            "schema": {
+                "documentTitle": "str",
+                "pageUrl": "str",
+                "issues": [
+                    {
+                        "code": "str",
+                        "type": "str",
+                        "message": "str",
+                        "selector": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

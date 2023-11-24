@@ -1,0 +1,46 @@
+{
+    "api_list": [
+        {
+            "name": "Rental ratings",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Suggest region",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Active listings",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Top property managers",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Rental amenities",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Rental settings",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Overview",
+            "schema": {
+                "message": "str"
+            }
+        }
+    ]
+}

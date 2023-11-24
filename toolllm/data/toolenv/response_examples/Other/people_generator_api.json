@@ -1,0 +1,155 @@
+{
+    "api_list": [
+        {
+            "name": "generateAddress_1",
+            "schema": {
+                "streetAddress": "str",
+                "city": "str",
+                "state": "str",
+                "country": "str",
+                "zip": "str",
+                "phoneNumber": "str",
+                "ipAddress": "str",
+                "countryCode": "str"
+            }
+        },
+        {
+            "name": "getPerson_1",
+            "schema": {
+                "name": "str",
+                "age": "int",
+                "job": "str",
+                "incomeUSD": "int",
+                "creditScore": "int",
+                "ccNumber": "str",
+                "married": "bool",
+                "hasChildren": "bool",
+                "height": "float",
+                "weight": "float",
+                "eyeColor": "str",
+                "email": "str",
+                "gender": "str",
+                "hasDegree": "bool",
+                "bloodType": "str",
+                "username": "str",
+                "politicalLeaning": "float",
+                "religion": "str",
+                "address": {
+                    "streetAddress": "str",
+                    "city": "str",
+                    "state": "str",
+                    "country": "str",
+                    "zip": "str"
+                },
+                "doB": "str",
+                "gpa": "float"
+            }
+        },
+        {
+            "name": "generateAddress",
+            "schema": {
+                "streetAddress": "str",
+                "city": "str",
+                "state": "str",
+                "country": "str",
+                "zip": "str",
+                "phoneNumber": "str"
+            }
+        },
+        {
+            "name": "generateLifeStory_1",
+            "schema": {
+                "person": {
+                    "name": "str",
+                    "age": "str",
+                    "job": "str",
+                    "incomeUSD": "str",
+                    "creditScore": "str",
+                    "ccNumber": "str",
+                    "married": "str",
+                    "hasChildren": "str",
+                    "height": "str",
+                    "weight": "str",
+                    "eyeColor": "str",
+                    "email": "str",
+                    "gender": "str",
+                    "hasDegree": "str",
+                    "bloodType": "str",
+                    "username": "str",
+                    "politicalLeaning": "str",
+                    "religion": "str",
+                    "address": {
+                        "streetAddress": "str",
+                        "city": "str",
+                        "state": "str",
+                        "country": "str",
+                        "zip": "str"
+                    },
+                    "doB": "str",
+                    "gpa": "str"
+                }
+            }
+        },
+        {
+            "name": "getPerson",
+            "schema": {
+                "name": "str",
+                "age": "int",
+                "job": "str",
+                "incomeUSD": "int",
+                "creditScore": "int",
+                "married": "bool",
+                "hasChildren": "bool",
+                "height": "float",
+                "weight": "float",
+                "eyeColor": "str",
+                "email": "str",
+                "gender": "str",
+                "hasDegree": "bool",
+                "bloodType": "str",
+                "username": "str",
+                "politicalLeaning": "float",
+                "religion": "str",
+                "address": {
+                    "city": "str",
+                    "state": "str",
+                    "country": "str",
+                    "countryCode": "str"
+                },
+                "doB": "str",
+                "gpa": "float"
+            }
+        },
+        {
+            "name": "generateLifeStory",
+            "schema": {
+                "person": {
+                    "name": "str",
+                    "age": "str",
+                    "job": "str",
+                    "incomeUSD": "str",
+                    "creditScore": "str",
+                    "married": "str",
+                    "hasChildren": "str",
+                    "eyeColor": "str",
+                    "email": "str",
+                    "gender": "str",
+                    "hasDegree": "str",
+                    "bloodType": "str",
+                    "username": "str",
+                    "politicalLeaning": "str",
+                    "religion": "str",
+                    "address": {
+                        "city": "str",
+                        "state": "str",
+                        "country": "str",
+                        "zip": "str"
+                    },
+                    "doB": "str",
+                    "gpa": "str"
+                },
+                "lifestory": "str"
+            }
+        }
+    ]
+}

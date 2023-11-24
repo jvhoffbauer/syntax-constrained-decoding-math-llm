@@ -1,0 +1,41 @@
+{
+    "api_list": [
+        {
+            "name": "parse ogp meta data",
+            "schema": {
+                "ogp": {
+                    "al:android:app_name": "empty list",
+                    "al:android:package": "empty list",
+                    "al:android:url": "empty list",
+                    "al:ios:app_name": "empty list",
+                    "al:ios:app_store_id": "empty list",
+                    "al:ios:url": "empty list",
+                    "al:web:url": "empty list",
+                    "fb:app_id": "empty list",
+                    "og:description": "empty list",
+                    "og:image": "empty list",
+                    "og:image:height": "empty list",
+                    "og:image:width": "empty list",
+                    "og:site_name": "empty list",
+                    "og:title": "empty list",
+                    "og:type": "empty list",
+                    "og:url": "empty list",
+                    "og:video:height": "empty list",
+                    "og:video:secure_url": "empty list",
+                    "og:video:type": "empty list",
+                    "og:video:url": "empty list"
+                }
+            }
+        },
+        {
+            "name": "parse(minified) ogp meta data",
+            "schema": {
+                "url": "str",
+                "title": "str",
+                "description": "str",
+                "cover": "str",
+                "sitename": "str"
+            }
+        }
+    ]
+}

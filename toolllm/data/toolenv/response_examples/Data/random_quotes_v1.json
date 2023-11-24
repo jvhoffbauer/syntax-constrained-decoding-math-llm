@@ -1,0 +1,15 @@
+{
+    "api_list": [
+        {
+            "name": "Quotes",
+            "schema": {
+                "quotes": [
+                    {
+                        "author": "str",
+                        "quote": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

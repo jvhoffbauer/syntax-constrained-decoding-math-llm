@@ -1,0 +1,35 @@
+{
+    "api_list": [
+        {
+            "name": "getUserByName",
+            "schema": {
+                "username": "str",
+                "firstName": "str",
+                "lastName": "str",
+                "email": "str"
+            }
+        },
+        {
+            "name": "getInventory",
+            "schema": {
+                "sold": "int",
+                "available": "int",
+                "pending": "int"
+            }
+        },
+        {
+            "name": "getPetById",
+            "schema": {
+                "code": "int",
+                "message": "str"
+            }
+        },
+        {
+            "name": "getOrderById",
+            "schema": {
+                "code": "int",
+                "message": "str"
+            }
+        }
+    ]
+}

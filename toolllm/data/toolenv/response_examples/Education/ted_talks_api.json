@@ -1,0 +1,57 @@
+{
+    "api_list": [
+        {
+            "name": "getSubtitleLanguages",
+            "schema": {
+                "result": {
+                    "num_results": "int",
+                    "results": [
+                        {
+                            "slug": "str"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "getTopics",
+            "schema": {
+                "result": {
+                    "num_results": "int",
+                    "results": [
+                        {
+                            "slug": "str"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "getSpeakers",
+            "schema": {
+                "result": {
+                    "num_results": "int",
+                    "results": [
+                        {
+                            "full_name": "str",
+                            "slug": "str"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "getAudioLanguages",
+            "schema": {
+                "result": {
+                    "num_results": "int",
+                    "results": [
+                        {
+                            "slug": "str"
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

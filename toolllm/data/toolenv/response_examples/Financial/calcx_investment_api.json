@@ -1,0 +1,16 @@
+{
+    "api_list": [
+        {
+            "name": "GET - Calculate Investment",
+            "schema": {
+                "apy": "str",
+                "compound_interest": "str",
+                "investment_returns": "str",
+                "principal": "str",
+                "rate": "str",
+                "roi": "str",
+                "simple_interest": "str"
+            }
+        }
+    ]
+}

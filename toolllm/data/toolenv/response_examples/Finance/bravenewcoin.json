@@ -1,0 +1,29 @@
+{
+    "api_list": [
+        {
+            "name": "AssetById",
+            "schema": {
+                "status": "str",
+                "message": "str"
+            }
+        },
+        {
+            "name": "MarketById",
+            "schema": {
+                "status": "str",
+                "message": "str"
+            }
+        },
+        {
+            "name": "Market",
+            "schema": {
+                "content": [
+                    {
+                        "baseAssetId": "str",
+                        "quoteAssetId": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

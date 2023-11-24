@@ -1,0 +1,38 @@
+{
+    "api_list": [
+        {
+            "name": "IP Lookup",
+            "schema": {
+                "location": {
+                    "countryCode": "int",
+                    "countryCode3": "str",
+                    "name": "str",
+                    "lat": "float",
+                    "lon": "float"
+                },
+                "as": {
+                    "number": "int",
+                    "domain": "str",
+                    "country": "str",
+                    "name": "str"
+                },
+                "request": {
+                    "ip": "str",
+                    "version": "str",
+                    "decimal": "int"
+                },
+                "company": {
+                    "name": "str",
+                    "domain": "str"
+                },
+                "range": {
+                    "start": "str",
+                    "end": "str",
+                    "start_decimal": "str",
+                    "end_decimal": "str"
+                },
+                "message": "str"
+            }
+        }
+    ]
+}

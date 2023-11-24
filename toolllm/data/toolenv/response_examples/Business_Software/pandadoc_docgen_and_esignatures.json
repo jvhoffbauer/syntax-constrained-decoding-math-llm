@@ -1,0 +1,46 @@
+{
+    "api_list": [
+        {
+            "name": "ListAPILogs",
+            "schema": {
+                "type": "str"
+            }
+        },
+        {
+            "name": "ListTemplates",
+            "schema": {
+                "type": "str"
+            }
+        },
+        {
+            "name": "ListDocuments",
+            "schema": {
+                "type": "str"
+            }
+        },
+        {
+            "name": "ListDocumentsFolders",
+            "schema": {
+                "type": "str"
+            }
+        },
+        {
+            "name": "ListContentLibraryItems",
+            "schema": {
+                "type": "str"
+            }
+        },
+        {
+            "name": "APIlogdetails",
+            "schema": {
+                "type": "str"
+            }
+        },
+        {
+            "name": "ListTemplatesFolders",
+            "schema": {
+                "type": "str"
+            }
+        }
+    ]
+}

@@ -1,0 +1,102 @@
+{
+    "api_list": [
+        {
+            "name": "v1/ownerSearch",
+            "schema": {
+                "count": "int",
+                "items": [
+                    {
+                        "name": "str",
+                        "address1": "NoneType",
+                        "address2": "str",
+                        "city": "str",
+                        "state": "str",
+                        "country": "str",
+                        "postcode": "str",
+                        "trademarks": [
+                            {
+                                "keyword": "str",
+                                "registration_number": "str"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "name": "/v1/trademarkSearch",
+            "schema": {
+                "count": "str",
+                "items": [
+                    {
+                        "keyword": "str",
+                        "registration_number": "str",
+                        "serial_number": "str",
+                        "status_label": "str",
+                        "status_code": "str",
+                        "status_date": "str",
+                        "status_definition": "str",
+                        "filing_date": "str",
+                        "registration_date": "str",
+                        "expiration_date": "str",
+                        "owners": [
+                            {
+                                "legal_entity_type_label": "str",
+                                "name": "str",
+                                "address1": "str",
+                                "address2": "str",
+                                "city": "str",
+                                "state": "str",
+                                "country": "str",
+                                "postcode": "str"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "name": "/v1/serialSearch",
+            "schema": {
+                "count": "int",
+                "items": [
+                    {
+                        "keyword": "str",
+                        "registration_number": "str",
+                        "serial_number": "str",
+                        "status_label": "str",
+                        "status_date": "str",
+                        "filing_date": "str",
+                        "registration_date": "str",
+                        "expiration_date": "str",
+                        "description": "str",
+                        "owners": [
+                            {
+                                "legal_entity_type_label": "str",
+                                "name": "str",
+                                "address1": "str",
+                                "city": "str",
+                                "state": "str",
+                                "country": "str",
+                                "postcode": "str"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "name": "/v1/databaseStatus",
+            "schema": {
+                "last_update_date": "str",
+                "latest_trademarks": [
+                    {
+                        "keyword": "str",
+                        "registration_number": "str",
+                        "registration_date": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

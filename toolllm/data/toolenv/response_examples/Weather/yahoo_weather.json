@@ -1,0 +1,110 @@
+{
+    "api_list": [
+        {
+            "name": "Search by location",
+            "schema": {
+                "location": {
+                    "city": "str",
+                    "country": "str"
+                },
+                "current_observation": {
+                    "wind": {
+                        "chill": "int",
+                        "direction": "str",
+                        "speed": "int"
+                    },
+                    "atmosphere": {
+                        "humidity": "int",
+                        "visibility": "int",
+                        "pressure": "float"
+                    },
+                    "astronomy": {
+                        "sunrise": "str",
+                        "sunset": "str"
+                    },
+                    "condition": {
+                        "temperature": "int",
+                        "text": "str"
+                    }
+                },
+                "forecasts": [
+                    {
+                        "day": "str",
+                        "date": "int",
+                        "high": "int",
+                        "low": "int",
+                        "text": "str",
+                        "code": "int"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Search by woeid",
+            "schema": {
+                "location": {
+                    "city": "str",
+                    "woeid": "str",
+                    "country": "str"
+                },
+                "current_observation": {
+                    "condition": {
+                        "temperature": "int",
+                        "text": "str"
+                    }
+                },
+                "forecasts": [
+                    {
+                        "day": "str",
+                        "date": "int",
+                        "high": "int",
+                        "low": "int",
+                        "text": "str",
+                        "code": "int"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Search by geolocation latitude & longitude",
+            "schema": {
+                "location": {
+                    "city": "str",
+                    "region": "str",
+                    "country": "str",
+                    "lat": "float",
+                    "long": "float"
+                },
+                "current_observation": {
+                    "wind": {
+                        "chill": "int",
+                        "direction": "str",
+                        "speed": "int"
+                    },
+                    "atmosphere": {
+                        "humidity": "int",
+                        "visibility": "int",
+                        "pressure": "float"
+                    },
+                    "astronomy": {
+                        "sunrise": "str",
+                        "sunset": "str"
+                    },
+                    "condition": {
+                        "temperature": "int",
+                        "text": "str"
+                    }
+                },
+                "forecasts": [
+                    {
+                        "day": "str",
+                        "date": "int",
+                        "high": "int",
+                        "low": "int",
+                        "text": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

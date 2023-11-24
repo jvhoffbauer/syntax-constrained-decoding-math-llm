@@ -1,0 +1,22 @@
+{
+    "api_list": [
+        {
+            "name": "IP",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "URL",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "EMAIL",
+            "schema": {
+                "message": "str"
+            }
+        }
+    ]
+}

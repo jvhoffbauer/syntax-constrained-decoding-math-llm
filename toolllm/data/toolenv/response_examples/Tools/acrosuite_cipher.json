@@ -1,0 +1,14 @@
+{
+    "api_list": [
+        {
+            "name": "Generate RSA Key",
+            "schema": {
+                "contents": {
+                    "publicKey": "str",
+                    "privateKey": "str"
+                },
+                "result": "str"
+            }
+        }
+    ]
+}

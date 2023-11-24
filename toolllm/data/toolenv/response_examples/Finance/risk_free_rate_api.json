@@ -1,0 +1,11 @@
+{
+    "api_list": [
+        {
+            "name": "Risk Free Rate",
+            "schema": {
+                "date": "str",
+                "risk_free_rate": "float"
+            }
+        }
+    ]
+}

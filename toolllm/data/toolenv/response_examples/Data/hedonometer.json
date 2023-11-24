@@ -1,0 +1,17 @@
+{
+    "api_list": [
+        {
+            "name": "Timeseries",
+            "schema": {
+                "meta": {
+                    "limit": "int",
+                    "next": "NoneType",
+                    "offset": "int",
+                    "previous": "str",
+                    "total_count": "int"
+                },
+                "objects": "empty list"
+            }
+        }
+    ]
+}

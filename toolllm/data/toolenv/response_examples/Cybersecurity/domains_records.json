@@ -1,0 +1,52 @@
+{
+    "api_list": [
+        {
+            "name": "initiate download of domain records (A) on the requested domain with different output file formats.",
+            "schema": {
+                "status": "bool",
+                "url": "str"
+            }
+        },
+        {
+            "name": "get domain records(A) by IPv4  (json response)",
+            "schema": {
+                "data": {
+                    "66.6.224.15/32": {
+                        "nba.com": [
+                            {
+                                "host": "str",
+                                "ip": "str",
+                                "days": {
+                                    "first": "str",
+                                    "last": "str"
+                                }
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "name": "initiate download of domain records (A) on the requested IPv4 with different output file formats.",
+            "schema": {
+                "status": "bool",
+                "url": "str"
+            }
+        },
+        {
+            "name": "get  domain records - pairs hostname and IPv4 by given domain  (json response)",
+            "schema": {
+                "data": {
+                    "nba.com": [
+                        {
+                            "host": "str",
+                            "ip": "str",
+                            "first": "str",
+                            "last": "str"
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

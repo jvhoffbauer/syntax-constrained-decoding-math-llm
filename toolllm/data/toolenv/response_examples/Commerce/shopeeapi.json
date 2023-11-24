@@ -1,0 +1,65 @@
+{
+    "api_list": [
+        {
+            "name": "Search products",
+            "schema": {
+                "query": "str",
+                "region": "str",
+                "total": "int",
+                "results": [
+                    {
+                        "title": "str",
+                        "image": "str",
+                        "price": "int",
+                        "sold": "int"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Product details",
+            "schema": {
+                "region": "str",
+                "itemId": "str",
+                "shopId": "str",
+                "name": "str",
+                "ctime": "str",
+                "brand": "str",
+                "item_rating": {
+                    "rating_star": "str",
+                    "rating_count": [
+                        "list of str with length 1"
+                    ]
+                },
+                "condition": "str",
+                "description": "str",
+                "image": "str",
+                "images": [
+                    "list of str with length 1"
+                ],
+                "attributes": [
+                    {
+                        "name": "str",
+                        "value": "str"
+                    }
+                ],
+                "categories": [
+                    {
+                        "name": "str",
+                        "is_default_subcat": "str"
+                    }
+                ],
+                "price": "str",
+                "price_max": "str",
+                "price_min": "str",
+                "discount": "str",
+                "discount_stock": "str",
+                "raw_discount": "str",
+                "location": "str",
+                "stock": "str",
+                "sold": "str",
+                "is_mart": "str"
+            }
+        }
+    ]
+}

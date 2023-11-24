@@ -1,0 +1,20 @@
+{
+    "api_list": [
+        {
+            "name": "Print on dynamically generated label templates",
+            "schema": {
+                "brandName": "str",
+                "labelContent": "str",
+                "templateCode": "str"
+            }
+        },
+        {
+            "name": "Print on label templates or plain paper",
+            "schema": {
+                "brandName": "str",
+                "labelContent": "str",
+                "templateCode": "str"
+            }
+        }
+    ]
+}

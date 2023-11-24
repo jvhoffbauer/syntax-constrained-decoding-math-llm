@@ -1,0 +1,16 @@
+{
+    "api_list": [
+        {
+            "name": "Stream (m3u8 format)",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get Download Link",
+            "schema": {
+                "message": "str"
+            }
+        }
+    ]
+}

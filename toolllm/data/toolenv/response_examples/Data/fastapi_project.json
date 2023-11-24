@@ -1,0 +1,29 @@
+{
+    "api_list": [
+        {
+            "name": "Explore",
+            "schema": {
+                "detail": [
+                    {
+                        "msg": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "interests",
+            "schema": {
+                "interest_list": [
+                    {
+                        "interest": "str",
+                        "key_id": "str",
+                        "thumbnails": {
+                            "hdpi": "str"
+                        },
+                        "web_icon": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

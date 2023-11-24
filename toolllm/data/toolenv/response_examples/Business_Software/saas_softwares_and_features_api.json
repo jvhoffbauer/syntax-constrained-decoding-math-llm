@@ -1,0 +1,55 @@
+{
+    "api_list": [
+        {
+            "name": "Software Assets",
+            "schema": {
+                "count": "str",
+                "results": [
+                    {
+                        "slug": "str",
+                        "name": "str",
+                        "logo_url": "str",
+                        "website": "str",
+                        "short_description": "str",
+                        "description": "str",
+                        "promo_video": "str",
+                        "tags": [
+                            {
+                                "slug": "str",
+                                "name": "str"
+                            }
+                        ],
+                        "attributes": [
+                            {
+                                "name": "str"
+                            }
+                        ],
+                        "tweb_url": "str",
+                        "upvotes_count": "str",
+                        "price_plans": [
+                            {
+                                "name": "str",
+                                "summary": "str",
+                                "currency": "str",
+                                "price": "str",
+                                "per": "str"
+                            }
+                        ],
+                        "customer_organizations": [
+                            {
+                                "name": "str",
+                                "website": "str",
+                                "logo_url": "str"
+                            }
+                        ],
+                        "avg_rating": "str",
+                        "reviews_count": "str",
+                        "has_free_trial": "str",
+                        "users_count": "str",
+                        "pricing_url": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

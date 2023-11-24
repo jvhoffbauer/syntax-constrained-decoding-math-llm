@@ -1,0 +1,1311 @@
+{
+    "api_list": [
+        {
+            "name": "Event Odds",
+            "schema": {
+                "DATA": [
+                    {
+                        "BETTING_TYPE": "str",
+                        "PERIODS": [
+                            {
+                                "ODDS_STAGE": "str",
+                                "MARKETS": [
+                                    {
+                                        "BOOKMAKER_ID": "int",
+                                        "BOOKMAKER_NAME": "str",
+                                        "ODD_CELL_SECOND": {
+                                            "MOVE": "str",
+                                            "VALUE": "float"
+                                        },
+                                        "ODD_CELL_THIRD": {
+                                            "MOVE": "str",
+                                            "VALUE": "float"
+                                        },
+                                        "ODDS_AVAILABLE": "int"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "name": "List of events",
+            "schema": {
+                "DATA": [
+                    {
+                        "NAME": "str",
+                        "HEADER": "str",
+                        "TOURNAMENT_TEMPLATE_ID": "str",
+                        "COUNTRY_ID": "str",
+                        "TOURNAMENT_STAGE_ID": "str",
+                        "TOURNAMENT_TYPE": "str",
+                        "TOURNAMENT_ID": "str",
+                        "SOURCE_TYPE": "str",
+                        "HAS_LIVE_TABLE": "str",
+                        "STANDING_INFO": "str",
+                        "TEMPLATE_ID": "str",
+                        "TOURNAMENT_STAGE_TYPE": "str",
+                        "SHORT_NAME": "str",
+                        "URL": "str",
+                        "TOURNAMENT_IMAGE": "str",
+                        "SORT": "str",
+                        "STAGES_COUNT": "str",
+                        "ZKL": "str",
+                        "ZKU": "str",
+                        "TOURNAMENT_SEASON_ID": "str",
+                        "CATEGORY_NAME": "str",
+                        "EVENTS": [
+                            {
+                                "EVENT_ID": "str",
+                                "START_TIME": "str",
+                                "START_UTIME": "str",
+                                "STAGE_TYPE": "str",
+                                "MERGE_STAGE_TYPE": "str",
+                                "STAGE": "str",
+                                "SORT": "str",
+                                "ROUND": "str",
+                                "VISIBLE_RUN_RATE": "str",
+                                "HAS_LINEPS": "str",
+                                "STAGE_START_TIME": "str",
+                                "GAME_TIME": "str",
+                                "SHORTNAME_HOME": "str",
+                                "HOME_PARTICIPANT_IDS": [
+                                    "list of str with length 1"
+                                ],
+                                "HOME_PARTICIPANT_TYPES": [
+                                    "list of str with length 1"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "name": "List of main odds",
+            "schema": {
+                "DATA": [
+                    {
+                        "EVENT_ID": "str",
+                        "AY": "str",
+                        "BOOKMAKER_ID": "str",
+                        "ODDS": [
+                            {
+                                "ODD_CELL_FIRST": {
+                                    "VALUE": "float"
+                                }
+                            }
+                        ],
+                        "ODDS_CHECK": [
+                            {
+                                "ODD_OUTCOME_VALUE": "str"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Event Report",
+            "schema": {
+                "DATA": [
+                    {
+                        "ID": "str",
+                        "TITLE": "str",
+                        "CONTENT": "str",
+                        "AUTHOR": "str",
+                        "PUBLISHED": "str",
+                        "PROVIDER_NAME": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Event Summary results",
+            "schema": {
+                "DATA": {
+                    "STAGE_NAME": "str",
+                    "RESULT_PART_1_HOME": "str",
+                    "RESULT_PART_1_AWAY": "str",
+                    "RESULT_MATCH_TIME_PART_1": "str",
+                    "RESULT_PART_2_HOME": "str",
+                    "RESULT_PART_2_AWAY": "str",
+                    "RESULT_MATCH_TIME_PART_2": "str",
+                    "RESULT_PART_3_HOME": "str",
+                    "RESULT_PART_3_AWAY": "str",
+                    "RESULT_MATCH_TIME_PART_3": "str",
+                    "RESULT_PART_4_HOME": "str",
+                    "RESULT_PART_4_AWAY": "str",
+                    "RESULT_MATCH_TIME_PART_4": "str",
+                    "RESULT_MATCH_TIME_CURRENT": "str",
+                    "MATCH_INFO_VALUE": "str",
+                    "RESULT_PARTICIPANT_START_POS_HOME": "str",
+                    "RESULT_PARTICIPANT_START_POS_AWAY": "str"
+                }
+            }
+        },
+        {
+            "name": "Tables tabs",
+            "schema": {
+                "DATA": {
+                    "TABS": [
+                        "list of str with length 1"
+                    ],
+                    "TABLE": "str"
+                }
+            }
+        },
+        {
+            "name": "Tournament Tables",
+            "schema": {
+                "DATA": [
+                    {
+                        "GROUP_ID": "int",
+                        "GROUP": "str",
+                        "ROWS": [
+                            {
+                                "RANKING": "int",
+                                "TEAM_NAME": "str",
+                                "TEAM_ID": "str",
+                                "MATCHES_PLAYED": "int",
+                                "WINS": "int",
+                                "GOALS": "str",
+                                "POINTS": "float",
+                                "TEAM_IMAGE_PATH": "str"
+                            }
+                        ]
+                    }
+                ],
+                "META": {
+                    "TABLE_LABEL": "str",
+                    "TABLE_SUB_LABEL": "str",
+                    "TZI": "str",
+                    "DECISIONS": "str"
+                }
+            }
+        },
+        {
+            "name": "Tournament Stages data",
+            "schema": {
+                "DATA": {
+                    "COUNTRY_ID": "int",
+                    "COUNTRY_NAME": "str",
+                    "LEAGUE_NAME": "str",
+                    "SEASON_ID": "int",
+                    "PART_SEASON_ID": "str",
+                    "STANDINGS_TYPE": "int",
+                    "SEASONS": [
+                        {
+                            "SEASON_NAME": "str",
+                            "SEASON_ID": "str",
+                            "SEASON_TOURNAMENT_STAGE_ID": "str",
+                            "SEASON_STANDINGS_TYPE": "int"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Tournament Results events",
+            "schema": {
+                "data": [
+                    {
+                        "name": "str",
+                        "header": "str",
+                        "tournament_template_id": "str",
+                        "country_id": "str",
+                        "country_name": "str",
+                        "tournament_stage_id": "str",
+                        "tournament_type": "str",
+                        "tournament_id": "str",
+                        "source_type": "str",
+                        "has_live_table": "str",
+                        "standing_info": "str",
+                        "template_id": "str",
+                        "tournament_stage_type": "str",
+                        "short_name": "str",
+                        "url": "str",
+                        "tournament_image": "str",
+                        "sort": "str",
+                        "stages_count": "str",
+                        "tournament_season_id": "str",
+                        "category_name": "str",
+                        "events": [
+                            {
+                                "event_id": "str",
+                                "start_time": "str",
+                                "start_utime": "str",
+                                "stage_type": "str",
+                                "merge_stage_type": "str",
+                                "stage": "str",
+                                "sort": "str",
+                                "round": "str",
+                                "visible_run_rate": "str",
+                                "has_lineps": "str",
+                                "audio_comment_url": "str",
+                                "stage_start_time": "str",
+                                "game_time": "str",
+                                "shortname_home": "str",
+                                "home_participant_ids": [
+                                    "list of str with length 1"
+                                ],
+                                "away_participant_ids": [
+                                    "list of str with length 1"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Stages list",
+            "schema": {
+                "DATA": [
+                    {
+                        "SPORT_ID": "int",
+                        "COUNTRY_ID": "int",
+                        "STAGE_ID": "str",
+                        "COUNTRY_NAME": "str",
+                        "LEAGUE_NAME": "str",
+                        "TOURNAMENT_IMAGE": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Tournaments popular list",
+            "schema": {
+                "SPORT_ID": "int"
+            }
+        },
+        {
+            "name": "Tournaments list",
+            "schema": {
+                "DATA": [
+                    {
+                        "LEAGUE_NAME": "str",
+                        "COUNTRY_NAME": "str",
+                        "SEASON_ID": "int",
+                        "STAGES": [
+                            {
+                                "STAGE_NAME": "str"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Season Data",
+            "schema": {
+                "DATA": [
+                    {
+                        "TOURNAMENT_STAGE_ID": "str",
+                        "VALUE": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Number of sport events",
+            "schema": {
+                "DATA": {
+                    "SPORTS": [
+                        {
+                            "SPORT_ID": "int",
+                            "EVENTS_COUNT": "int",
+                            "EVENTS_COUNT_LIVE": "int",
+                            "IS_POPULAR": "int",
+                            "SPORT_NAME": "str"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Sports list",
+            "schema": {
+                "data": [
+                    {
+                        "id": "int",
+                        "name": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Team News",
+            "schema": {
+                "DATA": [
+                    {
+                        "TITLE": "str",
+                        "LINK": "str",
+                        "PUBLISHED": "int",
+                        "PROVIDER_NAME": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Player Events",
+            "schema": {
+                "data": [
+                    {
+                        "event_id": "str",
+                        "stats": {
+                            "595": {
+                                "value": "str",
+                                "type": "str"
+                            },
+                            "596": {
+                                "value": "str",
+                                "type": "str"
+                            },
+                            "599": {
+                                "value": "str",
+                                "type": "str"
+                            },
+                            "600": {
+                                "value": "str",
+                                "type": "str"
+                            },
+                            "541": {
+                                "value": "str",
+                                "type": "str"
+                            }
+                        },
+                        "event_start_time": "str",
+                        "home_score": "str",
+                        "home_win": "str",
+                        "away_win": "str",
+                        "home_participant_name": "str",
+                        "away_score": "str",
+                        "away_participant_name": "str",
+                        "tournament_template_short_code": "str",
+                        "tournament_title": "str",
+                        "tournament_season": "str",
+                        "flag_id": "str",
+                        "flag_name": "str",
+                        "win_lose_title": "str",
+                        "win_lose_short": "str",
+                        "tournament_url": "str",
+                        "rating": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Team Results events",
+            "schema": {
+                "data": [
+                    {
+                        "name": "str",
+                        "header": "str",
+                        "tournament_template_id": "str",
+                        "country_id": "str",
+                        "country_name": "str",
+                        "tournament_stage_id": "str",
+                        "tournament_type": "str",
+                        "tournament_id": "str",
+                        "source_type": "str",
+                        "has_live_table": "str",
+                        "standing_info": "str",
+                        "template_id": "str",
+                        "tournament_stage_type": "str",
+                        "short_name": "str",
+                        "url": "str",
+                        "tournament_image": "str",
+                        "sort": "str",
+                        "super_template_id": "str",
+                        "stages_count": "str",
+                        "zkl": "str",
+                        "zku": "str",
+                        "tournament_season_id": "str",
+                        "category_name": "str",
+                        "events": [
+                            {
+                                "event_id": "str",
+                                "start_time": "str",
+                                "start_utime": "str",
+                                "stage_type": "str",
+                                "merge_stage_type": "str",
+                                "stage": "str",
+                                "sort": "str",
+                                "round": "str",
+                                "ern": "str",
+                                "visible_run_rate": "str",
+                                "has_lineps": "str",
+                                "audio_comment_url": "str",
+                                "stage_start_time": "str",
+                                "game_time": "str",
+                                "match_comments": "str"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Team Transfers",
+            "schema": {
+                "DATA": [
+                    {
+                        "DATE": "int",
+                        "TRANSFER_DIRECTION": "str",
+                        "TRANSFER_TYPE": "str",
+                        "FROM": {
+                            "TEAM_TYPE": "int",
+                            "VALUE": "str"
+                        },
+                        "TO": {
+                            "TEAM_TYPE": "int",
+                            "VALUE": "str"
+                        },
+                        "PLAYER": {
+                            "PARTICIPANT_ID": "str",
+                            "CRNA": "str",
+                            "VALUE": "str"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Player Data",
+            "schema": {
+                "DATA": {
+                    "ID": "str",
+                    "SHORT_NAME": "str",
+                    "COUNTRY_ID": "int",
+                    "COUNTRY_NAME": "str",
+                    "IMAGE_PATH": "str",
+                    "NAME": "str",
+                    "TYPE_ID": "int",
+                    "TYPE_NAME": "str",
+                    "TEAM_ID": "str",
+                    "TEAM_NAME": "str",
+                    "SPORT_ID": "int"
+                }
+            }
+        },
+        {
+            "name": "Team Data",
+            "schema": {
+                "DATA": {
+                    "ID": "str",
+                    "LAYOUT": "str",
+                    "SHORT_NAME": "str",
+                    "COUNTRY_ID": "int",
+                    "COUNTRY_NAME": "str",
+                    "IMAGE_PATH": "str",
+                    "NAME": "str",
+                    "TYPE_ID": "int",
+                    "TYPE_NAME": "str",
+                    "PARENT_NAME": "str",
+                    "ACTUAL_TOURNAMENT_TYPE": "str",
+                    "TEAM_ID": "str",
+                    "TEAM_NAME": "str",
+                    "SPORT_ID": "int"
+                }
+            }
+        },
+        {
+            "name": "Team Fixtures events",
+            "schema": {
+                "data": [
+                    {
+                        "name": "str",
+                        "header": "str",
+                        "country_id": "str",
+                        "country_name": "str",
+                        "tournament_id": "str",
+                        "source_type": "str",
+                        "short_name": "str",
+                        "url": "str",
+                        "tournament_image": "str",
+                        "super_template_id": "str",
+                        "stages_count": "str",
+                        "category_name": "str",
+                        "events": [
+                            {
+                                "event_id": "str",
+                                "start_time": "str",
+                                "start_utime": "str",
+                                "stage_type": "str",
+                                "merge_stage_type": "str",
+                                "stage": "str",
+                                "sort": "str",
+                                "visible_run_rate": "str",
+                                "has_lineps": "str",
+                                "game_time": "str",
+                                "has_swapped_participants": "str",
+                                "shortname_home": "str",
+                                "home_participant_ids": [
+                                    "list of str with length 1"
+                                ],
+                                "home_participant_types": [
+                                    "list of str with length 1"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Latest player events",
+            "schema": {
+                "DATA": [
+                    {
+                        "EVENT_ID": "str",
+                        "START_TIME": "int",
+                        "HOME_NAME": "str",
+                        "HOME_IMAGE_ID": "str",
+                        "HOME_SCORE": "int",
+                        "AWAY_NAME": "str",
+                        "AWAY_IMAGE_ID": "str",
+                        "AWAY_SCORE": "int",
+                        "WINNER": "int"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Team Squad",
+            "schema": {
+                "DATA": [
+                    {
+                        "GROUP_ID": "int",
+                        "GROUP_LABEL": "str",
+                        "ITEMS": [
+                            {
+                                "PLAYER_ID": "str",
+                                "PLAYER_NAME": "str",
+                                "PLAYER_TYPE_ID": "str",
+                                "PLAYER_JERSEY_NUMBER": "int",
+                                "PLAYER_FLAG_ID": "int",
+                                "PLAYER_IMAGE_PATH": "str"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Player Transfers",
+            "schema": {
+                "DATA": [
+                    {
+                        "TRANSFER_REASON": "str",
+                        "TRANSFER_DATE": "str",
+                        "FROM_TEAM_NAME": "str",
+                        "FROM_TEAM_LOGO": "str",
+                        "TO_TEAM_NAME": "str",
+                        "TO_TEAM_LOGO": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Ranking Data",
+            "schema": {
+                "DATA": [
+                    {
+                        "RANK": "str",
+                        "PARTICIPANT_NAME": "str",
+                        "PARTICIPANT_TYPE_ID": "int",
+                        "RESULT": "str"
+                    }
+                ],
+                "META": {
+                    "NAME": "str",
+                    "DATE": "int",
+                    "RESULT_LABEL": "str"
+                }
+            }
+        },
+        {
+            "name": "Most read news",
+            "schema": {
+                "DATA": [
+                    {
+                        "ID": "str",
+                        "ARTICLE": {
+                            "ID": "str",
+                            "TITLE": "str",
+                            "PUBLISHED": "int",
+                            "URL": "str",
+                            "IMAGES": [
+                                {
+                                    "URL": "str"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "List of news",
+            "schema": {
+                "DATA": {
+                    "NAME": "str",
+                    "SECTIONS": [
+                        {
+                            "NAME": "str",
+                            "VARIANT": {
+                                "TYPE": {
+                                    "ID": "int"
+                                }
+                            }
+                        }
+                    ],
+                    "RELATED_ENTITY": {
+                        "TYPE": {
+                            "ID": "int",
+                            "NAME": "str"
+                        },
+                        "SPORT": {
+                            "ID": "int",
+                            "NAME": "str"
+                        }
+                    },
+                    "TYPE": {
+                        "ID": "int",
+                        "NAME": "str"
+                    }
+                }
+            }
+        },
+        {
+            "name": "News Details",
+            "schema": {
+                "DATA": {
+                    "ID": "str",
+                    "TITLE": "str",
+                    "PEREX": "str",
+                    "CONTENT": "str",
+                    "PUBLISHED": "str",
+                    "URL": "str",
+                    "METADATA": "str",
+                    "ENTITIES": [
+                        {
+                            "PARTICIPANT": {
+                                "ID": "str",
+                                "NAME": "str",
+                                "URL": "str",
+                                "SPORT": {
+                                    "ID": "str",
+                                    "NAME": "str",
+                                    "URL": "str"
+                                }
+                            }
+                        }
+                    ],
+                    "IMAGES": [
+                        {
+                            "URL": "str",
+                            "VARIANT_TYPE": "str",
+                            "ALT_TEXT": "str"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Summary news data",
+            "schema": {
+                "DATA": {
+                    "ID": "str",
+                    "TITLE": "str",
+                    "PUBLISHED": "int",
+                    "IMAGES": [
+                        {
+                            "URL": "str",
+                            "VARIANT_TYPE": "int"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Multi search",
+            "schema": {
+                "ID": "str",
+                "TYPE": "str",
+                "SPORT_ID": "int",
+                "FLAG_ID": "int",
+                "COUNTRY_ID": "int",
+                "URL": "str",
+                "IMAGE": "str",
+                "NAME": "str",
+                "COUNTRY_NAME": "str",
+                "TITLE": "str"
+            }
+        },
+        {
+            "name": "Related news",
+            "schema": {
+                "DATA": {
+                    "ID": "str",
+                    "RELATED_ARTICLES": [
+                        {
+                            "ID": "str",
+                            "TITLE": "str",
+                            "PUBLISHED": "int",
+                            "URL": "str",
+                            "IMAGES": [
+                                {
+                                    "URL": "str",
+                                    "ALT_TEXT": "str",
+                                    "CREDIT": "str"
+                                }
+                            ]
+                        }
+                    ],
+                    "NEXT_RELATED_ARTICLE_IDS": "str"
+                }
+            }
+        },
+        {
+            "name": "Categories of news",
+            "schema": {
+                "DATA": [
+                    {
+                        "NAME": "str",
+                        "CATEGORY_ID": "int",
+                        "CATEGORY_TYPE": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Changes to live events",
+            "schema": {
+                "DATA": [
+                    {
+                        "EVENT_ID": "str",
+                        "HAS_LINEPS": "int"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Event Player statistics alt (basketball)",
+            "schema": {
+                "DATA": {
+                    "TABS": [
+                        {
+                            "ID": "str",
+                            "VALUE": "str"
+                        }
+                    ],
+                    "BLOCKS": [
+                        {
+                            "TAB_ID": "str",
+                            "LABELS": [
+                                {
+                                    "ID": "int",
+                                    "VALUE": "str"
+                                }
+                            ],
+                            "ITEMS": [
+                                "list of str with length 1"
+                            ]
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Event Prematch odds",
+            "schema": {
+                "DATA": [
+                    {
+                        "BOOKMAKER_NAME": "str",
+                        "ITEMS": [
+                            {
+                                "ODD_OUTCOME_VALUE": "float",
+                                "ODD_OUTCOME_CHANGE": "str"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Event Data No-duel",
+            "schema": {
+                "DATA": {
+                    "FEATURES": "str",
+                    "BIRTHDAY_TIMESTAMP": "str",
+                    "EVENT_PARTICIPANT_RANKING": "str",
+                    "EVENT_PARTICIPANT_COUNTRY": "str",
+                    "EVENT_PARTICIPANT_COUNTRY_ID": "str",
+                    "STAGE": "str",
+                    "STAGE_TYPE": "str",
+                    "ALTER_EVENT_STAGE_TYPE": "str",
+                    "EVENT_PARTICIPANT_SCORE_PART_1": "str",
+                    "EVENT_PARTICIPANT_SCORE_PART_2": "str",
+                    "EVENT_PARTICIPANT_SCORE_PART_3": "str",
+                    "EVENT_PARTICIPANT_SCORE_PART_4": "str",
+                    "EVENT_PARTICIPANT_SCORE_PART_5": "str",
+                    "EVENT_PARTICIPANT_RANK": "str",
+                    "EVENT_PARTICIPANT_RANK_TIED": "str",
+                    "EVENT_PARTICIPANT_HOLE_INFO": "str"
+                }
+            }
+        },
+        {
+            "name": "Event Ball-ball (cricket)",
+            "schema": {
+                "DATA": [
+                    {
+                        "TAB_NAME": "str",
+                        "ITEMS": [
+                            {
+                                "OVERS": "str",
+                                "RUNS": "str",
+                                "SCORE": "str",
+                                "BOWLER_TO_BATSMAN_INFO": "str",
+                                "BALLS": [
+                                    {
+                                        "BALL_TYPE": "str",
+                                        "BALL_VALUE": "str"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Event Preview",
+            "schema": {
+                "DATA": [
+                    {
+                        "CONTENT": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Event Fall wickets (cricket)",
+            "schema": {
+                "DATA": [
+                    {
+                        "TAB_NAME": "str",
+                        "ITEMS": [
+                            {
+                                "BATSMAN_NAME": "str",
+                                "SCORE": "str",
+                                "BALLS_AND_OVERS": "float",
+                                "STATUS": "str"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Event Scorecard (cricket)",
+            "schema": {
+                "DATA": [
+                    {
+                        "TAB_NAME": "str",
+                        "TABLES": [
+                            {
+                                "FORMAT": [
+                                    "list of str with length 1"
+                                ],
+                                "LABELS": [
+                                    "list of str with length 1"
+                                ],
+                                "ITEMS": [
+                                    {
+                                        "VALUE": [
+                                            "list of str with length 1"
+                                        ],
+                                        "SUB_VALUE": "str"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Event Statistics",
+            "schema": {
+                "DATA": [
+                    {
+                        "STAGE_NAME": "str",
+                        "GROUPS": [
+                            {
+                                "GROUP_LABEL": "str",
+                                "ITEMS": [
+                                    {
+                                        "INCIDENT_NAME": "str",
+                                        "VALUE_HOME": "str",
+                                        "VALUE_AWAY": "str"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Event Commentary",
+            "schema": {
+                "DATA": [
+                    {
+                        "END_MATCH": "NoneType"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "H2H events",
+            "schema": {
+                "DATA": [
+                    {
+                        "TAB_NAME": "str",
+                        "GROUPS": [
+                            {
+                                "GROUP_LABEL": "str",
+                                "ITEMS": [
+                                    {
+                                        "START_TIME": "int",
+                                        "EVENT_NAME": "str",
+                                        "COUNTRY_NAME": "str",
+                                        "EVENT_ACRONYM": "str",
+                                        "HOME_PARTICIPANT_NAME_ONE": "str",
+                                        "AWAY_PARTICIPANT_NAME_ONE": "str",
+                                        "CURRENT_RESULT": "str",
+                                        "H_RESULT": "str",
+                                        "TEAM_MARK": "str"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Event Points history",
+            "schema": {
+                "DATA": [
+                    {
+                        "TAB_NAME": "str",
+                        "GROUP_LABEL": "str",
+                        "ITEMS": [
+                            {
+                                "HOME_RESULT": "str",
+                                "AWAY_RESULT": "str",
+                                "SERVING": "int",
+                                "LAST_SCORED": "int",
+                                "FIFTEENS_CONTENT": "str"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Event News",
+            "schema": {
+                "DATA": [
+                    {
+                        "TITLE": "str",
+                        "LINK": "str",
+                        "PUBLISHED": "int",
+                        "PROVIDER_NAME": "str",
+                        "CATEGORY_NAME": "str",
+                        "LINKS": [
+                            {
+                                "IMAGE_VARIANT_URL": "str"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Event Data Brief",
+            "schema": {
+                "DATA": {
+                    "EVENT_STAGE_TYPE_ID": "int",
+                    "EVENT_MERGE_STAGE_TYPE_ID": "int",
+                    "EVENT_STAGE_ID": "int",
+                    "EVENT_STAGE_START_TIME": "int",
+                    "HAS_LIVE_CENTRE": "NoneType",
+                    "EVENT_START_TIME": "int",
+                    "HOME_SCORE": "str",
+                    "AWAY_SCORE": "str",
+                    "HOME_FULL_TIME_SCORE": "str",
+                    "AWAY_FULL_TIME_SCORE": "str",
+                    "BETTING_TYPE_MAIN": "int",
+                    "FEATURES": "str",
+                    "SPORT_ID": "int",
+                    "TOURNAMENT_STAGE_ID": "str",
+                    "PARTICIPANT_HOME": "str",
+                    "PARTICIPANT_AWAY": "str",
+                    "TOURNAMENT_NAME": "str",
+                    "TOURNAMENT_SHORT_NAME": "str",
+                    "TOURNAMENT_COUNTRY_ID": "int",
+                    "TOURNAMENT_LINK": "str",
+                    "WINNER": "str",
+                    "WINNER_FT": "int",
+                    "BETTING_WINNER": "int",
+                    "BETTING_BOOKMAKER_ID": "int",
+                    "BETTING_TYPE": "int",
+                    "BETTING_BOOKMAKER_NAME": "str"
+                }
+            }
+        },
+        {
+            "name": "Event Starting lineups",
+            "schema": {
+                "DATA": [
+                    {
+                        "FORMATION_NAME": "str",
+                        "FORMATIONS": [
+                            {
+                                "FORMATION_LINE": "int",
+                                "MEMBERS": [
+                                    {
+                                        "PLAYER_ID": "str",
+                                        "PLAYER_FULL_NAME": "str",
+                                        "SHORT_NAME": "str",
+                                        "PLAYER_NUMBER": "int",
+                                        "PLAYER_COUNTRY": "int",
+                                        "PLAYER_POSITION_ID": "int",
+                                        "PLAYER_TYPE": "int"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Event Data",
+            "schema": {
+                "data": {
+                    "event": {
+                        "event_id": "str",
+                        "start_time": "str",
+                        "stage_type": "str",
+                        "stage": "str",
+                        "sort": "str",
+                        "round": "str",
+                        "visible_run_rate": "str",
+                        "has_lineps": "str",
+                        "game_time": "str",
+                        "shortname_home": "str",
+                        "home_participant_ids": [
+                            "list of str with length 1"
+                        ],
+                        "home_participant_types": [
+                            "list of str with length 1"
+                        ],
+                        "home_name": "str",
+                        "home_participant_name_one": "str",
+                        "home_event_participant_id": "str",
+                        "home_slug": "str",
+                        "winner": "str",
+                        "odds_winner": "str",
+                        "odds_winner_outcome": "str",
+                        "home_goal_var": "str",
+                        "home_participant_country_id_one": "str",
+                        "home_participant_country_name_one": "str",
+                        "main_participant_country_ids": [
+                            "list of str with length 1"
+                        ],
+                        "country_name": "str",
+                        "home_score_current": "str",
+                        "home_score_part_1": "str",
+                        "home_score_part_2": "str",
+                        "home_score_part_3": "str",
+                        "home_score_part_4": "str"
+                    }
+                }
+            }
+        },
+        {
+            "name": "Event Statistics (alt)",
+            "schema": {
+                "DATA": [
+                    {
+                        "ID": "int",
+                        "CATEGORY": "str",
+                        "VALUE_HOME": "str",
+                        "VALUE_AWAY": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Event Throw-throw (darts)",
+            "schema": {
+                "VALUE": "str",
+                "BLOCKS": [
+                    {
+                        "SERVICE_PARTICIPANT_TYPE": "int",
+                        "MAIN_SCORE": [
+                            {
+                                "TEAM_ORDER": "int",
+                                "VALUE": "str",
+                                "IS_CHANGED": "int"
+                            }
+                        ],
+                        "SCORE_HISTORY": [
+                            {
+                                "TYPE": "str",
+                                "ITEMS": [
+                                    {
+                                        "TYPE": "str",
+                                        "TEAM_ORDER": "int",
+                                        "VALUE": "str",
+                                        "IS_CHANGED": "int"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Event Summary incidents",
+            "schema": {
+                "DATA": [
+                    {
+                        "STAGE_NAME": "str",
+                        "RESULT_HOME": "str",
+                        "RESULT_AWAY": "str",
+                        "MATCH_TIME_PART_1": "str",
+                        "VENUE": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Event Summary",
+            "schema": {
+                "DATA": [
+                    {
+                        "STAGE_NAME": "str",
+                        "HOME_RUNS_FIRST_INNING": "str",
+                        "AWAY_RUNS_FIRST_INNING": "str",
+                        "MATCH_TIME_PART_1": "str"
+                    }
+                ],
+                "INFO": {
+                    "VENUE": "str"
+                }
+            }
+        },
+        {
+            "name": "List of live events",
+            "schema": {
+                "data": [
+                    {
+                        "name": "str",
+                        "header": "str",
+                        "tournament_template_id": "str",
+                        "country_id": "str",
+                        "country_name": "str",
+                        "tournament_stage_id": "str",
+                        "tournament_type": "str",
+                        "tournament_id": "str",
+                        "source_type": "str",
+                        "has_live_table": "str",
+                        "standing_info": "str",
+                        "template_id": "str",
+                        "tournament_stage_type": "str",
+                        "short_name": "str",
+                        "url": "str",
+                        "tournament_image": "str",
+                        "sort": "str",
+                        "stages_count": "str",
+                        "zkl": "str",
+                        "zku": "str",
+                        "tournament_season_id": "str",
+                        "category_name": "str",
+                        "events": [
+                            {
+                                "event_id": "str",
+                                "start_time": "str",
+                                "start_utime": "str",
+                                "stage_type": "str",
+                                "merge_stage_type": "str",
+                                "stage": "str",
+                                "sort": "str",
+                                "round": "str",
+                                "visible_run_rate": "str",
+                                "live_mark": "str",
+                                "has_lineps": "str",
+                                "stage_start_time": "str",
+                                "shortname_home": "str",
+                                "home_participant_ids": [
+                                    "list of str with length 1"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Event Commentary alt (cricket)",
+            "schema": {
+                "DATA": {
+                    "TABS": [
+                        {
+                            "ID": "str",
+                            "VALUE": "str"
+                        }
+                    ],
+                    "BLOCKS": [
+                        {
+                            "TAB_ID": "str",
+                            "ITEMS": [
+                                {
+                                    "TYPE": "str",
+                                    "CONTENT": "str"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Event Rounds results (golf)",
+            "schema": {
+                "DATA": [
+                    {
+                        "GOLF_ROUND": "str",
+                        "ITEMS": [
+                            {
+                                "HOLE": "int",
+                                "PAR": "str",
+                                "HOME_SCORE": "str"
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}

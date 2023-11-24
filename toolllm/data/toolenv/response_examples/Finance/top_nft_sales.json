@@ -1,0 +1,60 @@
+{
+    "api_list": [
+        {
+            "name": "Top NFTs this Month",
+            "schema": {
+                "nft_name": "str",
+                "collection": "str",
+                "price": "str",
+                "nft_url": "str"
+            }
+        },
+        {
+            "name": "Top NFTs this Week",
+            "schema": {
+                "collection_url": "str",
+                "nft_name": "str",
+                "collection": "str",
+                "price": "str",
+                "nft_url": "str"
+            }
+        },
+        {
+            "name": "Top Collections this Month",
+            "schema": {
+                "collection_url": "str",
+                "volume": "str",
+                "trades": "str",
+                "collection": "str"
+            }
+        },
+        {
+            "name": "Top Collections this Week",
+            "schema": {
+                "collection_url": "str",
+                "volume": "str",
+                "trades": "str",
+                "collection": "str"
+            }
+        },
+        {
+            "name": "Top Collections Today",
+            "schema": {
+                "collection_url": "str",
+                "volume": "str",
+                "trades": "str",
+                "collection": "str"
+            }
+        },
+        {
+            "name": "Top NFTs today",
+            "schema": {
+                "collection_url": "str",
+                "nft_name": "str",
+                "collection": "str",
+                "price": "str",
+                "nft_url": "str"
+            }
+        }
+    ]
+}

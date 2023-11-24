@@ -1,0 +1,16 @@
+{
+    "api_list": [
+        {
+            "name": "Get User",
+            "schema": {
+                "username": "str",
+                "name": "str",
+                "alternateName": "str",
+                "description": "str",
+                "profileImage": "str",
+                "postsCount": "str",
+                "followersCount": "str"
+            }
+        }
+    ]
+}

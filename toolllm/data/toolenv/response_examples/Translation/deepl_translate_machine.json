@@ -1,0 +1,24 @@
+{
+    "api_list": [
+        {
+            "name": "Translate Text",
+            "schema": {
+                "data": {
+                    "texts": [
+                        {
+                            "alternatives": [
+                                {
+                                    "text": "str"
+                                }
+                            ]
+                        }
+                    ],
+                    "lang": "str",
+                    "detectedLanguages": {
+                        "EN": "str"
+                    }
+                }
+            }
+        }
+    ]
+}

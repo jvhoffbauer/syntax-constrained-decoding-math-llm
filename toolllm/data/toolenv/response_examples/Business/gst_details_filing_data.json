@@ -1,0 +1,48 @@
+{
+    "api_list": [
+        {
+            "name": "Get GST info & Filing Data",
+            "schema": {
+                "info": {
+                    "enrichment_details": {
+                        "online_provider": {
+                            "details": {
+                                "gstin": {
+                                    "value": "str"
+                                },
+                                "legal_name": {
+                                    "value": "str"
+                                },
+                                "status": {
+                                    "value": "str"
+                                },
+                                "tax_payer_type": {
+                                    "value": "str"
+                                },
+                                "trade_name": {
+                                    "value": "str"
+                                }
+                            }
+                        }
+                    }
+                },
+                "filing": [
+                    {
+                        "gstin": "str",
+                        "filing_type": "str",
+                        "financial_year": "str",
+                        "tax_period": "str",
+                        "date_of_filing": "str",
+                        "status": "str"
+                    }
+                ],
+                "hsn": [
+                    {
+                        "goods_services_desc": "str",
+                        "hsn_code": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

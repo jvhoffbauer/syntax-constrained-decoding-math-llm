@@ -1,0 +1,25 @@
+{
+    "api_list": [
+        {
+            "name": "HS Code Details",
+            "schema": {
+                "result": {
+                    "code": "str",
+                    "description": "str"
+                }
+            }
+        },
+        {
+            "name": "HS Code Search",
+            "schema": {
+                "status": "str",
+                "result": [
+                    {
+                        "code": "str",
+                        "description": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

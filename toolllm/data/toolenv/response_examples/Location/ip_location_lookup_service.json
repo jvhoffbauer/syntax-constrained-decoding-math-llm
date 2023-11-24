@@ -1,0 +1,14 @@
+{
+    "api_list": [
+        {
+            "name": "Lookup IP Address",
+            "schema": {
+                "data": {
+                    "country": "str",
+                    "timezone": "str",
+                    "ip": "str"
+                }
+            }
+        }
+    ]
+}

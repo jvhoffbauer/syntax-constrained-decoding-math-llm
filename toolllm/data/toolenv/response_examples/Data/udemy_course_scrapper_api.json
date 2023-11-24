@@ -1,0 +1,126 @@
+{
+    "api_list": [
+        {
+            "name": "Course URL",
+            "schema": {
+                "1": {
+                    "course url": "str"
+                },
+                "2": {
+                    "course url": "str"
+                },
+                "3": {
+                    "course url": "str"
+                },
+                "4": {
+                    "course url": "str"
+                },
+                "5": {
+                    "course url": "str"
+                },
+                "6": {
+                    "course url": "str"
+                },
+                "7": {
+                    "course url": "str"
+                },
+                "8": {
+                    "course url": "str"
+                },
+                "9": {
+                    "course url": "str"
+                },
+                "10": {
+                    "course url": "str"
+                },
+                "11": {
+                    "course url": "str"
+                },
+                "12": {
+                    "course url": "str"
+                },
+                "13": {
+                    "course url": "str"
+                },
+                "14": {
+                    "course url": "str"
+                },
+                "15": {
+                    "course url": "str"
+                },
+                "16": {
+                    "course url": "str"
+                },
+                "17": {
+                    "course url": "str"
+                },
+                "18": {
+                    "course url": "str"
+                },
+                "19": {
+                    "course url": "str"
+                },
+                "20": {
+                    "course url": "str"
+                },
+                "21": {
+                    "course url": "str"
+                },
+                "22": {
+                    "course url": "str"
+                },
+                "23": {
+                    "course url": "str"
+                },
+                "24": {
+                    "course url": "str"
+                },
+                "25": {
+                    "course url": "str"
+                },
+                "26": {
+                    "course url": "str"
+                },
+                "27": {
+                    "course url": "str"
+                },
+                "28": {
+                    "course url": "str"
+                },
+                "29": {
+                    "course url": "str"
+                },
+                "30": {
+                    "course url": "str"
+                },
+                "31": {
+                    "course url": "str"
+                },
+                "32": {
+                    "course url": "str"
+                },
+                "33": {
+                    "course url": "str"
+                },
+                "34": {
+                    "course url": "str"
+                },
+                "35": {
+                    "course url": "str"
+                }
+            }
+        },
+        {
+            "name": "Course Instructor",
+            "schema": {
+                "instructor": "str"
+            }
+        },
+        {
+            "name": "Course name",
+            "schema": {
+                "course_name": "str"
+            }
+        }
+    ]
+}

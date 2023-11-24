@@ -1,0 +1,56 @@
+{
+    "api_list": [
+        {
+            "name": "Get specific pizza",
+            "schema": {
+                "id": "int",
+                "name": "str",
+                "veg": "bool",
+                "price": "int",
+                "description": "str",
+                "quantity": "int",
+                "img": "str"
+            }
+        },
+        {
+            "name": "Get specific dessert",
+            "schema": {
+                "name": "str",
+                "price": "int",
+                "description": "str",
+                "img": "str"
+            }
+        },
+        {
+            "name": "All Desserts Data",
+            "schema": {
+                "name": "str",
+                "price": "int",
+                "description": "str",
+                "img": "str",
+                "quantity": "int"
+            }
+        },
+        {
+            "name": "All pizza data",
+            "schema": {
+                "id": "int",
+                "name": "str",
+                "veg": "bool",
+                "price": "int",
+                "description": "str",
+                "quantity": "int",
+                "img": "str",
+                "sizeandcrust": [
+                    {
+                        "mediumPan": [
+                            {
+                                "price": "int"
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}

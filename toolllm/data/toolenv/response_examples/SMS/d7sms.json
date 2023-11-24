@@ -1,0 +1,30 @@
+{
+    "api_list": [
+        {
+            "name": "Get OTP Status",
+            "schema": {
+                "detail": {
+                    "code": "str",
+                    "message": "str"
+                }
+            }
+        },
+        {
+            "name": "Get Message Status",
+            "schema": {
+                "detail": {
+                    "code": "str",
+                    "message": "str"
+                }
+            }
+        },
+        {
+            "name": "D7API - Check Balance",
+            "schema": {
+                "detail": {
+                    "message": "str"
+                }
+            }
+        }
+    ]
+}

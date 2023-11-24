@@ -1,0 +1,46 @@
+{
+    "api_list": [
+        {
+            "name": "Retrieve active loans offers",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Retrieve aggregated loan offers",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Retrieve rewards",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Retrieve user airdrop rewards",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Retrieve tokens / listings",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Retrieve user collection bids",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Retreive collection bids",
+            "schema": {
+                "message": "str"
+            }
+        }
+    ]
+}

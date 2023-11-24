@@ -1,0 +1,42 @@
+{
+    "api_list": [
+        {
+            "name": "GetBooks",
+            "schema": {
+                "The_Old_Testament": [
+                    "list of str with length 39"
+                ],
+                "The_New_Testament": [
+                    "list of str with length 27"
+                ]
+            }
+        },
+        {
+            "name": "GetChapter",
+            "schema": {
+                "Book": "str",
+                "Chapter": "str",
+                "Output": "str"
+            }
+        },
+        {
+            "name": "GetVerses",
+            "schema": {
+                "Book": "str",
+                "Chapter": "str",
+                "VerseFrom": "str",
+                "VerseTo": "str",
+                "Output": "str"
+            }
+        },
+        {
+            "name": "GetVerseOfaChapter",
+            "schema": {
+                "Book": "str",
+                "Chapter": "str",
+                "Verse": "str",
+                "Output": "str"
+            }
+        }
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "api_list": [
+        {
+            "name": "Get Body Mass Index (BMI)",
+            "schema": {
+                "info": {
+                    "bmi": "float",
+                    "health": "str"
+                }
+            }
+        },
+        {
+            "name": "Get A Body Shape Index (ABSI)",
+            "schema": {
+                "info": {
+                    "absi": "str",
+                    "absiZ": "str",
+                    "mortalityRisk": "str"
+                }
+            }
+        },
+        {
+            "name": "Get Waist\u2013Hip ratio (WHR)",
+            "schema": {
+                "info": {
+                    "whr": "str",
+                    "bodyShape": "str",
+                    "riskLevel": "str"
+                }
+            }
+        },
+        {
+            "name": "Get Ideal Body Weight (IBW)",
+            "schema": {
+                "info": {
+                    "robinson": "float",
+                    "miller": "float",
+                    "devine": "float",
+                    "hamwi": "float",
+                    "gender": "str"
+                }
+            }
+        },
+        {
+            "name": "Get Body Fat Percentage (BFP)",
+            "schema": {
+                "info": {
+                    "bfp": "float",
+                    "fat_mass": "float",
+                    "lean_mass": "float",
+                    "description": "str"
+                }
+            }
+        }
+    ]
+}

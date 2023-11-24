@@ -1,0 +1,32 @@
+{
+    "api_list": [
+        {
+            "name": "Scrape Contacts from Website",
+            "schema": {
+                "status": "str",
+                "request_id": "str",
+                "data": [
+                    {
+                        "domain": "str",
+                        "query": "str",
+                        "emails": [
+                            {
+                                "value": "str"
+                            }
+                        ],
+                        "phone_numbers": [
+                            {
+                                "value": "str"
+                            }
+                        ],
+                        "facebook": "str",
+                        "instagram": "str",
+                        "tiktok": "str",
+                        "twitter": "str",
+                        "youtube": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

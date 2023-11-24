@@ -1,0 +1,14 @@
+{
+    "api_list": [
+        {
+            "name": "Holidays",
+            "schema": {
+                "meta": {
+                    "code": "int",
+                    "error_type": "str",
+                    "error_detail": "str"
+                }
+            }
+        }
+    ]
+}

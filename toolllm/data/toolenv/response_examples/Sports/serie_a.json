@@ -1,0 +1,10 @@
+{
+    "api_list": [
+        {
+            "name": "Match details by Id",
+            "schema": {
+                "MatchId": "str"
+            }
+        }
+    ]
+}

@@ -1,0 +1,20 @@
+{
+    "api_list": [
+        {
+            "name": "Get an answer",
+            "schema": {
+                "data": [
+                    {
+                        "status": "str",
+                        "answer": "str",
+                        "user": "str",
+                        "createdAt": "str"
+                    }
+                ],
+                "entity": "str",
+                "code": "str",
+                "status": "int"
+            }
+        }
+    ]
+}

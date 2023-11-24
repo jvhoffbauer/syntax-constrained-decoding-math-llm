@@ -1,0 +1,11 @@
+{
+    "api_list": [
+        {
+            "name": "get all climate news",
+            "schema": {
+                "title": "str",
+                "url": "str"
+            }
+        }
+    ]
+}

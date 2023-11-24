@@ -1,0 +1,257 @@
+{
+    "api_list": [
+        {
+            "name": "User Data by ID",
+            "schema": {
+                "status": "str",
+                "data": {
+                    "nickname": "str",
+                    "avatar_168x168": {
+                        "uri": "str",
+                        "url_list": "str"
+                    },
+                    "avatar_300x300": {
+                        "uri": "str",
+                        "url_list": "str"
+                    },
+                    "avatar_thumb": {
+                        "uri": "str",
+                        "url_list": "str"
+                    },
+                    "privacy_setting": {
+                        "following_visibility": "str"
+                    },
+                    "share_info": {
+                        "share_url": "str",
+                        "share_desc": "str",
+                        "share_title": "str"
+                    },
+                    "short_id": "str",
+                    "tab_settings": {
+                        "private_tab": {
+                            "show_private_tab": "str"
+                        }
+                    },
+                    "uid": "str",
+                    "unique_id": "str",
+                    "video_icon": {
+                        "uri": "str",
+                        "url_list": "str"
+                    }
+                }
+            }
+        },
+        {
+            "name": "Video Data by ID",
+            "schema": {
+                "data": {
+                    "aweme_detail": {
+                        "share_url": "str",
+                        "status": {
+                            "aweme_id": "str",
+                            "is_delete": "str",
+                            "allow_share": "str",
+                            "allow_comment": "str",
+                            "private_status": "str",
+                            "in_reviewing": "str",
+                            "reviewed": "str",
+                            "self_see": "str",
+                            "is_prohibited": "str"
+                        },
+                        "music": {
+                            "title": "str",
+                            "author": "str",
+                            "album": "str",
+                            "cover_large": {
+                                "uri": "str",
+                                "url_list": [
+                                    "list of str with length 1"
+                                ],
+                                "width": "str",
+                                "height": "str"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "FollowINGS of Account by ID",
+            "schema": {
+                "status": "str",
+                "data": {
+                    "followings": [
+                        {
+                            "avatar_uri": "str",
+                            "aweme_count": "str",
+                            "cover_url": [
+                                {
+                                    "uri": "str",
+                                    "url_list": [
+                                        "list of str with length 1"
+                                    ],
+                                    "width": "str",
+                                    "height": "str"
+                                }
+                            ],
+                            "favoriting_count": "str",
+                            "follower_count": "str",
+                            "following_count": "str",
+                            "language": "str",
+                            "nickname": "str",
+                            "region": "str"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Followers of account by ID",
+            "schema": {
+                "status": "str",
+                "data": {
+                    "status_code": "int",
+                    "followers": "str",
+                    "has_more": "bool",
+                    "total": "int"
+                }
+            }
+        },
+        {
+            "name": "Comments by Video ID",
+            "schema": {
+                "status": "str",
+                "data": {
+                    "comments": [
+                        {
+                            "aweme_id": "str",
+                            "cid": "str",
+                            "create_time": "str",
+                            "digg_count": "str",
+                            "reply_id": "str",
+                            "reply_to_reply_id": "str",
+                            "text": "str",
+                            "user": {
+                                "avatar_uri": "str",
+                                "nickname": "str",
+                                "region": "str"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "User by Keyword",
+            "schema": {
+                "status": "str",
+                "data": {
+                    "cursor": "str",
+                    "has_more": "str",
+                    "input_keyword": "str",
+                    "qc": "str",
+                    "type": "str",
+                    "user_list": [
+                        {
+                            "user_info": {
+                                "avatar_168x168": {
+                                    "url_list": [
+                                        "list of str with length 1"
+                                    ],
+                                    "width": "str",
+                                    "height": "str"
+                                },
+                                "avatar_300x300": {
+                                    "url_list": [
+                                        "list of str with length 1"
+                                    ],
+                                    "width": "str",
+                                    "height": "str"
+                                },
+                                "avatar_larger": {
+                                    "url_list": [
+                                        "list of str with length 1"
+                                    ],
+                                    "width": "str",
+                                    "height": "str"
+                                },
+                                "avatar_medium": {
+                                    "url_list": [
+                                        "list of str with length 1"
+                                    ],
+                                    "width": "str",
+                                    "height": "str"
+                                },
+                                "avatar_thumb": {
+                                    "url_list": [
+                                        "list of str with length 1"
+                                    ],
+                                    "width": "str",
+                                    "height": "str"
+                                },
+                                "avatar_uri": "str",
+                                "aweme_count": "str",
+                                "custom_verify": "str",
+                                "follower_count": "str",
+                                "following_count": "str"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Hashtag by Keyword",
+            "schema": {
+                "data": {
+                    "challenge_list": [
+                        {
+                            "challenge_info": {
+                                "view_count": "int",
+                                "type": "int",
+                                "user_count": "int",
+                                "cid": "str",
+                                "cha_name": "str"
+                            },
+                            "has_more": "int"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "User Data by SecUID",
+            "schema": {
+                "status": "str",
+                "data": {
+                    "status_code": "str",
+                    "user": {
+                        "account_type": "str",
+                        "avatar_larger": {
+                            "uri": "str",
+                            "url_list": [
+                                "list of str with length 1"
+                            ]
+                        },
+                        "nickname": "str",
+                        "sec_uid": "str"
+                    }
+                }
+            }
+        },
+        {
+            "name": "Hashtag Data by Name",
+            "schema": {
+                "status": "str",
+                "data": {
+                    "ch_info": {
+                        "view_count": "int",
+                        "user_count": "int",
+                        "cid": "str",
+                        "cha_name": "str"
+                    }
+                }
+            }
+        }
+    ]
+}

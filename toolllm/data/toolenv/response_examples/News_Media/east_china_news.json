@@ -1,0 +1,69 @@
+{
+    "api_list": [
+        {
+            "name": "Filter for conflict",
+            "schema": {
+                "title": "str",
+                "url": "str",
+                "source": "str",
+                "section": "str"
+            }
+        },
+        {
+            "name": "filter for diease",
+            "schema": {
+                "title": "str",
+                "url": "str",
+                "source": "str"
+            }
+        },
+        {
+            "name": "China and US relation filter",
+            "schema": {
+                "title": "str",
+                "url": "str",
+                "source": "str"
+            }
+        },
+        {
+            "name": "Filter Korean news",
+            "schema": {
+                "title": "str",
+                "url": "str",
+                "source": "str"
+            }
+        },
+        {
+            "name": "Japan filter for news",
+            "schema": {
+                "title": "str",
+                "url": "str",
+                "source": "str"
+            }
+        },
+        {
+            "name": "China filter for all news",
+            "schema": {
+                "title": "str",
+                "url": "str",
+                "source": "str"
+            }
+        },
+        {
+            "name": "newspaper company filter for news",
+            "schema": {
+                "title": "str",
+                "url": "str",
+                "source": "str"
+            }
+        },
+        {
+            "name": "Get All China, Japan ,Korea news",
+            "schema": {
+                "title": "str",
+                "url": "str",
+                "source": "str"
+            }
+        }
+    ]
+}

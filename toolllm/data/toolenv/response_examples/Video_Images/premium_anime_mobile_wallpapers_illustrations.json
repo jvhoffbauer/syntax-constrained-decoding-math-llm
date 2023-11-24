@@ -1,0 +1,80 @@
+{
+    "api_list": [
+        {
+            "name": "Random Wallpapers",
+            "schema": {
+                "art_id": "str",
+                "animename": "str",
+                "arturl": "str"
+            }
+        },
+        {
+            "name": "Anime Wallpapers by pagination",
+            "schema": {
+                "art_id": "str",
+                "animename": "str",
+                "arturl": "str",
+                "sensitivity": "int"
+            }
+        },
+        {
+            "name": "Anime wallpapers related to the valentine by pagination",
+            "schema": {
+                "art_id": "str",
+                "animename": "str",
+                "arturl": "str",
+                "sensitivity": "int"
+            }
+        },
+        {
+            "name": "Anime wallpapers related to the wedding by pagination",
+            "schema": {
+                "art_id": "str",
+                "animename": "str",
+                "arturl": "str"
+            }
+        },
+        {
+            "name": "Anime Illustrations by pagination",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Recent Wallpapers by pagination",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Search by animename, art_id",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Anime boy wallpapers by pagination",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Anime wallpapers related to the family by pagination",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Anime wallpapers related to the halloween by pagination",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Premium anime wallpapers by pagination",
+            "schema": {
+                "message": "str"
+            }
+        }
+    ]
+}

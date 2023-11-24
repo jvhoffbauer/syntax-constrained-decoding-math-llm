@@ -1,0 +1,147 @@
+{
+    "api_list": [
+        {
+            "name": "GET the channels description and status",
+            "schema": {
+                "channels": [
+                    {
+                        "name": "str",
+                        "description": "str",
+                        "thumbnail": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "GET the channels social accounts and contacts",
+            "schema": {
+                "Citizen Tv Live": {
+                    "id": "str",
+                    "socialLinks": {
+                        "facebook": "str",
+                        "twitter": "str",
+                        "instagram": "str",
+                        "youtube": "str",
+                        "website": "str",
+                        "app": "str"
+                    }
+                },
+                "Ktn Home Live": {
+                    "id": "str",
+                    "socialLinks": {
+                        "facebook": "str",
+                        "twitter": "str",
+                        "instagram": "str",
+                        "youtube": "str",
+                        "website": "str"
+                    }
+                },
+                "Ramogi Tv Live": {
+                    "id": "str",
+                    "socialLinks": {
+                        "facebook": "str",
+                        "whatsapp": "str",
+                        "twitter": "str",
+                        "instagram": "str",
+                        "youtube": "str",
+                        "website": "str",
+                        "app": "str"
+                    }
+                },
+                "Inooro Tv Live": {
+                    "id": "str",
+                    "socialLinks": {
+                        "facebook": "str",
+                        "twitter": "str",
+                        "instagram": "str",
+                        "youtube": "str",
+                        "website": "str",
+                        "app": "str"
+                    }
+                },
+                "Ntv Live": {
+                    "id": "str",
+                    "socialLinks": {
+                        "facebook": "str",
+                        "twitter": "str",
+                        "instagram": "str",
+                        "youtube": "str",
+                        "website": "str"
+                    }
+                },
+                "Kbc Channel 1 Live": {
+                    "id": "str",
+                    "socialLinks": {
+                        "facebook": "str",
+                        "twitter": "str",
+                        "instagram": "str",
+                        "youtube": "str",
+                        "website": "str"
+                    }
+                }
+            }
+        },
+        {
+            "name": "GET the channel stream_url",
+            "schema": {
+                "Citizen Tv Live": {
+                    "streamUrl": "str"
+                },
+                "Ktn Home Live": {
+                    "streamUrl": "str"
+                },
+                "Ramogi Tv Live": {
+                    "streamUrl": "str"
+                },
+                "Inooro Tv Live": {
+                    "streamUrl": "str"
+                },
+                "Ntv Live": {
+                    "streamUrl": "str"
+                },
+                "Kbc Channel 1 Live": {
+                    "streamUrl": "str"
+                },
+                "K24 Tv Live": {
+                    "streamUrl": "str"
+                },
+                "Ktn News Live": {
+                    "streamUrl": "str"
+                },
+                "Lolwe Tv Live": {
+                    "streamUrl": "str"
+                },
+                "Tv47 Live": {
+                    "streamUrl": "str"
+                },
+                "Elimu Tv Live": {
+                    "streamUrl": "str"
+                },
+                "Kameme Tv Live": {
+                    "streamUrl": "str"
+                },
+                "Y254 Tv Live": {
+                    "streamUrl": "str"
+                },
+                "Ebru Tv Live": {
+                    "streamUrl": "str"
+                },
+                "Romanza Tv Live": {
+                    "streamUrl": "str"
+                },
+                "Akili Kids Tv Live": {
+                    "streamUrl": "str"
+                },
+                "Utv Live": {
+                    "streamUrl": "str"
+                },
+                "Hlc Tv Live": {
+                    "streamUrl": "str"
+                },
+                "Mukeu Tv Live": {
+                    "streamUrl": "str"
+                }
+            }
+        }
+    ]
+}

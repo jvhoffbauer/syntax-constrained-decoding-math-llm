@@ -1,0 +1,20 @@
+{
+    "api_list": [
+        {
+            "name": "Product",
+            "schema": {
+                "request_info": {
+                    "success": "bool",
+                    "message": "str"
+                }
+            }
+        },
+        {
+            "name": "Reviews",
+            "schema": {
+                "message": "str",
+                "info": "str"
+            }
+        }
+    ]
+}

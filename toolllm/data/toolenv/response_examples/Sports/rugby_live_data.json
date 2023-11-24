@@ -1,0 +1,190 @@
+{
+    "api_list": [
+        {
+            "name": "Fixtures and Results By Team",
+            "schema": {
+                "results": [
+                    {
+                        "comp_name": "str",
+                        "season": "str",
+                        "date": "str",
+                        "game_week": "str",
+                        "home": "str",
+                        "away": "str",
+                        "status": "str",
+                        "venue": "str",
+                        "home_score": "str",
+                        "away_score": "str",
+                        "home_tries": "str",
+                        "away_tries": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Fixtures By Team By Season",
+            "schema": {
+                "results": [
+                    {
+                        "comp_name": "str",
+                        "season": "str",
+                        "date": "str",
+                        "game_week": "str",
+                        "home": "str",
+                        "away": "str",
+                        "status": "str",
+                        "venue": "str",
+                        "home_score": "str",
+                        "away_score": "str",
+                        "home_tries": "str",
+                        "away_tries": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Fixtures By Date",
+            "schema": {
+                "results": [
+                    {
+                        "comp_name": "str",
+                        "season": "str",
+                        "date": "str",
+                        "game_week": "str",
+                        "home": "str",
+                        "away": "str",
+                        "status": "str",
+                        "venue": "str",
+                        "home_score": "str",
+                        "away_score": "str",
+                        "home_tries": "str",
+                        "away_tries": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Match",
+            "schema": {
+                "meta": {
+                    "title": "str",
+                    "description": "str",
+                    "fields": {
+                        "match": {
+                            "id": "str",
+                            "comp_name": "str",
+                            "season": "str",
+                            "status": "str",
+                            "venue": "str",
+                            "game_week": "str",
+                            "home_team": "str",
+                            "away_team": "str",
+                            "date": "str",
+                            "home_score": "str",
+                            "away_score": "str",
+                            "home_tries": "str",
+                            "away_tries": "str",
+                            "updated": "str"
+                        },
+                        "referees_array": {
+                            "name": "str",
+                            "country": "str",
+                            "role": "str"
+                        },
+                        "events_array": {
+                            "time": "str",
+                            "team_id": "str",
+                            "type": "str",
+                            "player_1_name": "str",
+                            "player_1_id": "str",
+                            "player_2_name": "str",
+                            "player_2_id": "str"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "Teams By Competition Season",
+            "schema": {
+                "results": [
+                    {
+                        "id": "int",
+                        "name": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Competitions",
+            "schema": {
+                "results": [
+                    {
+                        "name": "str",
+                        "season": "int"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Fixtures",
+            "schema": {
+                "results": [
+                    {
+                        "comp_name": "str",
+                        "season": "str",
+                        "date": "str",
+                        "game_week": "str",
+                        "home": "str",
+                        "away": "str",
+                        "status": "str",
+                        "venue": "str",
+                        "home_score": "str",
+                        "away_score": "str",
+                        "home_tries": "str",
+                        "away_tries": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Standings",
+            "schema": {
+                "meta": {
+                    "title": "str",
+                    "description": "str",
+                    "fields": {
+                        "comp_id": "str",
+                        "comp_name": "str",
+                        "season": "str"
+                    }
+                },
+                "results": {
+                    "comp_id": "str",
+                    "comp_name": "str",
+                    "season": "str",
+                    "standings": [
+                        {
+                            "table_name": "str",
+                            "teams": [
+                                {
+                                    "position": "str",
+                                    "id": "str",
+                                    "name": "str",
+                                    "played": "str",
+                                    "won": "str",
+                                    "drawn": "str",
+                                    "lost": "str",
+                                    "tries_for": "str",
+                                    "tries_against": "str",
+                                    "tries_diff": "str",
+                                    "points": "str"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

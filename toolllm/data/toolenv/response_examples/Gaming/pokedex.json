@@ -1,0 +1,40 @@
+{
+    "api_list": [
+        {
+            "name": "Get Specific Pokemon",
+            "schema": {
+                "name": "str",
+                "thumbnailimage": "str",
+                "height": "str",
+                "weight": "str",
+                "category": "str",
+                "abilities": "str",
+                "type": [
+                    "list of str with length 1"
+                ],
+                "weaknesses": [
+                    "list of str with length 1"
+                ]
+            }
+        },
+        {
+            "name": "Get All Pokemon from Pokedex",
+            "schema": {
+                "number": "str",
+                "name": "str",
+                "weight": "float",
+                "height": "float",
+                "abilities": [
+                    "list of str with length 1"
+                ],
+                "weakness": [
+                    "list of str with length 1"
+                ],
+                "type": [
+                    "list of str with length 1"
+                ],
+                "ThumbnailImage": "str"
+            }
+        }
+    ]
+}

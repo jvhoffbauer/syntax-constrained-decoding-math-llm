@@ -1,0 +1,11 @@
+{
+    "api_list": [
+        {
+            "name": "snap",
+            "schema": {
+                "url": "str",
+                "base64": "str"
+            }
+        }
+    ]
+}

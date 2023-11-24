@@ -1,0 +1,14 @@
+{
+    "api_list": [
+        {
+            "name": "/geocode/v1/json",
+            "schema": {
+                "status": {
+                    "code": "int",
+                    "message": "str"
+                },
+                "total_results": "int"
+            }
+        }
+    ]
+}

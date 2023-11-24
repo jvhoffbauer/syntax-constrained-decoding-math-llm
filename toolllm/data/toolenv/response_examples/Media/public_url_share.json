@@ -1,0 +1,18 @@
+{
+    "api_list": [
+        {
+            "name": "Media sources statistics",
+            "schema": {
+                "status": "int",
+                "message": "str"
+            }
+        },
+        {
+            "name": "Top 50 startups news from the last month",
+            "schema": {
+                "status": "int",
+                "message": "str"
+            }
+        }
+    ]
+}

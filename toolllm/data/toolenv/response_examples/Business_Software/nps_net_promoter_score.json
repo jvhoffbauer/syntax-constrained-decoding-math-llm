@@ -1,0 +1,16 @@
+{
+    "api_list": [
+        {
+            "name": "Read Organization",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Read NPS template",
+            "schema": {
+                "message": "str"
+            }
+        }
+    ]
+}

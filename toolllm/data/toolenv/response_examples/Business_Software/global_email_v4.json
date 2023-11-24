@@ -1,0 +1,35 @@
+{
+    "api_list": [
+        {
+            "name": "Global Email V4",
+            "schema": {
+                "Version": "str",
+                "TransmissionReference": "str",
+                "TransmissionResults": "str",
+                "TotalRecords": "str",
+                "Records": [
+                    {
+                        "DeliverabilityConfidenceScore": "str",
+                        "Results": "str",
+                        "EmailAddress": "str",
+                        "MailboxName": "str",
+                        "DomainName": "str",
+                        "DomainAuthenticationStatus": "str",
+                        "TopLevelDomain": "str",
+                        "TopLevelDomainName": "str",
+                        "DateChecked": "str",
+                        "EmailAgeEstimated": "str",
+                        "DomainAgeEstimated": "str",
+                        "DomainAvailability": "str",
+                        "DomainCountryCode": "str",
+                        "DomainPrivateProxy": "str",
+                        "PrivacyFlag": "str",
+                        "MXServer": "str",
+                        "DomainTypeIndicator": "str",
+                        "BreachCount": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

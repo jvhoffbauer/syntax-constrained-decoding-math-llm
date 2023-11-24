@@ -1,0 +1,14 @@
+{
+    "api_list": [
+        {
+            "name": "Parse raw address",
+            "schema": {
+                "house_number": "str",
+                "road": "str",
+                "postcode": "str",
+                "city": "str",
+                "country": "str"
+            }
+        }
+    ]
+}

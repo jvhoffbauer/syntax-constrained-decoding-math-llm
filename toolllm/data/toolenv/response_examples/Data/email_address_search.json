@@ -1,0 +1,18 @@
+{
+    "api_list": [
+        {
+            "name": "Email search",
+            "schema": {
+                "numFound": "int",
+                "start": "int",
+                "numFoundExact": "bool",
+                "docs": [
+                    {
+                        "email": "str",
+                        "domain": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

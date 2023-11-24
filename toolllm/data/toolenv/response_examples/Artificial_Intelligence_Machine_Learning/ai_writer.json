@@ -1,0 +1,28 @@
+{
+    "api_list": [
+        {
+            "name": "Newsletter",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Text",
+            "schema": {
+                "response": "str"
+            }
+        },
+        {
+            "name": "QR Code",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Translation",
+            "schema": {
+                "message": "str"
+            }
+        }
+    ]
+}

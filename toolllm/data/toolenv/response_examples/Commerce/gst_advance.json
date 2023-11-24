@@ -1,0 +1,24 @@
+{
+    "api_list": [
+        {
+            "name": "GST",
+            "schema": {
+                "data": {
+                    "gstin": "str",
+                    "legal_name": "str",
+                    "trade_name": "str",
+                    "regt_date": "str",
+                    "const_business": "str",
+                    "gst_status": "str",
+                    "taxpayer_type": "str",
+                    "aggreTurnOverFY": "str",
+                    "aggreTurnOver": "str",
+                    "gross_total_income": "str",
+                    "nba": "str",
+                    "mbr": "str",
+                    "update_time": "str"
+                }
+            }
+        }
+    ]
+}

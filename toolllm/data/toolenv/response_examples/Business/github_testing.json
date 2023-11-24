@@ -1,0 +1,22 @@
+{
+    "api_list": [
+        {
+            "name": "https://api.github.com/users/doomstones",
+            "schema": {
+                "login": "str",
+                "id": "str",
+                "avatar_url": "str",
+                "url": "str",
+                "html_url": "str",
+                "type": "str",
+                "site_admin": "str",
+                "public_repos": "str",
+                "public_gists": "str",
+                "followers": "str",
+                "following": "str",
+                "created_at": "str",
+                "updated_at": "str"
+            }
+        }
+    ]
+}

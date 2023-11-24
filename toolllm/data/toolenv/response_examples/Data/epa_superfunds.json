@@ -1,0 +1,23 @@
+{
+    "api_list": [
+        {
+            "name": "Superfund Search",
+            "schema": {
+                "Results": {
+                    "FRSFacility": [
+                        {
+                            "RegistryId": "str",
+                            "FacilityName": "str",
+                            "LocationAddress": "str",
+                            "CityName": "str",
+                            "StateAbbr": "str",
+                            "ZipCode": "str",
+                            "Latitude83": "float",
+                            "Longitude83": "float"
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

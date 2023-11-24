@@ -1,0 +1,11 @@
+{
+    "api_list": [
+        {
+            "name": "Latest News on Crypto",
+            "schema": {
+                "title": "str",
+                "url": "str"
+            }
+        }
+    ]
+}

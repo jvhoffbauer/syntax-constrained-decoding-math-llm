@@ -1,0 +1,26 @@
+{
+    "api_list": [
+        {
+            "name": "Get Specific dog breed",
+            "schema": {
+                "data_characteristics": [
+                    {
+                        "title": "str",
+                        "star_title": "str"
+                    }
+                ],
+                "characteristics_vital": [
+                    {
+                        "title": "str",
+                        "stat": "str"
+                    }
+                ],
+                "more_about": [
+                    {
+                        "title": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

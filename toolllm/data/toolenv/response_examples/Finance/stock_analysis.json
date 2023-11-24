@@ -1,0 +1,197 @@
+{
+    "api_list": [
+        {
+            "name": "Earnings History",
+            "schema": {
+                "29/06/2022": {
+                    "Actual EPS": "str",
+                    "Difference": "str",
+                    "Est. EPS": "str",
+                    "Surprise %": "str"
+                },
+                "29/09/2022": {
+                    "Actual EPS": "str",
+                    "Difference": "str",
+                    "Est. EPS": "str",
+                    "Surprise %": "str"
+                },
+                "30/03/2023": {
+                    "Actual EPS": "str",
+                    "Difference": "str",
+                    "Est. EPS": "str",
+                    "Surprise %": "str"
+                },
+                "30/12/2022": {
+                    "Actual EPS": "str",
+                    "Difference": "str",
+                    "Est. EPS": "str",
+                    "Surprise %": "str"
+                }
+            }
+        },
+        {
+            "name": "Earnings Estimate",
+            "schema": {
+                "Current qtr. (Jun 2023)": {
+                    "Avg. Estimate": "float",
+                    "High estimate": "float",
+                    "Low estimate": "float"
+                },
+                "Current year (2023)": {
+                    "Avg. Estimate": "float",
+                    "High estimate": "float",
+                    "Low estimate": "float"
+                },
+                "Next qtr. (Sep 2023)": {
+                    "Avg. Estimate": "float",
+                    "High estimate": "float",
+                    "Low estimate": "float"
+                },
+                "Next year (2024)": {
+                    "Avg. Estimate": "float",
+                    "High estimate": "float",
+                    "Low estimate": "float"
+                }
+            }
+        },
+        {
+            "name": "Earnings Revisions",
+            "schema": {
+                "Current qtr. (Jun 2023)": {
+                    "Up last 30 days": "float"
+                },
+                "Current year (2023)": {
+                    "Up last 30 days": "float"
+                },
+                "Next qtr. (Sep 2023)": {
+                    "Up last 30 days": "float"
+                },
+                "Next year (2024)": {
+                    "Up last 30 days": "float"
+                }
+            }
+        },
+        {
+            "name": "Earnings Trend",
+            "schema": {
+                "Current qtr. (Jun 2023)": {
+                    "Current estimate": "float"
+                },
+                "Current year (2023)": {
+                    "Current estimate": "float"
+                },
+                "Next qtr. (Sep 2023)": {
+                    "Current estimate": "float"
+                },
+                "Next year (2024)": {
+                    "Current estimate": "float"
+                }
+            }
+        },
+        {
+            "name": "Key Statistics",
+            "schema": {
+                "% held by insiders": {
+                    "Value": "str"
+                },
+                "% held by institutions": {
+                    "Value": "str"
+                },
+                "200-day moving average": {
+                    "Value": "str"
+                },
+                "5-year average dividend yield": {
+                    "Value": "str"
+                },
+                "50-day moving average": {
+                    "Value": "str"
+                },
+                "52-week change": {
+                    "Value": "str"
+                },
+                "52-week high": {
+                    "Value": "str"
+                },
+                "52-week low": {
+                    "Value": "str"
+                },
+                "Avg vol (10-day)": {
+                    "Value": "str"
+                },
+                "Avg vol (3-month)": {
+                    "Value": "str"
+                },
+                "Beta (5Y monthly)": {
+                    "Value": "str"
+                },
+                "Book value per share (mrq)": {
+                    "Value": "str"
+                },
+                "Current ratio (mrq)": {
+                    "Value": "str"
+                },
+                "Diluted EPS (ttm)": {
+                    "Value": "str"
+                },
+                "Dividend date": {
+                    "Value": "str"
+                },
+                "EBITDA": {
+                    "Value": "str"
+                },
+                "Enterprise value": {
+                    "Value": "str"
+                },
+                "Enterprise value/EBITDA": {
+                    "Value": "str"
+                },
+                "Enterprise value/revenue": {
+                    "Value": "str"
+                },
+                "Ex-dividend date": {
+                    "Value": "str"
+                },
+                "Fiscal year ends": {
+                    "Value": "str"
+                },
+                "Float": {
+                    "Value": "str"
+                },
+                "Forward P/E": {
+                    "Value": "str"
+                },
+                "Forward annual dividend rate": {
+                    "Value": "str"
+                },
+                "Forward annual dividend yield": {
+                    "Value": "str"
+                }
+            }
+        },
+        {
+            "name": "Revenue Estimate",
+            "schema": {
+                "Current qtr. (Jun 2023)": {
+                    "Avg. Estimate": "str",
+                    "High estimate": "str",
+                    "Low estimate": "str"
+                },
+                "Current year (2023)": {
+                    "Avg. Estimate": "str",
+                    "High estimate": "str",
+                    "Low estimate": "str"
+                },
+                "Next qtr. (Sep 2023)": {
+                    "Avg. Estimate": "str",
+                    "High estimate": "str",
+                    "Low estimate": "str"
+                },
+                "Next year (2024)": {
+                    "Avg. Estimate": "str",
+                    "High estimate": "str",
+                    "Low estimate": "str"
+                }
+            }
+        }
+    ]
+}

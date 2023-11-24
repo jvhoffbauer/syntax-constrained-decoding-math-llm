@@ -1,0 +1,83 @@
+{
+    "api_list": [
+        {
+            "name": "Following by PK",
+            "schema": {
+                "data": [
+                    {
+                        "pk": "int",
+                        "username": "str",
+                        "full_name": "str",
+                        "is_verified": "bool",
+                        "is_private": "bool"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Following by username",
+            "schema": {
+                "data": [
+                    {
+                        "username": "str",
+                        "full_name": "str",
+                        "is_verified": "bool",
+                        "is_private": "bool"
+                    }
+                ],
+                "cursor": {
+                    "moreAvailable": "bool"
+                }
+            }
+        },
+        {
+            "name": "Followers by PK",
+            "schema": {
+                "data": [
+                    {
+                        "pk": "int",
+                        "username": "str",
+                        "is_verified": "bool",
+                        "is_private": "bool"
+                    }
+                ],
+                "cursor": {
+                    "moreAvailable": "bool",
+                    "nextMaxId": "str"
+                }
+            }
+        },
+        {
+            "name": "Followers by username",
+            "schema": {
+                "data": [
+                    {
+                        "username": "str",
+                        "is_verified": "bool",
+                        "is_private": "bool"
+                    }
+                ],
+                "cursor": {
+                    "moreAvailable": "bool",
+                    "nextMaxId": "str"
+                }
+            }
+        },
+        {
+            "name": "Advance Profile",
+            "schema": {
+                "has_fan_club_subscriptions": "str",
+                "has_exclusive_feed_content": "str",
+                "open_external_url_with_in_app_browser": "str",
+                "is_memorialized": "str",
+                "is_bestie": "str",
+                "is_potential_business": "str",
+                "pronouns": "str",
+                "transparency_product_enabled": "str",
+                "active_standalone_fundraisers": {
+                    "total_count": "str"
+                }
+            }
+        }
+    ]
+}

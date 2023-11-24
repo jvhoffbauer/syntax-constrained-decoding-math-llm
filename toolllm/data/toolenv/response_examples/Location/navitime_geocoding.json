@@ -1,0 +1,97 @@
+{
+    "api_list": [
+        {
+            "name": "datum_conversion",
+            "schema": {
+                "coord": {
+                    "lat": "float",
+                    "lon": "float"
+                }
+            }
+        },
+        {
+            "name": "address_reverse_geocoding",
+            "schema": {
+                "items": [
+                    {
+                        "code": "str",
+                        "name": "str",
+                        "postal_code": "str",
+                        "coord": {
+                            "lat": "float",
+                            "lon": "float"
+                        },
+                        "details": [
+                            {
+                                "code": "str",
+                                "name": "str",
+                                "ruby": "str",
+                                "level": "str"
+                            }
+                        ]
+                    }
+                ],
+                "unit": {
+                    "datum": "str"
+                }
+            }
+        },
+        {
+            "name": "address",
+            "schema": {
+                "status_code": "int",
+                "message": "str",
+                "details": {
+                    "code": "str"
+                }
+            }
+        },
+        {
+            "name": "address_code",
+            "schema": {
+                "items": [
+                    {
+                        "code": "str",
+                        "name": "str",
+                        "postal_code": "str",
+                        "coord": {
+                            "lat": "float",
+                            "lon": "float"
+                        },
+                        "details": [
+                            {
+                                "code": "str",
+                                "name": "str",
+                                "ruby": "str",
+                                "level": "str"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "name": "address_autocomplete",
+            "schema": {
+                "items": [
+                    {
+                        "code": "str",
+                        "name": "str",
+                        "coord": {
+                            "lat": "float",
+                            "lon": "float"
+                        },
+                        "details": [
+                            {
+                                "code": "str",
+                                "name": "str",
+                                "ruby": "str",
+                                "level": "str"
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}

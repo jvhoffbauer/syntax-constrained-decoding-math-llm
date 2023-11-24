@@ -1,0 +1,21 @@
+{
+    "api_list": [
+        {
+            "name": "Validate VAT",
+            "schema": {
+                "result": {
+                    "vatNumber": "str",
+                    "isValid": "bool",
+                    "company": {
+                        "name": "str",
+                        "address": "str"
+                    },
+                    "country": {
+                        "code": "str",
+                        "name": "str"
+                    }
+                }
+            }
+        }
+    ]
+}

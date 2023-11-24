@@ -1,0 +1,19 @@
+{
+    "api_list": [
+        {
+            "name": "Domain name search",
+            "schema": {
+                "numFound": "int",
+                "start": "int",
+                "numFoundExact": "bool",
+                "docs": [
+                    {
+                        "domain": "str",
+                        "tld": "str",
+                        "ip": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

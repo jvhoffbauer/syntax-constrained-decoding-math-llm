@@ -1,0 +1,67 @@
+{
+    "api_list": [
+        {
+            "name": "Latest In chosen currency",
+            "schema": {
+                "success": "bool",
+                "baseCurrency": "str",
+                "unit": "str",
+                "rates": {
+                    "XAU": "float",
+                    "XAG": "float",
+                    "PA": "float",
+                    "PL": "float",
+                    "GBP": "float",
+                    "EUR": "int"
+                }
+            }
+        },
+        {
+            "name": "Latest Selected Metals in Selected Currency In Grams",
+            "schema": {
+                "success": "bool",
+                "rates": {
+                    "XAU": "float",
+                    "XAG": "float",
+                    "PA": "float",
+                    "PL": "float",
+                    "GBP": "float",
+                    "EUR": "int"
+                }
+            }
+        },
+        {
+            "name": "Latest (retrieve XAU, XAG, PA, PL, EUR, GBP, USD)",
+            "schema": {
+                "success": "bool",
+                "baseCurrency": "str",
+                "unit": "str",
+                "rates": {
+                    "XAU": "float",
+                    "XAG": "float",
+                    "PA": "float",
+                    "PL": "float",
+                    "USD": "int",
+                    "GBP": "float",
+                    "EUR": "float"
+                }
+            }
+        },
+        {
+            "name": "Latest (retrieve selected 160+ Symbols)",
+            "schema": {
+                "success": "bool",
+                "baseCurrency": "str",
+                "unit": "str",
+                "rates": {
+                    "XAU": "float",
+                    "XAG": "float",
+                    "PA": "float",
+                    "PL": "float",
+                    "GBP": "float",
+                    "EUR": "float"
+                }
+            }
+        }
+    ]
+}

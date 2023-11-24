@@ -1,0 +1,14 @@
+{
+    "api_list": [
+        {
+            "name": "/v1/city",
+            "schema": {
+                "name": "str",
+                "latitude": "float",
+                "longitude": "float",
+                "country": "str",
+                "population": "int"
+            }
+        }
+    ]
+}

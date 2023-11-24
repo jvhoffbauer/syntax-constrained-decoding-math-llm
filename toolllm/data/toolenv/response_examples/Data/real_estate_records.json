@@ -1,0 +1,69 @@
+{
+    "api_list": [
+        {
+            "name": "transactions",
+            "schema": {
+                "title": "str",
+                "count": "int",
+                "data": [
+                    {
+                        "_id": {
+                            "STREET": "str",
+                            "ZIPCODE": "str",
+                            "STATE": "str"
+                        },
+                        "lastSalesDate": "str",
+                        "lastSalesAmount": "int",
+                        "maxSalesAmount": "int"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "summary",
+            "schema": {
+                "title": "str",
+                "err": "NoneType",
+                "count": "int",
+                "data": [
+                    {
+                        "_id": {
+                            "STREET_NUMBER": "str",
+                            "STREET": "str",
+                            "UNIT": "str",
+                            "PROPERTY_TYPE": "str",
+                            "ZIPCODE": "str",
+                            "STATE": "str"
+                        },
+                        "lastSalesDate": "str",
+                        "lastSalesAmount": "int",
+                        "maxSalesAmount": "int",
+                        "SQFT": "int",
+                        "TotalRecords": "int"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "address",
+            "schema": {
+                "title": "str",
+                "err": "NoneType",
+                "data": [
+                    {
+                        "_id": {
+                            "STREET_NUMBER": "str",
+                            "STREET": "str",
+                            "PROPERTY_TYPE": "str",
+                            "ZIPCODE": "str",
+                            "STATE": "str"
+                        },
+                        "lastSalesDate": "str",
+                        "lastSalesAmount": "int",
+                        "maxSalesAmount": "int"
+                    }
+                ]
+            }
+        }
+    ]
+}

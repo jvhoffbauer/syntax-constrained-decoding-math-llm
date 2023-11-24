@@ -1,0 +1,247 @@
+{
+    "api_list": [
+        {
+            "name": "Popular Posts",
+            "schema": {
+                "success": "str",
+                "data": {
+                    "cursor": "str",
+                    "posts": [
+                        {
+                            "id": "str",
+                            "numComments": "str",
+                            "created": "str",
+                            "score": "str",
+                            "title": "str",
+                            "author": "str",
+                            "domain": "str",
+                            "postId": "str",
+                            "upvoteRatio": "str",
+                            "isArchived": "str",
+                            "contestMode": "str",
+                            "flair": "str",
+                            "hidden": "str",
+                            "saved": "str",
+                            "isNSFW": "str",
+                            "isMeta": "str",
+                            "isSpoiler": "str",
+                            "sendReplies": "str",
+                            "permalink": "str"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Posts By Subreddit",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Top Posts By Subreddit",
+            "schema": {
+                "success": "str",
+                "data": {
+                    "cursor": "str",
+                    "posts": [
+                        {
+                            "id": "str",
+                            "numComments": "str",
+                            "created": "str",
+                            "score": "str",
+                            "title": "str",
+                            "author": "str",
+                            "authorId": "str",
+                            "domain": "str",
+                            "postId": "str",
+                            "upvoteRatio": "str",
+                            "viewCount": "str",
+                            "goldCount": "str",
+                            "isArchived": "str",
+                            "contestMode": "str"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Post Details",
+            "schema": {
+                "success": "str",
+                "data": {
+                    "id": "str",
+                    "numComments": "str",
+                    "created": "str",
+                    "score": "str",
+                    "distinguishType": "str",
+                    "isLocked": "str",
+                    "isStickied": "str",
+                    "thumbnail": {
+                        "url": "str",
+                        "width": "str",
+                        "height": "str"
+                    },
+                    "title": "str",
+                    "author": "str",
+                    "authorId": "str",
+                    "authorIsBlocked": "str",
+                    "domain": "str",
+                    "postId": "str",
+                    "upvoteRatio": "str",
+                    "numDuplicates": "str",
+                    "discussionType": "str",
+                    "viewCount": "str",
+                    "goldCount": "str",
+                    "isArchived": "str",
+                    "contestMode": "str"
+                }
+            }
+        },
+        {
+            "name": "Comments By Username",
+            "schema": {
+                "success": "str",
+                "data": {
+                    "comments": [
+                        {
+                            "author": "str",
+                            "authorId": "str",
+                            "created": "str",
+                            "id": "str",
+                            "score": "str",
+                            "permalink": "str",
+                            "postAuthor": "str",
+                            "postId": "str",
+                            "postTitle": "str",
+                            "subredditId": "str",
+                            "media": {
+                                "type": "str"
+                            },
+                            "profileImage": "str"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Top Posts By Username",
+            "schema": {
+                "success": "str",
+                "data": {
+                    "posts": [
+                        {
+                            "id": "str",
+                            "numComments": "str",
+                            "created": "str",
+                            "score": "str",
+                            "title": "str",
+                            "author": "str",
+                            "domain": "str",
+                            "postId": "str",
+                            "upvoteRatio": "str",
+                            "isArchived": "str",
+                            "contestMode": "str",
+                            "flair": "str",
+                            "hidden": "str",
+                            "saved": "str",
+                            "isNSFW": "str",
+                            "isMeta": "str",
+                            "isSpoiler": "str",
+                            "isBlank": "str",
+                            "sendReplies": "str",
+                            "voteState": "str",
+                            "permalink": "str"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Posts By Username",
+            "schema": {
+                "success": "str",
+                "data": {
+                    "cursor": "str",
+                    "posts": [
+                        {
+                            "id": "str",
+                            "numComments": "str",
+                            "created": "str",
+                            "score": "str",
+                            "title": "str",
+                            "author": "str",
+                            "authorId": "str",
+                            "domain": "str",
+                            "postId": "str",
+                            "upvoteRatio": "str",
+                            "viewCount": "str",
+                            "goldCount": "str",
+                            "isArchived": "str",
+                            "contestMode": "str",
+                            "flair": "str",
+                            "hidden": "str",
+                            "saved": "str",
+                            "isNSFW": "str",
+                            "isMeta": "str",
+                            "isSpoiler": "str",
+                            "isBlank": "str",
+                            "sendReplies": "str",
+                            "voteState": "str",
+                            "permalink": "str"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Rising Popular Posts",
+            "schema": {
+                "success": "str",
+                "data": {
+                    "cursor": "str",
+                    "posts": [
+                        {
+                            "id": "str",
+                            "numComments": "str",
+                            "created": "str",
+                            "score": "str",
+                            "title": "str",
+                            "author": "str",
+                            "domain": "str",
+                            "postId": "str",
+                            "isArchived": "str",
+                            "isNSFW": "str",
+                            "isMeta": "str",
+                            "isSpoiler": "str",
+                            "isBlank": "str",
+                            "voteState": "str"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Top Popular Posts",
+            "schema": {
+                "data": {
+                    "posts": [
+                        {
+                            "id": "str",
+                            "numComments": "str",
+                            "created": "str",
+                            "score": "str",
+                            "title": "str",
+                            "author": "str",
+                            "authorId": "str",
+                            "domain": "str",
+                            "postId": "str",
+                            "upvoteRatio": "str",
+                            "viewCount": "str"
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

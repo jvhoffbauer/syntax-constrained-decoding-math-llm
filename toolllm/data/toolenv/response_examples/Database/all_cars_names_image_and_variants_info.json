@@ -1,0 +1,41 @@
+{
+    "api_list": [
+        {
+            "name": "Search All Cars",
+            "schema": {
+                "result": {
+                    "vehicles": [
+                        {
+                            "variants": [
+                                {
+                                    "name": "str",
+                                    "fuel_type": "str",
+                                    "cc": "int",
+                                    "transmission_type": "str"
+                                }
+                            ],
+                            "name": "str",
+                            "image": "str"
+                        }
+                    ],
+                    "popular_vehicles": [
+                        {
+                            "name": "str",
+                            "variants": [
+                                {
+                                    "name": "str",
+                                    "fuel_type": "str",
+                                    "cc": "int",
+                                    "transmission_type": "str"
+                                }
+                            ],
+                            "image": "str"
+                        }
+                    ],
+                    "vehicle_type": "str"
+                },
+                "success": "bool"
+            }
+        }
+    ]
+}

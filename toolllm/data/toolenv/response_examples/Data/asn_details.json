@@ -1,0 +1,52 @@
+{
+    "api_list": [
+        {
+            "name": "get_details_by_asn_number",
+            "schema": {
+                "data": {
+                    "0": {
+                        "AS_Number": "int",
+                        "Country_Code": "str",
+                        "AS_Description": "str",
+                        "Network_CIDR": "str"
+                    },
+                    "1": {
+                        "AS_Number": "int",
+                        "Country_Code": "str",
+                        "AS_Description": "str",
+                        "Network_CIDR": "str"
+                    },
+                    "2": {
+                        "AS_Number": "int",
+                        "Country_Code": "str",
+                        "AS_Description": "str",
+                        "Network_CIDR": "str"
+                    }
+                }
+            }
+        },
+        {
+            "name": "get_asn_by_country",
+            "schema": {
+                "data": {
+                    "0": {
+                        "Start_IP_Range": "str",
+                        "End_IP_Range": "str",
+                        "AS_Number": "str",
+                        "Country_Code": "str",
+                        "AS_Description": "str",
+                        "Network_CIDR": "str"
+                    }
+                }
+            }
+        },
+        {
+            "name": "get_asn_by_ip",
+            "schema": {
+                "ASN Number": "str",
+                "ASN Owner": "str",
+                "Country": "str"
+            }
+        }
+    ]
+}

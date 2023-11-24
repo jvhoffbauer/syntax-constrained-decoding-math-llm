@@ -1,0 +1,65 @@
+{
+    "api_list": [
+        {
+            "name": "GET champions",
+            "schema": {
+                "Aatrox": {
+                    "name": "str",
+                    "title": "str",
+                    "info": {
+                        "attack": "str",
+                        "defense": "str",
+                        "magic": "str",
+                        "difficulty": "str"
+                    },
+                    "image": {
+                        "full": "str",
+                        "sprite": "str",
+                        "group": "str"
+                    },
+                    "tags": [
+                        "list of str with length 1"
+                    ],
+                    "partype": "str",
+                    "stats": {
+                        "hp": "str",
+                        "hpperlevel": "str",
+                        "mp": "str",
+                        "mpperlevel": "str",
+                        "movespeed": "str",
+                        "armor": "str",
+                        "armorperlevel": "str",
+                        "spellblock": "str",
+                        "spellblockperlevel": "str",
+                        "attackrange": "str",
+                        "hpregen": "str",
+                        "hpregenperlevel": "str",
+                        "mpregen": "str",
+                        "mpregenperlevel": "str",
+                        "crit": "str",
+                        "critperlevel": "str",
+                        "attackdamage": "str",
+                        "attackdamageperlevel": "str",
+                        "attackspeedperlevel": "str",
+                        "attackspeed": "str"
+                    }
+                },
+                "Ahri": {
+                    "name": "str",
+                    "title": "str",
+                    "info": {
+                        "attack": "str",
+                        "defense": "str",
+                        "magic": "str",
+                        "difficulty": "str"
+                    },
+                    "image": {
+                        "full": "str",
+                        "sprite": "str",
+                        "group": "str"
+                    }
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,10 @@
+{
+    "api_list": [
+        {
+            "name": "get_infringement_v1_infringement_research_predict_get",
+            "schema": {
+                "messages": "str"
+            }
+        }
+    ]
+}

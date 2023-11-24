@@ -1,0 +1,30 @@
+{
+    "api_list": [
+        {
+            "name": "Search Title",
+            "schema": {
+                "results": "int",
+                "books": [
+                    {
+                        "title": "str",
+                        "author": "str",
+                        "url": "str",
+                        "image": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Search Author",
+            "schema": {
+                "results": "int",
+                "authors": [
+                    {
+                        "author": "str",
+                        "numberOfbooks": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

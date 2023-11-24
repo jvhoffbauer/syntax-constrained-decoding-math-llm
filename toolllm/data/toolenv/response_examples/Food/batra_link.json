@@ -1,0 +1,464 @@
+{
+    "api_list": [
+        {
+            "name": "Get My Available Offers_copy",
+            "schema": {
+                "type": "str",
+                "offeredBy": {
+                    "iso6523Code": "str"
+                },
+                "seller": [
+                    {
+                        "iso6523Code": "str"
+                    }
+                ],
+                "inventoryLevel": {
+                    "value": "str"
+                },
+                "gtin": "str",
+                "itemOffered": {
+                    "gtin": "str"
+                },
+                "price": "str",
+                "priceCurrency": "str"
+            }
+        },
+        {
+            "name": "Get My Available Offers",
+            "schema": {
+                "type": "str",
+                "offeredBy": {
+                    "iso6523Code": "str"
+                },
+                "seller": [
+                    {
+                        "iso6523Code": "str"
+                    }
+                ],
+                "inventoryLevel": {
+                    "value": "str",
+                    "code": "str"
+                },
+                "gtin": "str",
+                "itemOffered": {
+                    "gtin": "str"
+                },
+                "price": "str",
+                "priceCurrency": "str"
+            }
+        },
+        {
+            "name": "Get Organization By iso6523Code",
+            "schema": {
+                "address": {
+                    "addressCountry": "str",
+                    "streetAddress": [
+                        {
+                            "@value": "str",
+                            "@language": "str"
+                        }
+                    ],
+                    "@type": "str",
+                    "postalCode": "str",
+                    "addressLocality": [
+                        {
+                            "@value": "str",
+                            "@language": "str"
+                        }
+                    ]
+                },
+                "@type": "str",
+                "description": {
+                    "@value": "str",
+                    "@language": "str"
+                },
+                "image": {
+                    "url": {
+                        "@id": "str"
+                    }
+                },
+                "iso6523Code": "str",
+                "legalName": {
+                    "@value": "str",
+                    "@language": "str"
+                },
+                "isicV4": [
+                    {
+                        "@value": "str",
+                        "@language": "str"
+                    }
+                ],
+                "subOrganization": [
+                    {
+                        "iso6523Code": "str",
+                        "isicV4": [
+                            {
+                                "@value": "str",
+                                "@language": "str"
+                            }
+                        ],
+                        "address": {
+                            "addressCountry": "str",
+                            "streetAddress": [
+                                {
+                                    "@value": "str",
+                                    "@language": "str"
+                                }
+                            ],
+                            "@type": "str",
+                            "postalCode": "str",
+                            "addressLocality": [
+                                {
+                                    "@value": "str",
+                                    "@language": "str"
+                                }
+                            ]
+                        },
+                        "@type": "str",
+                        "name": {
+                            "@value": "str",
+                            "@language": "str"
+                        },
+                        "email": [
+                            "list of str with length 1"
+                        ],
+                        "url": "str"
+                    }
+                ],
+                "taxID": "str",
+                "name": [
+                    {
+                        "@value": "str",
+                        "@language": "str"
+                    }
+                ],
+                "email": [
+                    "list of str with length 1"
+                ]
+            }
+        },
+        {
+            "name": "Get Product By GTIN_copy",
+            "schema": {
+                "address": {
+                    "addressCountry": "str",
+                    "streetAddress": [
+                        {
+                            "@value": "str",
+                            "@language": "str"
+                        }
+                    ],
+                    "@type": "str",
+                    "postalCode": "str",
+                    "addressLocality": [
+                        {
+                            "@value": "str",
+                            "@language": "str"
+                        }
+                    ]
+                },
+                "@type": "str",
+                "description": {
+                    "@value": "str",
+                    "@language": "str"
+                },
+                "image": {
+                    "url": {
+                        "@id": "str"
+                    }
+                },
+                "iso6523Code": "str",
+                "legalName": {
+                    "@value": "str",
+                    "@language": "str"
+                },
+                "isicV4": [
+                    {
+                        "@value": "str",
+                        "@language": "str"
+                    }
+                ],
+                "subOrganization": [
+                    {
+                        "iso6523Code": "str",
+                        "isicV4": [
+                            {
+                                "@value": "str",
+                                "@language": "str"
+                            }
+                        ],
+                        "address": {
+                            "addressCountry": "str",
+                            "streetAddress": [
+                                {
+                                    "@value": "str",
+                                    "@language": "str"
+                                }
+                            ],
+                            "@type": "str",
+                            "postalCode": "str",
+                            "addressLocality": [
+                                {
+                                    "@value": "str",
+                                    "@language": "str"
+                                }
+                            ]
+                        },
+                        "@type": "str",
+                        "name": {
+                            "@value": "str",
+                            "@language": "str"
+                        },
+                        "email": [
+                            "list of str with length 1"
+                        ]
+                    }
+                ],
+                "taxID": "str",
+                "name": [
+                    {
+                        "@value": "str",
+                        "@language": "str"
+                    }
+                ],
+                "email": [
+                    "list of str with length 1"
+                ]
+            }
+        },
+        {
+            "name": "Get Product By GTIN",
+            "schema": {
+                "regulatedProductName": [
+                    {
+                        "@language": "str",
+                        "@value": "str"
+                    }
+                ],
+                "s:image": {
+                    "@type": [
+                        "list of str with length 1"
+                    ],
+                    "referencedFileType": {
+                        "@id": "str"
+                    },
+                    "s:inLanguage": "str",
+                    "s:url": {
+                        "@id": "str"
+                    }
+                },
+                "ingredientStatement": [
+                    {
+                        "@language": "str",
+                        "@value": "str"
+                    }
+                ],
+                "@type": [
+                    "list of str with length 1"
+                ],
+                "energyPerNutrientBasis": [
+                    {
+                        "@type": "str",
+                        "s:unitCode": "str",
+                        "s:value": {
+                            "@type": "str",
+                            "@value": "str"
+                        }
+                    }
+                ],
+                "saturatedFatPerNutrientBasis": {
+                    "@type": "str",
+                    "s:unitCode": "str",
+                    "s:value": {
+                        "@type": "str",
+                        "@value": "str"
+                    }
+                },
+                "transFatPerNutrientBasis": {
+                    "@type": "str",
+                    "s:unitCode": "str",
+                    "s:value": {
+                        "@type": "str",
+                        "@value": "str"
+                    }
+                },
+                "outOfPackageDepth": {
+                    "@type": [
+                        "list of str with length 1"
+                    ],
+                    "s:unitCode": "str",
+                    "s:value": {
+                        "@type": "str",
+                        "@value": "str"
+                    }
+                },
+                "saltPerNutrientBasis": {
+                    "@type": "str",
+                    "s:unitCode": "str",
+                    "s:value": {
+                        "@type": "str",
+                        "@value": "str"
+                    }
+                },
+                "nutrientBasisQuantity": {
+                    "@type": [
+                        "list of str with length 1"
+                    ],
+                    "s:unitCode": "str",
+                    "s:value": "str"
+                }
+            }
+        },
+        {
+            "name": "Get products datas based on GTIN",
+            "schema": {
+                "isTradeItemAnOrderableUnit": "str",
+                "marketingInformation": {
+                    "tradeItemMarketingMessages": {
+                        "tradeItemMarketingMessage": [
+                            {
+                                "languageCode": "str",
+                                "content": "str"
+                            }
+                        ]
+                    },
+                    "isTradeItemSeasonal": "str"
+                },
+                "allergenInformation": {
+                    "isAllergenRelevantDataProvided": "str"
+                },
+                "isTradeItemABaseUnit": "str",
+                "isTradeItemADisplayUnit": "str",
+                "ingredientInformation": {
+                    "ingredientStatements": {
+                        "ingredientStatement": [
+                            {
+                                "languageCode": "str",
+                                "content": "str"
+                            }
+                        ]
+                    }
+                },
+                "manufacturer": {
+                    "gln": "str",
+                    "partyName": "str"
+                },
+                "unitDescriptorCode": "str",
+                "dutyFeeTaxInformation": {
+                    "targetMarketTaxInformations": {
+                        "targetMarketTaxInformation": [
+                            {
+                                "targetMarkets": {
+                                    "targetMarket": "str"
+                                }
+                            }
+                        ]
+                    }
+                },
+                "metaData": {
+                    "createdDate": "str",
+                    "modifiedDate": "str",
+                    "isDiscontinued": "str",
+                    "status": "str"
+                },
+                "subBrand": "str",
+                "nutritionalInformation": {
+                    "nutrientHeaders": {
+                        "nutrientHeader": [
+                            {
+                                "dataType": "str"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "name": "Get Bio-Planet offers by GTIN",
+            "schema": {
+                "AggregateOffer": [
+                    {
+                        "offer": {
+                            "price": "str",
+                            "priceCurrency": "str",
+                            "url": "str",
+                            "gtin": "str",
+                            "offeredBy": {
+                                "Organization": {
+                                    "legalName": "str"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "productName": "str",
+                "productImage": "str"
+            }
+        },
+        {
+            "name": "Get products datas based on GLN",
+            "schema": {
+                "gtin": "str",
+                "brandName": "str",
+                "isAllergenRelevantDataProvided": "str",
+                "isConsumerUnit": "str",
+                "brandOwner": {
+                    "gln": "str",
+                    "partyName": "str"
+                },
+                "deliveryPurchasingInformation": {
+                    "startAvailabilityDateTime": "str"
+                },
+                "countriesOfSale": {
+                    "countryOfSale": "str"
+                },
+                "tradeItemDescriptions": {
+                    "tradeItemDescription": [
+                        {
+                            "languageCode": "str",
+                            "content": "str"
+                        }
+                    ]
+                },
+                "referencedFiles": {
+                    "referencedFile": [
+                        {
+                            "fileName": "str",
+                            "referencedFileTypeCode": "str",
+                            "fileEffectiveStartDateTime": "str",
+                            "fileFormatName": "str",
+                            "uniformResourceIdentifier": "str"
+                        }
+                    ]
+                },
+                "ingredientInformation": {
+                    "ingredientStatements": {
+                        "ingredientStatement": [
+                            {
+                                "languageCode": "str",
+                                "content": "str"
+                            }
+                        ]
+                    }
+                },
+                "informationProvider": {
+                    "gln": "str",
+                    "partyName": "str"
+                },
+                "manufacturer": {
+                    "gln": "str",
+                    "partyName": "str"
+                },
+                "unitDescriptorCode": "str",
+                "regulatedProductNames": {
+                    "regulatedProductName": [
+                        {
+                            "languageCode": "str",
+                            "content": "str"
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

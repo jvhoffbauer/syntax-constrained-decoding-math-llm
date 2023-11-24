@@ -1,0 +1,10 @@
+{
+    "api_list": [
+        {
+            "name": "Market Breadth",
+            "schema": {
+                "message": "str"
+            }
+        }
+    ]
+}

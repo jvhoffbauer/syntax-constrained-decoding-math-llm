@@ -1,0 +1,14 @@
+{
+    "api_list": [
+        {
+            "name": "Hotspot",
+            "schema": {
+                "confidence": "int",
+                "latitude": "float",
+                "lokasi": "str",
+                "longitude": "float",
+                "waktu": "str"
+            }
+        }
+    ]
+}

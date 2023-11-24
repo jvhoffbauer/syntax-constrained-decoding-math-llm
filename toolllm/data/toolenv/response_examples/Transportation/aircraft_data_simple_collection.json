@@ -1,0 +1,24 @@
+{
+    "api_list": [
+        {
+            "name": "getbyhex",
+            "schema": {
+                "hex": "str",
+                "reg": "str",
+                "name": "str",
+                "fr24": {
+                    "airline": "str",
+                    "code": "str",
+                    "hex": "str",
+                    "reg": "str",
+                    "text": "str"
+                },
+                "flightdb": {
+                    "registration": "str",
+                    "type": "str",
+                    "owner": "str"
+                }
+            }
+        }
+    ]
+}

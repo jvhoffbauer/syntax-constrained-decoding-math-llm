@@ -1,0 +1,22 @@
+{
+    "api_list": [
+        {
+            "name": "Check Balance",
+            "schema": {
+                "detail": {
+                    "code": "str",
+                    "message": "str"
+                }
+            }
+        },
+        {
+            "name": "Get Message Status",
+            "schema": {
+                "detail": {
+                    "code": "str",
+                    "message": "str"
+                }
+            }
+        }
+    ]
+}

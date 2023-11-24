@@ -1,0 +1,47 @@
+{
+    "api_list": [
+        {
+            "name": "Global Address",
+            "schema": {
+                "Version": "str",
+                "TransmissionReference": "str",
+                "TransmissionResults": "str",
+                "TotalRecords": "str",
+                "Records": [
+                    {
+                        "RecordID": "str",
+                        "Results": "str",
+                        "FormattedAddress": "str",
+                        "Organization": "str",
+                        "AddressLine1": "str",
+                        "AddressLine2": "str",
+                        "AddressLine3": "str",
+                        "AddressLine4": "str",
+                        "SubPremises": "str",
+                        "DoubleDependentLocality": "str",
+                        "DependentLocality": "str",
+                        "Locality": "str",
+                        "SubAdministrativeArea": "str",
+                        "AdministrativeArea": "str",
+                        "PostalCode": "str",
+                        "PostalCodeType": "str",
+                        "AddressType": "str",
+                        "AddressKey": "str",
+                        "SubNationalArea": "str",
+                        "CountryName": "str",
+                        "CountryISO3166_1_Alpha2": "str",
+                        "CountryISO3166_1_Alpha3": "str",
+                        "CountryISO3166_1_Numeric": "str",
+                        "CountrySubdivisionCode": "str",
+                        "Thoroughfare": "str",
+                        "ThoroughfarePreDirection": "str",
+                        "ThoroughfareLeadingType": "str",
+                        "ThoroughfareName": "str",
+                        "ThoroughfareTrailingType": "str",
+                        "ThoroughfarePostDirection": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

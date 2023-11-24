@@ -1,0 +1,13 @@
+{
+    "api_list": [
+        {
+            "name": "Detector image url",
+            "schema": {
+                "status": "bool",
+                "is_nsfw": "bool",
+                "percentage": "int",
+                "timeTaken": "str"
+            }
+        }
+    ]
+}

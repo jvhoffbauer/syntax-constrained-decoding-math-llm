@@ -1,0 +1,363 @@
+{
+    "api_list": [
+        {
+            "name": "Matches By Date",
+            "schema": {
+                "meta": {
+                    "title": "str",
+                    "description": "str",
+                    "fields": {
+                        "tournament": {
+                            "name": "str",
+                            "country": "str",
+                            "surface": "str",
+                            "season": "str"
+                        },
+                        "match": {
+                            "id": "str",
+                            "status": "str",
+                            "title": "str",
+                            "home_id": "str",
+                            "home_player": "str",
+                            "away_id": "str",
+                            "away_player": "str",
+                            "date": "str",
+                            "court": "str",
+                            "round_name": "str"
+                        },
+                        "home_or_away": {
+                            "full_name": "str",
+                            "country": "str",
+                            "ranking": "str"
+                        },
+                        "result": {
+                            "winner_id": "str",
+                            "result_description": "str",
+                            "home_sets": "str",
+                            "away_sets": "str"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "Players",
+            "schema": {
+                "results": {
+                    "players": [
+                        {
+                            "id": "int",
+                            "full_name": "str",
+                            "country": "str"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Matches By Tournament By Player",
+            "schema": {
+                "results": [
+                    {
+                        "tournament": {
+                            "id": "str",
+                            "name": "str",
+                            "city": "str",
+                            "country": "str",
+                            "surface": "str",
+                            "code": "str",
+                            "start_date": "str",
+                            "end_date": "str",
+                            "season": "str",
+                            "country_code": "str"
+                        },
+                        "matches": [
+                            {
+                                "id": "str",
+                                "status": "str",
+                                "title": "str",
+                                "home_id": "str",
+                                "home_player": "str",
+                                "away_id": "str",
+                                "away_player": "str",
+                                "date": "str",
+                                "court": "str",
+                                "round_id": "str",
+                                "round_name": "str"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Tournaments",
+            "schema": {
+                "meta": {
+                    "title": "str",
+                    "description": "str"
+                },
+                "results": [
+                    {
+                        "name": "str",
+                        "city": "str",
+                        "country": "str",
+                        "surface": "str",
+                        "code": "str",
+                        "start_date": "str",
+                        "end_date": "str",
+                        "season": "int"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Tournament Matches",
+            "schema": {
+                "results": [
+                    {
+                        "competition": {
+                            "id": "str",
+                            "name": "str",
+                            "season": "str"
+                        },
+                        "match": {
+                            "status": "str",
+                            "title": "str",
+                            "home_id": "str",
+                            "home_player": "str",
+                            "away_id": "str",
+                            "away_player": "str",
+                            "date": "str",
+                            "court": "str",
+                            "round_id": "str",
+                            "round_name": "str"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Tournament Matches By Date",
+            "schema": {
+                "results": [
+                    {
+                        "tournament": {
+                            "name": "str",
+                            "country": "str",
+                            "start_date": "str",
+                            "season": "str"
+                        },
+                        "matches": [
+                            {
+                                "status": "str",
+                                "title": "str",
+                                "home_player": "str",
+                                "away_player": "str",
+                                "date": "str",
+                                "round_name": "str"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Tournament Matches and Results",
+            "schema": {
+                "meta": {
+                    "title": "str",
+                    "description": "str",
+                    "fields": {
+                        "tournament": {
+                            "id": "str",
+                            "name": "str",
+                            "country": "str",
+                            "surface": "str",
+                            "code": "str",
+                            "start_date": "str",
+                            "end_date": "str",
+                            "season": "str"
+                        },
+                        "match": {
+                            "id": "str",
+                            "status": "str",
+                            "title": "str",
+                            "home_id": "str",
+                            "home_player": "str",
+                            "away_id": "str",
+                            "away_player": "str",
+                            "date": "str",
+                            "court": "str",
+                            "round_id": "str",
+                            "round_name": "str"
+                        },
+                        "home_or_away": {
+                            "first_name": "str",
+                            "last_name": "str",
+                            "full_name": "str",
+                            "country": "str",
+                            "ranking": "str"
+                        },
+                        "result": {
+                            "winner_id": "str",
+                            "result_description": "str",
+                            "home_sets": "str",
+                            "away_sets": "str"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "Tournament Matches and Results by Date",
+            "schema": {
+                "meta": {
+                    "title": "str",
+                    "description": "str",
+                    "fields": {
+                        "tournament": {
+                            "id": "str",
+                            "name": "str",
+                            "city": "str",
+                            "country": "str",
+                            "surface": "str",
+                            "code": "str",
+                            "start_date": "str",
+                            "end_date": "str",
+                            "season": "str"
+                        },
+                        "match": {
+                            "id": "str",
+                            "status": "str",
+                            "title": "str",
+                            "home_id": "str",
+                            "home_player": "str",
+                            "away_id": "str",
+                            "away_player": "str",
+                            "date": "str",
+                            "court": "str",
+                            "round_id": "str",
+                            "round_name": "str"
+                        },
+                        "home_or_away": {
+                            "first_name": "str",
+                            "last_name": "str",
+                            "full_name": "str",
+                            "country": "str",
+                            "ranking": "str"
+                        },
+                        "result": {
+                            "winner_id": "str",
+                            "result_description": "str"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "Match",
+            "schema": {
+                "meta": {
+                    "title": "str",
+                    "description": "str",
+                    "fields": {
+                        "tournament": {
+                            "name": "str",
+                            "city": "str",
+                            "country": "str",
+                            "surface": "str",
+                            "code": "str",
+                            "start_date": "str",
+                            "end_date": "str",
+                            "season": "str"
+                        },
+                        "match": {
+                            "id": "str",
+                            "status": "str",
+                            "title": "str",
+                            "home_id": "str",
+                            "home_player": "str",
+                            "away_id": "str",
+                            "away_player": "str",
+                            "date": "str",
+                            "court": "str",
+                            "round_id": "str",
+                            "round_name": "str"
+                        },
+                        "home_or_away": {
+                            "first_name": "str",
+                            "last_name": "str",
+                            "full_name": "str",
+                            "country": "str",
+                            "ranking": "str"
+                        },
+                        "result": {
+                            "winner_id": "str",
+                            "result_description": "str",
+                            "home_sets": "str",
+                            "away_sets": "str"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "Tour Rankings",
+            "schema": {
+                "meta": {
+                    "title": "str",
+                    "description": "str"
+                },
+                "results": {
+                    "rankings": [
+                        {
+                            "id": "int",
+                            "full_name": "str",
+                            "country": "str",
+                            "ranking": "int",
+                            "movement": "str",
+                            "ranking_points": "int"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Race Rankings",
+            "schema": {
+                "results": {
+                    "rankings": [
+                        {
+                            "full_name": "str",
+                            "country": "str",
+                            "race_ranking": "int",
+                            "movement": "str",
+                            "race_points": "int"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Player",
+            "schema": {
+                "results": {
+                    "player": {
+                        "id": "int",
+                        "first_name": "str",
+                        "last_name": "str",
+                        "full_name": "str",
+                        "country": "str",
+                        "ranking": "int",
+                        "ranking_movement": "str",
+                        "ranking_points": "int",
+                        "race_ranking": "int",
+                        "race_movement": "str",
+                        "race_points": "int"
+                    }
+                }
+            }
+        }
+    ]
+}

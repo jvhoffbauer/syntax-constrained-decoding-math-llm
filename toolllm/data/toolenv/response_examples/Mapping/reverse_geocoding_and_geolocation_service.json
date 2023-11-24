@@ -1,0 +1,39 @@
+{
+    "api_list": [
+        {
+            "name": "GetTimezone",
+            "schema": {
+                "TimeZoneName": "str",
+                "GMT_offset": "int",
+                "LocalTime_Now": "str"
+            }
+        },
+        {
+            "name": "GetNearestCities",
+            "schema": {
+                "City": "str",
+                "Population": "int",
+                "Country": "str",
+                "TimeZoneId": "str",
+                "Distance": "float",
+                "Bearing": "float",
+                "CompassDirection": "str"
+            }
+        },
+        {
+            "name": "GetLargestCities",
+            "schema": {
+                "City": "str",
+                "Population": "int",
+                "Latitude": "float",
+                "Longitude": "float",
+                "Country": "str",
+                "TimeZoneName": "str",
+                "TimeZone_GMT_offset": "int",
+                "Distance": "float",
+                "Bearing": "float",
+                "CompassDirection": "str"
+            }
+        }
+    ]
+}

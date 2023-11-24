@@ -1,0 +1,114 @@
+{
+    "api_list": [
+        {
+            "name": "Top Search",
+            "schema": {
+                "detail": [
+                    {
+                        "msg": "str",
+                        "type": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Get Challenge",
+            "schema": {
+                "ch_info": {
+                    "allow_upload_cover": "str",
+                    "author": {},
+                    "banner_list": "str",
+                    "cha_attrs": "str",
+                    "cha_name": "str",
+                    "cid": "str",
+                    "collect_stat": "str",
+                    "connect_music": "str",
+                    "desc": "str",
+                    "extra_attr": {
+                        "is_live": "str"
+                    },
+                    "hashtag_pro": "str"
+                }
+            }
+        },
+        {
+            "name": "Music Posts",
+            "schema": {
+                "status_code": "int",
+                "status_msg": "str"
+            }
+        },
+        {
+            "name": "Challenge Posts",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get Awemes By Challenge ID",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "List Comments",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get Post",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Trending Creators",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "List Replies By Comment",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Trending Challenges",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get User",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "User Posts",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Playlist Posts",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Username to User Id",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get Video Without Watermark",
+            "schema": {
+                "message": "str"
+            }
+        }
+    ]
+}

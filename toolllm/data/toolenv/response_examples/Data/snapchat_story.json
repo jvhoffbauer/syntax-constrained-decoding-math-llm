@@ -1,0 +1,34 @@
+{
+    "api_list": [
+        {
+            "name": "Get Data and Story",
+            "schema": {
+                "props": {
+                    "pageLinks": {
+                        "oneLinkUrl": "str",
+                        "snapchatCanonicalUrl": "str",
+                        "canonicalUrl": "str",
+                        "snapcodeImageUrl": "str",
+                        "downloadUrl": "str",
+                        "snapchatDeepLinkUrl": "str"
+                    },
+                    "pageMetadata": {
+                        "pageType": "str",
+                        "pageTitle": "str",
+                        "pageDescription": {
+                            "value": "str"
+                        },
+                        "shareId": "str"
+                    },
+                    "userProfile": {
+                        "userInfo": {
+                            "username": "str",
+                            "displayName": "str",
+                            "snapcodeImageUrl": "str"
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

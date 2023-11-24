@@ -1,0 +1,20 @@
+{
+    "api_list": [
+        {
+            "name": "Job Salary",
+            "schema": {
+                "data": [
+                    {
+                        "job_title": "str",
+                        "publisher_name": "str",
+                        "min_salary": "int",
+                        "max_salary": "int",
+                        "median_salary": "int",
+                        "salary_period": "str",
+                        "salary_currency": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

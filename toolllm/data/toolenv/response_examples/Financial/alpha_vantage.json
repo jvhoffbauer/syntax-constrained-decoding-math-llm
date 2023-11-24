@@ -1,0 +1,10 @@
+{
+    "api_list": [
+        {
+            "name": "Busca por simbolo",
+            "schema": {
+                "Information": "str"
+            }
+        }
+    ]
+}

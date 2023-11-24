@@ -1,0 +1,17 @@
+{
+    "api_list": [
+        {
+            "name": "Search Roman God By Name",
+            "schema": {
+                "Description": "str"
+            }
+        },
+        {
+            "name": "Random Roman God",
+            "schema": {
+                "God": "str",
+                "Description": "str"
+            }
+        }
+    ]
+}

@@ -1,0 +1,10 @@
+{
+    "api_list": [
+        {
+            "name": "Echo GET",
+            "schema": {
+                "message": "str"
+            }
+        }
+    ]
+}

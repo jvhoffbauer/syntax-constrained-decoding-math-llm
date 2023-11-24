@@ -1,0 +1,41 @@
+{
+    "api_list": [
+        {
+            "name": "Get the latest remote jobs",
+            "schema": {
+                "meta": {
+                    "total": "int",
+                    "has_more": "bool"
+                },
+                "items": [
+                    {
+                        "company_logo": "str",
+                        "title": "str",
+                        "location": "str",
+                        "company_name": "str",
+                        "date": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Pagination for remote jobs",
+            "schema": {
+                "meta": {
+                    "total": "int",
+                    "has_more": "bool"
+                },
+                "items": [
+                    {
+                        "_id": "str",
+                        "company_logo": "str",
+                        "title": "str",
+                        "location": "str",
+                        "company_name": "str",
+                        "date": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

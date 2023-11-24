@@ -1,0 +1,10 @@
+{
+    "api_list": [
+        {
+            "name": "proxy request endpoint",
+            "schema": {
+                "website": "str"
+            }
+        }
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "api_list": [
+        {
+            "name": "Info",
+            "schema": {
+                "successfull": "str",
+                "info": {
+                    "id": "str",
+                    "title": "str",
+                    "formats": [
+                        {
+                            "format_id": "str",
+                            "format_note": "str",
+                            "ext": "str",
+                            "protocol": "str",
+                            "acodec": "str",
+                            "vcodec": "str",
+                            "url": "str",
+                            "width": "str",
+                            "height": "str",
+                            "fps": "str",
+                            "resolution": "str",
+                            "aspect_ratio": "str"
+                        }
+                    ],
+                    "thumbnails": [
+                        {
+                            "url": "str",
+                            "preference": "str",
+                            "id": "str"
+                        }
+                    ],
+                    "thumbnail": "str",
+                    "description": "str",
+                    "channel_id": "str",
+                    "channel_url": "str",
+                    "duration": "str",
+                    "view_count": "str",
+                    "age_limit": "str",
+                    "webpage_url": "str",
+                    "categories": [
+                        "list of str with length 1"
+                    ],
+                    "tags": [
+                        "list of str with length 1"
+                    ],
+                    "playable_in_embed": "str",
+                    "live_status": "str",
+                    "automatic_captions": "str",
+                    "subtitles": "str",
+                    "comment_count": "str"
+                }
+            }
+        }
+    ]
+}

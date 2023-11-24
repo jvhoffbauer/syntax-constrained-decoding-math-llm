@@ -1,0 +1,241 @@
+{
+    "api_list": [
+        {
+            "name": "GetNews",
+            "schema": {
+                "page": "str",
+                "value": [
+                    {
+                        "title": "str",
+                        "excerpt": "str",
+                        "webUrl": "str",
+                        "highlight": {
+                            "text": "str",
+                            "textColor": "str",
+                            "backgroundColor": "str"
+                        },
+                        "heat": "str",
+                        "images": [
+                            {
+                                "url": "str",
+                                "width": "str",
+                                "height": "str"
+                            }
+                        ],
+                        "content": "str",
+                        "type": "str",
+                        "ampWebUrl": "str",
+                        "cdnAmpWebUrl": "str",
+                        "publishedDateTime": "str",
+                        "provider": {
+                            "name": "str",
+                            "domain": "str",
+                            "images": [
+                                {
+                                    "url": "str",
+                                    "width": "str",
+                                    "height": "str"
+                                }
+                            ],
+                            "publishers": "str",
+                            "authors": "str"
+                        },
+                        "locale": "str",
+                        "categories": [
+                            "list of str with length 1"
+                        ],
+                        "topics": [
+                            "list of str with length 1"
+                        ]
+                    }
+                ],
+                "nextPage": "str"
+            }
+        },
+        {
+            "name": "GetNewsByTopic",
+            "schema": {
+                "page": "str",
+                "value": [
+                    {
+                        "title": "str",
+                        "excerpt": "str",
+                        "webUrl": "str",
+                        "highlight": {
+                            "text": "str",
+                            "textColor": "str",
+                            "backgroundColor": "str"
+                        },
+                        "heat": "str",
+                        "tags": "str",
+                        "content": "str",
+                        "type": "str",
+                        "ampWebUrl": "str",
+                        "publishedDateTime": "str",
+                        "provider": {
+                            "name": "str",
+                            "domain": "str"
+                        },
+                        "locale": "str",
+                        "categories": [
+                            "list of str with length 1"
+                        ],
+                        "topics": [
+                            "list of str with length 1"
+                        ]
+                    }
+                ],
+                "nextPage": "str"
+            }
+        },
+        {
+            "name": "GetPeople",
+            "schema": {
+                "title": "str",
+                "path": "str",
+                "page": "str",
+                "value": [
+                    {
+                        "path": "str",
+                        "title": "str",
+                        "excerpt": "str",
+                        "sourceUrl": "str",
+                        "webUrl": "str",
+                        "type": "str",
+                        "name": "str",
+                        "topics": [
+                            "list of str with length 1"
+                        ],
+                        "topItems": [
+                            {
+                                "path": "str",
+                                "title": "str",
+                                "excerpt": "str",
+                                "type": "str",
+                                "name": "str",
+                                "heat": "str"
+                            }
+                        ],
+                        "size": "str",
+                        "highlight": {
+                            "text": "str",
+                            "textColor": "str",
+                            "backgroundColor": "str"
+                        },
+                        "heat": "str",
+                        "content": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "GetEvents",
+            "schema": {
+                "title": "str",
+                "path": "str",
+                "page": "int",
+                "value": [
+                    {
+                        "title": "str",
+                        "excerpt": "str",
+                        "sourceUrl": "str",
+                        "webUrl": "str",
+                        "originalUrl": "str",
+                        "name": "str",
+                        "type": "str",
+                        "startDateTime": "str",
+                        "endDateTime": "str",
+                        "provider": {
+                            "name": "str",
+                            "domain": "str"
+                        },
+                        "images": [
+                            {
+                                "url": "str"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "name": "GetPeopleByTopic",
+            "schema": {
+                "title": "str",
+                "page": "int",
+                "value": [
+                    {
+                        "title": "str",
+                        "excerpt": "str",
+                        "type": "str",
+                        "name": "str",
+                        "bio": "str",
+                        "website": "str",
+                        "twitter": {
+                            "username": "str",
+                            "url": "str",
+                            "followers": "int"
+                        },
+                        "topics": [
+                            "list of str with length 1"
+                        ],
+                        "highlight": {
+                            "text": "str",
+                            "textColor": "str",
+                            "backgroundColor": "str"
+                        },
+                        "heat": "int",
+                        "images": [
+                            {
+                                "url": "str",
+                                "width": "int",
+                                "height": "int",
+                                "title": "str",
+                                "isCached": "bool"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "name": "GetTopics",
+            "schema": {
+                "value": [
+                    {
+                        "name": "str",
+                        "shortname": "str",
+                        "id": "str",
+                        "services": [
+                            {
+                                "name": "str",
+                                "endpoint": "str"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "name": "GetNewsletters",
+            "schema": {
+                "title": "str",
+                "path": "str",
+                "page": "int",
+                "value": [
+                    {
+                        "path": "str",
+                        "title": "str",
+                        "type": "str",
+                        "sourceUrl": "str",
+                        "webUrl": "str",
+                        "excerpt": "str",
+                        "publishedDateTime": "str",
+                        "locale": "str"
+                    }
+                ],
+                "nextPage": "str"
+            }
+        }
+    ]
+}

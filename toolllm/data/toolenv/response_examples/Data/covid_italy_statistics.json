@@ -1,0 +1,36 @@
+{
+    "api_list": [
+        {
+            "name": "General Info",
+            "schema": {
+                "dashboardData": {
+                    "active": "int",
+                    "confirmed": "int",
+                    "deaths": "int",
+                    "deltaConfirmed": "int",
+                    "deltaDeaths": "int",
+                    "deltaRecovered": "int",
+                    "recovered": "int",
+                    "lastUpdatedTime": "str"
+                },
+                "regions": [
+                    {
+                        "confirmed": "int",
+                        "active": "int",
+                        "recovered": "int",
+                        "deaths": "int",
+                        "lastUpdatedTime": "str"
+                    }
+                ],
+                "nationalCasesTimes": [
+                    {
+                        "dailyConfirmed": "int",
+                        "dailyDeceased": "int",
+                        "dailyRecovered": "int",
+                        "date": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

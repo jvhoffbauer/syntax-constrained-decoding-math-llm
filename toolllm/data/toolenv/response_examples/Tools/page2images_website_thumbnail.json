@@ -1,0 +1,12 @@
+{
+    "api_list": [
+        {
+            "name": "Restfullink Get",
+            "schema": {
+                "status": "str",
+                "msg": "str",
+                "errno": "int"
+            }
+        }
+    ]
+}

@@ -1,0 +1,352 @@
+{
+    "api_list": [
+        {
+            "name": "charts/get-top-songs-in-world",
+            "schema": {
+                "apple_music_url": "str",
+                "artist_id": "str",
+                "key": "int",
+                "title": "str",
+                "subtitle": "str",
+                "shazam_url": "str"
+            }
+        },
+        {
+            "name": "charts/get-top-songs-in_world_by_genre",
+            "schema": {
+                "next": "str",
+                "tracks": [
+                    {
+                        "artists": [
+                            {
+                                "adamid": "str",
+                                "alias": "str",
+                                "id": "str"
+                            }
+                        ],
+                        "highlightsurls": {
+                            "artisthighlightsurl": "str",
+                            "trackhighlighturl": "str"
+                        },
+                        "hub": {
+                            "actions": [
+                                {
+                                    "id": "str",
+                                    "name": "str",
+                                    "type": "str"
+                                }
+                            ],
+                            "displayname": "str",
+                            "explicit": "str",
+                            "image": "str",
+                            "options": [
+                                {
+                                    "actions": [
+                                        {
+                                            "name": "str",
+                                            "type": "str",
+                                            "uri": "str"
+                                        }
+                                    ],
+                                    "caption": "str",
+                                    "colouroverflowimage": "str",
+                                    "image": "str",
+                                    "listcaption": "str",
+                                    "providername": "str",
+                                    "type": "str"
+                                }
+                            ],
+                            "type": "str"
+                        },
+                        "images": {
+                            "background": "str",
+                            "coverart": "str",
+                            "coverarthq": "str",
+                            "joecolor": "str"
+                        },
+                        "key": "str",
+                        "layout": "str",
+                        "share": {
+                            "avatar": "str",
+                            "href": "str",
+                            "html": "str",
+                            "image": "str",
+                            "snapchat": "str",
+                            "subject": "str",
+                            "text": "str",
+                            "twitter": "str"
+                        },
+                        "subtitle": "str",
+                        "title": "str",
+                        "type": "str",
+                        "url": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "charts/get-top-songs-in_country_by_genre",
+            "schema": {
+                "next": "str",
+                "tracks": [
+                    {
+                        "artists": [
+                            {
+                                "adamid": "str",
+                                "id": "str"
+                            }
+                        ],
+                        "hub": {
+                            "actions": [
+                                {
+                                    "id": "str",
+                                    "name": "str",
+                                    "type": "str"
+                                }
+                            ],
+                            "displayname": "str",
+                            "explicit": "str"
+                        },
+                        "images": {
+                            "background": "str",
+                            "coverart": "str"
+                        },
+                        "key": "str",
+                        "share": {
+                            "avatar": "str",
+                            "href": "str",
+                            "html": "str",
+                            "image": "str"
+                        },
+                        "subtitle": "str",
+                        "title": "str",
+                        "type": "str",
+                        "url": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "charts/get-top-songs-in-country",
+            "schema": {
+                "apple_music_url": "str",
+                "artist_id": "str",
+                "key": "int",
+                "photo_url": "NoneType",
+                "ringtone": "str",
+                "shazam_url": "str",
+                "subtitle": "str",
+                "title": "str"
+            }
+        },
+        {
+            "name": "charts/get-top-songs-in-city",
+            "schema": {
+                "apple_music_url": "str",
+                "artist_id": "str",
+                "key": "int",
+                "photo_url": "NoneType",
+                "ringtone": "str",
+                "shazam_url": "str",
+                "subtitle": "str",
+                "title": "str"
+            }
+        },
+        {
+            "name": "artist/get-top-songs",
+            "schema": {
+                "data": [
+                    {
+                        "attributes": {
+                            "albumName": "str",
+                            "artistName": "str",
+                            "artwork": {
+                                "url": "str"
+                            },
+                            "durationInMillis": "str",
+                            "genreNames": [
+                                "list of str with length 1"
+                            ],
+                            "hasLyrics": "str",
+                            "name": "str",
+                            "playParams": {
+                                "id": "str",
+                                "kind": "str"
+                            },
+                            "previews": [
+                                {
+                                    "url": "str"
+                                }
+                            ],
+                            "releaseDate": "str",
+                            "url": "str"
+                        },
+                        "href": "str",
+                        "id": "str",
+                        "type": "str"
+                    }
+                ],
+                "next": "str"
+            }
+        },
+        {
+            "name": "artist/get-details",
+            "schema": {
+                "data": [
+                    {
+                        "attributes": {
+                            "artwork": {
+                                "url": "str",
+                                "width": "int"
+                            },
+                            "genreNames": [
+                                "list of str with length 1"
+                            ],
+                            "name": "str",
+                            "url": "str"
+                        },
+                        "href": "str",
+                        "id": "str",
+                        "type": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "songs/list-recommendations",
+            "schema": {
+                "tracks": [
+                    {
+                        "artists": [
+                            {
+                                "id": "str"
+                            }
+                        ],
+                        "hub": {
+                            "actions": [
+                                {
+                                    "name": "str"
+                                }
+                            ],
+                            "image": "str"
+                        },
+                        "images": {
+                            "coverart": "str"
+                        },
+                        "key": "str",
+                        "title": "str",
+                        "type": "str",
+                        "url": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "songs/get_details",
+            "schema": {
+                "albumadamid": "str",
+                "alias": "str",
+                "artists": [
+                    {
+                        "adamid": "str",
+                        "alias": "str",
+                        "id": "str"
+                    }
+                ],
+                "highlightsurls": {
+                    "artisthighlightsurl": "str",
+                    "trackhighlighturl": "str"
+                },
+                "hub": {
+                    "actions": [
+                        {
+                            "id": "str",
+                            "name": "str",
+                            "type": "str"
+                        }
+                    ],
+                    "displayname": "str",
+                    "explicit": "str",
+                    "image": "str",
+                    "type": "str"
+                },
+                "images": {
+                    "background": "str",
+                    "coverart": "str",
+                    "coverarthq": "str",
+                    "joecolor": "str"
+                },
+                "isrc": "str",
+                "key": "str",
+                "layout": "str",
+                "relatedtracksurl": "str",
+                "releasedate": "str",
+                "share": {
+                    "avatar": "str",
+                    "href": "str",
+                    "html": "str",
+                    "image": "str"
+                }
+            }
+        },
+        {
+            "name": "/search",
+            "schema": {
+                "artist": {
+                    "hits": [
+                        {
+                            "artist": {
+                                "name": "str",
+                                "url": "str",
+                                "verified": "str"
+                            }
+                        }
+                    ]
+                },
+                "tracks": {
+                    "hits": [
+                        {
+                            "actions": [
+                                {
+                                    "name": "str"
+                                }
+                            ],
+                            "alias": "str",
+                            "artists": [
+                                {
+                                    "alias": "str"
+                                }
+                            ],
+                            "heading": {
+                                "title": "str"
+                            },
+                            "images": {
+                                "default": "str"
+                            },
+                            "key": "str",
+                            "share": {
+                                "html": "str"
+                            },
+                            "stores": {
+                                "apple": {
+                                    "actions": [
+                                        {
+                                            "uri": "str"
+                                        }
+                                    ],
+                                    "productid": "str"
+                                }
+                            },
+                            "type": "str",
+                            "url": "str",
+                            "urlparams": {
+                                "{trackartist}": "str",
+                                "{tracktitle}": "str"
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

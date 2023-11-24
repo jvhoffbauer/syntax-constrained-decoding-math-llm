@@ -1,0 +1,16 @@
+{
+    "api_list": [
+        {
+            "name": "Instagram User",
+            "schema": {
+                "status": "bool",
+                "data": [
+                    {
+                        "user_id": "str",
+                        "meta_value": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,63 @@
+{
+    "api_list": [
+        {
+            "name": "GET Exercise by ID",
+            "schema": {
+                "id": "str",
+                "exercise_name": "str",
+                "Category": "str",
+                "Difficulty": "str",
+                "Force": "str",
+                "Grips": "str",
+                "details": "str",
+                "steps": [
+                    "list of str with length 1"
+                ],
+                "target": {
+                    "Primary": [
+                        "list of str with length 1"
+                    ],
+                    "Secondary": [
+                        "list of str with length 1"
+                    ]
+                },
+                "videoURL": [
+                    "list of str with length 1"
+                ],
+                "youtubeURL": "str"
+            }
+        },
+        {
+            "name": "GET Exercises",
+            "schema": {
+                "exercise_name": "str",
+                "id": "str",
+                "category": "str",
+                "difficulty": "str",
+                "force": "str",
+                "grips": "str",
+                "steps": [
+                    "list of str with length 1"
+                ],
+                "target": {
+                    "Primary": [
+                        "list of str with length 1"
+                    ]
+                },
+                "videoURL": [
+                    "list of str with length 1"
+                ],
+                "youtubeURL": "str"
+            }
+        },
+        {
+            "name": "GET Attributes",
+            "schema": {
+                "categories": "empty list",
+                "difficulties": "empty list",
+                "forces": "empty list",
+                "muscles": "empty list"
+            }
+        }
+    ]
+}

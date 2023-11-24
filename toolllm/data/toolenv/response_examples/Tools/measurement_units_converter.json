@@ -1,0 +1,95 @@
+{
+    "api_list": [
+        {
+            "name": "Convert from one unit of measure to another",
+            "schema": {
+                "input": {
+                    "value": "str",
+                    "unit": "str"
+                },
+                "output": {
+                    "value": "int",
+                    "unit": "str"
+                }
+            }
+        },
+        {
+            "name": "Measurements",
+            "schema": {
+                "kg-g": {
+                    "value": "str"
+                },
+                "g-kg": {
+                    "value": "str"
+                },
+                "lb-kg": {
+                    "value": "str"
+                },
+                "kg-lb": {
+                    "value": "str"
+                },
+                "oz-g": {
+                    "value": "str"
+                },
+                "g-oz": {
+                    "value": "str"
+                },
+                "km-m": {
+                    "value": "str"
+                },
+                "m-km": {
+                    "value": "str"
+                },
+                "mi-km": {
+                    "value": "str"
+                },
+                "km-mi": {
+                    "value": "str"
+                },
+                "l-ml": {
+                    "value": "str"
+                },
+                "ml-l": {
+                    "value": "str"
+                },
+                "gal-l": {
+                    "value": "str"
+                },
+                "l-gal": {
+                    "value": "str"
+                },
+                "ft-m": {
+                    "value": "str"
+                },
+                "m-ft": {
+                    "value": "str"
+                },
+                "in-cm": {
+                    "value": "str"
+                },
+                "cm-in": {
+                    "value": "str"
+                },
+                "F-C": {
+                    "value": [
+                        "list of str with length 1"
+                    ]
+                },
+                "C-F": {
+                    "value": [
+                        "list of str with length 1"
+                    ]
+                },
+                "N-kgf": {
+                    "value": "str"
+                },
+                "kgf-N": {
+                    "value": "str"
+                },
+                "atm-Pa": {
+                    "value": "str"
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,42 @@
+{
+    "api_list": [
+        {
+            "name": "Advanced Phone Number Lookup",
+            "schema": {
+                "dialcode_e164": "str",
+                "timezone": "str",
+                "region": "str",
+                "sub_region": "str",
+                "administrative_area_level_2": "str",
+                "administrative_area_level_1": "str",
+                "locality": "str",
+                "country": "str",
+                "country_short": "str",
+                "postal_code": "str",
+                "operating_company_name": "str",
+                "operating_company_type": "str",
+                "line_type": "str",
+                "ported": "bool",
+                "risk_level": "int"
+            }
+        },
+        {
+            "name": "Basic Phone Number Validation",
+            "schema": {
+                "original": "str",
+                "sanitized": "str",
+                "e164": "str",
+                "national": "str",
+                "full_national": "str",
+                "full_international": "str",
+                "country": "str",
+                "country_name": "str",
+                "country_code_prefix": "str",
+                "area_code": "str",
+                "invalid": "bool",
+                "impossible": "bool",
+                "type": "str"
+            }
+        }
+    ]
+}

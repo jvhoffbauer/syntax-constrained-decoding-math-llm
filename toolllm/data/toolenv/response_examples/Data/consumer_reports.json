@@ -1,0 +1,260 @@
+{
+    "api_list": [
+        {
+            "name": "brands/detail",
+            "schema": {
+                "_id": "str",
+                "brandName": "str",
+                "brandSlugName": "str",
+                "isPublishable": "str",
+                "publishableModelsCount": "str",
+                "categories": [
+                    {
+                        "_id": "str",
+                        "productGroupName": "str",
+                        "productGroupSlugName": "str",
+                        "productGroupTypeId": "str",
+                        "productGroupClassificationId": "str",
+                        "sortOrder": "str",
+                        "targetPath": "str",
+                        "breadcrumbName": "str",
+                        "shortName": "str",
+                        "isSurveyRatings": "str",
+                        "groupCurrencyId": "str",
+                        "hasChildren": "str",
+                        "cuGroupId": "str",
+                        "modelCounts": {
+                            "totalTestedModelsCount": "str",
+                            "testedProductsCount": "str",
+                            "testedServicesCount": "str",
+                            "ratedModelsCount": "str",
+                            "recommendedOrBestBuyModels": "str"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "products/get-offers",
+            "schema": {
+                "content": [
+                    {
+                        "_id": "int",
+                        "modelId": "int",
+                        "productGroupId": "int",
+                        "offers": [
+                            {
+                                "marketPlace": "str",
+                                "merchantName": "str",
+                                "price": "float",
+                                "formattedPrice": "str",
+                                "url": "str"
+                            }
+                        ]
+                    }
+                ],
+                "totalElements": "int",
+                "totalPages": "int"
+            }
+        },
+        {
+            "name": "products/detail",
+            "schema": {
+                "content": [
+                    {
+                        "_id": "str",
+                        "modelName": "str",
+                        "slugName": "str",
+                        "defaultMpn": "str",
+                        "defaultUpc": "str",
+                        "asin": "str",
+                        "overallScoreDescription": "str",
+                        "overallDisplayScore": "str",
+                        "price": "str",
+                        "priceDescription": "str",
+                        "brandName": "str",
+                        "productGroupTypeName": "str",
+                        "productGroupClassificationName": "str",
+                        "productGroupName": "str",
+                        "testStateName": "str",
+                        "modelAvailabilityName": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "product-groups/detail",
+            "schema": {
+                "_id": "str",
+                "productGroupName": "str",
+                "productGroupTypeName": "str",
+                "productGroupClassificationName": "str",
+                "shortName": "str",
+                "singularName": "str",
+                "pluralName": "str",
+                "marketingText": "str",
+                "lastPublishedDate": "str",
+                "hasChildren": "str",
+                "totalTestedModelsCount": "str",
+                "ratedModelsCount": "str",
+                "recommendedOrBestBuyModelsCount": "str",
+                "modelMaxOverallDisplayScore": "str"
+            }
+        },
+        {
+            "name": "product-groups/list",
+            "schema": {
+                "content": [
+                    {
+                        "_id": "int",
+                        "productGroupName": "str",
+                        "productGroupSlugName": "str",
+                        "productGroupTypeId": "int",
+                        "targetPath": "str",
+                        "singularName": "str",
+                        "pluralName": "str",
+                        "hasChildren": "bool",
+                        "modelCounts": {
+                            "testedProductsCount": "int"
+                        }
+                    }
+                ],
+                "totalElements": "int",
+                "totalPages": "int",
+                "last": "bool",
+                "first": "bool",
+                "numberOfElements": "int",
+                "size": "int"
+            }
+        },
+        {
+            "name": "cars/get-images",
+            "schema": {
+                "response": {
+                    "crKey": {
+                        "makeId": "int",
+                        "modelName": "str",
+                        "modelId": "int",
+                        "modelYearId": "int",
+                        "modelYear": "int",
+                        "makeName": "str"
+                    },
+                    "images": [
+                        {
+                            "_id": "int",
+                            "styleIds": [
+                                {
+                                    "styleId": "int",
+                                    "styleName": "str"
+                                }
+                            ],
+                            "imgUrl": {
+                                "fileName": "str",
+                                "cloudName": "str",
+                                "relativePath": "str",
+                                "imageDomain": "str",
+                                "cloudFrontDomain": "str",
+                                "fileFormat": "str"
+                            },
+                            "shot": [
+                                {
+                                    "shotTypeId": "int",
+                                    "shotTypeName": "str"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "responseSummary": {
+                    "responseCount": "int",
+                    "requestQueryParameters": [
+                        {
+                            "name": "str",
+                            "value": "int"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "cars/get-recalls",
+            "schema": {
+                "content": [
+                    {
+                        "_id": "int",
+                        "NHTSACampaignNumber": "str"
+                    }
+                ],
+                "totalElements": "int",
+                "size": "int",
+                "number": "int",
+                "sort": [
+                    {
+                        "direction": "str",
+                        "property": "str",
+                        "ascending": "bool"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "cars/detail",
+            "schema": {
+                "response": {
+                    "modelYear": {
+                        "modelYearId": "str",
+                        "cars": [
+                            {
+                                "lastPublishedDate": "str",
+                                "bodyStyle": {
+                                    "bodyStyleName": "str"
+                                },
+                                "driveWheel": {
+                                    "driveWheelName": "str",
+                                    "driveWheelAbbreviation": "str"
+                                },
+                                "powerTrainType": "str",
+                                "ratingsCopiedFromCarModelYear": "str",
+                                "tiresAsTested": {
+                                    "isRearSameAsFront": "str"
+                                },
+                                "carVersionName": "str"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "name": "search",
+            "schema": {
+                "carModels": [
+                    {
+                        "modelName": "str",
+                        "safetyRemark": "str",
+                        "searchValue": "str"
+                    }
+                ],
+                "carMakes": [
+                    {
+                        "makeName": "str"
+                    }
+                ],
+                "brands": [
+                    {
+                        "brandName": "str"
+                    }
+                ],
+                "products": [
+                    {
+                        "searchValue": "str",
+                        "modelName": "str",
+                        "overallDisplayScore": "int",
+                        "overallScoreSortIndex": "int",
+                        "brandName": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

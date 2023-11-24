@@ -1,0 +1,27 @@
+{
+    "api_list": [
+        {
+            "name": "Product search",
+            "schema": {
+                "errors": [
+                    {
+                        "param": "str",
+                        "msg": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Single product reviews",
+            "schema": {
+                "errors": [
+                    {
+                        "msg": "str",
+                        "param": "str",
+                        "location": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

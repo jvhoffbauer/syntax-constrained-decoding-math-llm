@@ -1,0 +1,239 @@
+{
+    "api_list": [
+        {
+            "name": "/api/v1/stocks/contract/{call_put_id}",
+            "schema": {
+                "message": "str",
+                "status": "bool"
+            }
+        },
+        {
+            "name": "/api/v1/fundamentals/exchange-outstanding-shares/exchange-code/{exchange_code}/{year}",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "/api/v1/fundamentals/quarterly-balance-sheet/{filing_date}/{stock_code}",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "/api/v1/fundamentals/financial-statements/company-statement/{stock_code}/{year}",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "/api/v1/news/article/{uuid}",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "/api/v1/fundamentals/highlights/stock/{stock_code}",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "/api/v1/fundamentals/financial-statements/exchange-year/{exchange_code}/{year}",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "/api/v1/exchange/listed-companies/{exchange_code}",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "/api/v1/exchange/id/{exchange_id}",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "/api/v1/fundamentals/tech-indicators-by-company/stock-code/{stock_code}/{year}",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "/api/v1/exchange/exchange-with-tickers/code/{exchange_code}",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "/api/v1/exchange/code/{exchange_code}",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "/api/v1/fundamentals/financials/income-statements/{statement_id}",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "/api/v1/fundamentals/company-insider-transactions/stock-code/{stock_code}/{year}",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "/api/v1/fundamentals/company-address/id/{fundamental_id}",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "/api/v1/fundamentals/company-details/stock/{stock_code}",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "/api/v1/fundamental/general",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "/api/v1/fundamentals/company-details/id/{fundamental_id}",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "/api/v1/fundamentals/financial-statements/filing-date-ticker/{filing_date}/{stock_code}",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "/api/v1/fundamentals/annual-balance-sheet/{filing_date}/{stock_code}",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "/api/v1/stocks/country/{country}",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "/api/v1/exchanges",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "/api/v1/stocks/currency/{currency}",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "/api/v1/stocks/exchange/code/{exchange_code}",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "/api/v1/fundamental/company/{stock_code}",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "/api/v1/stock/code/{stock_code}",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "/api/v1/fundamentals/financial-statements/ticker-date-range/{_from}.{_to}/{stock_code}",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "/api/v1/fundamentals/financial-statements/by-term/{_from}.{_to}/{stock_code}/{term}",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "/api/v1/fundamentals/tech-indicators-by-exchange/exchange-code/{exchange_code}/{year}",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "/api/v1/exchange/listed-stocks/{exchange_code}",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "/api/v1/fundamentals/company-address/stock/{stock_code}",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "/api/v1/fundamentals/company-valuations/stock-code/{stock_code}/{year}",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "/api/v1/fundamentals/exchange-analyst-rankings/exchange-code/{exchange_code}/{year}",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "/api/v1/fundamentals/highlights/id/{fundamental_id}",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "/api/v1/stocks/exchange/id/{exchange_id}",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "/api/v1/stocks",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "/api/v1/eod/{_from}.{_to}/{exchange_code}",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "/api/v1/eod/{_date}/{exchange_code}",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "/api/v1/news/articles-by-publisher/{publisher}",
+            "schema": {
+                "message": "str"
+            }
+        }
+    ]
+}

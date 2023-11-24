@@ -1,0 +1,23 @@
+{
+    "api_list": [
+        {
+            "name": "JSON endpoint",
+            "schema": {
+                "ip": "str",
+                "country": "str",
+                "country_code": "str",
+                "country_flag": "str",
+                "region": "str",
+                "city": "str",
+                "latitude": "float",
+                "longitude": "float",
+                "asn": "str",
+                "timezone": "str",
+                "timezone_name": "str",
+                "currency": "str",
+                "currency_code": "str",
+                "currency_symbol": "str"
+            }
+        }
+    ]
+}

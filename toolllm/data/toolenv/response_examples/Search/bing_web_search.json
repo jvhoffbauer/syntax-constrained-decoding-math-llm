@@ -1,0 +1,52 @@
+{
+    "api_list": [
+        {
+            "name": "Supported Countries",
+            "schema": {
+                "Australia": "str",
+                "Belgium": "str",
+                "Brazil": "str",
+                "Canada": "str",
+                "China": "str",
+                "France": "str",
+                "Germany": "str",
+                "India": "str",
+                "Italy": "str",
+                "Japan": "str",
+                "Korea": "str",
+                "Mexico": "str",
+                "Netherlands": "str",
+                "Poland": "str",
+                "Russia": "str",
+                "Spain": "str",
+                "Sweden": "str",
+                "Switzerland": "str",
+                "United Kingdom": "str",
+                "United States": "str"
+            }
+        },
+        {
+            "name": "Supported Languages",
+            "schema": {
+                "Arabic": "str",
+                "Chinese (Simplified)": "str",
+                "Chinese (Traditional)": "str",
+                "Czech": "str",
+                "Dutch": "str",
+                "English": "str",
+                "Finnish": "str",
+                "French": "str",
+                "German": "str",
+                "Italian": "str",
+                "Japanese": "str",
+                "Korean": "str",
+                "Polish": "str",
+                "Portuguese (Brazil)": "str",
+                "Russian": "str",
+                "Spanish": "str",
+                "Swedish": "str",
+                "Turkish": "str"
+            }
+        }
+    ]
+}

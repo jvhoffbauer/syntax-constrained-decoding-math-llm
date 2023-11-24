@@ -1,0 +1,14 @@
+{
+    "api_list": [
+        {
+            "name": "/email-validator/validate",
+            "schema": {
+                "originalEmail": "str",
+                "isDisposable": "bool",
+                "isValid": "bool",
+                "isDeliverable": "bool",
+                "message": "str"
+            }
+        }
+    ]
+}

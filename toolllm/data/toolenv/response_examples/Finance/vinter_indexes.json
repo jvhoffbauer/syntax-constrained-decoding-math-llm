@@ -1,0 +1,20 @@
+{
+    "api_list": [
+        {
+            "name": "Vinter Multi Assets Daily",
+            "schema": {
+                "data": [
+                    {
+                        "symbol": "str",
+                        "value": "float",
+                        "timestamp": "int",
+                        "datetime": "str"
+                    }
+                ],
+                "params": {
+                    "symbol": "str"
+                }
+            }
+        }
+    ]
+}

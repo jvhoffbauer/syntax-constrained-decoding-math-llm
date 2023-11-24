@@ -1,0 +1,30 @@
+{
+    "api_list": [
+        {
+            "name": "Nslookup",
+            "schema": {
+                "host": "str",
+                "result": {
+                    "A": [
+                        "list of str with length 1"
+                    ],
+                    "AAAA": [
+                        "list of str with length 1"
+                    ],
+                    "MX": [
+                        {
+                            "exchange": "str",
+                            "priority": "int"
+                        }
+                    ],
+                    "NS": [
+                        "list of str with length 1"
+                    ],
+                    "TXT": [
+                        "list of str with length 1"
+                    ]
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,12 @@
+{
+    "api_list": [
+        {
+            "name": "Items",
+            "schema": {
+                "title": "str",
+                "image": "str",
+                "description": "str"
+            }
+        }
+    ]
+}

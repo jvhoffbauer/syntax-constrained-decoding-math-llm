@@ -1,0 +1,60 @@
+{
+    "api_list": [
+        {
+            "name": "Vehicle Ownership Cost by License Plate",
+            "schema": {
+                "service": "str",
+                "date": "str",
+                "status": "str",
+                "vehicle": "str",
+                "mileage_year": "int",
+                "depreciation_cost": [
+                    "list of str with length 1"
+                ],
+                "insurance_cost": [
+                    "list of str with length 1"
+                ],
+                "fuel_cost": [
+                    "list of str with length 1"
+                ],
+                "maintenance_cost": [
+                    "list of str with length 1"
+                ],
+                "repairs_cost": [
+                    "list of str with length 1"
+                ],
+                "total_cost": [
+                    "list of str with length 1"
+                ],
+                "total_cost_sum": "int"
+            }
+        },
+        {
+            "name": "Vehicle Ownership Cost by VINs",
+            "schema": {
+                "service": "str",
+                "status": "str",
+                "vehicle": "str",
+                "depreciation_cost": [
+                    "list of str with length 1"
+                ],
+                "insurance_cost": [
+                    "list of str with length 1"
+                ],
+                "fuel_cost": [
+                    "list of str with length 1"
+                ],
+                "maintenance_cost": [
+                    "list of str with length 1"
+                ],
+                "repairs_cost": [
+                    "list of str with length 1"
+                ],
+                "total_cost": [
+                    "list of str with length 1"
+                ],
+                "total_cost_sum": "int"
+            }
+        }
+    ]
+}

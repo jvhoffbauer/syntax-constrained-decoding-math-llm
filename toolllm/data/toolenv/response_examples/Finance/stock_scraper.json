@@ -1,0 +1,16 @@
+{
+    "api_list": [
+        {
+            "name": "/:ticker/:exchange",
+            "schema": {
+                "messages": "str"
+            }
+        },
+        {
+            "name": "/MSFT/NASDAQ",
+            "schema": {
+                "messages": "str"
+            }
+        }
+    ]
+}

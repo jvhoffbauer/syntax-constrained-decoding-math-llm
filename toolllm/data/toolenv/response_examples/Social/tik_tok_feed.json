@@ -1,0 +1,471 @@
+{
+    "api_list": [
+        {
+            "name": "Collection by ID",
+            "schema": {
+                "status": "str",
+                "items": [
+                    {
+                        "id": "str",
+                        "desc": "str",
+                        "createTime": "str",
+                        "video": {
+                            "height": "str",
+                            "width": "str",
+                            "duration": "str",
+                            "ratio": "str",
+                            "cover": "str"
+                        },
+                        "author": {
+                            "id": "str",
+                            "uniqueId": "str",
+                            "nickname": "str",
+                            "signature": "str",
+                            "secUid": "str"
+                        },
+                        "music": {
+                            "id": "str",
+                            "title": "str",
+                            "coverThumb": "str"
+                        },
+                        "stats": {
+                            "commentCount": "str",
+                            "diggCount": "str",
+                            "playCount": "str",
+                            "shareCount": "str"
+                        }
+                    }
+                ],
+                "hasMore": "str",
+                "cursor": "str"
+            }
+        },
+        {
+            "name": "Video by ID No Cache",
+            "schema": {
+                "item": {
+                    "id": "str",
+                    "aweme_id": "str",
+                    "video": {
+                        "downloadAddr": [
+                            "list of str with length 1"
+                        ],
+                        "playAddr": [
+                            "list of str with length 1"
+                        ]
+                    },
+                    "author": {
+                        "id": "str",
+                        "uniqueId": "str",
+                        "nickname": "str",
+                        "avatarThumb": "str",
+                        "avatarMedium": "str",
+                        "avatarLarger": "str",
+                        "secUid": "str"
+                    },
+                    "music": {
+                        "id": "str",
+                        "title": "str",
+                        "authorName": "str"
+                    },
+                    "stats": {
+                        "commentCount": "str"
+                    }
+                }
+            }
+        },
+        {
+            "name": "User Info V2 No Cache",
+            "schema": {
+                "status": "str",
+                "user": {
+                    "id": "str",
+                    "nickname": "str",
+                    "avatarThumb": "str",
+                    "signature": "str",
+                    "verified": "bool",
+                    "secUid": "str"
+                },
+                "stats": {
+                    "followingCount": "int",
+                    "followerCount": "int",
+                    "heartCount": "int",
+                    "videoCount": "int"
+                }
+            }
+        },
+        {
+            "name": "User Info  No Cache",
+            "schema": {
+                "accept_private_policy": "str",
+                "account_region": "str",
+                "apple_account": "str",
+                "authority_status": "str",
+                "avatar_uri": "str",
+                "aweme_count": "str",
+                "bind_phone": "str",
+                "block_status": "str"
+            }
+        },
+        {
+            "name": "Video Comments",
+            "schema": {
+                "total": "str",
+                "comments": [
+                    {
+                        "aweme_id": "str",
+                        "digg_count": "str",
+                        "user": {
+                            "uid": "str",
+                            "user_mode": "str"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Video by URL",
+            "schema": {
+                "item": {
+                    "id": "str",
+                    "desc": "str",
+                    "createTime": "str",
+                    "aweme_id": "str",
+                    "video": {
+                        "height": "str",
+                        "width": "str",
+                        "duration": "str",
+                        "ratio": "str",
+                        "cover": "str",
+                        "originCover": "str",
+                        "dynamicCover": "str",
+                        "downloadAddr": [
+                            "list of str with length 1"
+                        ],
+                        "playAddr": [
+                            "list of str with length 1"
+                        ],
+                        "bitRate": [
+                            {
+                                "HDR_bit": "str",
+                                "HDR_type": "str",
+                                "bit_rate": "str",
+                                "quality_type": "str"
+                            }
+                        ]
+                    },
+                    "author": {
+                        "id": "str",
+                        "uniqueId": "str",
+                        "nickname": "str",
+                        "avatarThumb": "str",
+                        "avatarMedium": "str",
+                        "avatarLarger": "str",
+                        "secUid": "str"
+                    },
+                    "music": {
+                        "id": "str",
+                        "title": "str",
+                        "coverThumb": "str",
+                        "coverMedium": "str",
+                        "coverLarge": "str",
+                        "authorName": "str"
+                    },
+                    "stats": {
+                        "commentCount": "str"
+                    }
+                }
+            }
+        },
+        {
+            "name": "Video by ID",
+            "schema": {
+                "item": {
+                    "aweme_id": "str",
+                    "video": {
+                        "height": "str",
+                        "width": "str",
+                        "duration": "str",
+                        "ratio": "str",
+                        "cover": "str",
+                        "originCover": "str",
+                        "dynamicCover": "str",
+                        "downloadAddr": [
+                            "list of str with length 1"
+                        ],
+                        "playAddr": [
+                            "list of str with length 1"
+                        ],
+                        "bitRate": [
+                            {
+                                "HDR_type": "str",
+                                "quality_type": "str"
+                            }
+                        ]
+                    },
+                    "author": {
+                        "id": "str",
+                        "nickname": "str",
+                        "avatarThumb": "str",
+                        "secUid": "str"
+                    },
+                    "music": {
+                        "title": "str",
+                        "coverThumb": "str",
+                        "authorName": "str"
+                    },
+                    "stats": {
+                        "commentCount": "str"
+                    }
+                }
+            }
+        },
+        {
+            "name": "User Feed V2",
+            "schema": {
+                "status": "str",
+                "detail": "str",
+                "items": [
+                    {
+                        "id": "str",
+                        "desc": "str",
+                        "createTime": "str",
+                        "aweme_id": "str",
+                        "is_top": "str",
+                        "video": {
+                            "height": "str",
+                            "width": "str",
+                            "duration": "str",
+                            "ratio": "str",
+                            "cover": "str",
+                            "downloadAddr": [
+                                "list of str with length 1"
+                            ],
+                            "playAddr": [
+                                "list of str with length 1"
+                            ]
+                        },
+                        "author": {
+                            "id": "str",
+                            "uniqueId": "str",
+                            "nickname": "str",
+                            "avatarThumb": "str",
+                            "signature": "str",
+                            "secUid": "str"
+                        },
+                        "music": {
+                            "id": "str",
+                            "title": "str",
+                            "coverThumb": "str",
+                            "authorName": "str"
+                        },
+                        "stats": {
+                            "commentCount": "str",
+                            "diggCount": "str",
+                            "playCount": "str",
+                            "shareCount": "str"
+                        }
+                    }
+                ],
+                "hasMore": "str",
+                "minCursor": "str",
+                "maxCursor": "str"
+            }
+        },
+        {
+            "name": "User Feed",
+            "schema": {
+                "status": "str",
+                "detail": "str",
+                "items": [
+                    {
+                        "id": "str",
+                        "desc": "str",
+                        "createTime": "str",
+                        "aweme_id": "str",
+                        "is_top": "str",
+                        "video": {
+                            "cover": "str",
+                            "playAddr": [
+                                "list of str with length 1"
+                            ]
+                        },
+                        "author": {
+                            "uniqueId": "str",
+                            "nickname": "str",
+                            "avatarThumb": "str",
+                            "signature": "str",
+                            "secUid": "str"
+                        },
+                        "music": {
+                            "title": "str",
+                            "coverThumb": "str"
+                        },
+                        "stats": {
+                            "commentCount": "str",
+                            "diggCount": "str",
+                            "playCount": "str",
+                            "shareCount": "str"
+                        }
+                    }
+                ],
+                "hasMore": "str",
+                "max": "str"
+            }
+        },
+        {
+            "name": "Music Feed",
+            "schema": {
+                "status": "str",
+                "detail": "str",
+                "items": [
+                    {
+                        "id": "str",
+                        "desc": "str",
+                        "createTime": "str",
+                        "aweme_id": "str",
+                        "is_top": "str",
+                        "video": {
+                            "height": "str",
+                            "width": "str",
+                            "duration": "str",
+                            "ratio": "str"
+                        },
+                        "author": {
+                            "id": "str",
+                            "uniqueId": "str",
+                            "nickname": "str",
+                            "signature": "str",
+                            "secUid": "str"
+                        },
+                        "music": {
+                            "id": "str",
+                            "title": "str",
+                            "authorName": "str"
+                        },
+                        "stats": {
+                            "commentCount": "str",
+                            "diggCount": "str",
+                            "playCount": "str",
+                            "shareCount": "str"
+                        }
+                    }
+                ],
+                "hasMore": "str",
+                "maxCursor": "str"
+            }
+        },
+        {
+            "name": "User Info",
+            "schema": {
+                "avatar_168x168": {
+                    "uri": "str",
+                    "url_list": [
+                        "list of str with length 1"
+                    ],
+                    "width": "str"
+                },
+                "avatar_300x300": {
+                    "uri": "str",
+                    "url_list": [
+                        "list of str with length 1"
+                    ],
+                    "width": "str"
+                },
+                "avatar_larger": {
+                    "uri": "str",
+                    "url_list": [
+                        "list of str with length 1"
+                    ],
+                    "width": "str"
+                },
+                "avatar_medium": {
+                    "uri": "str",
+                    "url_list": [
+                        "list of str with length 1"
+                    ],
+                    "width": "str"
+                },
+                "avatar_thumb": {
+                    "uri": "str",
+                    "url_list": [
+                        "list of str with length 1"
+                    ],
+                    "width": "str"
+                },
+                "avatar_uri": "str",
+                "aweme_count": "str",
+                "block_status": "str",
+                "can_set_geofencing": "str"
+            }
+        },
+        {
+            "name": "User Info V2",
+            "schema": {
+                "status": "str",
+                "user": {
+                    "id": "str",
+                    "nickname": "str",
+                    "avatarThumb": "str",
+                    "signature": "str",
+                    "verified": "bool",
+                    "secUid": "str"
+                },
+                "stats": {
+                    "followingCount": "int",
+                    "followerCount": "int",
+                    "heartCount": "int",
+                    "videoCount": "int"
+                }
+            }
+        },
+        {
+            "name": "Challenge Feed",
+            "schema": {
+                "status": "str",
+                "detail": "str",
+                "items": [
+                    {
+                        "id": "str",
+                        "desc": "str",
+                        "createTime": "str",
+                        "aweme_id": "str",
+                        "is_top": "str",
+                        "video": {
+                            "height": "str",
+                            "width": "str",
+                            "duration": "str",
+                            "ratio": "str",
+                            "downloadAddr": [
+                                "list of str with length 1"
+                            ],
+                            "playAddr": [
+                                "list of str with length 1"
+                            ]
+                        },
+                        "author": {
+                            "id": "str",
+                            "uniqueId": "str",
+                            "nickname": "str",
+                            "avatarThumb": "str",
+                            "signature": "str",
+                            "secUid": "str"
+                        },
+                        "music": {
+                            "id": "str",
+                            "title": "str"
+                        },
+                        "stats": {
+                            "commentCount": "str",
+                            "diggCount": "str",
+                            "playCount": "str",
+                            "shareCount": "str"
+                        }
+                    }
+                ],
+                "hasMore": "str",
+                "maxCursor": "str"
+            }
+        }
+    ]
+}

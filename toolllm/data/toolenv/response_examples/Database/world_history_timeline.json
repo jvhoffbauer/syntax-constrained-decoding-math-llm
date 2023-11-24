@@ -1,0 +1,28 @@
+{
+    "api_list": [
+        {
+            "name": "Historic Event By year",
+            "schema": {
+                "results": [
+                    {
+                        "Year": "str",
+                        "Event": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Random Historic Event",
+            "schema": {
+                "data": {
+                    "results": [
+                        {
+                            "Year": "str",
+                            "Event": "str"
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

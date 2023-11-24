@@ -1,0 +1,25 @@
+{
+    "api_list": [
+        {
+            "name": "Timezone for Location",
+            "schema": {
+                "abbreviation": "str",
+                "timezone": "str",
+                "dst": "bool",
+                "dst_from": "str",
+                "dst_until": "str",
+                "raw_offset": "int",
+                "utc_offset": "str"
+            }
+        },
+        {
+            "name": "Current time by IP",
+            "schema": {
+                "abbreviation": "str",
+                "timezone": "str",
+                "unixtime": "int",
+                "utc_offset": "str"
+            }
+        }
+    ]
+}

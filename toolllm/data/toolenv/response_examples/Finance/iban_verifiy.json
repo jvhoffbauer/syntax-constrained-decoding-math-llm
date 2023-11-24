@@ -1,0 +1,11 @@
+{
+    "api_list": [
+        {
+            "name": "IBAN",
+            "schema": {
+                "errorCode": "int",
+                "happyApiStatus": "str"
+            }
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "api_list": [
+        {
+            "name": "Generate CC Number",
+            "schema": {
+                "data": {
+                    "cvv": "int",
+                    "issuer": "str",
+                    "number": "str",
+                    "brand": "str",
+                    "expiration": "str"
+                }
+            }
+        }
+    ]
+}

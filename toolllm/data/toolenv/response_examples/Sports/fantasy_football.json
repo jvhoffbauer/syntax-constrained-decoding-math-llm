@@ -1,0 +1,29 @@
+{
+    "api_list": [
+        {
+            "name": "Season Projections by Position (PPR)",
+            "schema": {
+                "player": "str",
+                "position": "str",
+                "projection": "float"
+            }
+        },
+        {
+            "name": "Weekly Projections All (PPR)",
+            "schema": {
+                "player": "str",
+                "position": "str",
+                "team": "str",
+                "projection": "str"
+            }
+        },
+        {
+            "name": "Season Projections by Position (nonPPR)",
+            "schema": {
+                "player": "str",
+                "position": "str",
+                "projection": "int"
+            }
+        }
+    ]
+}

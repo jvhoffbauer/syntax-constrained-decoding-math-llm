@@ -1,0 +1,195 @@
+{
+    "api_list": [
+        {
+            "name": "/get-social-timestamps/15m",
+            "schema": {
+                "twitterPosts": "int",
+                "twitterComments": "int",
+                "twitterLikes": "int",
+                "twitterImpressions": "int",
+                "symbol": "str"
+            }
+        },
+        {
+            "name": "/get-alerts",
+            "schema": {
+                "_id": "str",
+                "actionType": "str",
+                "subActionType": "str",
+                "ticker": "str",
+                "createdAt": "str",
+                "title": "str",
+                "prices": {
+                    "_id": "str",
+                    "ticker": "str",
+                    "Name": "str",
+                    "regularMarketDayHigh": "str",
+                    "regularMarketDayLow": "str",
+                    "previousClose": "str",
+                    "useMarketChange": "str",
+                    "useMarketChangePercent": "str"
+                },
+                "contentTextBrief": "str",
+                "url": "str"
+            }
+        },
+        {
+            "name": "/get-content",
+            "schema": {
+                "title": "str",
+                "createdAt": "str",
+                "ticker": "str",
+                "contentTextBrief": "str",
+                "type": "str"
+            }
+        },
+        {
+            "name": "/get-social-timestamps/4h",
+            "schema": {
+                "twitterPosts": "int",
+                "twitterComments": "int",
+                "twitterLikes": "int",
+                "twitterImpressions": "int",
+                "symbol": "str"
+            }
+        },
+        {
+            "name": "/get-sentiment-trending/bullish",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "/get-social-stats/influencers",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "/get-social-stats/spam",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "/get-social-stats/bots",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "/get-sentiment-change/bearish",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "/get-sentiment-change/bullish",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "/get-sentiment-trending/bearish",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "/get-filtered-feed",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "/get-social-feed",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "/get-social-change/impressions",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "/get-social-change/posts",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "/get-social-trending/impressions",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "/get-social-trending/likes",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "/get-social-trending/comments",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "/get-social-trending/posts",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "/get-social-moving-averages/1m",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "/get-social-moving-averages/2w",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "/get-social-moving-averages/1w",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "/get-social-moving-averages/72h",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "/get-social-timestamps/1d",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "/get-social-timestamps/1h",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "/get-social-timestamps/30m",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "/get-social-list",
+            "schema": {
+                "message": "str"
+            }
+        }
+    ]
+}

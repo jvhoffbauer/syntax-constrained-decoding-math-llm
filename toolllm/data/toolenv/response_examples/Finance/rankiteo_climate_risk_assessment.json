@@ -1,0 +1,47 @@
+{
+    "api_list": [
+        {
+            "name": "GetPowerplantByRadiusAndAddress",
+            "schema": {
+                "q": "str",
+                "total_count": "int",
+                "total_pages": "int",
+                "current_page": "int",
+                "curent_page_count": "int",
+                "data": [
+                    {
+                        "country_name": "str",
+                        "latitude": "float",
+                        "longitude": "float",
+                        "pp_name": "str",
+                        "pp_capacity": "float",
+                        "distance": "float",
+                        "clean_energy": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "GetPowerplantByRadiusAndGps",
+            "schema": {
+                "q": "str",
+                "total_count": "int",
+                "total_pages": "int",
+                "current_page": "int",
+                "curent_page_count": "int",
+                "data": [
+                    {
+                        "country_name": "str",
+                        "latitude": "float",
+                        "longitude": "float",
+                        "pp_name": "str",
+                        "pp_capacity": "float",
+                        "fuel_primary": "str",
+                        "distance": "float",
+                        "clean_energy": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

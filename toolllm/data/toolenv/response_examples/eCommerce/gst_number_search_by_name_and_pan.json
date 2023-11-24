@@ -1,0 +1,26 @@
+{
+    "api_list": [
+        {
+            "name": "Get Company Details By company name",
+            "schema": {
+                "id": "int",
+                "name": "str",
+                "ref": "str",
+                "slug": "str",
+                "color": "str",
+                "roc": "str",
+                "state": "str",
+                "status": "str",
+                "company_type": "str",
+                "directors": [
+                    {
+                        "name": "str",
+                        "slug": "str"
+                    }
+                ],
+                "incorporation_date": "str",
+                "industry": "str"
+            }
+        }
+    ]
+}

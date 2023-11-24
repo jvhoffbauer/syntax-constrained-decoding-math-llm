@@ -1,0 +1,14 @@
+{
+    "api_list": [
+        {
+            "name": "Get All Favorite Food",
+            "schema": {
+                "_id": "str",
+                "favoriteDish": "str",
+                "imageUrl": "str",
+                "price": "str",
+                "platesAvailable": "str"
+            }
+        }
+    ]
+}

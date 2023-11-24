@@ -1,0 +1,27 @@
+{
+    "api_list": [
+        {
+            "name": "Postalcode to location information (/search)",
+            "schema": {
+                "query": {
+                    "codes": [
+                        "list of str with length 1"
+                    ],
+                    "country": "NoneType"
+                },
+                "results": {
+                    "10005": [
+                        {
+                            "postal_code": "str",
+                            "country_code": "str",
+                            "latitude": "str",
+                            "longitude": "str",
+                            "city": "str",
+                            "state": "str"
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "api_list": [
+        {
+            "name": "Search ATM locations",
+            "schema": {
+                "list": [
+                    {
+                        "latitude": "float",
+                        "longitude": "float",
+                        "name": "str",
+                        "city": "str",
+                        "address": "str",
+                        "countryCode": "str",
+                        "locationName": "str",
+                        "owner": "str",
+                        "currencyCode": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

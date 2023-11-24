@@ -1,0 +1,31 @@
+{
+    "api_list": [
+        {
+            "name": "Get All Wards Of A District In Vietnam",
+            "schema": {
+                "code": "str",
+                "name": "str",
+                "district_code": "str",
+                "district_name": "str",
+                "province_code": "str",
+                "province_name": "str"
+            }
+        },
+        {
+            "name": "Get All Districts Of A City In Vietnam",
+            "schema": {
+                "code": "str",
+                "name": "str",
+                "province_name": "str"
+            }
+        },
+        {
+            "name": "Get All Cities in Vietnam",
+            "schema": {
+                "code": "str",
+                "name": "str",
+                "unit": "str"
+            }
+        }
+    ]
+}

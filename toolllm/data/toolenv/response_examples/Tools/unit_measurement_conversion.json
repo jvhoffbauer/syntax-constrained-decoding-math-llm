@@ -1,0 +1,15 @@
+{
+    "api_list": [
+        {
+            "name": "Get a List of All Units",
+            "schema": {
+                "type": "str",
+                "measurements": [
+                    {
+                        "unit": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

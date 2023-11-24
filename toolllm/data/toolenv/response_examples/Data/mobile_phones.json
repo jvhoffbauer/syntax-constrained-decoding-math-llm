@@ -1,0 +1,70 @@
+{
+    "api_list": [
+        {
+            "name": "Get Devices Details",
+            "schema": {
+                "status": "int",
+                "data": [
+                    {
+                        "category": "str",
+                        "details": [
+                            {
+                                "name": "str",
+                                "value": "str"
+                            }
+                        ]
+                    }
+                ],
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get Devices By Brand",
+            "schema": {
+                "status": "int",
+                "data": {
+                    "devices": [
+                        {
+                            "name": "str",
+                            "img": "str",
+                            "description": "str"
+                        }
+                    ]
+                },
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get Brands",
+            "schema": {
+                "status": "int",
+                "data": {
+                    "brands": [
+                        {
+                            "id": "int",
+                            "name": "str"
+                        }
+                    ],
+                    "paging": {
+                        "totalPage": "int",
+                        "currentPage": "int"
+                    }
+                }
+            }
+        },
+        {
+            "name": "Search Devices",
+            "schema": {
+                "status": "int",
+                "data": [
+                    {
+                        "name": "str",
+                        "img": "str",
+                        "description": "str"
+                    }
+                ],
+                "message": "str"
+            }
+        }
+    ]
+}

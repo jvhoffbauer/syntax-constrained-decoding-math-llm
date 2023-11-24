@@ -1,0 +1,14 @@
+{
+    "api_list": [
+        {
+            "name": "Download Video or Reel",
+            "schema": {
+                "status": "str",
+                "title": "str",
+                "thumbnail_url": "str",
+                "sd": "str",
+                "hd": "str"
+            }
+        }
+    ]
+}

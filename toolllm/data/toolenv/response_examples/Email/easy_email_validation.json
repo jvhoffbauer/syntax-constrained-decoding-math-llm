@@ -1,0 +1,13 @@
+{
+    "api_list": [
+        {
+            "name": "Validate Email",
+            "schema": {
+                "email": "str",
+                "valid": "bool",
+                "disposable": "bool",
+                "mxRecord": "bool"
+            }
+        }
+    ]
+}

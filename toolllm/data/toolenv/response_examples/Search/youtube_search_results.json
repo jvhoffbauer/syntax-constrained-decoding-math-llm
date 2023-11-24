@@ -1,0 +1,37 @@
+{
+    "api_list": [
+        {
+            "name": "YouTubeSearchResults",
+            "schema": {
+                "originalQuery": "str",
+                "correctedQuery": "str",
+                "results": "str",
+                "items": [
+                    {
+                        "type": "str",
+                        "title": "str",
+                        "id": "str",
+                        "url": "str",
+                        "bestThumbnail": {
+                            "url": "str"
+                        },
+                        "isUpcoming": "str",
+                        "isLive": "str",
+                        "author": {
+                            "name": "str",
+                            "channelID": "str",
+                            "url": "str",
+                            "bestAvatar": {
+                                "url": "str"
+                            },
+                            "verified": "str"
+                        },
+                        "views": "str",
+                        "duration": "str",
+                        "uploadedAt": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

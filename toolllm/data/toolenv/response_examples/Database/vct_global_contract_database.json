@@ -1,0 +1,200 @@
+{
+    "api_list": [
+        {
+            "name": "PACIFIC",
+            "schema": {
+                "DFM": [
+                    {
+                        "FamilyName": "str",
+                        "FirstName": "str",
+                        "IGN": "str",
+                        "Region": "str",
+                        "Role": "str",
+                        "TeamName": "str",
+                        "TeamTag": "str"
+                    }
+                ],
+                "DRX": [
+                    {
+                        "FamilyName": "str",
+                        "FirstName": "str",
+                        "IGN": "str",
+                        "Region": "str",
+                        "Role": "str",
+                        "TeamName": "str",
+                        "TeamTag": "str"
+                    }
+                ],
+                "GEN": [
+                    {
+                        "FamilyName": "str",
+                        "FirstName": "str",
+                        "IGN": "str",
+                        "Region": "str",
+                        "Role": "str",
+                        "TeamName": "str",
+                        "TeamTag": "str"
+                    }
+                ],
+                "GES": [
+                    {
+                        "FamilyName": "str",
+                        "FirstName": "str",
+                        "IGN": "str",
+                        "Region": "str",
+                        "Role": "str",
+                        "TeamName": "str",
+                        "TeamTag": "str"
+                    }
+                ],
+                "PRX": [
+                    {
+                        "FamilyName": "str",
+                        "FirstName": "str",
+                        "IGN": "str",
+                        "Region": "str",
+                        "Role": "str",
+                        "TeamName": "str",
+                        "TeamTag": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "EMEA",
+            "schema": {
+                "BBL": [
+                    {
+                        "FamilyName": "str",
+                        "FirstName": "str",
+                        "ID": "str",
+                        "IGN": "str",
+                        "Region": "str",
+                        "ResidentStatus": "str",
+                        "Role": "str",
+                        "RosterStatus": "str",
+                        "TeamContact": "str",
+                        "TeamName": "str",
+                        "TeamTag": "str"
+                    }
+                ],
+                "FNC": [
+                    {
+                        "FamilyName": "str",
+                        "FirstName": "str",
+                        "ID": "str",
+                        "IGN": "str",
+                        "Region": "str",
+                        "ResidentStatus": "str",
+                        "Role": "str",
+                        "RosterStatus": "str",
+                        "TeamContact": "str",
+                        "TeamName": "str",
+                        "TeamTag": "str"
+                    }
+                ],
+                "FUT": [
+                    {
+                        "FamilyName": "str",
+                        "FirstName": "str",
+                        "ID": "str",
+                        "IGN": "str",
+                        "Region": "str",
+                        "ResidentStatus": "str",
+                        "Role": "str",
+                        "RosterStatus": "str",
+                        "TeamContact": "str",
+                        "TeamName": "str",
+                        "TeamTag": "str"
+                    }
+                ],
+                "GIA": [
+                    {
+                        "FamilyName": "str",
+                        "FirstName": "str",
+                        "ID": "str",
+                        "IGN": "str",
+                        "Region": "str",
+                        "ResidentStatus": "str",
+                        "Role": "str",
+                        "RosterStatus": "str",
+                        "TeamContact": "str",
+                        "TeamName": "str",
+                        "TeamTag": "str"
+                    }
+                ],
+                "KC": [
+                    {
+                        "FamilyName": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "AMERICAS",
+            "schema": {
+                "100T": [
+                    {
+                        "FamilyName": "str",
+                        "FirstName": "str",
+                        "IGN": "str",
+                        "Region": "str",
+                        "ResidentStatus": "str",
+                        "Role": "str",
+                        "RosterStatus": "str",
+                        "TeamContact": "str",
+                        "TeamName": "str",
+                        "TeamTag": "str"
+                    }
+                ],
+                "C9": [
+                    {
+                        "FamilyName": "str",
+                        "FirstName": "str",
+                        "IGN": "str",
+                        "Region": "str",
+                        "ResidentStatus": "str",
+                        "Role": "str",
+                        "RosterStatus": "str",
+                        "TeamContact": "str",
+                        "TeamName": "str",
+                        "TeamTag": "str"
+                    }
+                ],
+                "EG": [
+                    {
+                        "FamilyName": "str",
+                        "FirstName": "str",
+                        "IGN": "str",
+                        "Region": "str",
+                        "ResidentStatus": "str",
+                        "Role": "str",
+                        "RosterStatus": "str",
+                        "TeamContact": "str",
+                        "TeamName": "str",
+                        "TeamTag": "str"
+                    }
+                ],
+                "FUR": [
+                    {
+                        "FamilyName": "str",
+                        "FirstName": "str",
+                        "IGN": "str",
+                        "Region": "str",
+                        "ResidentStatus": "str",
+                        "Role": "str",
+                        "RosterStatus": "str",
+                        "TeamContact": "str",
+                        "TeamName": "str",
+                        "TeamTag": "str"
+                    }
+                ],
+                "KRU": [
+                    {
+                        "FamilyName": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,15 @@
+{
+    "api_list": [
+        {
+            "name": "/mp4",
+            "schema": {
+                "items": [
+                    {
+                        "quality": "str",
+                        "url": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

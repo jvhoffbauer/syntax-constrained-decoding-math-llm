@@ -1,0 +1,59 @@
+{
+    "api_list": [
+        {
+            "name": "Block",
+            "schema": {
+                "_type": "str",
+                "difficulty": "str",
+                "gasLimit": "str",
+                "gasUsed": "str",
+                "hash": "str",
+                "miner": "str",
+                "nonce": "str",
+                "number": "int",
+                "parentHash": "str",
+                "timestamp": "int",
+                "transactions": [
+                    "list of str with length 1"
+                ]
+            }
+        },
+        {
+            "name": "Account Balance",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Current Block Number",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Transaction",
+            "schema": {
+                "_type": "str",
+                "blockNumber": "int",
+                "blockHash": "str",
+                "chainId": "str",
+                "data": "str",
+                "from": "str",
+                "gasLimit": "str",
+                "gasPrice": "str",
+                "hash": "str",
+                "nonce": "int",
+                "signature": {
+                    "_type": "str",
+                    "networkV": "str",
+                    "r": "str",
+                    "s": "str",
+                    "v": "int"
+                },
+                "to": "str",
+                "type": "int",
+                "value": "str"
+            }
+        }
+    ]
+}

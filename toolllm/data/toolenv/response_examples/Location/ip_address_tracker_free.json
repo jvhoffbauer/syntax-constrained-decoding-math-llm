@@ -1,0 +1,15 @@
+{
+    "api_list": [
+        {
+            "name": "Auto IP Lookup",
+            "schema": {
+                "status": "str",
+                "ip": "str",
+                "country": "str",
+                "lat": "str",
+                "lon": "str",
+                "timezone": "str"
+            }
+        }
+    ]
+}

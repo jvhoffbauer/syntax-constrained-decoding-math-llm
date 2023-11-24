@@ -1,0 +1,64 @@
+{
+    "api_list": [
+        {
+            "name": "Get all chapters",
+            "schema": {
+                "id": "str",
+                "name": "str",
+                "verses_count": "str",
+                "chapter_number": "str"
+            }
+        },
+        {
+            "name": "Get a particular chapter",
+            "schema": {
+                "name": "str",
+                "name_translated": "str",
+                "verses_count": "str",
+                "chapter_number": "str",
+                "chapter_summary": "str"
+            }
+        },
+        {
+            "name": "Get all verses from a particular chapter",
+            "schema": {
+                "id": "str",
+                "verse_number": "str",
+                "chapter_number": "str",
+                "text": "str",
+                "translations": [
+                    {
+                        "language": "str"
+                    }
+                ],
+                "commentaries": [
+                    {
+                        "language": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Get a particular verse",
+            "schema": {
+                "id": "str",
+                "verse_number": "str",
+                "chapter_number": "str",
+                "slug": "str",
+                "text": "str",
+                "transliteration": "str",
+                "word_meanings": "str",
+                "translations": [
+                    {
+                        "language": "str"
+                    }
+                ],
+                "commentaries": [
+                    {
+                        "language": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

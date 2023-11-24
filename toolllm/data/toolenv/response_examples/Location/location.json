@@ -1,0 +1,115 @@
+{
+    "api_list": [
+        {
+            "name": "Get the timezones",
+            "schema": {
+                "name": "str",
+                "timezone": "str",
+                "countries": [
+                    {
+                        "name": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Get the countries",
+            "schema": {
+                "name": "str",
+                "alpha2": "str",
+                "alpha3": "str",
+                "number": "int",
+                "countryCode": "str",
+                "location": {
+                    "latitude": "float",
+                    "longitude": "float"
+                }
+            }
+        },
+        {
+            "name": "Get the states",
+            "schema": {
+                "name": "str",
+                "abbreviation": "str",
+                "country": {
+                    "name": "str",
+                    "alpha2": "str"
+                }
+            }
+        },
+        {
+            "name": "Get the cities",
+            "schema": {
+                "name": "str",
+                "state": {
+                    "name": "str",
+                    "abbreviation": "str"
+                },
+                "country": {
+                    "name": "str",
+                    "alpha2": "str",
+                    "alpha3": "str"
+                }
+            }
+        },
+        {
+            "name": "Get the addresses by IP",
+            "schema": {
+                "ip": "str",
+                "postalCode": "str",
+                "street": "str",
+                "neighborhood": "str",
+                "city": "str",
+                "country": {
+                    "name": "str",
+                    "alpha2": "str",
+                    "alpha3": "str"
+                },
+                "coordinates": {
+                    "latitude": "float",
+                    "longitude": "float"
+                }
+            }
+        },
+        {
+            "name": "Get the addresses by latitude and longitude",
+            "schema": {
+                "postalCode": "str",
+                "street": "str",
+                "neighborhood": "str",
+                "city": {
+                    "name": "str"
+                },
+                "state": {
+                    "name": "str",
+                    "abbreviation": "str"
+                },
+                "country": {
+                    "name": "str",
+                    "alpha2": "str",
+                    "alpha3": "str"
+                },
+                "coordinates": {
+                    "latitude": "float",
+                    "longitude": "float"
+                }
+            }
+        },
+        {
+            "name": "Get the addresses by postal code",
+            "schema": {
+                "city": {},
+                "state": {
+                    "name": "str"
+                },
+                "country": {
+                    "alpha3": "str"
+                },
+                "coordinates": {
+                    "latitude": "float",
+                    "longitude": "float"
+                }
+            }
+        }
+    ]
+}

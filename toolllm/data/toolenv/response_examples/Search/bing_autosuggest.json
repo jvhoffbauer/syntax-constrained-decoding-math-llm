@@ -1,0 +1,17 @@
+{
+    "api_list": [
+        {
+            "name": "Suggestions",
+            "schema": {
+                "errors": [
+                    {
+                        "code": "str",
+                        "subCode": "str",
+                        "message": "str",
+                        "parameter": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

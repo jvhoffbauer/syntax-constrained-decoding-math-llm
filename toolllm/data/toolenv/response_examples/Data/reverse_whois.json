@@ -1,0 +1,137 @@
+{
+    "api_list": [
+        {
+            "name": "Get Reverse Whois With Owner Email",
+            "schema": {
+                "total_Result": "int",
+                "total_Pages": "int",
+                "current_Page": "int",
+                "whois_domains_historical": [
+                    {
+                        "domain_name": "str",
+                        "query_time": "str",
+                        "create_date": "str",
+                        "expiry_date": "str",
+                        "domain_registrar": {
+                            "registrar_name": "str"
+                        },
+                        "registrant_contact": {
+                            "country_name": "str",
+                            "country_code": "str",
+                            "email_address": "str"
+                        },
+                        "administrative_contact": {
+                            "country_name": "str",
+                            "country_code": "str",
+                            "email_address": "str"
+                        },
+                        "technical_contact": {
+                            "country_name": "str",
+                            "country_code": "str",
+                            "email_address": "str"
+                        },
+                        "name_servers": [
+                            "list of str with length 1"
+                        ],
+                        "domain_status": [
+                            "list of str with length 1"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Get Reverse Whois With Owner Name",
+            "schema": {
+                "total_Result": "int",
+                "total_Pages": "int",
+                "current_Page": "int",
+                "whois_domains_historical": [
+                    {
+                        "domain_name": "str",
+                        "create_date": "str",
+                        "update_date": "str",
+                        "expiry_date": "str",
+                        "domain_registrar": {
+                            "registrar_name": "str"
+                        },
+                        "registrant_contact": {
+                            "name": "str",
+                            "company": "str",
+                            "country_name": "str",
+                            "country_code": "str"
+                        },
+                        "technical_contact": {
+                            "name": "str",
+                            "company": "str",
+                            "country_name": "str",
+                            "country_code": "str"
+                        },
+                        "name_servers": [
+                            "list of str with length 1"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Get Reverse Whois With Owner Company",
+            "schema": {
+                "total_Result": "int",
+                "total_Pages": "int",
+                "current_Page": "int",
+                "whois_domains_historical": [
+                    {
+                        "domain_name": "str",
+                        "create_date": "str",
+                        "expiry_date": "str",
+                        "domain_registrar": {
+                            "registrar_name": "str"
+                        },
+                        "registrant_contact": {
+                            "name": "str",
+                            "company": "str",
+                            "country_name": "str",
+                            "country_code": "str",
+                            "email_address": "str"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Get Reverse Whois With Domain Keyword",
+            "schema": {
+                "total_Result": "int",
+                "total_Pages": "int",
+                "current_Page": "int",
+                "whois_domains_historical": [
+                    {
+                        "domain_name": "str",
+                        "query_time": "str",
+                        "create_date": "str",
+                        "expiry_date": "str",
+                        "domain_registrar": {
+                            "registrar_name": "str"
+                        },
+                        "registrant_contact": {
+                            "name": "str",
+                            "country_name": "str",
+                            "country_code": "str"
+                        },
+                        "technical_contact": {
+                            "name": "str",
+                            "email_address": "str"
+                        },
+                        "name_servers": [
+                            "list of str with length 1"
+                        ],
+                        "domain_status": [
+                            "list of str with length 1"
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}

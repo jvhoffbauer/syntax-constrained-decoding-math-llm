@@ -1,0 +1,20 @@
+{
+    "api_list": [
+        {
+            "name": "OG",
+            "schema": {
+                "data": {
+                    "title": "str",
+                    "description": "str",
+                    "url": "str",
+                    "type": "str",
+                    "image": [
+                        {
+                            "url": "str"
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

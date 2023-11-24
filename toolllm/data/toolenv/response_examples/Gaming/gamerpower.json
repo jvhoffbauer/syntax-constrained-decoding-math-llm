@@ -1,0 +1,127 @@
+{
+    "api_list": [
+        {
+            "name": "Filter & Group Giveaways",
+            "schema": {
+                "id": "int",
+                "title": "str",
+                "worth": "str",
+                "thumbnail": "str",
+                "description": "str",
+                "instructions": "str",
+                "type": "str",
+                "platforms": "str",
+                "end_date": "str",
+                "users": "int",
+                "status": "str"
+            }
+        },
+        {
+            "name": "Specific giveaway details",
+            "schema": {
+                "id": "int",
+                "title": "str",
+                "worth": "str",
+                "thumbnail": "str",
+                "description": "str",
+                "instructions": "str",
+                "open_giveaway_url": "str",
+                "published_date": "str",
+                "type": "str",
+                "platforms": "str",
+                "end_date": "str",
+                "status": "str",
+                "gamerpower_url": "str"
+            }
+        },
+        {
+            "name": "Live giveaways by platform",
+            "schema": {
+                "id": "int",
+                "title": "str",
+                "worth": "str",
+                "thumbnail": "str",
+                "image": "str",
+                "description": "str",
+                "instructions": "str",
+                "type": "str",
+                "platforms": "str",
+                "end_date": "str",
+                "users": "int",
+                "status": "str"
+            }
+        },
+        {
+            "name": "Live giveaways by type",
+            "schema": {
+                "id": "int",
+                "title": "str",
+                "worth": "str",
+                "thumbnail": "str",
+                "description": "str",
+                "instructions": "str",
+                "open_giveaway_url": "str",
+                "published_date": "str",
+                "type": "str",
+                "platforms": "str",
+                "end_date": "str",
+                "users": "int",
+                "status": "str"
+            }
+        },
+        {
+            "name": "Sort live giveaways",
+            "schema": {
+                "id": "int",
+                "title": "str",
+                "worth": "str",
+                "thumbnail": "str",
+                "image": "str",
+                "description": "str",
+                "instructions": "str",
+                "open_giveaway_url": "str",
+                "published_date": "str",
+                "type": "str",
+                "platforms": "str",
+                "end_date": "str",
+                "status": "str",
+                "gamerpower_url": "str",
+                "open_giveaway": "str"
+            }
+        },
+        {
+            "name": "Live giveaways by platform & type & sorted",
+            "schema": {
+                "id": "int",
+                "title": "str",
+                "worth": "str",
+                "thumbnail": "str",
+                "description": "str",
+                "instructions": "str",
+                "published_date": "str",
+                "type": "str",
+                "platforms": "str",
+                "end_date": "str",
+                "status": "str"
+            }
+        },
+        {
+            "name": "All live giveaways",
+            "schema": {
+                "id": "int",
+                "title": "str",
+                "worth": "str",
+                "thumbnail": "str",
+                "description": "str",
+                "instructions": "str",
+                "open_giveaway_url": "str",
+                "published_date": "str",
+                "type": "str",
+                "platforms": "str",
+                "end_date": "str",
+                "status": "str",
+                "gamerpower_url": "str"
+            }
+        }
+    ]
+}

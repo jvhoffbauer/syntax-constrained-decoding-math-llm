@@ -1,0 +1,82 @@
+{
+    "api_list": [
+        {
+            "name": "Get Cards",
+            "schema": {
+                "cards": [
+                    {
+                        "name": "str",
+                        "manaCost": "str",
+                        "text": "str",
+                        "duels": {
+                            "relevant": "str",
+                            "constructed": "str"
+                        },
+                        "rarity": {
+                            "slug": "str"
+                        },
+                        "class": {
+                            "slug": "str"
+                        },
+                        "type": {
+                            "slug": "str"
+                        },
+                        "cardSet": {
+                            "name": "str",
+                            "slug": "str",
+                            "collectibleCount": "str"
+                        },
+                        "spellSchool": {
+                            "slug": "str"
+                        }
+                    }
+                ],
+                "cardCount": "str",
+                "pageCount": "str",
+                "page": "str"
+            }
+        },
+        {
+            "name": "Get Card By Slug",
+            "schema": {
+                "collectible": "str",
+                "slug": "str",
+                "name": "str",
+                "text": "str",
+                "flavorText": "str",
+                "hasImage": "str",
+                "hasImageGold": "str",
+                "hasCropImage": "str",
+                "keywords": [
+                    {
+                        "slug": "str",
+                        "name": "str",
+                        "refText": "str",
+                        "text": "str"
+                    }
+                ],
+                "rarity": {
+                    "slug": "str",
+                    "name": "str"
+                },
+                "class": {
+                    "slug": "str",
+                    "name": "str"
+                },
+                "type": {
+                    "slug": "str",
+                    "name": "str"
+                },
+                "cardSet": {
+                    "name": "str",
+                    "slug": "str",
+                    "type": "str"
+                },
+                "spellSchool": {
+                    "slug": "str",
+                    "name": "str"
+                }
+            }
+        }
+    ]
+}

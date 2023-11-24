@@ -1,0 +1,21 @@
+{
+    "api_list": [
+        {
+            "name": "Version metadata",
+            "schema": {
+                "mode": "str",
+                "version": "str",
+                "builddate": "str"
+            }
+        },
+        {
+            "name": "Healthcheck",
+            "schema": {
+                "mode": "str",
+                "version": "str",
+                "builddate": "str",
+                "gitcommit": "str"
+            }
+        }
+    ]
+}

@@ -1,0 +1,19 @@
+{
+    "api_list": [
+        {
+            "name": "Authentication",
+            "schema": {
+                "get": "str",
+                "parameters": "str",
+                "errors": {
+                    "token": "str"
+                },
+                "results": "int",
+                "paging": {
+                    "current": "int",
+                    "total": "int"
+                }
+            }
+        }
+    ]
+}

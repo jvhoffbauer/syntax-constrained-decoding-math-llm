@@ -1,0 +1,60 @@
+{
+    "api_list": [
+        {
+            "name": "Get All",
+            "schema": {
+                "data": [
+                    {
+                        "_id": "str",
+                        "title": "str",
+                        "alternativeTitles": [
+                            "list of str with length 1"
+                        ],
+                        "genres": [
+                            "list of str with length 1"
+                        ],
+                        "episodes": "str",
+                        "image": "str",
+                        "link": "str",
+                        "status": "str",
+                        "synopsis": "str",
+                        "type": "str"
+                    }
+                ],
+                "meta": {
+                    "page": "str",
+                    "totalData": "str",
+                    "totalPage": "str"
+                }
+            }
+        },
+        {
+            "name": "Get by id",
+            "schema": {
+                "_id": "str",
+                "title": "str",
+                "alternativeTitles": [
+                    "list of str with length 1"
+                ],
+                "ranking": "str",
+                "genres": [
+                    "list of str with length 1"
+                ],
+                "episodes": "str",
+                "hasEpisode": "str",
+                "hasRanking": "str",
+                "image": "str",
+                "link": "str",
+                "status": "str",
+                "synopsis": "str",
+                "type": "str"
+            }
+        },
+        {
+            "name": "Get one anime by ranking",
+            "schema": {
+                "message": "str"
+            }
+        }
+    ]
+}

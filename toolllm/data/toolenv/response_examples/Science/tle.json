@@ -1,0 +1,27 @@
+{
+    "api_list": [
+        {
+            "name": "Collection",
+            "schema": {
+                "totalItems": "int",
+                "member": [
+                    {
+                        "@type": "str",
+                        "satelliteId": "int",
+                        "name": "str",
+                        "date": "str",
+                        "line1": "str",
+                        "line2": "str"
+                    }
+                ],
+                "parameters": {
+                    "search": "str",
+                    "sort": "str",
+                    "sort-dir": "str",
+                    "page": "int",
+                    "page-size": "int"
+                }
+            }
+        }
+    ]
+}

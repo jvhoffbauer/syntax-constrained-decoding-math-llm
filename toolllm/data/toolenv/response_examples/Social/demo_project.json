@@ -1,0 +1,14 @@
+{
+    "api_list": [
+        {
+            "name": "Get Categories",
+            "schema": {
+                "categories": [
+                    {
+                        "category": "NoneType"
+                    }
+                ]
+            }
+        }
+    ]
+}

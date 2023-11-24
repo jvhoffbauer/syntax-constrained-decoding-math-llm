@@ -1,0 +1,38 @@
+{
+    "api_list": [
+        {
+            "name": "/v1/country",
+            "schema": {
+                "gdp": "str",
+                "sex_ratio": "str",
+                "surface_area": "str",
+                "life_expectancy_male": "str",
+                "unemployment": "str",
+                "imports": "str",
+                "homicide_rate": "str",
+                "currency": {
+                    "code": "str",
+                    "name": "str"
+                },
+                "iso2": "str",
+                "capital": "str",
+                "co2_emissions": "str",
+                "forested_area": "str",
+                "tourists": "str",
+                "exports": "str",
+                "life_expectancy_female": "str",
+                "infant_mortality": "str",
+                "gdp_growth": "str",
+                "threatened_species": "str",
+                "population": "str",
+                "urban_population": "str",
+                "name": "str",
+                "pop_growth": "str",
+                "region": "str",
+                "pop_density": "str",
+                "internet_users": "str",
+                "gdp_per_capita": "str"
+            }
+        }
+    ]
+}

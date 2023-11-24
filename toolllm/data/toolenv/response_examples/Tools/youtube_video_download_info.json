@@ -1,0 +1,23 @@
+{
+    "api_list": [
+        {
+            "name": "Get Video Info",
+            "schema": {
+                "status": "str",
+                "id": "str",
+                "title": "str",
+                "lengthsec": "str",
+                "keywords": "str",
+                "author": "str",
+                "channelid": "str",
+                "description": "str",
+                "allowRatings": "str",
+                "isPrivate": "str",
+                "isUnpluggedCorpus": "str",
+                "isLiveContent": "str",
+                "lexp": "str",
+                "link": {}
+            }
+        }
+    ]
+}

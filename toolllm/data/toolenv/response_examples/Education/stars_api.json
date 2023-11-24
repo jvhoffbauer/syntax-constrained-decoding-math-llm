@@ -1,0 +1,46 @@
+{
+    "api_list": [
+        {
+            "name": "Star",
+            "schema": {
+                "id": "int",
+                "name": "str",
+                "constellation": "str",
+                "rightAscension": "str",
+                "declination": "str",
+                "apparentMagnitude": "str",
+                "distance": "str",
+                "spectralType": "str",
+                "mass": "str",
+                "temperature": "str",
+                "age": "str",
+                "planets": [
+                    {
+                        "mass": "str",
+                        "temperature": "str",
+                        "discovery": {
+                            "method": "str",
+                            "date": "str"
+                        },
+                        "name": "str"
+                    }
+                ],
+                "numPlanets": "str",
+                "url": "str"
+            }
+        },
+        {
+            "name": "Planet list",
+            "schema": {
+                "id": "int",
+                "mass": "str",
+                "temperature": "str",
+                "discovery": {
+                    "method": "str",
+                    "date": "str"
+                },
+                "name": "str"
+            }
+        }
+    ]
+}

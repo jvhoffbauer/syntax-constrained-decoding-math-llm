@@ -1,0 +1,15 @@
+{
+    "api_list": [
+        {
+            "name": "GetFScore",
+            "schema": {
+                "Symbol": "str",
+                "FScore": {
+                    "Current": "int",
+                    "Min": "int",
+                    "Max": "int"
+                }
+            }
+        }
+    ]
+}

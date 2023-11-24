@@ -1,0 +1,18 @@
+{
+    "api_list": [
+        {
+            "name": "Text Sentiment Analysis",
+            "schema": {
+                "sentiment": {
+                    "score": "int",
+                    "vote": "str",
+                    "positive": [
+                        "list of str with length 1"
+                    ],
+                    "negative": "str",
+                    "negation": "bool"
+                }
+            }
+        }
+    ]
+}

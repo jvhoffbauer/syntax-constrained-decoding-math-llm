@@ -1,0 +1,23 @@
+{
+    "api_list": [
+        {
+            "name": "All RTO's",
+            "schema": {
+                "popular": [
+                    {
+                        "name": "str",
+                        "state": "str",
+                        "code": "str"
+                    }
+                ],
+                "total": [
+                    {
+                        "name": "str",
+                        "state": "str",
+                        "code": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

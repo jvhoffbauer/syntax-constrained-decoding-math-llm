@@ -1,0 +1,58 @@
+{
+    "api_list": [
+        {
+            "name": "caiso",
+            "schema": {
+                "messages": "str"
+            }
+        },
+        {
+            "name": "caisonode",
+            "schema": {
+                "nodes": [
+                    {
+                        "node_name": "str",
+                        "node_type": "str",
+                        "node_region": "str",
+                        "node_ntype": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "caisoregion",
+            "schema": {
+                "regions": [
+                    {
+                        "region_code": "str",
+                        "region_name": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "caisoprice",
+            "schema": {
+                "prices": {
+                    "nodes": [
+                        {
+                            "node_info": {
+                                "node": "str",
+                                "price_date": "str",
+                                "hourly_prices": [
+                                    {
+                                        "price_hour": "int",
+                                        "price_details": {
+                                            "lmp": "float",
+                                            "energy": "float"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

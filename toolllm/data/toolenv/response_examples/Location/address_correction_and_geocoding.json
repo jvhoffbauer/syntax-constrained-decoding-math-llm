@@ -1,0 +1,18 @@
+{
+    "api_list": [
+        {
+            "name": "/address",
+            "schema": {
+                "ErrorCode": "int",
+                "ErrorMessage": "str",
+                "AddressLine1": "NoneType",
+                "Zip": "NoneType",
+                "City": "NoneType",
+                "State": "NoneType",
+                "Latitude": "int",
+                "Longitude": "int",
+                "GeoPrecision": "int"
+            }
+        }
+    ]
+}

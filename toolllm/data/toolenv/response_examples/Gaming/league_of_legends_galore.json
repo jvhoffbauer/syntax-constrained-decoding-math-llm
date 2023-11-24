@@ -1,0 +1,57 @@
+{
+    "api_list": [
+        {
+            "name": "Get Player Details",
+            "schema": {
+                "username": "str",
+                "rank": "str",
+                "lp": "str",
+                "winLossRatio": "str",
+                "mostPlayedChamps": [
+                    {
+                        "name": "str",
+                        "winPercentage": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Get Random Champion",
+            "schema": {
+                "champName": "str",
+                "blueEssence": "int",
+                "RP": "int",
+                "HP": "int",
+                "HPR": "float",
+                "resource": "str",
+                "moveSpeed": "int",
+                "attDamage": "int",
+                "attSpeed": "float",
+                "range": "int",
+                "armor": "int",
+                "magicArmor": "int",
+                "releaseDate": "str",
+                "Attributes": "str"
+            }
+        },
+        {
+            "name": "Get Champion Tier List",
+            "schema": {
+                "sTier": [
+                    {
+                        "name": "str",
+                        "role": "str",
+                        "winRate": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Get Random Item",
+            "schema": {
+                "name": "str",
+                "price": "str"
+            }
+        }
+    ]
+}

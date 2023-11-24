@@ -1,0 +1,15 @@
+{
+    "api_list": [
+        {
+            "name": "Recent Trades List",
+            "schema": {
+                "id": "int",
+                "price": "str",
+                "qty": "str",
+                "quoteQty": "str",
+                "time": "int",
+                "isBuyerMaker": "bool"
+            }
+        }
+    ]
+}

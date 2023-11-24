@@ -1,0 +1,11 @@
+{
+    "api_list": [
+        {
+            "name": "url",
+            "schema": {
+                "ShortUrl": "str",
+                "longUrl": "str"
+            }
+        }
+    ]
+}

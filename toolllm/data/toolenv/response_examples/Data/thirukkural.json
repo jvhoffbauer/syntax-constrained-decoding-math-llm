@@ -1,0 +1,37 @@
+{
+    "api_list": [
+        {
+            "name": "Thirukkural",
+            "schema": {
+                "number": "str",
+                "line1": "str",
+                "line2": "str",
+                "translation": "str",
+                "mv": "str",
+                "sp": "str",
+                "mk": "str",
+                "couplet": "str",
+                "chapterDetails": {
+                    "section": {
+                        "name": "str",
+                        "transliteration": "str",
+                        "translation": "str",
+                        "number": "str",
+                        "chapterGroup": {
+                            "name": "str",
+                            "transliteration": "str",
+                            "translation": "str",
+                            "number": "str",
+                            "chapter": {
+                                "name": "str",
+                                "transliteration": "str",
+                                "translation": "str",
+                                "number": "str"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,12 @@
+{
+    "api_list": [
+        {
+            "name": "List of Cakes",
+            "schema": {
+                "id": "str",
+                "title": "str",
+                "image": "str"
+            }
+        }
+    ]
+}

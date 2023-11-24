@@ -1,0 +1,52 @@
+{
+    "api_list": [
+        {
+            "name": "/v4/sports/{sport}/odds",
+            "schema": {
+                "id": "str",
+                "sport_key": "str",
+                "sport_title": "str",
+                "commence_time": "str",
+                "home_team": "str",
+                "away_team": "str",
+                "bookmakers": [
+                    {
+                        "key": "str",
+                        "title": "str",
+                        "markets": [
+                            {
+                                "key": "str",
+                                "outcomes": [
+                                    {
+                                        "name": "str",
+                                        "price": "float"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "name": "/v4/sports/{sport}/scores",
+            "schema": {
+                "sport_key": "str",
+                "sport_title": "str",
+                "commence_time": "str",
+                "completed": "bool",
+                "home_team": "str",
+                "away_team": "str"
+            }
+        },
+        {
+            "name": "/v4/sports",
+            "schema": {
+                "key": "str",
+                "title": "str",
+                "active": "bool",
+                "has_outrights": "bool"
+            }
+        }
+    ]
+}

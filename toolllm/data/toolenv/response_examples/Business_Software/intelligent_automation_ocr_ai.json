@@ -1,0 +1,16 @@
+{
+    "api_list": [
+        {
+            "name": "Get /inboxes",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get /formats",
+            "schema": {
+                "message": "str"
+            }
+        }
+    ]
+}

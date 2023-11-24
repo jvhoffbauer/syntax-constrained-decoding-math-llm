@@ -1,0 +1,51 @@
+{
+    "api_list": [
+        {
+            "name": "All Cryptocurrency",
+            "schema": {
+                "status": {
+                    "timestamp": "str",
+                    "error_code": "str",
+                    "error_message": "str",
+                    "elapsed": "str",
+                    "credit_count": "str",
+                    "notice": "str",
+                    "total_count": "str"
+                },
+                "data": [
+                    {
+                        "id": "str",
+                        "name": "str",
+                        "symbol": "str",
+                        "slug": "str",
+                        "num_market_pairs": "str",
+                        "date_added": "str",
+                        "tags": [
+                            "list of str with length 1"
+                        ],
+                        "max_supply": "str",
+                        "circulating_supply": "str",
+                        "total_supply": "str",
+                        "infinite_supply": "str",
+                        "platform": "str",
+                        "cmc_rank": "str",
+                        "last_updated": "str",
+                        "quote": {
+                            "USD": {
+                                "price": "str",
+                                "volume_24h": "str",
+                                "volume_change_24h": "str",
+                                "percent_change_1h": "str",
+                                "percent_change_24h": "str",
+                                "percent_change_7d": "str",
+                                "percent_change_30d": "str",
+                                "market_cap": "str",
+                                "market_cap_dominance": "str"
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

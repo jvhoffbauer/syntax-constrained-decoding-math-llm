@@ -1,0 +1,10 @@
+{
+    "api_list": [
+        {
+            "name": "search",
+            "schema": {
+                "messages": "str"
+            }
+        }
+    ]
+}

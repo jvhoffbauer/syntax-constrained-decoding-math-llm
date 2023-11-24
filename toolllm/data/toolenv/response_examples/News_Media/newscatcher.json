@@ -1,0 +1,81 @@
+{
+    "api_list": [
+        {
+            "name": "/v1/aggregation",
+            "schema": {
+                "status": "str",
+                "error_code": "str",
+                "message": "str"
+            }
+        },
+        {
+            "name": "/v1/latest_headlines",
+            "schema": {
+                "status": "str",
+                "articles": [
+                    {
+                        "summary": "str",
+                        "country": "str",
+                        "author": "str",
+                        "link": "str",
+                        "language": "str",
+                        "title": "str",
+                        "clean_url": "str",
+                        "rank": "str",
+                        "topic": "str",
+                        "published_date": "str"
+                    }
+                ],
+                "user_input": {
+                    "lang": "str",
+                    "country": "str",
+                    "topic": "str"
+                }
+            }
+        },
+        {
+            "name": "/v1/search_free",
+            "schema": {
+                "status": "str",
+                "total_hits": "str",
+                "total_pages": "str",
+                "articles": [
+                    {
+                        "author": "str",
+                        "link": "str",
+                        "language": "str",
+                        "media": "str",
+                        "title": "str",
+                        "clean_url": "str",
+                        "rank": "str",
+                        "topic": "str",
+                        "published_date": "str"
+                    }
+                ],
+                "user_input": {
+                    "q": "str",
+                    "lang": "str",
+                    "sort_by": "str",
+                    "page": "str",
+                    "size": "str",
+                    "media": "str"
+                }
+            }
+        },
+        {
+            "name": "/v1/search",
+            "schema": {
+                "status": "str",
+                "error_code": "str",
+                "message": "str"
+            }
+        },
+        {
+            "name": "/v1/search_enterprise",
+            "schema": {
+                "status": "str",
+                "error_code": "str"
+            }
+        }
+    ]
+}

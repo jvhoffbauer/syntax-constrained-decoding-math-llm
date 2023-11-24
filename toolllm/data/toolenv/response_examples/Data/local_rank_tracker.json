@@ -1,0 +1,147 @@
+{
+    "api_list": [
+        {
+            "name": "Ranking at Coordinate Point",
+            "schema": {
+                "status": "str",
+                "request_id": "str",
+                "parameters": {
+                    "query": "str",
+                    "place_id": "str",
+                    "zoom": "str",
+                    "lat": "str",
+                    "lng": "str"
+                },
+                "data": {
+                    "lat": "float",
+                    "lng": "float",
+                    "found": "bool",
+                    "rank": "int",
+                    "count": "int",
+                    "results": [
+                        {
+                            "rank": "int",
+                            "place_id": "str",
+                            "name": "str",
+                            "lat": "float",
+                            "lng": "float",
+                            "address": "str",
+                            "sab": "bool",
+                            "place_link": "str",
+                            "country": "str",
+                            "reviews": "int",
+                            "rating": "float",
+                            "phone_number": "str",
+                            "website": "str",
+                            "verified": "bool",
+                            "business_status": "str"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Full Grid Search",
+            "schema": {
+                "status": "str",
+                "request_id": "str",
+                "parameters": {
+                    "query": "str",
+                    "place_id": "str",
+                    "grid_size": "str",
+                    "radius": "str",
+                    "radius_units": "str",
+                    "lat": "str",
+                    "lng": "str",
+                    "zoom": "str"
+                },
+                "data": {
+                    "points": "str",
+                    "found": "str",
+                    "found_percent": "str",
+                    "average_rank": "str",
+                    "average_total_rank": "str",
+                    "top_3_rank_percent": "str",
+                    "results": [
+                        {
+                            "lat": "str",
+                            "lng": "str",
+                            "found": "str",
+                            "rank": "str",
+                            "count": "str",
+                            "results": [
+                                {
+                                    "rank": "str",
+                                    "place_id": "str",
+                                    "name": "str",
+                                    "address": "str",
+                                    "sab": "str",
+                                    "place_link": "str",
+                                    "country": "str",
+                                    "reviews": "str",
+                                    "rating": "str",
+                                    "phone_number": "str",
+                                    "website": "str",
+                                    "verified": "str",
+                                    "business_status": "str"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Search Business Locations",
+            "schema": {
+                "status": "str",
+                "request_id": "str",
+                "parameters": {
+                    "query": "str",
+                    "near": "str"
+                },
+                "data": {
+                    "count": "int",
+                    "results": [
+                        {
+                            "place_id": "str",
+                            "lat": "float",
+                            "lng": "float",
+                            "name": "str",
+                            "address": "str",
+                            "sab": "bool",
+                            "place_link": "str",
+                            "country": "str"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Calculate Grid Coordinate Points",
+            "schema": {
+                "status": "str",
+                "request_id": "str",
+                "parameters": {
+                    "grid_size": "str",
+                    "radius": "str",
+                    "radius_units": "str",
+                    "lat": "str",
+                    "lng": "str"
+                },
+                "data": [
+                    {
+                        "lat": "float",
+                        "lng": "float"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Keyword Search at Coordinate Point",
+            "schema": {
+                "message": "str"
+            }
+        }
+    ]
+}

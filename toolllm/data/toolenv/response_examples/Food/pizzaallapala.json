@@ -1,0 +1,70 @@
+{
+    "api_list": [
+        {
+            "name": "Get Productos",
+            "schema": {
+                "mensaje": "str",
+                "ok": "bool",
+                "productos": [
+                    {
+                        "id": "int",
+                        "nombre": "str",
+                        "descripcion": "str",
+                        "linkImagen": "str",
+                        "precio": "str",
+                        "tasaIva": "str",
+                        "vendible": "int"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Get Producto Promo",
+            "schema": {
+                "ok": "bool",
+                "mensaje": "str",
+                "promo": [
+                    {
+                        "nombrePromo": "str",
+                        "descripcion": "str",
+                        "precioFinal": "str",
+                        "linkImagen": "str",
+                        "fechaInicio": "str",
+                        "fechaCaducidad": "str",
+                        "tags": [
+                            "list of str with length 1"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Usuarios",
+            "schema": {
+                "status": "str",
+                "data": [
+                    {
+                        "alias": "str",
+                        "dni": "str",
+                        "nombre": "str",
+                        "apellido": "str",
+                        "categoriaIva": "str",
+                        "email": "str",
+                        "id": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Get Tags",
+            "schema": {
+                "data": [
+                    {
+                        "id": "int",
+                        "nombre": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

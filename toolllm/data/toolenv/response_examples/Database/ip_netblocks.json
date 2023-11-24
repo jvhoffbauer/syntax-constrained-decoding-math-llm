@@ -1,0 +1,11 @@
+{
+    "api_list": [
+        {
+            "name": "IP Netblock v2",
+            "schema": {
+                "code": "int",
+                "messages": "str"
+            }
+        }
+    ]
+}

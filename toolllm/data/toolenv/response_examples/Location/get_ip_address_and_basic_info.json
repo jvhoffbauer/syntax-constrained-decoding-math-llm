@@ -1,0 +1,21 @@
+{
+    "api_list": [
+        {
+            "name": "IP ADDRESS",
+            "schema": {
+                "ip": "str",
+                "country_code": "str",
+                "country": "str",
+                "state": "str",
+                "city": "str",
+                "location": {
+                    "lat": "str",
+                    "lon": "str"
+                },
+                "flags": {
+                    "png": "str"
+                }
+            }
+        }
+    ]
+}

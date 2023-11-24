@@ -1,0 +1,386 @@
+{
+    "api_list": [
+        {
+            "name": "Retrieve all blocks",
+            "schema": {
+                "errors": [
+                    {
+                        "field": "NoneType",
+                        "message": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Retrieve Google Analytics Settings",
+            "schema": {
+                "errors": [
+                    {
+                        "message": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Retrieve a bounce",
+            "schema": {
+                "errors": [
+                    {
+                        "message": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Retrieve all bounces",
+            "schema": {
+                "errors": [
+                    {
+                        "message": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Retrieve all invalid emails",
+            "schema": {
+                "errors": [
+                    {
+                        "field": "str",
+                        "message": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Retrieve all spam reports",
+            "schema": {
+                "errors": [
+                    {
+                        "message": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Retrieve a specific spam report",
+            "schema": {
+                "errors": [
+                    {
+                        "message": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Validate Batch ID",
+            "schema": {
+                "errors": [
+                    {
+                        "message": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Retrieve all scheduled sends",
+            "schema": {
+                "errors": [
+                    {
+                        "message": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Retrieve scheduled send",
+            "schema": {
+                "errors": [
+                    {
+                        "message": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Retrieve all suppression groups associated with the user.",
+            "schema": {
+                "errors": [
+                    {
+                        "message": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Get information on a single suppression group.",
+            "schema": {
+                "errors": [
+                    {
+                        "message": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Retrieve all suppressions for a suppression group",
+            "schema": {
+                "errors": [
+                    {
+                        "message": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Retrieve all suppression groups for an email address",
+            "schema": {
+                "errors": [
+                    {
+                        "message": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Retrieve Tracking Settings",
+            "schema": {
+                "errors": [
+                    {
+                        "message": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Retrieve Click Track Settings",
+            "schema": {
+                "errors": [
+                    {
+                        "message": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Retrieve all suppressions",
+            "schema": {
+                "errors": [
+                    {
+                        "message": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Retrieve Subscription Tracking Settings",
+            "schema": {
+                "errors": [
+                    {
+                        "message": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Get Open Tracking Settings",
+            "schema": {
+                "errors": [
+                    {
+                        "message": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Retrieve all mail settings",
+            "schema": {
+                "errors": [
+                    {
+                        "message": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Retrieve all BCC mail settings",
+            "schema": {
+                "errors": [
+                    {
+                        "message": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Retrieve address whitelist mail settings",
+            "schema": {
+                "errors": [
+                    {
+                        "message": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Retrieve footer mail settings",
+            "schema": {
+                "errors": [
+                    {
+                        "message": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Retrieve forward spam mail settings",
+            "schema": {
+                "errors": [
+                    {
+                        "message": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Retrieve plain content mail settings",
+            "schema": {
+                "errors": [
+                    {
+                        "message": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Retrieve spam check mail settings",
+            "schema": {
+                "errors": [
+                    {
+                        "message": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Retrieve bounce purge mail settings",
+            "schema": {
+                "errors": [
+                    {
+                        "message": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Retrieve forward bounce mail settings",
+            "schema": {
+                "errors": [
+                    {
+                        "message": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Retrieve all parse settings",
+            "schema": {
+                "errors": [
+                    {
+                        "message": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Retrieve a specific parse setting",
+            "schema": {
+                "errors": [
+                    {
+                        "message": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Retrieve email statistics by country and state/province.",
+            "schema": {
+                "errors": [
+                    {
+                        "message": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Retrieve global email statistics",
+            "schema": {
+                "errors": [
+                    {
+                        "message": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Retrieve email statistics by device type.",
+            "schema": {
+                "errors": [
+                    {
+                        "message": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Retrieve email statistics by client type.",
+            "schema": {
+                "errors": [
+                    {
+                        "message": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Retrieve stats by a specific client type.",
+            "schema": {
+                "errors": [
+                    {
+                        "message": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Retrieve email statistics by mailbox provider.",
+            "schema": {
+                "errors": [
+                    {
+                        "message": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Retrieve email statistics by browser.",
+            "schema": {
+                "errors": [
+                    {
+                        "message": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Retrieve all alerts",
+            "schema": {
+                "errors": [
+                    {
+                        "message": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

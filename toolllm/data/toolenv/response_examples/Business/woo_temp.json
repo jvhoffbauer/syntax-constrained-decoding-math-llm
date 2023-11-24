@@ -1,0 +1,25 @@
+{
+    "api_list": [
+        {
+            "name": "product_category",
+            "schema": {
+                "id": "str",
+                "name": "str",
+                "imageUrl": "str",
+                "count": "int"
+            }
+        },
+        {
+            "name": "levels_category",
+            "schema": {
+                "messages": "str"
+            }
+        },
+        {
+            "name": "levels",
+            "schema": {
+                "messages": "str"
+            }
+        }
+    ]
+}

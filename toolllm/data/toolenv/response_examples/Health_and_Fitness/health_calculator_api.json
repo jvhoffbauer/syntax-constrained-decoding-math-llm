@@ -1,0 +1,51 @@
+{
+    "api_list": [
+        {
+            "name": "Daily Caloric Needs",
+            "schema": {
+                "caloric_needs": {
+                    "calories": "float",
+                    "goal": "str"
+                }
+            }
+        },
+        {
+            "name": "Body Mass Index",
+            "schema": {
+                "bmi": "str",
+                "weight_status": "str"
+            }
+        },
+        {
+            "name": "BMI - Imperial",
+            "schema": {
+                "bmi": "str",
+                "weight_status": "str"
+            }
+        },
+        {
+            "name": "BodyFat",
+            "schema": {
+                "age": "float",
+                "bmi": "str",
+                "bodyfat": "str",
+                "bodyfat_status": "str",
+                "gender": "str",
+                "height": "str",
+                "weight": "str"
+            }
+        },
+        {
+            "name": "BodyFat - Imperial",
+            "schema": {
+                "age": "float",
+                "bmi": "str",
+                "bodyfat": "str",
+                "bodyfat_status": "str",
+                "gender": "str",
+                "height": "str",
+                "weight": "str"
+            }
+        }
+    ]
+}

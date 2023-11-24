@@ -1,0 +1,59 @@
+{
+    "api_list": [
+        {
+            "name": "Create Joke",
+            "schema": {
+                "status": "str",
+                "joke": "str"
+            }
+        },
+        {
+            "name": "praise",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "rate-word",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "generate-nonsense-word",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "search-gifs",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "random-meme",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "search-memes",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "search-jokes",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "random-joke",
+            "schema": {
+                "message": "str"
+            }
+        }
+    ]
+}

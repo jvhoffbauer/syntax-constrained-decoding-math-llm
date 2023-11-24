@@ -1,0 +1,53 @@
+{
+    "api_list": [
+        {
+            "name": "/random/quote",
+            "schema": {
+                "appeared_at": "str",
+                "created_at": "str",
+                "quote_id": "str",
+                "tags": [
+                    "list of str with length 1"
+                ],
+                "value": "str",
+                "_embedded": {
+                    "author": [
+                        {
+                            "name": "str"
+                        }
+                    ],
+                    "source": [
+                        {
+                            "filename": "str",
+                            "url": "str"
+                        }
+                    ]
+                },
+                "_links": {
+                    "self": {
+                        "href": "str"
+                    }
+                }
+            }
+        },
+        {
+            "name": "/tag",
+            "schema": {
+                "count": "int",
+                "total": "int",
+                "_embedded": {
+                    "tag": [
+                        {
+                            "value": "str",
+                            "_links": {
+                                "self": {
+                                    "href": "str"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

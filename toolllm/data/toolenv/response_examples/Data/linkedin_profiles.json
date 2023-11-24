@@ -1,0 +1,48 @@
+{
+    "api_list": [
+        {
+            "name": "/extract",
+            "schema": {
+                "graph": {
+                    "@context": "str",
+                    "@graph": [
+                        {
+                            "@type": "str",
+                            "name": "str",
+                            "author": {
+                                "@type": "str",
+                                "name": "str",
+                                "url": "str"
+                            },
+                            "url": "str"
+                        }
+                    ]
+                },
+                "extractor": {
+                    "image": {
+                        "@type": "str",
+                        "contentUrl": "str"
+                    },
+                    "name": "str",
+                    "url": "str",
+                    "jobTitle": [
+                        "list of str with length 1"
+                    ],
+                    "worksFor": [
+                        {
+                            "@type": "str",
+                            "name": "str",
+                            "url": "str"
+                        }
+                    ],
+                    "knowsLanguage": [
+                        {
+                            "@type": "str",
+                            "name": "str"
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

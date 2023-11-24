@@ -1,0 +1,13 @@
+{
+    "api_list": [
+        {
+            "name": "cheerio",
+            "schema": {
+                "selector": "str",
+                "json": "bool",
+                "markdown": "bool",
+                "data": "empty list"
+            }
+        }
+    ]
+}

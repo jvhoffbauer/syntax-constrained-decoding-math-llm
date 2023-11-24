@@ -1,0 +1,58 @@
+{
+    "api_list": [
+        {
+            "name": "/fish_api/group",
+            "schema": {
+                "name": "str",
+                "url": "str",
+                "img_src_set": {
+                    "1.5x": "str",
+                    "2x": "str"
+                },
+                "meta": {
+                    "conservation_status": "str",
+                    "scientific_classification": {
+                        "kingdom": "str",
+                        "phylum": "str",
+                        "class": "str",
+                        "order": "str",
+                        "family": "str",
+                        "genus": "str",
+                        "species": "str"
+                    },
+                    "binomial_name": "str"
+                }
+            }
+        },
+        {
+            "name": "/fish_api/fishes",
+            "schema": {
+                "id": "int",
+                "name": "str",
+                "url": "str",
+                "img_src_set": {
+                    "1.5x": "str",
+                    "2x": "str"
+                },
+                "meta": {
+                    "binomial_name": "str"
+                }
+            }
+        },
+        {
+            "name": "/fish_api/fish/{name}",
+            "schema": {
+                "name": "str",
+                "url": "str",
+                "img_src_set": {
+                    "1.5x": "str",
+                    "2x": "str"
+                },
+                "meta": {
+                    "species": "str",
+                    "synonyms": "str"
+                }
+            }
+        }
+    ]
+}

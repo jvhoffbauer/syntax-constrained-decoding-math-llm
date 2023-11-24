@@ -1,0 +1,97 @@
+{
+    "api_list": [
+        {
+            "name": "Stores Info",
+            "schema": {
+                "storeID": "str",
+                "storeName": "str",
+                "isActive": "int",
+                "images": {
+                    "banner": "str",
+                    "logo": "str"
+                }
+            }
+        },
+        {
+            "name": "List of Games",
+            "schema": {
+                "gameID": "str",
+                "cheapest": "str",
+                "external": "str",
+                "internalName": "str",
+                "thumb": "str"
+            }
+        },
+        {
+            "name": "List of Deals",
+            "schema": {
+                "internalName": "str",
+                "title": "str",
+                "metacriticLink": "str",
+                "dealID": "str",
+                "storeID": "str",
+                "gameID": "str",
+                "salePrice": "str",
+                "normalPrice": "str",
+                "isOnSale": "str",
+                "savings": "str",
+                "metacriticScore": "str",
+                "steamRatingText": "str",
+                "steamRatingPercent": "str",
+                "steamRatingCount": "str",
+                "steamAppID": "str",
+                "releaseDate": "int",
+                "lastChange": "int",
+                "dealRating": "str",
+                "thumb": "str"
+            }
+        },
+        {
+            "name": "Game Lookup",
+            "schema": {
+                "info": {
+                    "title": "str",
+                    "thumb": "str"
+                },
+                "cheapestPriceEver": {
+                    "price": "str"
+                },
+                "deals": [
+                    {
+                        "storeID": "str",
+                        "price": "str",
+                        "retailPrice": "str",
+                        "savings": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Deal Lookup",
+            "schema": {
+                "gameInfo": {
+                    "name": "str",
+                    "salePrice": "str",
+                    "retailPrice": "str",
+                    "steamRatingText": "str",
+                    "steamRatingPercent": "str",
+                    "steamRatingCount": "str",
+                    "metacriticScore": "str",
+                    "metacriticLink": "str",
+                    "releaseDate": "int",
+                    "publisher": "str"
+                },
+                "cheaperStores": [
+                    {
+                        "salePrice": "str",
+                        "retailPrice": "str"
+                    }
+                ],
+                "cheapestPrice": {
+                    "price": "str",
+                    "date": "int"
+                }
+            }
+        }
+    ]
+}

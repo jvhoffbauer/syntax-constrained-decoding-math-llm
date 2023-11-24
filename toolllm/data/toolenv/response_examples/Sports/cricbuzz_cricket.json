@@ -1,0 +1,728 @@
+{
+    "api_list": [
+        {
+            "name": "matches/get-info",
+            "schema": {
+                "matchInfo": {
+                    "matchId": "str",
+                    "matchFormat": "str",
+                    "matchType": "str",
+                    "complete": "str",
+                    "domestic": "str",
+                    "dayNight": "str",
+                    "year": "str",
+                    "state": "str",
+                    "team1": {
+                        "name": "str",
+                        "shortName": "str"
+                    },
+                    "team2": {
+                        "name": "str",
+                        "shortName": "str"
+                    },
+                    "series": {
+                        "name": "str",
+                        "seriesType": "str",
+                        "startDate": "str"
+                    }
+                }
+            }
+        },
+        {
+            "name": "matches/get-team",
+            "schema": {
+                "players": {
+                    "playing XI": [
+                        {
+                            "id": "int",
+                            "name": "str",
+                            "role": "str",
+                            "battingStyle": "str",
+                            "bowlingStyle": "str",
+                            "teamName": "str"
+                        }
+                    ],
+                    "bench": [
+                        {
+                            "id": "int",
+                            "name": "str",
+                            "role": "str",
+                            "battingStyle": "str",
+                            "bowlingStyle": "str",
+                            "teamName": "str"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "stats/get-records",
+            "schema": {
+                "filter": {
+                    "matchtype": [
+                        {
+                            "matchTypeId": "str",
+                            "matchTypeDesc": "str"
+                        }
+                    ],
+                    "team": [
+                        {
+                            "id": "str",
+                            "teamShortName": "str"
+                        }
+                    ],
+                    "selectedMatchType": "str"
+                },
+                "headers": [
+                    "list of str with length 1"
+                ],
+                "values": [
+                    {
+                        "values": [
+                            "list of str with length 1"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "name": "stats/get-record-filters",
+            "schema": {
+                "statsTypesList": [
+                    {
+                        "types": [
+                            {
+                                "value": "str",
+                                "header": "str"
+                            }
+                        ],
+                        "category": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "news/list-by-category",
+            "schema": {
+                "storyList": [
+                    {
+                        "story": {
+                            "hline": "str",
+                            "intro": "str",
+                            "storyType": "str",
+                            "seoHeadline": "str",
+                            "context": "str",
+                            "coverImage": {
+                                "caption": "str",
+                                "source": "str"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "news/list-by-topic",
+            "schema": {
+                "storyList": [
+                    {
+                        "story": {
+                            "hline": "str",
+                            "intro": "str",
+                            "pubTime": "str",
+                            "source": "str",
+                            "storyType": "str",
+                            "seoHeadline": "str",
+                            "context": "str",
+                            "coverImage": {
+                                "caption": "str",
+                                "source": "str"
+                            },
+                            "planId": "int"
+                        }
+                    }
+                ],
+                "lastUpdatedTime": "str",
+                "topicName": "str"
+            }
+        },
+        {
+            "name": "players/get-career",
+            "schema": {
+                "values": [
+                    {
+                        "name": "str",
+                        "debut": "str",
+                        "lastPlayed": "str"
+                    }
+                ],
+                "appIndex": {
+                    "webURL": "str"
+                }
+            }
+        },
+        {
+            "name": "players/get-news",
+            "schema": {
+                "storyList": [
+                    {
+                        "story": {
+                            "hline": "str",
+                            "intro": "str",
+                            "pubTime": "str",
+                            "source": "str",
+                            "storyType": "str",
+                            "imageId": "int",
+                            "seoHeadline": "str",
+                            "context": "str",
+                            "coverImage": {
+                                "caption": "str",
+                                "source": "str"
+                            }
+                        }
+                    }
+                ],
+                "lastUpdatedTime": "str"
+            }
+        },
+        {
+            "name": "venues/get-stats",
+            "schema": {
+                "venueStats": [
+                    {
+                        "key": "str",
+                        "value": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "venues/get-info",
+            "schema": {
+                "ground": "str",
+                "city": "str",
+                "country": "str",
+                "capacity": "str",
+                "homeTeam": "str",
+                "imageUrl": "str"
+            }
+        },
+        {
+            "name": "teams/get-players",
+            "schema": {
+                "player": [
+                    {
+                        "name": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "teams/get-stats-filters",
+            "schema": {
+                "types": [
+                    {
+                        "header": "str"
+                    }
+                ],
+                "appIndex": {
+                    "seoTitle": "str"
+                }
+            }
+        },
+        {
+            "name": "series/get-matches",
+            "schema": {
+                "matchDetails": [
+                    {
+                        "matchDetailsMap": {
+                            "match": [
+                                {
+                                    "matchInfo": {
+                                        "matchId": "str",
+                                        "seriesId": "str",
+                                        "seriesName": "str",
+                                        "matchDesc": "str",
+                                        "matchFormat": "str",
+                                        "startDate": "str",
+                                        "endDate": "str",
+                                        "state": "str",
+                                        "status": "str",
+                                        "team1": {
+                                            "teamId": "str",
+                                            "teamName": "str",
+                                            "teamSName": "str"
+                                        },
+                                        "team2": {
+                                            "teamId": "str",
+                                            "teamName": "str",
+                                            "teamSName": "str"
+                                        },
+                                        "venueInfo": {
+                                            "ground": "str",
+                                            "city": "str"
+                                        },
+                                        "currBatTeamId": "str",
+                                        "isTimeAnnounced": "str"
+                                    },
+                                    "matchScore": {
+                                        "team1Score": {
+                                            "inngs1": {
+                                                "runs": "str",
+                                                "wickets": "str",
+                                                "overs": "str"
+                                            }
+                                        },
+                                        "team2Score": {
+                                            "inngs1": {
+                                                "runs": "str",
+                                                "wickets": "str",
+                                                "overs": "str",
+                                                "isDeclared": "str"
+                                            },
+                                            "inngs2": {
+                                                "runs": "str",
+                                                "overs": "str"
+                                            }
+                                        }
+                                    }
+                                }
+                            ],
+                            "seriesId": "str"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "series/get-squads",
+            "schema": {
+                "squads": [
+                    {
+                        "squadType": "str",
+                        "isHeader": "bool"
+                    }
+                ],
+                "seriesName": "str",
+                "seriesId": "int"
+            }
+        },
+        {
+            "name": "series/get-points-table",
+            "schema": {
+                "pointsTable": [
+                    {
+                        "groupName": "str",
+                        "pointsTableInfo": [
+                            {
+                                "teamId": "int",
+                                "teamName": "str",
+                                "matchesPlayed": "int",
+                                "matchesWon": "int",
+                                "matchesDrawn": "int",
+                                "noRes": "int",
+                                "points": "int",
+                                "nrr": "str",
+                                "teamFullName": "str",
+                                "form": [
+                                    "list of str with length 1"
+                                ],
+                                "teamImageId": "int"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "name": "series/get-stats-filters",
+            "schema": {
+                "types": [
+                    {
+                        "header": "str"
+                    }
+                ],
+                "appIndex": {
+                    "webURL": "str"
+                }
+            }
+        },
+        {
+            "name": "photos/get-gallery",
+            "schema": {
+                "photoGalleryDetails": [
+                    {
+                        "imageId": "int",
+                        "caption": "str"
+                    }
+                ],
+                "tags": [
+                    {
+                        "itemName": "str",
+                        "itemType": "str",
+                        "itemId": "str"
+                    }
+                ],
+                "headline": "str",
+                "intro": "str",
+                "publishedTime": "str",
+                "state": "str",
+                "photoId": "int"
+            }
+        },
+        {
+            "name": "photos/list",
+            "schema": {
+                "photoGalleryInfoList": [
+                    {
+                        "photoGalleryInfo": {
+                            "headline": "str",
+                            "publishedTime": "str"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "news/get-topics",
+            "schema": {
+                "topics": [
+                    {
+                        "headline": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "news/get-categories",
+            "schema": {
+                "storyType": [
+                    {
+                        "name": "str",
+                        "description": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "news/detail",
+            "schema": {
+                "id": "str",
+                "headline": "str",
+                "publishTime": "str",
+                "coverImage": {
+                    "id": "str",
+                    "caption": "str",
+                    "source": "str"
+                },
+                "content": [
+                    {
+                        "contentType": "str",
+                        "contentValue": "str"
+                    }
+                ],
+                "format": [
+                    {
+                        "type": "str",
+                        "value": [
+                            {
+                                "id": "str",
+                                "value": "str"
+                            }
+                        ]
+                    }
+                ],
+                "authors": [
+                    {
+                        "name": "str"
+                    }
+                ],
+                "tags": [
+                    {
+                        "itemName": "str"
+                    }
+                ],
+                "storyType": "str",
+                "lastUpdatedTime": "str",
+                "intro": "str",
+                "source": "str"
+            }
+        },
+        {
+            "name": "news/list",
+            "schema": {
+                "storyList": [
+                    {
+                        "story": {
+                            "hline": "str",
+                            "intro": "str",
+                            "pubTime": "str",
+                            "source": "str",
+                            "storyType": "str",
+                            "seoHeadline": "str",
+                            "context": "str",
+                            "coverImage": {
+                                "caption": "str",
+                                "source": "str"
+                            }
+                        }
+                    }
+                ],
+                "lastUpdatedTime": "str"
+            }
+        },
+        {
+            "name": "players/get-bowling",
+            "schema": {
+                "headers": [
+                    "list of str with length 1"
+                ],
+                "values": [
+                    {
+                        "values": [
+                            "list of str with length 1"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "name": "players/get-batting",
+            "schema": {
+                "headers": [
+                    "list of str with length 1"
+                ],
+                "values": [
+                    {
+                        "values": [
+                            "list of str with length 1"
+                        ]
+                    }
+                ],
+                "appIndex": {
+                    "webURL": "str"
+                }
+            }
+        },
+        {
+            "name": "players/get-info",
+            "schema": {
+                "id": "str",
+                "name": "str",
+                "nickName": "str",
+                "role": "str",
+                "intlTeam": "str",
+                "teams": "str",
+                "DoB": "str",
+                "image": "str",
+                "bio": "str",
+                "appIndex": {
+                    "seoTitle": "str",
+                    "webURL": "str"
+                },
+                "DoBFormat": "str",
+                "faceImageId": "str"
+            }
+        },
+        {
+            "name": "players/search",
+            "schema": {
+                "player": [
+                    {
+                        "name": "str",
+                        "teamName": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "teams/get-stats",
+            "schema": {
+                "filter": {
+                    "matchtype": [
+                        {
+                            "matchTypeDesc": "str"
+                        }
+                    ],
+                    "team": [
+                        {
+                            "teamShortName": "str"
+                        }
+                    ],
+                    "selectedMatchType": "str",
+                    "selectedTeam": "str"
+                },
+                "headers": [
+                    "list of str with length 1"
+                ],
+                "values": [
+                    {
+                        "values": [
+                            "list of str with length 1"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "name": "teams/get-news",
+            "schema": {
+                "storyList": [
+                    {
+                        "story": {
+                            "hline": "str",
+                            "intro": "str",
+                            "pubTime": "str",
+                            "source": "str",
+                            "storyType": "str",
+                            "seoHeadline": "str",
+                            "context": "str",
+                            "coverImage": {
+                                "caption": "str",
+                                "source": "str"
+                            }
+                        }
+                    }
+                ],
+                "lastUpdatedTime": "str"
+            }
+        },
+        {
+            "name": "teams/list",
+            "schema": {
+                "list": [
+                    {
+                        "teamName": "str"
+                    }
+                ],
+                "appIndex": {
+                    "webURL": "str"
+                }
+            }
+        },
+        {
+            "name": "series/get-stats",
+            "schema": {
+                "testStatsList": {
+                    "headers": [
+                        "list of str with length 1"
+                    ],
+                    "values": [
+                        {
+                            "values": [
+                                "list of str with length 1"
+                            ]
+                        }
+                    ]
+                },
+                "appIndex": {
+                    "webURL": "str"
+                }
+            }
+        },
+        {
+            "name": "series/get-venues",
+            "schema": {
+                "seriesVenue": [
+                    {
+                        "ground": "str",
+                        "city": "str",
+                        "country": "str"
+                    }
+                ],
+                "seriesId": "int",
+                "seriesName": "str"
+            }
+        },
+        {
+            "name": "series/get-players",
+            "schema": {
+                "player": [
+                    {
+                        "name": "str",
+                        "isHeader": "bool"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "series/get-news",
+            "schema": {
+                "storyList": [
+                    {
+                        "story": {
+                            "id": "int",
+                            "hline": "str",
+                            "intro": "str",
+                            "pubTime": "str",
+                            "source": "str",
+                            "storyType": "str",
+                            "seoHeadline": "str",
+                            "context": "str",
+                            "coverImage": {
+                                "id": "str",
+                                "caption": "str",
+                                "source": "str"
+                            }
+                        }
+                    }
+                ],
+                "lastUpdatedTime": "str"
+            }
+        },
+        {
+            "name": "series/list",
+            "schema": {
+                "seriesMapProto": [
+                    {
+                        "date": "str",
+                        "series": [
+                            {
+                                "id": "int",
+                                "name": "str",
+                                "startDt": "str",
+                                "endDt": "str"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "name": "matches/get-leanback",
+            "schema": {
+                "miniscore": {
+                    "batsmanStriker": {
+                        "batName": "str",
+                        "batRuns": "str",
+                        "batStrikeRate": "str"
+                    },
+                    "batsmanNonStriker": {
+                        "batName": "str",
+                        "batRuns": "str",
+                        "batStrikeRate": "str"
+                    },
+                    "batTeam": {
+                        "teamScore": "str",
+                        "teamWkts": "str"
+                    },
+                    "bowlerStriker": {
+                        "bowlName": "str",
+                        "bowlWkts": "str",
+                        "bowlEcon": "str"
+                    },
+                    "bowlerNonStriker": {
+                        "bowlName": "str",
+                        "bowlWkts": "str",
+                        "bowlEcon": "str"
+                    },
+                    "overs": "str",
+                    "target": "str",
+                    "partnerShip": {
+                        "runs": "str"
+                    }
+                }
+            }
+        }
+    ]
+}

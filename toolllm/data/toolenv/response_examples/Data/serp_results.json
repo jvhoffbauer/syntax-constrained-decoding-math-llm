@@ -1,0 +1,32 @@
+{
+    "api_list": [
+        {
+            "name": "SERP",
+            "schema": {
+                "search_term": "str",
+                "knowledge_panel": {
+                    "name": "str",
+                    "description": {
+                        "url": "str"
+                    },
+                    "image": {
+                        "url": "str"
+                    },
+                    "info": [
+                        {
+                            "title": "str"
+                        }
+                    ]
+                },
+                "results": [
+                    {
+                        "position": "str",
+                        "url": "str",
+                        "title": "str",
+                        "description": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

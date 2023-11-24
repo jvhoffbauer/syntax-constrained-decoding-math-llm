@@ -1,0 +1,99 @@
+{
+    "api_list": [
+        {
+            "name": "domain detail",
+            "schema": {
+                "basicInfo": {
+                    "projectNo": "str",
+                    "projectName": "str",
+                    "year": "str",
+                    "languageCode": "str",
+                    "name": "str",
+                    "type": "str",
+                    "startDate": "str",
+                    "endDate": "str",
+                    "url": "str",
+                    "tag": "str",
+                    "themeBlockName": "str",
+                    "organizers": [
+                        {
+                            "name": "str",
+                            "email": "str"
+                        }
+                    ]
+                },
+                "activity": {
+                    "type": "str"
+                },
+                "news": {
+                    "type": "str"
+                },
+                "themeList": [
+                    {
+                        "name": "str",
+                        "description": "str",
+                        "attendNum": "str",
+                        "updateTime": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "domain type",
+            "schema": {
+                "data": [
+                    {
+                        "codeName": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "status list",
+            "schema": {
+                "data": [
+                    {
+                        "codeName": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "theme detail",
+            "schema": {
+                "dtid": "int",
+                "name": "str",
+                "description": "str",
+                "pictureId": "int",
+                "imgUrl": "str",
+                "companyList": [
+                    {
+                        "companyId": "int",
+                        "name": "str",
+                        "country": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "industry list",
+            "schema": {
+                "data": [
+                    {
+                        "codeName": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "language list",
+            "schema": {
+                "data": [
+                    {
+                        "codeName": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

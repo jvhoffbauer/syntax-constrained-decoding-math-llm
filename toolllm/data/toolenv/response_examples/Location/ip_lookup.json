@@ -1,0 +1,21 @@
+{
+    "api_list": [
+        {
+            "name": "IPLookup",
+            "schema": {
+                "ip": "str",
+                "hostname": "str",
+                "city": "str",
+                "region": "str",
+                "country": "str",
+                "loc": "str",
+                "org": "str",
+                "postal": "str",
+                "timezone": "str",
+                "country_name": "str",
+                "latitude": "str",
+                "longitude": "str"
+            }
+        }
+    ]
+}

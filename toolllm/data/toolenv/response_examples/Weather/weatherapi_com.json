@@ -1,0 +1,140 @@
+{
+    "api_list": [
+        {
+            "name": "Realtime Weather API",
+            "schema": {
+                "location": {
+                    "name": "str",
+                    "region": "str",
+                    "country": "str",
+                    "lat": "float",
+                    "lon": "float",
+                    "tz_id": "str"
+                },
+                "current": {
+                    "temp_c": "float",
+                    "temp_f": "float",
+                    "condition": {
+                        "text": "str",
+                        "icon": "str"
+                    },
+                    "wind_mph": "float",
+                    "wind_dir": "str",
+                    "pressure_mb": "float",
+                    "precip_mm": "float",
+                    "humidity": "int",
+                    "cloud": "int",
+                    "vis_km": "float",
+                    "uv": "float",
+                    "gust_mph": "float"
+                }
+            }
+        },
+        {
+            "name": "Forecast Weather API",
+            "schema": {
+                "location": {
+                    "name": "str",
+                    "region": "str",
+                    "country": "str",
+                    "lat": "str",
+                    "lon": "str",
+                    "tz_id": "str",
+                    "localtime": "str"
+                },
+                "current": {
+                    "last_updated": "str",
+                    "temp_c": "str",
+                    "temp_f": "str",
+                    "condition": {
+                        "text": "str",
+                        "icon": "str"
+                    },
+                    "wind_mph": "str",
+                    "wind_kph": "str",
+                    "wind_dir": "str",
+                    "pressure_mb": "str",
+                    "pressure_in": "str",
+                    "precip_mm": "str",
+                    "precip_in": "str",
+                    "humidity": "str",
+                    "cloud": "str",
+                    "vis_km": "str",
+                    "vis_miles": "str"
+                },
+                "forecast": {
+                    "forecastday": [
+                        {
+                            "date": "str",
+                            "day": {
+                                "maxtemp_c": "str",
+                                "maxtemp_f": "str",
+                                "mintemp_c": "str",
+                                "mintemp_f": "str",
+                                "avgtemp_c": "str",
+                                "avgtemp_f": "str",
+                                "maxwind_mph": "str",
+                                "maxwind_kph": "str",
+                                "totalprecip_mm": "str",
+                                "totalprecip_in": "str"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Sports API",
+            "schema": {
+                "football": [
+                    {
+                        "stadium": "str",
+                        "tournament": "str",
+                        "start": "str",
+                        "match": "str"
+                    }
+                ],
+                "cricket": [
+                    {
+                        "stadium": "str",
+                        "tournament": "str",
+                        "start": "str",
+                        "match": "str"
+                    }
+                ],
+                "golf": [
+                    {
+                        "stadium": "str",
+                        "tournament": "str",
+                        "start": "str",
+                        "match": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Astronomy API",
+            "schema": {
+                "location": {
+                    "name": "str",
+                    "region": "str",
+                    "country": "str",
+                    "lat": "float",
+                    "lon": "float",
+                    "tz_id": "str",
+                    "localtime": "str"
+                },
+                "astronomy": {
+                    "astro": {
+                        "sunrise": "str",
+                        "sunset": "str",
+                        "moonrise": "str",
+                        "moonset": "str",
+                        "moon_phase": "str",
+                        "moon_illumination": "str"
+                    }
+                }
+            }
+        }
+    ]
+}

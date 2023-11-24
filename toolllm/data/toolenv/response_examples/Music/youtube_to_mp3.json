@@ -1,0 +1,21 @@
+{
+    "api_list": [
+        {
+            "name": "titleUsingGET",
+            "schema": {
+                "filename": "str",
+                "title": "str",
+                "startAt": "str",
+                "endAt": "str"
+            }
+        },
+        {
+            "name": "statusUsingGET",
+            "schema": {
+                "code": "str",
+                "title": "str",
+                "type": "str"
+            }
+        }
+    ]
+}

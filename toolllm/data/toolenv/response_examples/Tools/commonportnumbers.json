@@ -1,0 +1,13 @@
+{
+    "api_list": [
+        {
+            "name": "commonports",
+            "schema": {
+                "ServiceName": "str",
+                "PortNumber": "str",
+                "TransportProtocol": "str",
+                "Description": "str"
+            }
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "api_list": [
+        {
+            "name": "Entities Search",
+            "schema": {
+                "errors": [
+                    {
+                        "code": "str",
+                        "subCode": "str",
+                        "message": "str",
+                        "parameter": "str",
+                        "value": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

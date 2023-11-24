@@ -1,0 +1,37 @@
+{
+    "api_list": [
+        {
+            "name": "HTML Search",
+            "schema": {
+                "response": {
+                    "request_error": "bool",
+                    "error_code": "int",
+                    "error_message": "str",
+                    "time_taken": "float"
+                },
+                "search": {
+                    "df": "str",
+                    "q": "str",
+                    "kl": "str"
+                }
+            }
+        },
+        {
+            "name": "HTML Search with Icons",
+            "schema": {
+                "response": {
+                    "request_id": "str",
+                    "request_error": "bool",
+                    "error_code": "int",
+                    "error_message": "str",
+                    "time_taken": "float",
+                    "requested_at": "str"
+                },
+                "search": {
+                    "q": "str"
+                },
+                "results": "str"
+            }
+        }
+    ]
+}

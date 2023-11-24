@@ -1,0 +1,23 @@
+{
+    "api_list": [
+        {
+            "name": "Keyword Research",
+            "schema": {
+                "exact_keyword": [
+                    {
+                        "keyword": "str",
+                        "monthlysearch": "int",
+                        "difficulty": "str"
+                    }
+                ],
+                "related_keywords": [
+                    {
+                        "keyword": "str",
+                        "monthlysearch": "int",
+                        "difficulty": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

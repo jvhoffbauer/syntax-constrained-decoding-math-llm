@@ -1,0 +1,27 @@
+{
+    "api_list": [
+        {
+            "name": "getBarcode",
+            "schema": {
+                "Count": "int",
+                "Items": [
+                    {
+                        "barcode": {
+                            "S": "str"
+                        },
+                        "price_history": {
+                            "S": "str"
+                        },
+                        "product_name": {
+                            "S": "str"
+                        },
+                        "store_name": {
+                            "S": "str"
+                        }
+                    }
+                ],
+                "ScannedCount": "int"
+            }
+        }
+    ]
+}

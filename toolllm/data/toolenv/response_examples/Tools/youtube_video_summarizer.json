@@ -1,0 +1,12 @@
+{
+    "api_list": [
+        {
+            "name": "/v1/youtube/summarizeVideoFromCache",
+            "schema": {
+                "summary": "str",
+                "videoTitle": "str",
+                "videoAuthor": "str"
+            }
+        }
+    ]
+}

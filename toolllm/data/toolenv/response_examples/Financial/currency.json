@@ -1,0 +1,13 @@
+{
+    "api_list": [
+        {
+            "name": "Converter",
+            "schema": {
+                "codeFrom": "str",
+                "codeTo": "str",
+                "value": "float",
+                "date": "str"
+            }
+        }
+    ]
+}

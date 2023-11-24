@@ -1,0 +1,10 @@
+{
+    "api_list": [
+        {
+            "name": "Retrieve Response",
+            "schema": {
+                "messages": "str"
+            }
+        }
+    ]
+}

@@ -1,0 +1,34 @@
+{
+    "api_list": [
+        {
+            "name": "Description of Machine Learning Model parameters",
+            "schema": {
+                "Title": "str",
+                "Target attribute": {
+                    "StatusOppt": [
+                        "list of str with length 1"
+                    ]
+                },
+                "Descriptors": {
+                    "Budget": [
+                        "list of str with length 1"
+                    ],
+                    "ClientStatus": [
+                        "list of str with length 1"
+                    ],
+                    "Competition": [
+                        "list of str with length 1"
+                    ],
+                    "PositiveStmt": [
+                        "list of str with length 1"
+                    ],
+                    "UpSale": [
+                        "list of str with length 1"
+                    ]
+                },
+                "AUC": "str",
+                "CA": "str"
+            }
+        }
+    ]
+}

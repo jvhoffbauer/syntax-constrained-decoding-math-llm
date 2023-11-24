@@ -1,0 +1,62 @@
+{
+    "api_list": [
+        {
+            "name": "Team statistics",
+            "schema": {
+                "Team": "str",
+                "Total number of played matches": "float",
+                "Liverpool won the match": "float",
+                "Liverpool lost the match": "float",
+                "The match ended with draw result": "float"
+            }
+        },
+        {
+            "name": "Football season statistics",
+            "schema": {
+                "Season": "str",
+                "Total number of played matches": "float",
+                "0-0": "float",
+                "1-0": "float",
+                "2-0": "float",
+                "3-0": "float",
+                "4-0": "float",
+                "5-0": "float",
+                "6-0": "float",
+                "7-0": "float",
+                "0-1": "float",
+                "1-1": "float",
+                "2-1": "float",
+                "3-1": "float",
+                "4-1": "float",
+                "5-1": "float",
+                "0-2": "float",
+                "1-2": "float",
+                "2-2": "float",
+                "3-2": "float",
+                "4-2": "float",
+                "0-3": "float",
+                "1-3": "float",
+                "2-3": "float",
+                "3-3": "float",
+                "6-3": "float",
+                "0-4": "float",
+                "1-4": "float",
+                "2-4": "float",
+                "0-5": "float",
+                "1-5": "float",
+                "2-5": "float",
+                "0-6": "float"
+            }
+        },
+        {
+            "name": "Head to head statistics",
+            "schema": {
+                "H2H": "str",
+                "Total number of played matches": "float",
+                "Man United won the match": "float",
+                "Liverpool won the match": "float",
+                "The match ended with draw result": "float"
+            }
+        }
+    ]
+}

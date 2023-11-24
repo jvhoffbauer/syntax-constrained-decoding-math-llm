@@ -1,0 +1,34 @@
+{
+    "api_list": [
+        {
+            "name": "Get details of a news item",
+            "schema": {
+                "title": "str",
+                "author": "str",
+                "date": "str",
+                "intro": "str",
+                "img": "str"
+            }
+        },
+        {
+            "name": "Get anime news list",
+            "schema": {
+                "article": {
+                    "title": "str",
+                    "category": "str",
+                    "topic": "str",
+                    "date": "str",
+                    "thumbnail": "str",
+                    "url": "str",
+                    "id": "str",
+                    "api_url": "str"
+                },
+                "details_api": {
+                    "id": "str",
+                    "title": "str",
+                    "date": "str"
+                }
+            }
+        }
+    ]
+}

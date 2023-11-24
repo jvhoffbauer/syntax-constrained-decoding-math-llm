@@ -1,0 +1,42 @@
+{
+    "api_list": [
+        {
+            "name": "Trending and Top Charts",
+            "schema": {
+                "data": {
+                    "collection": [
+                        {
+                            "score": "str",
+                            "track": {
+                                "artwork_url": "str",
+                                "comment_count": "str",
+                                "created_at": "str",
+                                "description": "str",
+                                "display_date": "str",
+                                "download_count": "str",
+                                "duration": "str",
+                                "embeddable_by": "str",
+                                "full_duration": "str",
+                                "genre": "str",
+                                "id": "str",
+                                "kind": "str",
+                                "likes_count": "str",
+                                "monetization_model": "str",
+                                "permalink": "str",
+                                "permalink_url": "str",
+                                "playback_count": "str",
+                                "public": "str",
+                                "publisher_metadata": {
+                                    "artist": "str",
+                                    "explicit": "str",
+                                    "id": "str"
+                                },
+                                "release_date": "str"
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

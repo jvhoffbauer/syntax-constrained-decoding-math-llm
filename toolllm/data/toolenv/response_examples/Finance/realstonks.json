@@ -1,0 +1,12 @@
+{
+    "api_list": [
+        {
+            "name": "Stock Information",
+            "schema": {
+                "price": "float",
+                "change_percentage": "float",
+                "total_vol": "str"
+            }
+        }
+    ]
+}

@@ -1,0 +1,35 @@
+{
+    "api_list": [
+        {
+            "name": "Autocomplete Cities",
+            "schema": {
+                "StatusCode": "int",
+                "Result": [
+                    "list of str with length 1"
+                ],
+                "IsError": "bool"
+            }
+        },
+        {
+            "name": "Autocomplete Localities",
+            "schema": {
+                "StatusCode": "int",
+                "Result": [
+                    "list of str with length 1"
+                ],
+                "IsError": "bool"
+            }
+        },
+        {
+            "name": "Autocomplete PinCodes",
+            "schema": {
+                "Id": "str",
+                "StatusCode": "int",
+                "Result": [
+                    "list of str with length 1"
+                ],
+                "IsError": "bool"
+            }
+        }
+    ]
+}

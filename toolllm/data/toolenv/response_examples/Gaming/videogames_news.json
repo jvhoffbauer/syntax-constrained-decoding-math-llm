@@ -1,0 +1,28 @@
+{
+    "api_list": [
+        {
+            "name": "videogames_news_search",
+            "schema": {
+                "detail": [
+                    {
+                        "loc": [
+                            "list of str with length 1"
+                        ],
+                        "msg": "str",
+                        "type": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "videogames_news_recent_get",
+            "schema": {
+                "title": "str",
+                "date": "str",
+                "description": "str",
+                "image": "str",
+                "link": "str"
+            }
+        }
+    ]
+}

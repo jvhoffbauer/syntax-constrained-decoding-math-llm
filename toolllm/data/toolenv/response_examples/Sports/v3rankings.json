@@ -1,0 +1,22 @@
+{
+    "api_list": [
+        {
+            "name": "Basketballv3",
+            "schema": {
+                "data": [
+                    {
+                        "attributes": {
+                            "name": "str",
+                            "picture": {
+                                "large": "str"
+                            },
+                            "rating": "int",
+                            "sport": "str"
+                        },
+                        "id": "int"
+                    }
+                ]
+            }
+        }
+    ]
+}

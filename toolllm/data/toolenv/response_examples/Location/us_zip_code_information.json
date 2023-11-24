@@ -1,0 +1,22 @@
+{
+    "api_list": [
+        {
+            "name": "Get ZIP Info",
+            "schema": {
+                "ZipCode": "str",
+                "City": "str",
+                "State": "str",
+                "County": "str",
+                "AreaCode": "str",
+                "Latitude": "str",
+                "Longitude": "str",
+                "TimeZone": "str",
+                "PrimaryRecord": "str",
+                "CityMixedCase": "str",
+                "StateANSI": "str",
+                "CountyANSI": "str",
+                "CityDeliveryIndicator": "str"
+            }
+        }
+    ]
+}

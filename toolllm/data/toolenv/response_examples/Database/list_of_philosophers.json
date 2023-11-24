@@ -1,0 +1,38 @@
+{
+    "api_list": [
+        {
+            "name": "Random Philosopher",
+            "schema": {
+                "data": {
+                    "count": "str",
+                    "next": "str",
+                    "previous": "str",
+                    "results": [
+                        {
+                            "Name": "str",
+                            "Life": "str",
+                            "About": "str",
+                            "Philosophy_type": "str",
+                            "Born": "str"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Search Philosopher By Name",
+            "schema": {
+                "results": [
+                    {
+                        "Name": "str",
+                        "Life": "str",
+                        "About": "str",
+                        "Image_url": "str",
+                        "Philosophy_type": "str",
+                        "Born": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

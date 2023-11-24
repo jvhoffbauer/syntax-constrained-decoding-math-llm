@@ -1,0 +1,14 @@
+{
+    "api_list": [
+        {
+            "name": "Weather",
+            "schema": {
+                "weather_id": "str",
+                "date": "str",
+                "temperature": "str",
+                "humidity": "str",
+                "air": "str"
+            }
+        }
+    ]
+}

@@ -1,0 +1,15 @@
+{
+    "api_list": [
+        {
+            "name": "Parse",
+            "schema": {
+                "number": "str",
+                "street": "str",
+                "street_type": "str",
+                "city": "str",
+                "state": "str",
+                "postal_code": "str"
+            }
+        }
+    ]
+}

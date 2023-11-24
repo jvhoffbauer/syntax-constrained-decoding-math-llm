@@ -1,0 +1,16 @@
+{
+    "api_list": [
+        {
+            "name": "Extract Download Links",
+            "schema": {
+                "status": "str",
+                "data": [
+                    {
+                        "thumbnail_url": "str",
+                        "download_url": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

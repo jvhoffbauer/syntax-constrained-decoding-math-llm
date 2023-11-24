@@ -1,0 +1,70 @@
+{
+    "api_list": [
+        {
+            "name": "Group breed data by property",
+            "schema": {
+                "id": "str",
+                "breed": "str",
+                "origin": "str",
+                "url": "str",
+                "img": "str",
+                "meta": {
+                    "height": "str",
+                    "weight": "str",
+                    "coat": "str",
+                    "life_span": "str",
+                    "other_names": "str",
+                    "common_nicknames": "str",
+                    "colour": "str",
+                    "litter_size": "str",
+                    "breed_status": "str"
+                }
+            }
+        },
+        {
+            "name": "Get Breed Information",
+            "schema": {
+                "id": "int",
+                "breed": "str",
+                "origin": "str",
+                "url": "str",
+                "img": "str",
+                "meta": {
+                    "height": {
+                        "dogs": "str",
+                        "bitches": "str"
+                    },
+                    "weight": "str",
+                    "coat": "str",
+                    "life_span": "str",
+                    "other_names": "str",
+                    "common_nicknames": "str"
+                }
+            }
+        },
+        {
+            "name": "Get All Dog Breeds",
+            "schema": {
+                "id": "str",
+                "breed": "str",
+                "origin": "str",
+                "url": "str",
+                "img": "str",
+                "meta": {
+                    "height": {
+                        "dogs": "str",
+                        "bitches": "str"
+                    },
+                    "weight": {
+                        "dogs": "str",
+                        "bitches": "str"
+                    },
+                    "coat": "str",
+                    "life_span": "str",
+                    "colour": "str",
+                    "breed_status": "str"
+                }
+            }
+        }
+    ]
+}

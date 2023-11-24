@@ -1,0 +1,154 @@
+{
+    "api_list": [
+        {
+            "name": "Continuation User's Media",
+            "schema": {
+                "detail": [
+                    {
+                        "loc": "empty list",
+                        "msg": "str",
+                        "type": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "User's Media",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "User's Tweets",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Available Locations  (Beta)",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get trends near a location (Beta)",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Geo Search  (Beta)",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Tweet User Retweets Continuation",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Tweet User Retweets",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Lists Tweets Continuation",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Lists Tweets",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Lists Details",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Tweet Details",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Search",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "User Details",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Tweet User Favoriters",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Tweet User Favoriters Continuation",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Tweet Replies",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "User's Followers",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get User's Username",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Continuation User's Likes",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "User's Likes",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Hashtag",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Hashtag Continuation",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "User's Following",
+            "schema": {
+                "message": "str"
+            }
+        }
+    ]
+}

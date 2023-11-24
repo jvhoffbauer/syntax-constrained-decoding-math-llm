@@ -1,0 +1,93 @@
+{
+    "api_list": [
+        {
+            "name": "Highlights",
+            "schema": {
+                "messages": "str"
+            }
+        },
+        {
+            "name": "Info",
+            "schema": {
+                "has_anonymous_profile_picture": "str",
+                "follower_count": "str",
+                "media_count": "str",
+                "following_count": "str",
+                "page_name": "str",
+                "fan_club_info": {
+                    "fan_club_id": "str",
+                    "subscriber_count": "str"
+                },
+                "fbid_v2": "str",
+                "is_whatsapp_linked": "str"
+            }
+        },
+        {
+            "name": "Search",
+            "schema": {
+                "statusCode": "int",
+                "message": "str"
+            }
+        },
+        {
+            "name": "Publications",
+            "schema": {
+                "statusCode": "int",
+                "message": "str"
+            }
+        },
+        {
+            "name": "Stories",
+            "schema": {
+                "reel": {
+                    "id": "str",
+                    "latest_reel_media": "str",
+                    "expiring_at": "str",
+                    "seen": "str",
+                    "can_reply": "str",
+                    "can_gif_quick_reply": "str",
+                    "can_reshare": "str",
+                    "can_react_with_avatar": "str",
+                    "reel_type": "str",
+                    "user": {
+                        "pk": "str",
+                        "username": "str",
+                        "full_name": "str",
+                        "is_private": "str",
+                        "is_verified": "str",
+                        "friendship_status": {
+                            "following": "str",
+                            "followed_by": "str",
+                            "blocking": "str",
+                            "muting": "str",
+                            "is_private": "str"
+                        },
+                        "profile_pic_url": "str"
+                    },
+                    "items": [
+                        {
+                            "taken_at": "str",
+                            "pk": "str",
+                            "id": "str",
+                            "media_type": "str"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "IGTV",
+            "schema": {
+                "statusCode": "int",
+                "message": "str"
+            }
+        },
+        {
+            "name": "Highlight Items",
+            "schema": {
+                "statusCode": "int",
+                "message": "str"
+            }
+        }
+    ]
+}

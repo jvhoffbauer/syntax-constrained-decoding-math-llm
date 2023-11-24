@@ -1,0 +1,12 @@
+{
+    "api_list": [
+        {
+            "name": "API EndPoint",
+            "schema": {
+                "status_code": "int",
+                "has_error": "bool",
+                "message": "str"
+            }
+        }
+    ]
+}

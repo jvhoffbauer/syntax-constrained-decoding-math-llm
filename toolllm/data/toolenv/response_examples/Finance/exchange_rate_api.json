@@ -1,0 +1,100 @@
+{
+    "api_list": [
+        {
+            "name": "Latest rates",
+            "schema": {
+                "code": "str",
+                "msg": "str",
+                "base": "str",
+                "rates": {
+                    "USD": "str",
+                    "AED": "str",
+                    "ALL": "str",
+                    "AMD": "str",
+                    "ANG": "str",
+                    "AOA": "str",
+                    "ARS": "str",
+                    "AUD": "str",
+                    "AZN": "str",
+                    "BAM": "str",
+                    "BBD": "str",
+                    "BDT": "str",
+                    "BGN": "str",
+                    "BHD": "str",
+                    "BIF": "str",
+                    "BMD": "str",
+                    "BND": "str",
+                    "BOB": "str",
+                    "BRL": "str",
+                    "BSD": "str",
+                    "BWP": "str",
+                    "BYN": "str",
+                    "BZD": "str",
+                    "CAD": "str",
+                    "CHF": "str",
+                    "CLP": "str",
+                    "CNY": "str",
+                    "COP": "str",
+                    "CRC": "str",
+                    "CUP": "str",
+                    "CVE": "str",
+                    "CZK": "str",
+                    "DJF": "str",
+                    "DKK": "str",
+                    "DOP": "str",
+                    "DZD": "str",
+                    "EGP": "str",
+                    "ETB": "str",
+                    "EUR": "str",
+                    "FJD": "str",
+                    "GBP": "str",
+                    "GEL": "str",
+                    "GHS": "str",
+                    "GMD": "str",
+                    "GNF": "str",
+                    "GTQ": "str",
+                    "HKD": "str",
+                    "HNL": "str",
+                    "HRK": "str",
+                    "HTG": "str",
+                    "HUF": "str",
+                    "IDR": "str",
+                    "ILS": "str",
+                    "INR": "str",
+                    "IQD": "str",
+                    "IRR": "str",
+                    "ISK": "str",
+                    "JMD": "str",
+                    "JOD": "str",
+                    "JPY": "str"
+                }
+            }
+        },
+        {
+            "name": "Supported Codes",
+            "schema": {
+                "supported_codes": [
+                    {
+                        "code": "str",
+                        "name": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Convert currency",
+            "schema": {
+                "code": "str",
+                "msg": "str",
+                "convert_result": {
+                    "base": "str",
+                    "target": "str",
+                    "rate": "float"
+                },
+                "time_update": {
+                    "time_utc": "str"
+                }
+            }
+        }
+    ]
+}

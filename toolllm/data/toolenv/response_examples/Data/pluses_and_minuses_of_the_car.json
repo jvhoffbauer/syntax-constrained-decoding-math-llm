@@ -1,0 +1,26 @@
+{
+    "api_list": [
+        {
+            "name": "Pluses and minuses of the car",
+            "schema": {
+                "pros": [
+                    "list of str with length 1"
+                ],
+                "cons": [
+                    "list of str with length 1"
+                ],
+                "totalRating": "str",
+                "fiveStars": "str",
+                "fourStars": "str",
+                "individualRatings": {
+                    "comfort": "str",
+                    "performance": "str",
+                    "quality": "str",
+                    "reliability": "str",
+                    "styling": "str",
+                    "value": "str"
+                }
+            }
+        }
+    ]
+}

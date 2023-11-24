@@ -1,0 +1,18 @@
+{
+    "api_list": [
+        {
+            "name": "Get All Country List",
+            "schema": {
+                "country": [
+                    {
+                        "iso": "str",
+                        "countryname": "str",
+                        "iso3": "str",
+                        "numcode": "str",
+                        "phonecode": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

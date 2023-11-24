@@ -1,0 +1,26 @@
+{
+    "api_list": [
+        {
+            "name": "Income By Zipcode",
+            "schema": {
+                "income_data": {
+                    "Households": "int",
+                    "Income100kTo150k": "int",
+                    "Income150kTo200k": "int",
+                    "Income25kTo50k": "int",
+                    "Income50kTo75k": "int",
+                    "Income75kTo100k": "int",
+                    "IncomeAbove200k": "int",
+                    "IncomeLessThan25k": "int",
+                    "MeanIncome": "int",
+                    "MedianHouseholdIncome": "int",
+                    "PerCapitaIncome": "int",
+                    "PercentIncomeOver200K": "float",
+                    "State": "str",
+                    "Zipcode": "str"
+                },
+                "zipcode": "str"
+            }
+        }
+    ]
+}

@@ -1,0 +1,75 @@
+{
+    "api_list": [
+        {
+            "name": "Current Weather/ {lat}/{lon}",
+            "schema": {
+                "coord": {
+                    "lon": "float",
+                    "lat": "float"
+                },
+                "weather": [
+                    {
+                        "id": "int",
+                        "main": "str",
+                        "description": "str"
+                    }
+                ],
+                "main": {
+                    "temp": "float",
+                    "feels_like": "float",
+                    "temp_min": "float",
+                    "temp_max": "float",
+                    "pressure": "int",
+                    "humidity": "int"
+                },
+                "wind": {
+                    "speed": "float",
+                    "deg": "int",
+                    "gust": "float"
+                },
+                "clouds": {
+                    "all": "int"
+                },
+                "timezone": "int",
+                "id": "int",
+                "name": "str"
+            }
+        },
+        {
+            "name": "Current Weather/ {cityName}",
+            "schema": {
+                "coord": {
+                    "lon": "float",
+                    "lat": "float"
+                },
+                "weather": [
+                    {
+                        "id": "int",
+                        "main": "str",
+                        "description": "str",
+                        "icon": "str"
+                    }
+                ],
+                "main": {
+                    "temp": "float",
+                    "feels_like": "float",
+                    "temp_min": "float",
+                    "temp_max": "float",
+                    "pressure": "int",
+                    "humidity": "int"
+                },
+                "wind": {
+                    "speed": "float",
+                    "deg": "int",
+                    "gust": "float"
+                },
+                "clouds": {
+                    "all": "int"
+                },
+                "timezone": "int",
+                "id": "int",
+                "name": "str"
+            }
+        }
+    ]
+}

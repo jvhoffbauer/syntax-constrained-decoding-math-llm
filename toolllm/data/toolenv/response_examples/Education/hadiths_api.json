@@ -1,0 +1,125 @@
+{
+    "api_list": [
+        {
+            "name": "Get categories by collection",
+            "schema": {
+                "message": "str",
+                "total": "int",
+                "collections": [
+                    "list of str with length 1"
+                ],
+                "categories": [
+                    {
+                        "Chapter_Number": "int",
+                        "Chapter_English": "str",
+                        "Collection": "str",
+                        "Hadith_Total": "int"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Get category by id",
+            "schema": {
+                "_id": "str",
+                "Chapter_Number": "int",
+                "Chapter_English": "str",
+                "Collection": "str",
+                "Hadith_Total": "int"
+            }
+        },
+        {
+            "name": "Get all collections",
+            "schema": {
+                "message": "str",
+                "total": "int",
+                "collections": [
+                    {
+                        "Collection": "str",
+                        "Volume": "int",
+                        "Hadith_Total": "int",
+                        "Categories": "int",
+                        "Book": "str",
+                        "Author": "str",
+                        "Publisher": "str",
+                        "DownloadLink": "str",
+                        "Description": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Get hadiths by collection",
+            "schema": {
+                "message": "str",
+                "total": "str",
+                "page": "str",
+                "limit": "str",
+                "collections": [
+                    "list of str with length 1"
+                ],
+                "hadiths": [
+                    {
+                        "_id": "str",
+                        "Chapter_Number": "str",
+                        "Chapter_English": "str",
+                        "Section_Number": "str",
+                        "Hadith_number": "str",
+                        "English_Hadith": "str",
+                        "English_Isnad": "str",
+                        "English_Matn": "str",
+                        "English_Grade": "str",
+                        "Volume": "str",
+                        "Collection": "str",
+                        "Status": "str",
+                        "createdAt": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Search for hadiths in collection with key words",
+            "schema": {
+                "message": "str",
+                "total": "str",
+                "page": "str",
+                "limit": "str",
+                "collections": [
+                    "list of str with length 1"
+                ],
+                "hadiths": [
+                    {
+                        "_id": "str",
+                        "Chapter_English": "str",
+                        "Section_English": "str",
+                        "English_Hadith": "str",
+                        "English_Grade": "str",
+                        "Arabic_Grade": "str",
+                        "Volume": "str",
+                        "Collection": "str",
+                        "Status": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Get hadith by id",
+            "schema": {
+                "message": "str",
+                "hadith": {
+                    "_id": "str",
+                    "Chapter_Number": "str",
+                    "Section_Number": "str",
+                    "Hadith_number": "str",
+                    "English_Hadith": "str",
+                    "Arabic_Hadith": "str",
+                    "English_Grade": "str",
+                    "Arabic_Grade": "str",
+                    "Volume": "str",
+                    "Collection": "str",
+                    "Status": "str"
+                }
+            }
+        }
+    ]
+}

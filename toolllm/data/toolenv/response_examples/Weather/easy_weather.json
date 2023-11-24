@@ -1,0 +1,96 @@
+{
+    "api_list": [
+        {
+            "name": "Daily forecast (5 days)",
+            "schema": {
+                "resource": "str",
+                "parameters": {
+                    "latitude": "str",
+                    "longitude": "str"
+                },
+                "forecastDaily": {
+                    "reportedTime": "str",
+                    "readTime": "str",
+                    "days": [
+                        {
+                            "forecastStart": "str",
+                            "forecastEnd": "str",
+                            "conditionCode": "str",
+                            "temperatureMax": "str",
+                            "temperatureMin": "str",
+                            "precipitationChance": "str",
+                            "daytimeForecast": {
+                                "cloudCover": "str",
+                                "conditionCode": "str",
+                                "humidity": "str",
+                                "precipitationChance": "str",
+                                "windDirection": "str",
+                                "windSpeed": "str"
+                            },
+                            "overnightForecast": {
+                                "cloudCover": "str",
+                                "conditionCode": "str",
+                                "humidity": "str",
+                                "precipitationChance": "str",
+                                "windDirection": "str",
+                                "windSpeed": "str"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Hourly forecast (48 hours)",
+            "schema": {
+                "resource": "str",
+                "parameters": {
+                    "latitude": "str",
+                    "longitude": "str"
+                },
+                "forecastHourly": {
+                    "reportedTime": "str",
+                    "readTime": "str",
+                    "hours": [
+                        {
+                            "forecastStart": "str",
+                            "conditionCode": "str",
+                            "cloudCover": "float",
+                            "uvIndex": "int",
+                            "humidity": "float",
+                            "pressure": "float",
+                            "snowfallAmount": "float",
+                            "visibility": "float",
+                            "windSpeed": "float",
+                            "precipitationChance": "float",
+                            "precipitationType": "str",
+                            "precipitationAmount": "float",
+                            "temperature": "float",
+                            "temperatureApparent": "float",
+                            "daylight": "bool"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Current conditions (basic)",
+            "schema": {
+                "resource": "str",
+                "parameters": {
+                    "latitude": "str",
+                    "longitude": "str"
+                },
+                "currentWeather": {
+                    "reportedTime": "str",
+                    "temperature": "float",
+                    "conditionCode": "str",
+                    "cloudCover": "float",
+                    "pressure": "float",
+                    "humidity": "float",
+                    "daylight": "bool"
+                }
+            }
+        }
+    ]
+}

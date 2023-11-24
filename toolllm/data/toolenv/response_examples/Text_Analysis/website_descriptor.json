@@ -1,0 +1,13 @@
+{
+    "api_list": [
+        {
+            "name": "Describe URL",
+            "schema": {
+                "location": "str",
+                "title": "str",
+                "description": "str",
+                "image": "str"
+            }
+        }
+    ]
+}

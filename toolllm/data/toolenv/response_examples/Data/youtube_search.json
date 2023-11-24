@@ -1,0 +1,176 @@
+{
+    "api_list": [
+        {
+            "name": "Channel Details",
+            "schema": {
+                "avatar": [
+                    {
+                        "url": "str"
+                    }
+                ],
+                "banner": [
+                    {
+                        "url": "str"
+                    }
+                ],
+                "channel_id": "str",
+                "country": "str",
+                "creation_date": "str",
+                "description": "str",
+                "links": [
+                    {
+                        "endpoint": "str",
+                        "name": "str"
+                    }
+                ],
+                "subscriber_count": "str",
+                "title": "str",
+                "verified": "bool",
+                "view_count": "str"
+            }
+        },
+        {
+            "name": "Channel Search",
+            "schema": {
+                "channel_id": "str",
+                "country": "str",
+                "query": "str",
+                "videos": [
+                    {
+                        "description": "str",
+                        "number_of_views": "str",
+                        "published_time": "str",
+                        "thumbnails": [
+                            {
+                                "url": "str"
+                            }
+                        ],
+                        "title": "str",
+                        "video_id": "str",
+                        "video_length": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Channel Videos",
+            "schema": {
+                "channel_id": "str",
+                "continuation_token": "str",
+                "number_of_videos": "int",
+                "status": {
+                    "status": "str"
+                },
+                "videos": [
+                    {
+                        "channel_id": "str",
+                        "number_of_views": "str",
+                        "published_time": "str",
+                        "thumbnails": [
+                            {
+                                "url": "str"
+                            }
+                        ],
+                        "title": "str",
+                        "video_id": "str",
+                        "video_length": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Video Comments",
+            "schema": {
+                "comments": [
+                    {
+                        "author_name": "str",
+                        "like_count": "str",
+                        "published_time": "str",
+                        "text": "str"
+                    }
+                ],
+                "number_of_comments": "str",
+                "status": {
+                    "message": "str",
+                    "status": "str"
+                }
+            }
+        },
+        {
+            "name": "Video Details",
+            "schema": {
+                "author": "str",
+                "category": "str",
+                "channel_id": "str",
+                "description": "str",
+                "is_live_content": "str",
+                "number_of_views": "str",
+                "published_time": "str",
+                "status": {
+                    "status": "str"
+                },
+                "title": "str",
+                "video_id": "str",
+                "video_length": "str"
+            }
+        },
+        {
+            "name": "Video Subtitles",
+            "schema": {
+                "is_available": "bool",
+                "lang": "str",
+                "subtitles": [
+                    {
+                        "duration": "float",
+                        "start": "float",
+                        "text": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Video Recommendation Continuation",
+            "schema": {
+                "status": {
+                    "status": "str"
+                },
+                "videos": "str"
+            }
+        },
+        {
+            "name": "Video Recommendation",
+            "schema": {
+                "status": {
+                    "status": "str"
+                },
+                "number_of_videos": "int"
+            }
+        },
+        {
+            "name": "Youtube Search",
+            "schema": {
+                "country": "str",
+                "lang": "str",
+                "number_of_videos": "str",
+                "query": "str",
+                "status": {
+                    "status": "str"
+                },
+                "timezone": "str",
+                "token": "str",
+                "videos": [
+                    {
+                        "channel_id": "str",
+                        "description": "str",
+                        "number_of_views": "str",
+                        "published_time": "str",
+                        "title": "str",
+                        "type": "str",
+                        "video_id": "str",
+                        "video_length": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

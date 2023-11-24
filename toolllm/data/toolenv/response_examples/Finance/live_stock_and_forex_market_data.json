@@ -1,0 +1,15 @@
+{
+    "api_list": [
+        {
+            "name": "Get individual stock or forex technical data",
+            "schema": {
+                "res": [
+                    {
+                        "oscillator": "empty list",
+                        "ma": "empty list"
+                    }
+                ]
+            }
+        }
+    ]
+}

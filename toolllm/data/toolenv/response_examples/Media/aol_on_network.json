@@ -1,0 +1,11 @@
+{
+    "api_list": [
+        {
+            "name": "Single/Multiple Video",
+            "schema": {
+                "status": "str",
+                "exception": "str"
+            }
+        }
+    ]
+}

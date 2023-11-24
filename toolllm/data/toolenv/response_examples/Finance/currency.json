@@ -1,0 +1,28 @@
+{
+    "api_list": [
+        {
+            "name": "All Latest Rates",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Latest Rate",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Convert",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "List of Currencies",
+            "schema": {
+                "message": "str"
+            }
+        }
+    ]
+}

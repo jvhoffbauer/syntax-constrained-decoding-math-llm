@@ -1,0 +1,61 @@
+{
+    "api_list": [
+        {
+            "name": "Get from eztv",
+            "schema": {
+                "Name": "str",
+                "ReleasedDate": "str",
+                "Genre": "str",
+                "Rating": "str",
+                "Likes": "str",
+                "Runtime": "str",
+                "Language": "str",
+                "Url": "str",
+                "Poster": "str",
+                "Files": [
+                    {
+                        "Quality": "str",
+                        "Type": "str",
+                        "Torrent": "str",
+                        "Magnet": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Get from yts",
+            "schema": {
+                "Name": "str",
+                "ReleasedDate": "str",
+                "Genre": "str",
+                "Rating": "str",
+                "Likes": "str",
+                "Runtime": "str",
+                "Language": "str",
+                "Url": "str",
+                "Poster": "str",
+                "Files": [
+                    {
+                        "Quality": "str",
+                        "Type": "str",
+                        "Torrent": "str",
+                        "Magnet": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Get from 1337.x",
+            "schema": {
+                "Name": "str",
+                "Magnet": "str",
+                "Poster": "str",
+                "Category": "str",
+                "Type": "str",
+                "Language": "str",
+                "Size": "str",
+                "Url": "str"
+            }
+        }
+    ]
+}

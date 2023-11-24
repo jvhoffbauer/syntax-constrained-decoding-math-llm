@@ -1,0 +1,14 @@
+{
+    "api_list": [
+        {
+            "name": "Remove a Meal Plan",
+            "schema": {
+                "errors": [
+                    {
+                        "message": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

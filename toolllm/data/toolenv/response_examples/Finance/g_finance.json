@@ -1,0 +1,115 @@
+{
+    "api_list": [
+        {
+            "name": "market-trends",
+            "schema": {
+                "title": "str",
+                "items": [
+                    {
+                        "info": {
+                            "type": "str",
+                            "title": "str",
+                            "ticker": "str",
+                            "country_code": "str"
+                        },
+                        "price": {
+                            "currency": "str",
+                            "last": {
+                                "value": "float",
+                                "today_change": "float",
+                                "today_change_percent": "float"
+                            },
+                            "after_hours": {
+                                "value": "float",
+                                "change": "float",
+                                "change_percent": "float"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "ticker",
+            "schema": {
+                "info": {
+                    "title": "str",
+                    "ticker": "str",
+                    "ticker_symbols": [
+                        "list of str with length 1"
+                    ],
+                    "country_code": "str"
+                },
+                "price": {
+                    "currency": "str",
+                    "previous_close": "str",
+                    "last": {
+                        "value": "str",
+                        "today_change": "str",
+                        "today_change_percent": "str",
+                        "time": "str"
+                    },
+                    "after_market_closing": {
+                        "value": "str",
+                        "change": "str",
+                        "change_percent": "str"
+                    }
+                },
+                "charts": {
+                    "1day": [
+                        {
+                            "date": "str",
+                            "price": "str"
+                        }
+                    ],
+                    "1month": [
+                        {
+                            "date": "str",
+                            "price": "str"
+                        }
+                    ]
+                },
+                "news": [
+                    {
+                        "url": "str",
+                        "title": "str",
+                        "published_time": "str",
+                        "source": {
+                            "name": "str"
+                        }
+                    }
+                ],
+                "stats": {
+                    "currency": "str",
+                    "day_range": "str",
+                    "year_range": "str",
+                    "market_cap": "str",
+                    "pe_ratio": "str"
+                }
+            }
+        },
+        {
+            "name": "search",
+            "schema": {
+                "info": {
+                    "title": "str",
+                    "ticker": "str",
+                    "country_code": "str"
+                },
+                "price": {
+                    "currency": "str",
+                    "last": {
+                        "value": "float",
+                        "today_change": "float",
+                        "today_change_percent": "float"
+                    },
+                    "after_hours": {
+                        "value": "float",
+                        "change": "float",
+                        "change_percent": "float"
+                    }
+                }
+            }
+        }
+    ]
+}

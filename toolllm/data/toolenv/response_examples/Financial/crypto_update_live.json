@@ -1,0 +1,50 @@
+{
+    "api_list": [
+        {
+            "name": "GET top 50 cryptocurrencies details",
+            "schema": {
+                "Top 50 Cryptocurrency Details": [
+                    {
+                        "Symbol": "str",
+                        "Rank": "str",
+                        "Price": "str",
+                        "High/Low 24hr": {
+                            "High": "str",
+                            "Low": "str"
+                        },
+                        "Volume 24hr": "str",
+                        "Market Cap": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "GET latest news on Cryptocurrency",
+            "schema": {
+                "Title": "str",
+                "URL": "str"
+            }
+        },
+        {
+            "name": "GET Top gainers losers list",
+            "schema": {
+                "Top Gainers": [
+                    {
+                        "Coin": "str",
+                        "Rise 24hr": "str",
+                        "Price": "str",
+                        "Symbol": "str"
+                    }
+                ],
+                "Top Losers": [
+                    {
+                        "Coin": "str",
+                        "Price": "str",
+                        "Drop 24hr": "str",
+                        "Symbol": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

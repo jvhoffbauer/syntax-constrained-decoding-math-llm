@@ -1,0 +1,14 @@
+{
+    "api_list": [
+        {
+            "name": "Search",
+            "schema": {
+                "errors": [
+                    {
+                        "num": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

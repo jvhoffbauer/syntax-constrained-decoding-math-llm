@@ -1,0 +1,47 @@
+{
+    "api_list": [
+        {
+            "name": "News Sentiment Data",
+            "schema": {
+                "date": "str",
+                "title": "str",
+                "link": "str",
+                "compound": "float"
+            }
+        },
+        {
+            "name": "Most Negative News",
+            "schema": {
+                "rank": "int",
+                "date": "str",
+                "title": "str",
+                "link": "str",
+                "compound": "float"
+            }
+        },
+        {
+            "name": "Most Positive News",
+            "schema": {
+                "rank": "int",
+                "date": "str",
+                "title": "str",
+                "compound": "float"
+            }
+        },
+        {
+            "name": "Market Data",
+            "schema": {
+                "daily_metrics": [
+                    {
+                        "date": "str",
+                        "open": "float",
+                        "high": "float",
+                        "low": "float",
+                        "close": "float",
+                        "volume": "float"
+                    }
+                ]
+            }
+        }
+    ]
+}

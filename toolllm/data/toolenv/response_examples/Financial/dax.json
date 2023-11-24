@@ -1,0 +1,18 @@
+{
+    "api_list": [
+        {
+            "name": "DAX point changes for each month (January-August, 2022)",
+            "schema": {
+                "data": {
+                    "April": "str",
+                    "February": "str",
+                    "January": "str",
+                    "July": "str",
+                    "June": "str",
+                    "March": "str",
+                    "May": "str"
+                }
+            }
+        }
+    ]
+}

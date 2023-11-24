@@ -1,0 +1,39 @@
+{
+    "api_list": [
+        {
+            "name": "Competitions",
+            "schema": {
+                "success": "bool",
+                "bill": {
+                    "charge": "int"
+                },
+                "result": [
+                    {
+                        "name": "str",
+                        "id": "str",
+                        "year": "int",
+                        "stages": [
+                            {
+                                "name": "str",
+                                "id": "str",
+                                "mode": "str"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Countries",
+            "schema": {
+                "success": "bool",
+                "result": [
+                    {
+                        "name": "str",
+                        "id": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

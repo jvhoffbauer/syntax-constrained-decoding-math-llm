@@ -1,0 +1,13 @@
+{
+    "api_list": [
+        {
+            "name": "Get All Vegan Recipes",
+            "schema": {
+                "invalidHeaders": [
+                    "list of str with length 1"
+                ],
+                "invalidQueryParams": {}
+            }
+        }
+    ]
+}

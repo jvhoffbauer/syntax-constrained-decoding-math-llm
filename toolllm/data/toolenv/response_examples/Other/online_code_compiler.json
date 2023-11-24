@@ -1,0 +1,14 @@
+{
+    "api_list": [
+        {
+            "name": "Languages & Versions",
+            "schema": {
+                "id": "str",
+                "name": "str",
+                "versions": [
+                    "list of str with length 1"
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "api_list": [
+        {
+            "name": "Lookup .pk domain",
+            "schema": {
+                "valid": "bool",
+                "domain": "str",
+                "registered": "bool",
+                "created": "str",
+                "expiry": "str"
+            }
+        }
+    ]
+}

@@ -1,0 +1,12 @@
+{
+    "api_list": [
+        {
+            "name": "Get Asin",
+            "schema": {
+                "status": "int",
+                "status_message": "str",
+                "data": "str"
+            }
+        }
+    ]
+}

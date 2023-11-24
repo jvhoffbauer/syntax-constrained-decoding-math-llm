@@ -1,0 +1,21 @@
+{
+    "api_list": [
+        {
+            "name": "get currency by name",
+            "schema": {
+                "messages": "str"
+            }
+        },
+        {
+            "name": "GIT ALL WORLD  CURRENCIES PRICES",
+            "schema": {
+                "result": [
+                    {
+                        "name": "str",
+                        "price": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,20 @@
+{
+    "api_list": [
+        {
+            "name": "Get All Currencies",
+            "schema": {
+                "success": "bool",
+                "data": [
+                    {
+                        "code": "str",
+                        "coin": "str",
+                        "network": "str",
+                        "name": "str",
+                        "canSend": "int",
+                        "canReceive": "int"
+                    }
+                ]
+            }
+        }
+    ]
+}

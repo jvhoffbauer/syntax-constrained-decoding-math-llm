@@ -1,0 +1,608 @@
+{
+    "api_list": [
+        {
+            "name": "New Zealand Songs",
+            "schema": {
+                "notice": "str"
+            }
+        },
+        {
+            "name": "BILLBOARD JAPAN HOT 100",
+            "schema": {
+                "info": {
+                    "category": "str",
+                    "chart": "str",
+                    "date": "str",
+                    "source": "str"
+                },
+                "content": {
+                    "1": {
+                        "rank": "str",
+                        "title": "str",
+                        "artist": "str",
+                        "award": "str",
+                        "last week": "str",
+                        "peak position": "str",
+                        "weeks on chart": "str"
+                    },
+                    "2": {
+                        "rank": "str",
+                        "title": "str",
+                        "artist": "str",
+                        "award": "str",
+                        "last week": "str",
+                        "peak position": "str",
+                        "weeks on chart": "str"
+                    },
+                    "3": {
+                        "rank": "str",
+                        "title": "str",
+                        "artist": "str",
+                        "award": "str",
+                        "last week": "str",
+                        "peak position": "str",
+                        "weeks on chart": "str"
+                    },
+                    "4": {
+                        "rank": "str",
+                        "title": "str",
+                        "artist": "str",
+                        "award": "str",
+                        "last week": "str",
+                        "peak position": "str",
+                        "weeks on chart": "str"
+                    },
+                    "5": {
+                        "rank": "str",
+                        "title": "str",
+                        "artist": "str",
+                        "award": "str",
+                        "last week": "str",
+                        "peak position": "str",
+                        "weeks on chart": "str"
+                    },
+                    "6": {
+                        "rank": "str",
+                        "title": "str",
+                        "artist": "str",
+                        "award": "str",
+                        "last week": "str",
+                        "peak": "str"
+                    }
+                }
+            }
+        },
+        {
+            "name": "U.K. Songs",
+            "schema": {
+                "notice": "str"
+            }
+        },
+        {
+            "name": "Turkey Songs",
+            "schema": {
+                "notice": "str"
+            }
+        },
+        {
+            "name": "Taiwan Songs",
+            "schema": {
+                "notice": "str"
+            }
+        },
+        {
+            "name": "Switzerland Songs",
+            "schema": {
+                "notice": "str"
+            }
+        },
+        {
+            "name": "Sweden Songs",
+            "schema": {
+                "notice": "str"
+            }
+        },
+        {
+            "name": "Spain Songs",
+            "schema": {
+                "notice": "str"
+            }
+        },
+        {
+            "name": "South Korea Songs",
+            "schema": {
+                "notice": "str"
+            }
+        },
+        {
+            "name": "South Africa Songs",
+            "schema": {
+                "notice": "str"
+            }
+        },
+        {
+            "name": "Slovakia Songs",
+            "schema": {
+                "notice": "str"
+            }
+        },
+        {
+            "name": "Singapore Songs",
+            "schema": {
+                "notice": "str"
+            }
+        },
+        {
+            "name": "Romania Songs",
+            "schema": {
+                "notice": "str"
+            }
+        },
+        {
+            "name": "Portugal Songs",
+            "schema": {
+                "notice": "str"
+            }
+        },
+        {
+            "name": "Poland Songs",
+            "schema": {
+                "notice": "str"
+            }
+        },
+        {
+            "name": "Philippines Songs",
+            "schema": {
+                "notice": "str"
+            }
+        },
+        {
+            "name": "Peru Songs",
+            "schema": {
+                "notice": "str"
+            }
+        },
+        {
+            "name": "Norway Songs",
+            "schema": {
+                "notice": "str"
+            }
+        },
+        {
+            "name": "Netherlands Songs",
+            "schema": {
+                "notice": "str"
+            }
+        },
+        {
+            "name": "Mexico Songs",
+            "schema": {
+                "notice": "str"
+            }
+        },
+        {
+            "name": "Malaysia Songs",
+            "schema": {
+                "notice": "str"
+            }
+        },
+        {
+            "name": "Luxembourg Songs",
+            "schema": {
+                "notice": "str"
+            }
+        },
+        {
+            "name": "Ireland Songs",
+            "schema": {
+                "notice": "str"
+            }
+        },
+        {
+            "name": "Indonesia Songs",
+            "schema": {
+                "notice": "str"
+            }
+        },
+        {
+            "name": "India Songs",
+            "schema": {
+                "notice": "str"
+            }
+        },
+        {
+            "name": "Iceland Songs",
+            "schema": {
+                "notice": "str"
+            }
+        },
+        {
+            "name": "Hungary Songs",
+            "schema": {
+                "notice": "str"
+            }
+        },
+        {
+            "name": "Hong Kong Songs",
+            "schema": {
+                "notice": "str"
+            }
+        },
+        {
+            "name": "Greece Songs",
+            "schema": {
+                "notice": "str"
+            }
+        },
+        {
+            "name": "Germany Songs",
+            "schema": {}
+        },
+        {
+            "name": "France Songs",
+            "schema": {
+                "notice": "str"
+            }
+        },
+        {
+            "name": "Finland Songs",
+            "schema": {
+                "notice": "str"
+            }
+        },
+        {
+            "name": "Ecuador Songs",
+            "schema": {
+                "notice": "str"
+            }
+        },
+        {
+            "name": "Denmark Songs",
+            "schema": {
+                "notice": "str"
+            }
+        },
+        {
+            "name": "Czech Republic Songs",
+            "schema": {
+                "notice": "str"
+            }
+        },
+        {
+            "name": "Croatia Songs",
+            "schema": {
+                "notice": "str"
+            }
+        },
+        {
+            "name": "Colombia Songs",
+            "schema": {
+                "notice": "str"
+            }
+        },
+        {
+            "name": "Chile Songs",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Brazil Songs",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Bolivia Songs",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Belgium Songs",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Austria Songs",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Australia Songs",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Adult Alternative Songs",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Top R&B/Hip-Hop Artists",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Hot Latin Songs Artists",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Songs of the Summer",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Hot 100 Women Artists",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Mainstream Rock Artists",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Mainstream Rock Songs",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Adult Alternative Artists",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Alternative Artists",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Alternative Songs",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Top R&B/Hip-Hop Albums",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Hot R&B/Hip-Hop Songs",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Top Dance Club Artists",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Hot Latin Songs",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Latin Artists",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Top Country Artists",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Top Country Albums",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Hot Country Songs",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Adult Pop Songs Artists",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Adult Pop Songs",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Pop Songs Artists",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Pop Songs",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Top Holiday Albums",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Holiday 100 Songs",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Songs of the '90s",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Songs of the '80s",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Billboard 200 Albums by Women",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Hot 100 Songs by Women",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Billboard 200 Artists",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Billboard 200 Albums (Greatest of All Time)",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Hot 100 Artists",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Hot 100 Songs (Greatest of All Time)",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Artists",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "HOT TRENDING SONGS POWERED BY TWITTER",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "BILLBOARD U.S. AFROBEATS SONGS",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "ARTIST 100",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "HOT 100",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Top Artists - Male",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Top Artists - Female",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Billboard 200 Albums",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Top Labels",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Top New Artists",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Top Artists - Duo/Group",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Billboard Global 200 (YEAR-END)",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Top Artists",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Hot 100 Songs",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "BILLBOARD GLOBAL 200",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "BILLBOARD 200",
+            "schema": {
+                "message": "str"
+            }
+        }
+    ]
+}

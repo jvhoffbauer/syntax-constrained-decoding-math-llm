@@ -1,0 +1,31 @@
+{
+    "api_list": [
+        {
+            "name": "products",
+            "schema": {
+                "total_products": "str",
+                "total_pages": "str",
+                "result_per_page": "str",
+                "data": [
+                    {
+                        "ID": "str",
+                        "Title": "str",
+                        "City_Name": "str",
+                        "Category": "str",
+                        "Item_Link": "str",
+                        "Num_Saves": "str",
+                        "No_Of_Sales": "str",
+                        "Discounted_Price": "str",
+                        "Original_Price": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "cities",
+            "schema": {
+                "message": "str"
+            }
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "api_list": [
+        {
+            "name": "Get coin price difference",
+            "schema": {
+                "direction": "int",
+                "binancePrice": "str",
+                "priceKucoin": "str",
+                "Difference": "str",
+                "Percentage": "str"
+            }
+        }
+    ]
+}

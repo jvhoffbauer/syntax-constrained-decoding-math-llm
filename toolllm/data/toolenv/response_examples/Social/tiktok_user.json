@@ -1,0 +1,65 @@
+{
+    "api_list": [
+        {
+            "name": "GET Search User",
+            "schema": {
+                "status": "str",
+                "data": {
+                    "type": "str",
+                    "user_list": [
+                        {
+                            "user_info": {
+                                "uid": "str",
+                                "nickname": "str",
+                                "signature": "str",
+                                "avatar_thumb": {
+                                    "uri": "str",
+                                    "url_list": [
+                                        "list of str with length 1"
+                                    ],
+                                    "width": "str",
+                                    "height": "str"
+                                },
+                                "follow_status": "str",
+                                "follower_count": "str",
+                                "custom_verify": "str",
+                                "unique_id": "str",
+                                "room_id": "str",
+                                "sec_uid": "str"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "GET User",
+            "schema": {
+                "data": {
+                    "owner": {
+                        "user_info": {
+                            "uid": "str",
+                            "nickname": "str",
+                            "signature": "str",
+                            "avatar_thumb": {
+                                "uri": "str",
+                                "url_list": [
+                                    "list of str with length 1"
+                                ],
+                                "width": "str",
+                                "height": "str"
+                            },
+                            "follow_status": "str",
+                            "follower_count": "str",
+                            "custom_verify": "str",
+                            "unique_id": "str",
+                            "room_id": "str",
+                            "enterprise_verify_reason": "str",
+                            "sec_uid": "str"
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

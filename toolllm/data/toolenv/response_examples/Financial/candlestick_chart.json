@@ -1,0 +1,10 @@
+{
+    "api_list": [
+        {
+            "name": "Binance charts",
+            "schema": {
+                "chartImage": "str"
+            }
+        }
+    ]
+}

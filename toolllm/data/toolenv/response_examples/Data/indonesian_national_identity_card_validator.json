@@ -1,0 +1,19 @@
+{
+    "api_list": [
+        {
+            "name": "data",
+            "schema": {
+                "id": "str",
+                "valid": "bool",
+                "data": {
+                    "day": "int",
+                    "month": "str",
+                    "year": "int",
+                    "gender": "str",
+                    "city": "str",
+                    "province": "str"
+                }
+            }
+        }
+    ]
+}

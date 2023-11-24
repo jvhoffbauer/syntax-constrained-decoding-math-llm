@@ -1,0 +1,52 @@
+{
+    "api_list": [
+        {
+            "name": "Get top 100 county lists by demographic category",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get detailed data for all U.S. counties",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get basic county data for all U.S. counties",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get basic data for all counties in a single state",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get state data for a single state",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get all states data",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get metadata",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get detailed data for all counties for a single state",
+            "schema": {
+                "message": "str"
+            }
+        }
+    ]
+}

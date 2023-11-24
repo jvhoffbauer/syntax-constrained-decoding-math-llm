@@ -1,0 +1,49 @@
+{
+    "api_list": [
+        {
+            "name": "accountInfo",
+            "schema": {
+                "full_name": "str",
+                "id": "str",
+                "username": "str",
+                "responseStatus": "str",
+                "responseMessage": "str"
+            }
+        },
+        {
+            "name": "replies",
+            "schema": {
+                "data": {
+                    "comment": {
+                        "id": "str",
+                        "edge_threaded_comments": {
+                            "page_info": {
+                                "end_cursor": "str"
+                            },
+                            "edges": [
+                                {
+                                    "node": {
+                                        "id": "str",
+                                        "text": "str",
+                                        "created_at": "str",
+                                        "owner": {
+                                            "id": "str",
+                                            "username": "str"
+                                        },
+                                        "viewer_has_liked": "str",
+                                        "edge_liked_by": {
+                                            "count": "str"
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                },
+                "status": "str",
+                "responseStatus": "str",
+                "responseMessage": "str"
+            }
+        }
+    ]
+}

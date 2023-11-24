@@ -1,0 +1,11 @@
+{
+    "api_list": [
+        {
+            "name": "Create QR Code",
+            "schema": {
+                "status": "str",
+                "data": "str"
+            }
+        }
+    ]
+}

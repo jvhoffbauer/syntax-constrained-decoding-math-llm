@@ -1,0 +1,62 @@
+{
+    "api_list": [
+        {
+            "name": "Blocks",
+            "schema": {
+                "block_id": "str",
+                "block_group": "str",
+                "light_emission": "int",
+                "burn_chance": "int",
+                "flammable": "bool",
+                "hardness": "int",
+                "blast_resistance": "int",
+                "friction": "float",
+                "speed_factor": "int",
+                "jump_factor": "int",
+                "rarity": "str",
+                "tool_required": "bool"
+            }
+        },
+        {
+            "name": "Items",
+            "schema": {
+                "item_id": "str",
+                "item_group": "str",
+                "stack_size": "int",
+                "fire_resistant": "bool",
+                "rarity": "str",
+                "is_food": "bool",
+                "is_damageable": "bool",
+                "is_enchantable": "bool",
+                "durability": "int"
+            }
+        },
+        {
+            "name": "Tags",
+            "schema": {
+                "name": "str",
+                "father_tag": "str"
+            }
+        },
+        {
+            "name": "Total Count",
+            "schema": {
+                "items_count": "int",
+                "blocks_count": "int",
+                "advancements_count": "int",
+                "tags_count": "int",
+                "recipes_count": "int"
+            }
+        },
+        {
+            "name": "Advancements",
+            "schema": {
+                "advancement_id": "str",
+                "title": "str",
+                "frame": "str",
+                "icon": "str",
+                "parent_advancement": "str"
+            }
+        }
+    ]
+}

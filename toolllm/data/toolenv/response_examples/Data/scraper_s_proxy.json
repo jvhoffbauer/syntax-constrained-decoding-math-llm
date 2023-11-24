@@ -1,0 +1,48 @@
+{
+    "api_list": [
+        {
+            "name": "Tor GET",
+            "schema": {
+                "errors": [
+                    {
+                        "property": "str",
+                        "message": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "JavaScript Rendered Page GET",
+            "schema": {
+                "errors": [
+                    {
+                        "property": "str",
+                        "message": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Standard GET",
+            "schema": {
+                "errors": [
+                    {
+                        "message": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Parser GET",
+            "schema": {
+                "alert": "str",
+                "title": "str",
+                "content": "str",
+                "canonical": "NoneType",
+                "links": [
+                    "list of str with length 1"
+                ]
+            }
+        }
+    ]
+}

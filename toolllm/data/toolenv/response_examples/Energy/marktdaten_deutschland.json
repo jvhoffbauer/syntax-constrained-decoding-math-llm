@@ -1,0 +1,19 @@
+{
+    "api_list": [
+        {
+            "name": "marketdata",
+            "schema": {
+                "data": [
+                    {
+                        "start_timestamp": "int",
+                        "end_timestamp": "int",
+                        "marketprice": "float",
+                        "unit": "str",
+                        "localprice": "float",
+                        "localcell": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,15 @@
+{
+    "api_list": [
+        {
+            "name": "Search a Place",
+            "schema": {
+                "bars": {
+                    "maxDay": "float",
+                    "currValue": "float",
+                    "currtAvg": "float"
+                },
+                "ts": "str"
+            }
+        }
+    ]
+}

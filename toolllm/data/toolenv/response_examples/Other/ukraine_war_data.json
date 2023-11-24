@@ -1,0 +1,15 @@
+{
+    "api_list": [
+        {
+            "name": "Refugee by country",
+            "schema": {
+                "country": "str",
+                "date": "str",
+                "individuals": "str",
+                "centroid_lon": "str",
+                "centroid_lat": "str",
+                "source": "str"
+            }
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "api_list": [
+        {
+            "name": "Get data safety attributes by app ID",
+            "schema": {
+                "results": {
+                    "sharedData": "empty list",
+                    "collectedData": "empty list",
+                    "securityPractices": "empty list"
+                }
+            }
+        }
+    ]
+}

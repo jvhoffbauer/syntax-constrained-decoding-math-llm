@@ -1,0 +1,10 @@
+{
+    "api_list": [
+        {
+            "name": "get_response",
+            "schema": {
+                "C'\u00e9tait excellent": "str"
+            }
+        }
+    ]
+}

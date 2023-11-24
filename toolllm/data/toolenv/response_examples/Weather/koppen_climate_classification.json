@@ -1,0 +1,14 @@
+{
+    "api_list": [
+        {
+            "name": "Classification",
+            "schema": {
+                "location": {
+                    "latitude": "str",
+                    "longitude": "str"
+                },
+                "classification": "str"
+            }
+        }
+    ]
+}

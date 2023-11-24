@@ -1,0 +1,25 @@
+{
+    "api_list": [
+        {
+            "name": "Restaurants",
+            "schema": {
+                "id": "str",
+                "restaurantname": "str",
+                "location": "str",
+                "operatinghrs": [
+                    {
+                        "day": "str",
+                        "time": "str"
+                    }
+                ],
+                "contact": "str",
+                "deliveryoption": "str",
+                "dine": "str",
+                "takeaway": "str",
+                "rating": "str",
+                "price": "str",
+                "main_image": "str"
+            }
+        }
+    ]
+}

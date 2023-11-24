@@ -1,0 +1,13 @@
+{
+    "api_list": [
+        {
+            "name": "Rating",
+            "schema": {
+                "id": "int",
+                "name": "str",
+                "img": "str",
+                "score": "str"
+            }
+        }
+    ]
+}

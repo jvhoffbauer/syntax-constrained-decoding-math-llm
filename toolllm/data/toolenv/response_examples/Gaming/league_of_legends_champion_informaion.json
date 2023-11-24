@@ -1,0 +1,35 @@
+{
+    "api_list": [
+        {
+            "name": "Get Champions",
+            "schema": {
+                "champions": [
+                    {
+                        "name": "str",
+                        "p": {
+                            "name": "str"
+                        },
+                        "q": {
+                            "name": "str"
+                        },
+                        "w": {
+                            "name": "str"
+                        },
+                        "e": {
+                            "name": "str"
+                        },
+                        "r": {
+                            "name": "str"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Get Champion Abilities as Text",
+            "schema": {
+                "responseText": "str"
+            }
+        }
+    ]
+}

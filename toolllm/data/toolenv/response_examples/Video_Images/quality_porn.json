@@ -1,0 +1,117 @@
+{
+    "api_list": [
+        {
+            "name": "Pornstar search",
+            "schema": {
+                "data": [
+                    {
+                        "name": "str",
+                        "key": "str",
+                        "url": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Pornstar by name",
+            "schema": {
+                "data": {
+                    "name": "str",
+                    "rating": {
+                        "value": "str",
+                        "votes": "str"
+                    },
+                    "profileImgLink": "str",
+                    "profileImgBase64": {
+                        "name": "str",
+                        "type": "str",
+                        "base64": "str"
+                    },
+                    "galleryImagesLinks": [
+                        "list of str with length 1"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Docs",
+            "schema": {
+                "docs": [
+                    {
+                        "title": "str",
+                        "description": "str",
+                        "route": "str",
+                        "method": "str",
+                        "example": [
+                            {
+                                "url": "str",
+                                "description": "str"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Supported sites",
+            "schema": {
+                "data": [
+                    {
+                        "name": "str",
+                        "url": "str",
+                        "supportedQualities": [
+                            "list of str with length 1"
+                        ],
+                        "supportedFilter": [
+                            "list of str with length 1"
+                        ],
+                        "supportedAdditionalParameter": [
+                            "list of str with length 1"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Video search",
+            "schema": {
+                "data": [
+                    {
+                        "site": {
+                            "host": "str",
+                            "name": "str",
+                            "supportedQualities": [
+                                "list of str with length 1"
+                            ],
+                            "supportedFilter": [
+                                "list of str with length 1"
+                            ],
+                            "supportedAdditionalParameter": [
+                                "list of str with length 1"
+                            ]
+                        },
+                        "links": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Top 10 search queries",
+            "schema": {
+                "queries": "empty list"
+            }
+        },
+        {
+            "name": "Pornstar list by alphabetical letter",
+            "schema": {
+                "data": [
+                    {
+                        "name": "str",
+                        "key": "str",
+                        "url": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

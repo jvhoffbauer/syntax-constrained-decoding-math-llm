@@ -1,0 +1,15 @@
+{
+    "api_list": [
+        {
+            "name": "wrt_transformer",
+            "schema": {
+                "result": [
+                    {
+                        "entity": "str",
+                        "word": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,33 @@
+{
+    "api_list": [
+        {
+            "name": "Food Api",
+            "schema": {
+                "dishes": [
+                    {
+                        "id": "str",
+                        "name": "str",
+                        "caloric": "str",
+                        "fat": "str",
+                        "carbon": "str",
+                        "protein": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "UPC Api",
+            "schema": {
+                "dishes": [
+                    {
+                        "name": "str",
+                        "caloric": "str",
+                        "fat": "str",
+                        "carbon": "str",
+                        "protein": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

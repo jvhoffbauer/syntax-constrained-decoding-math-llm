@@ -1,0 +1,13 @@
+{
+    "api_list": [
+        {
+            "name": "Get Timestamp of Block Number",
+            "schema": {
+                "statusCode": "int",
+                "message": "str",
+                "method": "str",
+                "path": "str"
+            }
+        }
+    ]
+}

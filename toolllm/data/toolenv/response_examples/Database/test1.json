@@ -1,0 +1,61 @@
+{
+    "api_list": [
+        {
+            "name": "E1",
+            "schema": {
+                "name": "str",
+                "topLevelDomain": [
+                    "list of str with length 1"
+                ],
+                "alpha2Code": "str",
+                "alpha3Code": "str",
+                "callingCodes": [
+                    "list of str with length 1"
+                ],
+                "capital": "str",
+                "altSpellings": [
+                    "list of str with length 1"
+                ],
+                "subregion": "str",
+                "region": "str",
+                "population": "str",
+                "latlng": [
+                    "list of str with length 1"
+                ],
+                "demonym": "str",
+                "area": "str",
+                "timezones": [
+                    "list of str with length 1"
+                ],
+                "borders": [
+                    "list of str with length 1"
+                ],
+                "nativeName": "str",
+                "numericCode": "str",
+                "currencies": [
+                    {
+                        "code": "str",
+                        "name": "str",
+                        "symbol": "str"
+                    }
+                ],
+                "languages": [
+                    {
+                        "iso639_1": "str",
+                        "name": "str",
+                        "nativeName": "str"
+                    }
+                ],
+                "flag": "str",
+                "regionalBlocs": [
+                    {
+                        "acronym": "str",
+                        "name": "str"
+                    }
+                ],
+                "cioc": "str",
+                "independent": "str"
+            }
+        }
+    ]
+}

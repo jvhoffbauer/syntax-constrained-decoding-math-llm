@@ -1,0 +1,10 @@
+{
+    "api_list": [
+        {
+            "name": "Ping",
+            "schema": {
+                "messages": "str"
+            }
+        }
+    ]
+}

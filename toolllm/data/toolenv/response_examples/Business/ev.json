@@ -1,0 +1,40 @@
+{
+    "api_list": [
+        {
+            "name": "ev",
+            "schema": {
+                "result": [
+                    {
+                        "address": {
+                            "link": "str",
+                            "location": "str"
+                        },
+                        "amenities": [
+                            "list of str with length 1"
+                        ],
+                        "latitude": "str",
+                        "longitude": "str",
+                        "opened": "str",
+                        "parking": "str",
+                        "phone": "str",
+                        "source_url": "str",
+                        "stations": [
+                            {
+                                "costs": "str",
+                                "name": "str",
+                                "plugs": [
+                                    {
+                                        "name": "str",
+                                        "power": "str"
+                                    }
+                                ],
+                                "title": "str"
+                            }
+                        ],
+                        "title": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

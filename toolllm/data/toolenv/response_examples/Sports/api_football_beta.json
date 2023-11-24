@@ -1,0 +1,484 @@
+{
+    "api_list": [
+        {
+            "name": "fixtures rounds",
+            "schema": {
+                "get": "str",
+                "parameters": {
+                    "current": "str",
+                    "league": "str",
+                    "season": "str"
+                },
+                "results": "int",
+                "paging": {
+                    "current": "int",
+                    "total": "int"
+                }
+            }
+        },
+        {
+            "name": "players fixtures statistics",
+            "schema": {
+                "parameters": {
+                    "fixture": "str",
+                    "team": "str"
+                },
+                "results": "int",
+                "paging": {
+                    "current": "int",
+                    "total": "int"
+                }
+            }
+        },
+        {
+            "name": "seasons for players",
+            "schema": {
+                "results": "int",
+                "paging": {
+                    "current": "int",
+                    "total": "int"
+                },
+                "response": [
+                    "list of str with length 1"
+                ]
+            }
+        },
+        {
+            "name": "teams statistics",
+            "schema": {
+                "get": "str",
+                "parameters": {
+                    "league": "str",
+                    "team": "str",
+                    "date": "str",
+                    "season": "str"
+                },
+                "results": "int",
+                "paging": {
+                    "current": "int",
+                    "total": "int"
+                }
+            }
+        },
+        {
+            "name": "standings",
+            "schema": {
+                "get": "str",
+                "parameters": {
+                    "league": "str",
+                    "team": "str",
+                    "season": "str"
+                },
+                "results": "int",
+                "paging": {
+                    "current": "int",
+                    "total": "int"
+                }
+            }
+        },
+        {
+            "name": "teams",
+            "schema": {
+                "parameters": {
+                    "league": "str",
+                    "search": "str",
+                    "id": "str",
+                    "country": "str",
+                    "name": "str",
+                    "season": "str"
+                },
+                "errors": {
+                    "league": "str",
+                    "season": "str",
+                    "search": "str",
+                    "id": "str",
+                    "country": "str",
+                    "name": "str"
+                },
+                "paging": {
+                    "current": "int",
+                    "total": "int"
+                }
+            }
+        },
+        {
+            "name": "timezone",
+            "schema": {
+                "results": "int",
+                "response": [
+                    "list of str with length 1"
+                ]
+            }
+        },
+        {
+            "name": "seasons",
+            "schema": {
+                "results": "int",
+                "response": [
+                    "list of str with length 1"
+                ]
+            }
+        },
+        {
+            "name": "fixtures",
+            "schema": {
+                "get": "str",
+                "parameters": {
+                    "round": "str",
+                    "to": "str",
+                    "id": "str",
+                    "from": "str",
+                    "timezone": "str",
+                    "last": "str",
+                    "season": "str",
+                    "status": "str",
+                    "live": "str",
+                    "league": "str",
+                    "date": "str",
+                    "next": "str",
+                    "team": "str"
+                },
+                "results": "int",
+                "paging": {
+                    "current": "int",
+                    "total": "int"
+                }
+            }
+        },
+        {
+            "name": "transfers",
+            "schema": {
+                "get": "str",
+                "parameters": {
+                    "player": "str",
+                    "team": "str"
+                },
+                "errors": {
+                    "team": "str"
+                },
+                "results": "int",
+                "paging": {
+                    "total": "int"
+                }
+            }
+        },
+        {
+            "name": "fixtures h2h",
+            "schema": {
+                "get": "str",
+                "parameters": {
+                    "h2h": "str",
+                    "league": "str"
+                },
+                "errors": {},
+                "results": "int",
+                "paging": {
+                    "current": "int",
+                    "total": "int"
+                },
+                "response": "str"
+            }
+        },
+        {
+            "name": "fixtures events",
+            "schema": {
+                "parameters": {
+                    "fixture": "str"
+                },
+                "errors": {
+                    "team": "str",
+                    "player": "str",
+                    "type": "str"
+                },
+                "results": "int"
+            }
+        },
+        {
+            "name": "fixtures statistics",
+            "schema": {
+                "get": "str",
+                "parameters": {
+                    "fixture": "str",
+                    "team": "str"
+                },
+                "errors": {
+                    "type": "str",
+                    "team": "str"
+                },
+                "results": "int"
+            }
+        },
+        {
+            "name": "leagues",
+            "schema": {
+                "get": "str",
+                "parameters": {
+                    "search": "str",
+                    "id": "str",
+                    "name": "str",
+                    "last": "str",
+                    "type": "str",
+                    "code": "str",
+                    "country": "str",
+                    "team": "str",
+                    "current": "str",
+                    "season": "str"
+                },
+                "errors": {},
+                "results": "int",
+                "paging": {},
+                "response": "str"
+            }
+        },
+        {
+            "name": "venues",
+            "schema": {
+                "get": "str",
+                "parameters": {
+                    "city": "str",
+                    "id": "str",
+                    "country": "str",
+                    "name": "str",
+                    "search": "str"
+                },
+                "errors": {},
+                "results": "int",
+                "paging": {
+                    "current": "int",
+                    "total": "int"
+                },
+                "response": "str"
+            }
+        },
+        {
+            "name": "countries",
+            "schema": {
+                "parameters": {
+                    "search": "str"
+                },
+                "errors": {
+                    "search": "str"
+                },
+                "results": "int",
+                "paging": {
+                    "current": "int",
+                    "total": "int"
+                },
+                "response": "str"
+            }
+        },
+        {
+            "name": "coachs",
+            "schema": {
+                "get": "str",
+                "parameters": {
+                    "search": "str"
+                },
+                "results": "int",
+                "paging": {
+                    "current": "int",
+                    "total": "int"
+                },
+                "response": "str"
+            }
+        },
+        {
+            "name": "players season statistics",
+            "schema": {
+                "get": "str",
+                "parameters": {
+                    "league": "str",
+                    "search": "str",
+                    "id": "str",
+                    "page": "str",
+                    "season": "str",
+                    "team": "str"
+                },
+                "errors": {},
+                "results": "int",
+                "paging": {
+                    "current": "int",
+                    "total": "int"
+                },
+                "response": "str"
+            }
+        },
+        {
+            "name": "bookmakers",
+            "schema": {
+                "results": "int",
+                "paging": {
+                    "current": "int",
+                    "total": "int"
+                },
+                "response": "str"
+            }
+        },
+        {
+            "name": "fixtures players  statistics",
+            "schema": {
+                "get": "str",
+                "parameters": {
+                    "fixture": "str",
+                    "team": "str"
+                },
+                "errors": {
+                    "team": "str"
+                },
+                "results": "int",
+                "paging": {
+                    "current": "int",
+                    "total": "int"
+                }
+            }
+        },
+        {
+            "name": "sidelined",
+            "schema": {
+                "get": "str",
+                "parameters": {
+                    "coach": "str",
+                    "player": "str"
+                },
+                "errors": {
+                    "player": "str",
+                    "coach": "str"
+                },
+                "results": "int",
+                "paging": {
+                    "total": "int"
+                },
+                "response": "str"
+            }
+        },
+        {
+            "name": "odds",
+            "schema": {
+                "get": "str",
+                "parameters": {
+                    "bookmaker": "str",
+                    "fixture": "str",
+                    "date": "str",
+                    "league": "str",
+                    "page": "str",
+                    "bet": "str",
+                    "timezone": "str",
+                    "season": "str"
+                },
+                "results": "int",
+                "paging": {
+                    "current": "int",
+                    "total": "int"
+                }
+            }
+        },
+        {
+            "name": "bets",
+            "schema": {
+                "parameters": {
+                    "search": "str",
+                    "id": "str"
+                },
+                "results": "int",
+                "paging": {
+                    "current": "int",
+                    "total": "int"
+                }
+            }
+        },
+        {
+            "name": "top scorers",
+            "schema": {
+                "results": [
+                    {
+                        "player": {
+                            "name": "str",
+                            "nationality": "str",
+                            "height": "str",
+                            "weight": "str"
+                        },
+                        "statistics": [
+                            {
+                                "team": {
+                                    "name": "str"
+                                },
+                                "league": {
+                                    "name": "str",
+                                    "season": "str"
+                                },
+                                "games": {
+                                    "minutes": "str",
+                                    "position": "str"
+                                },
+                                "goals": {
+                                    "total": "str",
+                                    "assists": "str"
+                                },
+                                "passes": {
+                                    "total": "str",
+                                    "accuracy": "str"
+                                },
+                                "tackles": {
+                                    "total": "str"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "name": "mapping",
+            "schema": {
+                "get": "str",
+                "parameters": {
+                    "page": "str"
+                },
+                "errors": "str",
+                "results": "int",
+                "response": [
+                    {
+                        "league": {
+                            "id": "int",
+                            "season": "int"
+                        },
+                        "fixture": {
+                            "id": "int",
+                            "date": "str",
+                            "timestamp": "int"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "fixtures lineups",
+            "schema": {
+                "parameters": {
+                    "fixture": "str"
+                },
+                "results": "int",
+                "paging": {
+                    "current": "int",
+                    "total": "int"
+                },
+                "response": "str"
+            }
+        },
+        {
+            "name": "trophies",
+            "schema": {
+                "get": "str",
+                "parameters": {
+                    "coach": "str",
+                    "player": "str"
+                },
+                "results": "int",
+                "paging": {
+                    "current": "int",
+                    "total": "int"
+                }
+            }
+        }
+    ]
+}

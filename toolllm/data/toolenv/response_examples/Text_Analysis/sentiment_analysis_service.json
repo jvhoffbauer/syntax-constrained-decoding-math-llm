@@ -1,0 +1,14 @@
+{
+    "api_list": [
+        {
+            "name": "Analyze Text",
+            "schema": {
+                "status": "str",
+                "data": {
+                    "score": "int",
+                    "comparative": "float"
+                }
+            }
+        }
+    ]
+}

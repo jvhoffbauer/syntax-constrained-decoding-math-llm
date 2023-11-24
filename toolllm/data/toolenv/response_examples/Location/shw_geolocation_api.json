@@ -1,0 +1,16 @@
+{
+    "api_list": [
+        {
+            "name": "get geolocation data",
+            "schema": {
+                "ip": "str",
+                "alpha2": "str",
+                "alpha3": "str",
+                "name": "str",
+                "country_code": "str",
+                "latitude": "float",
+                "longitude": "float"
+            }
+        }
+    ]
+}

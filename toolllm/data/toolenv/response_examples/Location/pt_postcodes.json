@@ -1,0 +1,12 @@
+{
+    "api_list": [
+        {
+            "name": "Get addresses by postcode",
+            "schema": {
+                "cp4": "str",
+                "cp3": "str",
+                "postalName": "str"
+            }
+        }
+    ]
+}

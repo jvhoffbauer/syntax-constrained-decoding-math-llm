@@ -1,0 +1,40 @@
+{
+    "api_list": [
+        {
+            "name": "Indicator Categories",
+            "schema": {
+                "collection": "empty list"
+            }
+        },
+        {
+            "name": "Sources",
+            "schema": {
+                "Aggregate Sources": [
+                    {
+                        "name": "str"
+                    }
+                ],
+                "Primary Sources": [
+                    {
+                        "name": "str"
+                    }
+                ],
+                "Sigma Proprietary": [
+                    {
+                        "name": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Account Status",
+            "schema": {
+                "active": "bool",
+                "created": "str",
+                "description": "str",
+                "request_limit": "int",
+                "token": "str"
+            }
+        }
+    ]
+}

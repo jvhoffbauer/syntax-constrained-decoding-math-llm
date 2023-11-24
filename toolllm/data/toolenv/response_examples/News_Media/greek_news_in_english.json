@@ -1,0 +1,24 @@
+{
+    "api_list": [
+        {
+            "name": "Get Articles From A Single Source",
+            "schema": {
+                "title": "str",
+                "link": "str",
+                "description": "str",
+                "image": "str",
+                "site": "str"
+            }
+        },
+        {
+            "name": "Get All News",
+            "schema": {
+                "title": "str",
+                "link": "str",
+                "description": "str",
+                "image": "str",
+                "site": "str"
+            }
+        }
+    ]
+}

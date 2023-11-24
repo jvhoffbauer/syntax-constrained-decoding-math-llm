@@ -1,0 +1,39 @@
+{
+    "api_list": [
+        {
+            "name": "Help Page",
+            "schema": {
+                "status": "str",
+                "domain": [
+                    "list of str with length 1"
+                ],
+                "documentation": "str"
+            }
+        },
+        {
+            "name": "Homepage | About the API",
+            "schema": {
+                "status": "str",
+                "App_name": "str",
+                "documentation": "str",
+                "serverStatus": "str"
+            }
+        },
+        {
+            "name": "Verify the Existence of Email",
+            "schema": {
+                "status": "str",
+                "email": "str",
+                "syntax": "bool",
+                "smtp": "bool",
+                "disposable": "bool"
+            }
+        },
+        {
+            "name": "Get the MX Records",
+            "schema": {
+                "message": "str"
+            }
+        }
+    ]
+}

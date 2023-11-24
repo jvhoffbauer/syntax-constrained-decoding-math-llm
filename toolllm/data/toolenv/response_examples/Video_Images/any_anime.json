@@ -1,0 +1,16 @@
+{
+    "api_list": [
+        {
+            "name": "anime",
+            "schema": {
+                "status": "str",
+                "stuff": [
+                    {
+                        "name": "str",
+                        "image": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

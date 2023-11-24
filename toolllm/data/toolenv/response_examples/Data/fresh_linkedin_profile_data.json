@@ -1,0 +1,165 @@
+{
+    "api_list": [
+        {
+            "name": "Search Jobs",
+            "schema": {
+                "data": [
+                    {
+                        "company": "str",
+                        "job_details_url": "str",
+                        "job_id": "str",
+                        "job_title": "str",
+                        "location": "str",
+                        "posted_time": "str"
+                    }
+                ],
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get Profile PDF CV",
+            "schema": {
+                "data": {
+                    "base64encoded_pdf": "str"
+                }
+            }
+        },
+        {
+            "name": "Get Profile Posts",
+            "schema": {
+                "data": [
+                    {
+                        "article_title": "str",
+                        "num_likes": "int",
+                        "post_url": "str",
+                        "poster_linkedin_url": "str",
+                        "reshared": "bool",
+                        "text": "str",
+                        "time": "str",
+                        "urn": "str"
+                    }
+                ],
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get Linkedin Profile by Sales Nav URL",
+            "schema": {
+                "data": {
+                    "city": "str",
+                    "company": "str",
+                    "company_domain": "str",
+                    "company_industry": "str",
+                    "company_linkedin_url": "str",
+                    "company_logo_url": "str",
+                    "company_website": "str",
+                    "company_year_founded": "str",
+                    "connections_count": "str",
+                    "country": "str",
+                    "educations": [
+                        {
+                            "degree": "str",
+                            "field_of_study": "str",
+                            "school": "str",
+                            "school_id": "str"
+                        }
+                    ],
+                    "experiences": [
+                        {
+                            "company": "str",
+                            "company_id": "str",
+                            "company_linkedin_url": "str",
+                            "company_logo_url": "str",
+                            "date_range": "str",
+                            "duration": "str"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Get Company Jobs Count",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get Company Ads Count",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get Company Posts",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get Company by Domain",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get Company Data by LinkedIn URL",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get Job Details",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get Search Results",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Check Search Status",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get LinkedIn Profile Data",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get Profile Recent Activity Time",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get Company Data by ID",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get Open Profile Status",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get Supported Countries",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get Supported Industries",
+            "schema": {
+                "message": "str"
+            }
+        }
+    ]
+}

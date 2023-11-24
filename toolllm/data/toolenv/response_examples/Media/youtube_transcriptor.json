@@ -1,0 +1,25 @@
+{
+    "api_list": [
+        {
+            "name": "transcript",
+            "schema": {
+                "title": "str",
+                "availableLangs": [
+                    "list of str with length 1"
+                ],
+                "thumbnails": [
+                    {
+                        "url": "str"
+                    }
+                ],
+                "transcription": [
+                    {
+                        "subtitle": "str",
+                        "start": "str",
+                        "dur": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

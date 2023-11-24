@@ -1,0 +1,105 @@
+{
+    "api_list": [
+        {
+            "name": "Search person by name",
+            "schema": {
+                "id": "int",
+                "name": "str",
+                "countryId": "int",
+                "address": "str",
+                "countryCode": "str",
+                "companies": [
+                    {
+                        "name": "str",
+                        "countryCode": "str",
+                        "role": {
+                            "id": "int",
+                            "name": "str"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Get company [Full data]",
+            "schema": {
+                "id": "str",
+                "name": "str",
+                "internationalNumber": "str",
+                "countryId": "str",
+                "dateCreated": "str",
+                "dateDisolved": "str",
+                "createdAt": "str",
+                "updatedAt": "str",
+                "shortName": "str",
+                "brandName": "str",
+                "address": "str",
+                "vatNumber": "str",
+                "vatDate": "str",
+                "europeanNumber": "str",
+                "typeId": "str",
+                "publicDebtAmount": "str",
+                "subscribedShareCapital": "str",
+                "paidShareCapital": "str",
+                "endDateFinancialYear": "str"
+            }
+        },
+        {
+            "name": "Search company by Name",
+            "schema": {
+                "name": "str",
+                "countryCode": "str"
+            }
+        },
+        {
+            "name": "Get company [Basic data]",
+            "schema": {
+                "id": "str",
+                "name": "str",
+                "internationalNumber": "str",
+                "localNumber": "str",
+                "countryId": "str",
+                "dateCreated": "str",
+                "dateDisolved": "str",
+                "accountingAuthorityId": "str",
+                "createdAt": "str",
+                "updatedAt": "str",
+                "alternateNames": "str",
+                "shortName": "str",
+                "brandName": "str",
+                "canSellShares": "str",
+                "address": "str",
+                "hasPublicDebt": "str",
+                "paysVat": "str",
+                "vatNumber": "str",
+                "vatDate": "str",
+                "vatCancelDate": "str",
+                "paysExcise": "str",
+                "exciseNumber": "str",
+                "exciseDate": "str",
+                "exciseCancelDate": "str",
+                "europeanNumber": "str",
+                "typeId": "str",
+                "statusText": "str",
+                "publicDebtAmount": "str",
+                "subscribedShareCapital": "str",
+                "paidShareCapital": "str",
+                "terms": "str",
+                "annualAssembly": "str",
+                "endDateFinancialYear": "str",
+                "vatRemovalBasis": "str",
+                "vatRestorationBasis": "str",
+                "currentEmployeesNumber": "str",
+                "sharesValue": "str",
+                "sharesIssued": "str"
+            }
+        },
+        {
+            "name": "Search company by Email",
+            "schema": {
+                "name": "str",
+                "countryCode": "str"
+            }
+        }
+    ]
+}

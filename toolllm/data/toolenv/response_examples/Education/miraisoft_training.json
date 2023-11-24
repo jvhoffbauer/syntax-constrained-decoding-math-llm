@@ -1,0 +1,41 @@
+{
+    "api_list": [
+        {
+            "name": "dashboard",
+            "schema": {
+                "data": {
+                    "VN30": {
+                        "stocks": {
+                            "items": [
+                                {
+                                    "symbol": "str",
+                                    "buyPrice3": "float",
+                                    "buyVolume3": "int",
+                                    "buyPrice2": "float",
+                                    "buyVolume2": "int",
+                                    "change": "float",
+                                    "currentPrice": "float",
+                                    "currentVolume": "float",
+                                    "totalVolume": "int",
+                                    "sellPrice3": "float",
+                                    "sellVolume3": "int",
+                                    "sellPrice2": "float",
+                                    "sellVolume2": "int",
+                                    "highPrice": "float",
+                                    "lowPrice": "float",
+                                    "foreignBuyVolume": "int",
+                                    "foreignSellVolume": "int",
+                                    "floorPrice": "float",
+                                    "ceilPrice": "int",
+                                    "referencePrice": "float",
+                                    "foreignBuyValue": "int",
+                                    "foreignSellValue": "int"
+                                }
+                            ]
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

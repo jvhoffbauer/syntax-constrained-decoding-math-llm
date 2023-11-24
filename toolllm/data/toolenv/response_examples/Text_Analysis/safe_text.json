@@ -1,0 +1,10 @@
+{
+    "api_list": [
+        {
+            "name": "Serve health",
+            "schema": {
+                "message": "str"
+            }
+        }
+    ]
+}

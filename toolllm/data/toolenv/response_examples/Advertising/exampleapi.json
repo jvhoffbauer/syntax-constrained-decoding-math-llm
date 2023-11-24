@@ -1,0 +1,16 @@
+{
+    "api_list": [
+        {
+            "name": "new",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "bepka",
+            "schema": {
+                "message": "str"
+            }
+        }
+    ]
+}

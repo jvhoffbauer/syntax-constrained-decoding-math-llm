@@ -1,0 +1,12 @@
+{
+    "api_list": [
+        {
+            "name": "View SMS history",
+            "schema": {
+                "text": "str",
+                "serviceName": "str",
+                "myNumber": "str"
+            }
+        }
+    ]
+}

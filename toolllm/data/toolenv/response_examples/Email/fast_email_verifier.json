@@ -1,0 +1,31 @@
+{
+    "api_list": [
+        {
+            "name": "disposable Domain and Suggest Domain",
+            "schema": {
+                "IsDisposable": "str",
+                "suggestion": "str"
+            }
+        },
+        {
+            "name": "email Check SMTP",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "EmailVerifications",
+            "schema": {
+                "email": "str",
+                "reachable": "str",
+                "syntax": {
+                    "valid": "bool"
+                },
+                "disposable": "bool",
+                "role_account": "bool",
+                "free": "bool",
+                "has_mx_records": "bool"
+            }
+        }
+    ]
+}

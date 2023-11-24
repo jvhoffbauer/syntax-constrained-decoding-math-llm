@@ -1,0 +1,99 @@
+{
+    "api_list": [
+        {
+            "name": "READ ORGUNITS",
+            "schema": {
+                "status": "int",
+                "detail": "str"
+            }
+        },
+        {
+            "name": "READ GROUPS",
+            "schema": {
+                "status": "int",
+                "detail": "str"
+            }
+        },
+        {
+            "name": "READ ACCESS POINTS",
+            "schema": {
+                "status": "int",
+                "detail": "str"
+            }
+        },
+        {
+            "name": "READ ORGUNIT",
+            "schema": {
+                "status": "int"
+            }
+        },
+        {
+            "name": "READ USERS",
+            "schema": {
+                "status": "int",
+                "detail": "str"
+            }
+        },
+        {
+            "name": "READ NETWORKS",
+            "schema": {
+                "status": "int",
+                "detail": "str"
+            }
+        },
+        {
+            "name": "READ CAPTIVE PORTALS",
+            "schema": {
+                "status": "int",
+                "detail": "str"
+            }
+        },
+        {
+            "name": "READ ACCOUNT",
+            "schema": {
+                "status": "int",
+                "detail": "str"
+            }
+        },
+        {
+            "name": "READ NETWORK",
+            "schema": {
+                "status": "int"
+            }
+        },
+        {
+            "name": "READ ACCESS POINT",
+            "schema": {
+                "status": "int",
+                "detail": "str"
+            }
+        },
+        {
+            "name": "READ GROUP",
+            "schema": {
+                "status": "int",
+                "detail": "str"
+            }
+        },
+        {
+            "name": "MANUAL TOKEN LIST",
+            "schema": {
+                "status": "int",
+                "detail": "str"
+            }
+        },
+        {
+            "name": "READ USER",
+            "schema": {
+                "status": "int"
+            }
+        },
+        {
+            "name": "READ CAPTIVE PORTAL",
+            "schema": {
+                "status": "int",
+                "detail": "str"
+            }
+        }
+    ]
+}

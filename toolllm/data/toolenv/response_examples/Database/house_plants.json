@@ -1,0 +1,144 @@
+{
+    "api_list": [
+        {
+            "name": "Get By Climate",
+            "schema": {
+                "latin": "str",
+                "family": "str",
+                "common": [
+                    "list of str with length 1"
+                ],
+                "category": "str",
+                "origin": "str",
+                "climate": "str",
+                "tempmax": {
+                    "celsius": "int",
+                    "fahrenheit": "float"
+                },
+                "tempmin": {
+                    "celsius": "int",
+                    "fahrenheit": "float"
+                },
+                "ideallight": "str",
+                "toleratedlight": "str",
+                "watering": "str",
+                "insects": [
+                    "list of str with length 1"
+                ],
+                "use": [
+                    "list of str with length 1"
+                ]
+            }
+        },
+        {
+            "name": "Get By Origin",
+            "schema": {
+                "id": "int",
+                "latin": "str",
+                "family": "str",
+                "common": [
+                    "list of str with length 1"
+                ],
+                "category": "str",
+                "origin": "str",
+                "climate": "str",
+                "tempmax": {
+                    "celsius": "int",
+                    "fahrenheit": "float"
+                },
+                "tempmin": {
+                    "celsius": "int",
+                    "fahrenheit": "int"
+                },
+                "ideallight": "str",
+                "watering": "str",
+                "insects": "str",
+                "diseases": "str",
+                "use": [
+                    "list of str with length 1"
+                ]
+            }
+        },
+        {
+            "name": "Get By Category",
+            "schema": {
+                "id": "int",
+                "latin": "str",
+                "family": "str",
+                "common": [
+                    "list of str with length 1"
+                ],
+                "category": "str",
+                "origin": "str",
+                "climate": "str",
+                "tempmax": {
+                    "celsius": "int"
+                },
+                "tempmin": {
+                    "celsius": "int"
+                },
+                "ideallight": "str",
+                "toleratedlight": "str",
+                "watering": "str",
+                "insects": [
+                    "list of str with length 1"
+                ],
+                "use": "str"
+            }
+        },
+        {
+            "name": "Get By Latin Name",
+            "schema": {
+                "id": "int",
+                "latin": "str",
+                "common": [
+                    "list of str with length 1"
+                ],
+                "category": "str",
+                "origin": "str",
+                "climate": "str",
+                "tempmax": {
+                    "celsius": "int",
+                    "fahrenheit": "float"
+                },
+                "tempmin": {
+                    "celsius": "int",
+                    "fahrenheit": "float"
+                },
+                "ideallight": "str",
+                "watering": "str",
+                "use": [
+                    "list of str with length 1"
+                ]
+            }
+        },
+        {
+            "name": "Get By Common Name",
+            "schema": {
+                "id": "int",
+                "latin": "str",
+                "family": "str",
+                "common": [
+                    "list of str with length 1"
+                ],
+                "category": "str",
+                "origin": "str",
+                "climate": "str",
+                "tempmax": {
+                    "celsius": "int",
+                    "fahrenheit": "int"
+                },
+                "tempmin": {
+                    "celsius": "int",
+                    "fahrenheit": "float"
+                },
+                "ideallight": "str",
+                "toleratedlight": "str",
+                "watering": "str",
+                "use": [
+                    "list of str with length 1"
+                ]
+            }
+        }
+    ]
+}

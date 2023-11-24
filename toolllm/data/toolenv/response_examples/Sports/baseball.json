@@ -1,0 +1,494 @@
+{
+    "api_list": [
+        {
+            "name": "teams-history/{teamIds}",
+            "schema": {
+                "results": {
+                    "teams": [
+                        {
+                            "id": "int",
+                            "name": "str",
+                            "season": "int",
+                            "venue": {
+                                "name": "str"
+                            },
+                            "teamCode": "str",
+                            "abbreviation": "str",
+                            "teamName": "str",
+                            "locationName": "str",
+                            "league": {
+                                "name": "str"
+                            },
+                            "sport": {
+                                "name": "str"
+                            },
+                            "shortName": "str",
+                            "franchiseName": "str",
+                            "clubName": "str"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "free-agents/{seasonId}",
+            "schema": {
+                "results": {
+                    "people": [
+                        {
+                            "id": "str",
+                            "fullName": "str",
+                            "firstName": "str",
+                            "lastName": "str",
+                            "birthDate": "str",
+                            "currentAge": "str",
+                            "currentTeam": {
+                                "id": "str",
+                                "name": "str"
+                            },
+                            "primaryPosition": {
+                                "code": "str",
+                                "name": "str",
+                                "type": "str",
+                                "abbreviation": "str"
+                            },
+                            "batSide": {
+                                "code": "str",
+                                "description": "str"
+                            },
+                            "pitchHand": {
+                                "code": "str",
+                                "description": "str"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "players/{playerIds}",
+            "schema": {
+                "results": {
+                    "people": [
+                        {
+                            "id": "str",
+                            "fullName": "str",
+                            "firstName": "str",
+                            "lastName": "str",
+                            "primaryNumber": "str",
+                            "birthDate": "str",
+                            "currentAge": "str",
+                            "primaryPosition": {
+                                "code": "str",
+                                "name": "str",
+                                "type": "str",
+                                "abbreviation": "str"
+                            },
+                            "batSide": {
+                                "code": "str",
+                                "description": "str"
+                            },
+                            "pitchHand": {
+                                "code": "str",
+                                "description": "str"
+                            },
+                            "nameFirstLast": "str",
+                            "nameSlug": "str",
+                            "firstLastName": "str",
+                            "lastFirstName": "str",
+                            "lastInitName": "str",
+                            "initLastName": "str",
+                            "fullFMLName": "str",
+                            "fullLFMName": "str",
+                            "strikeZoneTop": "str",
+                            "strikeZoneBottom": "str"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "teams-personnel/{teamIds}",
+            "schema": {
+                "results": {
+                    "roster": [
+                        {
+                            "person": {
+                                "id": "int",
+                                "fullName": "str"
+                            },
+                            "job": "str",
+                            "jobId": "str",
+                            "title": "str"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "teams-roster/{teamIds}",
+            "schema": {
+                "results": {
+                    "roster": [
+                        {
+                            "person": {
+                                "id": "int",
+                                "fullName": "str"
+                            },
+                            "jerseyNumber": "str",
+                            "position": {
+                                "code": "str",
+                                "name": "str",
+                                "type": "str",
+                                "abbreviation": "str"
+                            },
+                            "status": {
+                                "code": "str",
+                                "description": "str"
+                            }
+                        }
+                    ],
+                    "teamId": "int",
+                    "rosterType": "str"
+                }
+            }
+        },
+        {
+            "name": "game",
+            "schema": {
+                "results": [
+                    {
+                        "pk": "str",
+                        "type": "str",
+                        "id": "str",
+                        "season": "str",
+                        "dateTime": "str",
+                        "dayNight": "str",
+                        "status": "str",
+                        "away": {
+                            "name": "str",
+                            "abbreviation": "str",
+                            "venue": "str",
+                            "teamName": "str"
+                        },
+                        "home": {
+                            "name": "str",
+                            "abbreviation": "str",
+                            "venue": "str",
+                            "teamName": "str"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "game-matrix/{gamePk}",
+            "schema": {
+                "results": {
+                    "game": {
+                        "gamePk": "str",
+                        "gameType": "str",
+                        "season": "str",
+                        "gameDate": "str",
+                        "status": {
+                            "abstractGameState": "str",
+                            "codedGameState": "str",
+                            "detailedState": "str",
+                            "statusCode": "str"
+                        },
+                        "teams": {
+                            "away": {
+                                "leagueRecord": {
+                                    "wins": "str",
+                                    "losses": "str",
+                                    "pct": "str"
+                                },
+                                "score": "str",
+                                "team": {
+                                    "id": "str",
+                                    "name": "str"
+                                },
+                                "isWinner": "str"
+                            },
+                            "home": {
+                                "leagueRecord": {
+                                    "wins": "str",
+                                    "losses": "str",
+                                    "pct": "str"
+                                },
+                                "score": "str",
+                                "team": {
+                                    "id": "str",
+                                    "name": "str"
+                                },
+                                "isWinner": "str"
+                            }
+                        },
+                        "venue": {
+                            "id": "str",
+                            "name": "str"
+                        },
+                        "isTie": "str",
+                        "gameNumber": "str",
+                        "publicFacing": "str",
+                        "doubleHeader": "str",
+                        "gamedayType": "str"
+                    }
+                }
+            }
+        },
+        {
+            "name": "game-probability/{gamePk}",
+            "schema": {
+                "results": [
+                    {
+                        "result": {
+                            "type": "str",
+                            "event": "str",
+                            "eventType": "str",
+                            "description": "str",
+                            "rbi": "str",
+                            "awayScore": "str",
+                            "homeScore": "str",
+                            "isOut": "str"
+                        },
+                        "about": {
+                            "atBatIndex": "str",
+                            "halfInning": "str",
+                            "isTopInning": "str",
+                            "inning": "str",
+                            "isComplete": "str",
+                            "isScoringPlay": "str",
+                            "hasReview": "str",
+                            "hasOut": "str"
+                        },
+                        "count": {
+                            "balls": "str",
+                            "strikes": "str",
+                            "outs": "str"
+                        },
+                        "matchup": {
+                            "batter": {
+                                "id": "str",
+                                "fullName": "str"
+                            },
+                            "pitcher": {
+                                "id": "str",
+                                "fullName": "str"
+                            }
+                        },
+                        "pitchIndex": {
+                            "1": "str"
+                        },
+                        "actionIndex": {
+                            "1": "str",
+                            "2": "str"
+                        },
+                        "runnerIndex": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "game-boxscore/{gamePk}",
+            "schema": {
+                "results": {
+                    "away": {
+                        "team": {
+                            "name": "str",
+                            "abbreviation": "str",
+                            "id": "str",
+                            "season": "str",
+                            "teamCode": "str",
+                            "fileCode": "str",
+                            "teamName": "str",
+                            "locationName": "str",
+                            "shortName": "str",
+                            "wins": "str",
+                            "losses": "str",
+                            "winningPercentage": "str"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "schedule",
+            "schema": {
+                "meta": {
+                    "version": "str",
+                    "status": "str"
+                },
+                "results": [
+                    {
+                        "gamePk": "str",
+                        "gameType": "str",
+                        "season": "str",
+                        "gameDate": "str",
+                        "officialDate": "str",
+                        "status": {
+                            "abstractGameState": "str",
+                            "codedGameState": "str",
+                            "detailedState": "str",
+                            "statusCode": "str"
+                        },
+                        "teams": {
+                            "away": {
+                                "team": {
+                                    "id": "str",
+                                    "name": "str"
+                                },
+                                "seriesNumber": "str"
+                            },
+                            "home": {
+                                "team": {
+                                    "id": "str",
+                                    "name": "str"
+                                },
+                                "seriesNumber": "str"
+                            }
+                        },
+                        "venue": {
+                            "id": "str",
+                            "name": "str"
+                        },
+                        "gameNumber": "str",
+                        "publicFacing": "str",
+                        "doubleHeader": "str",
+                        "gamedayType": "str",
+                        "tiebreaker": "str",
+                        "calendarEventID": "str",
+                        "seasonDisplay": "str",
+                        "dayNight": "str",
+                        "scheduledInnings": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "teams-affiliates/{teamIds}",
+            "schema": {
+                "results": {
+                    "teams": [
+                        {
+                            "springLeague": {
+                                "name": "str",
+                                "abbreviation": "str"
+                            },
+                            "allStarStatus": "str",
+                            "name": "str",
+                            "season": "int",
+                            "venue": {
+                                "name": "str"
+                            },
+                            "teamCode": "str",
+                            "fileCode": "str",
+                            "abbreviation": "str",
+                            "teamName": "str",
+                            "locationName": "str",
+                            "firstYearOfPlay": "str",
+                            "league": {
+                                "name": "str"
+                            },
+                            "division": {
+                                "name": "str"
+                            },
+                            "sport": {
+                                "name": "str"
+                            },
+                            "shortName": "str",
+                            "franchiseName": "str",
+                            "clubName": "str",
+                            "active": "bool"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "teams-coaches/{teamIds}",
+            "schema": {
+                "results": {
+                    "roster": [
+                        {
+                            "person": {
+                                "id": "int",
+                                "fullName": "str"
+                            },
+                            "job": "str"
+                        }
+                    ],
+                    "teamId": "int"
+                }
+            }
+        },
+        {
+            "name": "leagues",
+            "schema": {
+                "results": [
+                    {
+                        "id": "str",
+                        "name": "str",
+                        "seasonState": "str",
+                        "hasWildCard": "str",
+                        "hasSplitSeason": "str",
+                        "numTeams": "str",
+                        "seasonDateInfo": {
+                            "seasonId": "str",
+                            "regularSeasonStartDate": "str",
+                            "allStarDate": "str",
+                            "regularSeasonEndDate": "str",
+                            "postSeasonStartDate": "str"
+                        },
+                        "season": "str",
+                        "orgCode": "str",
+                        "conferencesInUse": "str",
+                        "divisionsInUse": "str",
+                        "sport": {
+                            "id": "str"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "venues",
+            "schema": {
+                "results": {
+                    "venues": [
+                        {
+                            "id": "int",
+                            "name": "str",
+                            "season": "str"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "seasons/{seasonId}",
+            "schema": {
+                "results": [
+                    {
+                        "seasonId": "str",
+                        "hasWildcard": "bool",
+                        "preSeasonStartDate": "str",
+                        "preSeasonEndDate": "str",
+                        "seasonStartDate": "str",
+                        "springEndDate": "str",
+                        "regularSeasonStartDate": "str",
+                        "lastDate1stHalf": "str",
+                        "allStarDate": "str",
+                        "firstDate2ndHalf": "str",
+                        "regularSeasonEndDate": "str",
+                        "postSeasonStartDate": "str",
+                        "postSeasonEndDate": "str",
+                        "seasonEndDate": "str",
+                        "qualifierPlateAppearances": "float",
+                        "qualifierOutsPitched": "int"
+                    }
+                ]
+            }
+        }
+    ]
+}

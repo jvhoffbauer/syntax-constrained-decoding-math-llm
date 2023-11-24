@@ -1,0 +1,80 @@
+{
+    "api_list": [
+        {
+            "name": "Get CCI by Number",
+            "schema": {
+                "status": "str",
+                "data": [
+                    {
+                        "CCINumber": "str",
+                        "Definition": "str",
+                        "Parameter": "str",
+                        "PublishDate": "str",
+                        "Title": "str",
+                        "Version": "str",
+                        "Status": "str",
+                        "Type": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Get Subcontrol By Control",
+            "schema": {
+                "status": "str",
+                "data": [
+                    {
+                        "SubControlNumber": "str",
+                        "ImplemGuid": "str",
+                        "AssessProc": "str",
+                        "RecomCompEvid": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Get All Controls",
+            "schema": {
+                "status": "str",
+                "data": [
+                    {
+                        "ControlNumber": "str",
+                        "Title": "str",
+                        "Description": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Get All SubControls",
+            "schema": {
+                "status": "str",
+                "data": [
+                    {
+                        "SubControlNumber": "str",
+                        "ImplemGuid": "str",
+                        "AssessProc": "str",
+                        "RecomCompEvid": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Get All CCIs/APs",
+            "schema": {
+                "status": "str",
+                "data": [
+                    {
+                        "CCINumber": "str",
+                        "Definition": "str",
+                        "Parameter": "str",
+                        "PublishDate": "str",
+                        "Location": "str",
+                        "Title": "str",
+                        "Type": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

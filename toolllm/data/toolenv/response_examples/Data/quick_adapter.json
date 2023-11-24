@@ -1,0 +1,21 @@
+{
+    "api_list": [
+        {
+            "name": "get_all_pairs",
+            "schema": {
+                "success": "bool",
+                "errors": [
+                    {
+                        "message": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "user_get",
+            "schema": {
+                "messages": "str"
+            }
+        }
+    ]
+}

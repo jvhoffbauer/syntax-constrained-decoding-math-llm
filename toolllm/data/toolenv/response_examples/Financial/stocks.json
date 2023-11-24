@@ -1,0 +1,30 @@
+{
+    "api_list": [
+        {
+            "name": "Get the stock history by exchange code and stock code",
+            "schema": {
+                "exchangeCode": "str",
+                "stockCode": "str",
+                "date": "str",
+                "openPrice": "float",
+                "closePrice": "float",
+                "highPrice": "float",
+                "lowPrice": "float",
+                "volume": "int"
+            }
+        },
+        {
+            "name": "Get the stock history by code",
+            "schema": {
+                "exchangeCode": "str",
+                "stockCode": "str",
+                "date": "str",
+                "openPrice": "float",
+                "closePrice": "float",
+                "highPrice": "float",
+                "lowPrice": "float",
+                "volume": "int"
+            }
+        }
+    ]
+}

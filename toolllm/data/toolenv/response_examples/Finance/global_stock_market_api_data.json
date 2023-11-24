@@ -1,0 +1,366 @@
+{
+    "api_list": [
+        {
+            "name": "Get Most Popular News",
+            "schema": {
+                "newsTitle": "str",
+                "newsUrl": "str",
+                "postedBy": "str",
+                "shotDesc": "str"
+            }
+        },
+        {
+            "name": "Get 52 week Low by Fundamental with respecto to Country",
+            "schema": {
+                "name": "str",
+                "marketCap": "str",
+                "revenue": "str",
+                "EPS": "str",
+                "dividend": "str",
+                "nextEarningDate": "str"
+            }
+        },
+        {
+            "name": "Most Active Stocks by Fundamental with respecto to Country",
+            "schema": {
+                "name": "str",
+                "marketCap": "str",
+                "revenue": "str",
+                "ratio": "str",
+                "beta": "str",
+                "EPS": "str",
+                "dividend": "str",
+                "nextEarningDate": "str"
+            }
+        },
+        {
+            "name": "Most Active Stocks by Technical with respecto to Country",
+            "schema": {
+                "name": "str",
+                "hourly": "str",
+                "daily": "str",
+                "weekly": "str",
+                "monthly": "str"
+            }
+        },
+        {
+            "name": "Most Active Stocks by performance with respecto to Country",
+            "schema": {
+                "name": "str",
+                "daily": "str",
+                "oneWeek": "str",
+                "oneMonth": "str",
+                "yearToDate": "str",
+                "oneYear": "str",
+                "threeYear": "str"
+            }
+        },
+        {
+            "name": "Get Trending Stocks by Technical with respecto to Country",
+            "schema": {
+                "name": "str",
+                "hourly": "str",
+                "daily": "str",
+                "weekly": "str",
+                "monthly": "str"
+            }
+        },
+        {
+            "name": "Get Trending Stocks by Fundamental with respecto to Country",
+            "schema": {
+                "name": "str",
+                "marketCap": "str",
+                "revenue": "str",
+                "ratio": "str",
+                "beta": "str",
+                "EPS": "str",
+                "dividend": "str"
+            }
+        },
+        {
+            "name": "Get Trending Stocks by performance with respecto to Country",
+            "schema": {
+                "name": "str",
+                "daily": "str",
+                "oneWeek": "str",
+                "oneMonth": "str",
+                "yearToDate": "str",
+                "oneYear": "str",
+                "threeYear": "str"
+            }
+        },
+        {
+            "name": "Active Stocks by price with respecto to Country",
+            "schema": {
+                "name": "str",
+                "last": "str",
+                "high": "str",
+                "low": "str",
+                "change": "str",
+                "changePercentage": "str",
+                "volume": "str"
+            }
+        },
+        {
+            "name": "Get 52 Week Low by Technical with respecto to Country",
+            "schema": {
+                "name": "str",
+                "hourly": "str",
+                "daily": "str",
+                "weekly": "str",
+                "monthly": "str"
+            }
+        },
+        {
+            "name": "Get 52 Weel Low by performance with respecto to Country",
+            "schema": {
+                "name": "str",
+                "daily": "str",
+                "oneWeek": "str",
+                "oneMonth": "str",
+                "yearToDate": "str",
+                "oneYear": "str",
+                "threeYear": "str"
+            }
+        },
+        {
+            "name": "Get 52 Week Low by price with respecto to Country",
+            "schema": {
+                "name": "str",
+                "last": "str",
+                "high": "str",
+                "low": "str",
+                "change": "str",
+                "changePercentage": "str",
+                "volume": "str"
+            }
+        },
+        {
+            "name": "Get 52 week high by Fundamental with respecto to Country",
+            "schema": {
+                "name": "str",
+                "marketCap": "str",
+                "revenue": "str",
+                "EPS": "str",
+                "dividend": "str",
+                "nextEarningDate": "str"
+            }
+        },
+        {
+            "name": "Get 52 Week High by Technical with respecto to Country",
+            "schema": {
+                "name": "str",
+                "hourly": "str",
+                "daily": "str",
+                "weekly": "str",
+                "monthly": "str"
+            }
+        },
+        {
+            "name": "Get 52 Weel High by performance with respecto to Country",
+            "schema": {
+                "name": "str",
+                "daily": "str",
+                "oneWeek": "str",
+                "oneMonth": "str",
+                "yearToDate": "str",
+                "oneYear": "str",
+                "threeYear": "str"
+            }
+        },
+        {
+            "name": "Get 52 Week High by price with respecto to Country",
+            "schema": {
+                "name": "str",
+                "last": "str",
+                "high": "str",
+                "low": "str",
+                "change": "str",
+                "changePercentage": "str",
+                "volume": "str"
+            }
+        },
+        {
+            "name": "Get Trending Stocks by price with respecto to Country",
+            "schema": {
+                "name": "str",
+                "last": "str",
+                "high": "str",
+                "low": "str",
+                "change": "str",
+                "changePercentage": "str",
+                "volume": "str",
+                "time": "str"
+            }
+        },
+        {
+            "name": "Get Economy Indicators News",
+            "schema": {
+                "newsTitle": "str",
+                "newsUrl": "str",
+                "postedBy": "str",
+                "postedOn": "str"
+            }
+        },
+        {
+            "name": "Get Economy News",
+            "schema": {
+                "newsTitle": "str",
+                "newsUrl": "str",
+                "postedBy": "str",
+                "postedOn": "str",
+                "shotDesc": "str"
+            }
+        },
+        {
+            "name": "Get Forex News",
+            "schema": {
+                "newsTitle": "str",
+                "newsUrl": "str",
+                "postedBy": "str",
+                "postedOn": "str"
+            }
+        },
+        {
+            "name": "Get Commodities News",
+            "schema": {
+                "newsTitle": "str",
+                "newsUrl": "str",
+                "postedBy": "str",
+                "postedOn": "str"
+            }
+        },
+        {
+            "name": "Get Stock Market News",
+            "schema": {
+                "newsTitle": "str",
+                "newsUrl": "str",
+                "postedBy": "str",
+                "postedOn": "str",
+                "shotDesc": "str"
+            }
+        },
+        {
+            "name": "Get Cryptocurrency News",
+            "schema": {
+                "newsTitle": "str",
+                "newsUrl": "str",
+                "postedBy": "str",
+                "postedOn": "str"
+            }
+        },
+        {
+            "name": "Get Latest News",
+            "schema": {
+                "newsTitle": "str",
+                "newsUrl": "str",
+                "postedBy": "str",
+                "postedOn": "str",
+                "shotDesc": "str"
+            }
+        },
+        {
+            "name": "Get Major Commodities by Technical",
+            "schema": {
+                "name": "str",
+                "hourly": "str",
+                "daily": "str",
+                "weekly": "str",
+                "monthly": "str"
+            }
+        },
+        {
+            "name": "Get Major Commodities by Performance",
+            "schema": {
+                "name": "str",
+                "daily": "str",
+                "oneWeek": "str",
+                "oneMonth": "str",
+                "yearToDate": "str",
+                "oneYear": "str",
+                "threeYear": "str"
+            }
+        },
+        {
+            "name": "Get Major Commodities by Price",
+            "schema": {
+                "name": "str",
+                "last": "str",
+                "high": "str",
+                "low": "str",
+                "change": "str",
+                "changePercentage": "str",
+                "time": "str"
+            }
+        },
+        {
+            "name": "Get Global Indices by Technical",
+            "schema": {
+                "name": "str",
+                "hourly": "str",
+                "daily": "str",
+                "weekly": "str",
+                "monthly": "str"
+            }
+        },
+        {
+            "name": "Get Global Indices by Performance",
+            "schema": {
+                "name": "str",
+                "daily": "str",
+                "oneWeek": "str",
+                "oneMonth": "str",
+                "yearToDate": "str",
+                "oneYear": "str",
+                "threeYear": "str"
+            }
+        },
+        {
+            "name": "Get Global Indices by price",
+            "schema": {
+                "name": "str",
+                "last": "str",
+                "high": "str",
+                "low": "str",
+                "change": "str",
+                "changePercentage": "str",
+                "time": "str"
+            }
+        },
+        {
+            "name": "Get Major Global Indices by Technical",
+            "schema": {
+                "name": "str",
+                "last": "str",
+                "hourly": "str",
+                "daily": "str",
+                "weekly": "str",
+                "monthly": "str"
+            }
+        },
+        {
+            "name": "Get Major Global Indices by Performance",
+            "schema": {
+                "name": "str",
+                "daily": "str",
+                "oneWeek": "str",
+                "oneMonth": "str",
+                "yearToDate": "str",
+                "oneYear": "str",
+                "threeYear": "str"
+            }
+        },
+        {
+            "name": "Get Major Global Indices by Price",
+            "schema": {
+                "name": "str",
+                "last": "str",
+                "high": "str",
+                "low": "str",
+                "change": "str",
+                "changePercentage": "str",
+                "time": "str"
+            }
+        }
+    ]
+}

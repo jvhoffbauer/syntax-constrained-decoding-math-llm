@@ -1,0 +1,122 @@
+{
+    "api_list": [
+        {
+            "name": "Lottery Results by Date ID",
+            "schema": {
+                "success": "str",
+                "payload": {
+                    "id": "str",
+                    "date": {
+                        "day": "str",
+                        "month": "str",
+                        "year": "str"
+                    },
+                    "results": {
+                        "FirstPrize": {
+                            "info": {
+                                "id": "str",
+                                "name": "str",
+                                "amount": "str",
+                                "prizeMoney": "str"
+                            },
+                            "numbers": [
+                                "list of str with length 1"
+                            ]
+                        },
+                        "SideFirstPrize": {
+                            "info": {
+                                "id": "str",
+                                "name": "str",
+                                "amount": "str",
+                                "prizeMoney": "str"
+                            },
+                            "numbers": [
+                                "list of str with length 1"
+                            ]
+                        },
+                        "SecondPrize": {
+                            "info": {
+                                "id": "str",
+                                "name": "str",
+                                "amount": "str",
+                                "prizeMoney": "str"
+                            },
+                            "numbers": [
+                                "list of str with length 1"
+                            ]
+                        },
+                        "ThirdPrize": {
+                            "info": {
+                                "id": "str",
+                                "name": "str",
+                                "amount": "str",
+                                "prizeMoney": "str"
+                            },
+                            "numbers": [
+                                "list of str with length 1"
+                            ]
+                        },
+                        "FourthPrize": {
+                            "info": {
+                                "id": "str",
+                                "name": "str",
+                                "amount": "str",
+                                "prizeMoney": "str"
+                            },
+                            "numbers": [
+                                "list of str with length 1"
+                            ]
+                        },
+                        "FifthPrize": {
+                            "info": {
+                                "id": "str",
+                                "name": "str",
+                                "amount": "str",
+                                "prizeMoney": "str"
+                            },
+                            "numbers": [
+                                "list of str with length 1"
+                            ]
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "Latest Draw Date",
+            "schema": {
+                "success": "bool",
+                "payload": [
+                    {
+                        "id": "str",
+                        "date": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Draw Date Listing",
+            "schema": {
+                "success": "bool",
+                "payload": {
+                    "paginate": {
+                        "total": "int",
+                        "currentPage": "int",
+                        "maxPages": "int",
+                        "perPage": "int"
+                    },
+                    "results": [
+                        {
+                            "id": "str",
+                            "date": {
+                                "day": "int",
+                                "month": "int",
+                                "year": "int"
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

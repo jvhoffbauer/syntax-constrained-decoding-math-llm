@@ -1,0 +1,11 @@
+{
+    "api_list": [
+        {
+            "name": "/exclusiveness/{callerID}",
+            "schema": {
+                "Code": "str",
+                "Message": "str"
+            }
+        }
+    ]
+}

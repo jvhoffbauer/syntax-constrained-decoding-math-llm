@@ -1,0 +1,26 @@
+{
+    "api_list": [
+        {
+            "name": "Free JSON Endpoint",
+            "schema": {
+                "query": "str",
+                "status": "str",
+                "numberType": "str",
+                "numberValid": "bool",
+                "numberCountryCode": "int",
+                "formatE164": "str",
+                "dialFromCountryCode": "str",
+                "continent": "str",
+                "country": "str",
+                "region": "str",
+                "city": "str",
+                "zip": "str",
+                "lat": "float",
+                "lon": "float",
+                "timezone": "str",
+                "offset": "int",
+                "currency": "str"
+            }
+        }
+    ]
+}

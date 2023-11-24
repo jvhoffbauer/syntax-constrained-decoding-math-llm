@@ -1,0 +1,18 @@
+{
+    "api_list": [
+        {
+            "name": "Check",
+            "schema": {
+                "success": "bool",
+                "message": "str"
+            }
+        },
+        {
+            "name": "Run",
+            "schema": {
+                "success": "bool",
+                "message": "str"
+            }
+        }
+    ]
+}

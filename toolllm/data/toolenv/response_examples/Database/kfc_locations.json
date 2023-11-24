@@ -1,0 +1,16 @@
+{
+    "api_list": [
+        {
+            "name": "GET all KFC locations",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "GET all KFC locations by state and city",
+            "schema": {
+                "message": "str"
+            }
+        }
+    ]
+}

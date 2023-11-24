@@ -1,0 +1,28 @@
+{
+    "api_list": [
+        {
+            "name": "Search",
+            "schema": {
+                "item": [
+                    {
+                        "title": "str",
+                        "link": "str",
+                        "snippet": "str",
+                        "formattedUrl": "str"
+                    }
+                ],
+                "queries": {
+                    "request": [
+                        {
+                            "searchTerms": "str",
+                            "count": "str",
+                            "startIndex": "str",
+                            "safe": "str",
+                            "filter": "str"
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

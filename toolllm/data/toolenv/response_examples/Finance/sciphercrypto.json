@@ -1,0 +1,66 @@
+{
+    "api_list": [
+        {
+            "name": "TopTier /summary",
+            "schema": {
+                "Data": [
+                    {
+                        "CoinInfo": {
+                            "Name": "str",
+                            "ImageUrl": "str",
+                            "Algorithm": "str",
+                            "ProofType": "str",
+                            "Rating": {
+                                "Weiss": {
+                                    "Rating": "str"
+                                }
+                            }
+                        },
+                        "ConversionInfo": {
+                            "Conversion": "str",
+                            "CurrencyFrom": "str",
+                            "CurrencyTo": "str",
+                            "Market": "str",
+                            "TotalVolume24H": "str",
+                            "TotalTopTierVolume24H": "str"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Conversion",
+            "schema": {
+                "Data": [
+                    {
+                        "CoinInfo": {
+                            "Name": "str",
+                            "Algorithm": "str",
+                            "Rating": {
+                                "Weiss": {
+                                    "Rating": "str",
+                                    "TechnologyAdoptionRating": "str",
+                                    "MarketPerformanceRating": "str"
+                                }
+                            },
+                            "AssetLaunchDate": "str",
+                            "MaxSupply": "int",
+                            "Type": "int"
+                        },
+                        "ConversionInfo": {
+                            "Conversion": "str",
+                            "CurrencyFrom": "str",
+                            "CurrencyTo": "str",
+                            "Market": "str",
+                            "Supply": "float",
+                            "TotalVolume24H": "float",
+                            "TotalTopTierVolume24H": "float"
+                        }
+                    }
+                ],
+                "RateLimit": {},
+                "HasWarning": "bool"
+            }
+        }
+    ]
+}

@@ -1,0 +1,35 @@
+{
+    "api_list": [
+        {
+            "name": "Fetch Restaurant Information",
+            "schema": {
+                "data": {
+                    "About": {
+                        "Name": "str",
+                        "Ratings": "str",
+                        "Locality": "str",
+                        "AreaName": "str",
+                        "City": "str",
+                        "Cuisines": [
+                            "list of str with length 1"
+                        ]
+                    },
+                    "Menu": [
+                        {
+                            "title": "str",
+                            "Dishes": [
+                                {
+                                    "name": "str",
+                                    "inStock": "bool",
+                                    "isVeg": "bool",
+                                    "price": "int"
+                                }
+                            ]
+                        }
+                    ],
+                    "URL": "str"
+                }
+            }
+        }
+    ]
+}

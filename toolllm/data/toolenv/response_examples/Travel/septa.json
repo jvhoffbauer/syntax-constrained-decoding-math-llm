@@ -1,0 +1,117 @@
+{
+    "api_list": [
+        {
+            "name": "Get Alerts",
+            "schema": {
+                "route_id": "str",
+                "route_name": "str",
+                "current_message": "NoneType",
+                "advisory_id": "NoneType",
+                "advisory_message": "NoneType",
+                "detour_id": "NoneType",
+                "last_updated": "str",
+                "isSnow": "str"
+            }
+        },
+        {
+            "name": "Bus/Trolley Schedules",
+            "schema": {
+                "17": [
+                    {
+                        "StopName": "str",
+                        "Route": "str",
+                        "trip_id": "str",
+                        "date": "str",
+                        "Direction": "str",
+                        "DirectionDesc": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Bus/Trolley  Locations",
+            "schema": {
+                "bus": [
+                    {
+                        "lat": "str",
+                        "lng": "str",
+                        "label": "str",
+                        "Direction": "str",
+                        "destination": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Next to Arrive",
+            "schema": {
+                "orig_train": "str",
+                "orig_line": "str",
+                "orig_departure_time": "str",
+                "orig_arrival_time": "str",
+                "orig_delay": "str",
+                "term_train": "str",
+                "term_line": "str",
+                "term_depart_time": "str",
+                "term_arrival_time": "str",
+                "Connection": "str",
+                "term_delay": "str"
+            }
+        },
+        {
+            "name": "Bus Detours",
+            "schema": {
+                "route_id": "str",
+                "route_info": [
+                    {
+                        "route_direction": "str",
+                        "reason": "str",
+                        "start_location": "str",
+                        "end_location": "str",
+                        "start_date_time": "str",
+                        "end_date_time": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Bus/Trolley Routes",
+            "schema": {
+                "stopid": "str",
+                "stopname": "str"
+            }
+        },
+        {
+            "name": "Get Locations",
+            "schema": {
+                "location_id": "str",
+                "location_name": "str",
+                "location_lat": "str",
+                "location_lon": "str",
+                "distance": "str",
+                "location_type": "str",
+                "location_data": {
+                    "address1": "str",
+                    "city": "str",
+                    "state": "str",
+                    "zip": "str",
+                    "loc_name": "str",
+                    "status": "str",
+                    "phone": "str"
+                }
+            }
+        },
+        {
+            "name": "TrainView",
+            "schema": {
+                "trainno": "str",
+                "service": "str",
+                "dest": "str",
+                "currentstop": "str",
+                "nextstop": "str",
+                "line": "str",
+                "late": "int"
+            }
+        }
+    ]
+}

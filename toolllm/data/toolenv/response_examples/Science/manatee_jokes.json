@@ -1,0 +1,19 @@
+{
+    "api_list": [
+        {
+            "name": "random",
+            "schema": {
+                "id": "int",
+                "setup": "str",
+                "punchline": "str"
+            }
+        },
+        {
+            "name": "find all",
+            "schema": {
+                "setup": "str",
+                "punchline": "str"
+            }
+        }
+    ]
+}

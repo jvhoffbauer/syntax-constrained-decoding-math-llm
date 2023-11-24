@@ -1,0 +1,48 @@
+{
+    "api_list": [
+        {
+            "name": "get_supported_coins_handler",
+            "schema": {
+                "cursor": "str",
+                "coins": {
+                    "ACM": {
+                        "burn_per_goal": "str",
+                        "burn_per_victory": "str",
+                        "burned_supply": "str",
+                        "circulating_supply": "str",
+                        "name": "str",
+                        "symbol": "str",
+                        "total_supply": "str"
+                    },
+                    "AFC": {
+                        "burn_per_goal": "str",
+                        "burn_per_victory": "str",
+                        "burned_supply": "str",
+                        "circulating_supply": "str",
+                        "name": "str",
+                        "symbol": "str",
+                        "total_supply": "str"
+                    },
+                    "ALA": {
+                        "burn_per_goal": "str",
+                        "burn_per_victory": "str",
+                        "burned_supply": "str",
+                        "circulating_supply": "str",
+                        "name": "str",
+                        "symbol": "str",
+                        "total_supply": "str"
+                    },
+                    "ALL": {
+                        "burn_per_goal": "str",
+                        "burn_per_victory": "str",
+                        "burned_supply": "str",
+                        "circulating_supply": "str",
+                        "name": "str",
+                        "symbol": "str",
+                        "total_supply": "str"
+                    }
+                }
+            }
+        }
+    ]
+}

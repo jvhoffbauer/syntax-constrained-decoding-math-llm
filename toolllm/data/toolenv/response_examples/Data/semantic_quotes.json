@@ -1,0 +1,30 @@
+{
+    "api_list": [
+        {
+            "name": "Random Quote",
+            "schema": {
+                "response": [
+                    {
+                        "author": "str",
+                        "tags": [
+                            "list of str with length 1"
+                        ],
+                        "quote": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Search Quotes",
+            "schema": {
+                "response": [
+                    {
+                        "author": "str",
+                        "title": "str",
+                        "quote": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

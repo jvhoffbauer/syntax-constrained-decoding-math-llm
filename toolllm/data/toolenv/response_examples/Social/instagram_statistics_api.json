@@ -1,0 +1,117 @@
+{
+    "api_list": [
+        {
+            "name": "Profile by ID",
+            "schema": {
+                "meta": {
+                    "code": "str",
+                    "message": "str"
+                },
+                "data": {
+                    "cid": "str",
+                    "socialType": "str",
+                    "groupID": "str",
+                    "url": "str",
+                    "name": "str",
+                    "image": "str",
+                    "description": "str",
+                    "screenName": "str",
+                    "usersCount": "str",
+                    "communityStatus": "str",
+                    "isBlocked": "str",
+                    "isClosed": "str",
+                    "avgER": "str",
+                    "avgInteractions": "str",
+                    "avgViews": "str",
+                    "ratingIndex": "str",
+                    "similar": "str",
+                    "qualityScore": "str",
+                    "timeStatistics": "str",
+                    "timePostsLoaded": "str",
+                    "avgLikes": "str",
+                    "avgComments": "str",
+                    "avgVideoLikes": "str",
+                    "avgVideoComments": "str",
+                    "avgVideoViews": "str"
+                }
+            }
+        },
+        {
+            "name": "Profile by URL",
+            "schema": {
+                "meta": {
+                    "code": "str",
+                    "message": "str"
+                },
+                "data": {
+                    "cid": "str",
+                    "socialType": "str",
+                    "url": "str",
+                    "name": "str",
+                    "image": "str",
+                    "description": "str",
+                    "screenName": "str",
+                    "usersCount": "str",
+                    "avgER": "str",
+                    "avgInteractions": "str",
+                    "qualityScore": "str",
+                    "timeStatistics": "str",
+                    "membersCities": [
+                        {
+                            "category": "str",
+                            "name": "str",
+                            "value": "str"
+                        }
+                    ],
+                    "membersCountries": [
+                        {
+                            "category": "str",
+                            "name": "str",
+                            "value": "str"
+                        }
+                    ],
+                    "membersGendersAges": {
+                        "summary": {
+                            "m": "str",
+                            "f": "str",
+                            "avgAges": "str"
+                        }
+                    },
+                    "avgLikes": "str",
+                    "avgComments": "str",
+                    "avgVideoLikes": "str",
+                    "avgVideoComments": "str",
+                    "avgVideoViews": "str"
+                }
+            }
+        },
+        {
+            "name": "Activity",
+            "schema": {
+                "data": [
+                    {
+                        "time": "str",
+                        "interactions": "float",
+                        "likes": "float",
+                        "comments": "float"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Tags",
+            "schema": {
+                "data": [
+                    {
+                        "tagID": "str",
+                        "name": "str",
+                        "parent": "str",
+                        "level": "int",
+                        "fullName": "str",
+                        "isLeaf": "bool"
+                    }
+                ]
+            }
+        }
+    ]
+}

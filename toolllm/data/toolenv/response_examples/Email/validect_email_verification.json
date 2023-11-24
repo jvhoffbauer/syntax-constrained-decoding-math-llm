@@ -1,0 +1,15 @@
+{
+    "api_list": [
+        {
+            "name": "/v1/verify",
+            "schema": {
+                "status": "str",
+                "reason": "str",
+                "email": "str",
+                "public": "bool",
+                "disposable": "bool",
+                "role": "bool"
+            }
+        }
+    ]
+}

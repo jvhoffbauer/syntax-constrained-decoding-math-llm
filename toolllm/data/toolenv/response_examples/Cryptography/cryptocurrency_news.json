@@ -1,0 +1,66 @@
+{
+    "api_list": [
+        {
+            "name": "CoinDesk",
+            "schema": {
+                "data": [
+                    {
+                        "url": "str",
+                        "title": "str",
+                        "thumbnail": "str",
+                        "createdAt": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Bitcoinist",
+            "schema": {
+                "data": [
+                    {
+                        "title": "str",
+                        "description": "str",
+                        "thumbnail": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "The Guardian",
+            "schema": {
+                "data": [
+                    {
+                        "url": "str",
+                        "title": "str",
+                        "thumbnail": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "BSC News",
+            "schema": {
+                "data": [
+                    {
+                        "title": "str",
+                        "description": "str",
+                        "thumbnail": "str",
+                        "createdAt": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Decrypt",
+            "schema": {
+                "data": [
+                    {
+                        "title": "str",
+                        "description": "str",
+                        "thumbnail": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,46 @@
+{
+    "api_list": [
+        {
+            "name": "Business Reviews",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Business Photos",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Business Details",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Search In Area",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Search Nearby",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Search",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Autocomplete",
+            "schema": {
+                "message": "str"
+            }
+        }
+    ]
+}

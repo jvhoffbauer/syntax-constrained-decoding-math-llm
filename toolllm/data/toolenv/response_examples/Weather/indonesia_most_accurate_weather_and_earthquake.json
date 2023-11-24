@@ -1,0 +1,50 @@
+{
+    "api_list": [
+        {
+            "name": "Weather forecast for Indonesian cities BMKG",
+            "schema": {
+                "success": "bool",
+                "message": "NoneType",
+                "data": {
+                    "id": "str",
+                    "latitude": "str",
+                    "longitude": "str",
+                    "coordinate": "str",
+                    "type": "str",
+                    "region": "str",
+                    "level": "str",
+                    "description": "str",
+                    "domain": "str",
+                    "tags": "str",
+                    "params": [
+                        {
+                            "id": "str",
+                            "description": "str",
+                            "type": "str",
+                            "h": "str",
+                            "datetime": "str",
+                            "value": "str"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Latest earth quake happened on Indonesia BMKG",
+            "schema": {
+                "data": {
+                    "tanggal": "str",
+                    "jam": "str",
+                    "coordinates": "str",
+                    "lintang": "str",
+                    "bujur": "str",
+                    "magnitude": "str",
+                    "kedalaman": "str",
+                    "wilayah": "str",
+                    "potensi": "str",
+                    "shakemap": "str"
+                }
+            }
+        }
+    ]
+}

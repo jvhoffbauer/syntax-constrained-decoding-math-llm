@@ -1,0 +1,76 @@
+{
+    "api_list": [
+        {
+            "name": "Countries",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Cities",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "State",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Timezones",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "City by id",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Country by iso code",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "State by id",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Continent by id",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Continents",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Languages",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Language by id",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Timezone by id",
+            "schema": {
+                "message": "str"
+            }
+        }
+    ]
+}

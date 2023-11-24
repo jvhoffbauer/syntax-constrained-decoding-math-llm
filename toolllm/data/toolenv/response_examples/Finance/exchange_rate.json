@@ -1,0 +1,139 @@
+{
+    "api_list": [
+        {
+            "name": "Symbols",
+            "schema": {
+                "motd": {
+                    "msg": "str",
+                    "url": "str"
+                },
+                "success": "str",
+                "symbols": {}
+            }
+        },
+        {
+            "name": "Historical",
+            "schema": {
+                "success": "bool",
+                "historical": "bool",
+                "base": "str",
+                "date": "str",
+                "rates": {
+                    "USD": "float",
+                    "JPY": "float",
+                    "CYP": "float",
+                    "CZK": "float",
+                    "DKK": "float",
+                    "EEK": "float",
+                    "GBP": "float",
+                    "HUF": "float",
+                    "LTL": "float",
+                    "LVL": "float",
+                    "MTL": "float",
+                    "PLN": "float",
+                    "ROL": "int",
+                    "SEK": "float",
+                    "SIT": "float",
+                    "SKK": "float",
+                    "CHF": "float",
+                    "ISK": "float",
+                    "NOK": "float",
+                    "TRL": "int",
+                    "AUD": "float",
+                    "CAD": "float",
+                    "HKD": "float",
+                    "KRW": "float",
+                    "NZD": "float",
+                    "SGD": "float",
+                    "ZAR": "float",
+                    "EUR": "int"
+                }
+            }
+        },
+        {
+            "name": "Latest",
+            "schema": {
+                "motd": {
+                    "msg": "str"
+                },
+                "success": "str",
+                "base": "str",
+                "date": "str",
+                "rates": {
+                    "AED": "str",
+                    "AFN": "str",
+                    "ALL": "str",
+                    "AMD": "str",
+                    "ANG": "str",
+                    "AOA": "str",
+                    "ARS": "str",
+                    "AUD": "str",
+                    "AWG": "str",
+                    "AZN": "str",
+                    "BAM": "str",
+                    "BBD": "str",
+                    "BDT": "str",
+                    "BGN": "str",
+                    "BHD": "str",
+                    "BIF": "str",
+                    "BMD": "str",
+                    "BND": "str",
+                    "BOB": "str",
+                    "BRL": "str",
+                    "BSD": "str",
+                    "BTC": "str",
+                    "BTN": "str",
+                    "BWP": "str",
+                    "BYN": "str",
+                    "BZD": "str",
+                    "CAD": "str",
+                    "CDF": "str",
+                    "CHF": "str",
+                    "CLF": "str",
+                    "CLP": "str",
+                    "CNH": "str",
+                    "CNY": "str",
+                    "COP": "str",
+                    "CRC": "str",
+                    "CUC": "str",
+                    "CUP": "str",
+                    "CVE": "str",
+                    "CZK": "str",
+                    "DJF": "str",
+                    "DKK": "str",
+                    "DOP": "str",
+                    "DZD": "str",
+                    "EGP": "str",
+                    "ERN": "str",
+                    "ETB": "str",
+                    "EUR": "str",
+                    "FJD": "str",
+                    "FKP": "str",
+                    "GBP": "str",
+                    "GEL": "str",
+                    "GGP": "str",
+                    "GHS": "str",
+                    "GIP": "str",
+                    "GMD": "str",
+                    "GNF": "str",
+                    "GTQ": "str"
+                }
+            }
+        },
+        {
+            "name": "Convert",
+            "schema": {
+                "query": {
+                    "from": "str",
+                    "to": "str",
+                    "amount": "int"
+                },
+                "info": {
+                    "rate": "float"
+                },
+                "date": "str",
+                "result": "float"
+            }
+        }
+    ]
+}

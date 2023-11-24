@@ -1,0 +1,16 @@
+{
+    "api_list": [
+        {
+            "name": "Supported Languages",
+            "schema": {
+                "data": [
+                    {
+                        "code": "str",
+                        "language": "str"
+                    }
+                ],
+                "totalResultCount": "int"
+            }
+        }
+    ]
+}

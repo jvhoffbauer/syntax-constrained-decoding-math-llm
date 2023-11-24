@@ -1,0 +1,69 @@
+{
+    "api_list": [
+        {
+            "name": "List all Pokemons",
+            "schema": {
+                "items": [
+                    {
+                        "name": "str",
+                        "id": "str",
+                        "damageType": "str"
+                    }
+                ],
+                "itemCount": "int",
+                "pageCount": "int"
+            }
+        },
+        {
+            "name": "Get Pokemon data by name",
+            "schema": {
+                "name": "str",
+                "display_name": "str",
+                "tier": "str",
+                "tier_change": "str",
+                "soon": "str",
+                "tags": {
+                    "range": "str",
+                    "difficulty": "str",
+                    "role": "str"
+                },
+                "evolution": [
+                    {
+                        "name": "str",
+                        "level": "str"
+                    }
+                ],
+                "builds": [
+                    {
+                        "name": "str",
+                        "soon": "str",
+                        "lane": "str",
+                        "held_items": [
+                            "list of str with length 1"
+                        ],
+                        "battle_items": [
+                            "list of str with length 1"
+                        ],
+                        "basic": [
+                            "list of str with length 1"
+                        ],
+                        "upgrade": [
+                            "list of str with length 1"
+                        ]
+                    }
+                ],
+                "damage_type": "str",
+                "notes": "str",
+                "early_learn": "str",
+                "standard_moves": "str",
+                "skills": [
+                    {
+                        "name": "str",
+                        "ability": "str",
+                        "description": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

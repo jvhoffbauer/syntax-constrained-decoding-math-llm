@@ -1,0 +1,15 @@
+{
+    "api_list": [
+        {
+            "name": "/opr",
+            "schema": {
+                "data": {
+                    "year": "int",
+                    "date": "str",
+                    "change_in_opr": "float",
+                    "new_opr_level": "int"
+                }
+            }
+        }
+    ]
+}

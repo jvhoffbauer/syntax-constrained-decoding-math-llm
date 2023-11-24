@@ -1,0 +1,24 @@
+{
+    "api_list": [
+        {
+            "name": "Downloader",
+            "schema": {
+                "code": "int",
+                "state": "str",
+                "result": {
+                    "total": "str",
+                    "list": [
+                        {
+                            "url": "str",
+                            "name": "str",
+                            "artist": "str",
+                            "album": "str",
+                            "song_time_minutes": "str",
+                            "release_date": "str"
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

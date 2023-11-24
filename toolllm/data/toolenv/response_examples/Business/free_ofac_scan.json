@@ -1,0 +1,15 @@
+{
+    "api_list": [
+        {
+            "name": "free_ofac.api",
+            "schema": {
+                "target": {
+                    "first_name": "str",
+                    "last_name": "str",
+                    "business_name": "str"
+                },
+                "records_found": "str"
+            }
+        }
+    ]
+}

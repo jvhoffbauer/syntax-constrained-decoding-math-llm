@@ -1,0 +1,80 @@
+{
+    "api_list": [
+        {
+            "name": "Champion",
+            "schema": {
+                "year": "str",
+                "champion": "str",
+                "coach": "str",
+                "record": "str",
+                "championship_score": "str",
+                "seed": "str"
+            }
+        },
+        {
+            "name": "Seeds",
+            "schema": {
+                "year": "str",
+                "number_one_seeds": "str"
+            }
+        },
+        {
+            "name": "Detail",
+            "schema": {
+                "year": "str",
+                "champion": "str",
+                "champion_coach": "str",
+                "champion_record": "str",
+                "championship_score": "str",
+                "runner_up": "str",
+                "semifinalist_1": "str",
+                "semifinalist_2": "str",
+                "mop": "str",
+                "location": "str",
+                "venue": "str"
+            }
+        },
+        {
+            "name": "Runner-up",
+            "schema": {
+                "year": "str",
+                "runner_up": "str",
+                "coach": "str",
+                "championship_score": "str"
+            }
+        },
+        {
+            "name": "Summary",
+            "schema": {
+                "year": "str",
+                "champion": "str",
+                "final_four": "str",
+                "mop": "str"
+            }
+        },
+        {
+            "name": "Location",
+            "schema": {
+                "year": "str",
+                "location": "str",
+                "venue": "str"
+            }
+        },
+        {
+            "name": "Fourth Place",
+            "schema": {
+                "year": "str",
+                "fourth_place": "str",
+                "coach": "str"
+            }
+        },
+        {
+            "name": "Third Place",
+            "schema": {
+                "year": "str",
+                "third_place": "str",
+                "coach": "str"
+            }
+        }
+    ]
+}

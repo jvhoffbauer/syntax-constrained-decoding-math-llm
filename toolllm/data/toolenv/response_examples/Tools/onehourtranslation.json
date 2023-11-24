@@ -1,0 +1,140 @@
+{
+    "api_list": [
+        {
+            "name": "Download Resource",
+            "schema": {
+                "status": {
+                    "code": "int",
+                    "msg": "str"
+                }
+            }
+        },
+        {
+            "name": "Get Account Details",
+            "schema": {
+                "status": {
+                    "code": "int",
+                    "msg": "str"
+                }
+            }
+        },
+        {
+            "name": "Supported Languages",
+            "schema": {
+                "status": {
+                    "code": "int",
+                    "msg": "str"
+                }
+            }
+        },
+        {
+            "name": "Get Phrases List (TM)",
+            "schema": {
+                "status": {
+                    "code": "int",
+                    "msg": "str"
+                }
+            }
+        },
+        {
+            "name": "Get Project Details",
+            "schema": {
+                "status": {
+                    "code": "int",
+                    "msg": "str"
+                }
+            }
+        },
+        {
+            "name": "Detect Language (Machine)",
+            "schema": {
+                "status": {
+                    "code": "int",
+                    "msg": "str"
+                }
+            }
+        },
+        {
+            "name": "Get Context's Details (TM)",
+            "schema": {
+                "status": {
+                    "code": "int",
+                    "msg": "str"
+                }
+            }
+        },
+        {
+            "name": "Get Project's Comments",
+            "schema": {
+                "status": {
+                    "code": "int",
+                    "msg": "str"
+                }
+            }
+        },
+        {
+            "name": "Get Resource",
+            "schema": {
+                "status": {
+                    "code": "int",
+                    "msg": "str"
+                }
+            }
+        },
+        {
+            "name": "Get Contexts List (TM)",
+            "schema": {
+                "status": {
+                    "code": "int",
+                    "msg": "str"
+                }
+            }
+        },
+        {
+            "name": "Supported Language Pairs",
+            "schema": {
+                "status": {
+                    "code": "int",
+                    "msg": "str"
+                }
+            }
+        },
+        {
+            "name": "Get Phrase (TM)",
+            "schema": {
+                "status": {
+                    "code": "int",
+                    "msg": "str"
+                }
+            }
+        },
+        {
+            "name": "Get Quote",
+            "schema": {
+                "status": {
+                    "code": "int"
+                },
+                "results": "str",
+                "errors": "str"
+            }
+        },
+        {
+            "name": "Supported Expertise",
+            "schema": {
+                "status": {
+                    "code": "int",
+                    "msg": "str"
+                }
+            }
+        },
+        {
+            "name": "Translate (Machine)",
+            "schema": {
+                "status": {
+                    "code": "int",
+                    "msg": "str"
+                }
+            }
+        }
+    ]
+}

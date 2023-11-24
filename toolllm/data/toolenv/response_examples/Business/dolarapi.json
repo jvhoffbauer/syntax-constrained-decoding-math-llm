@@ -1,0 +1,34 @@
+{
+    "api_list": [
+        {
+            "name": "Contado con Liquidaci\u00f3n",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Dolar Blue",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Oficial",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Dolar DAI",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Resumen General",
+            "schema": {
+                "message": "str"
+            }
+        }
+    ]
+}

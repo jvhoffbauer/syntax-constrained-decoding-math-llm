@@ -1,0 +1,14 @@
+{
+    "api_list": [
+        {
+            "name": "List Models",
+            "schema": {
+                "models": [
+                    {
+                        "name": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

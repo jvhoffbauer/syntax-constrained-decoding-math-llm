@@ -1,0 +1,61 @@
+{
+    "api_list": [
+        {
+            "name": "See about Gainers/Losers",
+            "schema": {
+                "gainers": "str",
+                "losers": "str"
+            }
+        },
+        {
+            "name": "See about nft prices",
+            "schema": {
+                "headers": {
+                    "host": "str",
+                    "user-agent": "str",
+                    "accept": "str",
+                    "accept-encoding": "str",
+                    "x-rapidapi-host": "str",
+                    "x-rapidapi-subscription": "str",
+                    "x-rapidapi-user": "str",
+                    "x-rapidapi-version": "str"
+                },
+                "baseUrl": "str",
+                "data": "str"
+            }
+        },
+        {
+            "name": "See about the exchanges",
+            "schema": {
+                "headers": {
+                    "host": "str",
+                    "user-agent": "str",
+                    "accept": "str",
+                    "accept-encoding": "str",
+                    "x-rapidapi-host": "str",
+                    "x-rapidapi-request-id": "str",
+                    "x-request-start": "str"
+                },
+                "baseUrl": "str",
+                "data": "str"
+            }
+        },
+        {
+            "name": "See about the prices of the cryptos.",
+            "schema": {
+                "headers": {
+                    "host": "str",
+                    "user-agent": "str",
+                    "accept": "str",
+                    "accept-encoding": "str",
+                    "x-rapidapi-host": "str",
+                    "x-rapidapi-request-id": "str",
+                    "x-rapidapi-user": "str",
+                    "x-rapidapi-version": "str"
+                },
+                "baseUrl": "str",
+                "data": "str"
+            }
+        }
+    ]
+}

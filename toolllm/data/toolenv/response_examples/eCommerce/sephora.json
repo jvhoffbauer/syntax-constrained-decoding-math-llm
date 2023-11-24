@@ -1,0 +1,383 @@
+{
+    "api_list": [
+        {
+            "name": "stores/list (Deprecated)",
+            "schema": {
+                "stores": [
+                    {
+                        "address": {
+                            "address1": "str",
+                            "city": "str",
+                            "country": "str",
+                            "postalCode": "str",
+                            "state": "str"
+                        },
+                        "displayName": "str",
+                        "distance": "str",
+                        "latitude": "str",
+                        "longitude": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "auto-complete (Deprecated)",
+            "schema": {
+                "typeAheadTerms": [
+                    {
+                        "term": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "products/v2/search-by-barcode",
+            "schema": {
+                "data": {
+                    "type": "str",
+                    "attributes": {
+                        "variant-id": "str",
+                        "product-id": "str"
+                    },
+                    "relationships": {
+                        "variant": {
+                            "data": {
+                                "id": "str",
+                                "type": "str"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "products/search-by-barcode (Deprecated)",
+            "schema": {
+                "errorCode": "int",
+                "errorMessages": [
+                    "list of str with length 1"
+                ]
+            }
+        },
+        {
+            "name": "products/list (Deprecated)",
+            "schema": {
+                "categoryId": "str",
+                "content": {
+                    "seoCanonicalUrl": "str",
+                    "seoKeywords": "str",
+                    "seoMetaDescription": "str",
+                    "seoName": "str",
+                    "seoTitle": "str",
+                    "targetUrl": "str"
+                },
+                "displayName": "str",
+                "enableNoindexMetaTag": "str",
+                "marketingTiles": [
+                    {
+                        "componentName": "str",
+                        "imageSource": "str",
+                        "targetUrl": "str"
+                    }
+                ],
+                "products": [
+                    {
+                        "brandName": "str",
+                        "currentSku": {
+                            "imageAltText": "str",
+                            "isBIExclusive": "str"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "products/detail (Deprecated)",
+            "schema": {
+                "brand": {
+                    "brandId": "str",
+                    "description": "str",
+                    "displayName": "str",
+                    "ref": "str",
+                    "targetUrl": "str"
+                },
+                "currentSku": {
+                    "actionFlags": {
+                        "isAddToBasket": "str",
+                        "isAfterpayEligible": "str",
+                        "isFullSizeSkuOrderable": "str",
+                        "isKlarnaEligible": "str"
+                    },
+                    "displayName": "str",
+                    "freeShippingMessage": "str",
+                    "isExternallySellable": "str",
+                    "isFinalSale": "str",
+                    "isFindInStore": "str",
+                    "isFirstAccess": "str",
+                    "isFlash": "str",
+                    "isFree": "str"
+                }
+            }
+        },
+        {
+            "name": "products/check-availability (Deprecated)",
+            "schema": {
+                "stores": [
+                    {
+                        "displayName": "str",
+                        "distance": "str",
+                        "inStoreAvailability": "str",
+                        "isBopisable": "str",
+                        "isConciergeCurbsideEnabled": "str",
+                        "isCurbsideEnabled": "str",
+                        "isRopisable": "str",
+                        "latitude": "str",
+                        "longitude": "str",
+                        "seoCanonicalUrl": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "reviews/list (Deprecated)",
+            "schema": {
+                "Results": "str",
+                "HasErrors": "bool"
+            }
+        },
+        {
+            "name": "categories/list (Deprecated)",
+            "schema": {
+                "categoryId": "str",
+                "childCategories": [
+                    {
+                        "categoryId": "str",
+                        "content": {
+                            "seoName": "str",
+                            "seoTitle": "str",
+                            "targetUrl": "str"
+                        },
+                        "displayName": "str",
+                        "hasChildCategories": "str",
+                        "hasDropdownMenu": "str",
+                        "targetUrl": "str"
+                    }
+                ],
+                "content": {
+                    "seoName": "str",
+                    "seoTitle": "str",
+                    "targetUrl": "str"
+                },
+                "displayName": "str",
+                "hasChildCategories": "str",
+                "hasDropdownMenu": "str"
+            }
+        },
+        {
+            "name": "categories/list-root (Deprecated)",
+            "schema": {
+                "breadcrumbs": [
+                    {
+                        "isSelected": "str",
+                        "name": "str"
+                    }
+                ],
+                "mediaType": "str",
+                "navigationSeoJsonLd": "str",
+                "region2": [
+                    {
+                        "cols": "str",
+                        "componentName": "str",
+                        "componentType": "str",
+                        "imageComponents": [
+                            {
+                                "altText": "str",
+                                "imageId": "str",
+                                "imagePath": "str"
+                            }
+                        ],
+                        "name": "str",
+                        "rows": "str"
+                    }
+                ],
+                "seoCanonicalUrl": "str",
+                "seoName": "str",
+                "targetUrl": "str",
+                "templateUrl": "str",
+                "title": "str",
+                "type": "str"
+            }
+        },
+        {
+            "name": "categories/v2/list-root (Deprecated)",
+            "schema": {
+                "rootCategories": [
+                    {
+                        "categoryId": "str",
+                        "displayName": "str",
+                        "hasChildCategories": "bool",
+                        "hasDropdownMenu": "bool",
+                        "selectedThumbImage": "str",
+                        "showInAppJaBsDropdown": "bool",
+                        "targetUrl": "str",
+                        "thumbImage": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "products/v2/get-filters",
+            "schema": {
+                "data": {
+                    "attributes": {
+                        "min-price": "float",
+                        "max-price": "float",
+                        "other-filters": [
+                            "list of str with length 1"
+                        ]
+                    },
+                    "relationships": {
+                        "brands": {
+                            "data": [
+                                {
+                                    "id": "str",
+                                    "type": "str"
+                                }
+                            ]
+                        },
+                        "categories": {
+                            "data": [
+                                {
+                                    "id": "str",
+                                    "type": "str"
+                                }
+                            ]
+                        },
+                        "filter-types": {
+                            "data": [
+                                {
+                                    "id": "str",
+                                    "type": "str"
+                                }
+                            ]
+                        }
+                    }
+                },
+                "included": [
+                    {
+                        "id": "str",
+                        "type": "str",
+                        "attributes": {
+                            "slug-url": "str",
+                            "name": "str"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "products/v2/list",
+            "schema": {
+                "data": [
+                    {
+                        "attributes": {
+                            "name": "str",
+                            "heading": "str",
+                            "rating": "str",
+                            "how-to-text": "str",
+                            "description": "str",
+                            "benefits": "str",
+                            "ingredients": "str",
+                            "seo": {
+                                "meta-description": "str",
+                                "page-title": "str"
+                            },
+                            "available-on-modiface": "str",
+                            "available-on-findation": "str",
+                            "slug-url": "str",
+                            "variants-count": "str",
+                            "labels": "str",
+                            "web-url": "str",
+                            "featured-variant-id": "str",
+                            "reviews-count": "str",
+                            "new-arrival": "str",
+                            "how-to": "str",
+                            "price": "str",
+                            "original-price": "str"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "categories/v2/list",
+            "schema": {
+                "data": [
+                    {
+                        "id": "str",
+                        "type": "str",
+                        "attributes": {
+                            "slug-url": "str",
+                            "label": "str",
+                            "top-level": "bool",
+                            "position": "int"
+                        },
+                        "relationships": {
+                            "children": {
+                                "data": [
+                                    {
+                                        "id": "str",
+                                        "type": "str"
+                                    }
+                                ]
+                            },
+                            "parent": {
+                                "data": "NoneType"
+                            }
+                        }
+                    }
+                ],
+                "meta": {
+                    "count": "int"
+                }
+            }
+        },
+        {
+            "name": "v2/auto-complete",
+            "schema": {
+                "data": {
+                    "type": "str",
+                    "relationships": {
+                        "categories": {
+                            "data": [
+                                {
+                                    "id": "int",
+                                    "type": "str"
+                                }
+                            ]
+                        },
+                        "products": {
+                            "data": [
+                                {
+                                    "id": "int",
+                                    "type": "str"
+                                }
+                            ]
+                        }
+                    }
+                },
+                "included": [
+                    {
+                        "attributes": {
+                            "parent-id": "int",
+                            "label": "str",
+                            "slug-url": "str"
+                        },
+                        "id": "str",
+                        "type": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

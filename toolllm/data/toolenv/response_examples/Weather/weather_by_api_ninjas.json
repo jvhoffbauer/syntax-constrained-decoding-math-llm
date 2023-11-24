@@ -1,0 +1,17 @@
+{
+    "api_list": [
+        {
+            "name": "/v1/weather",
+            "schema": {
+                "cloud_pct": "int",
+                "temp": "int",
+                "feels_like": "int",
+                "humidity": "int",
+                "min_temp": "int",
+                "max_temp": "int",
+                "wind_speed": "float",
+                "wind_degrees": "int"
+            }
+        }
+    ]
+}

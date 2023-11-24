@@ -1,0 +1,19 @@
+{
+    "api_list": [
+        {
+            "name": "search",
+            "schema": {
+                "headers": {
+                    "Content-Type": "str",
+                    "Content-Length": "str",
+                    "Access-Control-Request-Method": "str"
+                },
+                "_status": "str",
+                "_status_code": "int",
+                "response": [
+                    "list of str with length 1"
+                ]
+            }
+        }
+    ]
+}

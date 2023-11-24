@@ -1,0 +1,1401 @@
+{
+    "api_list": [
+        {
+            "name": "competitions/get-table",
+            "schema": {
+                "table": [
+                    {
+                        "rank": "int",
+                        "clubName": "str",
+                        "points": "int",
+                        "goalDifference": "int",
+                        "matches": "int",
+                        "wins": "int",
+                        "losses": "int",
+                        "draw": "int",
+                        "markClass": "str",
+                        "markColor": "str"
+                    }
+                ],
+                "legend": [
+                    {
+                        "description": "str",
+                        "class": "str",
+                        "color": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "players/get-header-info",
+            "schema": {
+                "share": {
+                    "title": "str",
+                    "url": "str",
+                    "description": "str"
+                },
+                "data": {
+                    "player": {
+                        "id": "str",
+                        "name": "str",
+                        "image": "str",
+                        "shirtNumber": "str",
+                        "age": "str",
+                        "nationalities": [
+                            {
+                                "id": "str",
+                                "name": "str",
+                                "image": "str"
+                            }
+                        ],
+                        "marketValue": {
+                            "value": "str",
+                            "currency": "str"
+                        }
+                    },
+                    "club": {
+                        "id": "str",
+                        "name": "str",
+                        "fullName": "str",
+                        "image": "str",
+                        "nationalTeam": "str",
+                        "mainCompetition": {
+                            "id": "str",
+                            "name": "str",
+                            "shortName": "str",
+                            "image": "str"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "referees/get-profile",
+            "schema": {
+                "share": {
+                    "title": "str",
+                    "url": "str",
+                    "description": "str"
+                },
+                "profile": {
+                    "id": "str",
+                    "refereeName": "str",
+                    "refereeImage": "str",
+                    "personID": "str",
+                    "clubID": "str",
+                    "clubName": "str",
+                    "clubImage": "str",
+                    "debut": "str",
+                    "fifaRefereeSince": "str",
+                    "fifaRefereeUntil": "str",
+                    "refereeSince": "str",
+                    "refereeUntil": "str",
+                    "endOfCareer": "str",
+                    "job": "str",
+                    "residence": "str",
+                    "firstName": "str",
+                    "lastName": "str",
+                    "alias": "str",
+                    "age": "str",
+                    "countryID": "str",
+                    "countryName": "str",
+                    "countryImage": "str",
+                    "dateOfBirth": "str",
+                    "totalCompetitionsPerformance": {}
+                }
+            }
+        },
+        {
+            "name": "news/list-by-competition",
+            "schema": {
+                "share": {
+                    "title": "str",
+                    "url": "str",
+                    "description": "str"
+                },
+                "news": [
+                    {
+                        "id": "str",
+                        "newsHeadline": "str",
+                        "timestamp": "str",
+                        "newsDate": "str",
+                        "newsSource": "str",
+                        "newsTeaser": "str",
+                        "newsCategoryTag": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "matches/get-game-information",
+            "schema": {
+                "gameInformation": {
+                    "id": "str",
+                    "postponed": "str",
+                    "hasMatchSheet": "str",
+                    "stadiumName": "str",
+                    "competitionName": "str",
+                    "competitionRound": "str",
+                    "refereeName": "str",
+                    "homeTeamName": "str",
+                    "awayTeamName": "str",
+                    "date": "str",
+                    "time": "str",
+                    "scoreradarID": "str",
+                    "firstLeg": "str",
+                    "nextRound": "str"
+                }
+            }
+        },
+        {
+            "name": "matches/get-stats",
+            "schema": {
+                "stats": [
+                    {
+                        "clubId": "str",
+                        "ballpossession": "str",
+                        "offsides": "str",
+                        "fouls": "str",
+                        "freekicks": "str",
+                        "cornerkicks": "str",
+                        "goalkeepersaves": "str",
+                        "shotsongoal": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "matches/list-by-club",
+            "schema": {
+                "seasonID": "str",
+                "id": "str",
+                "clubName": "str",
+                "share": {
+                    "title": "str",
+                    "url": "str"
+                },
+                "playClubMatches": [
+                    {
+                        "competitionID": "str",
+                        "competitionName": "str",
+                        "competitionImage": "str",
+                        "tournamentFlag": "str",
+                        "matchDay": "str",
+                        "matchDate": "str",
+                        "fullMatchDate": "str",
+                        "matchTime": "str",
+                        "timestamp": "str",
+                        "homeClubID": "str",
+                        "homeClubName": "str",
+                        "homeClubImage": "str",
+                        "awayClubID": "str",
+                        "awayClubName": "str",
+                        "awayClubImage": "str",
+                        "result": "str",
+                        "postponed": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "matches/list-by-game-plan",
+            "schema": {
+                "seasonID": "str",
+                "leagueID": "str",
+                "dayID": "str",
+                "tournamentFlag": "str",
+                "share": {
+                    "title": "str",
+                    "url": "str"
+                },
+                "playDayMatches": [
+                    {
+                        "id": "str",
+                        "competitionID": "str",
+                        "competitionName": "str",
+                        "matchDay": "str",
+                        "matchDate": "str",
+                        "fullMatchDate": "str",
+                        "matchTime": "str",
+                        "timestamp": "str",
+                        "homeClubID": "str",
+                        "homeClubName": "str",
+                        "awayClubID": "str",
+                        "awayClubName": "str",
+                        "result": "str",
+                        "postponed": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "statistic/list-uefa-5year-rankings",
+            "schema": {
+                "teams": [
+                    {
+                        "countryImage": "str",
+                        "countryName": "str",
+                        "totalPoints": "int",
+                        "points2022": "str",
+                        "points2021": "str",
+                        "points2020": "str",
+                        "points2019": "str",
+                        "points2018": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "competitions/get-header-info",
+            "schema": {
+                "competition": {
+                    "id": "str",
+                    "competitionName": "str",
+                    "marketValue": "str",
+                    "marketValueCurrency": "str",
+                    "marketValueNumeral": "str",
+                    "marketValueUnformatted": "str",
+                    "competitionImage": "str",
+                    "hasTable": "str",
+                    "trophy": "str",
+                    "seasonId": "str",
+                    "season": "str",
+                    "tournamentFlag": "str",
+                    "currentMatchDay": "str",
+                    "competitionTypeID": "str",
+                    "currentChampionID": "str",
+                    "currentChampionName": "str",
+                    "currentChampionImage": "str",
+                    "internationalFlag": "str",
+                    "competitionCountryID": "str",
+                    "competitionCountryImage": "str",
+                    "competitionCountryName": "str",
+                    "leagueLevel": "str"
+                }
+            }
+        },
+        {
+            "name": "competitions/list-seasons",
+            "schema": {
+                "seasons": [
+                    {
+                        "name": "str",
+                        "id": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "competitions/list-champions",
+            "schema": {
+                "title": "str",
+                "champions": [
+                    {
+                        "season": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "staffs/get-profile",
+            "schema": {
+                "profile": {
+                    "personImage": "str",
+                    "personID": "str",
+                    "personName": "str",
+                    "firstName": "str",
+                    "lastName": "str",
+                    "dateOfBirth": "str",
+                    "countryName": "str",
+                    "agent": {
+                        "name": "str",
+                        "agentVerificationStatus": "str"
+                    },
+                    "functions": [
+                        {
+                            "clubName": "str",
+                            "competitionName": "str",
+                            "function": "str",
+                            "appointed": "str"
+                        }
+                    ]
+                },
+                "share": {
+                    "title": "str",
+                    "url": "str",
+                    "description": "str"
+                }
+            }
+        },
+        {
+            "name": "players/get-performance",
+            "schema": {
+                "player": [
+                    {
+                        "competitionID": "str",
+                        "id": "int",
+                        "matches": "int",
+                        "goals": "int",
+                        "assists": "int",
+                        "yellowCards": "int",
+                        "redCards": "int",
+                        "minutesPlayed": "int"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "players/get-performance-summary",
+            "schema": {
+                "deliveredSeasonID": "str",
+                "competitionPerformanceSummery": [
+                    {
+                        "competition": {
+                            "id": "str",
+                            "name": "str",
+                            "shortName": "str",
+                            "image": "str"
+                        },
+                        "performance": {
+                            "minutesPlayed": "str",
+                            "goals": "str",
+                            "assists": "str",
+                            "concededGoals": "str"
+                        },
+                        "clubs": [
+                            {
+                                "id": "str",
+                                "name": "str",
+                                "fullName": "str",
+                                "image": "str"
+                            }
+                        ]
+                    }
+                ],
+                "share": {
+                    "title": "str",
+                    "url": "str",
+                    "description": "str"
+                },
+                "seasons": [
+                    {
+                        "key": "str",
+                        "title": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "players/get-market-value",
+            "schema": {
+                "share": {
+                    "title": "str",
+                    "url": "str",
+                    "description": "str"
+                },
+                "marketValueDevelopment": [
+                    {
+                        "date": "str",
+                        "age": "str",
+                        "marketValue": "str",
+                        "marketValueCurrency": "str",
+                        "marketValueNumeral": "str",
+                        "clubName": "str",
+                        "clubShortName": "str",
+                        "clubImage": "str",
+                        "seasonID": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "clubs/get-squad",
+            "schema": {
+                "squad": [
+                    {
+                        "name": "str",
+                        "age": "int",
+                        "dateOfBirth": "int",
+                        "shirtNumber": "str",
+                        "image": "str",
+                        "marketValue": {
+                            "value": "int",
+                            "currency": "str"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "clubs/get-profile",
+            "schema": {
+                "mainFacts": {
+                    "fullName": "str",
+                    "countryName": "str",
+                    "countryID": "str",
+                    "countryImage": "str",
+                    "avgAge": "str",
+                    "squadSize": "str",
+                    "legionaries": "str",
+                    "internationalRank": "str",
+                    "nationalPlayer": "str"
+                },
+                "stadium": {
+                    "name": "str",
+                    "totalCapacity": "str"
+                },
+                "successes": [
+                    {
+                        "number": "str",
+                        "name": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "clubs/get-short-info",
+            "schema": {
+                "clubs": [
+                    {
+                        "id": "str",
+                        "name": "str",
+                        "image": "str",
+                        "mainCompetition": {
+                            "id": "str",
+                            "name": "str",
+                            "shortName": "str"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "search",
+            "schema": {
+                "count": {
+                    "players": "int",
+                    "clubs": "int"
+                },
+                "players": [
+                    {
+                        "playerName": "str",
+                        "nationImage": "str",
+                        "playerImage": "str"
+                    }
+                ],
+                "clubs": [
+                    {
+                        "league": "str",
+                        "competitionName": "str",
+                        "name": "str",
+                        "logoImage": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "players/detail (Deprecated)",
+            "schema": {
+                "share": {
+                    "title": "str",
+                    "url": "str",
+                    "image": "str",
+                    "description": "str"
+                },
+                "data": {
+                    "player": {
+                        "name": "str",
+                        "image": "str",
+                        "imageLarge": "str",
+                        "imageSource": "str",
+                        "shirtNumber": "str",
+                        "nationalities": [
+                            {
+                                "name": "str",
+                                "image": "str"
+                            }
+                        ],
+                        "marketValue": {
+                            "value": "str",
+                            "currency": "str"
+                        }
+                    },
+                    "club": {
+                        "name": "str",
+                        "fullName": "str",
+                        "image": "str",
+                        "nationalTeam": "str",
+                        "mainCompetition": {
+                            "name": "str",
+                            "shortName": "str",
+                            "image": "str"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "players/get-achievements",
+            "schema": {
+                "share": {
+                    "title": "str",
+                    "url": "str"
+                },
+                "playerAchievements": [
+                    {
+                        "title": "str",
+                        "value": "str",
+                        "achievementID": "str",
+                        "additionalData": [
+                            {
+                                "seasonID": "str",
+                                "competitionID": "str"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "name": "players/get-short-info",
+            "schema": {
+                "player": [
+                    {
+                        "id": "str",
+                        "name": "str",
+                        "image": "str",
+                        "shirtNumber": "NoneType",
+                        "positions": {
+                            "first": {
+                                "id": "str",
+                                "name": "str",
+                                "shortName": "str"
+                            }
+                        },
+                        "nationalities": "NoneType",
+                        "marketValue": "NoneType"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "players/get-transfer-history",
+            "schema": {
+                "share": {
+                    "title": "str",
+                    "url": "str",
+                    "description": "str"
+                },
+                "futureTransfer": "str",
+                "transferHistory": [
+                    {
+                        "playerID": "str",
+                        "oldClubName": "str",
+                        "newClubName": "str",
+                        "transferFeeValue": "str",
+                        "transferFeeCurrency": "str",
+                        "playerName": "str",
+                        "countryID": "str",
+                        "loan": "str",
+                        "date": "str",
+                        "season": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "players/get-profile",
+            "schema": {
+                "share": {
+                    "title": "str",
+                    "url": "str",
+                    "description": "str"
+                },
+                "playerProfile": {
+                    "playerID": "str",
+                    "playerImage": "str",
+                    "playerName": "str",
+                    "playerFullName": "str",
+                    "birthplace": "str",
+                    "dateOfBirth": "str",
+                    "playerShirtNumber": "str",
+                    "birthplaceCountry": "str",
+                    "birthplaceCountryImage": "str",
+                    "age": "str",
+                    "height": "str",
+                    "foot": "str",
+                    "internationalTeam": "str",
+                    "internationalTeamImage": "str",
+                    "internationalTeamShortTag": "str",
+                    "country": "str",
+                    "countryImage": "str",
+                    "countryShortName": "str",
+                    "league": "str",
+                    "leagueLogo": "str",
+                    "clubImage": "str",
+                    "club": "str",
+                    "clubID": "str",
+                    "loan": {
+                        "loan": "str",
+                        "loanStart": "str",
+                        "loanUntil": "str"
+                    }
+                }
+            }
+        },
+        {
+            "name": "players/get-performance-detail",
+            "schema": {
+                "matchPerformance": [
+                    {
+                        "match": {
+                            "id": "str",
+                            "homeTeam": {
+                                "name": "str",
+                                "nationalTeam": "str"
+                            },
+                            "awayTeam": {
+                                "name": "str",
+                                "nationalTeam": "str"
+                            },
+                            "competition": {
+                                "id": "str",
+                                "name": "str",
+                                "shortName": "str",
+                                "image": "str"
+                            },
+                            "timestamp": "str",
+                            "matchday": "str",
+                            "round": "str",
+                            "result": {
+                                "result": "str",
+                                "goalsHome": "str",
+                                "goalsAway": "str"
+                            }
+                        },
+                        "performance": {
+                            "goals": "str",
+                            "assists": "str",
+                            "minutesPlayed": "str",
+                            "substitutedOn": "str"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "news/detail",
+            "schema": {
+                "news": {
+                    "id": "str",
+                    "headline": "str",
+                    "source": "str",
+                    "timestamp": "str",
+                    "timestamp_updated": "str",
+                    "firstImage": "str",
+                    "secondImage": "str",
+                    "heroImage": "str",
+                    "heroImageSource": "str",
+                    "categoryID": "str",
+                    "categoryTag": "str",
+                    "threadUrl": "str",
+                    "countReplies": "str",
+                    "text": {
+                        "text-0": "str",
+                        "text-1": "str",
+                        "text-2": "str",
+                        "text-3": "str",
+                        "text-4": "str",
+                        "text-5": "str"
+                    },
+                    "widgetData": {},
+                    "author": "str"
+                },
+                "share": {
+                    "title": "str",
+                    "url": "str"
+                }
+            }
+        },
+        {
+            "name": "news/list-latest",
+            "schema": {
+                "news": [
+                    {
+                        "id": "str",
+                        "newsHeadline": "str",
+                        "timestamp": "int",
+                        "newsDate": "str",
+                        "newsTime": "str",
+                        "newsSource": "str",
+                        "newsCategoryTag": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "news/list-by-player",
+            "schema": {
+                "share": {
+                    "title": "str",
+                    "url": "str",
+                    "description": "str"
+                },
+                "news": [
+                    {
+                        "id": "str",
+                        "newsHeadline": "str",
+                        "timestamp": "str",
+                        "newsSource": "str",
+                        "newsCategoryTag": "str",
+                        "newsAdFlag": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "news/list-by-club",
+            "schema": {
+                "share": {
+                    "title": "str",
+                    "url": "str",
+                    "description": "str"
+                },
+                "news": [
+                    {
+                        "id": "str",
+                        "newsHeadline": "str",
+                        "timestamp": "str",
+                        "newsDate": "str",
+                        "newsSource": "str",
+                        "newsTeaser": "str",
+                        "newsCategoryID": "str",
+                        "newsCategoryTag": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "matches/get-live-table",
+            "schema": {
+                "table": [
+                    {
+                        "group": "NoneType",
+                        "rank": "int",
+                        "clubName": "str",
+                        "points": "str",
+                        "goals": "str",
+                        "goalsConceded": "str",
+                        "goalDifference": "str",
+                        "matches": "int",
+                        "wins": "int",
+                        "losses": "int",
+                        "draw": "int",
+                        "markClass": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "matches/get-result",
+            "schema": {
+                "state": "str",
+                "goalsHome": "str",
+                "goalsAway": "str",
+                "halftimeGoalsHome": "str",
+                "halftimeGoalsAway": "str",
+                "hasMatchSheet": "bool"
+            }
+        },
+        {
+            "name": "matches/get-highlights",
+            "schema": {
+                "matchSheet": "str",
+                "goals": [
+                    {
+                        "goalsHome": "str",
+                        "goalsAway": "str",
+                        "minute": "str",
+                        "additionalTime": "str",
+                        "clubID": "str",
+                        "clubName": "str",
+                        "clubImage": "str",
+                        "activePlayer": {
+                            "id": "str",
+                            "playerName": "str",
+                            "playerImage": "str",
+                            "actionID": "str",
+                            "action": "str"
+                        },
+                        "passivePlayer": {
+                            "id": "str",
+                            "playerName": "str",
+                            "playerImage": "str",
+                            "actionID": "str",
+                            "action": "str"
+                        }
+                    }
+                ],
+                "substitutions": [
+                    {
+                        "goalsHome": "str",
+                        "goalsAway": "str",
+                        "minute": "str",
+                        "additionalTime": "str",
+                        "clubID": "str",
+                        "clubName": "str",
+                        "clubImage": "str",
+                        "activePlayer": {
+                            "id": "str",
+                            "playerName": "str",
+                            "playerImage": "str",
+                            "actionID": "str",
+                            "action": "str"
+                        },
+                        "passivePlayer": {
+                            "id": "str",
+                            "playerName": "str",
+                            "playerImage": "str",
+                            "actionID": "str",
+                            "action": "str"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "matches/get-live-ticker",
+            "schema": {
+                "ticker": [
+                    {
+                        "eventid": "str",
+                        "message": "str",
+                        "type": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "matches/get-line-ups",
+            "schema": {
+                "tactic": {
+                    "home": "str",
+                    "away": "str"
+                },
+                "formationList": {
+                    "list": "str",
+                    "home": {
+                        "start": {
+                            "1": {
+                                "number": "str",
+                                "playerName": "str",
+                                "position": "str",
+                                "preferredFoot": "str",
+                                "marketValue": "str",
+                                "age": "str",
+                                "countryName": "str"
+                            },
+                            "2": {
+                                "number": "str",
+                                "playerName": "str",
+                                "position": "str",
+                                "preferredFoot": "str",
+                                "marketValue": "str",
+                                "age": "str",
+                                "countryName": "str"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "matches/get-club-comparison",
+            "schema": {
+                "facts": {
+                    "verein_h": {
+                        "totalMarketvalue": "str",
+                        "totalMarketvalueCurrency": "str",
+                        "totalMarketvalueNumeral": "str",
+                        "avgMarketvalue": "str",
+                        "avgMarketvalueCurrency": "str",
+                        "avgMarketvalueNumeral": "str",
+                        "avgAge": "str",
+                        "nationalPlayer": "str",
+                        "youthNationalPlayer": "str",
+                        "legionaries": "str",
+                        "mostValuablePlayer": {
+                            "name": "str",
+                            "marketValue": "str",
+                            "marketValueCurrency": "str",
+                            "marketValueNumeral": "str"
+                        },
+                        "coach": {
+                            "countryName": "str",
+                            "name": "str",
+                            "image": "str"
+                        }
+                    },
+                    "verein_g": {
+                        "totalMarketvalue": "str",
+                        "totalMarketvalueCurrency": "str",
+                        "totalMarketvalueNumeral": "str",
+                        "avgMarketvalue": "str",
+                        "avgMarketvalueCurrency": "str",
+                        "avgMarketvalueNumeral": "str",
+                        "avgAge": "str",
+                        "nationalPlayer": "str",
+                        "youthNationalPlayer": "str",
+                        "legionaries": "str",
+                        "mostValuablePlayer": {
+                            "name": "str",
+                            "marketValue": "str",
+                            "marketValueCurrency": "str",
+                            "marketValueNumeral": "str"
+                        },
+                        "coach": {
+                            "countryName": "str",
+                            "name": "str",
+                            "image": "str"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "matches/list-by-date",
+            "schema": {
+                "share": {
+                    "title": "str",
+                    "url": "str",
+                    "description": "str"
+                },
+                "totalMatches": "str",
+                "liveMatches": {
+                    "EMQ": [
+                        {
+                            "id": "str",
+                            "competitionID": "str",
+                            "competitionName": "str",
+                            "matchDate": "str",
+                            "matchTime": "str",
+                            "homeClubID": "str",
+                            "homeClubName": "str",
+                            "awayClubID": "str",
+                            "awayClubName": "str",
+                            "result": "str"
+                        }
+                    ],
+                    "FS": [
+                        {
+                            "id": "str",
+                            "competitionID": "str",
+                            "competitionName": "str",
+                            "matchDate": "str",
+                            "homeClubID": "str",
+                            "homeClubName": "str",
+                            "awayClubID": "str",
+                            "awayClubName": "str",
+                            "result": "str"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "statistic/list-fifa-world-rankings",
+            "schema": {
+                "teams": [
+                    {
+                        "countryImage": "str",
+                        "countryName": "str",
+                        "totalPoints": "int",
+                        "rank": "int"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "statistic/list-best-fifa-players",
+            "schema": {
+                "player": [
+                    {
+                        "year": "int",
+                        "playerName": "str",
+                        "clubName": "NoneType",
+                        "id": "str",
+                        "mainPosition": "str",
+                        "countryImage": "str",
+                        "ageAtThisTime": "str",
+                        "marketValueAtThisTime": "str",
+                        "marketValueAtThisTimeCurrency": "str",
+                        "marketValueAtThisTimeNumeral": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "statistic/list-golden-boot",
+            "schema": {
+                "share": {
+                    "title": "str",
+                    "url": "str"
+                },
+                "player": [
+                    {
+                        "id": "str",
+                        "clubName": "str",
+                        "playerName": "str",
+                        "playerAge": "str",
+                        "mainPosition": "str",
+                        "countryImage": "str",
+                        "clubImage": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "statistic/list-clean-sheets",
+            "schema": {
+                "share": {
+                    "title": "str",
+                    "url": "str"
+                },
+                "player": [
+                    {
+                        "playerName": "str",
+                        "playerAge": "str",
+                        "playerImage": "str",
+                        "playerMarketValue": "str",
+                        "countryID": "str",
+                        "countryImage": "str",
+                        "clubID": "str",
+                        "clubName": "str",
+                        "clubImage": "str",
+                        "competitionID": "str",
+                        "competitionName": "str",
+                        "appearance": "str",
+                        "minutes": "str",
+                        "goalsConceded": "str",
+                        "cleanSheet": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "statistic/list-most-valuable-competitions",
+            "schema": {
+                "competitions": [
+                    {
+                        "competitionName": "str",
+                        "competitionImage": "str",
+                        "marketValue": "str",
+                        "marketValueNumeral": "str",
+                        "marketValueCurrency": "str",
+                        "marketValueUnformatted": "int",
+                        "competitionPlayers": "str",
+                        "countryImage": "str",
+                        "competitionClubs": "str"
+                    }
+                ],
+                "share": {
+                    "title": "str",
+                    "url": "str",
+                    "description": "str"
+                }
+            }
+        },
+        {
+            "name": "statistic/list-most-valuable-team",
+            "schema": {
+                "share": {
+                    "title": "str",
+                    "url": "str"
+                },
+                "players": [
+                    {
+                        "clubName": "str",
+                        "clubShortName": "str",
+                        "playerName": "str",
+                        "firstName": "str",
+                        "lastName": "str",
+                        "currentPositionShort": "str",
+                        "mainPositionShort": "str",
+                        "age": "str",
+                        "marketValue": "str",
+                        "shirtNumber": "str"
+                    }
+                ],
+                "allTactics": {
+                    "currentTacticID": "str",
+                    "tactics": [
+                        {
+                            "tacticID": "str",
+                            "tactic": "str"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "statistic/list-most-valuable-clubs",
+            "schema": {
+                "share": {
+                    "title": "str",
+                    "url": "str",
+                    "description": "str"
+                },
+                "teams": [
+                    {
+                        "countryName": "str",
+                        "competitionName": "str",
+                        "clubName": "str",
+                        "clubImage": "str",
+                        "marketValue": "str",
+                        "marketValueCurrency": "str",
+                        "marketValueNumeral": "str",
+                        "marketValueUnformatted": "int"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "transfers/list-rumors",
+            "schema": {
+                "rumors": [
+                    {
+                        "playerID": "str",
+                        "fromClubID": "str",
+                        "toClubID": "str",
+                        "isClosed": "bool",
+                        "probability": "str",
+                        "threadUrl": "str",
+                        "lastPostDate": "int",
+                        "marketValue": {
+                            "value": "int",
+                            "currency": "str"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "transfers/list-by-club",
+            "schema": {
+                "seasons": [
+                    {
+                        "id": "str",
+                        "season": "str"
+                    }
+                ],
+                "currentSeason": {
+                    "transferArrivals": [
+                        {
+                            "playerName": "str",
+                            "position": "str",
+                            "transferFee": "str",
+                            "loan": "str",
+                            "date": "str",
+                            "clubName": "str"
+                        }
+                    ],
+                    "transferDepartures": [
+                        {
+                            "playerName": "str",
+                            "position": "str",
+                            "transferFee": "str",
+                            "loan": "str",
+                            "date": "str",
+                            "clubName": "str"
+                        }
+                    ]
+                },
+                "nextSeason": "str"
+            }
+        },
+        {
+            "name": "transfers/list-market-value",
+            "schema": {
+                "id": "str",
+                "marketValue": {
+                    "value": "int",
+                    "currency": "str"
+                },
+                "marketValueDate": "int",
+                "birthday": "int",
+                "countryId": "str",
+                "clubId": "str"
+            }
+        },
+        {
+            "name": "transfers/list-records",
+            "schema": {
+                "player": [
+                    {
+                        "playerID": "str",
+                        "fromClubID": "str",
+                        "toClubID": "str",
+                        "transferredAt": "int",
+                        "season": "str",
+                        "fromCompetitionID": "str",
+                        "toCompetitionID": "str",
+                        "transferFee": {
+                            "value": "str",
+                            "currency": "str"
+                        },
+                        "transferMarketValue": {
+                            "value": "int",
+                            "currency": "str"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "transfers/list",
+            "schema": {
+                "player": [
+                    {
+                        "playerID": "str",
+                        "fromClubID": "str",
+                        "toClubID": "str",
+                        "transferredAt": "int",
+                        "season": "str",
+                        "fromCompetitionID": "str",
+                        "toCompetitionID": "str",
+                        "transferFee": {
+                            "value": "str",
+                            "currency": "str"
+                        },
+                        "transferMarketValue": {
+                            "value": "int",
+                            "currency": "str"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "competitions/get-game-plan",
+            "schema": {
+                "seasonID": "str",
+                "leagueID": "str",
+                "currentPlayDayId": "int",
+                "gamePlanPlayDays": [
+                    {
+                        "id": "str",
+                        "name": "str",
+                        "dateString": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "competitions/get-short-info",
+            "schema": {
+                "competitions": [
+                    {
+                        "id": "str",
+                        "name": "str",
+                        "shortName": "str",
+                        "image": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "staffs/get-short-info",
+            "schema": {
+                "staff": [
+                    {
+                        "person": {
+                            "id": "str",
+                            "name": "str",
+                            "image": "str"
+                        },
+                        "id": "str",
+                        "function": "NoneType",
+                        "functionGroup": "NoneType"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "staffs/list-by-competition",
+            "schema": {
+                "coaches": [
+                    {
+                        "id": "str",
+                        "clubId": "str",
+                        "appointed": "int",
+                        "pointsPerMatch": "str",
+                        "avgGoals": "str",
+                        "avgGoalsAgainst": "str",
+                        "matches": "str",
+                        "wins": "str",
+                        "losses": "str",
+                        "draw": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "staffs/list-by-club",
+            "schema": {
+                "staff": [
+                    {
+                        "id": "str",
+                        "function": "str",
+                        "since": "int",
+                        "contractUntil": "int",
+                        "lastClubId": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "clubs/get-header-info",
+            "schema": {
+                "club": {
+                    "name": "str",
+                    "image": "str",
+                    "countryImage": "str",
+                    "rank": "str",
+                    "leagueName": "str",
+                    "leagueImage": "str",
+                    "leagueLevel": "str",
+                    "coachName": "str",
+                    "coachContractUntil": "int",
+                    "marketValue": "str",
+                    "marketValueCurrency": "str",
+                    "marketValueNumeral": "str",
+                    "marketValueUnformatted": "int",
+                    "selectedSeasonID": "str"
+                }
+            }
+        },
+        {
+            "name": "clubs/list-by-competition",
+            "schema": {
+                "clubs": [
+                    {
+                        "id": "str",
+                        "name": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "competitions/list-default",
+            "schema": {
+                "defaultCompetitions": [
+                    {
+                        "id": "str",
+                        "title": "str",
+                        "image": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

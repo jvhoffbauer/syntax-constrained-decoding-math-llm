@@ -1,0 +1,59 @@
+{
+    "api_list": [
+        {
+            "name": "Search By Registration Number",
+            "schema": {
+                "message": "str",
+                "data": {
+                    "id": "str",
+                    "companyName": "str",
+                    "registrationNumber": "str",
+                    "status": "str",
+                    "registrationDate": "str",
+                    "type": "str"
+                },
+                "success": "bool"
+            }
+        },
+        {
+            "name": "Search Company By Name",
+            "schema": {
+                "api_version": "str",
+                "generated_on": "str",
+                "count": "int",
+                "limit": "int",
+                "page": "int",
+                "items": [
+                    {
+                        "id": "str",
+                        "companyName": "str",
+                        "registrationNumber": "str",
+                        "status": "str",
+                        "registrationDate": "str",
+                        "type": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Get All Companies (Paginated)",
+            "schema": {
+                "api_version": "str",
+                "count": "int",
+                "limit": "int",
+                "page": "int",
+                "items": [
+                    {
+                        "id": "str",
+                        "companyName": "str",
+                        "registrationNumber": "str",
+                        "address": "str",
+                        "status": "str",
+                        "registrationDate": "str",
+                        "type": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

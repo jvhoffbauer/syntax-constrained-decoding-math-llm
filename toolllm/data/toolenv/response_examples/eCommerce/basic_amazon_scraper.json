@@ -1,0 +1,10 @@
+{
+    "api_list": [
+        {
+            "name": "Get Amazon Product Details",
+            "schema": {
+                "message": "str"
+            }
+        }
+    ]
+}

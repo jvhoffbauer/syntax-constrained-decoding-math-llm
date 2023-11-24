@@ -1,0 +1,111 @@
+{
+    "api_list": [
+        {
+            "name": "Search Strongs Number API",
+            "schema": {
+                "book__name": "str",
+                "chapter": "str",
+                "verse": "str",
+                "kjv": "str"
+            }
+        },
+        {
+            "name": "Strongs Number Detail API",
+            "schema": {
+                "id": "str",
+                "original_word": "str",
+                "number": "str",
+                "strong_definition": "str",
+                "mounce_definition": "str",
+                "bdb_definition": "str",
+                "thayers_definition": "str",
+                "transliteration": "str",
+                "kjv_usage": "str",
+                "phonetics": "str",
+                "language": "str",
+                "count": "str"
+            }
+        },
+        {
+            "name": "Full Chapter API",
+            "schema": {
+                "chapter": "int",
+                "book": {
+                    "name": "str",
+                    "testament": "str"
+                },
+                "verses": [
+                    {
+                        "verse": "int",
+                        "kjv": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Place Detail API",
+            "schema": {
+                "id": "str",
+                "name": "str",
+                "latitude": "str",
+                "longitude": "str"
+            }
+        },
+        {
+            "name": "Verse Range API",
+            "schema": {
+                "id": "int",
+                "verse": "int",
+                "kjv": "str"
+            }
+        },
+        {
+            "name": "Passage of the Day API",
+            "schema": {
+                "id": "int",
+                "verses": [
+                    {
+                        "id": "int",
+                        "verse": "int",
+                        "kjv": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Search Place ID API",
+            "schema": {
+                "book__name": "str",
+                "chapter": "str",
+                "verse": "str",
+                "kjv": "str"
+            }
+        },
+        {
+            "name": "Search Exact Phrase API",
+            "schema": {
+                "book__name": "str",
+                "chapter": "str",
+                "verse": "str",
+                "kjv": "str"
+            }
+        },
+        {
+            "name": "Search All Words API",
+            "schema": {
+                "book__name": "str",
+                "chapter": "str",
+                "verse": "str",
+                "kjv": "str"
+            }
+        },
+        {
+            "name": "Book List and Chapter Counts API",
+            "schema": {
+                "name": "str",
+                "abbrev": "str",
+                "chapter_count": "int"
+            }
+        }
+    ]
+}

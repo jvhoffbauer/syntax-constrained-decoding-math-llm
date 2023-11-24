@@ -1,0 +1,27 @@
+{
+    "api_list": [
+        {
+            "name": "VIN Decoder",
+            "schema": {
+                "VIN": "str",
+                "Manufacturer": "str",
+                "Country": "str",
+                "Make": "str",
+                "Model": "str",
+                "Model year": "str",
+                "Body style": "str",
+                "Engine type": "str",
+                "Fuel type": "str",
+                "Transmission": "str",
+                "Vehicle class": "str",
+                "Vehicle type": "str",
+                "Manufactured in": "str",
+                "Body type": "str",
+                "Number of doors": "str",
+                "Number of seats": "str",
+                "Engine HorsePower": "str",
+                "Engine KiloWatts": "str"
+            }
+        }
+    ]
+}

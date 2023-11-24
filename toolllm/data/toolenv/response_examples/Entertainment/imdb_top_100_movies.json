@@ -1,0 +1,39 @@
+{
+    "api_list": [
+        {
+            "name": "Top 100 movies list",
+            "schema": {
+                "rank": "int",
+                "title": "str",
+                "thumbnail": "str",
+                "rating": "str",
+                "year": "int",
+                "description": "str",
+                "genre": [
+                    "list of str with length 1"
+                ],
+                "director": [
+                    "list of str with length 1"
+                ],
+                "writers": [
+                    "list of str with length 1"
+                ],
+                "imdbid": "str"
+            }
+        },
+        {
+            "name": "Movie Data By Id",
+            "schema": {
+                "rank": "int",
+                "title": "str",
+                "thumbnail": "str",
+                "rating": "str",
+                "id": "str",
+                "year": "int",
+                "image": "str",
+                "description": "str",
+                "trailer": "str"
+            }
+        }
+    ]
+}

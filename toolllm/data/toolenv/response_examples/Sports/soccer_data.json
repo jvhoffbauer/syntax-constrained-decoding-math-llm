@@ -1,0 +1,972 @@
+{
+    "api_list": [
+        {
+            "name": "Red Card Leaderboard",
+            "schema": {
+                "player": {
+                    "country": {
+                        "name": "str",
+                        "shortName": "str",
+                        "id": "int"
+                    },
+                    "position": {
+                        "name": "str",
+                        "shortName": "str",
+                        "id": "int"
+                    },
+                    "knownName": "str",
+                    "knownNameMedium": "str",
+                    "knownNameShort": "str",
+                    "id": "int"
+                },
+                "team": {
+                    "name": "str",
+                    "shortName": "str",
+                    "mediumName": "str",
+                    "id": "int"
+                },
+                "matchesStarted": "int",
+                "minutesPlayed": "int",
+                "position": "int",
+                "matchesPlayed": "int",
+                "totalReds": "int",
+                "redsPerMatch": "float"
+            }
+        },
+        {
+            "name": "Team Squad",
+            "schema": {
+                "player": {
+                    "country": {
+                        "name": "str",
+                        "shortName": "str",
+                        "id": "int"
+                    },
+                    "position": {
+                        "name": "str",
+                        "shortName": "str",
+                        "id": "int"
+                    },
+                    "knownName": "str",
+                    "knownNameMedium": "str",
+                    "knownNameShort": "str",
+                    "name": "str",
+                    "surName": "str",
+                    "shirtNumber": "str",
+                    "age": "int",
+                    "id": "int"
+                },
+                "tournaments": [
+                    {
+                        "tournament": {
+                            "name": "str",
+                            "shortName": "str",
+                            "id": "int"
+                        },
+                        "season": {
+                            "name": "str",
+                            "shortName": "str",
+                            "id": "int"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Daily Match List-Results",
+            "schema": {
+                "homeTeam": {
+                    "name": "str",
+                    "shortName": "str",
+                    "mediumName": "str",
+                    "id": "int"
+                },
+                "awayTeam": {
+                    "name": "str",
+                    "shortName": "str",
+                    "mediumName": "str",
+                    "id": "int"
+                },
+                "status": {
+                    "name": "str",
+                    "shortName": "str",
+                    "id": "int"
+                },
+                "date": "str",
+                "id": "int",
+                "tournament": {
+                    "name": "str",
+                    "shortName": "str",
+                    "id": "int"
+                },
+                "stage": {
+                    "name": "str",
+                    "shortName": "str",
+                    "id": "int"
+                },
+                "round": {
+                    "name": "str",
+                    "shortName": "str",
+                    "id": "int"
+                }
+            }
+        },
+        {
+            "name": "Daily Match List-All",
+            "schema": {
+                "homeTeam": {
+                    "name": "str",
+                    "shortName": "str"
+                },
+                "awayTeam": {
+                    "name": "str",
+                    "shortName": "str"
+                },
+                "status": {
+                    "name": "str"
+                },
+                "date": "str",
+                "id": "int",
+                "tournament": {
+                    "name": "str",
+                    "shortName": "str"
+                },
+                "stage": {
+                    "name": "str"
+                },
+                "round": {
+                    "name": "str"
+                }
+            }
+        },
+        {
+            "name": "Yellow Card Leaderboard",
+            "schema": {
+                "player": {
+                    "country": {
+                        "name": "str",
+                        "shortName": "str"
+                    },
+                    "position": {
+                        "name": "str",
+                        "shortName": "str"
+                    },
+                    "knownName": "str",
+                    "knownNameMedium": "str",
+                    "knownNameShort": "str",
+                    "id": "int"
+                },
+                "team": {
+                    "name": "str",
+                    "shortName": "str"
+                },
+                "matchesStarted": "int",
+                "minutesPlayed": "int",
+                "position": "int",
+                "matchesPlayed": "int",
+                "totalYellows": "int",
+                "yellowsPerMatch": "float"
+            }
+        },
+        {
+            "name": "Tournament Teams",
+            "schema": {
+                "isNational": "bool",
+                "country": {
+                    "name": "str",
+                    "shortName": "str",
+                    "id": "int"
+                },
+                "stadium": {
+                    "name": "str",
+                    "id": "int"
+                },
+                "name": "str",
+                "shortName": "str",
+                "mediumName": "str",
+                "id": "int"
+            }
+        },
+        {
+            "name": "Tournament Info",
+            "schema": {
+                "season": {
+                    "name": "str"
+                },
+                "country": {
+                    "name": "str"
+                },
+                "participantType": {
+                    "name": "str"
+                },
+                "stages": [
+                    {
+                        "name": "str",
+                        "active": "bool",
+                        "id": "int"
+                    }
+                ],
+                "name": "str",
+                "shortName": "str",
+                "isOfficial": "bool",
+                "isNational": "bool",
+                "id": "int"
+            }
+        },
+        {
+            "name": "Daily Match List-Scheduled",
+            "schema": {
+                "homeTeam": {
+                    "name": "str",
+                    "shortName": "str",
+                    "mediumName": "str",
+                    "id": "int"
+                },
+                "awayTeam": {
+                    "name": "str",
+                    "shortName": "str",
+                    "mediumName": "str",
+                    "id": "int"
+                },
+                "status": {
+                    "name": "str",
+                    "shortName": "str",
+                    "id": "int"
+                },
+                "date": "str",
+                "tournament": {
+                    "name": "str",
+                    "shortName": "str",
+                    "id": "int"
+                },
+                "stage": {
+                    "name": "str",
+                    "shortName": "str",
+                    "id": "int"
+                },
+                "round": {
+                    "name": "str",
+                    "shortName": "str",
+                    "id": "int"
+                }
+            }
+        },
+        {
+            "name": "Goal Leaderboard",
+            "schema": {
+                "player": {
+                    "country": {
+                        "name": "str",
+                        "shortName": "str"
+                    },
+                    "position": {
+                        "name": "str",
+                        "shortName": "str"
+                    },
+                    "knownName": "str",
+                    "id": "int"
+                },
+                "team": {
+                    "name": "str",
+                    "shortName": "str"
+                },
+                "matchesStarted": "int",
+                "minutesPlayed": "int",
+                "position": "int",
+                "matchesPlayed": "int",
+                "totalGoals": "int",
+                "goalsPerMatch": "float",
+                "penaltyGoals": "int",
+                "penaltyGoalsPerMatch": "float"
+            }
+        },
+        {
+            "name": "Match Events",
+            "schema": {
+                "homeTeam": {
+                    "name": "str",
+                    "shortName": "str"
+                },
+                "awayTeam": {
+                    "name": "str",
+                    "shortName": "str"
+                },
+                "events": [
+                    {
+                        "type": {
+                            "name": "str"
+                        },
+                        "minute": "int"
+                    }
+                ],
+                "date": "str",
+                "tournament": {
+                    "name": "str",
+                    "shortName": "str"
+                },
+                "stage": {
+                    "name": "str",
+                    "shortName": "str"
+                },
+                "round": {
+                    "name": "str",
+                    "shortName": "str"
+                }
+            }
+        },
+        {
+            "name": "Tournament Standings",
+            "schema": {
+                "tournament": {
+                    "name": "str",
+                    "shortName": "str",
+                    "id": "str"
+                },
+                "stage": {
+                    "name": "str",
+                    "shortName": "str",
+                    "id": "str"
+                },
+                "round": {
+                    "name": "str",
+                    "shortName": "str",
+                    "id": "str"
+                },
+                "standings": {
+                    "overall": [
+                        {
+                            "team": {
+                                "name": "str",
+                                "shortName": "str",
+                                "mediumName": "str",
+                                "id": "str"
+                            },
+                            "positionStatus": {
+                                "name": "str",
+                                "id": "str"
+                            },
+                            "position": "str",
+                            "delta": "str",
+                            "points": "str"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Team Squad with Stats",
+            "schema": {
+                "player": {
+                    "country": {
+                        "name": "str",
+                        "shortName": "str"
+                    },
+                    "position": {
+                        "name": "str",
+                        "shortName": "str"
+                    },
+                    "knownName": "str",
+                    "name": "str",
+                    "surName": "str",
+                    "shirtNumber": "str",
+                    "age": "int"
+                },
+                "tournaments": [
+                    {
+                        "tournament": {
+                            "name": "str",
+                            "shortName": "str"
+                        },
+                        "season": {
+                            "name": "str",
+                            "shortName": "str"
+                        },
+                        "stats": {
+                            "lineupCount": "int",
+                            "substituteCount": "int",
+                            "totalMinutes": "int",
+                            "matchesCount": "int",
+                            "assists": "int",
+                            "goals": "int",
+                            "yellowCards": "int",
+                            "redCards": "int"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Team Schedule",
+            "schema": {
+                "homeTeam": {
+                    "name": "str",
+                    "shortName": "str",
+                    "mediumName": "str",
+                    "id": "int"
+                },
+                "awayTeam": {
+                    "name": "str",
+                    "shortName": "str",
+                    "mediumName": "str",
+                    "id": "int"
+                },
+                "status": {
+                    "name": "str",
+                    "shortName": "str",
+                    "id": "int"
+                },
+                "info": {
+                    "stadium": {
+                        "name": "str",
+                        "id": "int"
+                    }
+                },
+                "date": "str",
+                "tournament": {
+                    "name": "str",
+                    "shortName": "str",
+                    "id": "int"
+                },
+                "stage": {
+                    "name": "str",
+                    "shortName": "str",
+                    "id": "int"
+                },
+                "round": {
+                    "name": "str",
+                    "shortName": "str",
+                    "id": "int"
+                }
+            }
+        },
+        {
+            "name": "Match Events-All",
+            "schema": {
+                "homeTeam": {
+                    "name": "str",
+                    "shortName": "str",
+                    "mediumName": "str",
+                    "id": "int"
+                },
+                "awayTeam": {
+                    "name": "str",
+                    "shortName": "str",
+                    "mediumName": "str",
+                    "id": "int"
+                },
+                "events": [
+                    {
+                        "type": {
+                            "name": "str",
+                            "shortName": "str",
+                            "id": "int"
+                        },
+                        "minute": "int",
+                        "homeTeamScore": "int",
+                        "awayTeamScore": "int"
+                    }
+                ],
+                "date": "str",
+                "id": "int",
+                "tournament": {
+                    "name": "str",
+                    "shortName": "str",
+                    "id": "int"
+                },
+                "stage": {
+                    "name": "str",
+                    "shortName": "str",
+                    "id": "int"
+                },
+                "round": {
+                    "name": "str",
+                    "shortName": "str",
+                    "id": "int"
+                }
+            }
+        },
+        {
+            "name": "Daily Match List-Live",
+            "schema": {
+                "homeTeam": {
+                    "name": "str",
+                    "shortName": "str",
+                    "mediumName": "str",
+                    "id": "int"
+                },
+                "awayTeam": {
+                    "name": "str",
+                    "shortName": "str",
+                    "mediumName": "str",
+                    "id": "int"
+                },
+                "status": {
+                    "name": "str",
+                    "shortName": "str",
+                    "id": "int"
+                },
+                "times": {
+                    "currentMinute": "int"
+                },
+                "date": "str",
+                "id": "int",
+                "tournament": {
+                    "name": "str",
+                    "shortName": "str",
+                    "id": "int"
+                },
+                "stage": {
+                    "name": "str",
+                    "shortName": "str",
+                    "id": "int"
+                },
+                "round": {
+                    "name": "str",
+                    "shortName": "str",
+                    "id": "int"
+                }
+            }
+        },
+        {
+            "name": "Match Commentary",
+            "schema": {
+                "homeTeam": {
+                    "name": "str",
+                    "shortName": "str",
+                    "mediumName": "str"
+                },
+                "awayTeam": {
+                    "name": "str",
+                    "shortName": "str",
+                    "mediumName": "str"
+                },
+                "comments": [
+                    {
+                        "type": {
+                            "name": "str"
+                        },
+                        "minute": "int",
+                        "homeTeamScore": "int",
+                        "awayTeamScore": "int",
+                        "text": "str"
+                    }
+                ],
+                "date": "str",
+                "tournament": {
+                    "name": "str",
+                    "shortName": "str"
+                },
+                "stage": {
+                    "name": "str",
+                    "shortName": "str"
+                },
+                "round": {
+                    "name": "str",
+                    "shortName": "str"
+                }
+            }
+        },
+        {
+            "name": "Missing Player List",
+            "schema": {
+                "homeTeam": {
+                    "missings": {
+                        "players": [
+                            {
+                                "player": {
+                                    "country": {
+                                        "name": "str",
+                                        "shortName": "str",
+                                        "id": "str"
+                                    },
+                                    "position": {
+                                        "name": "str",
+                                        "shortName": "str",
+                                        "id": "str"
+                                    },
+                                    "knownName": "str",
+                                    "knownNameMedium": "str",
+                                    "knownNameShort": "str",
+                                    "id": "str"
+                                },
+                                "reason": {
+                                    "name": "str",
+                                    "isInjured": "str",
+                                    "id": "str"
+                                }
+                            }
+                        ]
+                    },
+                    "name": "str",
+                    "shortName": "str",
+                    "mediumName": "str",
+                    "id": "str"
+                },
+                "awayTeam": {
+                    "missings": {
+                        "players": [
+                            {
+                                "player": {
+                                    "country": {
+                                        "name": "str",
+                                        "shortName": "str",
+                                        "id": "str"
+                                    },
+                                    "position": {
+                                        "name": "str",
+                                        "shortName": "str",
+                                        "id": "str"
+                                    },
+                                    "knownName": "str",
+                                    "knownNameMedium": "str",
+                                    "knownNameShort": "str",
+                                    "id": "str"
+                                },
+                                "reason": {
+                                    "name": "str",
+                                    "isInjured": "str",
+                                    "id": "str"
+                                }
+                            }
+                        ]
+                    },
+                    "name": "str",
+                    "shortName": "str",
+                    "mediumName": "str",
+                    "id": "str"
+                },
+                "playingRound": {
+                    "name": "str",
+                    "id": "str"
+                },
+                "date": "str",
+                "id": "str",
+                "tournament": {
+                    "name": "str",
+                    "shortName": "str",
+                    "id": "str"
+                },
+                "stage": {
+                    "name": "str",
+                    "shortName": "str",
+                    "id": "str"
+                },
+                "round": {
+                    "name": "str",
+                    "id": "str"
+                }
+            }
+        },
+        {
+            "name": "Match Lineup",
+            "schema": {
+                "homeTeam": {
+                    "formation": {
+                        "name": "str"
+                    },
+                    "manager": {
+                        "name": "str",
+                        "surname": "str"
+                    },
+                    "starting": [
+                        {
+                            "shirtNumber": "str"
+                        }
+                    ],
+                    "bench": [
+                        {
+                            "shirtNumber": "str"
+                        }
+                    ],
+                    "name": "str",
+                    "shortName": "str",
+                    "mediumName": "str",
+                    "id": "str"
+                },
+                "awayTeam": {
+                    "formation": {
+                        "name": "str"
+                    },
+                    "manager": {
+                        "name": "str",
+                        "surname": "str"
+                    },
+                    "starting": [
+                        {
+                            "shirtNumber": "str"
+                        }
+                    ],
+                    "bench": [
+                        {
+                            "shirtNumber": "str"
+                        }
+                    ],
+                    "name": "str",
+                    "shortName": "str",
+                    "mediumName": "str",
+                    "id": "str"
+                }
+            }
+        },
+        {
+            "name": "Match Statistics",
+            "schema": {
+                "homeTeam": {
+                    "name": "str",
+                    "shortName": "str",
+                    "mediumName": "str",
+                    "id": "int"
+                },
+                "awayTeam": {
+                    "name": "str",
+                    "shortName": "str",
+                    "mediumName": "str",
+                    "id": "int"
+                },
+                "date": "str",
+                "id": "int",
+                "tournament": {
+                    "name": "str",
+                    "shortName": "str",
+                    "id": "int"
+                },
+                "stage": {
+                    "name": "str",
+                    "shortName": "str",
+                    "id": "int"
+                },
+                "round": {
+                    "name": "str",
+                    "shortName": "str",
+                    "id": "int"
+                }
+            }
+        },
+        {
+            "name": "Referee Statistics",
+            "schema": {
+                "h2h": {
+                    "referee": {
+                        "country": {
+                            "name": "str"
+                        },
+                        "name": "str",
+                        "age": "str"
+                    },
+                    "refereeTournaments": [
+                        {
+                            "tournament": {
+                                "name": "str",
+                                "shortName": "str"
+                            },
+                            "season": {
+                                "name": "str"
+                            },
+                            "stats": {
+                                "matchCount": "str",
+                                "matchResultHomeWin": "str",
+                                "matchResultAwayWin": "str",
+                                "homeTeamYellow": "str",
+                                "awayTeamYellow": "str"
+                            }
+                        }
+                    ],
+                    "refereeMatches": [
+                        {
+                            "homeTeam": {
+                                "score": {
+                                    "regular": "str",
+                                    "halfTime": "str"
+                                },
+                                "name": "str",
+                                "shortName": "str"
+                            },
+                            "awayTeam": {
+                                "score": {
+                                    "regular": "str",
+                                    "halfTime": "str"
+                                },
+                                "name": "str",
+                                "shortName": "str"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Seasonal Statistics: Goals",
+            "schema": {
+                "h2h": {
+                    "seasonalStatistics": {
+                        "overall": {
+                            "halfTime": {
+                                "win": "str",
+                                "winningPercentage": "str",
+                                "draw": "str",
+                                "drawPercentage": "str",
+                                "lose": "str",
+                                "losePercentage": "str",
+                                "totalGoalsScored": "str",
+                                "goalsScoredPerMatch": "str",
+                                "totalGoalsConceded": "str",
+                                "goalsConcededPerMatch": "str",
+                                "totalGoals": "str",
+                                "goalsPerMatch": "str",
+                                "failedToScore": "str",
+                                "failedToScorePercentage": "str",
+                                "cleanSheets": "str",
+                                "cleanSheetsPercentage": "str"
+                            },
+                            "ordinaryTime": {
+                                "win": "str",
+                                "winningPercentage": "str",
+                                "draw": "str",
+                                "drawPercentage": "str",
+                                "lose": "str",
+                                "losePercentage": "str",
+                                "totalGoalsScored": "str",
+                                "goalsScoredPerMatch": "str",
+                                "totalGoalsConceded": "str",
+                                "goalsConcededPerMatch": "str",
+                                "totalGoals": "str",
+                                "goalsPerMatch": "str",
+                                "failedToScore": "str",
+                                "failedToScorePercentage": "str",
+                                "cleanSheets": "str",
+                                "cleanSheetsPercentage": "str"
+                            },
+                            "finalScore": {
+                                "win": "str",
+                                "winningPercentage": "str",
+                                "draw": "str",
+                                "drawPercentage": "str"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "Seasonal Goal Analysis: Conceding First",
+            "schema": {
+                "homeTeam": {
+                    "name": "str",
+                    "id": "str"
+                },
+                "awayTeam": {
+                    "name": "str",
+                    "id": "str"
+                },
+                "status": {
+                    "name": "str",
+                    "id": "str"
+                },
+                "h2h": {
+                    "seasonalGoalAnalysis": {
+                        "homeTeam": {
+                            "concedingFirst": {
+                                "matchCount": "str",
+                                "winningAfter": "str",
+                                "drawAfter": "str",
+                                "losingAfter": "str"
+                            }
+                        },
+                        "awayTeam": {
+                            "concedingFirst": {
+                                "matchCount": "str",
+                                "winningAfter": "str",
+                                "drawAfter": "str",
+                                "losingAfter": "str"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "Tournament List",
+            "schema": {
+                "country": {
+                    "name": "str",
+                    "id": "int"
+                },
+                "participantType": {
+                    "name": "str",
+                    "id": "int"
+                },
+                "name": "str",
+                "shortName": "str",
+                "isOfficial": "bool",
+                "isNational": "bool",
+                "id": "int"
+            }
+        },
+        {
+            "name": "Tournament Fixture",
+            "schema": {
+                "homeTeam": {
+                    "score": {
+                        "regular": "int",
+                        "halfTime": "int",
+                        "current": "int"
+                    },
+                    "name": "str",
+                    "shortName": "str",
+                    "mediumName": "str",
+                    "id": "int"
+                },
+                "awayTeam": {
+                    "score": {
+                        "regular": "int",
+                        "halfTime": "int",
+                        "current": "int"
+                    },
+                    "name": "str",
+                    "shortName": "str",
+                    "mediumName": "str",
+                    "id": "int"
+                },
+                "status": {
+                    "name": "str",
+                    "shortName": "str",
+                    "id": "int"
+                },
+                "date": "str",
+                "stage": {
+                    "name": "str",
+                    "shortName": "str",
+                    "id": "int"
+                },
+                "round": {
+                    "name": "str",
+                    "shortName": "str",
+                    "id": "int"
+                }
+            }
+        },
+        {
+            "name": "Assist Leaderboard",
+            "schema": {
+                "player": {
+                    "knownName": "str",
+                    "knownNameMedium": "str",
+                    "knownNameShort": "str",
+                    "id": "int"
+                },
+                "team": {
+                    "name": "str",
+                    "shortName": "str",
+                    "mediumName": "str",
+                    "id": "int"
+                },
+                "matchesStarted": "int",
+                "minutesPlayed": "int",
+                "position": "int",
+                "matchesPlayed": "int",
+                "totalAssists": "int",
+                "assistsPerMatch": "float"
+            }
+        }
+    ]
+}

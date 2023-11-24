@@ -1,0 +1,187 @@
+{
+    "api_list": [
+        {
+            "name": "stars/get-image",
+            "schema": {
+                "star128x24": {
+                    "url": "str"
+                },
+                "star256x48": {
+                    "url": "str"
+                },
+                "star512x96": {
+                    "url": "str"
+                },
+                "starSvg": {
+                    "url": "str"
+                },
+                "stars": "int"
+            }
+        },
+        {
+            "name": "consumers/get-web-links",
+            "schema": {
+                "profileUrl": "str"
+            }
+        },
+        {
+            "name": "consumers/get-reviews",
+            "schema": {
+                "reviews": [
+                    {
+                        "id": "str",
+                        "consumer": {
+                            "id": "str",
+                            "displayName": "str"
+                        },
+                        "businessUnit": {
+                            "id": "str",
+                            "identifyingName": "str",
+                            "displayName": "str"
+                        },
+                        "stars": "str",
+                        "title": "str",
+                        "text": "str",
+                        "language": "str",
+                        "createdAt": "str",
+                        "updatedAt": "str",
+                        "isVerified": "str",
+                        "source": "str",
+                        "numberOfLikes": "str",
+                        "status": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "consumers/detail",
+            "schema": {
+                "id": "str",
+                "displayName": "str",
+                "country": "str",
+                "createdAt": "str",
+                "hasImage": "bool",
+                "numberOfReviews": "int",
+                "profileImage": {
+                    "image24x24": {
+                        "url": "str",
+                        "width": "int",
+                        "height": "int"
+                    },
+                    "image35x35": {
+                        "url": "str",
+                        "width": "int",
+                        "height": "int"
+                    },
+                    "image64x64": {
+                        "url": "str",
+                        "width": "int",
+                        "height": "int"
+                    },
+                    "image73x73": {
+                        "url": "str",
+                        "width": "int",
+                        "height": "int"
+                    }
+                }
+            }
+        },
+        {
+            "name": "business-units/get-web-links",
+            "schema": {
+                "profileUrl": "str",
+                "evaluateUrl": "str",
+                "evaluateEmbedUrl": "str"
+            }
+        },
+        {
+            "name": "business-units/get-reviews",
+            "schema": {
+                "reviews": [
+                    {
+                        "id": "str",
+                        "consumer": {
+                            "id": "str",
+                            "displayName": "str",
+                            "displayLocation": "str"
+                        },
+                        "businessUnit": {
+                            "id": "str",
+                            "identifyingName": "str",
+                            "displayName": "str"
+                        },
+                        "location": "str",
+                        "stars": "str",
+                        "title": "str",
+                        "text": "str",
+                        "language": "str",
+                        "createdAt": "str",
+                        "experiencedAt": "str",
+                        "source": "str",
+                        "numberOfLikes": "str",
+                        "status": "str",
+                        "countsTowardsTrustScore": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "business-units/detail",
+            "schema": {
+                "id": "str",
+                "country": "str",
+                "displayName": "str",
+                "name": {
+                    "identifying": "str"
+                },
+                "score": {
+                    "stars": "int",
+                    "trustScore": "float"
+                },
+                "status": "str",
+                "websiteUrl": "str",
+                "numberOfReviews": {
+                    "total": "int",
+                    "usedForTrustScoreCalculation": "int",
+                    "fiveStars": "int"
+                }
+            }
+        },
+        {
+            "name": "business-units/search-by-domain",
+            "schema": {
+                "id": "str",
+                "country": "str",
+                "displayName": "str",
+                "name": {
+                    "identifying": "str"
+                },
+                "score": {
+                    "stars": "int",
+                    "trustScore": "float"
+                },
+                "status": "str",
+                "websiteUrl": "str",
+                "numberOfReviews": {
+                    "total": "int",
+                    "oneStar": "int",
+                    "twoStars": "int",
+                    "threeStars": "int",
+                    "fourStars": "int",
+                    "fiveStars": "int"
+                }
+            }
+        },
+        {
+            "name": "categories/search",
+            "schema": {
+                "categories": [
+                    {
+                        "categoryId": "str",
+                        "displayName": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

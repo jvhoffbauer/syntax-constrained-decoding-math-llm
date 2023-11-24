@@ -1,0 +1,29 @@
+{
+    "api_list": [
+        {
+            "name": "Whois History",
+            "schema": {
+                "status": "bool",
+                "whois": "str",
+                "total_records": "str",
+                "whois_domains_historical": [
+                    {
+                        "domain_name": "str",
+                        "create_date": "str",
+                        "expiry_date": "str",
+                        "domain_registrar": {
+                            "registrar_name": "str"
+                        },
+                        "registrant_contact": {
+                            "name": "str",
+                            "company": "str",
+                            "country_name": "str",
+                            "country_code": "str",
+                            "email_address": "str"
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

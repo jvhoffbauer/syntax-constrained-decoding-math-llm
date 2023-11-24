@@ -1,0 +1,29 @@
+{
+    "api_list": [
+        {
+            "name": "Get Billionaires",
+            "schema": {
+                "personLists": [
+                    {
+                        "name": "str",
+                        "year": "str",
+                        "month": "str",
+                        "uri": "str",
+                        "rank": "str",
+                        "finalWorth": "str",
+                        "category": "str",
+                        "person": {
+                            "name": "str",
+                            "uri": "str"
+                        },
+                        "personName": "str",
+                        "country": "str",
+                        "source": "str",
+                        "countryOfCitizenship": "str",
+                        "date": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

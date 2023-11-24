@@ -1,0 +1,10 @@
+{
+    "api_list": [
+        {
+            "name": "Download YouTube to Mp3",
+            "schema": {
+                "messages": "str"
+            }
+        }
+    ]
+}

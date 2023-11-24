@@ -1,0 +1,19 @@
+{
+    "api_list": [
+        {
+            "name": "Get all suburbs and postcodes in a radius",
+            "schema": {
+                "postcode": "str",
+                "suburb": "str",
+                "state": "str"
+            }
+        },
+        {
+            "name": "Get a list of suburbs",
+            "schema": {
+                "suburb": "str",
+                "state": "str"
+            }
+        }
+    ]
+}

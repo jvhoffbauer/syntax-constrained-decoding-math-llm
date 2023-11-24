@@ -1,0 +1,23 @@
+{
+    "api_list": [
+        {
+            "name": "Search",
+            "schema": {
+                "s": "str",
+                "d": [
+                    {
+                        "company": "str",
+                        "zip": "str",
+                        "email": "str",
+                        "phone": "str",
+                        "website": "str",
+                        "industry": "str"
+                    }
+                ],
+                "p": {
+                    "total": "str"
+                }
+            }
+        }
+    ]
+}

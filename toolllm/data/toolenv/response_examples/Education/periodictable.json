@@ -1,0 +1,18 @@
+{
+    "api_list": [
+        {
+            "name": "periodic table",
+            "schema": {
+                "name": "str",
+                "symbol": "str",
+                "atomicNumber": "str",
+                "atomicMass": "str",
+                "groupBlock": "str",
+                "period": "str",
+                "density": "str",
+                "meltingPoint": "str",
+                "boilingPoint": "str"
+            }
+        }
+    ]
+}

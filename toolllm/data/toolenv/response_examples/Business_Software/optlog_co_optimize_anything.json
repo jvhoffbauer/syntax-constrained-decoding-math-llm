@@ -1,0 +1,16 @@
+{
+    "api_list": [
+        {
+            "name": "recommend",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "optimize",
+            "schema": {
+                "message": "str"
+            }
+        }
+    ]
+}

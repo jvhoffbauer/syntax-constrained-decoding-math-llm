@@ -1,0 +1,142 @@
+{
+    "api_list": [
+        {
+            "name": "All Strains - Descending",
+            "schema": {
+                "id": "int",
+                "strain": "str",
+                "thc": "str",
+                "cbd": "str",
+                "cbg": "str",
+                "strainType": "str",
+                "climate": "str",
+                "difficulty": "str",
+                "floweringWeeksMin": "float",
+                "floweringWeeksMax": "float",
+                "heightInInchesMin": "float",
+                "heightInInchesMax": "float",
+                "goodEffects": "str",
+                "sideEffects": "str",
+                "imgThumb": "str"
+            }
+        },
+        {
+            "name": "All Strains - Ascending",
+            "schema": {
+                "id": "int",
+                "strain": "str",
+                "thc": "str",
+                "cbd": "str",
+                "cbg": "str",
+                "strainType": "str",
+                "climate": "str",
+                "difficulty": "str",
+                "fungalResistance": "str",
+                "indoorYieldInGramsMax": "int",
+                "outdoorYieldInGramsMax": "int",
+                "floweringWeeksMin": "float",
+                "floweringWeeksMax": "float",
+                "heightInInchesMin": "float",
+                "heightInInchesMax": "float",
+                "goodEffects": "str",
+                "sideEffects": "str",
+                "imgThumb": "str"
+            }
+        },
+        {
+            "name": "Difficulty",
+            "schema": {
+                "id": "int",
+                "strain": "str",
+                "thc": "str",
+                "cbd": "str",
+                "cbg": "str",
+                "strainType": "str",
+                "difficulty": "str",
+                "goodEffects": "str",
+                "sideEffects": "str",
+                "imgThumb": "str"
+            }
+        },
+        {
+            "name": "Strain Type",
+            "schema": {
+                "id": "int",
+                "strain": "str",
+                "thc": "str",
+                "cbd": "str",
+                "cbg": "str",
+                "strainType": "str",
+                "climate": "str",
+                "difficulty": "str",
+                "fungalResistance": "str",
+                "indoorYieldInGramsMax": "int",
+                "outdoorYieldInGramsMax": "int",
+                "floweringWeeksMin": "float",
+                "floweringWeeksMax": "float",
+                "heightInInchesMin": "float",
+                "heightInInchesMax": "float",
+                "goodEffects": "str",
+                "sideEffects": "str",
+                "imgThumb": "str"
+            }
+        },
+        {
+            "name": "Search",
+            "schema": {
+                "id": "int",
+                "strain": "str",
+                "thc": "str",
+                "cbd": "str",
+                "cbg": "str",
+                "strainType": "str",
+                "difficulty": "str",
+                "fungalResistance": "str",
+                "goodEffects": "str",
+                "sideEffects": "str"
+            }
+        },
+        {
+            "name": "Single Strain",
+            "schema": {
+                "id": "int",
+                "strain": "str",
+                "thc": "str",
+                "cbd": "str",
+                "cbg": "str",
+                "strainType": "str",
+                "climate": "str",
+                "difficulty": "str",
+                "indoorYieldInGramsMax": "int",
+                "outdoorYieldInGramsMax": "int",
+                "floweringWeeksMin": "float",
+                "floweringWeeksMax": "float",
+                "heightInInchesMin": "float",
+                "heightInInchesMax": "float",
+                "goodEffects": "str",
+                "sideEffects": "str"
+            }
+        },
+        {
+            "name": "All Strains",
+            "schema": {
+                "id": "int",
+                "strain": "str",
+                "thc": "str",
+                "cbd": "str",
+                "cbg": "str",
+                "strainType": "str",
+                "difficulty": "str",
+                "indoorYieldInGramsMax": "int",
+                "outdoorYieldInGramsMax": "int",
+                "floweringWeeksMin": "float",
+                "floweringWeeksMax": "float",
+                "heightInInchesMin": "float",
+                "heightInInchesMax": "float",
+                "goodEffects": "str",
+                "sideEffects": "str",
+                "imgThumb": "str"
+            }
+        }
+    ]
+}

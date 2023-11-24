@@ -1,0 +1,96 @@
+{
+    "api_list": [
+        {
+            "name": "Lazada - Item Search by Image",
+            "schema": {
+                "result": {
+                    "status": {
+                        "code": "str",
+                        "data": "str",
+                        "executionTime": "str",
+                        "requestTime": "str",
+                        "endpoint": "str",
+                        "requestId": "str",
+                        "apiVersion": "str",
+                        "functionsVersion": "str",
+                        "la": "str",
+                        "pmu": "str",
+                        "mu": "str"
+                    },
+                    "settings": {
+                        "catId": "str",
+                        "sort": "str",
+                        "imgRegion": "str",
+                        "imgUrl": "str",
+                        "region": "str",
+                        "locale": "str",
+                        "currency": "str"
+                    },
+                    "resultList": [
+                        {
+                            "item": {
+                                "itemId": "str",
+                                "title": "str",
+                                "brandId": "str",
+                                "brandName": "str",
+                                "itemUrl": "str",
+                                "image": "str",
+                                "sku": {
+                                    "promotionPrice": "str"
+                                },
+                                "reviewCount": "str",
+                                "averageStarRate": "str"
+                            },
+                            "delivery": {
+                                "shippingFrom": "str"
+                            },
+                            "seller": {
+                                "sellerId": "str",
+                                "sellerTitle": "str"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Lazada - Item Search",
+            "schema": {
+                "result": {
+                    "status": {
+                        "code": "str",
+                        "apiVersion": "str"
+                    },
+                    "settings": {
+                        "q": "str",
+                        "loc": "str",
+                        "attr": "str",
+                        "sort": "str",
+                        "page": "str",
+                        "startPrice": "str",
+                        "endPrice": "str",
+                        "region": "str",
+                        "locale": "str",
+                        "currency": "str"
+                    },
+                    "base": {
+                        "totalResults": "str",
+                        "pageSize": "str"
+                    },
+                    "resultList": [
+                        {
+                            "item": {
+                                "itemId": "str",
+                                "title": "str",
+                                "brandId": "str",
+                                "brandName": "str",
+                                "itemUrl": "str",
+                                "image": "str"
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

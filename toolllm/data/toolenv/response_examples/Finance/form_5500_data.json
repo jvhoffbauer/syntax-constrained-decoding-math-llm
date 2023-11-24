@@ -1,0 +1,19 @@
+{
+    "api_list": [
+        {
+            "name": "Form5500_PlanName",
+            "schema": {
+                "name": "str",
+                "ein": "str",
+                "tax_year_begin": "str",
+                "tax_year_end": "str",
+                "sector_level_1": "str",
+                "sector_level_2": "str",
+                "sector_level_3": "str",
+                "plan_type": "str",
+                "plan_inception": "str",
+                "plan_catagory": "str"
+            }
+        }
+    ]
+}

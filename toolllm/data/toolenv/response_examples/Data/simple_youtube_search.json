@@ -1,0 +1,96 @@
+{
+    "api_list": [
+        {
+            "name": "Search",
+            "schema": {
+                "results": [
+                    {
+                        "id": "str",
+                        "title": "str",
+                        "url": "str",
+                        "thumbnail": {
+                            "url": "str",
+                            "height": "int",
+                            "width": "int"
+                        },
+                        "duration_formatted": "str",
+                        "views": "int",
+                        "type": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Playlist",
+            "schema": {
+                "result": {
+                    "link": "str",
+                    "thumbnail": {
+                        "url": "str",
+                        "width": "str"
+                    },
+                    "id": "str",
+                    "videos": [
+                        {
+                            "id": "str",
+                            "url": "str",
+                            "channel": {
+                                "name": "str"
+                            },
+                            "thumbnail": {
+                                "url": "str",
+                                "width": "str"
+                            },
+                            "ratings": {
+                                "likes": "str",
+                                "dislikes": "str"
+                            },
+                            "title": "str",
+                            "duration_formatted": "str",
+                            "views": "str",
+                            "type": "str"
+                        }
+                    ],
+                    "video_count": "str",
+                    "title": "str",
+                    "views": "str",
+                    "url": "str",
+                    "channel": {
+                        "url": "str",
+                        "name": "str",
+                        "icon": "str"
+                    }
+                }
+            }
+        },
+        {
+            "name": "Video",
+            "schema": {
+                "result": {
+                    "id": "str",
+                    "tags": [
+                        "list of str with length 1"
+                    ],
+                    "url": "str",
+                    "channel": {
+                        "name": "str",
+                        "icon": "str",
+                        "id": "str"
+                    },
+                    "thumbnail": {
+                        "url": "str"
+                    },
+                    "ratings": {
+                        "likes": "str",
+                        "dislikes": "str"
+                    },
+                    "title": "str",
+                    "duration_formatted": "str",
+                    "views": "str",
+                    "duration": "str",
+                    "type": "str"
+                }
+            }
+        }
+    ]
+}

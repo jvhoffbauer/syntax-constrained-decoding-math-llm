@@ -1,0 +1,10 @@
+{
+    "api_list": [
+        {
+            "name": "Get user metadata",
+            "schema": {
+                "user_id": "str"
+            }
+        }
+    ]
+}

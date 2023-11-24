@@ -1,0 +1,45 @@
+{
+    "api_list": [
+        {
+            "name": "Statistics",
+            "schema": {
+                "aggStats": [
+                    {
+                        "wheelResult": "str",
+                        "count": "int",
+                        "percentage": "float",
+                        "lastOccurredAt": "str",
+                        "hotFrequencyPercentage": "float"
+                    }
+                ],
+                "bestMultipliers": [
+                    {
+                        "wheelResult": "str",
+                        "maxMultiplier": "int"
+                    }
+                ],
+                "topSlotToWheelResultStats": [
+                    {
+                        "percentage": "float"
+                    }
+                ],
+                "winnerAggregatedStats": [
+                    {
+                        "screenName": "str",
+                        "count": "int",
+                        "totalWonAmount": "float"
+                    }
+                ],
+                "bestIndividualWins": [
+                    {
+                        "screenName": "str",
+                        "winAmount": "float",
+                        "wheelResult": "str",
+                        "maxMultiplier": "int",
+                        "lastOccurredAt": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

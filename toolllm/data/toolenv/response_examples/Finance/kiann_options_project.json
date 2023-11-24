@@ -1,0 +1,18 @@
+{
+    "api_list": [
+        {
+            "name": "vol_strike",
+            "schema": {
+                "detail": [
+                    {
+                        "loc": [
+                            "list of str with length 1"
+                        ],
+                        "msg": "str",
+                        "type": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

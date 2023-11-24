@@ -1,0 +1,39 @@
+{
+    "api_list": [
+        {
+            "name": "Get Categories",
+            "schema": {
+                "caishen": {
+                    "name": "str",
+                    "description": "empty list",
+                    "image-link": "str"
+                },
+                "daojiao": {
+                    "name": "str",
+                    "description": "empty list",
+                    "image-link": "str"
+                },
+                "dongyue": {
+                    "name": "str",
+                    "description": "empty list",
+                    "image-link": "str"
+                },
+                "guanyin": {
+                    "name": "str",
+                    "description": "empty list",
+                    "image-link": "str"
+                },
+                "hdx": {
+                    "name": "str",
+                    "description": "empty list",
+                    "image-link": "str"
+                },
+                "kongzi": {
+                    "name": "str",
+                    "description": "empty list",
+                    "image-link": "str"
+                }
+            }
+        }
+    ]
+}

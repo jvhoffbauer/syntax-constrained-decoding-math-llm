@@ -1,0 +1,16 @@
+{
+    "api_list": [
+        {
+            "name": "GetReferenceRates",
+            "schema": {
+                "subject": "str",
+                "rates": [
+                    {
+                        "currency": "str",
+                        "rate": "float"
+                    }
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,11 @@
+{
+    "api_list": [
+        {
+            "name": "ScanImageUrl",
+            "schema": {
+                "status": "str",
+                "result": "str"
+            }
+        }
+    ]
+}

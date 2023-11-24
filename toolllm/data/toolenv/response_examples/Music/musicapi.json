@@ -1,0 +1,12 @@
+{
+    "api_list": [
+        {
+            "name": "/public/search/introspection",
+            "schema": {
+                "sources": "empty list",
+                "authSources": "empty list",
+                "types": "empty list"
+            }
+        }
+    ]
+}

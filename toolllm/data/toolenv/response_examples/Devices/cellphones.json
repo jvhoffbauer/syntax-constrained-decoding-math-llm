@@ -1,0 +1,28 @@
+{
+    "api_list": [
+        {
+            "name": "GetBrands",
+            "schema": {
+                "id": "int",
+                "name": "str"
+            }
+        },
+        {
+            "name": "GetPhoneDetails",
+            "schema": {
+                "id": "int",
+                "title": "str",
+                "thumbnail": "str",
+                "releaseDate": "str",
+                "os": "str",
+                "storage": "str",
+                "displaySize": "str",
+                "resolution": "str",
+                "ram": "str",
+                "batterySize": "str",
+                "batteryType": "str",
+                "photosUrl": "str"
+            }
+        }
+    ]
+}

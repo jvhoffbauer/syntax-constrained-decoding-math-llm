@@ -1,0 +1,243 @@
+{
+    "api_list": [
+        {
+            "name": "Currency News",
+            "schema": {
+                "data": {
+                    "from_symbol": "str",
+                    "to_symbol": "str",
+                    "type": "str",
+                    "news": [
+                        {
+                            "article_title": "str",
+                            "article_url": "str",
+                            "source": "str",
+                            "post_time_utc": "str"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Currency Exchange Rate",
+            "schema": {
+                "data": {
+                    "from_symbol": "str",
+                    "to_symbol": "str",
+                    "exchange_rate": "float"
+                }
+            }
+        },
+        {
+            "name": "Currency Time Series",
+            "schema": {
+                "status": "str",
+                "request_id": "str",
+                "data": {
+                    "from_symbol": "str",
+                    "to_symbol": "str",
+                    "type": "str",
+                    "exchange_rate": "str",
+                    "previous_close": "str",
+                    "last_update_utc": "str",
+                    "time_series": {
+                        "2023-06-16 00:01:00": {
+                            "exchange_rate": "str",
+                            "change": "str",
+                            "change_percent": "str"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "Stock / Company Overview",
+            "schema": {
+                "data": {
+                    "symbol": "str",
+                    "name": "str",
+                    "type": "str",
+                    "price": "str",
+                    "change_percent": "str",
+                    "last_update_utc": "str",
+                    "exchange": "str",
+                    "currency": "str",
+                    "year_low": "str",
+                    "year_high": "str",
+                    "company_ceo": "str",
+                    "company_employees": "str",
+                    "company_market_cap": "str"
+                }
+            }
+        },
+        {
+            "name": "Company Cash Flow",
+            "schema": {
+                "status": "str",
+                "request_id": "str",
+                "data": {
+                    "symbol": "str",
+                    "type": "str",
+                    "cash_flow": [
+                        {
+                            "year": "int",
+                            "quarter": "int",
+                            "currency": "str",
+                            "net_income": "int",
+                            "cash_from_operations": "int",
+                            "cash_from_investing": "int",
+                            "cash_from_financing": "int",
+                            "net_change_in_cash": "int",
+                            "free_cash_flow": "int"
+                        }
+                    ],
+                    "period": "str"
+                }
+            }
+        },
+        {
+            "name": "Company Balance Sheet",
+            "schema": {
+                "status": "str",
+                "request_id": "str",
+                "data": {
+                    "symbol": "str",
+                    "type": "str",
+                    "balance_sheet": [
+                        {
+                            "year": "int",
+                            "quarter": "int",
+                            "currency": "str",
+                            "cash_and_short_term_investments": "float",
+                            "total_assets": "int",
+                            "total_liabilities": "int",
+                            "total_equity": "int",
+                            "shares_outstanding": "int",
+                            "price_to_book": "float",
+                            "return_on_assets_percent": "float",
+                            "return_on_capital_percent": "float"
+                        }
+                    ],
+                    "period": "str"
+                }
+            }
+        },
+        {
+            "name": "Company Income Statement",
+            "schema": {
+                "data": {
+                    "symbol": "str",
+                    "type": "str",
+                    "income_statement": [
+                        {
+                            "year": "int",
+                            "quarter": "int",
+                            "net_income": "int",
+                            "net_profit_margin": "float",
+                            "earnings_per_share": "float"
+                        }
+                    ],
+                    "period": "str"
+                }
+            }
+        },
+        {
+            "name": "Stock News",
+            "schema": {
+                "status": "str",
+                "data": {
+                    "symbol": "str",
+                    "type": "str",
+                    "news": [
+                        {
+                            "article_title": "str",
+                            "article_url": "str",
+                            "source": "str",
+                            "post_time_utc": "str"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Stock Time Series",
+            "schema": {
+                "data": {
+                    "symbol": "str",
+                    "type": "str",
+                    "price": "str",
+                    "previous_close": "str",
+                    "change": "str",
+                    "change_percent": "str",
+                    "last_update_utc": "str",
+                    "time_series": {
+                        "2023-06-16 09:30:00": {
+                            "price": "str",
+                            "change": "str",
+                            "change_percent": "str",
+                            "volume": "str"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "Stock Quote",
+            "schema": {
+                "status": "str",
+                "request_id": "str",
+                "data": {
+                    "symbol": "str",
+                    "name": "str",
+                    "type": "str",
+                    "price": "float",
+                    "open": "float",
+                    "high": "float",
+                    "low": "float",
+                    "volume": "int",
+                    "previous_close": "float",
+                    "change": "float",
+                    "change_percent": "float",
+                    "pre_or_post_market": "float",
+                    "last_update_utc": "str"
+                }
+            }
+        },
+        {
+            "name": "Search",
+            "schema": {
+                "data": {
+                    "stock": [
+                        {
+                            "symbol": "str",
+                            "name": "str",
+                            "type": "str",
+                            "price": "float",
+                            "change": "float",
+                            "change_percent": "float",
+                            "previous_close": "float",
+                            "last_update_utc": "str",
+                            "country_code": "str",
+                            "exchange": "str",
+                            "utc_offset_sec": "int",
+                            "currency": "str"
+                        }
+                    ],
+                    "mutual_fund": [
+                        {
+                            "symbol": "str",
+                            "name": "str",
+                            "type": "str",
+                            "price": "float",
+                            "change": "float",
+                            "change_percent": "float",
+                            "previous_close": "float",
+                            "last_update_utc": "str",
+                            "currency": "str"
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

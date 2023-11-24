@@ -1,0 +1,18 @@
+{
+    "api_list": [
+        {
+            "name": "Carbon dioxide endpoint",
+            "schema": {
+                "co2": [
+                    {
+                        "year": "str",
+                        "month": "str",
+                        "day": "str",
+                        "cycle": "str",
+                        "trend": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

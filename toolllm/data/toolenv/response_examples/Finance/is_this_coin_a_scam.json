@@ -1,0 +1,148 @@
+{
+    "api_list": [
+        {
+            "name": "Get a list of latest profiles",
+            "schema": {
+                "data": [
+                    {
+                        "slug": "str",
+                        "name": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Get a list of most watched profiles",
+            "schema": {
+                "success": "bool",
+                "data": [
+                    {
+                        "slug": "str",
+                        "name": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Get platform by slug",
+            "schema": {
+                "success": "bool",
+                "data": {
+                    "slug": "str",
+                    "name": "str",
+                    "symbol": "str"
+                }
+            }
+        },
+        {
+            "name": "Get profile by slug",
+            "schema": {
+                "success": "str",
+                "data": {
+                    "name": "str",
+                    "symbol": "str",
+                    "icon": "str",
+                    "description": "str",
+                    "score": {
+                        "rating": "str",
+                        "marketcap_rank": "str",
+                        "percentage": "str",
+                        "status": "str"
+                    },
+                    "platform": "str",
+                    "updated_at": "str"
+                },
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get a list of trending profiles",
+            "schema": {
+                "success": "bool",
+                "data": [
+                    {
+                        "slug": "str",
+                        "name": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "List all profiles",
+            "schema": {
+                "success": "str",
+                "data": [
+                    {
+                        "slug": "str",
+                        "name": "str",
+                        "symbol": "str",
+                        "type": "str",
+                        "icon": "str",
+                        "genesis_at": "str",
+                        "description": "str",
+                        "technology": {
+                            "title": "str"
+                        },
+                        "meta": {
+                            "capsize": "str",
+                            "category": "str",
+                            "style": "str"
+                        },
+                        "score": {
+                            "title": "str",
+                            "rating": "str",
+                            "marketcap_rank": "str",
+                            "percentage": "str",
+                            "status": "str"
+                        },
+                        "platform": "str",
+                        "updated_at": "str"
+                    }
+                ],
+                "paging": {
+                    "records": "str",
+                    "total": "str",
+                    "page": "str",
+                    "limit": "str"
+                },
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get coin by slug",
+            "schema": {
+                "success": "bool",
+                "data": {
+                    "slug": "str",
+                    "name": "str",
+                    "symbol": "str"
+                }
+            }
+        },
+        {
+            "name": "List all platforms",
+            "schema": {
+                "success": "bool",
+                "data": "str",
+                "paging": {
+                    "total": "int"
+                },
+                "message": "str"
+            }
+        },
+        {
+            "name": "List all coins",
+            "schema": {
+                "success": "bool",
+                "data": [
+                    {
+                        "slug": "str",
+                        "name": "str",
+                        "symbol": "str"
+                    }
+                ],
+                "message": "str"
+            }
+        }
+    ]
+}

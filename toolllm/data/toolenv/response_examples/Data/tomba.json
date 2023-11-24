@@ -1,0 +1,193 @@
+{
+    "api_list": [
+        {
+            "name": "DomainStatus",
+            "schema": {
+                "errors": {
+                    "status": "bool",
+                    "code": "int"
+                }
+            }
+        },
+        {
+            "name": "Enrichment",
+            "schema": {
+                "data": {
+                    "email": "str",
+                    "first_name": "str",
+                    "last_name": "str",
+                    "company": "str",
+                    "score": "int",
+                    "verification": {
+                        "date": "str",
+                        "status": "str"
+                    },
+                    "sources": [
+                        {
+                            "uri": "str"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "DomainSearch",
+            "schema": {
+                "data": {
+                    "organization": {
+                        "location": {
+                            "country": "str",
+                            "city": "str",
+                            "state": "str"
+                        },
+                        "social_links": {
+                            "twitter_url": "str",
+                            "facebook_url": "str",
+                            "linkedin_url": "str"
+                        },
+                        "website_url": "str",
+                        "phone_number": "str",
+                        "postal_code": "str",
+                        "employee_count": "str",
+                        "company_size": "str",
+                        "last_updated": "str",
+                        "accept_all": "str",
+                        "description": "str",
+                        "domain_score": "str",
+                        "organization": "str",
+                        "whois": {
+                            "registrar_name": "str"
+                        }
+                    },
+                    "emails": [
+                        {
+                            "email": "str",
+                            "first_name": "str",
+                            "last_name": "str",
+                            "full_name": "str",
+                            "type": "str",
+                            "country": "str",
+                            "position": "str",
+                            "department": "str",
+                            "accept_all": "str",
+                            "score": "str"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "LinkedinFinder",
+            "schema": {
+                "data": {
+                    "email": "str",
+                    "first_name": "str",
+                    "last_name": "str",
+                    "country": "str",
+                    "gender": "str",
+                    "phone_number": "bool",
+                    "position": "str",
+                    "twitter": "str",
+                    "linkedin": "str",
+                    "company": "str",
+                    "score": "int",
+                    "verification": {
+                        "date": "NoneType",
+                        "status": "NoneType"
+                    },
+                    "sources": [
+                        {
+                            "website_url": "str"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "EmailVerifier",
+            "schema": {
+                "data": {
+                    "email": "str",
+                    "mx_records": "bool",
+                    "smtp_server": "bool",
+                    "smtp_check": "bool",
+                    "accept_all": "bool",
+                    "block": "bool",
+                    "gibberish": "bool",
+                    "disposable": "bool",
+                    "webmail": "bool",
+                    "regex": "bool",
+                    "whois": {
+                        "registrar_name": "str",
+                        "created_date": "str",
+                        "referral_url": "str"
+                    },
+                    "status": "str",
+                    "result": "str",
+                    "score": "int",
+                    "sources": [
+                        {
+                            "uri": "str",
+                            "website_url": "str",
+                            "extracted_on": "str",
+                            "last_seen_on": "str",
+                            "still_on_page": "bool"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "EmailFinder",
+            "schema": {
+                "data": {
+                    "website_url": "str",
+                    "accept_all": "bool",
+                    "email": "str",
+                    "first_name": "str",
+                    "last_name": "str",
+                    "country": "str",
+                    "gender": "str",
+                    "position": "str",
+                    "full_name": "str",
+                    "company": "str",
+                    "score": "int",
+                    "verification": {
+                        "date": "str",
+                        "status": "str"
+                    }
+                }
+            }
+        },
+        {
+            "name": "AuthorFinder",
+            "schema": {
+                "data": {
+                    "email": "str",
+                    "first_name": "str",
+                    "last_name": "str",
+                    "country": "str",
+                    "gender": "str",
+                    "position": "str",
+                    "twitter": "str",
+                    "linkedin": "str",
+                    "disposable": "str",
+                    "webmail": "str",
+                    "full_name": "str",
+                    "company": "str",
+                    "score": "str",
+                    "verification": {
+                        "date": "str",
+                        "status": "str"
+                    },
+                    "sources": [
+                        {
+                            "uri": "str",
+                            "website_url": "str"
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

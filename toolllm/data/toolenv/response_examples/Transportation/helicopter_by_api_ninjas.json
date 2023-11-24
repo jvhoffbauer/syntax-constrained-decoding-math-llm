@@ -1,0 +1,24 @@
+{
+    "api_list": [
+        {
+            "name": "/v1/helicopter",
+            "schema": {
+                "manufacturer": "str",
+                "model": "str",
+                "max_speed_sl_knots": "str",
+                "cruise_speed_sl_knots": "str",
+                "range_nautical_miles": "str",
+                "cruise_time_min": "str",
+                "fuel_capacity_gallons": "str",
+                "gross_external_load_lbs": "str",
+                "external_load_limit_lbs": "str",
+                "main_rotor_diameter_ft": "str",
+                "num_blades": "str",
+                "rotor_type": "str",
+                "storage_width_ft": "str",
+                "length_ft": "str",
+                "height_ft": "str"
+            }
+        }
+    ]
+}

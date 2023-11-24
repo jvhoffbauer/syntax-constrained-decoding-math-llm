@@ -1,0 +1,102 @@
+{
+    "api_list": [
+        {
+            "name": "Role name",
+            "schema": {
+                "data": [
+                    {
+                        "name": "str",
+                        "heroid": "str",
+                        "key": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Hero detail",
+            "schema": {
+                "code": "str",
+                "message": "str",
+                "data": {
+                    "cover_picture": "str",
+                    "gallery_picture": "str",
+                    "junling": "str",
+                    "cost": "str",
+                    "des": "str",
+                    "mag": "str",
+                    "phy": "str",
+                    "alive": "str",
+                    "diff": "str",
+                    "name": "str",
+                    "type": "str",
+                    "skill": {
+                        "skill": [
+                            {
+                                "name": "str",
+                                "icon": "str",
+                                "des": "str"
+                            }
+                        ],
+                        "item": {
+                            "main": {
+                                "icon": "str"
+                            },
+                            "secondary": {
+                                "icon": "str"
+                            },
+                            "battle_first": {
+                                "icon": "str"
+                            },
+                            "battle_second": {
+                                "icon": "str"
+                            }
+                        }
+                    },
+                    "gear": {
+                        "out_pack": [
+                            {
+                                "equipment_id": "str",
+                                "equip": {
+                                    "icon": "str",
+                                    "name": "str",
+                                    "des": [
+                                        "list of str with length 1"
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    "counters": {
+                        "best": {
+                            "heroid": "str",
+                            "name": "str",
+                            "icon": "str"
+                        },
+                        "counters": {
+                            "heroid": "str",
+                            "name": "str",
+                            "icon": "str"
+                        },
+                        "countered": {
+                            "heroid": "str",
+                            "name": "str",
+                            "icon": "str"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "Heroes",
+            "schema": {
+                "data": [
+                    {
+                        "name": "str",
+                        "heroid": "str",
+                        "key": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

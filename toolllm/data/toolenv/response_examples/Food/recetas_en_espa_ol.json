@@ -1,0 +1,22 @@
+{
+    "api_list": [
+        {
+            "name": "Get recipes details",
+            "schema": {
+                "title": "str",
+                "author": "str",
+                "date_publish": "str",
+                "content": "str"
+            }
+        },
+        {
+            "name": "Get recipes",
+            "schema": {
+                "url": "str",
+                "title": "str",
+                "category": "str",
+                "img": "str"
+            }
+        }
+    ]
+}

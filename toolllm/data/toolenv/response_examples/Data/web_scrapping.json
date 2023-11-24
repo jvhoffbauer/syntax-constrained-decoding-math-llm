@@ -1,0 +1,17 @@
+{
+    "api_list": [
+        {
+            "name": "Get urls from page contents",
+            "schema": {
+                "success": "bool",
+                "url": "str",
+                "results": [
+                    {
+                        "url": "str",
+                        "type": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

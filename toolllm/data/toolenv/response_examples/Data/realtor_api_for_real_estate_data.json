@@ -1,0 +1,93 @@
+{
+    "api_list": [
+        {
+            "name": "RealtorSchoolList",
+            "schema": {
+                "coordinates": {
+                    "lat": "float",
+                    "lon": "float"
+                },
+                "funding_type": "str",
+                "grades": [
+                    "list of str with length 1"
+                ],
+                "id": "str",
+                "location": {
+                    "city": "str",
+                    "state": "str"
+                },
+                "name": "str",
+                "parent_rating": "int",
+                "rating": "int",
+                "review_count": "int"
+            }
+        },
+        {
+            "name": "RealtorAgentList",
+            "schema": {
+                "Error": "str"
+            }
+        },
+        {
+            "name": "RealtorPropertyList",
+            "schema": {
+                "agent": [
+                    {
+                        "office_name": "str"
+                    }
+                ],
+                "branding": [
+                    {
+                        "name": "str",
+                        "photo": "str",
+                        "type": "str"
+                    }
+                ],
+                "last_update_date": "str",
+                "list_date": "str",
+                "list_price": "str",
+                "listing_id": "str",
+                "location": {
+                    "address": {
+                        "city": "str",
+                        "state_code": "str"
+                    },
+                    "county": {
+                        "name": "str"
+                    },
+                    "street_view_url": "str"
+                },
+                "open_house_description": "str",
+                "other_listings": {
+                    "rdc": [
+                        {
+                            "listing_id": "str",
+                            "primary": "str",
+                            "status": "str"
+                        }
+                    ]
+                },
+                "permalink": "str",
+                "photos": [
+                    {
+                        "href": "str"
+                    }
+                ],
+                "price_reduced_amount": "str",
+                "primary_photo": "str",
+                "property_description": {
+                    "baths": "str",
+                    "beds": "str",
+                    "garage": "str",
+                    "lot_sqft": "str",
+                    "sold_date": "str",
+                    "sold_price": "str",
+                    "sqft": "str",
+                    "stories": "str",
+                    "sub_type": "str",
+                    "type": "str"
+                }
+            }
+        }
+    ]
+}

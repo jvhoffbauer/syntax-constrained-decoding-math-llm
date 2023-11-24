@@ -1,0 +1,22 @@
+{
+    "api_list": [
+        {
+            "name": "Bundesland",
+            "schema": {
+                "status": "str",
+                "data": {
+                    "message": "str"
+                }
+            }
+        },
+        {
+            "name": "Stadt",
+            "schema": {
+                "status": "str",
+                "data": {
+                    "error_code": "str"
+                }
+            }
+        }
+    ]
+}

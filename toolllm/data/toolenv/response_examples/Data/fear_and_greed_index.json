@@ -1,0 +1,21 @@
+{
+    "api_list": [
+        {
+            "name": "/index",
+            "schema": {
+                "score": "float",
+                "rating": "str",
+                "previous_close": "float",
+                "previous_1_week": "float",
+                "previous_1_month": "float",
+                "previous_1_year": "float"
+            }
+        },
+        {
+            "name": "/historical",
+            "schema": {
+                "message": "str"
+            }
+        }
+    ]
+}

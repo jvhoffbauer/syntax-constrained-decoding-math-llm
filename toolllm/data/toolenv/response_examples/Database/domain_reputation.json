@@ -1,0 +1,11 @@
+{
+    "api_list": [
+        {
+            "name": "Domain Reputation",
+            "schema": {
+                "code": "int",
+                "messages": "str"
+            }
+        }
+    ]
+}

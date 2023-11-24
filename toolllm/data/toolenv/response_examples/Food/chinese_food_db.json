@@ -1,0 +1,33 @@
+{
+    "api_list": [
+        {
+            "name": "Detailed Food Recipe by ID",
+            "schema": {
+                "id": "str",
+                "title": "str",
+                "difficulty": "str",
+                "portion": "str",
+                "time": "str",
+                "description": "str",
+                "ingredients": [
+                    "list of str with length 1"
+                ],
+                "method": [
+                    {
+                        "Step 1": "str"
+                    }
+                ],
+                "image": "str"
+            }
+        },
+        {
+            "name": "List of Foods",
+            "schema": {
+                "id": "str",
+                "title": "str",
+                "difficulty": "str",
+                "image": "str"
+            }
+        }
+    ]
+}

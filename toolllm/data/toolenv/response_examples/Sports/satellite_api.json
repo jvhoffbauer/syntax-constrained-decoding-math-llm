@@ -1,0 +1,10 @@
+{
+    "api_list": [
+        {
+            "name": "LOOKUP",
+            "schema": {
+                "messages": "str"
+            }
+        }
+    ]
+}

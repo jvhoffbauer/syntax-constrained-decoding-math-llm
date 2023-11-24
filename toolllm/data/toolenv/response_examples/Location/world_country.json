@@ -1,0 +1,96 @@
+{
+    "api_list": [
+        {
+            "name": "Get Regions",
+            "schema": {
+                "total": "int",
+                "data": [
+                    {
+                        "name": "str",
+                        "subregions": [
+                            {
+                                "name": "str"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Get Sub Regions",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get Time Zones",
+            "schema": {
+                "total": "int",
+                "data": [
+                    {
+                        "zone_name": "str",
+                        "tz_name": "str",
+                        "gmt_offset_name": "str",
+                        "gmt_offset": "int",
+                        "abbreviation": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Get Cities",
+            "schema": {
+                "total": "int",
+                "data": [
+                    {
+                        "name": "str",
+                        "latitude": "str",
+                        "longitude": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Get Countries",
+            "schema": {
+                "page": "int",
+                "total_items": "int",
+                "total_pages": "int",
+                "total": "int",
+                "data": [
+                    {
+                        "id": "str",
+                        "name": "str",
+                        "iso3": "str",
+                        "iso2": "str",
+                        "numeric_code": "str",
+                        "phone_code": "str",
+                        "capital": "str",
+                        "currency": "str",
+                        "currency_name": "str",
+                        "currency_symbol": "str",
+                        "tld": "str",
+                        "native": "str",
+                        "latitude": "str",
+                        "longitude": "str",
+                        "region": {
+                            "name": "str"
+                        },
+                        "subregion": {
+                            "name": "str"
+                        },
+                        "timezones": [
+                            {
+                                "zone_name": "str",
+                                "tz_name": "str",
+                                "gmt_offset_name": "str",
+                                "gmt_offset": "int",
+                                "abbreviation": "str"
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,11 @@
+{
+    "api_list": [
+        {
+            "name": "Pricing",
+            "schema": {
+                "messages": "str",
+                "info": "str"
+            }
+        }
+    ]
+}

@@ -1,0 +1,47 @@
+{
+    "api_list": [
+        {
+            "name": "Get Country",
+            "schema": {
+                "id": "int",
+                "countryName": "str",
+                "capitalCity": "str",
+                "continent": "str",
+                "subregion": "str",
+                "population": "str",
+                "callingCode": "str",
+                "iso2": "str",
+                "iso3": "str",
+                "borders": [
+                    "list of str with length 1"
+                ],
+                "nativeName": "str",
+                "states": [
+                    "list of str with length 1"
+                ],
+                "timezones": [
+                    {
+                        "timezones": [
+                            "list of str with length 1"
+                        ]
+                    }
+                ],
+                "currency": [
+                    {
+                        "code": "str",
+                        "name": "str",
+                        "symbol": "str"
+                    }
+                ],
+                "languages": [
+                    {
+                        "iso639_1": "str",
+                        "iso639_2": "str",
+                        "name": "str",
+                        "nativeName": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

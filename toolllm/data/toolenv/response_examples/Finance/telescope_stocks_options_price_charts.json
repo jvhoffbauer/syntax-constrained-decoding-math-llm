@@ -1,0 +1,109 @@
+{
+    "api_list": [
+        {
+            "name": "stocks",
+            "schema": {
+                "quoteSummary": {
+                    "result": [
+                        {
+                            "assetProfile": {
+                                "address1": "str",
+                                "city": "str",
+                                "state": "str",
+                                "zip": "str",
+                                "country": "str",
+                                "phone": "str",
+                                "website": "str",
+                                "industry": "str",
+                                "industryDisp": "str",
+                                "sector": "str",
+                                "longBusinessSummary": "str",
+                                "fullTimeEmployees": "str",
+                                "companyOfficers": [
+                                    {
+                                        "name": "str",
+                                        "title": "str",
+                                        "totalPay": {
+                                            "raw": "str",
+                                            "fmt": "str",
+                                            "longFmt": "str"
+                                        }
+                                    }
+                                ],
+                                "auditRisk": "str",
+                                "boardRisk": "str",
+                                "compensationRisk": "str",
+                                "shareHolderRightsRisk": "str",
+                                "overallRisk": "str",
+                                "governanceEpochDate": "str",
+                                "compensationAsOfEpochDate": "str",
+                                "maxAge": "str"
+                            },
+                            "summaryProfile": {
+                                "address1": "str",
+                                "city": "str",
+                                "state": "str",
+                                "zip": "str",
+                                "country": "str",
+                                "phone": "str",
+                                "website": "str",
+                                "industry": "str",
+                                "industryDisp": "str",
+                                "sector": "str"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "price",
+            "schema": {
+                "chart": {
+                    "result": [
+                        {
+                            "meta": {
+                                "currency": "str",
+                                "symbol": "str",
+                                "exchangeName": "str",
+                                "instrumentType": "str",
+                                "regularMarketPrice": "str",
+                                "chartPreviousClose": "str",
+                                "priceHint": "str",
+                                "dataGranularity": "str",
+                                "range": "str",
+                                "validRanges": [
+                                    "list of str with length 1"
+                                ]
+                            },
+                            "timestamp": [
+                                "list of str with length 1"
+                            ],
+                            "indicators": {
+                                "quote": [
+                                    {
+                                        "close": [
+                                            "list of str with length 1"
+                                        ],
+                                        "open": [
+                                            "list of str with length 1"
+                                        ],
+                                        "low": [
+                                            "list of str with length 1"
+                                        ],
+                                        "volume": [
+                                            "list of str with length 1"
+                                        ],
+                                        "high": [
+                                            "list of str with length 1"
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

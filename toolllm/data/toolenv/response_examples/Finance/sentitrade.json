@@ -1,0 +1,12 @@
+{
+    "api_list": [
+        {
+            "name": "Daily Sentiment",
+            "schema": {
+                "symbol": "str",
+                "score": "float",
+                "date": "str"
+            }
+        }
+    ]
+}

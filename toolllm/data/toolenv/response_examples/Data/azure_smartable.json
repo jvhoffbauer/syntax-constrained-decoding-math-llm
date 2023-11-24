@@ -1,0 +1,230 @@
+{
+    "api_list": [
+        {
+            "name": "GetNews",
+            "schema": {
+                "page": "str",
+                "value": [
+                    {
+                        "title": "str",
+                        "excerpt": "str",
+                        "webUrl": "str",
+                        "heat": "str",
+                        "content": "str",
+                        "publishedDateTime": "str",
+                        "provider": {
+                            "name": "str",
+                            "domain": "str"
+                        },
+                        "locale": "str",
+                        "categories": [
+                            "list of str with length 1"
+                        ],
+                        "topics": [
+                            "list of str with length 1"
+                        ]
+                    }
+                ],
+                "nextPage": "str"
+            }
+        },
+        {
+            "name": "GetNewsByTopic",
+            "schema": {
+                "page": "str",
+                "value": [
+                    {
+                        "title": "str",
+                        "excerpt": "str",
+                        "webUrl": "str",
+                        "heat": "str",
+                        "images": "str",
+                        "type": "str",
+                        "publishedDateTime": "str",
+                        "provider": {
+                            "name": "str",
+                            "domain": "str"
+                        },
+                        "locale": "str",
+                        "categories": [
+                            "list of str with length 1"
+                        ],
+                        "topics": [
+                            "list of str with length 1"
+                        ]
+                    }
+                ],
+                "nextPage": "str"
+            }
+        },
+        {
+            "name": "GetLearningResources",
+            "schema": {
+                "title": "str",
+                "path": "str",
+                "page": "str",
+                "value": [
+                    {
+                        "path": "str",
+                        "title": "str",
+                        "excerpt": "str",
+                        "sourceUrl": "str",
+                        "webUrl": "str",
+                        "length": "str",
+                        "ratings": {
+                            "count": "str",
+                            "average": "str"
+                        },
+                        "provider": {
+                            "name": "str",
+                            "domain": "str"
+                        },
+                        "levels": [
+                            "list of str with length 1"
+                        ],
+                        "heat": "str",
+                        "content": "str",
+                        "type": "str",
+                        "price": "str",
+                        "topics": [
+                            "list of str with length 1"
+                        ]
+                    }
+                ],
+                "nextPage": "str"
+            }
+        },
+        {
+            "name": "GetPeople",
+            "schema": {
+                "title": "str",
+                "page": "str",
+                "value": [
+                    {
+                        "title": "str",
+                        "excerpt": "str",
+                        "sourceUrl": "str",
+                        "webUrl": "str",
+                        "name": "str",
+                        "bio": "str",
+                        "location": "str",
+                        "website": "str",
+                        "twitter": {
+                            "username": "str",
+                            "url": "str",
+                            "followers": "str"
+                        },
+                        "linkedin": {
+                            "url": "str"
+                        },
+                        "affiliation": {
+                            "name": "str",
+                            "domain": "str"
+                        },
+                        "topics": [
+                            "list of str with length 1"
+                        ],
+                        "heat": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "GetFutureEvents",
+            "schema": {
+                "title": "str",
+                "page": "str",
+                "value": [
+                    {
+                        "title": "str",
+                        "excerpt": "str",
+                        "sourceUrl": "str",
+                        "webUrl": "str",
+                        "name": "str",
+                        "startDateTime": "str",
+                        "endDateTime": "str",
+                        "website": "str",
+                        "provider": {
+                            "name": "str",
+                            "domain": "str"
+                        },
+                        "topics": [
+                            "list of str with length 1"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "name": "GetPastEvents",
+            "schema": {
+                "title": "str",
+                "path": "str",
+                "page": "str",
+                "value": [
+                    {
+                        "path": "str",
+                        "title": "str",
+                        "excerpt": "str",
+                        "sourceUrl": "str",
+                        "webUrl": "str",
+                        "originalUrl": "str",
+                        "name": "str",
+                        "type": "str",
+                        "startDateTime": "str",
+                        "endDateTime": "str",
+                        "website": "str",
+                        "provider": {
+                            "name": "str",
+                            "domain": "str"
+                        },
+                        "topics": [
+                            "list of str with length 1"
+                        ],
+                        "content": "str"
+                    }
+                ],
+                "nextPage": "str"
+            }
+        },
+        {
+            "name": "GetTopics",
+            "schema": {
+                "value": [
+                    {
+                        "name": "str",
+                        "shortname": "str",
+                        "id": "str",
+                        "services": [
+                            {
+                                "name": "str",
+                                "endpoint": "str"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "name": "GetNewsletters",
+            "schema": {
+                "title": "str",
+                "page": "int",
+                "value": [
+                    {
+                        "title": "str",
+                        "sourceUrl": "str",
+                        "webUrl": "str",
+                        "excerpt": "str",
+                        "publishedDateTime": "str",
+                        "locale": "str",
+                        "topics": [
+                            "list of str with length 1"
+                        ]
+                    }
+                ],
+                "nextPage": "str"
+            }
+        }
+    ]
+}

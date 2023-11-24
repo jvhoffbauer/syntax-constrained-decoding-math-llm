@@ -1,0 +1,36 @@
+{
+    "api_list": [
+        {
+            "name": "Get information about a user",
+            "schema": {
+                "errors": {
+                    "message": "str"
+                }
+            }
+        },
+        {
+            "name": "Get all the datapoints",
+            "schema": {
+                "errors": {
+                    "message": "str"
+                }
+            }
+        },
+        {
+            "name": "Get information about a goal",
+            "schema": {
+                "errors": {
+                    "message": "str"
+                }
+            }
+        },
+        {
+            "name": "Get all goals for a user",
+            "schema": {
+                "errors": {
+                    "message": "str"
+                }
+            }
+        }
+    ]
+}

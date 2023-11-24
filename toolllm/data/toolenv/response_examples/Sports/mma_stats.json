@@ -1,0 +1,58 @@
+{
+    "api_list": [
+        {
+            "name": "search fighter stats",
+            "schema": {
+                "results": [
+                    {
+                        "Name": "str",
+                        "Nickname": "str",
+                        "Division Title": "str",
+                        "Division Body": {
+                            "Wins": "str",
+                            "Losses": "str",
+                            "Draws": "str"
+                        },
+                        "Bio Data": {
+                            "Status": "str",
+                            "Hometown": "str",
+                            "Age": "str",
+                            "Height": "str",
+                            "Weight": "str",
+                            "Octagon Debut": "str"
+                        },
+                        "Stats": {
+                            "Standing": "str",
+                            "Clinch": "str",
+                            "Ground": "str",
+                            "KOTKO": "str",
+                            "DEC": "str",
+                            "SUB": "str"
+                        },
+                        "Sig. Strikes Landed": "str",
+                        "Sig. Strikes Attempted": "str",
+                        "Takedowns Landed": "str",
+                        "Takedowns Attempted": "str",
+                        "Striking accuracy": "str",
+                        "Takedown Accuracy": "str",
+                        "Records": {
+                            "Sig. Str. Landed": "str",
+                            "Sig. Str. Absorbed": "str",
+                            "Takedown avg": "str",
+                            "Submission avg": "str",
+                            "Sig. Str. Defense": "str",
+                            "Takedown Defense": "str",
+                            "Knockdown Avg": "str"
+                        },
+                        "Last Fight": {
+                            "Event": "str",
+                            "Fight Number": "str",
+                            "Matchup": "str",
+                            "Date": "str"
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

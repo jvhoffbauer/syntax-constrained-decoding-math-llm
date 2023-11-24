@@ -1,0 +1,30 @@
+{
+    "api_list": [
+        {
+            "name": "Flashcards",
+            "schema": {
+                "status": "str",
+                "data": [
+                    {
+                        "questionDescription": "str",
+                        "choiceDescription": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "/QandA",
+            "schema": {
+                "status": "str",
+                "data": [
+                    {
+                        "questionId": "str",
+                        "questionDescription": "str",
+                        "choiceId": "str",
+                        "choiceDescription": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

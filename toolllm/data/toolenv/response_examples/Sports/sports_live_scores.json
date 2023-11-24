@@ -1,0 +1,506 @@
+{
+    "api_list": [
+        {
+            "name": "Tennis Rankings",
+            "schema": {
+                "category": "str",
+                "rankings": [
+                    {
+                        "Name": "str",
+                        "Points": "int",
+                        "Rank": "int"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Handball Match Statistics",
+            "schema": {
+                "Match Id": "str",
+                "statistics": [
+                    {
+                        "P1 name": "str",
+                        "P2 name": "str",
+                        "P1 7 meters": "str",
+                        "P2 7 meters": "str",
+                        "P1 2 min penalty": "str",
+                        "P2 2 min penalty": "str",
+                        "P1 Goal streak": "str",
+                        "P2 Goal streak": "str",
+                        "P1 Goals in powerplay": "str",
+                        "P2 Goals in powerplay": "str",
+                        "P1 Shorthanded goals": "str",
+                        "P2 Shorthanded goals": "str",
+                        "P1 Timeouts": "str",
+                        "P2 Timeouts": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Basketball Match Lineups",
+            "schema": {
+                "Match Id": "str",
+                "statistics": [
+                    {
+                        "Name": "str",
+                        "Position": "str",
+                        "Team": "str",
+                        "Stats": {
+                            "assists": "int",
+                            "blocks": "int",
+                            "defensiveRebounds": "int",
+                            "fieldGoalsMade": "int",
+                            "freeThrowsMade": "int",
+                            "offensiveRebounds": "int",
+                            "points": "int",
+                            "rebounds": "int",
+                            "steals": "int",
+                            "threePointsMade": "int",
+                            "turnovers": "int"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Futsal League Rankings",
+            "schema": {
+                "league_id": "str",
+                "rankings": [
+                    {
+                        "Text": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Football Live Matches",
+            "schema": {
+                "matches": [
+                    {
+                        "Away Score": "int",
+                        "Away Team": "str",
+                        "Home Score": "int",
+                        "Home Team": "str",
+                        "Initial Away Odd": "float",
+                        "Initial Home Odd": "float",
+                        "League": "str",
+                        "Live Away Odd": "float",
+                        "Live Home Odd": "float",
+                        "Match ID": "str",
+                        "Status": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Football Match Lineups",
+            "schema": {
+                "Match Id": "str",
+                "statistics": [
+                    {
+                        "Position": "str",
+                        "Name": "str",
+                        "Team": "str",
+                        "Stats": {
+                            "rating": "float",
+                            "minutesPlayed": "int",
+                            "saves": "int"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Football Match Statistics",
+            "schema": {
+                "Match Id": "str",
+                "statistics": [
+                    {
+                        "P1 Ball possession": "str",
+                        "P1 Big chances": "str",
+                        "P1 Big chances missed": "str",
+                        "P1 Blocked shots": "str",
+                        "P1 Clearances": "str",
+                        "P1 Corner kicks": "str",
+                        "P1 Crosses": "str",
+                        "P1 Dribbles": "str",
+                        "P1 Duels won": "str",
+                        "P1 Expected assists": "str",
+                        "P1 Expected goals": "str",
+                        "P1 Fouls": "str",
+                        "P1 Goalkeeper saves": "str",
+                        "P1 Goals prevented": "str",
+                        "P1 Interceptions": "str",
+                        "P1 Long balls": "str",
+                        "P1 Offsides": "str",
+                        "P1 Passes": "str",
+                        "P1 Possession lost": "str",
+                        "P1 Red cards": "str",
+                        "P1 Shots inside box": "str",
+                        "P1 Shots off target": "str",
+                        "P1 Shots on target": "str",
+                        "P1 Shots outside box": "str",
+                        "P1 Tackles": "str",
+                        "P1 Total shots": "str",
+                        "P1 Yellow cards": "str",
+                        "P1 name": "str",
+                        "P2 Ball possession": "str",
+                        "P2 Big chances": "str",
+                        "P2 Big chances missed": "str",
+                        "P2 Blocked shots": "str",
+                        "P2 Clearances": "str",
+                        "P2 Corner kicks": "str",
+                        "P2 Crosses": "str",
+                        "P2 Dribbles": "str",
+                        "P2 Duels won": "str",
+                        "P2 Expected assists": "str",
+                        "P2 Expected goals": "str",
+                        "P2 Fouls": "str",
+                        "P2 Goalkeeper saves": "str",
+                        "P2 Goals prevented": "str",
+                        "P2 Interceptions": "str",
+                        "P2 Long balls": "str",
+                        "P2 Offsides": "str",
+                        "P2 Passes": "str",
+                        "P2 Possession lost": "str",
+                        "P2 Red cards": "str",
+                        "P2 Shots inside box": "str",
+                        "P2 Shots off target": "str",
+                        "P2 Shots on target": "str",
+                        "P2 Shots outside box": "str",
+                        "P2 Tackles": "str",
+                        "P2 Total shots": "str",
+                        "P2 Yellow cards": "str",
+                        "P2 name": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Cricket League Rankings",
+            "schema": {
+                "league_id": "str",
+                "rankings": [
+                    {
+                        "Rank": "int",
+                        "Team Name": "str",
+                        "Wins": "int",
+                        "Losses": "int"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Cricket Live Matches",
+            "schema": {
+                "matches": [
+                    {
+                        "Away Score": "int",
+                        "Away Team": "str",
+                        "Home Score": "int",
+                        "Home Team": "str",
+                        "Initial Away Odd": "float",
+                        "Initial Home Odd": "float",
+                        "League": "str",
+                        "League ID": "int",
+                        "Live Away Odd": "float",
+                        "Live Home Odd": "float",
+                        "Match ID": "str",
+                        "Status": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Futsal Match Statistics",
+            "schema": {
+                "Match Id": "str",
+                "statistics": [
+                    {
+                        "P1 Ball possession": "str",
+                        "P1 Corner kicks": "str",
+                        "P1 Fouls": "str",
+                        "P1 Red cards": "str",
+                        "P1 Timeouts": "str",
+                        "P1 Yellow cards": "str",
+                        "P1 name": "str",
+                        "P2 Ball possession": "str",
+                        "P2 Corner kicks": "str",
+                        "P2 Fouls": "str",
+                        "P2 Red cards": "str",
+                        "P2 Timeouts": "str",
+                        "P2 Yellow cards": "str",
+                        "P2 name": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Esports Live Matches",
+            "schema": {
+                "matches": [
+                    {
+                        "Game": "str",
+                        "Home Team": "str",
+                        "Away Team": "str",
+                        "League": "str",
+                        "Home Score": "int",
+                        "Away Score": "int",
+                        "Status": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Table Tennis Live Matches",
+            "schema": {
+                "matches": [
+                    {
+                        "League": "str",
+                        "Home Team": "str",
+                        "Away Team": "str",
+                        "Home Score": "int",
+                        "Away Score": "int",
+                        "Initial Home Odd": "float",
+                        "Initial Away Odd": "float",
+                        "Live Home Odd": "float",
+                        "Live Away Odd": "float",
+                        "Status": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Table Tennis Match Statistics",
+            "schema": {
+                "Match Id": "str",
+                "statistics": [
+                    {
+                        "Match ID": "str",
+                        "P1 name": "str",
+                        "P2 name": "str",
+                        "P1 Points won": "str",
+                        "P2 Points won": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Baseball Match Statistics",
+            "schema": {
+                "Match Id": "str",
+                "statistics": [
+                    {
+                        "P1 AVG": "str",
+                        "P1 Assists": "str",
+                        "P1 At bats": "str",
+                        "P1 Base on balls": "str",
+                        "P1 Batters faced": "str",
+                        "P1 Doubles": "str",
+                        "P1 ERA": "str",
+                        "P1 Earned runs": "str",
+                        "P1 Hits": "str",
+                        "P1 Home runs": "str",
+                        "P1 Innings pitched": "str",
+                        "P1 Left on base": "str",
+                        "P1 OBP": "str",
+                        "P1 OPS": "str",
+                        "P1 Outs": "str",
+                        "P1 Put outs": "str",
+                        "P1 RBI": "str",
+                        "P1 Runs": "str",
+                        "P1 SLG": "str",
+                        "P1 Strike outs": "str",
+                        "P1 Triples": "str",
+                        "P1 name": "str",
+                        "P2 AVG": "str",
+                        "P2 Assists": "str",
+                        "P2 At bats": "str",
+                        "P2 Base on balls": "str",
+                        "P2 Batters faced": "str",
+                        "P2 Doubles": "str",
+                        "P2 ERA": "str",
+                        "P2 Earned runs": "str",
+                        "P2 Hits": "str",
+                        "P2 Home runs": "str",
+                        "P2 Innings pitched": "str",
+                        "P2 Left on base": "str",
+                        "P2 OBP": "str",
+                        "P2 OPS": "str",
+                        "P2 Outs": "str",
+                        "P2 Put outs": "str",
+                        "P2 RBI": "str",
+                        "P2 Runs": "str",
+                        "P2 SLG": "str",
+                        "P2 Strike outs": "str",
+                        "P2 Triples": "str",
+                        "P2 name": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Baseball Live Matches",
+            "schema": {
+                "matches": [
+                    {
+                        "Away Team": "str",
+                        "Home Team": "str",
+                        "Initial Away Odd": "float",
+                        "Initial Home Odd": "float",
+                        "League": "str",
+                        "Live Away Odd": "float",
+                        "Live Home Odd": "float",
+                        "Match ID": "str",
+                        "Status": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Basketball Match Statistics",
+            "schema": {
+                "Match Id": "str",
+                "statistics": [
+                    {
+                        "Match ID": "str",
+                        "P1 name": "str",
+                        "P2 name": "str",
+                        "P1 2 pointers": "str",
+                        "P1 3 pointers": "str",
+                        "P1 Assists": "str",
+                        "P1 Biggest lead": "str",
+                        "P1 Blocks": "str",
+                        "P1 Defensive rebounds": "str",
+                        "P1 Field goals": "str",
+                        "P1 Fouls": "str",
+                        "P1 Free throws": "str",
+                        "P2 2 pointers": "str",
+                        "P2 3 pointers": "str",
+                        "P2 Assists": "str",
+                        "P2 Biggest lead": "str",
+                        "P2 Blocks": "str",
+                        "P2 Defensive rebounds": "str",
+                        "P2 Field goals": "str",
+                        "P2 Fouls": "str",
+                        "P2 Free throws": "str",
+                        "P2 Lead changes": "str",
+                        "P2 Max points in a row": "str",
+                        "P2 Offensive rebounds": "str",
+                        "P2 Rebounds": "str",
+                        "P2 Steals": "str",
+                        "P2 Time spent in lead": "str",
+                        "P2 Timeouts": "str",
+                        "P2 Turnovers": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Basketball Live Matches",
+            "schema": {
+                "matches": [
+                    {
+                        "Away Score": "int",
+                        "Away Team": "str",
+                        "Home Score": "int",
+                        "Home Team": "str",
+                        "Initial Away Odd": "float",
+                        "Initial Home Odd": "float",
+                        "League": "str",
+                        "Live Away Odd": "float",
+                        "Live Home Odd": "float",
+                        "Match ID": "str",
+                        "Period 1 Away": "int",
+                        "Period 1 Home": "int",
+                        "Status": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Tennis Match Statistics",
+            "schema": {
+                "Match Id": "str",
+                "statistics": [
+                    {
+                        "Match ID": "str",
+                        "P1 Aces": "str",
+                        "P1 Break points converted": "str",
+                        "P1 Break points saved": "str",
+                        "P1 Double faults": "str",
+                        "P1 First serve": "str",
+                        "P1 First serve points": "str",
+                        "P1 First serve return points": "str",
+                        "P1 Max games in a row": "str",
+                        "P1 Max points in a row": "str",
+                        "P1 Receiver points won": "str",
+                        "P1 Return games played": "str",
+                        "P1 Second serve": "str",
+                        "P1 Second serve points": "str",
+                        "P1 Second serve return points": "str",
+                        "P1 Service games played": "str",
+                        "P1 Service points won": "str",
+                        "P1 Tiebreaks": "str",
+                        "P1 name": "str",
+                        "P2 Aces": "str",
+                        "P2 Break points converted": "str",
+                        "P2 Break points saved": "str",
+                        "P2 Double faults": "str",
+                        "P2 First serve": "str",
+                        "P2 First serve points": "str",
+                        "P2 First serve return points": "str",
+                        "P2 Max games in a row": "str",
+                        "P2 Max points in a row": "str",
+                        "P2 Receiver points won": "str",
+                        "P2 Return games played": "str",
+                        "P2 Second serve": "str",
+                        "P2 Second serve points": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Tennis Live Matches",
+            "schema": {
+                "matches": [
+                    {
+                        "Away Player": "str",
+                        "Current set": "str",
+                        "Home Player": "str",
+                        "Live Away Odd": "float",
+                        "Live Home Odd": "float",
+                        "Player 1 Score": "str",
+                        "Player 2 Score": "str",
+                        "Round": "str",
+                        "Sets Player 1": "int",
+                        "Sets Player 2": "int",
+                        "Surface": "str",
+                        "Tournament": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Football League Rankings",
+            "schema": {
+                "league_id": "str",
+                "rankings": [
+                    {
+                        "Draws": "int",
+                        "Goals Conceded": "int",
+                        "Goals Scored": "int",
+                        "Losses": "int",
+                        "Matches": "int",
+                        "Points": "int",
+                        "Rank": "int",
+                        "Team Name": "str",
+                        "Wins": "int"
+                    }
+                ]
+            }
+        }
+    ]
+}

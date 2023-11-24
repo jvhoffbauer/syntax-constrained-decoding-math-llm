@@ -1,0 +1,34 @@
+{
+    "api_list": [
+        {
+            "name": "Email",
+            "schema": {
+                "status": "str",
+                "content": {
+                    "first_name": "str",
+                    "last_name": "str",
+                    "location": "str",
+                    "email": "str",
+                    "linkedin": "str",
+                    "job": [
+                        {
+                            "company": "str",
+                            "position": "str",
+                            "location": "str",
+                            "linkedin_url": "str",
+                            "date_from": "str"
+                        }
+                    ],
+                    "education": [
+                        {
+                            "degree_name": "str",
+                            "field_of_study": "str",
+                            "school_name": "str",
+                            "date_from": "str"
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

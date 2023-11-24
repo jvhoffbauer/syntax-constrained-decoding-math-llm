@@ -1,0 +1,18 @@
+{
+    "api_list": [
+        {
+            "name": "v2 / Image Search",
+            "schema": {
+                "request": {
+                    "hl": "str",
+                    "query": "str",
+                    "suggestion_query": "str"
+                },
+                "response": {
+                    "next_cursor": "NoneType",
+                    "suggestions": "str"
+                }
+            }
+        }
+    ]
+}

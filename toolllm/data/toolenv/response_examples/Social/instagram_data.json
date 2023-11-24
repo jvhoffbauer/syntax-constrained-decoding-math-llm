@@ -1,0 +1,617 @@
+{
+    "api_list": [
+        {
+            "name": "Location Search",
+            "schema": {
+                "items": [
+                    {
+                        "location": {
+                            "pk": "int",
+                            "short_name": "str",
+                            "name": "str",
+                            "lng": "float",
+                            "lat": "float"
+                        },
+                        "title": "str"
+                    }
+                ],
+                "has_more": "bool",
+                "status": "str"
+            }
+        },
+        {
+            "name": "User Guides Feed",
+            "schema": {
+                "guides": [
+                    {
+                        "summary": {
+                            "id": "str",
+                            "title": "str",
+                            "description": "str",
+                            "cover_media": {
+                                "taken_at": "str",
+                                "pk": "str",
+                                "id": "str",
+                                "media_type": "str",
+                                "code": "str",
+                                "caption": "str",
+                                "can_viewer_save": "str",
+                                "carousel_media_count": "str"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "User Tagged Feed",
+            "schema": {
+                "data": {
+                    "user": {
+                        "edge_user_to_photos_of_you": {
+                            "count": "str",
+                            "edges": [
+                                {
+                                    "node": {
+                                        "id": "str",
+                                        "edge_media_to_caption": {
+                                            "edges": [
+                                                {
+                                                    "node": {
+                                                        "text": "str"
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        "shortcode": "str",
+                                        "edge_media_to_comment": {
+                                            "count": "str"
+                                        },
+                                        "taken_at_timestamp": "str",
+                                        "dimensions": {
+                                            "height": "str",
+                                            "width": "str"
+                                        },
+                                        "display_url": "str",
+                                        "edge_liked_by": {
+                                            "count": "str"
+                                        },
+                                        "edge_media_preview_like": {
+                                            "count": "str"
+                                        },
+                                        "owner": {
+                                            "id": "str",
+                                            "username": "str"
+                                        },
+                                        "thumbnail_src": "str",
+                                        "is_video": "str",
+                                        "accessibility_caption": "str"
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                },
+                "status": "str"
+            }
+        },
+        {
+            "name": "Post comments V2",
+            "schema": {
+                "comment_likes_enabled": "str",
+                "comments": [
+                    {
+                        "pk": "str",
+                        "user_id": "str",
+                        "text": "str",
+                        "type": "str",
+                        "created_at": "str",
+                        "content_type": "str",
+                        "status": "str",
+                        "user": {
+                            "pk": "str",
+                            "username": "str",
+                            "full_name": "str",
+                            "is_private": "str",
+                            "is_mentionable": "str",
+                            "is_verified": "str",
+                            "profile_pic_url": "str"
+                        },
+                        "is_covered": "str",
+                        "has_liked_comment": "str",
+                        "comment_like_count": "str",
+                        "child_comment_count": "str"
+                    }
+                ],
+                "comment_count": "str",
+                "caption": {
+                    "pk": "str",
+                    "user_id": "str",
+                    "text": "str",
+                    "type": "str",
+                    "created_at": "str",
+                    "content_type": "str"
+                }
+            }
+        },
+        {
+            "name": "User information(metadata)",
+            "schema": {
+                "biography": "str",
+                "bio_links": [
+                    {
+                        "title": "str",
+                        "lynx_url": "str",
+                        "url": "str",
+                        "link_type": "str"
+                    }
+                ],
+                "blocked_by_viewer": "str",
+                "restricted_by_viewer": "str",
+                "country_block": "str",
+                "eimu_id": "str",
+                "external_url": "str",
+                "external_url_linkshimmed": "str",
+                "edge_followed_by": {
+                    "count": "str"
+                },
+                "fbid": "str",
+                "followed_by_viewer": "str",
+                "edge_follow": {
+                    "count": "str"
+                },
+                "follows_viewer": "str",
+                "full_name": "str",
+                "has_ar_effects": "str",
+                "has_clips": "str",
+                "has_guides": "str",
+                "has_channel": "str",
+                "has_blocked_viewer": "str",
+                "highlight_reel_count": "str",
+                "has_requested_viewer": "str",
+                "hide_like_and_view_counts": "str",
+                "id": "str",
+                "is_business_account": "str",
+                "is_professional_account": "str",
+                "is_supervision_enabled": "str",
+                "is_guardian_of_viewer": "str",
+                "is_supervised_by_viewer": "str",
+                "is_supervised_user": "str",
+                "is_embeds_disabled": "str"
+            }
+        },
+        {
+            "name": "User Contact Details - email, phone and etc",
+            "schema": {
+                "username": "str",
+                "full_name": "str",
+                "id": "int",
+                "external_url": "str",
+                "category": "str",
+                "public_email": "str",
+                "contact_phone_number": "str",
+                "public_phone_country_code": "str",
+                "public_phone_number": "str"
+            }
+        },
+        {
+            "name": "Hashtag Info",
+            "schema": {
+                "count": "str",
+                "data": {
+                    "name": "str",
+                    "media_count": "str",
+                    "follow_status": "str",
+                    "following": "str",
+                    "allow_following": "str",
+                    "allow_muting_story": "str",
+                    "profile_pic_url": "str",
+                    "non_violating": "str",
+                    "formatted_media_count": "str",
+                    "is_trending": "str",
+                    "top": {
+                        "sections": [
+                            {
+                                "layout_type": "str",
+                                "layout_content": {
+                                    "medias": [
+                                        {
+                                            "media": {
+                                                "taken_at": "str",
+                                                "pk": "str",
+                                                "id": "str",
+                                                "media_type": "str",
+                                                "code": "str",
+                                                "caption": {
+                                                    "pk": "str",
+                                                    "user_id": "str",
+                                                    "text": "str",
+                                                    "type": "str"
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "name": "Hashtag feed V2",
+            "schema": {
+                "sections": [
+                    {
+                        "layout_type": "str",
+                        "layout_content": {
+                            "medias": [
+                                {
+                                    "media": {
+                                        "taken_at": "str",
+                                        "pk": "str",
+                                        "id": "str",
+                                        "media_type": "str",
+                                        "code": "str",
+                                        "caption": {
+                                            "text": "str",
+                                            "user": {
+                                                "username": "str",
+                                                "full_name": "str",
+                                                "is_private": "str",
+                                                "is_verified": "str",
+                                                "profile_pic_url": "str"
+                                            },
+                                            "media_id": "str"
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "User Feed V2",
+            "schema": {
+                "items": [
+                    {
+                        "taken_at": "str",
+                        "pk": "str",
+                        "id": "str",
+                        "media_type": "str",
+                        "code": "str",
+                        "caption": {
+                            "text": "str",
+                            "user": {
+                                "username": "str",
+                                "full_name": "str",
+                                "profile_pic_url": "str"
+                            }
+                        },
+                        "comment_inform_treatment": {
+                            "should_have_inform_treatment": "str",
+                            "text": "str"
+                        },
+                        "fundraiser_tag": {
+                            "has_standalone_fundraiser": "str"
+                        },
+                        "sharing_friction_info": {
+                            "should_have_sharing_friction": "str"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "User Highlight Reels Feed",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "User Stories",
+            "schema": {
+                "taken_at": "str",
+                "pk": "str",
+                "id": "str",
+                "media_type": "str",
+                "code": "str",
+                "caption": "str",
+                "comment_inform_treatment": {
+                    "should_have_inform_treatment": "str"
+                },
+                "fundraiser_tag": {
+                    "has_standalone_fundraiser": "str"
+                },
+                "has_translation": "str",
+                "accessibility_caption": "str",
+                "original_media_has_visual_reply_media": "str",
+                "like_and_view_counts_disabled": "str",
+                "can_viewer_save": "str",
+                "is_in_profile_grid": "str",
+                "profile_grid_control_enabled": "str",
+                "is_comments_gif_composer_enabled": "str",
+                "caption_position": "str",
+                "is_reel_media": "str",
+                "is_terminal_video_segment": "str",
+                "likers": "str"
+            }
+        },
+        {
+            "name": "User Followers",
+            "schema": {
+                "count": "int",
+                "has_more": "bool",
+                "end_cursor": "str",
+                "collector": [
+                    {
+                        "id": "str",
+                        "username": "str",
+                        "full_name": "str",
+                        "profile_pic_url": "str",
+                        "is_private": "bool",
+                        "is_verified": "bool"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "User Feed",
+            "schema": {
+                "count": "str",
+                "has_more": "str",
+                "end_cursor": "str",
+                "collector": [
+                    {
+                        "id": "str",
+                        "shortcode": "str",
+                        "type": "str",
+                        "is_video": "str",
+                        "video_url": "str",
+                        "dimension": {
+                            "height": "str",
+                            "width": "str"
+                        },
+                        "display_url": "str",
+                        "thumbnail_src": "str",
+                        "owner": {
+                            "id": "str",
+                            "username": "str"
+                        },
+                        "comments": "str",
+                        "likes": "str",
+                        "views": "str",
+                        "comments_disabled": "str",
+                        "taken_at_timestamp": "str",
+                        "location": {
+                            "id": "str",
+                            "has_public_page": "str",
+                            "name": "str",
+                            "slug": "str"
+                        },
+                        "hashtags": [
+                            "list of str with length 1"
+                        ],
+                        "mentions": [
+                            "list of str with length 1"
+                        ],
+                        "tagged_users": [
+                            {
+                                "user": {
+                                    "full_name": "str",
+                                    "id": "str",
+                                    "is_verified": "str",
+                                    "profile_pic_url": "str",
+                                    "username": "str"
+                                },
+                                "x": "str",
+                                "y": "str"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Audio Feed",
+            "schema": {
+                "endCursor": "str",
+                "has_more": "str",
+                "items": [
+                    {
+                        "media": {
+                            "taken_at": "str",
+                            "pk": "str",
+                            "id": "str",
+                            "media_type": "str",
+                            "code": "str",
+                            "filter_type": "str",
+                            "caption": {
+                                "text": "str",
+                                "user": {
+                                    "pk": "str",
+                                    "username": "str",
+                                    "full_name": "str",
+                                    "profile_pic_url": "str"
+                                },
+                                "media_id": "str"
+                            },
+                            "clips_tab_pinned_user_ids": "str",
+                            "fundraiser_tag": {
+                                "has_standalone_fundraiser": "str"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Hashtag feed",
+            "schema": {
+                "count": "str",
+                "has_more": "str",
+                "end_cursor": "str",
+                "collector": [
+                    {
+                        "type": "str",
+                        "is_video": "str",
+                        "dimension": {
+                            "height": "str",
+                            "width": "str"
+                        },
+                        "display_url": "str",
+                        "thumbnail_src": "str",
+                        "description": "str",
+                        "comments": "str",
+                        "likes": "str",
+                        "comments_disabled": "str",
+                        "taken_at_timestamp": "str",
+                        "hashtags": [
+                            "list of str with length 1"
+                        ],
+                        "mentions": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "User Reels Feed",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "User information(metadata) by User ID",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "User Followings",
+            "schema": {
+                "count": "int",
+                "has_more": "bool",
+                "end_cursor": "str",
+                "collector": [
+                    {
+                        "id": "str",
+                        "username": "str",
+                        "full_name": "str",
+                        "profile_pic_url": "str",
+                        "is_private": "bool",
+                        "is_verified": "bool"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Post Metadata",
+            "schema": {
+                "taken_at": "str",
+                "pk": "str",
+                "id": "str",
+                "media_type": "str",
+                "code": "str",
+                "caption": {
+                    "text": "str",
+                    "user": {
+                        "pk": "str",
+                        "username": "str",
+                        "full_name": "str",
+                        "is_private": "str",
+                        "profile_pic_url": "str"
+                    }
+                },
+                "fundraiser_tag": {
+                    "has_standalone_fundraiser": "str"
+                },
+                "sharing_friction_info": {
+                    "should_have_sharing_friction": "str"
+                }
+            }
+        },
+        {
+            "name": "Location Feed",
+            "schema": {
+                "count": "str",
+                "has_more": "str",
+                "end_cursor": "str",
+                "collector": [
+                    {
+                        "shortcode": "str",
+                        "is_video": "str",
+                        "display_url": "str",
+                        "thumbnail_src": "str",
+                        "owner": {
+                            "id": "str"
+                        },
+                        "description": "str",
+                        "comments": "str",
+                        "likes": "str",
+                        "comments_disabled": "str",
+                        "taken_at_timestamp": "str",
+                        "hashtags": [
+                            "list of str with length 1"
+                        ],
+                        "mentions": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Post Comments",
+            "schema": {
+                "count": "int",
+                "has_more": "bool",
+                "end_cursor": "str",
+                "collector": [
+                    {
+                        "id": "str",
+                        "text": "str",
+                        "created_at": "int",
+                        "owner": {
+                            "id": "str",
+                            "is_verified": "bool",
+                            "profile_pic_url": "str",
+                            "username": "str"
+                        },
+                        "likes": "int",
+                        "comments": "int"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Post Likers",
+            "schema": {
+                "count": "int",
+                "has_more": "bool",
+                "end_cursor": "str",
+                "collector": [
+                    {
+                        "id": "str",
+                        "username": "str",
+                        "full_name": "str",
+                        "profile_pic_url": "str",
+                        "is_private": "bool",
+                        "is_verified": "bool"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "User Search",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Hashtag Search",
+            "schema": {
+                "message": "str"
+            }
+        }
+    ]
+}

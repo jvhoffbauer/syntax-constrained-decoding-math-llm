@@ -1,0 +1,49 @@
+{
+    "api_list": [
+        {
+            "name": "on_line",
+            "schema": {
+                "response": {
+                    "res": "str",
+                    "user_score": "str",
+                    "lm": "str",
+                    "mc": "str",
+                    "score": "str"
+                }
+            }
+        },
+        {
+            "name": "on_twitter",
+            "schema": {
+                "response": {
+                    "res": "str",
+                    "user_score": "str",
+                    "score": "str"
+                }
+            }
+        },
+        {
+            "name": "on_slack",
+            "schema": {
+                "response": {
+                    "res": "str",
+                    "user_score": "str",
+                    "lm": "str",
+                    "mc": "str",
+                    "score": "str"
+                }
+            }
+        },
+        {
+            "name": "on_general",
+            "schema": {
+                "response": {
+                    "res": "str",
+                    "user_score": "str",
+                    "lm": "str",
+                    "mc": "str"
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "api_list": [
+        {
+            "name": "/v1/stars",
+            "schema": {
+                "name": "str",
+                "constellation": "str",
+                "right_ascension": "str",
+                "declination": "str",
+                "apparent_magnitude": "str",
+                "absolute_magnitude": "str",
+                "distance_light_year": "str",
+                "spectral_class": "str"
+            }
+        }
+    ]
+}

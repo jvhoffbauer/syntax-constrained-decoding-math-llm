@@ -1,0 +1,41 @@
+{
+    "api_list": [
+        {
+            "name": "Get All Images Of An Collection",
+            "schema": {
+                "response": [
+                    {
+                        "id": "str",
+                        "status": "str",
+                        "smallFile": "str",
+                        "file": "str",
+                        "bigFile": "str",
+                        "type": "str",
+                        "metadata": {
+                            "fileCode": "str",
+                            "author": "str",
+                            "date": "str",
+                            "subject": "str",
+                            "mainSubject": "str"
+                        }
+                    }
+                ],
+                "pagination": {
+                    "limit": "str",
+                    "count": "str"
+                }
+            }
+        },
+        {
+            "name": "Get All Collections By User",
+            "schema": {
+                "author": "str",
+                "status": "str",
+                "qtdImages": "str",
+                "qtdAproved": "str",
+                "qtdDiscarded": "str",
+                "qtdPending": "str"
+            }
+        }
+    ]
+}

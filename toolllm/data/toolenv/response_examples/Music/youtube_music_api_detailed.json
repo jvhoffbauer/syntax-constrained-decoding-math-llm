@@ -1,0 +1,320 @@
+{
+    "api_list": [
+        {
+            "name": "Get Watch Playlist",
+            "schema": {
+                "playlistId": "str",
+                "related": "str",
+                "tracks": [
+                    {
+                        "artists": [
+                            {
+                                "name": "str"
+                            }
+                        ],
+                        "length": "str",
+                        "thumbnail": [
+                            {
+                                "url": "str"
+                            }
+                        ],
+                        "title": "str",
+                        "videoId": "str",
+                        "videoType": "str",
+                        "views": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Get Song Related",
+            "schema": {
+                "contents": [
+                    {
+                        "album": {
+                            "name": "str"
+                        },
+                        "artists": [
+                            {
+                                "name": "str"
+                            }
+                        ],
+                        "isExplicit": "bool",
+                        "thumbnails": [
+                            {
+                                "url": "str"
+                            }
+                        ],
+                        "title": "str"
+                    }
+                ],
+                "title": "str"
+            }
+        },
+        {
+            "name": "Get Song",
+            "schema": {
+                "microformat": {
+                    "microformatDataRenderer": {
+                        "androidPackage": "str",
+                        "appName": "str",
+                        "availableCountries": [
+                            "list of str with length 1"
+                        ],
+                        "category": "str",
+                        "description": "str",
+                        "familySafe": "str",
+                        "iosAppArguments": "str",
+                        "iosAppStoreId": "str",
+                        "linkAlternates": [
+                            {
+                                "hrefUrl": "str"
+                            }
+                        ],
+                        "ogType": "str",
+                        "pageOwnerDetails": {
+                            "name": "str",
+                            "youtubeProfileUrl": "str"
+                        },
+                        "paid": "str",
+                        "publishDate": "str",
+                        "schemaDotOrgType": "str",
+                        "siteName": "str",
+                        "tags": [
+                            "list of str with length 1"
+                        ],
+                        "thumbnail": {
+                            "thumbnails": [
+                                {
+                                    "url": "str"
+                                }
+                            ]
+                        },
+                        "title": "str",
+                        "twitterCardType": "str",
+                        "twitterSiteHandle": "str",
+                        "unlisted": "str",
+                        "uploadDate": "str",
+                        "urlApplinksAndroid": "str",
+                        "urlApplinksIos": "str",
+                        "urlCanonical": "str",
+                        "urlTwitterAndroid": "str",
+                        "urlTwitterIos": "str",
+                        "videoDetails": {
+                            "durationIso8601": "str",
+                            "durationSeconds": "str",
+                            "externalVideoId": "str"
+                        },
+                        "viewCount": "str"
+                    }
+                }
+            }
+        },
+        {
+            "name": "Get User",
+            "schema": {
+                "name": "str",
+                "playlists": {
+                    "browseId": "str",
+                    "params": "str",
+                    "results": [
+                        {
+                            "title": "str"
+                        }
+                    ]
+                },
+                "videos": {
+                    "browseId": "str",
+                    "results": [
+                        {
+                            "artists": [
+                                {
+                                    "name": "str"
+                                }
+                            ],
+                            "thumbnails": [
+                                {
+                                    "url": "str"
+                                }
+                            ],
+                            "title": "str",
+                            "videoId": "str"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Get Album",
+            "schema": {
+                "artists": [
+                    {
+                        "id": "str",
+                        "name": "str"
+                    }
+                ],
+                "audioPlaylistId": "str",
+                "duration": "str",
+                "title": "str",
+                "trackCount": "int",
+                "tracks": [
+                    {
+                        "album": "str",
+                        "artists": [
+                            {
+                                "id": "str",
+                                "name": "str"
+                            }
+                        ],
+                        "duration": "str",
+                        "isExplicit": "bool",
+                        "title": "str",
+                        "videoId": "str"
+                    }
+                ],
+                "type": "str",
+                "year": "str"
+            }
+        },
+        {
+            "name": "Get Artist",
+            "schema": {
+                "albums": {
+                    "results": [
+                        {
+                            "browseId": "str",
+                            "title": "str",
+                            "year": "str"
+                        }
+                    ]
+                },
+                "channelId": "str",
+                "description": "str",
+                "name": "str",
+                "related": {
+                    "results": [
+                        {
+                            "browseId": "str",
+                            "title": "str"
+                        }
+                    ]
+                },
+                "singles": {
+                    "results": [
+                        {
+                            "browseId": "str",
+                            "title": "str",
+                            "year": "str"
+                        }
+                    ]
+                },
+                "songs": {
+                    "results": [
+                        {
+                            "album": {
+                                "name": "str"
+                            },
+                            "artists": [
+                                {
+                                    "name": "str"
+                                }
+                            ],
+                            "title": "str"
+                        }
+                    ]
+                },
+                "subscribed": "str"
+            }
+        },
+        {
+            "name": "Trends",
+            "schema": {
+                "artists": {
+                    "items": [
+                        {
+                            "browseId": "str",
+                            "rank": "str",
+                            "subscribers": "str",
+                            "thumbnails": [
+                                {
+                                    "url": "str"
+                                }
+                            ],
+                            "title": "str",
+                            "trend": "str"
+                        }
+                    ],
+                    "playlist": "str"
+                },
+                "countries": {
+                    "selected": {
+                        "text": "str"
+                    }
+                },
+                "trending": {
+                    "items": [
+                        {
+                            "artists": [
+                                {
+                                    "id": "str",
+                                    "name": "str"
+                                }
+                            ],
+                            "playlistId": "str",
+                            "thumbnails": [
+                                {
+                                    "url": "str"
+                                }
+                            ],
+                            "title": "str",
+                            "videoId": "str",
+                            "views": "str"
+                        }
+                    ],
+                    "playlist": "str"
+                },
+                "videos": {
+                    "items": [
+                        {
+                            "artists": [
+                                {
+                                    "id": "str",
+                                    "name": "str"
+                                }
+                            ],
+                            "playlistId": "str",
+                            "thumbnails": [
+                                {
+                                    "url": "str"
+                                }
+                            ],
+                            "title": "str",
+                            "videoId": "str",
+                            "views": "str"
+                        }
+                    ],
+                    "playlist": "str"
+                }
+            }
+        },
+        {
+            "name": "Search",
+            "schema": {
+                "artists": [
+                    {
+                        "id": "str",
+                        "name": "str",
+                        "category": "str",
+                        "resultType": "str",
+                        "subscribers": "str",
+                        "thumbnails": [
+                            {
+                                "url": "str"
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}

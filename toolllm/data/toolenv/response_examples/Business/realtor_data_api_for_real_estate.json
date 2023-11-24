@@ -1,0 +1,77 @@
+{
+    "api_list": [
+        {
+            "name": "RealtorPropertyList",
+            "schema": {
+                "agent": [
+                    {
+                        "office_name": "str"
+                    }
+                ],
+                "branding": [
+                    {
+                        "name": "str",
+                        "photo": "str",
+                        "type": "str"
+                    }
+                ],
+                "last_update_date": "str",
+                "list_date": "str",
+                "list_price": "str",
+                "listing_id": "str",
+                "location": {
+                    "address": {
+                        "city": "str",
+                        "state": "str",
+                        "state_code": "str"
+                    },
+                    "county": {
+                        "fips_code": "str",
+                        "name": "str"
+                    },
+                    "street_view_url": "str"
+                },
+                "open_house_description": "str",
+                "other_listings": {
+                    "rdc": [
+                        {
+                            "listing_id": "str",
+                            "status": "str"
+                        }
+                    ]
+                },
+                "permalink": "str",
+                "photos": [
+                    {
+                        "href": "str"
+                    }
+                ],
+                "primary_photo": "str",
+                "property_description": {
+                    "baths": "str",
+                    "beds": "str",
+                    "garage": "str",
+                    "lot_sqft": "str",
+                    "sold_date": "str",
+                    "sold_price": "str",
+                    "sqft": "str",
+                    "stories": "str",
+                    "sub_type": "str",
+                    "type": "str"
+                }
+            }
+        },
+        {
+            "name": "RealtorSchoolList",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "RealtorAgentList",
+            "schema": {
+                "message": "str"
+            }
+        }
+    ]
+}

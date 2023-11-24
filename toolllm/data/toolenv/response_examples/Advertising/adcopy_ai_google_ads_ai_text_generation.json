@@ -1,0 +1,35 @@
+{
+    "api_list": [
+        {
+            "name": "Fetch Async Content",
+            "schema": {
+                "thread": "str",
+                "id": "str",
+                "sequenceId": "int",
+                "data": {
+                    "count": "str",
+                    "data": [
+                        {
+                            "data": "str"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Ad Generator (20+ Head. and 10+ Desc.) (~ 1 Min)",
+            "schema": {
+                "requirements": {
+                    "headline": {
+                        "min_length": "int",
+                        "max_length": "int"
+                    },
+                    "desc": {
+                        "min_length": "int",
+                        "max_length": "int"
+                    }
+                }
+            }
+        }
+    ]
+}

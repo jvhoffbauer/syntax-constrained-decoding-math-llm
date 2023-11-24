@@ -1,0 +1,63 @@
+{
+    "api_list": [
+        {
+            "name": "GetTeams",
+            "schema": {
+                "Id": "int",
+                "Name": "str",
+                "Image": "str"
+            }
+        },
+        {
+            "name": "GetCompetitionId",
+            "schema": {
+                "Message": "str",
+                "MessageDetail": "str"
+            }
+        },
+        {
+            "name": "GetEventsId",
+            "schema": {
+                "Message": "str",
+                "MessageDetail": "str"
+            }
+        },
+        {
+            "name": "GetCompetitions",
+            "schema": {
+                "Sport": {
+                    "Id": "int",
+                    "Name": "str",
+                    "Image": "str"
+                },
+                "Id": "int",
+                "Name": "str",
+                "Image": "str"
+            }
+        },
+        {
+            "name": "GetEvents",
+            "schema": {
+                "LocalTeam": {
+                    "Name": "str"
+                },
+                "AwayTeam": {
+                    "Name": "str"
+                },
+                "Competition": {
+                    "Sport": {
+                        "Name": "str"
+                    },
+                    "Name": "str"
+                },
+                "Date": "str",
+                "Channels": [
+                    {
+                        "Name": "str"
+                    }
+                ],
+                "Id": "int"
+            }
+        }
+    ]
+}

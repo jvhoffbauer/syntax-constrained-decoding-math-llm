@@ -1,0 +1,24 @@
+{
+    "api_list": [
+        {
+            "name": "/keywords",
+            "schema": {
+                "keywords": [
+                    {
+                        "keyword": "str",
+                        "score": "float"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "/quality_ugc",
+            "schema": {
+                "quality": {
+                    "score": "float",
+                    "class": "int"
+                }
+            }
+        }
+    ]
+}

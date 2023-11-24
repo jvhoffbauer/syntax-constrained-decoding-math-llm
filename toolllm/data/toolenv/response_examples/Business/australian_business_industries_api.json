@@ -1,0 +1,29 @@
+{
+    "api_list": [
+        {
+            "name": "Search",
+            "schema": {
+                "status": "str",
+                "test": "str",
+                "probableMatches": {
+                    "count": "int",
+                    "activities": [
+                        {
+                            "industryCode": "str",
+                            "fullName": "str"
+                        }
+                    ]
+                },
+                "alphabeticMatches": {
+                    "count": "int",
+                    "activities": [
+                        {
+                            "industryCode": "str",
+                            "fullName": "str"
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

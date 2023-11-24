@@ -1,0 +1,42 @@
+{
+    "api_list": [
+        {
+            "name": "GetCurrentByValueGrowthMomentum",
+            "schema": {
+                "act_symbol": "str",
+                "date": "str",
+                "rank": "str",
+                "vgm": "str"
+            }
+        },
+        {
+            "name": "GetCurrentBySymbol",
+            "schema": {
+                "act_symbol": "str",
+                "date": "str",
+                "rank": "str",
+                "value": "str",
+                "growth": "str",
+                "momentum": "str"
+            }
+        },
+        {
+            "name": "GetByMonth",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "GetByDate",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "GetByStock",
+            "schema": {
+                "message": "str"
+            }
+        }
+    ]
+}

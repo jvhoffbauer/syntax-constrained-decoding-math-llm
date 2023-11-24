@@ -1,0 +1,15 @@
+{
+    "api_list": [
+        {
+            "name": "searchInventory",
+            "schema": {
+                "id": "str",
+                "name": "str",
+                "releaseDate": "str",
+                "manufacturer": {
+                    "name": "str"
+                }
+            }
+        }
+    ]
+}

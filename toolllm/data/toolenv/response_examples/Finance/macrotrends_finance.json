@@ -1,0 +1,89 @@
+{
+    "api_list": [
+        {
+            "name": "History Prices",
+            "schema": {
+                "Date": [
+                    "list of str with length 1"
+                ],
+                "Open": [
+                    "list of str with length 1"
+                ],
+                "High": [
+                    "list of str with length 1"
+                ],
+                "Low": [
+                    "list of str with length 1"
+                ],
+                "Close": [
+                    "list of str with length 1"
+                ],
+                "Adj Close": [
+                    "list of str with length 1"
+                ],
+                "Volume": [
+                    "list of str with length 1"
+                ]
+            }
+        },
+        {
+            "name": "Financial Cash Statement",
+            "schema": {
+                "Years": "empty list",
+                "Net-Income/Loss": "empty list",
+                "Total-Depreciation-And-Amortization---Cash-Flow": "empty list",
+                "Other-Non-Cash-Items": "empty list",
+                "Total-Non-Cash-Items": "empty list",
+                "Change-In-Accounts-Receivable": "empty list",
+                "Change-In-Inventories": "empty list",
+                "Change-In-Accounts-Payable": "empty list",
+                "Change-In-Assets/Liabilities": "empty list",
+                "Total-Change-In-Assets/Liabilities": "empty list",
+                "Cash-Flow-From-Operating-Activities": "empty list",
+                "Net-Change-In-Property,-Plant,-And-Equipment": "empty list",
+                "Net-Change-In-Intangible-Assets": "empty list",
+                "Net-Acquisitions/Divestitures": "empty list",
+                "Net-Change-In-Short-term-Investments": "empty list",
+                "Net-Change-In-Long-Term-Investments": "empty list"
+            }
+        },
+        {
+            "name": "Financial Income Statement",
+            "schema": {
+                "Years": "empty list",
+                "Revenue": "empty list",
+                "Gross-Profit": "empty list",
+                "Operating-Expenses": "empty list",
+                "Operating-Income": "empty list",
+                "Income-After-Taxes": "empty list",
+                "Net-Income": "empty list",
+                "EBITDA": "empty list",
+                "EBIT": "empty list"
+            }
+        },
+        {
+            "name": "Financial Balance Sheet",
+            "schema": {
+                "Years": "empty list",
+                "Cash-On-Hand": "empty list",
+                "Receivables": "empty list",
+                "Inventory": "empty list",
+                "Pre-Paid-Expenses": "empty list",
+                "Other-Current-Assets": "empty list",
+                "Total-Current-Assets": "empty list",
+                "Property,-Plant,-And-Equipment": "empty list",
+                "Long-Term-Investments": "empty list",
+                "Goodwill-And-Intangible-Assets": "empty list",
+                "Other-Long-Term-Assets": "empty list",
+                "Total-Long-Term-Assets": "empty list",
+                "Total-Assets": "empty list",
+                "Total-Current-Liabilities": "empty list",
+                "Long-Term-Debt": "empty list",
+                "Other-Non-Current-Liabilities": "empty list",
+                "Total-Long-Term-Liabilities": "empty list",
+                "Total-Liabilities": "empty list",
+                "Common-Stock-Net": "empty list"
+            }
+        }
+    ]
+}

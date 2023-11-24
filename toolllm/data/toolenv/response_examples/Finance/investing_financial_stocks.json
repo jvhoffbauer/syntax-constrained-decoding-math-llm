@@ -1,0 +1,569 @@
+{
+    "api_list": [
+        {
+            "name": "filters",
+            "schema": {
+                "status": "int",
+                "data": {
+                    "countries": [
+                        {
+                            "name": "str",
+                            "value": "str"
+                        }
+                    ],
+                    "sectors": [
+                        {
+                            "name": "str",
+                            "value": "str"
+                        }
+                    ],
+                    "industries": [
+                        {
+                            "name": "str",
+                            "value": "str"
+                        }
+                    ],
+                    "types": [
+                        {
+                            "name": "str",
+                            "value": "str"
+                        }
+                    ],
+                    "ranges": [
+                        {
+                            "id": "str",
+                            "title": "str",
+                            "min": "str",
+                            "max": "str"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "stock candlestick",
+            "schema": {
+                "data": {
+                    "columns": [
+                        "list of str with length 1"
+                    ],
+                    "data": [
+                        "list of str with length 1"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "currency options",
+            "schema": {
+                "data": {
+                    "iframe_src": "str"
+                }
+            }
+        },
+        {
+            "name": "consensus estimates",
+            "schema": {
+                "status": "int",
+                "data": {
+                    "title": "str",
+                    "change": "str",
+                    "labels": [
+                        {
+                            "title": "str",
+                            "value": "str"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "countries list",
+            "schema": {
+                "data": [
+                    "list of str with length 1"
+                ]
+            }
+        },
+        {
+            "name": "tree map",
+            "schema": {
+                "data": [
+                    {
+                        "pair_ID": "int",
+                        "slug": "str",
+                        "stock_symbol": "str",
+                        "value": "int",
+                        "change": "float",
+                        "name": "str",
+                        "sector": "str",
+                        "price": "float",
+                        "market_cap": "int"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "stock technicals",
+            "schema": {
+                "status": "int",
+                "data": {
+                    "pivot_points": {
+                        "columns": "str",
+                        "data": "str"
+                    },
+                    "technical_indicators": {
+                        "columns": "str",
+                        "data": "str"
+                    },
+                    "moving_averages": {
+                        "columns": "str",
+                        "data": "str"
+                    }
+                }
+            }
+        },
+        {
+            "name": "equity ratios",
+            "schema": {
+                "data": [
+                    {
+                        "title": "str",
+                        "company_value": "str",
+                        "industry_value": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "equity related indices",
+            "schema": {
+                "data": [
+                    {
+                        "title": "str",
+                        "slug": "str",
+                        "last": "str",
+                        "high": "str",
+                        "low": "str",
+                        "change": "str",
+                        "change_percent": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "cash flow",
+            "schema": {
+                "status": "int",
+                "data": {
+                    "dates": "empty list",
+                    "reports": "empty list"
+                }
+            }
+        },
+        {
+            "name": "balance sheet",
+            "schema": {
+                "status": "int",
+                "data": {
+                    "dates": "empty list",
+                    "reports": "empty list"
+                }
+            }
+        },
+        {
+            "name": "financial summary",
+            "schema": {
+                "status": "int",
+                "data": [
+                    {
+                        "title": "str",
+                        "info": [
+                            {
+                                "title": "str",
+                                "value": "str"
+                            }
+                        ],
+                        "table": [
+                            "list of str with length 1"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "name": "income statement",
+            "schema": {
+                "status": "int",
+                "data": {
+                    "dates": "empty list",
+                    "reports": "empty list"
+                }
+            }
+        },
+        {
+            "name": "search",
+            "schema": {
+                "data": {
+                    "quates": [
+                        {
+                            "name": "str",
+                            "symbol": "str",
+                            "type": "str",
+                            "slug": "str"
+                        }
+                    ],
+                    "articles": [
+                        {
+                            "title": "str",
+                            "image": "str",
+                            "href": "str"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "show future",
+            "schema": {
+                "data": {
+                    "name": "str",
+                    "href": "str",
+                    "pair_id": "str",
+                    "last": "str",
+                    "change": "str",
+                    "change_percent": "str",
+                    "info": [
+                        {
+                            "key": "str",
+                            "value": "str"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "indices countries",
+            "schema": {
+                "data": [
+                    {
+                        "name": "str",
+                        "value": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "indices future tables",
+            "schema": {
+                "status": "int",
+                "data": {
+                    "indices": [
+                        {
+                            "name": "str",
+                            "type": "str",
+                            "slug": "str",
+                            "month": "str",
+                            "last": "str",
+                            "high": "str",
+                            "low": "str",
+                            "change": "str",
+                            "change_percent": "str",
+                            "time": "str"
+                        }
+                    ],
+                    "us_futures_delayed": [
+                        {
+                            "name": "str",
+                            "type": "str",
+                            "slug": "str",
+                            "month": "str",
+                            "last": "str",
+                            "high": "str",
+                            "low": "str",
+                            "change": "str",
+                            "change_percent": "str",
+                            "time": "str"
+                        }
+                    ],
+                    "eurex": [
+                        {
+                            "name": "str",
+                            "type": "str",
+                            "slug": "str",
+                            "month": "str",
+                            "last": "str",
+                            "high": "str",
+                            "low": "str",
+                            "change": "str",
+                            "change_percent": "str",
+                            "time": "str"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "politics news",
+            "schema": {
+                "status": "int",
+                "data": [
+                    {
+                        "href": "str",
+                        "title": "str",
+                        "description": "str",
+                        "date": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "coronavirus news",
+            "schema": {
+                "status": "int",
+                "data": [
+                    {
+                        "title": "str",
+                        "description": "str",
+                        "date": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "world news",
+            "schema": {
+                "status": "int",
+                "data": [
+                    {
+                        "href": "str",
+                        "image": "str",
+                        "title": "str",
+                        "description": "str",
+                        "date": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "economy news",
+            "schema": {
+                "status": "int",
+                "data": [
+                    {
+                        "title": "str",
+                        "description": "str",
+                        "date": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "economic indicators news",
+            "schema": {
+                "status": "int",
+                "data": [
+                    {
+                        "title": "str",
+                        "description": "str",
+                        "date": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "market stocks news",
+            "schema": {
+                "status": "int",
+                "data": [
+                    {
+                        "title": "str",
+                        "description": "str",
+                        "date": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "commodities news",
+            "schema": {
+                "status": "int",
+                "data": [
+                    {
+                        "href": "str",
+                        "image": "str",
+                        "title": "str",
+                        "date": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "forex news",
+            "schema": {
+                "status": "int",
+                "data": [
+                    {
+                        "href": "str",
+                        "image": "str",
+                        "title": "str",
+                        "date": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "latest popular",
+            "schema": {
+                "status": "int",
+                "data": [
+                    {
+                        "id": "str",
+                        "href": "str",
+                        "title": "str",
+                        "date": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "crypto info",
+            "schema": {
+                "status": "int",
+                "data": {
+                    "name": "str",
+                    "price": "str",
+                    "change": "str",
+                    "change_percent": "str",
+                    "value": "str",
+                    "high_quote": "str",
+                    "24_h_volume": "str",
+                    "7_d_change": "str",
+                    "day_range": "str"
+                }
+            }
+        },
+        {
+            "name": "get equity latest data",
+            "schema": {
+                "status": "int",
+                "data": {
+                    "full_name": "str",
+                    "open": "str",
+                    "52_week_range": "str",
+                    "earnings_per_share": "str",
+                    "market_cap": "str",
+                    "earnings": "str",
+                    "dividend": "str",
+                    "sharesOutstanding": "str",
+                    "beta": "str",
+                    "revenue": "str",
+                    "ratio": "str",
+                    "prev_close": "str",
+                    "1_year_change_percent": "str",
+                    "volume": "str",
+                    "avg_volume": "str",
+                    "articles": [
+                        {
+                            "title": "str",
+                            "description": "str"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "list",
+            "schema": {
+                "data": {
+                    "hits": [
+                        {
+                            "pair_ID": "str",
+                            "stock_symbol": "str",
+                            "parent_pair_ID": "str",
+                            "override_country_ID": "str",
+                            "eq_pe_ratio": "str",
+                            "eq_market_cap": "str",
+                            "eq_one_year_return": "str",
+                            "eq_dividend": "str",
+                            "eq_eps": "str",
+                            "eq_beta": "str",
+                            "eq_revenue": "str",
+                            "exchange_ID": "str",
+                            "security_type": "str"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "all crypto",
+            "schema": {
+                "status": "int",
+                "data": [
+                    {
+                        "name": "str",
+                        "symbol": "str",
+                        "price": "str",
+                        "market_cap": "str",
+                        "24h_volume": "str",
+                        "total_volume": "str",
+                        "change_24h": "str",
+                        "change_7d": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "index overview",
+            "schema": {
+                "status": "str",
+                "data": {
+                    "pair_id": "str",
+                    "full_name": "str",
+                    "last": "str",
+                    "change": "str",
+                    "change_percent": "str",
+                    "open": "str",
+                    "day_range": "str",
+                    "52_week_range": "str",
+                    "prev_close": "str",
+                    "1_year_change_percent": "str",
+                    "volume": "str",
+                    "avg_volume": "str",
+                    "articles": [
+                        {
+                            "title": "str"
+                        }
+                    ],
+                    "gainers": [
+                        {
+                            "name": "str",
+                            "last": "str",
+                            "change": "str",
+                            "change_percent": "str"
+                        }
+                    ],
+                    "losers": [
+                        {
+                            "name": "str",
+                            "last": "str",
+                            "change": "str",
+                            "change_percent": "str"
+                        }
+                    ],
+                    "active": [
+                        {
+                            "name": "str",
+                            "last": "str",
+                            "high": "str",
+                            "low": "str",
+                            "change_percent": "str",
+                            "volume": "str"
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

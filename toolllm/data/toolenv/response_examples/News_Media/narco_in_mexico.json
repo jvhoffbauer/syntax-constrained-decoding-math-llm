@@ -1,0 +1,12 @@
+{
+    "api_list": [
+        {
+            "name": "Get All Narco News",
+            "schema": {
+                "title": "str",
+                "url": "str",
+                "source": "str"
+            }
+        }
+    ]
+}

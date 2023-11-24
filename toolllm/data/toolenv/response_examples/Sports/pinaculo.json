@@ -1,0 +1,325 @@
+{
+    "api_list": [
+        {
+            "name": "League Matchups",
+            "schema": {
+                "ageLimit": "str",
+                "altTeaser": "str",
+                "external": {
+                    "touchlineId": "str"
+                },
+                "hasAltSpread": "str",
+                "hasAltTotal": "str",
+                "hasLive": "str",
+                "hasMarkets": "str",
+                "id": "str",
+                "isBetshareEnabled": "str",
+                "isFeatured": "str",
+                "isHighlighted": "str",
+                "isLive": "str",
+                "isPromoted": "str",
+                "league": {
+                    "id": "str",
+                    "name": "str",
+                    "sport": {
+                        "name": "str"
+                    }
+                },
+                "participants": [
+                    {
+                        "name": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Search Leagues",
+            "schema": {
+                "ageLimit": "int",
+                "group": "str",
+                "id": "int",
+                "matchupCount": "int",
+                "name": "str",
+                "sequence": "int",
+                "sport": {
+                    "id": "int",
+                    "name": "str",
+                    "primaryMarketType": "str"
+                }
+            }
+        },
+        {
+            "name": "Search Matchups",
+            "schema": {
+                "ageLimit": "str",
+                "altTeaser": "str",
+                "hasAltSpread": "str",
+                "hasAltTotal": "str",
+                "hasLive": "str",
+                "hasMarkets": "str",
+                "id": "str",
+                "isBetshareEnabled": "str",
+                "isFeatured": "str",
+                "isHighlighted": "str",
+                "isLive": "str",
+                "isPromoted": "str",
+                "league": {
+                    "id": "str",
+                    "name": "str",
+                    "sport": {
+                        "name": "str"
+                    }
+                },
+                "liveMode": "str",
+                "parlayRestriction": "str",
+                "participants": [
+                    {
+                        "name": "str"
+                    }
+                ],
+                "periods": [
+                    {
+                        "cutoffA": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Sport Live Matchups",
+            "schema": {
+                "ageLimit": "str",
+                "hasAltSpread": "str",
+                "hasAltTotal": "str",
+                "hasLive": "str",
+                "hasMarkets": "str",
+                "id": "str",
+                "isBetshareEnabled": "str",
+                "isFeatured": "str",
+                "isHighlighted": "str",
+                "isLive": "str",
+                "isPromoted": "str",
+                "league": {
+                    "id": "str",
+                    "name": "str",
+                    "sport": {
+                        "name": "str",
+                        "primaryMarketType": "str"
+                    }
+                },
+                "liveMode": "str",
+                "parentId": "str",
+                "parlayRestriction": "str",
+                "participants": [
+                    {
+                        "alignment": "str",
+                        "name": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Enums",
+            "schema": {
+                "countries": [
+                    {
+                        "code2": "str",
+                        "code3": "str",
+                        "currencyCodes": "empty list",
+                        "legalAge": "int",
+                        "license": {
+                            "casino": "bool",
+                            "liveBetting": "bool"
+                        },
+                        "loginAllowed": "bool",
+                        "name": "str",
+                        "regions": "empty list",
+                        "signupAllowed": "bool",
+                        "soccerMode": "str"
+                    }
+                ],
+                "currencies": [
+                    {
+                        "code": "str",
+                        "isActive": "bool",
+                        "name": "str"
+                    }
+                ],
+                "languages": [
+                    {
+                        "id": "int",
+                        "name": "str"
+                    }
+                ],
+                "timezones": [
+                    {
+                        "description": "str",
+                        "id": "int",
+                        "name": "str",
+                        "offset": "int"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Sport Markets Straight",
+            "schema": {
+                "cutoffAt": "str",
+                "key": "str",
+                "matchupId": "int",
+                "period": "int",
+                "prices": [
+                    {
+                        "designation": "str",
+                        "price": "int"
+                    }
+                ],
+                "status": "str",
+                "type": "str"
+            }
+        },
+        {
+            "name": "Sport Highlighted Markets Straight",
+            "schema": {
+                "cutoffAt": "str",
+                "matchupId": "int",
+                "period": "int",
+                "prices": [
+                    {
+                        "designation": "str",
+                        "price": "int"
+                    }
+                ],
+                "status": "str",
+                "type": "str"
+            }
+        },
+        {
+            "name": "Sport Translations",
+            "schema": {
+                "3x3 Olympics": "str",
+                "ABA - Adriatic League": "str",
+                "ABA - Liga 2 International": "str",
+                "Albania - Superleague": "str",
+                "Algeria - Cup": "str",
+                "Argentina - LLF Women": "str",
+                "Argentina - Torneo Federal": "str",
+                "Argentina - Torneo Super 20": "str",
+                "Asia - ASEAN Basketball League": "str",
+                "Asia - West Asia Super League": "str",
+                "Australia": "str",
+                "Australia - Big V": "str",
+                "Australia - Big V Women": "str",
+                "Australia - NBL": "str",
+                "Australia - NBL1": "str",
+                "Australia - NBL1 Women": "str",
+                "Australia - WNBL": "str",
+                "Austria": "str",
+                "Austria - Cup": "str",
+                "Austria - Liga 2": "str",
+                "Austria - SuperLiga": "str",
+                "Austria - SuperLiga Women": "str",
+                "Austria - Zweite Liga": "str",
+                "Azerbaijan": "str",
+                "Bahrain": "str",
+                "Bahrain - Premier League": "str",
+                "Balkan League": "str",
+                "Basketball": "str",
+                "Belarus": "str",
+                "Belarus - Premier League": "str",
+                "Belgium": "str",
+                "Belgium - Cup": "str"
+            }
+        },
+        {
+            "name": "Labels",
+            "schema": {
+                "labels": [
+                    {
+                        "marketLabels": [
+                            {
+                                "short": "str",
+                                "type": "str"
+                            }
+                        ],
+                        "periodLabel": {
+                            "short": "str",
+                            "type": "str"
+                        }
+                    }
+                ],
+                "sport": {
+                    "id": "int",
+                    "name": "str",
+                    "primaryMarketType": "str"
+                }
+            }
+        },
+        {
+            "name": "League Markets Straight",
+            "schema": {
+                "cutoffAt": "str",
+                "isAlternate": "bool",
+                "matchupId": "int",
+                "period": "int",
+                "prices": [
+                    {
+                        "designation": "str",
+                        "price": "int"
+                    }
+                ],
+                "status": "str",
+                "type": "str"
+            }
+        },
+        {
+            "name": "Live Sports",
+            "schema": {
+                "featureOrder": "int",
+                "isFeatured": "bool",
+                "isHidden": "bool",
+                "isSticky": "bool",
+                "name": "str",
+                "primaryMarketType": "str"
+            }
+        },
+        {
+            "name": "Sports",
+            "schema": {
+                "name": "str",
+                "primaryMarketType": "str"
+            }
+        },
+        {
+            "name": "Sport Highlighted Matchups",
+            "schema": {
+                "ageLimit": "str",
+                "hasAltSpread": "str",
+                "hasAltTotal": "str",
+                "hasLive": "str",
+                "hasMarkets": "str",
+                "id": "str",
+                "isBetshareEnabled": "str",
+                "isFeatured": "str",
+                "isHighlighted": "str",
+                "isLive": "str",
+                "isPromoted": "str",
+                "league": {
+                    "id": "str",
+                    "name": "str",
+                    "sport": {
+                        "id": "str",
+                        "name": "str",
+                        "primaryMarketType": "str"
+                    }
+                },
+                "parlayRestriction": "str",
+                "participants": [
+                    {
+                        "name": "str",
+                        "order": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

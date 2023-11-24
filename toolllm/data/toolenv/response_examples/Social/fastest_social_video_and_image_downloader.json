@@ -1,0 +1,30 @@
+{
+    "api_list": [
+        {
+            "name": "Get YouTube Video/Image Link",
+            "schema": {
+                "success": "str",
+                "version": "str",
+                "title": "str",
+                "thumbnail": "str",
+                "data": {
+                    "360p": "str",
+                    "720p": "str"
+                }
+            }
+        },
+        {
+            "name": "Get Pinterest Video/Image Link",
+            "schema": {
+                "success": "bool",
+                "type": "str",
+                "version": "str",
+                "data": {
+                    "url": "str",
+                    "thumbnail": "str",
+                    "title": "str"
+                }
+            }
+        }
+    ]
+}

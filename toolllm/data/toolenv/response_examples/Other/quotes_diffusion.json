@@ -1,0 +1,56 @@
+{
+    "api_list": [
+        {
+            "name": "/random",
+            "schema": {
+                "data": {
+                    "topic_id": "int",
+                    "title": "str",
+                    "author": "str",
+                    "image_sd": "str"
+                }
+            }
+        },
+        {
+            "name": "/topic",
+            "schema": {
+                "status": "int",
+                "success": "bool",
+                "data": [
+                    {
+                        "id": "int",
+                        "title": "str",
+                        "slug": "str"
+                    }
+                ],
+                "pagination": {
+                    "count": "int",
+                    "total": "int",
+                    "totalPages": "int",
+                    "links": {
+                        "next": "str"
+                    }
+                }
+            }
+        },
+        {
+            "name": "/author",
+            "schema": {
+                "status": "int",
+                "success": "bool",
+                "data": [
+                    {
+                        "author": "str"
+                    }
+                ],
+                "pagination": {
+                    "count": "int",
+                    "total": "int",
+                    "perPage": "int",
+                    "currentPage": "int",
+                    "totalPages": "int"
+                }
+            }
+        }
+    ]
+}

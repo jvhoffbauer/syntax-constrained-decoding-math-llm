@@ -1,0 +1,17 @@
+{
+    "api_list": [
+        {
+            "name": "/search",
+            "schema": {
+                "results": [
+                    {
+                        "title": "str",
+                        "link": "str",
+                        "snippet": "str",
+                        "metaHtml": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

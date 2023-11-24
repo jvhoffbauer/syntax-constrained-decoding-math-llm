@@ -1,0 +1,57 @@
+{
+    "api_list": [
+        {
+            "name": "Live Whois Lookup",
+            "schema": {
+                "status": "str",
+                "domain_name": "str",
+                "query_time": "str",
+                "whois_server": "str",
+                "domain_registered": "str",
+                "create_date": "str",
+                "update_date": "str",
+                "expiry_date": "str",
+                "domain_registrar": {
+                    "iana_id": "str",
+                    "registrar_name": "str",
+                    "website_url": "str"
+                },
+                "registrant_contact": {
+                    "company": "str",
+                    "state": "str",
+                    "country_name": "str",
+                    "country_code": "str"
+                },
+                "administrative_contact": {
+                    "company": "str",
+                    "state": "str",
+                    "country_name": "str",
+                    "country_code": "str"
+                },
+                "technical_contact": {
+                    "company": "str",
+                    "state": "str",
+                    "country_name": "str",
+                    "country_code": "str"
+                },
+                "name_servers": [
+                    "list of str with length 1"
+                ],
+                "domain_status": [
+                    "list of str with length 1"
+                ],
+                "whois_raw_domain": "str",
+                "registry_data": {
+                    "domain_name": "str",
+                    "query_time": "str",
+                    "whois_server": "str",
+                    "domain_registered": "str",
+                    "domain_registrar": {
+                        "iana_id": "str",
+                        "registrar_name": "str"
+                    }
+                }
+            }
+        }
+    ]
+}

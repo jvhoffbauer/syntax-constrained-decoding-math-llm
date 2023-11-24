@@ -1,0 +1,59 @@
+{
+    "api_list": [
+        {
+            "name": "Product details",
+            "schema": {
+                "responseStatus": "str",
+                "responseMessage": "str",
+                "productTitle": "str",
+                "manufacturer": "str",
+                "countReview": "str",
+                "productRating": "str",
+                "asin": "str",
+                "productId": "str",
+                "variationId": "str",
+                "url": "str",
+                "soldBy": "str",
+                "sellerId": "str",
+                "warehouseAvailability": "str",
+                "retailPrice": "str",
+                "price": "str",
+                "priceRange": "str",
+                "shippingPrice": "str",
+                "features": "str",
+                "imageUrlList": [
+                    "list of str with length 1"
+                ],
+                "productDescription": "str",
+                "productDetails": [
+                    {
+                        "name": "str",
+                        "value": "str"
+                    }
+                ],
+                "variations": [
+                    {
+                        "variationName": "str",
+                        "values": [
+                            {
+                                "value": "str",
+                                "dpUrl": "str",
+                                "selected": "str",
+                                "available": "str",
+                                "price": "str",
+                                "retailPrice": "str",
+                                "imageUrl": "str",
+                                "asin": "str"
+                            }
+                        ]
+                    }
+                ],
+                "deliveryMessage": "str",
+                "mainImage": {
+                    "imageUrl": "str",
+                    "imageResolution": "str"
+                }
+            }
+        }
+    ]
+}

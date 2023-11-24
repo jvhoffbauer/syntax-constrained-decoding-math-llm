@@ -1,0 +1,23 @@
+{
+    "api_list": [
+        {
+            "name": "work",
+            "schema": {
+                "id": "int",
+                "title": "str",
+                "imgUrl": "str",
+                "framework": "str",
+                "link": "str"
+            }
+        },
+        {
+            "name": "web",
+            "schema": {
+                "title": "str",
+                "imgUrl": "str",
+                "framework": "str",
+                "link": "str"
+            }
+        }
+    ]
+}

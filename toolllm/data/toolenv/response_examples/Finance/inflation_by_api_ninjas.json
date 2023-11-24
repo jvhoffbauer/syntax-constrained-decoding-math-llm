@@ -1,0 +1,13 @@
+{
+    "api_list": [
+        {
+            "name": "/v1/inflation",
+            "schema": {
+                "country": "str",
+                "type": "str",
+                "monthly_rate_pct": "float",
+                "yearly_rate_pct": "float"
+            }
+        }
+    ]
+}

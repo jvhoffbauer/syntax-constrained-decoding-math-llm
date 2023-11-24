@@ -1,0 +1,25 @@
+{
+    "api_list": [
+        {
+            "name": "List",
+            "schema": {
+                "totalCount": "int",
+                "list": [
+                    {
+                        "name": "str",
+                        "scientificName": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Get by id",
+            "schema": {
+                "id": "str",
+                "name": "str",
+                "scientificName": "str",
+                "description": "str"
+            }
+        }
+    ]
+}

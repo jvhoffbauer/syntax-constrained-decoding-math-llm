@@ -1,0 +1,32 @@
+{
+    "api_list": [
+        {
+            "name": "Latest",
+            "schema": {
+                "country": {
+                    "code": "str",
+                    "iso": "str",
+                    "name": "str"
+                },
+                "date": "str",
+                "itemId": "str",
+                "localisation": "str",
+                "status": "str",
+                "typeEvenement": "str"
+            }
+        },
+        {
+            "name": "All",
+            "schema": {
+                "country": {
+                    "name": "str"
+                },
+                "date": "str",
+                "itemId": "str",
+                "localisation": "str",
+                "status": "str",
+                "typeEvenement": "str"
+            }
+        }
+    ]
+}

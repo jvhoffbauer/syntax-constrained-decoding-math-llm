@@ -1,0 +1,15 @@
+{
+    "api_list": [
+        {
+            "name": "View Profile Picture",
+            "schema": {
+                "is_private": "bool",
+                "username": "str",
+                "followers": "int",
+                "is_verified": "bool",
+                "fullname": "str",
+                "profile_picture_url": "str"
+            }
+        }
+    ]
+}

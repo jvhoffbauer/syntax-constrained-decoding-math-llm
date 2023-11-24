@@ -1,0 +1,16 @@
+{
+    "api_list": [
+        {
+            "name": "Report by region",
+            "schema": {
+                "messages": "str"
+            }
+        },
+        {
+            "name": "Latest report",
+            "schema": {
+                "messages": "str"
+            }
+        }
+    ]
+}

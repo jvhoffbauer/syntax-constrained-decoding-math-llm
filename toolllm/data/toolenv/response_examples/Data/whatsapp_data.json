@@ -1,0 +1,28 @@
+{
+    "api_list": [
+        {
+            "name": "Fetch business data",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Is whatsapp for business?",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "About",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Is registered on whatsapp?",
+            "schema": {
+                "message": "str"
+            }
+        }
+    ]
+}

@@ -1,0 +1,204 @@
+{
+    "api_list": [
+        {
+            "name": "Ticker Per Symbol",
+            "schema": {
+                "ask": "float",
+                "bid": "float",
+                "last": "float",
+                "high": "float",
+                "low": "float",
+                "volume": "float",
+                "open": {
+                    "hour": "float",
+                    "day": "float",
+                    "week": "float",
+                    "month": "float",
+                    "year": "float"
+                },
+                "averages": {
+                    "day": "float",
+                    "week": "float",
+                    "month": "float"
+                },
+                "changes": {
+                    "price": {
+                        "hour": "float",
+                        "day": "float",
+                        "week": "float",
+                        "month": "float",
+                        "year": "float"
+                    },
+                    "percent": {
+                        "hour": "float",
+                        "day": "float",
+                        "week": "float",
+                        "month": "float",
+                        "year": "float"
+                    }
+                },
+                "volume_percent": "float",
+                "timestamp": "int",
+                "display_timestamp": "str",
+                "display_symbol": "str"
+            }
+        },
+        {
+            "name": "Ticker Data",
+            "schema": {
+                "BTCEUR": {
+                    "ask": "str",
+                    "bid": "str",
+                    "last": "str",
+                    "high": "str",
+                    "low": "str",
+                    "volume": "str",
+                    "open": {
+                        "hour": "str",
+                        "day": "str",
+                        "week": "str",
+                        "month": "str",
+                        "month_3": "str",
+                        "month_6": "str",
+                        "year": "str"
+                    },
+                    "averages": {
+                        "day": "str",
+                        "week": "str",
+                        "month": "str"
+                    },
+                    "changes": {
+                        "price": {
+                            "hour": "str",
+                            "day": "str",
+                            "week": "str",
+                            "month": "str",
+                            "month_3": "str",
+                            "month_6": "str",
+                            "year": "str"
+                        },
+                        "percent": {
+                            "hour": "str",
+                            "day": "str",
+                            "week": "str",
+                            "month": "str",
+                            "month_3": "str",
+                            "month_6": "str",
+                            "year": "str"
+                        }
+                    },
+                    "volume_percent": "str",
+                    "timestamp": "str",
+                    "display_timestamp": "str",
+                    "display_symbol": "str"
+                },
+                "BTCUSD": {
+                    "ask": "str",
+                    "bid": "str",
+                    "last": "str",
+                    "high": "str",
+                    "low": "str",
+                    "volume": "str",
+                    "open": {
+                        "hour": "str",
+                        "day": "str",
+                        "week": "str",
+                        "month": "str",
+                        "month_3": "str",
+                        "month_6": "str",
+                        "year": "str"
+                    },
+                    "averages": {
+                        "day": "str",
+                        "week": "str",
+                        "month": "str"
+                    }
+                }
+            }
+        },
+        {
+            "name": "Ticker Changes",
+            "schema": {
+                "ask": "float",
+                "bid": "float",
+                "last": "float",
+                "high": "float",
+                "low": "float",
+                "open": {
+                    "hour": "float",
+                    "day": "float",
+                    "week": "float",
+                    "month": "float",
+                    "month_3": "float",
+                    "month_6": "float",
+                    "year": "float"
+                },
+                "averages": {
+                    "day": "float",
+                    "week": "float",
+                    "month": "float"
+                },
+                "volume": "float",
+                "changes": {
+                    "price": {
+                        "hour": "float",
+                        "day": "float",
+                        "week": "float",
+                        "month": "float",
+                        "month_3": "float",
+                        "month_6": "float",
+                        "year": "float"
+                    },
+                    "percent": {
+                        "hour": "float",
+                        "day": "float",
+                        "week": "float",
+                        "month": "float",
+                        "month_3": "float",
+                        "month_6": "float",
+                        "year": "float"
+                    }
+                },
+                "timestamp": "int",
+                "display_symbol": "str"
+            }
+        },
+        {
+            "name": "Short Ticker",
+            "schema": {
+                "BTCEUR": {
+                    "last": "float",
+                    "averages": {
+                        "day": "float"
+                    },
+                    "timestamp": "int",
+                    "ask": "float",
+                    "bid": "float"
+                },
+                "BTCUSD": {
+                    "last": "float",
+                    "averages": {
+                        "day": "float"
+                    },
+                    "timestamp": "int",
+                    "ask": "float",
+                    "bid": "float"
+                }
+            }
+        },
+        {
+            "name": "Custom Ticker",
+            "schema": {
+                "last": {
+                    "price": "float"
+                },
+                "bid": {
+                    "price": "float"
+                },
+                "ask": {
+                    "price": "float"
+                }
+            }
+        }
+    ]
+}

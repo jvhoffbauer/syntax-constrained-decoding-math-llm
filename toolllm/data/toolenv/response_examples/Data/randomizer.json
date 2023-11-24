@@ -1,0 +1,16 @@
+{
+    "api_list": [
+        {
+            "name": "getRandom",
+            "schema": {
+                "message": "str",
+                "errors": [
+                    {
+                        "path": "str",
+                        "message": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

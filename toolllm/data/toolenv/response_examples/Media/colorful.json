@@ -1,0 +1,55 @@
+{
+    "api_list": [
+        {
+            "name": "Get random named color",
+            "schema": {
+                "name": "str",
+                "rgb": {
+                    "r": "int",
+                    "g": "int",
+                    "b": "int"
+                },
+                "hex": "str",
+                "hsl": {
+                    "h": "float",
+                    "s": "float",
+                    "l": "float"
+                },
+                "hsv": {
+                    "h": "float",
+                    "s": "float",
+                    "v": "float"
+                },
+                "safe": "bool"
+            }
+        },
+        {
+            "name": "Get a random color",
+            "schema": {
+                "rgb": {
+                    "r": "int",
+                    "g": "int",
+                    "b": "int"
+                },
+                "cmyk": {
+                    "c": "int",
+                    "m": "float",
+                    "y": "float",
+                    "k": "float"
+                },
+                "hex": "str",
+                "hsl": {
+                    "h": "float",
+                    "s": "float",
+                    "l": "float"
+                },
+                "hsv": {
+                    "h": "float",
+                    "s": "float",
+                    "v": "float"
+                },
+                "safe": "bool"
+            }
+        }
+    ]
+}

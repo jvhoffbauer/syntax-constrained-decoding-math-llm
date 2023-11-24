@@ -1,0 +1,11 @@
+{
+    "api_list": [
+        {
+            "name": "getESGNews",
+            "schema": {
+                "status": "str",
+                "message": "str"
+            }
+        }
+    ]
+}

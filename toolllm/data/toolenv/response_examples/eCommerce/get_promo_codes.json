@@ -1,0 +1,28 @@
+{
+    "api_list": [
+        {
+            "name": "Get Coupons",
+            "schema": {
+                "request": {
+                    "page": "str",
+                    "store_id": "str",
+                    "sort": "str",
+                    "type": "str"
+                },
+                "data": [
+                    {
+                        "id": "str",
+                        "title": "str",
+                        "description": "str",
+                        "code": "str",
+                        "url": "str",
+                        "store_id": "str",
+                        "status": "str",
+                        "start_time": "str",
+                        "end_time": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

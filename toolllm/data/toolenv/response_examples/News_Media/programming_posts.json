@@ -1,0 +1,22 @@
+{
+    "api_list": [
+        {
+            "name": "Searching through posts",
+            "schema": {
+                "blog": "str",
+                "title": "str",
+                "url": "str",
+                "source": "str"
+            }
+        },
+        {
+            "name": "Get posts by the amount you need",
+            "schema": {
+                "blog": "str",
+                "title": "str",
+                "url": "str",
+                "source": "str"
+            }
+        }
+    ]
+}

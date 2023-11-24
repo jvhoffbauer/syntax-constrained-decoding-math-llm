@@ -1,0 +1,14 @@
+{
+    "api_list": [
+        {
+            "name": "Latest News",
+            "schema": {
+                "title": "str",
+                "link": "str",
+                "source": "str",
+                "image": "str",
+                "pubDate": "str"
+            }
+        }
+    ]
+}

@@ -1,0 +1,114 @@
+{
+    "api_list": [
+        {
+            "name": "Get Unclean Water Creatures",
+            "schema": {
+                "name": "str",
+                "type": "str"
+            }
+        },
+        {
+            "name": "Get All Clean Creatures",
+            "schema": {
+                "name": "str",
+                "type": "str"
+            }
+        },
+        {
+            "name": "Get All Creatures",
+            "schema": {
+                "name": "str",
+                "type": "str",
+                "image_src": "str"
+            }
+        },
+        {
+            "name": "Get All Unclean Creatures",
+            "schema": {
+                "name": "str",
+                "type": "str"
+            }
+        },
+        {
+            "name": "Get a Creature by Name",
+            "schema": {
+                "name": "str",
+                "type": "str"
+            }
+        },
+        {
+            "name": "Get All Beasts",
+            "schema": {
+                "name": "str",
+                "type": "str"
+            }
+        },
+        {
+            "name": "Get Clean Beasts",
+            "schema": {
+                "name": "str",
+                "type": "str",
+                "image_src": "str"
+            }
+        },
+        {
+            "name": "Get Clean Water Creatures",
+            "schema": {
+                "name": "str",
+                "type": "str",
+                "image_src": "str"
+            }
+        },
+        {
+            "name": "Get All Water Creatures",
+            "schema": {
+                "name": "str",
+                "type": "str"
+            }
+        },
+        {
+            "name": "Get All Fowls",
+            "schema": {
+                "name": "str",
+                "type": "str",
+                "image_src": "str"
+            }
+        },
+        {
+            "name": "Get Clean Fowls",
+            "schema": {
+                "name": "str",
+                "type": "str"
+            }
+        },
+        {
+            "name": "Get Unclean Fowls",
+            "schema": {
+                "name": "str",
+                "type": "str"
+            }
+        },
+        {
+            "name": "Get All Creeping Creatures",
+            "schema": {
+                "name": "str",
+                "type": "str"
+            }
+        },
+        {
+            "name": "Get Clean Creeping Creatures",
+            "schema": {
+                "name": "str",
+                "type": "str",
+                "image_src": "str"
+            }
+        },
+        {
+            "name": "Get Unclean Creeping Creatures",
+            "schema": {
+                "name": "str",
+                "type": "str"
+            }
+        }
+    ]
+}

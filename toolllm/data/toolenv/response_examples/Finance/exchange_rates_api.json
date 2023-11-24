@@ -1,0 +1,62 @@
+{
+    "api_list": [
+        {
+            "name": "currencies",
+            "schema": {
+                "AUD": "str",
+                "BGN": "str",
+                "BRL": "str",
+                "CAD": "str",
+                "CHF": "str",
+                "CNY": "str",
+                "CZK": "str",
+                "DKK": "str",
+                "EUR": "str",
+                "GBP": "str",
+                "HKD": "str",
+                "HUF": "str",
+                "IDR": "str",
+                "ILS": "str",
+                "INR": "str",
+                "ISK": "str",
+                "JPY": "str",
+                "KRW": "str",
+                "MXN": "str",
+                "MYR": "str",
+                "NOK": "str",
+                "NZD": "str",
+                "PHP": "str",
+                "PLN": "str",
+                "RON": "str",
+                "SEK": "str",
+                "SGD": "str",
+                "THB": "str",
+                "TRY": "str",
+                "USD": "str",
+                "ZAR": "str"
+            }
+        },
+        {
+            "name": "historical",
+            "schema": {
+                "amount": "float",
+                "base": "str",
+                "date": "str",
+                "rates": {
+                    "EUR": "float",
+                    "USD": "float"
+                }
+            }
+        },
+        {
+            "name": "latest",
+            "schema": {
+                "base": "str",
+                "rates": {
+                    "AUD": "float",
+                    "USD": "float"
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "api_list": [
+        {
+            "name": "getCryptoCoins",
+            "schema": {
+                "status": {
+                    "error_code": "int",
+                    "error_message": "str"
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,97 @@
+{
+    "api_list": [
+        {
+            "name": "Quizzes",
+            "schema": {
+                "_id": "int",
+                "name": "str",
+                "status": "int",
+                "location": "str",
+                "mode": "str"
+            }
+        },
+        {
+            "name": "Quiz",
+            "schema": {
+                "_id": "int",
+                "name": "str",
+                "status": "int",
+                "location": "str",
+                "questions": [
+                    {
+                        "_id": "int",
+                        "question": "str",
+                        "answers": [
+                            {
+                                "_id": "int",
+                                "color": "str",
+                                "speed": "int",
+                                "answer": "str",
+                                "direction": "int"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Users",
+            "schema": {
+                "uuid": "int",
+                "quiz_id": "int",
+                "name": "str",
+                "location": "str",
+                "mode": "str",
+                "responses": [
+                    {
+                        "question_id": "int",
+                        "answer_id": "int"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "User",
+            "schema": {
+                "name": "str",
+                "location": "str",
+                "mode": "str",
+                "responses": [
+                    {
+                        "question": "str",
+                        "answer": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Response by QuizId",
+            "schema": {
+                "uuid": "int",
+                "quiz_id": "int",
+                "name": "str",
+                "status": "int",
+                "location": "str",
+                "mode": "str",
+                "responses": [
+                    {
+                        "question_id": "int",
+                        "answer_id": "int",
+                        "answer": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Responses from a Question",
+            "schema": {
+                "question_id": "int",
+                "color": "str",
+                "speed": "int",
+                "answer": "str",
+                "direction": "int",
+                "question": "str"
+            }
+        }
+    ]
+}

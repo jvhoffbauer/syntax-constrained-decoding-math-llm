@@ -1,0 +1,78 @@
+{
+    "api_list": [
+        {
+            "name": "getBookById",
+            "schema": {
+                "status": "str",
+                "message": "str"
+            }
+        },
+        {
+            "name": "getBooks",
+            "schema": {
+                "content": [
+                    {
+                        "id": "int",
+                        "title": "str",
+                        "author": "str",
+                        "genre": "str",
+                        "publisher": "str"
+                    }
+                ],
+                "totalElements": "int",
+                "totalPages": "int"
+            }
+        },
+        {
+            "name": "getProductById",
+            "schema": {
+                "id": "int",
+                "productName": "str",
+                "price": "str",
+                "color": "str",
+                "promotionCode": "str"
+            }
+        },
+        {
+            "name": "getProducts",
+            "schema": {
+                "content": [
+                    {
+                        "id": "int",
+                        "productName": "str",
+                        "material": "str",
+                        "price": "str",
+                        "department": "str",
+                        "color": "str",
+                        "promotionCode": "str"
+                    }
+                ],
+                "totalElements": "int"
+            }
+        },
+        {
+            "name": "getUserById",
+            "schema": {
+                "id": "int",
+                "firstName": "str",
+                "lastName": "str",
+                "email": "str"
+            }
+        },
+        {
+            "name": "Get Users",
+            "schema": {
+                "content": [
+                    {
+                        "firstName": "str",
+                        "lastName": "str",
+                        "email": "str",
+                        "phone": "str",
+                        "website": "str"
+                    }
+                ],
+                "totalElements": "int"
+            }
+        }
+    ]
+}

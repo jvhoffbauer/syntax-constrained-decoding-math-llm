@@ -1,0 +1,127 @@
+{
+    "api_list": [
+        {
+            "name": "Nearest Stations",
+            "schema": {
+                "latitude": "str",
+                "longitude": "str",
+                "location_country": "str",
+                "precision": {
+                    "value": "str",
+                    "name": "str"
+                },
+                "station_locator_url": "str",
+                "total_results": "str",
+                "station_counts": {
+                    "total": "str",
+                    "fuels": {
+                        "BD": {
+                            "total": "str"
+                        },
+                        "E85": {
+                            "total": "str"
+                        },
+                        "ELEC": {
+                            "total": "str"
+                        },
+                        "HY": {
+                            "total": "str"
+                        },
+                        "LNG": {
+                            "total": "str"
+                        },
+                        "CNG": {
+                            "total": "str"
+                        },
+                        "LPG": {
+                            "total": "str"
+                        },
+                        "RD": {
+                            "total": "str"
+                        }
+                    }
+                },
+                "offset": "str",
+                "fuel_stations": [
+                    {
+                        "access_code": "str",
+                        "access_days_time": "str",
+                        "fuel_type_code": "str",
+                        "groups_with_access_code": "str",
+                        "id": "str",
+                        "open_date": "str",
+                        "status_code": "str",
+                        "station_name": "str",
+                        "station_phone": "str",
+                        "updated_at": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Utility Rates",
+            "schema": {
+                "inputs": {
+                    "address": "str",
+                    "lat": "str",
+                    "lon": "str"
+                },
+                "outputs": {
+                    "company_id": "str",
+                    "utility_name": "str",
+                    "commercial": "float",
+                    "industrial": "float",
+                    "residential": "float"
+                }
+            }
+        },
+        {
+            "name": "All Stations",
+            "schema": {
+                "total_results": "str",
+                "station_counts": {
+                    "total": "str",
+                    "fuels": {
+                        "BD": {
+                            "total": "str"
+                        },
+                        "E85": {
+                            "total": "str"
+                        },
+                        "ELEC": {
+                            "total": "str"
+                        },
+                        "HY": {
+                            "total": "str"
+                        },
+                        "LNG": {
+                            "total": "str"
+                        },
+                        "CNG": {
+                            "total": "str"
+                        },
+                        "LPG": {
+                            "total": "str"
+                        },
+                        "RD": {
+                            "total": "str"
+                        }
+                    }
+                },
+                "fuel_stations": [
+                    {
+                        "id": "str",
+                        "fuel_type_code": "str",
+                        "status_code": "str",
+                        "station_name": "str",
+                        "updated_at": "str",
+                        "latitude": "str",
+                        "longitude": "str",
+                        "city": "str",
+                        "state": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

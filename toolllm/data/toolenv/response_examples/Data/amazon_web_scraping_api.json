@@ -1,0 +1,132 @@
+{
+    "api_list": [
+        {
+            "name": "Search Products(All countries)",
+            "schema": {
+                "page": "int",
+                "pageCount": "int",
+                "products": [
+                    {
+                        "name": "str",
+                        "image": {
+                            "url": "str"
+                        },
+                        "totalReviews": "int",
+                        "rating": "float",
+                        "price": {
+                            "priceSymbol": "str",
+                            "currentPrice": "float",
+                            "priceFraction": "str",
+                            "beforePrice": "float"
+                        },
+                        "asin": "str",
+                        "url": "str",
+                        "position": "int"
+                    }
+                ],
+                "categories": [
+                    {
+                        "name": "str",
+                        "categoryLink_url": "str",
+                        "categoryId": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Get Deals",
+            "schema": {
+                "page": "int",
+                "pageCount": "int",
+                "deals": [
+                    {
+                        "name": "str",
+                        "deal_url": "str",
+                        "label": "str",
+                        "image_url": "str"
+                    }
+                ],
+                "categories": [
+                    {
+                        "name": "str",
+                        "category_id": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "\u200bGet Product Details(All countries)",
+            "schema": {
+                "asin_id": "str",
+                "name": "str",
+                "description": "str",
+                "price": {
+                    "discounted": "str",
+                    "savingPorcentage": "str",
+                    "priceSymbol": "str",
+                    "price": "str",
+                    "priceFraction": "str"
+                },
+                "features": [
+                    "list of str with length 1"
+                ],
+                "productInformation": [
+                    {
+                        "label": "str",
+                        "value": "str"
+                    }
+                ],
+                "mainImage_url": "str",
+                "mainImage_description": "str",
+                "medias": {
+                    "images": [
+                        {
+                            "large": "str",
+                            "thumb": "str",
+                            "hiRes": "str",
+                            "variant": "str"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "\u200bGet Product Reviews(All countries)",
+            "schema": {
+                "name": "str",
+                "reviewStatistics": {
+                    "averageRating": "str",
+                    "totalReviews": "str"
+                },
+                "reviews": [
+                    {
+                        "profileName": "str",
+                        "title": "str",
+                        "verifiedPurchase": "str",
+                        "date": "str",
+                        "rating": "str",
+                        "reviewContent": "str",
+                        "userfulCount": "str",
+                        "id": "str"
+                    }
+                ],
+                "viewPoints": {
+                    "positiveReview": {
+                        "profileName": "str",
+                        "date": "str",
+                        "rating": "str",
+                        "reviewContent": "str",
+                        "userfulCount": "str"
+                    },
+                    "criticalReview": {
+                        "profileName": "str",
+                        "date": "str",
+                        "rating": "str",
+                        "reviewContent": "str",
+                        "userfulCount": "str"
+                    }
+                }
+            }
+        }
+    ]
+}

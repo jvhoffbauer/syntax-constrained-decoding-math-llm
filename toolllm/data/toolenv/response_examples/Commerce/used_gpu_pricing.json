@@ -1,0 +1,14 @@
+{
+    "api_list": [
+        {
+            "name": "Get Prices",
+            "schema": {
+                "gpu": "str",
+                "date": "str",
+                "min": "str",
+                "max": "str",
+                "mean": "str"
+            }
+        }
+    ]
+}

@@ -1,0 +1,180 @@
+{
+    "api_list": [
+        {
+            "name": "getTspMatches",
+            "schema": {
+                "matches": [
+                    {
+                        "groupId": "str",
+                        "competition_name_es": "str",
+                        "oddsCount": "str",
+                        "competition": {
+                            "country": {
+                                "name": "str"
+                            },
+                            "name": "str",
+                            "shortName": "str",
+                            "sport": {
+                                "name": "str"
+                            }
+                        },
+                        "startTime": "str",
+                        "id": "str",
+                        "matchNumber": "str",
+                        "participants": [
+                            {
+                                "name": "str",
+                                "description": "str",
+                                "shortName": "str"
+                            }
+                        ],
+                        "kodds": {
+                            "1001001001": {
+                                "subGame": {
+                                    "subGameName": "str",
+                                    "gameShortName": "str"
+                                },
+                                "value": "str",
+                                "specialOddValue": "str",
+                                "winStatus": "str"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "getSpecialCompetitionView",
+            "schema": {
+                "status": "str",
+                "competitions": "empty list"
+            }
+        },
+        {
+            "name": "getTaxRulesV2",
+            "schema": {
+                "taxes": [
+                    {
+                        "type": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "getAllGames",
+            "schema": {
+                "1": [
+                    {
+                        "name": "str",
+                        "subgameIds": [
+                            "list of str with length 1"
+                        ],
+                        "prioritySubgameIds": [
+                            "list of str with length 1"
+                        ],
+                        "priorityHeaders": [
+                            {
+                                "sportId": "str",
+                                "gameName": [
+                                    {
+                                        "id": "str",
+                                        "languageCode": "str",
+                                        "name": "str"
+                                    }
+                                ],
+                                "subGameName": [
+                                    {
+                                        "id": "str",
+                                        "languageCode": "str",
+                                        "name": "str"
+                                    }
+                                ],
+                                "specialOddValueType": "str",
+                                "priority": "str"
+                            }
+                        ],
+                        "regularHeaders": [
+                            {
+                                "sportId": "str",
+                                "gameName": [
+                                    {
+                                        "id": "str",
+                                        "languageCode": "str",
+                                        "name": "str"
+                                    }
+                                ],
+                                "subGameName": [
+                                    {
+                                        "id": "str",
+                                        "languageCode": "str",
+                                        "name": "str"
+                                    }
+                                ],
+                                "specialOddValueType": "str",
+                                "priority": "str"
+                            }
+                        ]
+                    }
+                ],
+                "2": [
+                    {
+                        "name": "str",
+                        "subgameIds": [
+                            "list of str with length 1"
+                        ],
+                        "prioritySubgameIds": [
+                            "list of str with length 1"
+                        ],
+                        "priorityHeaders": [
+                            {
+                                "sportId": "str",
+                                "gameName": [
+                                    {
+                                        "id": "str",
+                                        "languageCode": "str"
+                                    }
+                                ],
+                                "subGameName": [
+                                    {
+                                        "id": "str",
+                                        "languageCode": "str"
+                                    }
+                                ],
+                                "specialOddValueType": "str",
+                                "priority": "str"
+                            }
+                        ],
+                        "regularHeaders": [
+                            {
+                                "sportId": "str",
+                                "gameName": [
+                                    {
+                                        "id": "str",
+                                        "languageCode": "str"
+                                    }
+                                ],
+                                "subGameName": [
+                                    {
+                                        "id": "str",
+                                        "languageCode": "str"
+                                    }
+                                ],
+                                "specialOddValueType": "str",
+                                "priority": "str"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "name": "oldSort",
+            "schema": {
+                "sportIds": [
+                    "list of str with length 1"
+                ],
+                "competitionIds": "empty list"
+            }
+        }
+    ]
+}

@@ -1,0 +1,20 @@
+{
+    "api_list": [
+        {
+            "name": "Hole News-Beitr\u00e4ge von einem spezifischen Medium",
+            "schema": {
+                "titel": "str",
+                "url": "str",
+                "quelle": "str"
+            }
+        },
+        {
+            "name": "Hole alle News-Beitr\u00e4ge zu Klimawandel",
+            "schema": {
+                "titel": "str",
+                "url": "str",
+                "quelle": "str"
+            }
+        }
+    ]
+}

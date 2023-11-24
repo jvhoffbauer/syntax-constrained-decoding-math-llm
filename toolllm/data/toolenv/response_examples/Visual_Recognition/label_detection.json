@@ -1,0 +1,16 @@
+{
+    "api_list": [
+        {
+            "name": "GET Label Detection",
+            "schema": {
+                "labels": [
+                    {
+                        "text": "str",
+                        "score": "float"
+                    }
+                ],
+                "success": "bool"
+            }
+        }
+    ]
+}

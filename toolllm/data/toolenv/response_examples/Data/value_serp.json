@@ -1,0 +1,10 @@
+{
+    "api_list": [
+        {
+            "name": "Google Search",
+            "schema": {
+                "message": "str"
+            }
+        }
+    ]
+}

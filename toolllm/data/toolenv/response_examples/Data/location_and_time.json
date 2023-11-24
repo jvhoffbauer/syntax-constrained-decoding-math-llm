@@ -1,0 +1,152 @@
+{
+    "api_list": [
+        {
+            "name": "Get Astral Data by City",
+            "schema": {
+                "request": {
+                    "city": "str"
+                },
+                "response": {
+                    "dawn": "str",
+                    "sunrise": "str",
+                    "noon": "str",
+                    "sunset": "str",
+                    "dusk": "str"
+                }
+            }
+        },
+        {
+            "name": "Calculate Distance Between Locations",
+            "schema": {
+                "request": {
+                    "from_latitude": "float",
+                    "from_longitude": "float",
+                    "to_latitude": "float",
+                    "to_longitude": "float"
+                },
+                "response": {
+                    "geodesic": {
+                        "unit": "str"
+                    },
+                    "greatcircle": {
+                        "unit": "str"
+                    }
+                }
+            }
+        },
+        {
+            "name": "Decode Geohash",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Search City by Name",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get Time at Other City",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get Time Diff by Timezone",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get Date and Time by Location",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get Time at Other Timezone",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Encode Geohash",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Calculate Distance Between Cities",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get Geolocation by IP",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Search City by Location",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Search Country by Name",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get Time Diff by City",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get Time at Other Location",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get Supported Timezones",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get Holidays",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get Date and Time by Timezone",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get Date and Time by City",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get Astral Data by Location",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get Time Diff by Location",
+            "schema": {
+                "message": "str"
+            }
+        }
+    ]
+}

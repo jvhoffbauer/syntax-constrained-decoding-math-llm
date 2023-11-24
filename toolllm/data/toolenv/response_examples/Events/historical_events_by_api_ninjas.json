@@ -1,0 +1,13 @@
+{
+    "api_list": [
+        {
+            "name": "/v1/historicalevents",
+            "schema": {
+                "year": "str",
+                "month": "str",
+                "day": "str",
+                "event": "str"
+            }
+        }
+    ]
+}

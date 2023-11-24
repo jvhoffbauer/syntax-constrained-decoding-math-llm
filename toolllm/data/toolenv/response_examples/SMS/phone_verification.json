@@ -1,0 +1,44 @@
+{
+    "api_list": [
+        {
+            "name": "Verify Single Number",
+            "schema": {
+                "name": "str",
+                "status": "int",
+                "detail": "str",
+                "additional": {
+                    "validation": [
+                        {
+                            "location": [
+                                "list of str with length 1"
+                            ],
+                            "severity": "str",
+                            "code": "str",
+                            "message": "str"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Get Processing Status of File",
+            "schema": {
+                "name": "str",
+                "status": "int",
+                "detail": "str",
+                "additional": {
+                    "validation": [
+                        {
+                            "location": [
+                                "list of str with length 1"
+                            ],
+                            "severity": "str",
+                            "code": "str",
+                            "message": "str"
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,183 @@
+{
+    "api_list": [
+        {
+            "name": "locationSuggestions",
+            "schema": {
+                "locationSuggestions": {
+                    "1": "str",
+                    "2": "str",
+                    "3": "str",
+                    "4": "str",
+                    "5": "str"
+                },
+                "status": "str"
+            }
+        },
+        {
+            "name": "getZipCodeByCounty",
+            "schema": {
+                "data": [
+                    {
+                        "zipCode": "str",
+                        "city": "str",
+                        "county": "str",
+                        "state": "str",
+                        "countryName": "str",
+                        "countryCode": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "getLocationInfoByZipCode",
+            "schema": {
+                "data": [
+                    {
+                        "zipCode": "str",
+                        "city": "str",
+                        "county": "str",
+                        "state": "str",
+                        "usps": "str",
+                        "countryName": "str",
+                        "countryCode": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "getZipCodeByCity",
+            "schema": {
+                "data": [
+                    {
+                        "zipCode": "str",
+                        "city": "str",
+                        "county": "str",
+                        "state": "str",
+                        "countryName": "str",
+                        "countryCode": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Search by URL",
+            "schema": {
+                "resultsPerPage": "str",
+                "totalResultCount": "str",
+                "totalPages": "str",
+                "searchResultsData": [
+                    {
+                        "zpid": "str",
+                        "id": "str",
+                        "lotId": "str",
+                        "imgSrc": "str",
+                        "hasImage": "str",
+                        "statusType": "str",
+                        "statusText": "str",
+                        "detailUrl": "str",
+                        "latLong": {
+                            "latitude": "str",
+                            "longitude": "str"
+                        },
+                        "units": [
+                            {
+                                "price": "str",
+                                "beds": "str"
+                            }
+                        ],
+                        "variableData": {
+                            "type": "str",
+                            "text": "str"
+                        },
+                        "address": "str",
+                        "addressStreet": "str",
+                        "addressState": "str",
+                        "addressCity": "str",
+                        "addressZipcode": "str",
+                        "providerListingId": "str",
+                        "availabilityCount": "str",
+                        "canSaveBuilding": "str",
+                        "has3DModel": "str",
+                        "isFeaturedListing": "str",
+                        "isShowcaseListing": "str",
+                        "isSaved": "str",
+                        "list": "str",
+                        "relaxed": "str"
+                    }
+                ],
+                "currentPage": "str",
+                "status": "str"
+            }
+        },
+        {
+            "name": "Search",
+            "schema": {
+                "resultsPerPage": "str",
+                "totalResultCount": "str",
+                "totalPages": "str",
+                "searchResultsData": [
+                    {
+                        "zpid": "str",
+                        "id": "str",
+                        "imgSrc": "str",
+                        "hasImage": "str",
+                        "detailUrl": "str",
+                        "statusType": "str",
+                        "statusText": "str",
+                        "countryCurrency": "str",
+                        "price": "str",
+                        "unformattedPrice": "str",
+                        "address": "str",
+                        "addressCity": "str",
+                        "addressState": "str",
+                        "addressZipcode": "str",
+                        "isUndisclosedAddress": "str",
+                        "beds": "str",
+                        "baths": "str",
+                        "area": "str",
+                        "isZillowOwned": "str",
+                        "variableData": {
+                            "type": "str",
+                            "text": "str"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Property details",
+            "schema": {
+                "data": {
+                    "zpid": "str",
+                    "city": "str",
+                    "state": "str",
+                    "homeStatus": "str",
+                    "address": {
+                        "streetAddress": "str",
+                        "city": "str",
+                        "state": "str",
+                        "zipcode": "str"
+                    },
+                    "bedrooms": "str",
+                    "bathrooms": "str",
+                    "price": "str",
+                    "yearBuilt": "str",
+                    "streetAddress": "str",
+                    "zipcode": "str",
+                    "hdpUrl": "str",
+                    "listing_sub_type": {
+                        "is_newHome": "str",
+                        "is_FSBO": "str",
+                        "is_FSBA": "str",
+                        "is_foreclosure": "str",
+                        "is_bankOwned": "str",
+                        "is_forAuction": "str",
+                        "is_comingSoon": "str",
+                        "is_pending": "str",
+                        "is_openHouse": "str"
+                    }
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,23 @@
+{
+    "api_list": [
+        {
+            "name": "Distance",
+            "schema": {
+                "data": {
+                    "point1_decimal": "str",
+                    "point2_decimal": "str",
+                    "geodesic_distance": {
+                        "distance_miles": "float",
+                        "distance_kilometers": "float",
+                        "distance_nautical_miles": "float"
+                    },
+                    "great_circle_distance": {
+                        "distance_miles": "float",
+                        "distance_kilometers": "float",
+                        "distance_nautical_miles": "float"
+                    }
+                }
+            }
+        }
+    ]
+}

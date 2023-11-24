@@ -1,0 +1,16 @@
+{
+    "api_list": [
+        {
+            "name": "Sentence",
+            "schema": {
+                "text": "str"
+            }
+        },
+        {
+            "name": "Paragraph",
+            "schema": {
+                "text": "str"
+            }
+        }
+    ]
+}

@@ -1,0 +1,23 @@
+{
+    "api_list": [
+        {
+            "name": "/roll",
+            "schema": {
+                "dice": [
+                    {
+                        "sides": "int",
+                        "results": [
+                            {
+                                "selected_roll": "int"
+                            }
+                        ],
+                        "modifier": "int",
+                        "total": "int"
+                    }
+                ],
+                "advantage": "bool",
+                "total": "int"
+            }
+        }
+    ]
+}

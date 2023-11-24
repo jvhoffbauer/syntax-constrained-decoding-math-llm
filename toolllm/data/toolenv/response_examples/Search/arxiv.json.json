@@ -1,0 +1,81 @@
+{
+    "api_list": [
+        {
+            "name": "Get paper details",
+            "schema": {
+                "id": "str",
+                "version": "str",
+                "published": "str",
+                "updated": "str",
+                "title": "str",
+                "authors": [
+                    {
+                        "name": "str"
+                    }
+                ],
+                "summary": "str",
+                "comment": "str",
+                "primary_category": "str",
+                "link": "str",
+                "category": [
+                    "list of str with length 1"
+                ],
+                "paperwithcode_url": "str",
+                "official_code_url": "str",
+                "datasets": [
+                    {
+                        "name": "str",
+                        "url": "str"
+                    }
+                ],
+                "citations": {
+                    "url": "str",
+                    "influential_papers": [
+                        {
+                            "arxiv_id": "str",
+                            "title": "str",
+                            "authors": [
+                                "list of str with length 1"
+                            ],
+                            "year": "str"
+                        }
+                    ]
+                },
+                "references": {
+                    "url": "str",
+                    "influential_papers": [
+                        {
+                            "arxiv_id": "str",
+                            "title": "str",
+                            "authors": [
+                                "list of str with length 1"
+                            ],
+                            "year": "str"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Search papers by author and/or keywords",
+            "schema": {
+                "id": "str",
+                "title": "str",
+                "authors": [
+                    {
+                        "name": "str"
+                    }
+                ],
+                "summary": "str",
+                "primary_category": "str",
+                "links": [
+                    {
+                        "href": "str",
+                        "rel": "str",
+                        "type": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

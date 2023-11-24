@@ -1,0 +1,17 @@
+{
+    "api_list": [
+        {
+            "name": "drivers",
+            "schema": {
+                "get": "str",
+                "parameters": {
+                    "search": "str"
+                },
+                "errors": {
+                    "token": "str"
+                },
+                "results": "int"
+            }
+        }
+    ]
+}

@@ -1,0 +1,426 @@
+{
+    "api_list": [
+        {
+            "name": "Travel time search to rent",
+            "schema": {
+                "currentPage": "str",
+                "data": {
+                    "featuredProperties": [
+                        {
+                            "address": "str",
+                            "alternativeRentFrequencyLabel": "str",
+                            "availableFrom": "str",
+                            "branch": {
+                                "name": "str",
+                                "phone": "str"
+                            },
+                            "features": [
+                                {
+                                    "iconId": "str"
+                                }
+                            ],
+                            "flag": "str",
+                            "highlights": "str",
+                            "image": {
+                                "src": "str"
+                            },
+                            "listingId": "str",
+                            "listingUris": {
+                                "detail": "str"
+                            },
+                            "price": "str",
+                            "priceTitle": "str",
+                            "publishedOn": "str",
+                            "summaryDescription": "str",
+                            "tags": "str",
+                            "title": "str",
+                            "transports": [
+                                {
+                                    "distanceInMiles": "str",
+                                    "poiType": "str"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Travel time search for sale",
+            "schema": {
+                "currentPage": "str",
+                "data": {
+                    "featuredProperties": [
+                        {
+                            "address": "str",
+                            "availableFrom": "str",
+                            "branch": {
+                                "name": "str"
+                            },
+                            "features": [
+                                {
+                                    "content": "str"
+                                }
+                            ],
+                            "flag": "str",
+                            "image": {
+                                "src": "str"
+                            },
+                            "isPremium": "str",
+                            "listingId": "str",
+                            "listingUris": {
+                                "detail": "str"
+                            },
+                            "numberOfFloorPlans": "str",
+                            "numberOfImages": "str",
+                            "numberOfVideos": "str",
+                            "price": "str",
+                            "priceTitle": "str",
+                            "publishedOn": "str",
+                            "summaryDescription": "str",
+                            "tags": "str",
+                            "title": "str",
+                            "transports": [
+                                {
+                                    "distanceInMiles": "str"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "UK property to rent",
+            "schema": {
+                "currentPage": "str",
+                "data": {
+                    "listings": [
+                        {
+                            "address": "str",
+                            "availableFrom": "str",
+                            "branch": {
+                                "name": "str"
+                            },
+                            "displayType": "str",
+                            "features": [
+                                {
+                                    "iconId": "str"
+                                }
+                            ],
+                            "flag": "str",
+                            "gallery": [
+                                "list of str with length 1"
+                            ],
+                            "image": {
+                                "src": "str"
+                            },
+                            "listingId": "str",
+                            "location": {
+                                "coordinates": {
+                                    "latitude": "str",
+                                    "longitude": "str"
+                                }
+                            },
+                            "price": "str",
+                            "priceTitle": "str",
+                            "propertyType": "str"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "find-agents/commercial-agents",
+            "schema": {
+                "currentPage": "int",
+                "data": [
+                    {
+                        "displayName": "str",
+                        "contactNumber": "str",
+                        "displayAddress": "str",
+                        "featured": "bool",
+                        "id": "int",
+                        "listingsStatistics": {
+                            "residential": {
+                                "forSale": {
+                                    "availableListings": "int",
+                                    "avgAskingPrice": "int",
+                                    "avgWeeksOnMarket": "int"
+                                },
+                                "toRent": {
+                                    "availableListings": "int",
+                                    "avgAskingPrice": "int",
+                                    "avgWeeksOnMarket": "int"
+                                }
+                            }
+                        },
+                        "logo": {
+                            "uri": "str"
+                        },
+                        "name": "str",
+                        "uriName": "str"
+                    }
+                ],
+                "message": "str",
+                "resultsPerPage": "int",
+                "status": "bool",
+                "totalResultCount": "int"
+            }
+        },
+        {
+            "name": "find-agents/letting-agents",
+            "schema": {
+                "currentPage": "int",
+                "data": [
+                    {
+                        "featured": "bool",
+                        "id": "int",
+                        "listingsStatistics": {
+                            "residential": {
+                                "forSale": {
+                                    "availableListings": "int",
+                                    "avgAskingPrice": "int",
+                                    "avgWeeksOnMarket": "int"
+                                },
+                                "toRent": {
+                                    "availableListings": "int",
+                                    "avgAskingPrice": "int",
+                                    "avgWeeksOnMarket": "int"
+                                }
+                            }
+                        },
+                        "name": "str",
+                        "uriName": "str"
+                    }
+                ],
+                "message": "str",
+                "resultsPerPage": "int",
+                "status": "bool",
+                "totalResultCount": "int"
+            }
+        },
+        {
+            "name": "find-agents/estate-agents",
+            "schema": {
+                "currentPage": "int",
+                "data": [
+                    {
+                        "contactNumber": "str",
+                        "displayAddress": "str",
+                        "displayName": "str",
+                        "featured": "bool",
+                        "id": "int",
+                        "listingsStatistics": {
+                            "forSale": {
+                                "availableListings": "int",
+                                "avgAskingPrice": "int",
+                                "avgWeeksOnMarket": "int"
+                            },
+                            "toRent": {
+                                "availableListings": "int",
+                                "avgAskingPrice": "int",
+                                "avgWeeksOnMarket": "int"
+                            }
+                        },
+                        "logo": {
+                            "uri": "str"
+                        },
+                        "name": "str",
+                        "uriName": "str"
+                    }
+                ],
+                "message": "str",
+                "resultsPerPage": "int",
+                "status": "bool",
+                "totalResultCount": "int"
+            }
+        },
+        {
+            "name": "find-agents/auto-complete",
+            "schema": {
+                "data": [
+                    {
+                        "i": "str",
+                        "v": "str"
+                    }
+                ],
+                "status": "bool"
+            }
+        },
+        {
+            "name": "New build developments",
+            "schema": {
+                "data": {
+                    "results": [
+                        {
+                            "name": "str",
+                            "postcode": "str",
+                            "town": "str",
+                            "helpToBuy": "str",
+                            "sharedOwnership": "str",
+                            "retirement": "str",
+                            "listingsDetails": {
+                                "listings": [
+                                    {
+                                        "counts": {
+                                            "numBedrooms": "str"
+                                        },
+                                        "isPriceOnAsk": "str",
+                                        "pricing": {
+                                            "internalValue": "str",
+                                            "label": "str"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "totalResultCount": "str"
+            }
+        },
+        {
+            "name": "New homes for sale",
+            "schema": {
+                "currentPage": "str",
+                "data": {
+                    "listings": [
+                        {
+                            "address": "str",
+                            "availableFrom": "str",
+                            "branch": {
+                                "name": "str",
+                                "phone": "str"
+                            },
+                            "displayType": "str",
+                            "features": [
+                                {
+                                    "iconId": "str"
+                                }
+                            ],
+                            "gallery": [
+                                "list of str with length 1"
+                            ],
+                            "highlights": [
+                                {
+                                    "label": "str"
+                                }
+                            ],
+                            "image": {
+                                "src": "str"
+                            },
+                            "listingId": "str",
+                            "listingUris": {
+                                "detail": "str"
+                            },
+                            "location": {
+                                "coordinates": {
+                                    "latitude": "str",
+                                    "longitude": "str"
+                                }
+                            },
+                            "price": "str"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "House-prices for detail",
+            "schema": {
+                "data": {
+                    "address": {
+                        "fullAddress": "str",
+                        "latitude": "float",
+                        "longitude": "float"
+                    },
+                    "saleEstimate": {
+                        "currentPrice": "int",
+                        "lowerPrice": "int",
+                        "upperPrice": "int"
+                    },
+                    "uprn": "str"
+                },
+                "message": "str",
+                "status": "bool"
+            }
+        },
+        {
+            "name": "House prices & values",
+            "schema": {
+                "currentPage": "int",
+                "data": [
+                    {
+                        "address": {
+                            "fullAddress": "str",
+                            "postcode": "str",
+                            "uprn": "str"
+                        },
+                        "attributes": {
+                            "bathrooms": "NoneType",
+                            "bedrooms": "NoneType",
+                            "livingRooms": "NoneType",
+                            "propertyType": "NoneType",
+                            "tenure": "NoneType"
+                        },
+                        "lastSale": {
+                            "date": "str",
+                            "price": "int"
+                        },
+                        "saleEstimate": {
+                            "lowerPrice": "int",
+                            "upperPrice": "int"
+                        },
+                        "uprn": "str"
+                    }
+                ],
+                "message": "str",
+                "resultsPerPage": "int",
+                "status": "bool",
+                "totalResultCount": "int"
+            }
+        },
+        {
+            "name": "property/detail",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "UK letting agents",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "UK estate agents",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "UK new homes for sale",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "UK property for sale",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "auto-complete",
+            "schema": {
+                "suggestions": [
+                    {
+                        "identifier": "str",
+                        "value": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

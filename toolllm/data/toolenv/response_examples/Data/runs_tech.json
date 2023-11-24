@@ -1,0 +1,10 @@
+{
+    "api_list": [
+        {
+            "name": "getTechDomains",
+            "schema": {
+                "messages": "str"
+            }
+        }
+    ]
+}

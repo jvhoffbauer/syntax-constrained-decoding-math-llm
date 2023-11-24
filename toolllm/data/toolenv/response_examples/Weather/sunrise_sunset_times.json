@@ -1,0 +1,11 @@
+{
+    "api_list": [
+        {
+            "name": "Get Sunrise and Sunset Times",
+            "schema": {
+                "sunrise": "str",
+                "sunset": "str"
+            }
+        }
+    ]
+}

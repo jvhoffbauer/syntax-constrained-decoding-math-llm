@@ -1,0 +1,85 @@
+{
+    "api_list": [
+        {
+            "name": "API_Index_Isin",
+            "schema": {
+                "shareuid": "str",
+                "isin": "str",
+                "wkn": "str",
+                "currency": "str",
+                "shortname": "str",
+                "name": "str",
+                "country": "str",
+                "sector": "str"
+            }
+        },
+        {
+            "name": "API_Index_Name",
+            "schema": {
+                "shareuid": "str",
+                "isin": "str",
+                "wkn": "str",
+                "currency": "str",
+                "shortname": "str",
+                "name": "str",
+                "country": "str",
+                "sector": "str"
+            }
+        },
+        {
+            "name": "API_Index_Wkn",
+            "schema": {
+                "shareuid": "str",
+                "isin": "str",
+                "wkn": "str",
+                "currency": "str",
+                "shortname": "str",
+                "name": "str",
+                "country": "str",
+                "lastbalanceupdate": "str"
+            }
+        },
+        {
+            "name": "API_Pricetocashflow",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "API_Pricetoearning",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "API_Pricetosales",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "API_Roa",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "API_Roe",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "API_Pricetofreecashflow",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "API_Fundamentals",
+            "schema": {
+                "message": "str"
+            }
+        }
+    ]
+}

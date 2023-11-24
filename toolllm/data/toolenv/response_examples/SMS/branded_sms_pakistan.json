@@ -1,0 +1,22 @@
+{
+    "api_list": [
+        {
+            "name": "Send Message to Multiple Numbers",
+            "schema": {
+                "sms": {
+                    "code": "str",
+                    "response": "str"
+                }
+            }
+        },
+        {
+            "name": "Send Single Message",
+            "schema": {
+                "sms": {
+                    "code": "str",
+                    "response": "str"
+                }
+            }
+        }
+    ]
+}

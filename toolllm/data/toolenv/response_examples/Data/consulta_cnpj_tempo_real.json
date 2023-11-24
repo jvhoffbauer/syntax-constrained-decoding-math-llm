@@ -1,0 +1,260 @@
+{
+    "api_list": [
+        {
+            "name": "Gera Vis\u00e3o da Rua",
+            "schema": {
+                "code": "int",
+                "message": "str"
+            }
+        },
+        {
+            "name": "Gera Mapa dos Arredores",
+            "schema": {
+                "code": "int",
+                "message": "str"
+            }
+        },
+        {
+            "name": "Consulta CEP",
+            "schema": {
+                "zip": "str",
+                "street": "str",
+                "district": "str",
+                "city": "str",
+                "state": "str"
+            }
+        },
+        {
+            "name": "Consulta Estabelecimento",
+            "schema": {
+                "updated": "str",
+                "taxId": "str",
+                "company": {
+                    "name": "str",
+                    "nature": {
+                        "text": "str"
+                    },
+                    "size": {
+                        "acronym": "str",
+                        "text": "str"
+                    },
+                    "simples": {
+                        "optant": "str"
+                    },
+                    "simei": {
+                        "optant": "str"
+                    }
+                },
+                "address": {
+                    "municipality": "str",
+                    "street": "str",
+                    "number": "str",
+                    "district": "str",
+                    "city": "str",
+                    "state": "str",
+                    "zip": "str"
+                },
+                "phones": [
+                    {
+                        "area": "str",
+                        "number": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Consulta Cadastro de Contribuintes",
+            "schema": {
+                "taxId": "str",
+                "originState": "str",
+                "registrations": [
+                    {
+                        "state": "str",
+                        "number": "str",
+                        "enabled": "bool"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Consulta Simples Nacional",
+            "schema": {
+                "taxId": "str",
+                "simples": {
+                    "optant": "bool",
+                    "since": "str"
+                },
+                "simei": {
+                    "optant": "bool",
+                    "since": "NoneType"
+                }
+            }
+        },
+        {
+            "name": "Consulta Receita Federal",
+            "schema": {
+                "updated": "str",
+                "taxId": "str",
+                "name": "str",
+                "alias": "str",
+                "nature": {
+                    "id": "str",
+                    "text": "str"
+                },
+                "size": {
+                    "id": "str",
+                    "acronym": "str",
+                    "text": "str"
+                },
+                "statusDate": "str",
+                "status": {
+                    "id": "str",
+                    "text": "str"
+                },
+                "address": {
+                    "municipality": "str",
+                    "street": "str",
+                    "number": "str",
+                    "district": "str",
+                    "city": "str",
+                    "state": "str",
+                    "zip": "str"
+                },
+                "phones": [
+                    {
+                        "area": "str",
+                        "number": "str"
+                    }
+                ],
+                "mainActivity": {
+                    "id": "str",
+                    "text": "str"
+                },
+                "sideActivities": [
+                    {
+                        "id": "str",
+                        "text": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Consulta Pessoa",
+            "schema": {
+                "id": "str",
+                "name": "str",
+                "type": "str",
+                "taxId": "str",
+                "age": "str",
+                "membership": [
+                    {
+                        "since": "str",
+                        "role": "str",
+                        "company": {
+                            "name": "str",
+                            "equity": "int",
+                            "nature": "str",
+                            "size": "str"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Consulta Empresa",
+            "schema": {
+                "updated": "str",
+                "id": "int",
+                "name": "str",
+                "nature": {
+                    "text": "str"
+                },
+                "size": {
+                    "acronym": "str",
+                    "text": "str"
+                },
+                "simples": {
+                    "optant": "bool",
+                    "since": "str"
+                },
+                "members": [
+                    {
+                        "role": {
+                            "text": "str"
+                        },
+                        "person": {
+                            "name": "str",
+                            "type": "str",
+                            "taxId": "str"
+                        }
+                    }
+                ],
+                "offices": [
+                    {
+                        "taxId": "str",
+                        "alias": "str",
+                        "founded": "str",
+                        "statusDate": "str",
+                        "status": {
+                            "text": "str"
+                        },
+                        "mainActivity": {
+                            "text": "str"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Consulta Unificada",
+            "schema": {
+                "last_update": "str",
+                "name": "str",
+                "alias": "str",
+                "tax_id": "str",
+                "type": "str",
+                "founded": "str",
+                "size": "str",
+                "capital": "str",
+                "email": "str",
+                "phone": "str",
+                "federal_entity": "str",
+                "registration": {
+                    "status": "str",
+                    "status_date": "str"
+                },
+                "address": {
+                    "street": "str",
+                    "number": "str",
+                    "zip": "str",
+                    "neighborhood": "str",
+                    "city": "str",
+                    "state": "str"
+                },
+                "legal_nature": {
+                    "code": "str",
+                    "description": "str"
+                },
+                "primary_activity": {
+                    "code": "str",
+                    "description": "str"
+                },
+                "membership": [
+                    {
+                        "name": "str",
+                        "tax_id": "str",
+                        "role": {
+                            "code": "str",
+                            "description": "str"
+                        }
+                    }
+                ],
+                "simples_nacional": {
+                    "last_update": "str",
+                    "simples_optant": "str",
+                    "simples_included": "str"
+                }
+            }
+        }
+    ]
+}

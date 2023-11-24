@@ -1,0 +1,29 @@
+{
+    "api_list": [
+        {
+            "name": "/v1/dogs",
+            "schema": {
+                "image_link": "str",
+                "good_with_children": "int",
+                "good_with_other_dogs": "int",
+                "shedding": "int",
+                "grooming": "int",
+                "drooling": "int",
+                "coat_length": "int",
+                "good_with_strangers": "int",
+                "playfulness": "int",
+                "protectiveness": "int",
+                "trainability": "int",
+                "energy": "int",
+                "barking": "int",
+                "min_life_expectancy": "float",
+                "max_life_expectancy": "float",
+                "max_height_male": "float",
+                "max_height_female": "float",
+                "max_weight_male": "float",
+                "max_weight_female": "float",
+                "name": "str"
+            }
+        }
+    ]
+}

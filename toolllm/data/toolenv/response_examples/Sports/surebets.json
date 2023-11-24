@@ -1,0 +1,39 @@
+{
+    "api_list": [
+        {
+            "name": "Get Bookmakers",
+            "schema": {
+                "bookmakers": [
+                    "list of str with length 1"
+                ]
+            }
+        },
+        {
+            "name": "List",
+            "schema": {
+                "list": [
+                    {
+                        "category": "str",
+                        "group": "str",
+                        "league": "str",
+                        "name": "str",
+                        "start": "str",
+                        "sport": "str",
+                        "profit": "float",
+                        "odds": [
+                            {
+                                "type": "str",
+                                "values": [
+                                    {
+                                        "odd": "float",
+                                        "bookie_slug": "str"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}

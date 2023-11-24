@@ -1,0 +1,28 @@
+{
+    "api_list": [
+        {
+            "name": "BD_UPAZILA",
+            "schema": {
+                "code": "str",
+                "title": "str",
+                "message": "str"
+            }
+        },
+        {
+            "name": "BD_DISTRICT",
+            "schema": {
+                "code": "str",
+                "title": "str",
+                "message": "str"
+            }
+        },
+        {
+            "name": "BD_DIVISION",
+            "schema": {
+                "code": "str",
+                "title": "str",
+                "message": "str"
+            }
+        }
+    ]
+}

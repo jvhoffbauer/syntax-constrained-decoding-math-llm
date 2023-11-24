@@ -1,0 +1,15 @@
+{
+    "api_list": [
+        {
+            "name": "Get Elevation",
+            "schema": {
+                "elevation": "float",
+                "units": "str",
+                "location": {
+                    "lat": "float",
+                    "lng": "float"
+                }
+            }
+        }
+    ]
+}

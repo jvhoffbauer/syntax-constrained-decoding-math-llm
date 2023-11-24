@@ -1,0 +1,14 @@
+{
+    "api_list": [
+        {
+            "name": "/email/exist",
+            "schema": {
+                "status": "str",
+                "msg": "str",
+                "info": {
+                    "reason": "str"
+                }
+            }
+        }
+    ]
+}

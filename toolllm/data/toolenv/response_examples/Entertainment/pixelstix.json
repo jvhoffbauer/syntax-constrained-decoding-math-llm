@@ -1,0 +1,60 @@
+{
+    "api_list": [
+        {
+            "name": "PixelStix Meta",
+            "schema": {
+                "result": "str",
+                "data": {
+                    "object_voice": {
+                        "code": "str",
+                        "category": "str",
+                        "clears_remaining": "str",
+                        "mimetype": "str",
+                        "visibility": "str",
+                        "web_location": [
+                            {
+                                "code": "str",
+                                "location": "str",
+                                "type": "str"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "name": "PixelStix Map Meta",
+            "schema": {
+                "result": "str",
+                "message": "str",
+                "data": {
+                    "object_voice": [
+                        {
+                            "account_id": "str",
+                            "alias": "str",
+                            "category": "str",
+                            "clears_remaining": "str",
+                            "code": "str",
+                            "created": "str",
+                            "first_assigned": "str",
+                            "geo_fixed": "str",
+                            "last_assigned": "str",
+                            "lat": "str",
+                            "lon": "str",
+                            "mimetype": "str",
+                            "parent_code": "str",
+                            "scans": "str",
+                            "visibility": "str"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Get Last N Days Scan Counts For Tag",
+            "schema": {
+                "message": "str"
+            }
+        }
+    ]
+}

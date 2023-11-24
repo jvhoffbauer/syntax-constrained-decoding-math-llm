@@ -1,0 +1,13 @@
+{
+    "api_list": [
+        {
+            "name": "Football",
+            "schema": {
+                "api": {
+                    "results": "int",
+                    "error": "str"
+                }
+            }
+        }
+    ]
+}

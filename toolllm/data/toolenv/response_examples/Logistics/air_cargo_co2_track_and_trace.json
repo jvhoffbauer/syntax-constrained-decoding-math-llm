@@ -1,0 +1,36 @@
+{
+    "api_list": [
+        {
+            "name": "PULL (track)",
+            "schema": {
+                "awb": "str",
+                "events": [
+                    {
+                        "code": "str",
+                        "eventDate": "str",
+                        "eventLocation": "str",
+                        "flight": {
+                            "number": "str",
+                            "origin": "str",
+                            "destination": "str",
+                            "carbonEmission": "str",
+                            "distance": "str",
+                            "duration": "str"
+                        },
+                        "weight": "str",
+                        "pieces": "str",
+                        "isPlanned": "str",
+                        "origin": "str",
+                        "destination": "str",
+                        "flightNumber": "str",
+                        "scheduledDepartureDate": "str"
+                    }
+                ],
+                "status": "str",
+                "carbonEmission": "str",
+                "distance": "str",
+                "time": "str"
+            }
+        }
+    ]
+}

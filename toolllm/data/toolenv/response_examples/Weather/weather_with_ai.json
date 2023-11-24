@@ -1,0 +1,60 @@
+{
+    "api_list": [
+        {
+            "name": "Get Weather",
+            "schema": {
+                "lat": "str",
+                "lon": "str",
+                "timezone": "str",
+                "timezone_offset": "str",
+                "current": {
+                    "temp": "str",
+                    "feels_like": "str",
+                    "pressure": "str",
+                    "humidity": "str",
+                    "uvi": "str",
+                    "weather": [
+                        {
+                            "id": "str",
+                            "main": "str",
+                            "description": "str",
+                            "icon": "str"
+                        }
+                    ]
+                },
+                "hourly": [
+                    {
+                        "temp": "str",
+                        "feels_like": "str",
+                        "pressure": "str",
+                        "humidity": "str",
+                        "uvi": "str",
+                        "weather": [
+                            {
+                                "id": "str",
+                                "main": "str",
+                                "description": "str",
+                                "icon": "str"
+                            }
+                        ],
+                        "pop": "str"
+                    }
+                ],
+                "daily": [
+                    {
+                        "sunrise": "str",
+                        "sunset": "str",
+                        "temp": {
+                            "day": "str",
+                            "min": "str",
+                            "max": "str",
+                            "night": "str",
+                            "eve": "str",
+                            "morn": "str"
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

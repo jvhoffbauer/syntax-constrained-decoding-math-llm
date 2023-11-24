@@ -1,0 +1,11 @@
+{
+    "api_list": [
+        {
+            "name": "Validate PhoneNumber",
+            "schema": {
+                "code": "int",
+                "response": "str"
+            }
+        }
+    ]
+}

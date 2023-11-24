@@ -1,0 +1,77 @@
+{
+    "api_list": [
+        {
+            "name": "Get NCAA Men 2000-2021",
+            "schema": {
+                "ncaamen2000": {
+                    "Champions": "str",
+                    "RunnerUp": "str",
+                    "Coach": "str",
+                    "score": "str",
+                    "site": "str"
+                },
+                "ncaamen2001": {
+                    "Champions": "str",
+                    "RunnerUp": "str",
+                    "Coach": "str",
+                    "score": "str",
+                    "site": "str"
+                },
+                "ncaamen2002": {
+                    "Champions": "str",
+                    "RunnerUp": "str",
+                    "Coach": "str",
+                    "score": "str",
+                    "site": "str"
+                },
+                "ncaamen2003": {
+                    "Champions": "str",
+                    "RunnerUp": "str",
+                    "Coach": "str",
+                    "score": "str",
+                    "site": "str"
+                },
+                "ncaamen2004": {
+                    "Champions": "str",
+                    "RunnerUp": "str",
+                    "Coach": "str",
+                    "score": "str",
+                    "site": "str"
+                },
+                "ncaamen2005": {
+                    "Champions": "str",
+                    "RunnerUp": "str",
+                    "Coach": "str",
+                    "score": "str",
+                    "site": "str"
+                },
+                "ncaamen2006": {
+                    "Champions": "str",
+                    "RunnerUp": "str",
+                    "Coach": "str",
+                    "score": "str",
+                    "site": "str"
+                },
+                "ncaamen2007": {
+                    "Champions": "str",
+                    "RunnerUp": "str",
+                    "Coach": "str",
+                    "score": "str",
+                    "site": "str"
+                },
+                "ncaamen2008": {
+                    "Champions": "str",
+                    "RunnerUp": "str",
+                    "Coach": "str",
+                    "score": "str",
+                    "site": "str"
+                },
+                "ncaamen2009": {
+                    "Champions": "str",
+                    "RunnerUp": "str",
+                    "Coach": "str"
+                }
+            }
+        }
+    ]
+}

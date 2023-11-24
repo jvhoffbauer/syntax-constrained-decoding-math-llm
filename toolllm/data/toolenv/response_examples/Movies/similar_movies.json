@@ -1,0 +1,26 @@
+{
+    "api_list": [
+        {
+            "name": "find similar",
+            "schema": {
+                "movies": [
+                    {
+                        "name": "str",
+                        "id": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "get Id",
+            "schema": {
+                "movies": [
+                    {
+                        "id": "str",
+                        "title": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

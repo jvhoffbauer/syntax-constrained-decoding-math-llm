@@ -1,0 +1,14 @@
+{
+    "api_list": [
+        {
+            "name": "video/{videoId}",
+            "schema": {
+                "code": "str",
+                "message": "str",
+                "data": {
+                    "status": "int"
+                }
+            }
+        }
+    ]
+}

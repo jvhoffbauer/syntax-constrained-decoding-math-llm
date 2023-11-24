@@ -1,0 +1,52 @@
+{
+    "api_list": [
+        {
+            "name": "Define a Word / Search",
+            "schema": {
+                "list": [
+                    {
+                        "definition": "str",
+                        "word": "str",
+                        "example": "str",
+                        "thumbs_up": "int",
+                        "thumbs_down": "int"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Random Word",
+            "schema": {
+                "list": [
+                    {
+                        "definition": "str",
+                        "permalink": "str",
+                        "thumbs_up": "int",
+                        "author": "str",
+                        "word": "str",
+                        "defid": "int",
+                        "example": "str",
+                        "thumbs_down": "int"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Word of the Day",
+            "schema": {
+                "list": [
+                    {
+                        "definition": "str",
+                        "date": "str",
+                        "permalink": "str",
+                        "thumbs_up": "int",
+                        "author": "str",
+                        "word": "str",
+                        "example": "str",
+                        "thumbs_down": "int"
+                    }
+                ]
+            }
+        }
+    ]
+}

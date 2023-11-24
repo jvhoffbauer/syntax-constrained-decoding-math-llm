@@ -1,0 +1,28 @@
+{
+    "api_list": [
+        {
+            "name": "Location by Id",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Story by Id",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Media by Code",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "User by Username",
+            "schema": {
+                "message": "str"
+            }
+        }
+    ]
+}

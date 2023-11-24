@@ -1,0 +1,12 @@
+{
+    "api_list": [
+        {
+            "name": "Status Check: Video Transcription and Summary",
+            "schema": {
+                "summary": "str",
+                "url": "str",
+                "transcript": "str"
+            }
+        }
+    ]
+}

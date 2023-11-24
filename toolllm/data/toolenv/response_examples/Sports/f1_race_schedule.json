@@ -1,0 +1,21 @@
+{
+    "api_list": [
+        {
+            "name": "Select Race based on ID",
+            "schema": {
+                "race_no": "int",
+                "track": "str",
+                "date": "str"
+            }
+        },
+        {
+            "name": "Race List",
+            "schema": {
+                "_id": "str",
+                "race_no": "int",
+                "track": "str",
+                "date": "str"
+            }
+        }
+    ]
+}

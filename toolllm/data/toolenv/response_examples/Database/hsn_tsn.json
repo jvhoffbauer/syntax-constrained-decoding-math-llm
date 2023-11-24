@@ -1,0 +1,16 @@
+{
+    "api_list": [
+        {
+            "name": "Get HSN TSN",
+            "schema": {
+                "vehicletype": "str",
+                "yearFrom": "str",
+                "power": "str",
+                "ccm": "str",
+                "fuel": "str",
+                "hsn": "str",
+                "tsn": "str"
+            }
+        }
+    ]
+}

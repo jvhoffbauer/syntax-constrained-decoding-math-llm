@@ -1,0 +1,63 @@
+{
+    "api_list": [
+        {
+            "name": "get_genres",
+            "schema": {
+                "data": [
+                    "list of str with length 1"
+                ]
+            }
+        },
+        {
+            "name": "get quotes by genre paginated",
+            "schema": {
+                "data": [
+                    {
+                        "quoute": "str",
+                        "author": "str",
+                        "genre": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "get all authors",
+            "schema": {
+                "data": [
+                    "list of str with length 1"
+                ]
+            }
+        },
+        {
+            "name": "get quotes by genre",
+            "schema": {
+                "data": [
+                    {
+                        "quoute": "str",
+                        "author": "str",
+                        "genre": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "get_quotes",
+            "schema": {
+                "data": {
+                    "total_elements": "int",
+                    "has_next": "bool",
+                    "has_previous": "bool",
+                    "total_pages": "int",
+                    "qoutes": [
+                        {
+                            "id": "str",
+                            "quoute": "str",
+                            "author": "str",
+                            "genre": "str"
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

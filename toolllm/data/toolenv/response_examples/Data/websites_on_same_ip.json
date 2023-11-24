@@ -1,0 +1,15 @@
+{
+    "api_list": [
+        {
+            "name": "Search domains / websites on same IP (shared)",
+            "schema": {
+                "numFound": "int",
+                "docs": [
+                    {
+                        "domain": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

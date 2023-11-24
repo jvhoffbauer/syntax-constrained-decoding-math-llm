@@ -1,0 +1,19 @@
+{
+    "api_list": [
+        {
+            "name": "Cars",
+            "schema": {
+                "year": "int",
+                "make": "str",
+                "model": "str",
+                "type": "str"
+            }
+        },
+        {
+            "name": "Years",
+            "schema": {
+                "message": "str"
+            }
+        }
+    ]
+}

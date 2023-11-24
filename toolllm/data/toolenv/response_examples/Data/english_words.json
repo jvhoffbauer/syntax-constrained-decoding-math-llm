@@ -1,0 +1,11 @@
+{
+    "api_list": [
+        {
+            "name": "getMeaning",
+            "schema": {
+                "word": "str",
+                "meaning": "str"
+            }
+        }
+    ]
+}

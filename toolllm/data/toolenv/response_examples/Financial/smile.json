@@ -1,0 +1,209 @@
+{
+    "api_list": [
+        {
+            "name": "list-identities",
+            "schema": {
+                "code": "str",
+                "message": "str"
+            }
+        },
+        {
+            "name": "list-invites",
+            "schema": {
+                "code": "str",
+                "message": "str"
+            }
+        },
+        {
+            "name": "list-incomes",
+            "schema": {
+                "code": "str",
+                "message": "str"
+            }
+        },
+        {
+            "name": "get-user",
+            "schema": {
+                "code": "str",
+                "message": "str"
+            }
+        },
+        {
+            "name": "get-invite",
+            "schema": {
+                "code": "str",
+                "message": "str"
+            }
+        },
+        {
+            "name": "get-identity",
+            "schema": {
+                "code": "str",
+                "message": "str"
+            }
+        },
+        {
+            "name": "list-employments",
+            "schema": {
+                "code": "str",
+                "message": "str"
+            }
+        },
+        {
+            "name": "list-webhooks",
+            "schema": {
+                "code": "str",
+                "message": "str"
+            }
+        },
+        {
+            "name": "list-ratings",
+            "schema": {
+                "code": "str",
+                "message": "str"
+            }
+        },
+        {
+            "name": "get-rating",
+            "schema": {
+                "code": "str",
+                "message": "str"
+            }
+        },
+        {
+            "name": "get-provider",
+            "schema": {
+                "code": "str",
+                "message": "str"
+            }
+        },
+        {
+            "name": "list-users",
+            "schema": {
+                "code": "str",
+                "message": "str"
+            }
+        },
+        {
+            "name": "get-invite-template",
+            "schema": {
+                "code": "str",
+                "message": "str"
+            }
+        },
+        {
+            "name": "list-contributions",
+            "schema": {
+                "code": "str",
+                "message": "str"
+            }
+        },
+        {
+            "name": "get-upload",
+            "schema": {
+                "code": "str",
+                "message": "str"
+            }
+        },
+        {
+            "name": "get-income",
+            "schema": {
+                "code": "str",
+                "message": "str"
+            }
+        },
+        {
+            "name": "get-contribution",
+            "schema": {
+                "code": "str",
+                "message": "str"
+            }
+        },
+        {
+            "name": "get-webhook",
+            "schema": {
+                "code": "str",
+                "message": "str",
+                "requestId": "str"
+            }
+        },
+        {
+            "name": "list-uploads",
+            "schema": {
+                "code": "str",
+                "message": "str"
+            }
+        },
+        {
+            "name": "list-invite-templates",
+            "schema": {
+                "code": "str",
+                "message": "str"
+            }
+        },
+        {
+            "name": "get-employment",
+            "schema": {
+                "code": "str",
+                "message": "str"
+            }
+        },
+        {
+            "name": "get-transaction",
+            "schema": {
+                "code": "str",
+                "message": "str"
+            }
+        },
+        {
+            "name": "list-transactions",
+            "schema": {
+                "code": "str",
+                "message": "str"
+            }
+        },
+        {
+            "name": "list-archives",
+            "schema": {
+                "code": "str",
+                "message": "str"
+            }
+        },
+        {
+            "name": "get-account",
+            "schema": {
+                "code": "str",
+                "message": "str",
+                "requestId": "str"
+            }
+        },
+        {
+            "name": "get-archive",
+            "schema": {
+                "code": "str",
+                "message": "str"
+            }
+        },
+        {
+            "name": "list-accounts",
+            "schema": {
+                "code": "str",
+                "message": "str"
+            }
+        },
+        {
+            "name": "list-documents",
+            "schema": {
+                "code": "str",
+                "message": "str"
+            }
+        },
+        {
+            "name": "get-document",
+            "schema": {
+                "code": "str",
+                "message": "str"
+            }
+        }
+    ]
+}

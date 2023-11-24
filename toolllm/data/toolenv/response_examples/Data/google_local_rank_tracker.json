@@ -1,0 +1,97 @@
+{
+    "api_list": [
+        {
+            "name": "Keyword Search at Coordinates",
+            "schema": {
+                "parameters": {
+                    "lat": "str",
+                    "lng": "str",
+                    "width": "str",
+                    "height": "str",
+                    "distance": "str",
+                    "distance_unit": "str",
+                    "query": "str"
+                },
+                "data": {
+                    "points": "str",
+                    "results": [
+                        {
+                            "lat": "str",
+                            "lng": "str",
+                            "found": "str",
+                            "rank": "str",
+                            "count": "str",
+                            "results": [
+                                {
+                                    "rank": "str",
+                                    "placeId": "str",
+                                    "name": "str",
+                                    "lat": "str",
+                                    "lng": "str",
+                                    "sab": "str",
+                                    "address": "str",
+                                    "country": "str",
+                                    "reviews": "str",
+                                    "rating": "str"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Calculate GeoGrid Coordinate Points",
+            "schema": {
+                "data": {
+                    "results": [
+                        "list of str with length 1"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Keyword Search With Ranking",
+            "schema": {
+                "parameters": {
+                    "lat": "str",
+                    "lng": "str",
+                    "width": "str",
+                    "height": "str",
+                    "query": "str",
+                    "match_by": "str",
+                    "match_value": "str"
+                },
+                "data": {
+                    "points": "str",
+                    "found": "str",
+                    "found_top_10": "str",
+                    "found_top_3": "str",
+                    "rank_percent": "str",
+                    "rank_percent_top_10": "str",
+                    "rank_percent_top_3": "str",
+                    "average_rank": "str",
+                    "average_rank_top_10": "str",
+                    "average_rank_top_3": "str",
+                    "results": [
+                        {
+                            "lat": "str",
+                            "lng": "str",
+                            "found": "str",
+                            "rank": "str",
+                            "count": "str",
+                            "results": [
+                                {
+                                    "rank": "str",
+                                    "placeId": "str",
+                                    "name": "str",
+                                    "rating": "str"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "api_list": [
+        {
+            "name": "movies_news_recent_get",
+            "schema": {
+                "title": "str",
+                "date": "str",
+                "description": "str",
+                "image": "str",
+                "link": "str"
+            }
+        }
+    ]
+}

@@ -1,0 +1,42 @@
+{
+    "api_list": [
+        {
+            "name": "Get equations",
+            "schema": {
+                "quantity": "str",
+                "categories": [
+                    {
+                        "title": "str",
+                        "equations": [
+                            {
+                                "equation": "str"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Get All constants",
+            "schema": {
+                "symbol": "str",
+                "name": "str",
+                "value": "str",
+                "category": "str",
+                "pack": "str"
+            }
+        },
+        {
+            "name": "Get All Physical quantities",
+            "schema": {
+                "symbol": "str",
+                "name": "str",
+                "description": "str",
+                "wikipedia": "str",
+                "vector": "bool",
+                "category": "str",
+                "pack": "str"
+            }
+        }
+    ]
+}

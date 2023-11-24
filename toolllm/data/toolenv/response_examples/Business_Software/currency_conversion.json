@@ -1,0 +1,12 @@
+{
+    "api_list": [
+        {
+            "name": "Convert Currency",
+            "schema": {
+                "success": "str",
+                "title": "str",
+                "message": "str"
+            }
+        }
+    ]
+}

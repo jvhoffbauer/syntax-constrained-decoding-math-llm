@@ -1,0 +1,12 @@
+{
+    "api_list": [
+        {
+            "name": "/v1/covid",
+            "schema": {
+                "status": "str",
+                "error_code": "str",
+                "message": "str"
+            }
+        }
+    ]
+}

@@ -1,0 +1,113 @@
+{
+    "api_list": [
+        {
+            "name": "SearchEntries",
+            "schema": {
+                "errors": [
+                    {
+                        "code": "str",
+                        "in": "str",
+                        "name": "str",
+                        "message": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Languages",
+            "schema": {
+                "language_names": {
+                    "af": "str",
+                    "ar": "str",
+                    "az": "str",
+                    "bg": "str",
+                    "br": "str",
+                    "ca": "str",
+                    "cs": "str",
+                    "da": "str",
+                    "de": "str",
+                    "dk": "str",
+                    "el": "str",
+                    "en": "str",
+                    "es": "str",
+                    "et": "str",
+                    "fa": "str",
+                    "fi": "str",
+                    "fr": "str",
+                    "fy": "str",
+                    "he": "str",
+                    "hi": "str",
+                    "hr": "str",
+                    "hu": "str",
+                    "id": "str",
+                    "is": "str",
+                    "it": "str",
+                    "ja": "str",
+                    "ko": "str",
+                    "la": "str",
+                    "lt": "str",
+                    "lv": "str",
+                    "ml": "str",
+                    "nl": "str",
+                    "no": "str",
+                    "pl": "str",
+                    "prs": "str",
+                    "ps": "str",
+                    "pt": "str",
+                    "ro": "str",
+                    "ru": "str",
+                    "sk": "str",
+                    "sl": "str",
+                    "sr": "str",
+                    "sv": "str",
+                    "th": "str",
+                    "tr": "str",
+                    "tw": "str",
+                    "uk": "str",
+                    "ur": "str",
+                    "vi": "str",
+                    "zh": "str"
+                },
+                "resources": {
+                    "global": {
+                        "source_languages": [
+                            "list of str with length 1"
+                        ],
+                        "target_languages": [
+                            "list of str with length 1"
+                        ]
+                    },
+                    "password": {
+                        "source_languages": [
+                            "list of str with length 1"
+                        ],
+                        "target_languages": [
+                            "list of str with length 1"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "name": "Search",
+            "schema": {
+                "errors": [
+                    {
+                        "code": "str",
+                        "params": [
+                            "list of str with length 1"
+                        ],
+                        "message": "str",
+                        "path": "str",
+                        "description": "str"
+                    }
+                ],
+                "in": "str",
+                "name": "str",
+                "path": [
+                    "list of str with length 1"
+                ]
+            }
+        }
+    ]
+}

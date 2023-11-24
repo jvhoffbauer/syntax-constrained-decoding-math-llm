@@ -1,0 +1,11 @@
+{
+    "api_list": [
+        {
+            "name": "GetOrderById",
+            "schema": {
+                "code": "int",
+                "message": "str"
+            }
+        }
+    ]
+}

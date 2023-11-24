@@ -1,0 +1,16 @@
+{
+    "api_list": [
+        {
+            "name": "/v1/thesaurus",
+            "schema": {
+                "word": "str",
+                "synonyms": [
+                    "list of str with length 1"
+                ],
+                "antonyms": [
+                    "list of str with length 1"
+                ]
+            }
+        }
+    ]
+}

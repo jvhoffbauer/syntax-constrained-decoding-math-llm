@@ -1,0 +1,114 @@
+{
+    "api_list": [
+        {
+            "name": "Search for Recipes",
+            "schema": {
+                "id": "str",
+                "name": "str",
+                "tags": [
+                    "list of str with length 1"
+                ],
+                "description": "str",
+                "prepareTime": "str",
+                "cookTime": "str",
+                "ingredients": [
+                    {
+                        "name": "str",
+                        "servingSize": {
+                            "units": "str",
+                            "desc": "str",
+                            "qty": "str",
+                            "grams": "str",
+                            "scale": "str"
+                        }
+                    }
+                ],
+                "steps": [
+                    "list of str with length 1"
+                ],
+                "servings": "str",
+                "nutrients": {
+                    "caloriesKCal": "str",
+                    "caloriesKJ": "str",
+                    "totalCarbs": "str",
+                    "netCarbs": "str",
+                    "fiber": "str",
+                    "protein": "str",
+                    "fat": "str"
+                }
+            }
+        },
+        {
+            "name": "Get a Random Recipe",
+            "schema": {
+                "id": "str",
+                "name": "str",
+                "tags": [
+                    "list of str with length 1"
+                ],
+                "description": "str",
+                "prepareTime": "str",
+                "cookTime": "str",
+                "ingredients": [
+                    {
+                        "name": "str",
+                        "servingSize": {
+                            "units": "str",
+                            "qty": "str",
+                            "grams": "str",
+                            "scale": "str"
+                        }
+                    }
+                ],
+                "steps": [
+                    "list of str with length 1"
+                ],
+                "servings": "str",
+                "nutrients": {
+                    "caloriesKCal": "str",
+                    "totalCarbs": "str",
+                    "netCarbs": "str",
+                    "fiber": "str",
+                    "sugar": "str",
+                    "protein": "str",
+                    "fat": "str"
+                }
+            }
+        },
+        {
+            "name": "Get recipe by ID",
+            "schema": {
+                "id": "str",
+                "name": "str",
+                "tags": [
+                    "list of str with length 1"
+                ],
+                "description": "str",
+                "prepareTime": "str",
+                "cookTime": "str",
+                "ingredients": [
+                    {
+                        "name": "str",
+                        "servingSize": {
+                            "units": "str",
+                            "qty": "str"
+                        }
+                    }
+                ],
+                "steps": [
+                    "list of str with length 1"
+                ],
+                "servings": "str",
+                "nutrients": {
+                    "caloriesKCal": "str",
+                    "caloriesKJ": "str",
+                    "totalCarbs": "str",
+                    "netCarbs": "str",
+                    "fiber": "str",
+                    "protein": "str",
+                    "fat": "str"
+                }
+            }
+        }
+    ]
+}

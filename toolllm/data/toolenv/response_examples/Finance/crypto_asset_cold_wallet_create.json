@@ -1,0 +1,16 @@
+{
+    "api_list": [
+        {
+            "name": "GetActiveCurrencyList",
+            "schema": {
+                "_id": "str",
+                "n_id": "int",
+                "display_name": "str",
+                "name": "str",
+                "decimals": "int",
+                "status": "int",
+                "createdAt": "str"
+            }
+        }
+    ]
+}

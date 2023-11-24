@@ -1,0 +1,46 @@
+{
+    "api_list": [
+        {
+            "name": "Get the top articles of all time",
+            "schema": {
+                "title": "str",
+                "url": "str"
+            }
+        },
+        {
+            "name": "Get all the year's top articles",
+            "schema": {
+                "title": "str",
+                "url": "str"
+            }
+        },
+        {
+            "name": "Get the month's top articles",
+            "schema": {
+                "title": "str",
+                "url": "str"
+            }
+        },
+        {
+            "name": "Get all the top articles of the week by default",
+            "schema": {
+                "title": "str",
+                "url": "str"
+            }
+        },
+        {
+            "name": "Get all the latest articles",
+            "schema": {
+                "title": "str",
+                "url": "str"
+            }
+        },
+        {
+            "name": "Get all the relevant articles",
+            "schema": {
+                "title": "str",
+                "url": "str"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "api_list": [
+        {
+            "name": "Timezone",
+            "schema": {
+                "Safezone": "float",
+                "Zones": [
+                    {
+                        "CountryAlpha2": "str",
+                        "Result": "str",
+                        "TimezoneId": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

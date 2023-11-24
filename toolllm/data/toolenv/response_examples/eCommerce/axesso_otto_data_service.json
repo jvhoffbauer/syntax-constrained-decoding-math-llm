@@ -1,0 +1,58 @@
+{
+    "api_list": [
+        {
+            "name": "Keyword search",
+            "schema": {
+                "responseStatus": "str",
+                "responseMessage": "str",
+                "sortStrategy": "str",
+                "domainCode": "str",
+                "keyword": "str",
+                "numberOfProducts": "int",
+                "resultCount": "int",
+                "nextPage": "int",
+                "lastPage": "int",
+                "searchProductDetails": [
+                    {
+                        "productDescription": "str",
+                        "manufacturer": "str",
+                        "asin": "str",
+                        "productId": "str",
+                        "variationId": "str",
+                        "imgUrl": "str",
+                        "price": "float",
+                        "retailPrice": "float",
+                        "dpUrl": "str",
+                        "deliveryMessage": "str",
+                        "sponsored": "bool"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Product Details",
+            "schema": {
+                "responseStatus": "str",
+                "responseMessage": "str",
+                "productTitle": "NoneType",
+                "manufacturer": "NoneType",
+                "asin": "str",
+                "productId": "str",
+                "variationId": "str",
+                "url": "str",
+                "price": "float",
+                "shippingPrice": "float",
+                "features": [
+                    "list of str with length 1"
+                ],
+                "imageUrlList": [
+                    "list of str with length 1"
+                ],
+                "mainImage": {
+                    "imageUrl": "NoneType",
+                    "imageResolution": "NoneType"
+                }
+            }
+        }
+    ]
+}

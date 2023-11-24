@@ -1,0 +1,47 @@
+{
+    "api_list": [
+        {
+            "name": "/titles/utils/lists",
+            "schema": {
+                "entries": "int",
+                "results": "empty list"
+            }
+        },
+        {
+            "name": "/actors/random",
+            "schema": {
+                "entries": "int",
+                "results": [
+                    {
+                        "primaryName": "str",
+                        "primaryProfession": "str",
+                        "knownForTitles": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "/titles/utils/titleTypes",
+            "schema": {
+                "results": [
+                    "list of str with length 3"
+                ]
+            }
+        },
+        {
+            "name": "/actors",
+            "schema": {
+                "results": [
+                    {
+                        "nconst": "str",
+                        "primaryName": "str",
+                        "birthYear": "int",
+                        "deathYear": "int",
+                        "primaryProfession": "str",
+                        "knownForTitles": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

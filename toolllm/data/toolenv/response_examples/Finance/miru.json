@@ -1,0 +1,10 @@
+{
+    "api_list": [
+        {
+            "name": "getAllIntervals",
+            "schema": {
+                "intervals": "empty list"
+            }
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "api_list": [
+        {
+            "name": "GET",
+            "schema": {
+                "id": "int",
+                "status": "str",
+                "fullname": "str",
+                "subsciption_id": "str"
+            }
+        }
+    ]
+}

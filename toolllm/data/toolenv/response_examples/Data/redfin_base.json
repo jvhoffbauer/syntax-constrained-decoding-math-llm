@@ -1,0 +1,144 @@
+{
+    "api_list": [
+        {
+            "name": "Search by URL",
+            "schema": {
+                "data": {
+                    "payload": {
+                        "homes": [
+                            {
+                                "mlsId": {
+                                    "value": "str"
+                                },
+                                "price": {
+                                    "value": "str"
+                                },
+                                "sqFt": {
+                                    "value": "str"
+                                },
+                                "pricePerSqFt": {
+                                    "value": "str"
+                                },
+                                "lotSize": {
+                                    "value": "str"
+                                },
+                                "beds": "str",
+                                "baths": "str",
+                                "fullBaths": "str",
+                                "partialBaths": "str",
+                                "location": {
+                                    "value": "str"
+                                },
+                                "latLong": {
+                                    "value": {
+                                        "latitude": "str",
+                                        "longitude": "str"
+                                    }
+                                },
+                                "streetLine": {
+                                    "value": "str"
+                                },
+                                "city": "str",
+                                "state": "str",
+                                "zip": "str",
+                                "postalCode": {
+                                    "value": "str"
+                                },
+                                "countryCode": "str",
+                                "soldDate": "str",
+                                "searchStatus": "str",
+                                "propertyType": "str"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "name": "Get location infomation by zipcode",
+            "schema": {
+                "data": [
+                    {
+                        "zipCode": "str",
+                        "city": "str",
+                        "state": "str",
+                        "countryName": "str",
+                        "countryCode": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Get zipcode by county",
+            "schema": {
+                "data": [
+                    {
+                        "zipCode": "str",
+                        "city": "str",
+                        "county": "str",
+                        "state": "str",
+                        "usps": "str",
+                        "countryName": "str",
+                        "countryCode": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Get ZipCode by City",
+            "schema": {
+                "data": [
+                    {
+                        "zipCode": "str",
+                        "city": "str",
+                        "county": "str",
+                        "state": "str",
+                        "usps": "str",
+                        "countryName": "str",
+                        "countryCode": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Auto-complete",
+            "schema": {
+                "data": {
+                    "version": "int",
+                    "resultCode": "int",
+                    "payload": {
+                        "sections": [
+                            {
+                                "rows": [
+                                    {
+                                        "id": "str",
+                                        "type": "str",
+                                        "name": "str",
+                                        "subName": "str",
+                                        "url": "str",
+                                        "active": "bool",
+                                        "countryCode": "str"
+                                    }
+                                ],
+                                "name": "str"
+                            }
+                        ],
+                        "exactMatch": {
+                            "id": "str",
+                            "type": "str",
+                            "name": "str",
+                            "subName": "str",
+                            "url": "str",
+                            "active": "bool",
+                            "countryCode": "str"
+                        },
+                        "responseTime": "int",
+                        "hasFakeResults": "bool",
+                        "isGeocoded": "bool",
+                        "isRedfinServiced": "bool"
+                    }
+                }
+            }
+        }
+    ]
+}

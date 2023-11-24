@@ -1,0 +1,21 @@
+{
+    "api_list": [
+        {
+            "name": "Find books",
+            "schema": {
+                "detail": [
+                    {
+                        "loc": [
+                            "list of str with length 1"
+                        ],
+                        "msg": "str",
+                        "type": "str",
+                        "ctx": {
+                            "limit_value": "int"
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,229 @@
+{
+    "api_list": [
+        {
+            "name": "Place Distance",
+            "schema": {
+                "errors": [
+                    {
+                        "code": "str",
+                        "message": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Place Time",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Place Date-Time",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Place Located In",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Place Details",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "City Date-Time",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "City Located In",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Cities",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Places Near Location",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Places Near Place",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Country Places",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Country Region Divisions",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Country Region Cities",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Country Region Details",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Country Regions",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Country Details",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "City Time",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "City Distance",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Cities Near Location",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Admin Division Details",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Cities Near Division",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Admin Divisions",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Country Region Places",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Places",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Countries",
+            "schema": {
+                "data": [
+                    {
+                        "code": "str",
+                        "currencyCodes": "empty list",
+                        "name": "str",
+                        "wikiDataId": "str"
+                    }
+                ],
+                "metadata": {
+                    "totalCount": "int"
+                }
+            }
+        },
+        {
+            "name": "Time-Zone",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Time-Zones",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Currencies",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "City Details",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Admin Divisions Near Location",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Admin Divisions Near Division",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Time-Zone Time",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Languages",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Locales",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Cities Near City",
+            "schema": {
+                "message": "str"
+            }
+        }
+    ]
+}

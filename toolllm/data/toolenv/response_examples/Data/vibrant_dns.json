@@ -1,0 +1,11 @@
+{
+    "api_list": [
+        {
+            "name": "Get DNS Records",
+            "schema": {
+                "a": "str",
+                "mx": "str"
+            }
+        }
+    ]
+}

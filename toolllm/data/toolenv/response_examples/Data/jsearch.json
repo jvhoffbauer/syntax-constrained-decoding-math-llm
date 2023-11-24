@@ -1,0 +1,38 @@
+{
+    "api_list": [
+        {
+            "name": "Job Details",
+            "schema": {
+                "status": "str",
+                "request_id": "str",
+                "parameters": {
+                    "job_id": "str"
+                },
+                "data": "str"
+            }
+        },
+        {
+            "name": "Estimated Salary",
+            "schema": {
+                "status": "str",
+                "parameters": {
+                    "job_title": "str",
+                    "location": "str",
+                    "radius": "int"
+                },
+                "data": [
+                    {
+                        "location": "str",
+                        "job_title": "str",
+                        "publisher_name": "str",
+                        "min_salary": "int",
+                        "max_salary": "int",
+                        "median_salary": "int",
+                        "salary_period": "str",
+                        "salary_currency": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

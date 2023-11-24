@@ -1,0 +1,56 @@
+{
+    "api_list": [
+        {
+            "name": "getDateTimeByAddress",
+            "schema": {
+                "code": "int",
+                "status": "str",
+                "data": {
+                    "iso8601": "str",
+                    "timestamp": "str",
+                    "timezone": {
+                        "name": "str",
+                        "offset": {
+                            "gmt": [
+                                "list of str with length 1"
+                            ],
+                            "utc": "str"
+                        },
+                        "abbreviation": "str"
+                    },
+                    "time": {
+                        "hour": {
+                            "24": "str",
+                            "12": "str"
+                        },
+                        "minute": "str",
+                        "second": "str"
+                    },
+                    "day": {
+                        "ofmonth": "str",
+                        "ofweek": "str",
+                        "ofyear": "str",
+                        "name": "str",
+                        "abbreviation": "str"
+                    },
+                    "month": {
+                        "number": "str",
+                        "name": "str",
+                        "abbreviation": "str"
+                    },
+                    "week": {
+                        "ofyear": "str"
+                    },
+                    "year": {
+                        "number": "str"
+                    },
+                    "coordinates": {
+                        "latitude": "float",
+                        "longitude": "float"
+                    },
+                    "address": "str"
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,724 @@
+{
+    "api_list": [
+        {
+            "name": "Recent Earthquakes",
+            "schema": {
+                "httpStatus": "str",
+                "noun": "str",
+                "verb": "str",
+                "errorCode": "str",
+                "errors": "str",
+                "friendlyError": "str",
+                "result": "str",
+                "count": "str",
+                "data": [
+                    {
+                        "id": "str",
+                        "magnitude": "str",
+                        "type": "str",
+                        "title": "str",
+                        "date": "str",
+                        "time": "str",
+                        "updated": "str",
+                        "url": "str",
+                        "detailUrl": "str",
+                        "felt": "str",
+                        "cdi": "str",
+                        "mmi": "str",
+                        "alert": "str",
+                        "status": "str",
+                        "tsunami": "str",
+                        "sig": "str",
+                        "net": "str",
+                        "code": "str",
+                        "ids": "str",
+                        "sources": "str",
+                        "types": "str",
+                        "nst": "str",
+                        "dmin": "str",
+                        "rms": "str",
+                        "gap": "str",
+                        "magType": "str",
+                        "geometryType": "str",
+                        "depth": "str",
+                        "latitude": "str",
+                        "longitude": "str",
+                        "place": "str",
+                        "distanceKM": "str",
+                        "placeOnly": "str",
+                        "location": "str",
+                        "continent": "str",
+                        "country": "str",
+                        "subnational": "str",
+                        "city": "str",
+                        "locality": "str",
+                        "postcode": "str",
+                        "what3words": "str",
+                        "timezone": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "M1.0+ Earthquakes, Past Day",
+            "schema": {
+                "httpStatus": "str",
+                "result": "str",
+                "count": "str",
+                "data": [
+                    {
+                        "magnitude": "str",
+                        "type": "str",
+                        "title": "str",
+                        "date": "str",
+                        "time": "str",
+                        "updated": "str",
+                        "url": "str",
+                        "place": "str",
+                        "latitude": "str",
+                        "longitude": "str",
+                        "locationDetails": [
+                            {
+                                "name": "str",
+                                "description": "str",
+                                "adminLevel": "str"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "name": "All Earthquakes, Past 30 Days",
+            "schema": {
+                "httpStatus": "str",
+                "noun": "str",
+                "verb": "str",
+                "errorCode": "str",
+                "errors": "str",
+                "friendlyError": "str",
+                "result": "str",
+                "count": "str",
+                "data": [
+                    {
+                        "magnitude": "str",
+                        "type": "str",
+                        "title": "str",
+                        "date": "str",
+                        "time": "str",
+                        "updated": "str",
+                        "url": "str",
+                        "detailUrl": "str",
+                        "felt": "str",
+                        "cdi": "str",
+                        "mmi": "str",
+                        "alert": "str",
+                        "status": "str",
+                        "tsunami": "str",
+                        "sig": "str",
+                        "net": "str",
+                        "code": "str",
+                        "ids": "str",
+                        "sources": "str",
+                        "types": "str",
+                        "nst": "str",
+                        "dmin": "str",
+                        "rms": "str",
+                        "gap": "str",
+                        "magType": "str",
+                        "geometryType": "str",
+                        "depth": "str",
+                        "latitude": "str",
+                        "longitude": "str",
+                        "place": "str",
+                        "distanceKM": "str",
+                        "placeOnly": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "M1.0+ Earthquakes, Past 30 Days",
+            "schema": {
+                "httpStatus": "str",
+                "noun": "str",
+                "verb": "str",
+                "errorCode": "str",
+                "errors": "str",
+                "friendlyError": "str",
+                "result": "str",
+                "count": "str",
+                "data": [
+                    {
+                        "magnitude": "str",
+                        "title": "str",
+                        "date": "str",
+                        "time": "str",
+                        "url": "str",
+                        "place": "str",
+                        "location": "str",
+                        "continent": "str",
+                        "country": "str",
+                        "city": "str",
+                        "timezone": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "M2.5+ Earthquakes, Past 30 Days",
+            "schema": {
+                "httpStatus": "str",
+                "noun": "str",
+                "verb": "str",
+                "errorCode": "str",
+                "errors": "str",
+                "friendlyError": "str",
+                "result": "str",
+                "count": "str",
+                "data": [
+                    {
+                        "magnitude": "str",
+                        "type": "str",
+                        "title": "str",
+                        "date": "str",
+                        "place": "str",
+                        "location": "str",
+                        "country": "str",
+                        "distanceKM": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "M4.5+ Earthquakes, Past 30 Days",
+            "schema": {
+                "httpStatus": "str",
+                "noun": "str",
+                "verb": "str",
+                "errorCode": "str",
+                "errors": "str",
+                "friendlyError": "str",
+                "result": "str",
+                "count": "str",
+                "data": [
+                    {
+                        "id": "str",
+                        "magnitude": "str",
+                        "type": "str",
+                        "title": "str",
+                        "date": "str",
+                        "time": "str",
+                        "updated": "str",
+                        "url": "str",
+                        "detailUrl": "str",
+                        "felt": "str",
+                        "cdi": "str",
+                        "mmi": "str",
+                        "alert": "str",
+                        "status": "str",
+                        "tsunami": "str",
+                        "sig": "str",
+                        "net": "str",
+                        "code": "str",
+                        "place": "str",
+                        "distanceKM": "str",
+                        "placeOnly": "str",
+                        "location": "str",
+                        "continent": "str",
+                        "country": "str",
+                        "subnational": "str",
+                        "city": "str",
+                        "locality": "str",
+                        "postcode": "str",
+                        "what3words": "str",
+                        "timezone": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Significant Earthquakes, Past 30 Days",
+            "schema": {
+                "httpStatus": "str",
+                "noun": "str",
+                "verb": "str",
+                "errorCode": "str",
+                "errors": "str",
+                "friendlyError": "str",
+                "result": "str",
+                "count": "str",
+                "data": [
+                    {
+                        "id": "str",
+                        "magnitude": "str",
+                        "type": "str",
+                        "title": "str",
+                        "date": "str",
+                        "time": "str",
+                        "updated": "str",
+                        "url": "str",
+                        "detailUrl": "str",
+                        "felt": "str",
+                        "cdi": "str",
+                        "mmi": "str",
+                        "alert": "str",
+                        "status": "str",
+                        "tsunami": "str",
+                        "sig": "str",
+                        "net": "str",
+                        "code": "str",
+                        "ids": "str",
+                        "sources": "str",
+                        "types": "str",
+                        "nst": "str",
+                        "dmin": "str",
+                        "rms": "str",
+                        "gap": "str",
+                        "magType": "str",
+                        "geometryType": "str",
+                        "depth": "str",
+                        "latitude": "str",
+                        "longitude": "str",
+                        "place": "str",
+                        "distanceKM": "str",
+                        "placeOnly": "str",
+                        "location": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "All Earthquakes, Past 7 Days",
+            "schema": {
+                "httpStatus": "str",
+                "noun": "str",
+                "verb": "str",
+                "errorCode": "str",
+                "friendlyError": "str",
+                "result": "str",
+                "count": "str",
+                "data": [
+                    {
+                        "magnitude": "str",
+                        "type": "str",
+                        "title": "str",
+                        "date": "str",
+                        "time": "str",
+                        "updated": "str",
+                        "url": "str",
+                        "detailUrl": "str",
+                        "felt": "str",
+                        "cdi": "str",
+                        "mmi": "str",
+                        "alert": "str",
+                        "status": "str",
+                        "tsunami": "str",
+                        "sig": "str",
+                        "net": "str",
+                        "code": "str",
+                        "ids": "str",
+                        "sources": "str",
+                        "types": "str",
+                        "nst": "str",
+                        "dmin": "str",
+                        "rms": "str",
+                        "gap": "str",
+                        "magType": "str",
+                        "geometryType": "str",
+                        "depth": "str",
+                        "latitude": "str",
+                        "longitude": "str",
+                        "place": "str",
+                        "distanceKM": "str",
+                        "placeOnly": "str",
+                        "location": "str",
+                        "continent": "str",
+                        "country": "str",
+                        "subnational": "str",
+                        "city": "str",
+                        "locality": "str",
+                        "postcode": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "M1.0+ Earthquakes, Past 7 Days",
+            "schema": {
+                "httpStatus": "str",
+                "noun": "str",
+                "verb": "str",
+                "errorCode": "str",
+                "errors": "str",
+                "friendlyError": "str",
+                "result": "str",
+                "count": "str",
+                "data": [
+                    {
+                        "id": "str",
+                        "magnitude": "str",
+                        "type": "str",
+                        "title": "str",
+                        "date": "str",
+                        "time": "str",
+                        "updated": "str",
+                        "url": "str",
+                        "detailUrl": "str",
+                        "felt": "str",
+                        "cdi": "str",
+                        "mmi": "str",
+                        "alert": "str",
+                        "status": "str",
+                        "tsunami": "str",
+                        "sig": "str",
+                        "net": "str",
+                        "code": "str",
+                        "ids": "str",
+                        "sources": "str",
+                        "types": "str",
+                        "nst": "str",
+                        "dmin": "str",
+                        "rms": "str",
+                        "gap": "str",
+                        "magType": "str",
+                        "geometryType": "str",
+                        "depth": "str",
+                        "latitude": "str",
+                        "longitude": "str",
+                        "place": "str",
+                        "distanceKM": "str",
+                        "placeOnly": "str",
+                        "location": "str",
+                        "continent": "str",
+                        "country": "str",
+                        "subnational": "str",
+                        "city": "str",
+                        "locality": "str",
+                        "postcode": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "M2.5+ Earthquakes, Past 7 Days",
+            "schema": {
+                "httpStatus": "str",
+                "noun": "str",
+                "verb": "str",
+                "errorCode": "str",
+                "errors": "str",
+                "friendlyError": "str",
+                "result": "str",
+                "count": "str",
+                "data": [
+                    {
+                        "magnitude": "str",
+                        "type": "str",
+                        "title": "str",
+                        "date": "str",
+                        "time": "str",
+                        "updated": "str",
+                        "url": "str",
+                        "detailUrl": "str",
+                        "felt": "str",
+                        "alert": "str",
+                        "status": "str",
+                        "tsunami": "str",
+                        "sig": "str",
+                        "net": "str",
+                        "code": "str",
+                        "ids": "str",
+                        "sources": "str",
+                        "types": "str",
+                        "dmin": "str",
+                        "rms": "str",
+                        "gap": "str",
+                        "magType": "str",
+                        "geometryType": "str",
+                        "depth": "str",
+                        "latitude": "str",
+                        "longitude": "str",
+                        "place": "str",
+                        "distanceKM": "str",
+                        "placeOnly": "str",
+                        "location": "str",
+                        "continent": "str",
+                        "country": "str",
+                        "subnational": "str",
+                        "city": "str",
+                        "locality": "str",
+                        "postcode": "str",
+                        "what3words": "str",
+                        "timezone": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "M4.5+ Earthquakes, Past 7 Days",
+            "schema": {
+                "httpStatus": "str",
+                "result": "str",
+                "count": "str",
+                "data": [
+                    {
+                        "id": "str",
+                        "magnitude": "str",
+                        "type": "str",
+                        "title": "str",
+                        "date": "str",
+                        "time": "str",
+                        "updated": "str",
+                        "url": "str",
+                        "place": "str",
+                        "distanceKM": "str",
+                        "placeOnly": "str",
+                        "location": "str",
+                        "continent": "str",
+                        "country": "str",
+                        "subnational": "str",
+                        "city": "str",
+                        "locality": "str",
+                        "postcode": "str",
+                        "what3words": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Significant Earthquakes, Past 7 Days",
+            "schema": {
+                "httpStatus": "str",
+                "noun": "str",
+                "verb": "str",
+                "errorCode": "str",
+                "errors": "str",
+                "friendlyError": "str",
+                "result": "str",
+                "count": "str",
+                "data": [
+                    {
+                        "magnitude": "str",
+                        "type": "str",
+                        "title": "str",
+                        "date": "str",
+                        "time": "str",
+                        "updated": "str",
+                        "url": "str",
+                        "detailUrl": "str",
+                        "felt": "str",
+                        "cdi": "str",
+                        "mmi": "str",
+                        "alert": "str",
+                        "status": "str",
+                        "tsunami": "str",
+                        "sig": "str",
+                        "net": "str",
+                        "code": "str",
+                        "ids": "str",
+                        "sources": "str",
+                        "types": "str",
+                        "nst": "str",
+                        "dmin": "str",
+                        "rms": "str",
+                        "gap": "str",
+                        "magType": "str",
+                        "geometryType": "str",
+                        "depth": "str",
+                        "latitude": "str",
+                        "longitude": "str",
+                        "place": "str",
+                        "distanceKM": "str",
+                        "placeOnly": "str",
+                        "location": "str",
+                        "continent": "str",
+                        "country": "str",
+                        "subnational": "str",
+                        "city": "str",
+                        "locality": "str",
+                        "postcode": "str",
+                        "what3words": "str",
+                        "timezone": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "M4.5+ Earthquakes, Past Day",
+            "schema": {
+                "httpStatus": "str",
+                "result": "str",
+                "count": "str",
+                "data": [
+                    {
+                        "id": "str",
+                        "magnitude": "str",
+                        "title": "str",
+                        "date": "str",
+                        "time": "str",
+                        "updated": "str",
+                        "url": "str",
+                        "detailUrl": "str",
+                        "status": "str",
+                        "place": "str",
+                        "distanceKM": "str",
+                        "placeOnly": "str",
+                        "location": "str",
+                        "continent": "str",
+                        "country": "str",
+                        "city": "str",
+                        "postcode": "str",
+                        "what3words": "str",
+                        "timezone": "str",
+                        "locationDetails": [
+                            {
+                                "name": "str",
+                                "description": "str",
+                                "adminLevel": "str"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "name": "M2.5+ Earthquakes, Past Day",
+            "schema": {
+                "httpStatus": "str",
+                "noun": "str",
+                "verb": "str",
+                "errorCode": "str",
+                "errors": "str",
+                "friendlyError": "str",
+                "result": "str",
+                "count": "str",
+                "data": [
+                    {
+                        "magnitude": "str",
+                        "type": "str",
+                        "title": "str",
+                        "date": "str",
+                        "time": "str",
+                        "updated": "str",
+                        "url": "str",
+                        "detailUrl": "str",
+                        "felt": "str",
+                        "cdi": "str",
+                        "mmi": "str",
+                        "alert": "str",
+                        "status": "str",
+                        "tsunami": "str",
+                        "sig": "str",
+                        "net": "str",
+                        "code": "str",
+                        "ids": "str",
+                        "sources": "str",
+                        "types": "str",
+                        "nst": "str",
+                        "dmin": "str",
+                        "rms": "str",
+                        "gap": "str",
+                        "magType": "str",
+                        "geometryType": "str",
+                        "depth": "str",
+                        "latitude": "str",
+                        "longitude": "str",
+                        "place": "str",
+                        "distanceKM": "str",
+                        "placeOnly": "str",
+                        "location": "str",
+                        "continent": "str",
+                        "country": "str",
+                        "subnational": "str",
+                        "city": "str",
+                        "locality": "str",
+                        "postcode": "str",
+                        "what3words": "str",
+                        "timezone": "str",
+                        "locationDetails": [
+                            {
+                                "name": "str",
+                                "description": "str",
+                                "geonameId": "str",
+                                "adminLevel": "str"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "name": "M1.0+ Earthquakes, Past Hour",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "All Earthquakes, Past Day",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Significant Earthquakes, Past Day",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "All Earthquakes, Past Hour",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "M2.5+ Earthquakes, Past Hour",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "M4.5+ Earthquakes, Past Hour",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Significant Earthquakes, Past Hour",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "API Test",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Earthquakes By Date",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Types",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Earthquakes",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Latest Earthquake Near Me",
+            "schema": {
+                "message": "str"
+            }
+        }
+    ]
+}

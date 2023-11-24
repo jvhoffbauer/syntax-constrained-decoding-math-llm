@@ -1,0 +1,50 @@
+{
+    "api_list": [
+        {
+            "name": "Directions Between 2 Locations",
+            "schema": {
+                "distance": "str",
+                "duration": "str",
+                "steps": [
+                    {
+                        "direction": "str",
+                        "distance": "str",
+                        "duration": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Reverse Geocode",
+            "schema": {
+                "amenity": "str",
+                "category": "str",
+                "country": "str",
+                "state": "str",
+                "suburb": "str"
+            }
+        },
+        {
+            "name": "Facilities Lookup",
+            "schema": {
+                "hospital": [
+                    {
+                        "amenity": "str",
+                        "display_name": "str",
+                        "latitude": "str",
+                        "longitude": "str",
+                        "website": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Geocode",
+            "schema": {
+                "display_name": "str",
+                "latitude": "float",
+                "longitude": "float"
+            }
+        }
+    ]
+}

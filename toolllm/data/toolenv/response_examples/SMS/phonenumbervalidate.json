@@ -1,0 +1,41 @@
+{
+    "api_list": [
+        {
+            "name": "ValidateTest",
+            "schema": {
+                "phoneNumberEntered": "str",
+                "defaultCountryEntered": "str",
+                "languageEntered": "str",
+                "countryCode": "str",
+                "nationalNumber": "str",
+                "countryCodeSource": "str",
+                "isPossibleNumber": "bool",
+                "isValidNumber": "bool",
+                "phoneNumberRegion": "str",
+                "numberType": "str",
+                "E164Format": "str",
+                "originalFormat": "str",
+                "nationalFormat": "str",
+                "internationalFormat": "str",
+                "location": "str"
+            }
+        },
+        {
+            "name": "Validate",
+            "schema": {
+                "phoneNumberEntered": "str",
+                "defaultCountryEntered": "str",
+                "languageEntered": "str",
+                "countryCode": "str",
+                "nationalNumber": "str",
+                "E164Format": "str",
+                "originalFormat": "str",
+                "nationalFormat": "str",
+                "internationalFormat": "str",
+                "location": "str",
+                "timeZone_s": "str",
+                "carrier": "str"
+            }
+        }
+    ]
+}

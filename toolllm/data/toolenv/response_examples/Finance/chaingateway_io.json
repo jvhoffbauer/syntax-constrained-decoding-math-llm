@@ -1,0 +1,136 @@
+{
+    "api_list": [
+        {
+            "name": "clearAddress",
+            "schema": {
+                "ok": "bool",
+                "description": "str"
+            }
+        },
+        {
+            "name": "listSubscribedAddresses",
+            "schema": {
+                "ok": "bool",
+                "description": "str"
+            }
+        },
+        {
+            "name": "getLastBlockNumber",
+            "schema": {
+                "ok": "bool",
+                "description": "str"
+            }
+        },
+        {
+            "name": "getTransactions",
+            "schema": {
+                "ok": "bool",
+                "description": "str"
+            }
+        },
+        {
+            "name": "subscribeAddress",
+            "schema": {
+                "ok": "bool",
+                "description": "str"
+            }
+        },
+        {
+            "name": "unsubscribeAddress",
+            "schema": {
+                "ok": "bool",
+                "description": "str"
+            }
+        },
+        {
+            "name": "getToken",
+            "schema": {
+                "ok": "bool",
+                "description": "str"
+            }
+        },
+        {
+            "name": "sendToken",
+            "schema": {
+                "ok": "bool",
+                "description": "str"
+            }
+        },
+        {
+            "name": "getEthereumBalance",
+            "schema": {
+                "ok": "bool"
+            }
+        },
+        {
+            "name": "listAddresses",
+            "schema": {
+                "ok": "bool",
+                "description": "str"
+            }
+        },
+        {
+            "name": "getExchangeRate",
+            "schema": {
+                "ok": "bool",
+                "description": "str"
+            }
+        },
+        {
+            "name": "sendEthereum",
+            "schema": {
+                "ok": "bool",
+                "description": "str"
+            }
+        },
+        {
+            "name": "getTokenBalance",
+            "schema": {
+                "ok": "bool",
+                "description": "str"
+            }
+        },
+        {
+            "name": "getGasPrice",
+            "schema": {
+                "ok": "bool",
+                "description": "str"
+            }
+        },
+        {
+            "name": "newAddress",
+            "schema": {
+                "ok": "bool",
+                "description": "str"
+            }
+        },
+        {
+            "name": "deleteAddress",
+            "schema": {
+                "ok": "bool",
+                "description": "str"
+            }
+        },
+        {
+            "name": "getBlock",
+            "schema": {
+                "ok": "bool",
+                "description": "str"
+            }
+        },
+        {
+            "name": "exportAddress",
+            "schema": {
+                "ok": "bool",
+                "description": "str"
+            }
+        },
+        {
+            "name": "importAddress",
+            "schema": {
+                "ok": "bool",
+                "description": "str"
+            }
+        }
+    ]
+}

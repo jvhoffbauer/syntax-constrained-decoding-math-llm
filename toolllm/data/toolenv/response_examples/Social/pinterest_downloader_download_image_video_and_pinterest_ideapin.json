@@ -1,0 +1,22 @@
+{
+    "api_list": [
+        {
+            "name": "ideapin download (pinterest reels)",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "video download",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Image download",
+            "schema": {
+                "message": "str"
+            }
+        }
+    ]
+}

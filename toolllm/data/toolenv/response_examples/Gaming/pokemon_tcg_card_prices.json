@@ -1,0 +1,147 @@
+{
+    "api_list": [
+        {
+            "name": "Get Many Cards",
+            "schema": {
+                "results": [
+                    {
+                        "cardId": "str",
+                        "name": "str",
+                        "cardNumber": "str",
+                        "setNumber": "str",
+                        "setId": "str",
+                        "set": "str",
+                        "series": "str",
+                        "variant": "str",
+                        "superType": "str",
+                        "types": "str",
+                        "rarity": "str",
+                        "pokemon": "str",
+                        "artist": "str",
+                        "minSoldPrice": {
+                            "amountInMinorUnits": "str",
+                            "currencyCode": "str"
+                        },
+                        "lowSoldPrice": {
+                            "amountInMinorUnits": "str",
+                            "currencyCode": "str"
+                        },
+                        "soldPrice": {
+                            "amountInMinorUnits": "str",
+                            "currencyCode": "str"
+                        },
+                        "highSoldPrice": {
+                            "amountInMinorUnits": "str",
+                            "currencyCode": "str"
+                        },
+                        "maxSoldPrice": {
+                            "amountInMinorUnits": "str",
+                            "currencyCode": "str"
+                        },
+                        "soldVolume": "str",
+                        "minListingPrice": {
+                            "amountInMinorUnits": "str",
+                            "currencyCode": "str"
+                        },
+                        "lowListingPrice": {
+                            "amountInMinorUnits": "str",
+                            "currencyCode": "str"
+                        },
+                        "listingPrice": {
+                            "amountInMinorUnits": "str",
+                            "currencyCode": "str"
+                        },
+                        "highListingPrice": {
+                            "amountInMinorUnits": "str",
+                            "currencyCode": "str"
+                        },
+                        "maxListingPrice": {
+                            "amountInMinorUnits": "str",
+                            "currencyCode": "str"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Get One Card by Id",
+            "schema": {
+                "cardId": "str",
+                "name": "str",
+                "cardNumber": "str",
+                "setNumber": "str",
+                "setId": "str",
+                "set": "str",
+                "series": "str",
+                "variant": "str",
+                "superType": "str",
+                "types": [
+                    "list of str with length 1"
+                ],
+                "subTypes": [
+                    "list of str with length 1"
+                ],
+                "rarity": "str",
+                "pokemon": [
+                    "list of str with length 1"
+                ],
+                "artist": "str",
+                "minSoldPrice": {
+                    "amountInMinorUnits": "str",
+                    "currencyCode": "str"
+                },
+                "lowSoldPrice": {
+                    "amountInMinorUnits": "str",
+                    "currencyCode": "str"
+                },
+                "soldPrice": {
+                    "amountInMinorUnits": "str",
+                    "currencyCode": "str"
+                },
+                "highSoldPrice": {
+                    "amountInMinorUnits": "str",
+                    "currencyCode": "str"
+                },
+                "maxSoldPrice": {
+                    "amountInMinorUnits": "str",
+                    "currencyCode": "str"
+                },
+                "soldVolume": "str",
+                "minListingPrice": {
+                    "amountInMinorUnits": "str",
+                    "currencyCode": "str"
+                },
+                "lowListingPrice": {
+                    "amountInMinorUnits": "str",
+                    "currencyCode": "str"
+                },
+                "listingPrice": {
+                    "amountInMinorUnits": "str",
+                    "currencyCode": "str"
+                },
+                "highListingPrice": {
+                    "amountInMinorUnits": "str",
+                    "currencyCode": "str"
+                }
+            }
+        },
+        {
+            "name": "Get One Set By Id",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get Many Sets",
+            "schema": {
+                "results": [
+                    {
+                        "set": "str",
+                        "series": "str",
+                        "name": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "api_list": [
+        {
+            "name": "List of Memes",
+            "schema": {
+                "type": "str",
+                "genre": "str",
+                "memes_list": [
+                    {
+                        "title": "str",
+                        "url": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Random Meme",
+            "schema": {
+                "title": "str",
+                "url": "str",
+                "type": "str"
+            }
+        }
+    ]
+}

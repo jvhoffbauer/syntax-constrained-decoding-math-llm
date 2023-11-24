@@ -1,0 +1,23 @@
+{
+    "api_list": [
+        {
+            "name": "InfoBox",
+            "schema": {
+                "Original music": "str",
+                "Role-playing": "str",
+                "Years": "str",
+                "Animated series": "str",
+                "Television series": "str",
+                "Novel(s)": "str",
+                "Short film(s)": "str",
+                "Short stories": "str",
+                "Comic strip(s)": "str",
+                "Radio program(s)": "str",
+                "Original work": "str",
+                "Comics": "str",
+                "Film(s)": "str",
+                "Video game(s)": "str"
+            }
+        }
+    ]
+}

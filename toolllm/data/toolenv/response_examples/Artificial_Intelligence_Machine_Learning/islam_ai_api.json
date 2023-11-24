@@ -1,0 +1,18 @@
+{
+    "api_list": [
+        {
+            "name": "Have a Chat with our Bot",
+            "schema": {
+                "status": "int",
+                "response": "str"
+            }
+        },
+        {
+            "name": "Get an Answer to your Question",
+            "schema": {
+                "status": "int",
+                "response": "str"
+            }
+        }
+    ]
+}

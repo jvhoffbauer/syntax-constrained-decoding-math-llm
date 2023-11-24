@@ -1,0 +1,10 @@
+{
+    "api_list": [
+        {
+            "name": "Red colour QR code generator",
+            "schema": {
+                "message": "str"
+            }
+        }
+    ]
+}

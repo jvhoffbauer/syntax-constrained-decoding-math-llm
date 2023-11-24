@@ -1,0 +1,149 @@
+{
+    "api_list": [
+        {
+            "name": "Time-Series",
+            "schema": {
+                "success": "str",
+                "timeseries": "str",
+                "start_date": "str",
+                "end_date": "str",
+                "base": "str",
+                "rates": {}
+            }
+        },
+        {
+            "name": "Supported Symbols",
+            "schema": {
+                "ADA": {
+                    "id": "str",
+                    "name": "str"
+                },
+                "AED": {
+                    "id": "str",
+                    "name": "str"
+                },
+                "AFN": {
+                    "id": "str",
+                    "name": "str"
+                },
+                "ALL": {
+                    "id": "str",
+                    "name": "str"
+                },
+                "ALU": {
+                    "id": "str",
+                    "name": "str"
+                },
+                "AMD": {
+                    "id": "str",
+                    "name": "str"
+                },
+                "ANG": {
+                    "id": "str",
+                    "name": "str"
+                },
+                "ANTIMONY": {
+                    "id": "str",
+                    "name": "str"
+                },
+                "AOA": {
+                    "id": "str",
+                    "name": "str"
+                },
+                "ARS": {
+                    "id": "str",
+                    "name": "str"
+                },
+                "AUD": {
+                    "id": "str",
+                    "name": "str"
+                },
+                "AWG": {
+                    "id": "str",
+                    "name": "str"
+                },
+                "AZN": {
+                    "id": "str",
+                    "name": "str"
+                },
+                "BAM": {
+                    "id": "str",
+                    "name": "str"
+                },
+                "BBD": {
+                    "id": "str",
+                    "name": "str"
+                },
+                "BCH": {
+                    "id": "str",
+                    "name": "str"
+                },
+                "BDT": {
+                    "id": "str",
+                    "name": "str"
+                },
+                "BGN": {
+                    "id": "str",
+                    "name": "str"
+                },
+                "BHD": {
+                    "id": "str",
+                    "name": "str"
+                },
+                "BIF": {
+                    "id": "str",
+                    "name": "str"
+                },
+                "BITUMEN": {
+                    "id": "str",
+                    "name": "str"
+                },
+                "BMD": {
+                    "id": "str",
+                    "name": "str"
+                },
+                "BND": {
+                    "id": "str",
+                    "name": "str"
+                },
+                "BOB": {
+                    "id": "str",
+                    "name": "str"
+                },
+                "BRASS": {
+                    "id": "str",
+                    "name": "str"
+                },
+                "BR": {
+                    "id": "str",
+                    "name": "str"
+                }
+            }
+        },
+        {
+            "name": "Historical Rates",
+            "schema": {
+                "success": "bool",
+                "historical": "bool",
+                "date": "str",
+                "base": "str",
+                "rates": {
+                    "USD": "int",
+                    "XAU": "float"
+                }
+            }
+        },
+        {
+            "name": "Latest Rates",
+            "schema": {
+                "success": "bool",
+                "base": "str",
+                "rates": {
+                    "USD": "int",
+                    "XAU": "float",
+                    "USDXAU": "float"
+                }
+            }
+        }
+    ]
+}

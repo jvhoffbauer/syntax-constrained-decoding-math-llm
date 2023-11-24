@@ -1,0 +1,16 @@
+{
+    "api_list": [
+        {
+            "name": "notes",
+            "schema": {
+                "messages": "str"
+            }
+        },
+        {
+            "name": "notes 2",
+            "schema": {
+                "messages": "str"
+            }
+        }
+    ]
+}

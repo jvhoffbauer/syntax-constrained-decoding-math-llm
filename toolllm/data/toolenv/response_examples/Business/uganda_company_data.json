@@ -1,0 +1,19 @@
+{
+    "api_list": [
+        {
+            "name": "Search by company name",
+            "schema": {
+                "name": "str",
+                "type": "str",
+                "subType": "str",
+                "no": "str",
+                "status": "str",
+                "score": {
+                    "sound": "float",
+                    "text": "float"
+                },
+                "similarity": "float"
+            }
+        }
+    ]
+}

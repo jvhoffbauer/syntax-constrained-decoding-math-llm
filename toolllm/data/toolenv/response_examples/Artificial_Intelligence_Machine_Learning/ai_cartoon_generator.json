@@ -1,0 +1,12 @@
+{
+    "api_list": [
+        {
+            "name": "Query asynchronous task results",
+            "schema": {
+                "error_code": "int",
+                "error_msg": "str",
+                "error_code_str": "str"
+            }
+        }
+    ]
+}

@@ -1,0 +1,37 @@
+{
+    "api_list": [
+        {
+            "name": "getMatchesByTeam",
+            "schema": {
+                "id": "int",
+                "date": "str",
+                "player_of_match": "str",
+                "venue": "str",
+                "team1": "str",
+                "team2": "str",
+                "toss_winner": "str",
+                "toss_decision": "str",
+                "winner": "str",
+                "result_margin": "float"
+            }
+        },
+        {
+            "name": "getMatchs",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "getMatchByWinner",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "getMatchesByCity",
+            "schema": {
+                "message": "str"
+            }
+        }
+    ]
+}

@@ -1,0 +1,49 @@
+{
+    "api_list": [
+        {
+            "name": "Companies balance sheet statements",
+            "schema": {
+                "Error Message": "str"
+            }
+        },
+        {
+            "name": "Companies Profile",
+            "schema": {
+                "Error Message": "str"
+            }
+        },
+        {
+            "name": "Stock Quote Price",
+            "schema": {
+                "symbol": "str",
+                "name": "str",
+                "price": "float",
+                "changesPercentage": "float",
+                "change": "float",
+                "dayLow": "float",
+                "dayHigh": "float",
+                "marketCap": "int",
+                "exchange": "str",
+                "volume": "int",
+                "open": "float",
+                "previousClose": "float",
+                "eps": "float",
+                "pe": "float",
+                "sharesOutstanding": "int",
+                "timestamp": "int"
+            }
+        },
+        {
+            "name": "Earning Call Transcript API PREMIUM",
+            "schema": {
+                "Error Message": "str"
+            }
+        },
+        {
+            "name": "Companies cash flow statements",
+            "schema": {
+                "Error Message": "str"
+            }
+        }
+    ]
+}

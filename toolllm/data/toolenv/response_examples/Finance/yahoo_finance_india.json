@@ -1,0 +1,14 @@
+{
+    "api_list": [
+        {
+            "name": "IndianMarketNews",
+            "schema": {
+                "title": "str",
+                "summary": "str",
+                "publisher_name": "str",
+                "type": "str",
+                "source_url": "str"
+            }
+        }
+    ]
+}

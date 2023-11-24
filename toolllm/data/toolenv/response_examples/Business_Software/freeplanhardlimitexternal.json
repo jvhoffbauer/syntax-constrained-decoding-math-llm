@@ -1,0 +1,13 @@
+{
+    "api_list": [
+        {
+            "name": "getInventory",
+            "schema": {
+                "sold": "int",
+                "available": "int",
+                "unavailable": "int",
+                "pending": "int"
+            }
+        }
+    ]
+}

@@ -1,0 +1,36 @@
+{
+    "api_list": [
+        {
+            "name": "Languages",
+            "schema": {
+                "ab": "empty list",
+                "af": "empty list",
+                "am": "empty list",
+                "an": "empty list",
+                "ar": "empty list",
+                "as": "empty list",
+                "az": "empty list",
+                "ba": "empty list",
+                "be": "empty list",
+                "bg": "empty list",
+                "bh": "empty list",
+                "bn": "empty list",
+                "bo": "empty list",
+                "br": "empty list",
+                "bs": "empty list",
+                "ca": "empty list",
+                "ce": "empty list",
+                "co": "empty list",
+                "cs": "empty list",
+                "cv": "empty list",
+                "cy": "empty list",
+                "da": "empty list",
+                "de": "empty list",
+                "el": "empty list",
+                "en": "empty list",
+                "eo": "empty list",
+                "es": "empty list"
+            }
+        }
+    ]
+}

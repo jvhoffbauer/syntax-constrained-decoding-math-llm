@@ -1,0 +1,879 @@
+{
+    "api_list": [
+        {
+            "name": "GetDocumentPopupAnnotationsByParent",
+            "schema": {
+                "Error": {
+                    "Code": "str",
+                    "Message": "str"
+                }
+            }
+        },
+        {
+            "name": "GetFreeTextAnnotation",
+            "schema": {
+                "RequestId": "str",
+                "Error": {
+                    "Code": "str",
+                    "Message": "str",
+                    "DateTime": "str"
+                }
+            }
+        },
+        {
+            "name": "GetExportFieldsFromPdfToXfdfInStorage",
+            "schema": {
+                "RequestId": "str",
+                "Error": {
+                    "Code": "str",
+                    "Message": "str",
+                    "DateTime": "str"
+                }
+            }
+        },
+        {
+            "name": "GetExportFieldsFromPdfToFdfInStorage",
+            "schema": {
+                "Error": {
+                    "Code": "str",
+                    "Message": "str"
+                }
+            }
+        },
+        {
+            "name": "GetRedactionAnnotation",
+            "schema": {
+                "Error": {
+                    "Code": "str",
+                    "Message": "str"
+                }
+            }
+        },
+        {
+            "name": "GetDocumentScreenAnnotations",
+            "schema": {
+                "Error": {
+                    "Code": "str",
+                    "Message": "str"
+                }
+            }
+        },
+        {
+            "name": "DownloadFile",
+            "schema": {
+                "Error": {
+                    "Code": "str",
+                    "Message": "str"
+                }
+            }
+        },
+        {
+            "name": "GetDocumentPolyLineAnnotations",
+            "schema": {
+                "RequestId": "str",
+                "Error": {
+                    "Code": "str",
+                    "Message": "str"
+                }
+            }
+        },
+        {
+            "name": "GetPdfInStorageToXml",
+            "schema": {
+                "Error": {
+                    "Code": "str",
+                    "Message": "str"
+                }
+            }
+        },
+        {
+            "name": "GetDocumentLineAnnotations",
+            "schema": {
+                "RequestId": "str",
+                "Error": {
+                    "Code": "str",
+                    "Message": "str",
+                    "DateTime": "str"
+                }
+            }
+        },
+        {
+            "name": "GetDocumentSoundAnnotations",
+            "schema": {
+                "RequestId": "str",
+                "Error": {
+                    "Code": "str",
+                    "Message": "str"
+                }
+            }
+        },
+        {
+            "name": "GetDocumentSignatureFields",
+            "schema": {
+                "Error": {
+                    "Code": "str",
+                    "Message": "str"
+                }
+            }
+        },
+        {
+            "name": "GetDocumentTextBoxFields",
+            "schema": {
+                "Error": {
+                    "Code": "str",
+                    "Message": "str",
+                    "Description": "str"
+                }
+            }
+        },
+        {
+            "name": "GetDocumentPolygonAnnotations",
+            "schema": {
+                "Error": {
+                    "Code": "str",
+                    "Message": "str"
+                }
+            }
+        },
+        {
+            "name": "GetDocumentBookmarks",
+            "schema": {
+                "RequestId": "str",
+                "Error": {
+                    "Code": "str",
+                    "Message": "str",
+                    "DateTime": "str"
+                }
+            }
+        },
+        {
+            "name": "GetComboBoxField",
+            "schema": {
+                "RequestId": "str",
+                "Error": {
+                    "Code": "str",
+                    "Message": "str",
+                    "DateTime": "str"
+                }
+            }
+        },
+        {
+            "name": "GetDocumentFreeTextAnnotations",
+            "schema": {
+                "Error": {
+                    "Code": "str",
+                    "Message": "str"
+                }
+            }
+        },
+        {
+            "name": "GetDocumentRadioButtonFields",
+            "schema": {
+                "Error": {
+                    "Code": "str",
+                    "Message": "str"
+                }
+            }
+        },
+        {
+            "name": "StorageExists",
+            "schema": {
+                "RequestId": "str",
+                "Error": {
+                    "Code": "str",
+                    "Message": "str"
+                }
+            }
+        },
+        {
+            "name": "GetSignatureField",
+            "schema": {
+                "Error": {
+                    "Code": "str",
+                    "Message": "str"
+                }
+            }
+        },
+        {
+            "name": "GetDocumentCircleAnnotations",
+            "schema": {
+                "Error": {
+                    "Code": "str",
+                    "Message": "str"
+                }
+            }
+        },
+        {
+            "name": "GetDocumentTextAnnotations",
+            "schema": {
+                "Error": {
+                    "Code": "str",
+                    "Message": "str"
+                }
+            }
+        },
+        {
+            "name": "GetDocumentSquigglyAnnotations",
+            "schema": {
+                "Error": {
+                    "Code": "str",
+                    "Message": "str"
+                }
+            }
+        },
+        {
+            "name": "GetScreenAnnotationData",
+            "schema": {
+                "Error": {
+                    "Code": "str",
+                    "Message": "str"
+                }
+            }
+        },
+        {
+            "name": "GetPdfInStorageToMobiXml",
+            "schema": {
+                "Error": {
+                    "Code": "str",
+                    "Message": "str"
+                }
+            }
+        },
+        {
+            "name": "GetCircleAnnotation",
+            "schema": {
+                "Error": {
+                    "Code": "str",
+                    "Message": "str"
+                }
+            }
+        },
+        {
+            "name": "GetImage",
+            "schema": {
+                "Error": {
+                    "Code": "str",
+                    "Message": "str"
+                }
+            }
+        },
+        {
+            "name": "GetStampAnnotation",
+            "schema": {
+                "Error": {
+                    "Code": "str",
+                    "Message": "str"
+                }
+            }
+        },
+        {
+            "name": "GetDocumentProperties",
+            "schema": {
+                "RequestId": "str",
+                "Error": {
+                    "Code": "str",
+                    "Message": "str"
+                }
+            }
+        },
+        {
+            "name": "GetDocumentStamps",
+            "schema": {
+                "RequestId": "str",
+                "Error": {
+                    "Code": "str",
+                    "Message": "str"
+                }
+            }
+        },
+        {
+            "name": "GetImageExtractAsTiff",
+            "schema": {
+                "RequestId": "str",
+                "Error": {
+                    "Code": "str",
+                    "Message": "str"
+                }
+            }
+        },
+        {
+            "name": "GetTextAnnotation",
+            "schema": {
+                "Error": {
+                    "Code": "str",
+                    "Message": "str"
+                }
+            }
+        },
+        {
+            "name": "GetField",
+            "schema": {
+                "Error": {
+                    "Code": "str",
+                    "Message": "str"
+                }
+            }
+        },
+        {
+            "name": "GetTextBoxField",
+            "schema": {
+                "RequestId": "str",
+                "Error": {
+                    "Code": "str",
+                    "Message": "str"
+                }
+            }
+        },
+        {
+            "name": "GetDocumentCaretAnnotations",
+            "schema": {
+                "Error": {
+                    "Code": "str",
+                    "Message": "str"
+                }
+            }
+        },
+        {
+            "name": "GetDocumentListBoxFields",
+            "schema": {
+                "Error": {
+                    "Code": "str",
+                    "Message": "str",
+                    "Description": "str"
+                }
+            }
+        },
+        {
+            "name": "GetFields",
+            "schema": {
+                "Error": {
+                    "Code": "str",
+                    "Message": "str"
+                }
+            }
+        },
+        {
+            "name": "GetPdfInStorageToXps",
+            "schema": {
+                "Error": {
+                    "Code": "str",
+                    "Message": "str"
+                }
+            }
+        },
+        {
+            "name": "GetListBoxField",
+            "schema": {
+                "Error": {
+                    "Code": "str",
+                    "Message": "str"
+                }
+            }
+        },
+        {
+            "name": "GetDocumentComboBoxFields",
+            "schema": {
+                "Error": {
+                    "Code": "str",
+                    "Message": "str",
+                    "Description": "str"
+                }
+            }
+        },
+        {
+            "name": "GetLineAnnotation",
+            "schema": {
+                "Error": {
+                    "Code": "str",
+                    "Message": "str"
+                }
+            }
+        },
+        {
+            "name": "GetSoundAnnotationData",
+            "schema": {
+                "Error": {
+                    "Code": "str",
+                    "Message": "str"
+                }
+            }
+        },
+        {
+            "name": "GetCaretAnnotation",
+            "schema": {
+                "Error": {
+                    "Code": "str",
+                    "Message": "str"
+                }
+            }
+        },
+        {
+            "name": "GetRadioButtonField",
+            "schema": {
+                "Error": {
+                    "Code": "str",
+                    "Message": "str"
+                }
+            }
+        },
+        {
+            "name": "GetHighlightAnnotation",
+            "schema": {
+                "Error": {
+                    "Code": "str",
+                    "Message": "str",
+                    "Description": "str"
+                }
+            }
+        },
+        {
+            "name": "GetSquareAnnotation",
+            "schema": {
+                "RequestId": "str",
+                "Error": {
+                    "Code": "str",
+                    "Message": "str"
+                }
+            }
+        },
+        {
+            "name": "GetFileAttachmentAnnotation",
+            "schema": {
+                "RequestId": "str",
+                "Error": {
+                    "Code": "str",
+                    "Message": "str",
+                    "DateTime": "str"
+                }
+            }
+        },
+        {
+            "name": "GetDocument",
+            "schema": {
+                "RequestId": "str",
+                "Error": {
+                    "Code": "str",
+                    "Message": "str"
+                }
+            }
+        },
+        {
+            "name": "GetDocumentPopupAnnotations",
+            "schema": {
+                "RequestId": "str",
+                "Error": {
+                    "Code": "str",
+                    "Message": "str"
+                }
+            }
+        },
+        {
+            "name": "GetDocumentRedactionAnnotations",
+            "schema": {
+                "Error": {
+                    "Code": "str",
+                    "Message": "str"
+                }
+            }
+        },
+        {
+            "name": "GetDocumentProperty",
+            "schema": {
+                "Error": {
+                    "Code": "str",
+                    "Message": "str",
+                    "Description": "str"
+                }
+            }
+        },
+        {
+            "name": "GetFileVersions",
+            "schema": {
+                "Error": {
+                    "Code": "str",
+                    "Message": "str"
+                }
+            }
+        },
+        {
+            "name": "GetDocumentTables",
+            "schema": {
+                "Error": {
+                    "Code": "str",
+                    "Message": "str"
+                }
+            }
+        },
+        {
+            "name": "GetDocumentMovieAnnotations",
+            "schema": {
+                "Error": {
+                    "Code": "str",
+                    "Message": "str"
+                }
+            }
+        },
+        {
+            "name": "GetDocumentHighlightAnnotations",
+            "schema": {
+                "Error": {
+                    "Code": "str",
+                    "Message": "str",
+                    "Description": "str"
+                }
+            }
+        },
+        {
+            "name": "GetUnderlineAnnotation",
+            "schema": {
+                "RequestId": "str",
+                "Error": {
+                    "Code": "str",
+                    "Message": "str"
+                }
+            }
+        },
+        {
+            "name": "GetDocumentFileAttachmentAnnotations",
+            "schema": {
+                "RequestId": "str",
+                "Error": {
+                    "Code": "str",
+                    "Message": "str"
+                }
+            }
+        },
+        {
+            "name": "GetFilesList",
+            "schema": {
+                "Error": {
+                    "Code": "str",
+                    "Message": "str"
+                }
+            }
+        },
+        {
+            "name": "GetPolyLineAnnotation",
+            "schema": {
+                "Error": {
+                    "Code": "str",
+                    "Message": "str"
+                }
+            }
+        },
+        {
+            "name": "GetDocumentAnnotations",
+            "schema": {
+                "Error": {
+                    "Code": "str",
+                    "Message": "str"
+                }
+            }
+        },
+        {
+            "name": "GetMovieAnnotation",
+            "schema": {
+                "RequestId": "str",
+                "Error": {
+                    "Code": "str",
+                    "Message": "str"
+                }
+            }
+        },
+        {
+            "name": "GetImageExtractAsJpeg",
+            "schema": {
+                "Error": {
+                    "Code": "str",
+                    "Message": "str"
+                }
+            }
+        },
+        {
+            "name": "GetStampAnnotationData",
+            "schema": {
+                "RequestId": "str",
+                "Error": {
+                    "Code": "str",
+                    "Message": "str"
+                }
+            }
+        },
+        {
+            "name": "GetDiscUsage",
+            "schema": {
+                "Error": {
+                    "Code": "str",
+                    "Message": "str",
+                    "Description": "str"
+                }
+            }
+        },
+        {
+            "name": "GetDocumentStrikeOutAnnotations",
+            "schema": {
+                "Error": {
+                    "Code": "str",
+                    "Message": "str"
+                }
+            }
+        },
+        {
+            "name": "GetPopupAnnotation",
+            "schema": {
+                "RequestId": "str",
+                "Error": {
+                    "Code": "str",
+                    "Message": "str"
+                }
+            }
+        },
+        {
+            "name": "GetXfaPdfInStorageToAcroForm",
+            "schema": {
+                "Error": {
+                    "Code": "str",
+                    "Message": "str"
+                }
+            }
+        },
+        {
+            "name": "GetApiInfo",
+            "schema": {
+                "Name": "str",
+                "Version": "str",
+                "AsposePdfVersion": "str"
+            }
+        },
+        {
+            "name": "GetBookmark",
+            "schema": {
+                "Error": {
+                    "Code": "str",
+                    "Message": "str"
+                }
+            }
+        },
+        {
+            "name": "GetWordsPerPage",
+            "schema": {
+                "Error": {
+                    "Code": "str",
+                    "Message": "str"
+                }
+            }
+        },
+        {
+            "name": "ObjectExists",
+            "schema": {
+                "Error": {
+                    "Code": "str",
+                    "Message": "str"
+                }
+            }
+        },
+        {
+            "name": "GetFileAttachmentAnnotationData",
+            "schema": {
+                "Error": {
+                    "Code": "str",
+                    "Message": "str"
+                }
+            }
+        },
+        {
+            "name": "GetDocumentAttachments",
+            "schema": {
+                "messages": "str"
+            }
+        },
+        {
+            "name": "GetExportFieldsFromPdfToXmlInStorage",
+            "schema": {
+                "Error": {
+                    "Code": "str",
+                    "Message": "str"
+                }
+            }
+        },
+        {
+            "name": "GetScreenAnnotation",
+            "schema": {
+                "Error": {
+                    "Code": "str",
+                    "Message": "str"
+                }
+            }
+        },
+        {
+            "name": "GetDocumentStampAnnotations",
+            "schema": {
+                "RequestId": "str",
+                "Error": {
+                    "Code": "str",
+                    "Message": "str"
+                }
+            }
+        },
+        {
+            "name": "GetInkAnnotation",
+            "schema": {
+                "Error": {
+                    "Code": "str",
+                    "Message": "str"
+                }
+            }
+        },
+        {
+            "name": "GetCheckBoxField",
+            "schema": {
+                "Error": {
+                    "Code": "str",
+                    "Message": "str"
+                }
+            }
+        },
+        {
+            "name": "GetDocumentInkAnnotations",
+            "schema": {
+                "Error": {
+                    "Code": "str",
+                    "Message": "str"
+                }
+            }
+        },
+        {
+            "name": "GetPdfInStorageToPdfA",
+            "schema": {
+                "RequestId": "str",
+                "Error": {
+                    "Code": "str",
+                    "Message": "str",
+                    "DateTime": "str"
+                }
+            }
+        },
+        {
+            "name": "GetPolygonAnnotation",
+            "schema": {
+                "Error": {
+                    "Code": "str",
+                    "Message": "str"
+                }
+            }
+        },
+        {
+            "name": "GetBookmarks",
+            "schema": {
+                "Error": {
+                    "Code": "str",
+                    "Message": "str"
+                }
+            }
+        },
+        {
+            "name": "GetPdfInStorageToEpub",
+            "schema": {
+                "Error": {
+                    "Code": "str",
+                    "Message": "str"
+                }
+            }
+        },
+        {
+            "name": "GetStrikeOutAnnotation",
+            "schema": {
+                "RequestId": "str",
+                "Error": {
+                    "Code": "str",
+                    "Message": "str"
+                }
+            }
+        },
+        {
+            "name": "GetLinkAnnotation",
+            "schema": {
+                "Error": {
+                    "Code": "str",
+                    "Message": "str"
+                }
+            }
+        },
+        {
+            "name": "GetPages",
+            "schema": {
+                "Error": {
+                    "Code": "str",
+                    "Message": "str"
+                }
+            }
+        },
+        {
+            "name": "GetSquigglyAnnotation",
+            "schema": {
+                "RequestId": "str",
+                "Error": {
+                    "Code": "str",
+                    "Message": "str"
+                }
+            }
+        },
+        {
+            "name": "GetSoundAnnotation",
+            "schema": {
+                "RequestId": "str",
+                "Error": {
+                    "Code": "str",
+                    "Message": "str"
+                }
+            }
+        },
+        {
+            "name": "GetImageExtractAsPng",
+            "schema": {
+                "RequestId": "str",
+                "Error": {
+                    "Code": "str",
+                    "Message": "str"
+                }
+            }
+        },
+        {
+            "name": "GetDocumentUnderlineAnnotations",
+            "schema": {
+                "Error": {
+                    "Code": "str",
+                    "Message": "str",
+                    "Description": "str"
+                }
+            }
+        },
+        {
+            "name": "GetTable",
+            "schema": {
+                "Error": {
+                    "Code": "str",
+                    "Message": "str"
+                }
+            }
+        },
+        {
+            "name": "GetPdfInStorageToTeX",
+            "schema": {
+                "Error": {
+                    "Code": "str",
+                    "Message": "str"
+                }
+            }
+        },
+        {
+            "name": "GetDocumentCheckBoxFields",
+            "schema": {
+                "Error": {
+                    "Code": "str",
+                    "Message": "str"
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,12 @@
+{
+    "api_list": [
+        {
+            "name": "Retorna Dados do Endere\u00e7o atrav\u00e9s do CEP",
+            "schema": {
+                "cep": "str",
+                "end": "str",
+                "uf": "str"
+            }
+        }
+    ]
+}

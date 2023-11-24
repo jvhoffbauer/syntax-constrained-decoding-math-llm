@@ -1,0 +1,104 @@
+{
+    "api_list": [
+        {
+            "name": "album by {id}",
+            "schema": {
+                "_id": "str",
+                "name": "str",
+                "releaseDate": "str",
+                "artist": "str"
+            }
+        },
+        {
+            "name": "song by {id}",
+            "schema": {
+                "_id": "str",
+                "name": "str",
+                "lyrics": [
+                    "list of str with length 1"
+                ]
+            }
+        },
+        {
+            "name": "random song & song's album information out of {artist}",
+            "schema": {
+                "albumName": "str",
+                "releaseDate": "str",
+                "albumArtist": "str",
+                "song": {
+                    "name": "str",
+                    "lyrics": [
+                        "list of str with length 1"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "random song out of {artist}",
+            "schema": {
+                "name": "str",
+                "lyrics": [
+                    "list of str with length 1"
+                ]
+            }
+        },
+        {
+            "name": "specified {song}",
+            "schema": {
+                "name": "str",
+                "lyrics": [
+                    "list of str with length 1"
+                ]
+            }
+        },
+        {
+            "name": "all songs from {artist}",
+            "schema": {
+                "name": "str",
+                "lyrics": [
+                    "list of str with length 1"
+                ]
+            }
+        },
+        {
+            "name": "random song from a specific {artist} and specified {album}",
+            "schema": {
+                "name": "str",
+                "lyrics": [
+                    "list of str with length 1"
+                ]
+            }
+        },
+        {
+            "name": "all songs from a specified {artist} and specified {album}",
+            "schema": {
+                "name": "str",
+                "lyrics": [
+                    "list of str with length 1"
+                ]
+            }
+        },
+        {
+            "name": "specified {album} information from {artist}",
+            "schema": {
+                "name": "str",
+                "releaseDate": "str",
+                "songs": [
+                    "list of str with length 1"
+                ],
+                "artist": "str"
+            }
+        },
+        {
+            "name": "all albums from {artist}",
+            "schema": {
+                "name": "str",
+                "releaseDate": "str",
+                "songs": [
+                    "list of str with length 1"
+                ],
+                "artist": "str"
+            }
+        }
+    ]
+}

@@ -1,0 +1,41 @@
+{
+    "api_list": [
+        {
+            "name": "Web Search API",
+            "schema": {
+                "request": {
+                    "keyword": "str",
+                    "page": "int",
+                    "size": "int"
+                },
+                "data": {
+                    "items": [
+                        {
+                            "title": "str",
+                            "link": "str",
+                            "description": "str"
+                        }
+                    ]
+                },
+                "in_seconds": "float"
+            }
+        },
+        {
+            "name": "Images Search",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Emails Search",
+            "schema": {
+                "request": {
+                    "keyword": "str"
+                },
+                "data": [
+                    "list of str with length 1"
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,94 @@
+{
+    "api_list": [
+        {
+            "name": "Get A Bot Property",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "List All Bot Properties",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get A Bot",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "List All Category Groups",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "List All Clients",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get A Bot Category Group",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get A Client",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "List All Bot Category Groups",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "List All Categories",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get A Conversation",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "List All Conversations",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "List All Conversation Turns",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get A Conversation Turn",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get Chat Detail",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get Chat Log",
+            "schema": {
+                "message": "str"
+            }
+        }
+    ]
+}

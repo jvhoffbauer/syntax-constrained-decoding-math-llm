@@ -1,0 +1,18 @@
+{
+    "api_list": [
+        {
+            "name": "GetFeatures",
+            "schema": {
+                "status": "str",
+                "data": "empty list"
+            }
+        },
+        {
+            "name": "GetOutcomes",
+            "schema": {
+                "status": "str",
+                "data": "empty list"
+            }
+        }
+    ]
+}

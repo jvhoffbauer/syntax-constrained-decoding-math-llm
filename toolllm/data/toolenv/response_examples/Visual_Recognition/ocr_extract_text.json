@@ -1,0 +1,17 @@
+{
+    "api_list": [
+        {
+            "name": "Extract text from image url",
+            "schema": {
+                "status": "bool",
+                "text": "str",
+                "detectedLanguages": [
+                    {
+                        "languageCode": "str",
+                        "confidence": "int"
+                    }
+                ]
+            }
+        }
+    ]
+}

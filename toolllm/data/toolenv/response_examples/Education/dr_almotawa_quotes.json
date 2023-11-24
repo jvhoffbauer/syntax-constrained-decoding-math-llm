@@ -1,0 +1,13 @@
+{
+    "api_list": [
+        {
+            "name": "Get random quote",
+            "schema": {
+                "status": "int",
+                "wisdom": {
+                    "text": "str"
+                }
+            }
+        }
+    ]
+}

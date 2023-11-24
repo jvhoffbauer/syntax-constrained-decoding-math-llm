@@ -1,0 +1,54 @@
+{
+    "api_list": [
+        {
+            "name": "SearchCities",
+            "schema": {
+                "results": [
+                    {
+                        "city": "str",
+                        "countryCode": "str"
+                    }
+                ],
+                "totalResults": "int"
+            }
+        },
+        {
+            "name": "ListAllCountries",
+            "schema": {
+                "results": [
+                    {
+                        "name": "str",
+                        "alpha-2": "str",
+                        "alpha-3": "str",
+                        "country-code": "str",
+                        "region": "str",
+                        "sub-region": "str",
+                        "region-code": "str",
+                        "sub-region-code": "str"
+                    }
+                ],
+                "page": "int",
+                "totalPages": "int",
+                "totalResults": "int"
+            }
+        },
+        {
+            "name": "SearchCountries",
+            "schema": {
+                "results": [
+                    {
+                        "name": "str",
+                        "alpha-2": "str",
+                        "alpha-3": "str",
+                        "country-code": "str",
+                        "region": "str",
+                        "sub-region": "str",
+                        "region-code": "str",
+                        "sub-region-code": "str"
+                    }
+                ],
+                "totalResults": "int"
+            }
+        }
+    ]
+}

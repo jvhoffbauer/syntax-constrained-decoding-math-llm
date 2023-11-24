@@ -1,0 +1,58 @@
+{
+    "api_list": [
+        {
+            "name": "Word of the day from DC",
+            "schema": {
+                "date": "str",
+                "word": "str",
+                "type": "str",
+                "mean": "str"
+            }
+        },
+        {
+            "name": "Word of the day from ld",
+            "schema": {
+                "date": "str",
+                "word": "str",
+                "type": "str",
+                "mean": "str"
+            }
+        },
+        {
+            "name": "Word of the day from mw",
+            "schema": {
+                "date": "str",
+                "word": "str",
+                "type": "str",
+                "mean": "str"
+            }
+        },
+        {
+            "name": "Word of the day from cd",
+            "schema": {
+                "date": "str",
+                "word": "str",
+                "type": "str",
+                "mean": "str"
+            }
+        },
+        {
+            "name": "Word of the day from pm",
+            "schema": {
+                "info": "str",
+                "date": "str",
+                "word": "str",
+                "type": "str",
+                "mean": "str"
+            }
+        },
+        {
+            "name": "Recent word of the day from DC",
+            "schema": {
+                "date": "str",
+                "word": "str",
+                "mean": "str"
+            }
+        }
+    ]
+}

@@ -1,0 +1,54 @@
+{
+    "api_list": [
+        {
+            "name": "Bet365 Inplay Filter",
+            "schema": {
+                "success": "int",
+                "pager": {
+                    "page": "int",
+                    "per_page": "int",
+                    "total": "int"
+                },
+                "results": [
+                    {
+                        "sport_id": "str",
+                        "time": "str",
+                        "time_status": "str",
+                        "league": {
+                            "name": "str"
+                        },
+                        "home": {
+                            "name": "str"
+                        },
+                        "away": {
+                            "name": "str"
+                        },
+                        "ss": "str",
+                        "our_event_id": "str",
+                        "r_id": "str",
+                        "ev_id": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Bet365 InPlay",
+            "schema": {
+                "success": "int",
+                "results": [
+                    "list of str with length 1"
+                ]
+            }
+        },
+        {
+            "name": "Bet365 Result",
+            "schema": {
+                "results": [
+                    {
+                        "success": "int"
+                    }
+                ]
+            }
+        }
+    ]
+}

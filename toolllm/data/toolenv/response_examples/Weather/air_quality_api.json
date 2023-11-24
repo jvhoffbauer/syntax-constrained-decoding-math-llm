@@ -1,0 +1,55 @@
+{
+    "api_list": [
+        {
+            "name": "Air Quality Measurements",
+            "schema": {
+                "measurements": {
+                    "hourly": [
+                        {
+                            "ts": "str",
+                            "aqi": "int",
+                            "pm25": {
+                                "aqi": "int"
+                            },
+                            "pm10": {
+                                "aqi": "int"
+                            },
+                            "o3": {
+                                "aqi": "int"
+                            },
+                            "no2": {
+                                "aqi": "int"
+                            },
+                            "so2": {
+                                "aqi": "int"
+                            },
+                            "co": {
+                                "aqi": "int"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Air Quality Forecasts",
+            "schema": {
+                "forecasts": {
+                    "hourly": [
+                        {
+                            "aqi": "int",
+                            "pressure": "int",
+                            "humidity": "int",
+                            "wind": {
+                                "speed": "float",
+                                "direction": "int"
+                            },
+                            "condition": "str",
+                            "temperature": "int"
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

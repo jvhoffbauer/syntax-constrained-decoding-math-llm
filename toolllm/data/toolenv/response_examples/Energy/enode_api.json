@@ -1,0 +1,46 @@
+{
+    "api_list": [
+        {
+            "name": "getHealthChargerVendors",
+            "schema": {
+                "displayName": "str",
+                "vendor": "str",
+                "status": "str",
+                "portalName": "str"
+            }
+        },
+        {
+            "name": "getHealthReady",
+            "schema": {
+                "version": "str",
+                "hash": "str"
+            }
+        },
+        {
+            "name": "getHealthInverterVendors",
+            "schema": {
+                "displayName": "str",
+                "vendor": "str",
+                "status": "str"
+            }
+        },
+        {
+            "name": "getHealthHvacVendors",
+            "schema": {
+                "displayName": "str",
+                "vendor": "str",
+                "status": "str",
+                "portalName": "str"
+            }
+        },
+        {
+            "name": "getHealthVehicleVendors",
+            "schema": {
+                "displayName": "str",
+                "vendor": "str",
+                "status": "str",
+                "portalName": "str"
+            }
+        }
+    ]
+}

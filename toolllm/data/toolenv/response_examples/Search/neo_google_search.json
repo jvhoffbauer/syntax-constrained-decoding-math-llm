@@ -1,0 +1,30 @@
+{
+    "api_list": [
+        {
+            "name": "Web Search",
+            "schema": {
+                "status": "str",
+                "items": [
+                    {
+                        "title": "str",
+                        "link": "str",
+                        "snippet": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Image Search",
+            "schema": {
+                "status": "str",
+                "items": [
+                    {
+                        "title": "str",
+                        "thumbnailImageUrl": "str",
+                        "contextLink": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

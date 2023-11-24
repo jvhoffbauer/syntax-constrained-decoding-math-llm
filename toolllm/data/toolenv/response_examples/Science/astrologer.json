@@ -1,0 +1,57 @@
+{
+    "api_list": [
+        {
+            "name": "Now",
+            "schema": {
+                "data": {
+                    "year": "str",
+                    "month": "str",
+                    "day": "str",
+                    "hour": "str",
+                    "minute": "str",
+                    "city": "str",
+                    "nation": "str",
+                    "lng": "str",
+                    "lat": "str",
+                    "tz_str": "str",
+                    "zodiac_type": "str",
+                    "local_time": "str",
+                    "utc_time": "str",
+                    "julian_day": "str",
+                    "sun": {
+                        "name": "str",
+                        "sign": "str",
+                        "sign_num": "str",
+                        "position": "str",
+                        "abs_pos": "str",
+                        "retrograde": "str"
+                    },
+                    "moon": {
+                        "name": "str",
+                        "sign": "str",
+                        "sign_num": "str",
+                        "position": "str",
+                        "abs_pos": "str",
+                        "retrograde": "str"
+                    },
+                    "mercury": {
+                        "name": "str",
+                        "sign": "str",
+                        "sign_num": "str",
+                        "position": "str",
+                        "abs_pos": "str",
+                        "retrograde": "str"
+                    },
+                    "venus": {
+                        "name": "str",
+                        "sign": "str",
+                        "sign_num": "str",
+                        "position": "str",
+                        "abs_pos": "str",
+                        "retrograde": "str"
+                    }
+                }
+            }
+        }
+    ]
+}

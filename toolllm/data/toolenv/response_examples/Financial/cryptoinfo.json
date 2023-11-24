@@ -1,0 +1,94 @@
+{
+    "api_list": [
+        {
+            "name": "Get last 5 economic calendar news",
+            "schema": {
+                "meta": {
+                    "topic": "str",
+                    "post_time": "str",
+                    "event_id": "str",
+                    "hash": "str"
+                },
+                "data": {
+                    "ru": {
+                        "event_id": "str",
+                        "date": "str",
+                        "country": "str",
+                        "country_key": "str",
+                        "country_money": "str",
+                        "n_full_stars": "str",
+                        "n_total_stars": "str",
+                        "event": "str",
+                        "link": "str",
+                        "hashtags": [
+                            "list of str with length 1"
+                        ]
+                    },
+                    "en": {
+                        "event_id": "str",
+                        "date": "str",
+                        "country": "str",
+                        "country_key": "str",
+                        "country_money": "str",
+                        "n_full_stars": "str",
+                        "n_total_stars": "str",
+                        "event": "str",
+                        "link": "str",
+                        "hashtags": [
+                            "list of str with length 1"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "name": "Get economic calendar news over a period of time",
+            "schema": {
+                "meta": {
+                    "topic": "str",
+                    "post_time": "str",
+                    "event_id": "str",
+                    "hash": "str"
+                },
+                "data": {
+                    "ru": {
+                        "event_id": "str",
+                        "date": "str",
+                        "country": "str",
+                        "country_key": "str",
+                        "country_money": "str",
+                        "n_full_stars": "str",
+                        "n_total_stars": "str",
+                        "event": "str",
+                        "link": "str",
+                        "actual_text": "str",
+                        "forecast_text": "str",
+                        "previous_text": "str",
+                        "was_notification": "str",
+                        "hashtags": [
+                            "list of str with length 1"
+                        ]
+                    },
+                    "en": {
+                        "event_id": "str",
+                        "date": "str",
+                        "country": "str",
+                        "country_key": "str",
+                        "country_money": "str",
+                        "n_full_stars": "str",
+                        "n_total_stars": "str",
+                        "event": "str",
+                        "link": "str",
+                        "actual_text": "str",
+                        "forecast_text": "str",
+                        "previous_text": "str",
+                        "was_notification": "str",
+                        "hashtags": [
+                            "list of str with length 1"
+                        ]
+                    }
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "api_list": [
+        {
+            "name": "Lookup Coordinates",
+            "schema": {
+                "data": {
+                    "zipcode": "str",
+                    "state_abbr": "str",
+                    "latitude": "str",
+                    "longitude": "str",
+                    "city": "str",
+                    "state": "str"
+                }
+            }
+        }
+    ]
+}

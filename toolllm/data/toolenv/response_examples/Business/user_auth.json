@@ -1,0 +1,18 @@
+{
+    "api_list": [
+        {
+            "name": "listBoxServices",
+            "schema": {
+                "errorCode": "str",
+                "errorInfo": "str"
+            }
+        },
+        {
+            "name": "getInfoJSON",
+            "schema": {
+                "errorCode": "str",
+                "errorInfo": "str"
+            }
+        }
+    ]
+}

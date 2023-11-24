@@ -1,0 +1,22 @@
+{
+    "api_list": [
+        {
+            "name": "Translate",
+            "schema": {
+                "status": "int",
+                "langDetect": "str",
+                "translatedText": "str"
+            }
+        },
+        {
+            "name": "Languages",
+            "schema": {
+                "languages": [
+                    {
+                        "af": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,113 @@
+{
+    "api_list": [
+        {
+            "name": "Reverse Geocoding",
+            "schema": {
+                "display_name": "str",
+                "class": "str",
+                "type": "str"
+            }
+        },
+        {
+            "name": "Direct Geocoding",
+            "schema": {
+                "lat": "str",
+                "lon": "str",
+                "display_name": "str",
+                "distance_to_source": "float"
+            }
+        },
+        {
+            "name": "Snap to road",
+            "schema": {
+                "licence": "str",
+                "osm_id": "str",
+                "lat": "str",
+                "lon": "str",
+                "display_name": "str",
+                "distance_to_source": "float"
+            }
+        },
+        {
+            "name": "Highway type",
+            "schema": {
+                "licence": "str",
+                "osm_type": "str",
+                "osm_id": "str",
+                "lat": "str",
+                "lon": "str",
+                "class": "str",
+                "type": "str",
+                "distance_to_source": "float"
+            }
+        },
+        {
+            "name": "Speed limit",
+            "schema": {
+                "licence": "str",
+                "osm_id": "str",
+                "lat": "str",
+                "lon": "str",
+                "display_name": "str",
+                "class": "str",
+                "type": "str",
+                "distance_to_source": "float"
+            }
+        },
+        {
+            "name": "Route calculation",
+            "schema": {
+                "licence": "str",
+                "osm_type": "str",
+                "osm_id": "str",
+                "lat": "str",
+                "lon": "str",
+                "display_name": "str",
+                "distance_to_source": "float"
+            }
+        },
+        {
+            "name": "Isochrone",
+            "schema": {
+                "licence": "str",
+                "osm_id": "str",
+                "lat": "str",
+                "lon": "str",
+                "display_name": "str",
+                "distance_to_source": "float"
+            }
+        },
+        {
+            "name": "Distance matrix",
+            "schema": {
+                "licence": "str",
+                "lat": "str",
+                "lon": "str",
+                "display_name": "str",
+                "class": "str",
+                "type": "str",
+                "distance_to_source": "float"
+            }
+        },
+        {
+            "name": "Transit",
+            "schema": {
+                "licence": "str",
+                "osm_id": "str",
+                "lat": "str",
+                "lon": "str",
+                "display_name": "str"
+            }
+        },
+        {
+            "name": "Search places",
+            "schema": {
+                "licence": "str",
+                "lat": "str",
+                "lon": "str",
+                "display_name": "str",
+                "distance_to_source": "float"
+            }
+        }
+    ]
+}

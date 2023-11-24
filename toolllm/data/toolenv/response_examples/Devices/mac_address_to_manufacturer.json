@@ -1,0 +1,14 @@
+{
+    "api_list": [
+        {
+            "name": "maclookup",
+            "schema": {
+                "message": "str",
+                "data": {
+                    "Vendor Manufacturer": "str",
+                    "Vendor Address": "str"
+                }
+            }
+        }
+    ]
+}

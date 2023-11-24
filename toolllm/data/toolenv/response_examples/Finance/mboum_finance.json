@@ -1,0 +1,405 @@
+{
+    "api_list": [
+        {
+            "name": "market/quotes/{stocks}",
+            "schema": {
+                "ask": "str",
+                "bid": "str",
+                "currency": "str",
+                "dividendDate": {
+                    "date": "str"
+                },
+                "epsForward": "str",
+                "epsTrailingTwelveMonths": "str",
+                "exchange": "str",
+                "fiftyDayAverage": "str",
+                "fiftyTwoWeekHigh": "str",
+                "fiftyTwoWeekLow": "str"
+            }
+        },
+        {
+            "name": "market/most_actives",
+            "schema": {
+                "source": "str",
+                "start": "str",
+                "count": "str",
+                "total": "str",
+                "description": "str",
+                "quotes": [
+                    {
+                        "quoteSourceName": "str",
+                        "regularMarketChange": "str",
+                        "regularMarketTime": "str",
+                        "regularMarketPrice": "str",
+                        "regularMarketDayHigh": "str",
+                        "regularMarketDayRange": "str",
+                        "regularMarketDayLow": "str",
+                        "regularMarketVolume": "str",
+                        "regularMarketPreviousClose": "str",
+                        "bid": "str",
+                        "ask": "str",
+                        "bidSize": "str",
+                        "askSize": "str",
+                        "market": "str",
+                        "messageBoardId": "str",
+                        "fullExchangeName": "str",
+                        "longName": "str",
+                        "financialCurrency": "str",
+                        "regularMarketOpen": "str",
+                        "averageDailyVolume3Month": "str",
+                        "averageDailyVolume10Day": "str",
+                        "fiftyTwoWeekLowChange": "str",
+                        "fiftyTwoWeekLowChangePercent": "str",
+                        "fiftyTwoWeekRange": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "market/small_cap_gainers",
+            "schema": {
+                "source": "str",
+                "start": "str",
+                "count": "str",
+                "total": "str",
+                "description": "str",
+                "quotes": [
+                    {
+                        "language": "str",
+                        "region": "str",
+                        "quoteType": "str",
+                        "typeDisp": "str",
+                        "quoteSourceName": "str",
+                        "triggerable": "str",
+                        "customPriceAlertConfidence": "str",
+                        "lastCloseTevEbitLtm": "str",
+                        "lastClosePriceToNNWCPerShare": "str",
+                        "currency": "str",
+                        "priceEpsCurrentYear": "str",
+                        "sharesOutstanding": "str",
+                        "bookValue": "str",
+                        "fiftyDayAverage": "str",
+                        "fiftyDayAverageChange": "str",
+                        "fiftyDayAverageChangePercent": "str",
+                        "twoHundredDayAverage": "str",
+                        "twoHundredDayAverageChange": "str",
+                        "twoHundredDayAverageChangePercent": "str",
+                        "marketCap": "str",
+                        "forwardPE": "str",
+                        "priceToBook": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "market/day_gainers",
+            "schema": {
+                "source": "str",
+                "start": "str",
+                "count": "str",
+                "total": "str",
+                "description": "str",
+                "quotes": [
+                    {
+                        "language": "str",
+                        "region": "str",
+                        "quoteType": "str",
+                        "typeDisp": "str",
+                        "quoteSourceName": "str",
+                        "triggerable": "str",
+                        "marketState": "str",
+                        "epsTrailingTwelveMonths": "str",
+                        "sharesOutstanding": "str",
+                        "bookValue": "str",
+                        "fiftyDayAverageChange": "str",
+                        "fiftyDayAverageChangePercent": "str",
+                        "twoHundredDayAverageChange": "str",
+                        "twoHundredDayAverageChangePercent": "str",
+                        "marketCap": "str",
+                        "priceToBook": "str",
+                        "exchangeDataDelayedBy": "str",
+                        "esgPopulated": "str",
+                        "tradeable": "str",
+                        "cryptoTradeable": "str",
+                        "regularMarketPreviousClose": "str",
+                        "market": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "insider-trades",
+            "schema": {
+                "version": "str",
+                "source": "str",
+                "records": "int",
+                "form_4_filings": [
+                    {
+                        "date": "str",
+                        "relationship": "str",
+                        "transactionCode": "str",
+                        "sum_transactionShares": "int",
+                        "aveg_pricePerShare": "float",
+                        "num_shares_own": "str",
+                        "tot_value": "float",
+                        "symbol": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "market/news",
+            "schema": {
+                "title": "str",
+                "link": "str",
+                "pubDate": "str",
+                "source": "str"
+            }
+        },
+        {
+            "name": "market/news/{stock}",
+            "schema": {
+                "item": [
+                    {
+                        "description": "str",
+                        "link": "str",
+                        "pubDate": "str",
+                        "title": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "stock/calendar-events/{stock}",
+            "schema": {
+                "calendarEvents": {
+                    "earnings": {
+                        "earningsDate": [
+                            {
+                                "fmt": "str"
+                            }
+                        ],
+                        "earningsAverage": {
+                            "fmt": "str"
+                        },
+                        "earningsLow": {
+                            "fmt": "str"
+                        },
+                        "earningsHigh": {
+                            "fmt": "str"
+                        },
+                        "revenueAverage": {
+                            "fmt": "str"
+                        },
+                        "revenueLow": {
+                            "fmt": "str"
+                        },
+                        "revenueHigh": {
+                            "fmt": "str"
+                        }
+                    },
+                    "exDividendDate": {
+                        "fmt": "str"
+                    },
+                    "dividendDate": {
+                        "fmt": "str"
+                    }
+                }
+            }
+        },
+        {
+            "name": "stock/cashflow-statement/{stock}_",
+            "schema": {
+                "cashflowStatementHistory": {
+                    "cashflowStatements": [
+                        {
+                            "endDate": {
+                                "fmt": "str"
+                            },
+                            "netIncome": {
+                                "fmt": "str",
+                                "longFmt": "str"
+                            },
+                            "depreciation": {
+                                "fmt": "str",
+                                "longFmt": "str"
+                            },
+                            "changeToNetincome": {
+                                "fmt": "str",
+                                "longFmt": "str"
+                            },
+                            "changeToAccountReceivables": {
+                                "fmt": "str",
+                                "longFmt": "str"
+                            },
+                            "changeToLiabilities": {
+                                "fmt": "str",
+                                "longFmt": "str"
+                            },
+                            "changeToInventory": {
+                                "fmt": "str",
+                                "longFmt": "str"
+                            },
+                            "changeToOperatingActivities": {
+                                "fmt": "str",
+                                "longFmt": "str"
+                            },
+                            "totalCashFromOperatingActivities": {
+                                "fmt": "str",
+                                "longFmt": "str"
+                            },
+                            "capitalExpenditures": {
+                                "fmt": "str",
+                                "longFmt": "str"
+                            },
+                            "investments": {
+                                "fmt": "str",
+                                "longFmt": "str"
+                            },
+                            "otherCashflowsFromInvestingActivities": {
+                                "fmt": "str",
+                                "longFmt": "str"
+                            },
+                            "totalCashflowsFromInvestingActivities": {
+                                "fmt": "str",
+                                "longFmt": "str"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "stock/earnings-history/{stock}",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "stock/income-statement/{stock}",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "stock/earnings/{stock}",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "stock/index-trend/{stock}",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "stock/insider-transactions/{stock}",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "stock/institution-ownership/{stock}",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "stock/net-share-purchase-activity/{stock}",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "stock/upgrade-downgrade-history/{stock}",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "stock/recommendation-trend/{stock}",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "stock/sec-filings/{stock}",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "market/undervalued_growth_stocks",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "market/growth_technology_stocks",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "market/undervalued_large_caps",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "market/aggressive_small_caps",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "market/day_losers",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "stock/insider-holders/{stock}",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "stock/profile/{stock}",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "stock/balance-sheet/{stock}",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "stock/key-statistics/{stock}",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "stock/financial-data/{stock}",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "market/most-watched",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "options/{stock}",
+            "schema": {
+                "message": "str"
+            }
+        }
+    ]
+}

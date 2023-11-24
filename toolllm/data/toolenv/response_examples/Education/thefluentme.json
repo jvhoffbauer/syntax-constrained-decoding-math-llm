@@ -1,0 +1,33 @@
+{
+    "api_list": [
+        {
+            "name": "Get all posts",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get all languages",
+            "schema": {
+                "supported_languages": [
+                    {
+                        "language_name": "str",
+                        "language_voice": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Get score by id",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get all scores",
+            "schema": {
+                "message": "str"
+            }
+        }
+    ]
+}

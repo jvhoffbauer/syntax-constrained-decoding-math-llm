@@ -1,0 +1,103 @@
+{
+    "api_list": [
+        {
+            "name": "FindByActiveIngredient",
+            "schema": {
+                "errors": {
+                    "activeIngredient": [
+                        "list of str with length 1"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "FindByPestScientificName",
+            "schema": {
+                "errors": {
+                    "pestScientificName": [
+                        "list of str with length 1"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "FindByPestCommonName",
+            "schema": {
+                "errors": {
+                    "pestCommonName": [
+                        "list of str with length 1"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "GetPestsByCrop",
+            "schema": {
+                "errors": {
+                    "crop": [
+                        "list of str with length 1"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "FindByCrop",
+            "schema": {
+                "status": "int",
+                "errors": {
+                    "crop": [
+                        "list of str with length 1"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "FindByActiveIngredientCrop",
+            "schema": {
+                "errors": {
+                    "crop": [
+                        "list of str with length 1"
+                    ],
+                    "activeIngredient": [
+                        "list of str with length 1"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "FindByPestScientificNameCrop",
+            "schema": {
+                "errors": {
+                    "crop": [
+                        "list of str with length 1"
+                    ],
+                    "pestScientificName": [
+                        "list of str with length 1"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "GetByRegistrationNumber",
+            "schema": {
+                "errors": {
+                    "registrationNumber": [
+                        "list of str with length 1"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "GetPestsCommonName",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "GetPests",
+            "schema": {
+                "message": "str"
+            }
+        }
+    ]
+}

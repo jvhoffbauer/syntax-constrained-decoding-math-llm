@@ -1,0 +1,24 @@
+{
+    "api_list": [
+        {
+            "name": "Calculate repayment schedule",
+            "schema": {
+                "principalAmount": "str",
+                "annualInterestRate": "str",
+                "repaymentInterval": "str",
+                "installmentCount": "str",
+                "repaymentSchedule": {
+                    "installments": [
+                        {
+                            "installmentNumber": "int",
+                            "dueDate": "str",
+                            "installmentAmount": "str",
+                            "endingBalance": "str"
+                        }
+                    ]
+                },
+                "startDate": "str"
+            }
+        }
+    ]
+}

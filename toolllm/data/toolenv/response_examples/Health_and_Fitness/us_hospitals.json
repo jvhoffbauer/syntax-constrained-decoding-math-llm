@@ -1,0 +1,30 @@
+{
+    "api_list": [
+        {
+            "name": "getHospitalsById",
+            "schema": {
+                "Provider CCN": "int",
+                "Hospital Name": "str",
+                "Url": "str",
+                "Phone": "str",
+                "Service": "str",
+                "Type": "str",
+                "Street Address": "str",
+                "City": "str",
+                "State Code": "str",
+                "Zip Code": "str",
+                "County": "str",
+                "Medicare CBSA Number": "int",
+                "Rural Versus Urban": "str",
+                "Control": "str",
+                "Number of Beds": "int"
+            }
+        },
+        {
+            "name": "getHospitalsByName",
+            "schema": {
+                "message": "str"
+            }
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "api_list": [
+        {
+            "name": "Get Video info",
+            "schema": {
+                "id": "str",
+                "likes": "int",
+                "dislikes": "int",
+                "rating": "int",
+                "viewCount": "int"
+            }
+        }
+    ]
+}

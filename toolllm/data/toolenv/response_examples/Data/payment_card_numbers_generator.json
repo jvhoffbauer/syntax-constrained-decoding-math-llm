@@ -1,0 +1,11 @@
+{
+    "api_list": [
+        {
+            "name": "Generate",
+            "schema": {
+                "scheme": "str",
+                "cards": "empty list"
+            }
+        }
+    ]
+}

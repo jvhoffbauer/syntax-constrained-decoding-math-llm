@@ -1,0 +1,77 @@
+{
+    "api_list": [
+        {
+            "name": "GET New Hashtags",
+            "schema": {
+                "data": {
+                    "title": "str",
+                    "row": [
+                        {
+                            "tag": "str",
+                            "link": "str",
+                            "total": "int"
+                        }
+                    ],
+                    "next": "str"
+                }
+            }
+        },
+        {
+            "name": "GET Hashtags",
+            "schema": {
+                "status": "int",
+                "message": "str",
+                "data": {
+                    "title": "str",
+                    "row": [
+                        {
+                            "tag": "str",
+                            "total": "int"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "GET Hashtag",
+            "schema": {
+                "status": "int",
+                "message": "str",
+                "data": {
+                    "title": "str",
+                    "best1": {
+                        "tags": [
+                            "list of str with length 1"
+                        ],
+                        "tags link": [
+                            "list of str with length 1"
+                        ]
+                    },
+                    "best2": {
+                        "tags": [
+                            "list of str with length 1"
+                        ],
+                        "tags link": [
+                            "list of str with length 1"
+                        ]
+                    },
+                    "report": {
+                        "title": "str",
+                        "used": "int",
+                        "perhour": "int"
+                    },
+                    "related": {
+                        "data": [
+                            {
+                                "tag": "str",
+                                "link": "str",
+                                "posted": "int"
+                            }
+                        ]
+                    },
+                    "lastUpdate": "str"
+                }
+            }
+        }
+    ]
+}

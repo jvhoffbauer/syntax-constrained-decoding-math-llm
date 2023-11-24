@@ -1,0 +1,20 @@
+{
+    "api_list": [
+        {
+            "name": "GET Details from User-Agent",
+            "schema": {
+                "browser_family": "str",
+                "client": "str",
+                "device": {
+                    "brand": "str",
+                    "type": "str"
+                },
+                "os": {
+                    "name": "str"
+                },
+                "os_family": "str",
+                "user_agent": "str"
+            }
+        }
+    ]
+}

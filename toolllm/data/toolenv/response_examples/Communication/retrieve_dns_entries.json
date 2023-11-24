@@ -1,0 +1,26 @@
+{
+    "api_list": [
+        {
+            "name": "/api/whois",
+            "schema": {
+                "startAddress": "str",
+                "endAddress": "str",
+                "name": "str",
+                "registrant": [
+                    {
+                        "handle": "str"
+                    }
+                ],
+                "status": [
+                    "list of str with length 1"
+                ],
+                "cidr0_cidrs": [
+                    {
+                        "v4prefix": "str",
+                        "length": "int"
+                    }
+                ]
+            }
+        }
+    ]
+}

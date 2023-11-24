@@ -1,0 +1,34 @@
+{
+    "api_list": [
+        {
+            "name": "Station Climate Data",
+            "schema": {
+                "data": [
+                    {
+                        "month": "int",
+                        "tavg": "float",
+                        "tmin": "float",
+                        "tmax": "float",
+                        "prcp": "float",
+                        "wspd": "float",
+                        "tsun": "float"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Point Climate Data",
+            "schema": {
+                "data": [
+                    {
+                        "month": "int",
+                        "tavg": "float",
+                        "tmin": "float",
+                        "tmax": "float",
+                        "prcp": "float"
+                    }
+                ]
+            }
+        }
+    ]
+}

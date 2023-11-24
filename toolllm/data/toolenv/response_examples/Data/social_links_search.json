@@ -1,0 +1,22 @@
+{
+    "api_list": [
+        {
+            "name": "Search Social Links",
+            "schema": {
+                "status": "str",
+                "request_id": "str",
+                "data": {
+                    "facebook": "empty list",
+                    "instagram": "empty list",
+                    "twitter": "empty list",
+                    "linkedin": "empty list",
+                    "github": "empty list",
+                    "youtube": "empty list",
+                    "pinterest": "empty list",
+                    "tiktok": "empty list",
+                    "snapchat": "empty list"
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,40 @@
+{
+    "api_list": [
+        {
+            "name": "YouTube Video Details",
+            "schema": {
+                "author": {
+                    "stats": {
+                        "subscribers": "str",
+                        "subscribersText": "str"
+                    },
+                    "title": "str"
+                },
+                "captions": [
+                    {
+                        "language": {
+                            "code": "str",
+                            "name": "str"
+                        }
+                    }
+                ],
+                "category": "str",
+                "description": "str",
+                "keywords": [
+                    "list of str with length 1"
+                ],
+                "lengthSeconds": "str",
+                "publishedDate": "str",
+                "stats": {
+                    "views": "str"
+                },
+                "thumbnails": [
+                    {
+                        "height": "str",
+                        "url": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "api_list": [
+        {
+            "name": "Detection Objects as Json by Image URL",
+            "schema": {
+                "number-of-objects": "int",
+                "detected-objects": [
+                    {
+                        "label": "str",
+                        "confidence": "float",
+                        "bounding-box": [
+                            {
+                                "x": "float",
+                                "y": "float"
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}

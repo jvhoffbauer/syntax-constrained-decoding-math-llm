@@ -1,0 +1,19 @@
+{
+    "api_list": [
+        {
+            "name": "Name to UUID conversion",
+            "schema": {
+                "result": {
+                    "name": "str",
+                    "uuid_trimmed": "str"
+                }
+            }
+        },
+        {
+            "name": "UUID to Username conversion",
+            "schema": {
+                "message": "str"
+            }
+        }
+    ]
+}

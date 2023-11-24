@@ -1,0 +1,35 @@
+{
+    "api_list": [
+        {
+            "name": "Address to Coordinates  (latitude longitude)",
+            "schema": {
+                "Results": [
+                    {
+                        "longitude": "float",
+                        "latitude": "float",
+                        "address": "str",
+                        "city": "str",
+                        "country": "str",
+                        "postalcode": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Coordinates  (latitude longitude) to Address",
+            "schema": {
+                "Results": [
+                    {
+                        "address": "str",
+                        "city": "str",
+                        "region": "str",
+                        "country": "str",
+                        "postalcode": "str",
+                        "longitude": "float",
+                        "latitude": "float"
+                    }
+                ]
+            }
+        }
+    ]
+}

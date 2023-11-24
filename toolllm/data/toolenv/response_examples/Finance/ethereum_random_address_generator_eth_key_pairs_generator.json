@@ -1,0 +1,11 @@
+{
+    "api_list": [
+        {
+            "name": "eth",
+            "schema": {
+                "address": "str",
+                "private_key": "str"
+            }
+        }
+    ]
+}

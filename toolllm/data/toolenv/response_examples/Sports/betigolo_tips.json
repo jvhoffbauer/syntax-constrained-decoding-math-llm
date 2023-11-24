@@ -1,0 +1,19 @@
+{
+    "api_list": [
+        {
+            "name": "Premium History",
+            "schema": {
+                "match_dat": "str",
+                "sport": "str",
+                "home_team": "str",
+                "away_team": "str",
+                "tip": "str",
+                "fair_odd": "float",
+                "tip_odd": "float",
+                "result": "str",
+                "tip_successful": "bool",
+                "tip_profit": "int"
+            }
+        }
+    ]
+}

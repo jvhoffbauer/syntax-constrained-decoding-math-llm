@@ -1,0 +1,10 @@
+{
+    "api_list": [
+        {
+            "name": "Target URL",
+            "schema": {
+                "message": "str"
+            }
+        }
+    ]
+}

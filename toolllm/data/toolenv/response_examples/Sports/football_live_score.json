@@ -1,0 +1,51 @@
+{
+    "api_list": [
+        {
+            "name": "Live score",
+            "schema": {
+                "liveScores": [
+                    {
+                        "competition": {
+                            "name": "str",
+                            "area": {
+                                "name": "str"
+                            },
+                            "image": {
+                                "url": "str"
+                            }
+                        },
+                        "matches": [
+                            {
+                                "startDate": "str",
+                                "venue": {
+                                    "name": "str"
+                                },
+                                "status": "str",
+                                "teamA": {
+                                    "name": "str",
+                                    "image": {
+                                        "url": "str"
+                                    }
+                                },
+                                "teamB": {
+                                    "name": "str",
+                                    "image": {
+                                        "url": "str"
+                                    }
+                                },
+                                "redCards": {
+                                    "teamA": "str",
+                                    "teamB": "str"
+                                },
+                                "score": {
+                                    "teamA": "str",
+                                    "teamB": "str"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,11 @@
+{
+    "api_list": [
+        {
+            "name": "Generate Tags",
+            "schema": {
+                "query": "str",
+                "tags": "empty list"
+            }
+        }
+    ]
+}

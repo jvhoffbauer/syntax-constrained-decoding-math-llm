@@ -1,0 +1,77 @@
+{
+    "api_list": [
+        {
+            "name": "Search location by Name or zip code",
+            "schema": {
+                "location": [
+                    {
+                        "wmo": "str",
+                        "city": "str",
+                        "country": "str",
+                        "country_name": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "List of cities in one Country",
+            "schema": {
+                "description": "str",
+                "location": {
+                    "country": "str",
+                    "countryname": "str",
+                    "NumberOfCity": "str"
+                },
+                "Cities": [
+                    {
+                        "name": "str",
+                        "countryCode": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "List of all Countries",
+            "schema": {
+                "Countries": [
+                    {
+                        "COUNTRY": "str",
+                        "name": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Get climate data by lat/lon or Key",
+            "schema": {
+                "title": "str",
+                "link": "str",
+                "modified": "str",
+                "location": {
+                    "city": "str",
+                    "country": "str",
+                    "country_name": "str",
+                    "tz_long": "str",
+                    "lat": "str",
+                    "lon": "str",
+                    "SI": "str",
+                    "SIU": "str",
+                    "CEL": "str",
+                    "start_date": "str",
+                    "end_date": "str"
+                },
+                "ClimateDataMonth": [
+                    {
+                        "tmax": "str",
+                        "temp": "str",
+                        "tmin": "str",
+                        "accumulated_rain": "str",
+                        "days_with_rain": "str",
+                        "sun_hours": "str",
+                        "rh": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

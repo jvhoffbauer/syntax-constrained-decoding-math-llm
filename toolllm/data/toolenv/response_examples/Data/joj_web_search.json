@@ -1,0 +1,32 @@
+{
+    "api_list": [
+        {
+            "name": "Search",
+            "schema": {
+                "search_term": "str",
+                "knowledge_panel": {
+                    "name": "str",
+                    "label": "str",
+                    "image": {
+                        "url": "str",
+                        "width": "str",
+                        "height": "str"
+                    }
+                },
+                "results": [
+                    {
+                        "position": "str",
+                        "url": "str",
+                        "title": "str",
+                        "description": "str"
+                    }
+                ],
+                "related_keywords": {
+                    "spelling_suggestion_html": "str",
+                    "spelling_suggestion": "str",
+                    "keywords": "str"
+                }
+            }
+        }
+    ]
+}

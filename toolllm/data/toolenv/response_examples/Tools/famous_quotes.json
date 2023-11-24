@@ -1,0 +1,12 @@
+{
+    "api_list": [
+        {
+            "name": "Get Random Quotes",
+            "schema": {
+                "author": "str",
+                "category": "str",
+                "text": "str"
+            }
+        }
+    ]
+}

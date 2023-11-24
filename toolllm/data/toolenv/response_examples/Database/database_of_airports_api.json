@@ -1,0 +1,21 @@
+{
+    "api_list": [
+        {
+            "name": "Airports",
+            "schema": {
+                "success": "bool",
+                "data": [
+                    {
+                        "codeIataAirport": "str",
+                        "codeIataCity": "str",
+                        "codeIcaoAirport": "str",
+                        "codeIso2Country": "str",
+                        "nameAirport": "str",
+                        "nameCountry": "str",
+                        "timezone": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

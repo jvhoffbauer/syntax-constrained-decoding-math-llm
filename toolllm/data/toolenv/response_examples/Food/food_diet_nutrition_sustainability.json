@@ -1,0 +1,92 @@
+{
+    "api_list": [
+        {
+            "name": "betterHealth",
+            "schema": {
+                "code": "int",
+                "className": "str"
+            }
+        },
+        {
+            "name": "betterNutrition",
+            "schema": {
+                "name": "str",
+                "message": "str",
+                "code": "int"
+            }
+        },
+        {
+            "name": "betterAlternatives",
+            "schema": {
+                "name": "str",
+                "message": "str",
+                "code": "int"
+            }
+        },
+        {
+            "name": "betterSustainable",
+            "schema": {
+                "name": "str",
+                "message": "str",
+                "code": "int"
+            }
+        },
+        {
+            "name": "betterEnvironment",
+            "schema": {
+                "name": "str",
+                "message": "str",
+                "code": "int"
+            }
+        },
+        {
+            "name": "betterSafety",
+            "schema": {
+                "name": "str",
+                "message": "str",
+                "code": "int"
+            }
+        },
+        {
+            "name": "betterProcessing",
+            "schema": {
+                "name": "str",
+                "message": "str",
+                "code": "int",
+                "className": "str"
+            }
+        },
+        {
+            "name": "climateLabels",
+            "schema": {
+                "name": "str",
+                "message": "str",
+                "code": "int"
+            }
+        },
+        {
+            "name": "matchEnriched",
+            "schema": {
+                "name": "str",
+                "message": "str",
+                "code": "int"
+            }
+        },
+        {
+            "name": "matchDownload",
+            "schema": {
+                "name": "str",
+                "message": "str",
+                "code": "int"
+            }
+        },
+        {
+            "name": "relatedProducts",
+            "schema": {
+                "code": "int",
+                "className": "str",
+                "message": "str"
+            }
+        }
+    ]
+}

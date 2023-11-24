@@ -1,0 +1,18 @@
+{
+    "api_list": [
+        {
+            "name": "KeywordSearch",
+            "schema": {
+                "searchWord": "str",
+                "country": "str",
+                "language": "str",
+                "keywords": [
+                    {
+                        "keyword": "str",
+                        "score": "float"
+                    }
+                ]
+            }
+        }
+    ]
+}

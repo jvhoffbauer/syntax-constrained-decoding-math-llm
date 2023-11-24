@@ -1,0 +1,77 @@
+{
+    "api_list": [
+        {
+            "name": "Get Apps From Dev",
+            "schema": {
+                "title": "str",
+                "appId": "str",
+                "url": "str",
+                "icon": "str",
+                "developer": "str",
+                "price": "str",
+                "free": "str",
+                "score": "str"
+            }
+        },
+        {
+            "name": "Sorting",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get Ages",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get Collections",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get Categories",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get App Reviews",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get Similar Apps",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get App Datasafety",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get App Permissions",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Apps From Category",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Search",
+            "schema": {
+                "message": "str"
+            }
+        }
+    ]
+}

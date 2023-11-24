@@ -1,0 +1,40 @@
+{
+    "api_list": [
+        {
+            "name": "/entities",
+            "schema": {
+                "code": "str",
+                "name": "str",
+                "logo": "str",
+                "bic": "str",
+                "inputs": {
+                    "document_type": {
+                        "name": "str"
+                    },
+                    "user": {
+                        "name": "str",
+                        "placeholder": "str",
+                        "validation_rule": "str"
+                    },
+                    "password": {
+                        "name": "str",
+                        "validation_rule": "str"
+                    }
+                },
+                "statistics": {
+                    "execution_time": "float",
+                    "operation_id": "str",
+                    "token": "str"
+                }
+            }
+        },
+        {
+            "name": "/error-codes",
+            "schema": {
+                "code": "int",
+                "description": "str",
+                "message": "str"
+            }
+        }
+    ]
+}

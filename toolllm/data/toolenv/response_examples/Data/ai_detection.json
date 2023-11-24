@@ -1,0 +1,11 @@
+{
+    "api_list": [
+        {
+            "name": "Check text",
+            "schema": {
+                "real_probability": "float",
+                "fake_probability": "float"
+            }
+        }
+    ]
+}

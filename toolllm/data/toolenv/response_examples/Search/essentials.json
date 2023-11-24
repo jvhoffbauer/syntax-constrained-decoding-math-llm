@@ -1,0 +1,25 @@
+{
+    "api_list": [
+        {
+            "name": "essentials_lookup",
+            "schema": {
+                "code": "int",
+                "message": "str"
+            }
+        },
+        {
+            "name": "essentials_lookup_{filter_name}_{key_or_value}",
+            "schema": {
+                "code": "int",
+                "message": "str"
+            }
+        },
+        {
+            "name": "essentials_lookup_{filter_name}",
+            "schema": {
+                "code": "int",
+                "message": "str"
+            }
+        }
+    ]
+}

@@ -1,0 +1,119 @@
+{
+    "api_list": [
+        {
+            "name": "Holidays",
+            "schema": {
+                "holidays": [
+                    {
+                        "date": "str",
+                        "nameEn": "str",
+                        "nameFr": "str",
+                        "federal": "int",
+                        "observedDate": "str",
+                        "provinces": [
+                            {
+                                "id": "str",
+                                "nameEn": "str",
+                                "nameFr": "str"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Holiday",
+            "schema": {
+                "holiday": {
+                    "id": "int",
+                    "date": "str",
+                    "nameEn": "str",
+                    "nameFr": "str",
+                    "federal": "int",
+                    "observedDate": "str",
+                    "provinces": [
+                        {
+                            "id": "str",
+                            "nameEn": "str",
+                            "nameFr": "str"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Province",
+            "schema": {
+                "province": {
+                    "id": "str",
+                    "nameEn": "str",
+                    "nameFr": "str",
+                    "sourceLink": "str",
+                    "sourceEn": "str",
+                    "holidays": [
+                        {
+                            "date": "str",
+                            "nameEn": "str",
+                            "nameFr": "str",
+                            "federal": "int",
+                            "observedDate": "str"
+                        }
+                    ],
+                    "nextHoliday": {
+                        "date": "str",
+                        "nameEn": "str",
+                        "nameFr": "str",
+                        "federal": "int",
+                        "observedDate": "str"
+                    }
+                }
+            }
+        },
+        {
+            "name": "Root",
+            "schema": {
+                "message": "str",
+                "_links": {
+                    "holidays": {
+                        "href": "str"
+                    },
+                    "provinces": {
+                        "href": "str"
+                    },
+                    "spec": {
+                        "href": "str"
+                    }
+                }
+            }
+        },
+        {
+            "name": "Provinces",
+            "schema": {
+                "provinces": [
+                    {
+                        "id": "str",
+                        "nameEn": "str",
+                        "nameFr": "str",
+                        "sourceLink": "str",
+                        "holidays": [
+                            {
+                                "date": "str",
+                                "nameEn": "str",
+                                "nameFr": "str",
+                                "federal": "int",
+                                "observedDate": "str"
+                            }
+                        ],
+                        "nextHoliday": {
+                            "date": "str",
+                            "nameEn": "str",
+                            "nameFr": "str",
+                            "federal": "int",
+                            "observedDate": "str"
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

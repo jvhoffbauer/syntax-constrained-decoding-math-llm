@@ -1,0 +1,12 @@
+{
+    "api_list": [
+        {
+            "name": "Get Space News",
+            "schema": {
+                "title": "str",
+                "url": "str",
+                "source": "str"
+            }
+        }
+    ]
+}

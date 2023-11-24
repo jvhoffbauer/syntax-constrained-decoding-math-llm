@@ -1,0 +1,25 @@
+{
+    "api_list": [
+        {
+            "name": "Get User Avatar",
+            "schema": {
+                "messages": "str"
+            }
+        },
+        {
+            "name": "Get Profile",
+            "schema": {
+                "messages": "str"
+            }
+        },
+        {
+            "name": "List Reviews",
+            "schema": {
+                "id": "int",
+                "author": "str",
+                "comment": "str",
+                "rating": "int"
+            }
+        }
+    ]
+}

@@ -1,0 +1,184 @@
+{
+    "api_list": [
+        {
+            "name": "List racecards (basic)",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Todays results",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Damsire results",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Sire class analysis",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Trainer horse age analysis",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Horse distance time analysis",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Damsire class analysis",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Search damsires",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Damsire distance analysis",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Dam class analysis",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Sire distance analysis",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Owner trainer analysis",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Owner jockey analysis",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Search owners",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Search horses",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "List courses",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "List regions",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Horse results",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Owner distance analysis",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Search sires",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Dam distance analysis",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Search jockeys",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Owner course analysis",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Owner results",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Dam results",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Trainer distance analysis",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Search dams",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Trainer results",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "All results",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Trainer jockey analysis",
+            "schema": {
+                "message": "str"
+            }
+        }
+    ]
+}

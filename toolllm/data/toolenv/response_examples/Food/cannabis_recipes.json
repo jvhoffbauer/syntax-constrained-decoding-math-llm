@@ -1,0 +1,16 @@
+{
+    "api_list": [
+        {
+            "name": "Cannabis Recipes by Category ID",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Categories",
+            "schema": {
+                "message": "str"
+            }
+        }
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "api_list": [
+        {
+            "name": "placeByNameAndState",
+            "schema": {
+                "type": "str",
+                "features": [
+                    {
+                        "type": "str",
+                        "id": "str",
+                        "geometry": {
+                            "type": "str",
+                            "coordinates": [
+                                "list of str with length 1"
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,37 @@
+{
+    "api_list": [
+        {
+            "name": "Get synchronization",
+            "schema": {
+                "errors": [
+                    {
+                        "code": "str",
+                        "detail": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "List transactions",
+            "schema": {
+                "errors": [
+                    {
+                        "code": "str",
+                        "detail": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "List accounts",
+            "schema": {
+                "errors": [
+                    {
+                        "code": "str",
+                        "detail": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

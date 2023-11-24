@@ -1,0 +1,32 @@
+{
+    "api_list": [
+        {
+            "name": "Get Result From Category",
+            "schema": {
+                "word": "str",
+                "forbiddenWords": [
+                    "list of str with length 1"
+                ]
+            }
+        },
+        {
+            "name": "Get Taboo Words From Word",
+            "schema": {
+                "word": "str",
+                "related": [
+                    "list of str with length 1"
+                ]
+            }
+        },
+        {
+            "name": "Get Stored Word From Any Category",
+            "schema": {
+                "category": "str",
+                "word": "str",
+                "forbiddenWords": [
+                    "list of str with length 1"
+                ]
+            }
+        }
+    ]
+}

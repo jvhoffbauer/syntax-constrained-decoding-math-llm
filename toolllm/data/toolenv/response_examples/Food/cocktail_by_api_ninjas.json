@@ -1,0 +1,14 @@
+{
+    "api_list": [
+        {
+            "name": "/v1/cocktail",
+            "schema": {
+                "name": "str",
+                "ingredients": [
+                    "list of str with length 1"
+                ],
+                "instructions": "str"
+            }
+        }
+    ]
+}

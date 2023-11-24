@@ -1,0 +1,34 @@
+{
+    "api_list": [
+        {
+            "name": "search translations",
+            "schema": {
+                "responseData": {
+                    "translatedText": "str",
+                    "match": "int"
+                },
+                "quotaFinished": "bool",
+                "mtLangSupported": "NoneType",
+                "responseStatus": "int",
+                "matches": [
+                    {
+                        "translation": "str",
+                        "source": "str",
+                        "target": "str",
+                        "quality": "int",
+                        "match": "int"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "set contribution",
+            "schema": {
+                "responseData": {
+                    "translatedText": "str"
+                },
+                "responseStatus": "str"
+            }
+        }
+    ]
+}

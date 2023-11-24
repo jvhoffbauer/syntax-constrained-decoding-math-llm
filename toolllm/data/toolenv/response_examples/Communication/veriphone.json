@@ -1,0 +1,27 @@
+{
+    "api_list": [
+        {
+            "name": "verify",
+            "schema": {
+                "status": "str",
+                "phone": "str",
+                "phone_valid": "bool",
+                "phone_type": "str",
+                "phone_region": "str",
+                "country_code": "str",
+                "international_number": "str",
+                "local_number": "str"
+            }
+        },
+        {
+            "name": "example",
+            "schema": {
+                "status": "str",
+                "country_code": "str",
+                "international_number": "str",
+                "local_number": "str",
+                "e164": "str"
+            }
+        }
+    ]
+}

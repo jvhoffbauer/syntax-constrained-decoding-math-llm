@@ -1,0 +1,311 @@
+{
+    "api_list": [
+        {
+            "name": "TIME_SERIES_DAILY",
+            "schema": {
+                "Meta Data": {
+                    "1. Information": "str",
+                    "2. Symbol": "str",
+                    "3. Last Refreshed": "str",
+                    "4. Output Size": "str",
+                    "5. Time Zone": "str"
+                },
+                "Time Series (Daily)": {
+                    "2023-06-15": {
+                        "1. open": "str",
+                        "2. high": "str",
+                        "3. low": "str",
+                        "4. close": "str",
+                        "5. volume": "str"
+                    },
+                    "2023-06-14": {
+                        "1. open": "str",
+                        "2. high": "str",
+                        "3. low": "str",
+                        "4. close": "str",
+                        "5. volume": "str"
+                    },
+                    "2023-06-13": {
+                        "1. open": "str",
+                        "2. high": "str",
+                        "3. low": "str",
+                        "4. close": "str",
+                        "5. volume": "str"
+                    },
+                    "2023-06-12": {
+                        "1. open": "str",
+                        "2. high": "str",
+                        "3. low": "str",
+                        "4. close": "str",
+                        "5. volume": "str"
+                    }
+                }
+            }
+        },
+        {
+            "name": "TIME_SERIES_WEEKLY",
+            "schema": {
+                "Meta Data": {
+                    "1. Information": "str",
+                    "2. Symbol": "str",
+                    "3. Last Refreshed": "str",
+                    "4. Time Zone": "str"
+                },
+                "Weekly Time Series": {
+                    "2023-06-15": {
+                        "1. open": "str",
+                        "4. close": "str"
+                    },
+                    "2023-06-09": {
+                        "1. open": "str",
+                        "4. close": "str"
+                    },
+                    "2023-06-02": {
+                        "1. open": "str",
+                        "4. close": "str"
+                    },
+                    "2023-05-26": {
+                        "1. open": "str",
+                        "4. close": "str"
+                    },
+                    "2023-05-19": {
+                        "1. open": "str",
+                        "4. close": "str"
+                    },
+                    "2023-05-12": {
+                        "1. open": "str",
+                        "4. close": "str"
+                    },
+                    "2023-05-05": {
+                        "1. open": "str",
+                        "4. close": "str"
+                    },
+                    "2023-04-28": {
+                        "1. open": "str",
+                        "4. close": "str"
+                    }
+                }
+            }
+        },
+        {
+            "name": "TIME_SERIES_MONTHLY_ADJUSTED",
+            "schema": {
+                "Meta Data": {
+                    "1. Information": "str",
+                    "2. Symbol": "str",
+                    "3. Last Refreshed": "str",
+                    "4. Time Zone": "str"
+                },
+                "Monthly Adjusted Time Series": {
+                    "2023-06-15": {
+                        "1. open": "str",
+                        "2. high": "str",
+                        "3. low": "str",
+                        "4. close": "str",
+                        "5. adjusted close": "str",
+                        "6. volume": "str",
+                        "7. dividend amount": "str"
+                    },
+                    "2023-05-31": {
+                        "1. open": "str",
+                        "2. high": "str",
+                        "3. low": "str",
+                        "4. close": "str",
+                        "5. adjusted close": "str",
+                        "6. volume": "str",
+                        "7. dividend amount": "str"
+                    },
+                    "2023-04-28": {
+                        "1. open": "str",
+                        "2. high": "str",
+                        "3. low": "str",
+                        "4. close": "str",
+                        "5. adjusted close": "str",
+                        "6. volume": "str",
+                        "7. dividend amount": "str"
+                    },
+                    "2023-03-31": {
+                        "1. open": "str",
+                        "2. high": "str",
+                        "3. low": "str",
+                        "4. close": "str",
+                        "5. adjusted close": "str",
+                        "6. volume": "str",
+                        "7. dividend amount": "str"
+                    },
+                    "2023-02-28": {
+                        "1. open": "str",
+                        "2. high": "str",
+                        "3. low": "str",
+                        "4. close": "str",
+                        "5. adjusted close": "str",
+                        "6. volume": "str",
+                        "7. dividend amount": "str"
+                    },
+                    "2023-01-31": {
+                        "1. open": "str"
+                    }
+                }
+            }
+        },
+        {
+            "name": "TIME_SERIES_DAILY_ADJUSTED",
+            "schema": {
+                "Meta Data": {
+                    "1. Information": "str",
+                    "2. Symbol": "str",
+                    "3. Last Refreshed": "str",
+                    "4. Output Size": "str",
+                    "5. Time Zone": "str"
+                },
+                "Time Series (Daily)": {
+                    "2023-06-15": {
+                        "1. open": "str",
+                        "2. high": "str",
+                        "3. low": "str",
+                        "4. close": "str",
+                        "5. adjusted close": "str",
+                        "6. volume": "str"
+                    },
+                    "2023-06-14": {
+                        "1. open": "str",
+                        "2. high": "str",
+                        "3. low": "str",
+                        "4. close": "str",
+                        "5. adjusted close": "str",
+                        "6. volume": "str"
+                    },
+                    "2023-06-13": {
+                        "1. open": "str",
+                        "2. high": "str",
+                        "3. low": "str",
+                        "4. close": "str",
+                        "5. adjusted close": "str",
+                        "6. volume": "str"
+                    },
+                    "2023-06-12": {
+                        "1. open": "str",
+                        "2. high": "str",
+                        "3. low": "str",
+                        "4. close": "str",
+                        "5. adjusted close": "str",
+                        "6. volume": "str"
+                    },
+                    "2023-06-09": {
+                        "1. open": "str",
+                        "2. high": "str",
+                        "3. low": "str",
+                        "4. close": "str",
+                        "5. adjusted close": "str",
+                        "6. volume": "str"
+                    }
+                }
+            }
+        },
+        {
+            "name": "Search Endpoint",
+            "schema": {
+                "bestMatches": [
+                    {
+                        "1. symbol": "str",
+                        "2. name": "str",
+                        "3. type": "str",
+                        "4. region": "str",
+                        "8. currency": "str",
+                        "9. matchScore": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "TIME_SERIES_WEEKLY_ADJUSTED",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Quote Endpoint",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "TIME_SERIES_INTRADAY",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "TIME_SERIES_MONTHLY",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "DIGITAL_CURRENCY_WEEKLY",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Technical Indicators",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "CURRENCY_EXCHANGE_RATE (Crypto)",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "FX_INTRADAY",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "FX_WEEKLY",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Customizable Endpoint",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "FX_DAILY",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "DIGITAL_CURRENCY_DAILY",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "CURRENCY_EXCHANGE_RATE",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "FX_MONTHLY",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "DIGITAL_CURRENCY_MONTHLY",
+            "schema": {
+                "message": "str"
+            }
+        }
+    ]
+}

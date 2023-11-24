@@ -1,0 +1,17 @@
+{
+    "api_list": [
+        {
+            "name": "History Of Today",
+            "schema": {
+                "date": "str",
+                "description": "str"
+            }
+        },
+        {
+            "name": "Quiz For Today",
+            "schema": {
+                "question": "str"
+            }
+        }
+    ]
+}

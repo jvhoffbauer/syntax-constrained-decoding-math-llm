@@ -1,0 +1,250 @@
+{
+    "api_list": [
+        {
+            "name": "Yandex Search",
+            "schema": {
+                "request_info": {
+                    "success": "bool",
+                    "message": "str"
+                }
+            }
+        },
+        {
+            "name": "Locations",
+            "schema": {
+                "request_info": {
+                    "success": "bool"
+                }
+            }
+        },
+        {
+            "name": "Naver News",
+            "schema": {
+                "request_info": {
+                    "success": "bool",
+                    "message": "str"
+                }
+            }
+        },
+        {
+            "name": "Naver Search",
+            "schema": {
+                "request_info": {
+                    "success": "bool",
+                    "message": "str"
+                }
+            }
+        },
+        {
+            "name": "Baidu Search",
+            "schema": {
+                "request_info": {
+                    "success": "bool",
+                    "message": "str"
+                }
+            }
+        },
+        {
+            "name": "Yahoo News",
+            "schema": {
+                "request_info": {
+                    "success": "bool",
+                    "message": "str"
+                }
+            }
+        },
+        {
+            "name": "Yahoo Search",
+            "schema": {
+                "request_info": {
+                    "success": "bool",
+                    "message": "str"
+                }
+            }
+        },
+        {
+            "name": "Bing Search",
+            "schema": {
+                "request_info": {
+                    "success": "bool"
+                }
+            }
+        },
+        {
+            "name": "Bing Image",
+            "schema": {
+                "request_info": {
+                    "success": "bool"
+                }
+            }
+        },
+        {
+            "name": "Bing News",
+            "schema": {
+                "request_info": {
+                    "success": "bool",
+                    "message": "str"
+                }
+            }
+        },
+        {
+            "name": "Google Product Reviews",
+            "schema": {
+                "request_info": {
+                    "success": "bool",
+                    "message": "str"
+                }
+            }
+        },
+        {
+            "name": "Google Product Specifications",
+            "schema": {
+                "request_info": {
+                    "success": "bool",
+                    "message": "str"
+                }
+            }
+        },
+        {
+            "name": "Google Place and Maps Products Parameters",
+            "schema": {
+                "request_info": {
+                    "success": "bool",
+                    "message": "str"
+                }
+            }
+        },
+        {
+            "name": "Google Product Online Sellers",
+            "schema": {
+                "request_info": {
+                    "success": "bool",
+                    "message": "str"
+                }
+            }
+        },
+        {
+            "name": "Google Product Search",
+            "schema": {
+                "request_info": {
+                    "success": "bool",
+                    "message": "str"
+                }
+            }
+        },
+        {
+            "name": "Google Shopping Search",
+            "schema": {
+                "request_info": {
+                    "success": "bool",
+                    "message": "str"
+                }
+            }
+        },
+        {
+            "name": "Google Place and Maps Posts",
+            "schema": {
+                "request_info": {
+                    "success": "bool",
+                    "message": "str"
+                }
+            }
+        },
+        {
+            "name": "Google Place and Maps Reviews",
+            "schema": {
+                "request_info": {
+                    "success": "bool",
+                    "message": "str"
+                }
+            }
+        },
+        {
+            "name": "Google Place and Maps Photos",
+            "schema": {
+                "request_info": {
+                    "success": "bool",
+                    "message": "str"
+                }
+            }
+        },
+        {
+            "name": "Google Place and Maps Details",
+            "schema": {
+                "request_info": {
+                    "success": "bool",
+                    "message": "str"
+                }
+            }
+        },
+        {
+            "name": "Google Places and Maps Search",
+            "schema": {
+                "request_info": {
+                    "success": "bool"
+                }
+            }
+        },
+        {
+            "name": "Google Autocomplete",
+            "schema": {
+                "request_info": {
+                    "success": "bool",
+                    "message": "str"
+                }
+            }
+        },
+        {
+            "name": "Google Trends",
+            "schema": {
+                "request_info": {
+                    "success": "bool"
+                }
+            }
+        },
+        {
+            "name": "Google Scholar",
+            "schema": {
+                "request_info": {
+                    "success": "bool",
+                    "message": "str"
+                }
+            }
+        },
+        {
+            "name": "Google Video",
+            "schema": {
+                "request_info": {
+                    "success": "bool"
+                }
+            }
+        },
+        {
+            "name": "Google Image",
+            "schema": {
+                "request_info": {
+                    "success": "bool",
+                    "message": "str"
+                }
+            }
+        },
+        {
+            "name": "Google News",
+            "schema": {
+                "request_info": {
+                    "success": "bool",
+                    "message": "str"
+                }
+            }
+        },
+        {
+            "name": "Google Search",
+            "schema": {
+                "request_info": {
+                    "success": "bool",
+                    "message": "str"
+                }
+            }
+        }
+    ]
+}

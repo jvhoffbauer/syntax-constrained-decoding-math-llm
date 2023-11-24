@@ -1,0 +1,20 @@
+{
+    "api_list": [
+        {
+            "name": "il",
+            "schema": {
+                "success": "bool",
+                "status": "str",
+                "postakodu": [
+                    {
+                        "plaka": "int",
+                        "il": "str",
+                        "ilce": "str",
+                        "mahalle": "str",
+                        "pk": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

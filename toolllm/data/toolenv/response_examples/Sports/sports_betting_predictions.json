@@ -1,0 +1,16 @@
+{
+    "api_list": [
+        {
+            "name": "GetMarkets",
+            "schema": {
+                "messages": "str"
+            }
+        },
+        {
+            "name": "GetCountries",
+            "schema": {
+                "messages": "str"
+            }
+        }
+    ]
+}

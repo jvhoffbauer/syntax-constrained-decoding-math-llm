@@ -1,0 +1,56 @@
+{
+    "api_list": [
+        {
+            "name": "/veiculo_tipo",
+            "schema": {
+                "result": [
+                    {
+                        "tipo": "str",
+                        "nome": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "/veiculo_tipo/id_marca/id_modelo/id_modelo_ano",
+            "schema": {
+                "success": "bool",
+                "result": {
+                    "id_modelo_ano": "str",
+                    "marca": "str",
+                    "modelo": "str",
+                    "ano": "str",
+                    "combustivel": "str",
+                    "preco": "str"
+                }
+            }
+        },
+        {
+            "name": "/veiculo_tipo/id_marca",
+            "schema": {
+                "result": [
+                    {
+                        "tipo": "str",
+                        "id_marca": "str",
+                        "id_marca_modelo": "str",
+                        "nome": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "/veiculo_tipo/id_marca/id_modelo",
+            "schema": {
+                "result": [
+                    {
+                        "tipo": "str",
+                        "id_marca": "str",
+                        "id_modelo": "str",
+                        "id_modelo_ano": "str",
+                        "nome": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

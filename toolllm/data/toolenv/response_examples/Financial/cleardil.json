@@ -1,0 +1,145 @@
+{
+    "api_list": [
+        {
+            "name": "Fetchindividualcustomer",
+            "schema": {
+                "type": "str",
+                "message": "str"
+            }
+        },
+        {
+            "name": "Fetchallindividualcustomers",
+            "schema": {
+                "type": "str",
+                "message": "str"
+            }
+        },
+        {
+            "name": "Viewoverallscreeningresult",
+            "schema": {
+                "type": "str",
+                "message": "str"
+            }
+        },
+        {
+            "name": "Fetchanote",
+            "schema": {
+                "type": "str",
+                "message": "str"
+            }
+        },
+        {
+            "name": "Screeningstats",
+            "schema": {
+                "id": "str",
+                "type": "str",
+                "message": "str"
+            }
+        },
+        {
+            "name": "Viewallscreeningsresult",
+            "schema": {
+                "type": "str",
+                "message": "str"
+            }
+        },
+        {
+            "name": "Customerstats",
+            "schema": {
+                "type": "str",
+                "message": "str"
+            }
+        },
+        {
+            "name": "Fetchallnotes",
+            "schema": {
+                "type": "str",
+                "message": "str"
+            }
+        },
+        {
+            "name": "SearchallyourCONFIRMEDmatches",
+            "schema": {
+                "type": "str",
+                "message": "str"
+            }
+        },
+        {
+            "name": "FetchDRIVING_LICENSEdocument",
+            "schema": {
+                "type": "str",
+                "message": "str"
+            }
+        },
+        {
+            "name": "Fetchriskprofile",
+            "schema": {
+                "type": "str",
+                "message": "str"
+            }
+        },
+        {
+            "name": "DownloadtheattachedDRIVING_LICENSEfromthedocument",
+            "schema": {
+                "type": "str",
+                "message": "str"
+            }
+        },
+        {
+            "name": "Fetchoneassociationbelongingtoamatch",
+            "schema": {
+                "type": "str",
+                "message": "str"
+            }
+        },
+        {
+            "name": "Fetchallassociationsbelongingtoamatch",
+            "schema": {
+                "type": "str",
+                "message": "str"
+            }
+        },
+        {
+            "name": "Searchscreeningsdone",
+            "schema": {
+                "type": "str",
+                "message": "str"
+            }
+        },
+        {
+            "name": "SearchverificationsDONE",
+            "schema": {
+                "type": "str",
+                "message": "str"
+            }
+        },
+        {
+            "name": "Fetchaverification",
+            "schema": {
+                "type": "str",
+                "message": "str"
+            }
+        },
+        {
+            "name": "Fetchamatch",
+            "schema": {
+                "type": "str",
+                "message": "str"
+            }
+        },
+        {
+            "name": "Fetchallmatches",
+            "schema": {
+                "type": "str",
+                "message": "str"
+            }
+        },
+        {
+            "name": "Fetchallverifications",
+            "schema": {
+                "type": "str",
+                "message": "str"
+            }
+        }
+    ]
+}

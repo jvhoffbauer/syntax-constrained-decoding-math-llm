@@ -1,0 +1,11 @@
+{
+    "api_list": [
+        {
+            "name": "Read Inbox",
+            "schema": {
+                "code": "int",
+                "message": "str"
+            }
+        }
+    ]
+}

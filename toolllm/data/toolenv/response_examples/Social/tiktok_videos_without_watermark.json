@@ -1,0 +1,24 @@
+{
+    "api_list": [
+        {
+            "name": "getPostDetails",
+            "schema": {
+                "status": "str",
+                "message": "str",
+                "totalTime": "str",
+                "item": {
+                    "id": "str",
+                    "desc": "str",
+                    "author": {
+                        "uid": "str",
+                        "nickname": "str"
+                    },
+                    "music": {
+                        "title": "str",
+                        "author": "str"
+                    }
+                }
+            }
+        }
+    ]
+}

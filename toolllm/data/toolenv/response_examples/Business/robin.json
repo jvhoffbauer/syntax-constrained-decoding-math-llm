@@ -1,0 +1,14 @@
+{
+    "api_list": [
+        {
+            "name": "Space",
+            "schema": {
+                "meta": {
+                    "status_code": "int",
+                    "status": "str",
+                    "message": "str"
+                }
+            }
+        }
+    ]
+}

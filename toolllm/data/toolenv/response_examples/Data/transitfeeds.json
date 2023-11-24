@@ -1,0 +1,16 @@
+{
+    "api_list": [
+        {
+            "name": "getFeedVersions",
+            "schema": {
+                "status": "str"
+            }
+        },
+        {
+            "name": "getLatestFeedVersion",
+            "schema": {
+                "status": "str"
+            }
+        }
+    ]
+}

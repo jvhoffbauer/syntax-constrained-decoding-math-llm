@@ -1,0 +1,254 @@
+{
+    "api_list": [
+        {
+            "name": "Privacy Permissions by ID",
+            "schema": {
+                "type": "str",
+                "description": "str"
+            }
+        },
+        {
+            "name": "Categories",
+            "schema": {
+                "BOOKS": "str",
+                "BUSINESS": "str",
+                "CATALOGS": "str",
+                "EDUCATION": "str",
+                "ENTERTAINMENT": "str",
+                "FINANCE": "str",
+                "FOOD_AND_DRINK": "str",
+                "GAMES": "str",
+                "GAMES_ACTION": "str",
+                "GAMES_ADVENTURE": "str",
+                "GAMES_ARCADE": "str",
+                "GAMES_BOARD": "str",
+                "GAMES_CARD": "str",
+                "GAMES_CASINO": "str",
+                "GAMES_DICE": "str",
+                "GAMES_EDUCATIONAL": "str",
+                "GAMES_FAMILY": "str",
+                "GAMES_MUSIC": "str",
+                "GAMES_PUZZLE": "str",
+                "GAMES_RACING": "str",
+                "GAMES_ROLE_PLAYING": "str",
+                "GAMES_SIMULATION": "str",
+                "GAMES_SPORTS": "str",
+                "GAMES_STRATEGY": "str",
+                "GAMES_TRIVIA": "str",
+                "GAMES_WORD": "str",
+                "HEALTH_AND_FITNESS": "str",
+                "LIFESTYLE": "str",
+                "MAGAZINES_AND_NEWSPAPERS": "str",
+                "MAGAZINES_ARTS": "str",
+                "MAGAZINES_AUTOMOTIVE": "str",
+                "MAGAZINES_WEDDINGS": "str",
+                "MAGAZINES_BUSINESS": "str",
+                "MAGAZINES_CHILDREN": "str",
+                "MAGAZINES_COMPUTER": "str",
+                "MAGAZINES_FOOD": "str",
+                "MAGAZINES_CRAFTS": "str",
+                "MAGAZINES_ELECTRONICS": "str",
+                "MAGAZINES_ENTERTAINMENT": "str",
+                "MAGAZINES_FASHION": "str"
+            }
+        },
+        {
+            "name": "Similar Apps By ID",
+            "schema": {
+                "id": "int",
+                "appId": "str",
+                "title": "str",
+                "developer": "str",
+                "icon": "str",
+                "price": "int",
+                "currency": "str",
+                "score": "float"
+            }
+        },
+        {
+            "name": "Similar Apps By bundle ID",
+            "schema": {
+                "id": "int",
+                "appId": "str",
+                "title": "str",
+                "developer": "str",
+                "icon": "str",
+                "price": "int",
+                "currency": "str",
+                "score": "float"
+            }
+        },
+        {
+            "name": "Applications by Developer",
+            "schema": {
+                "id": "int",
+                "title": "str",
+                "developer": "str",
+                "developerId": "int",
+                "icon": "str",
+                "price": "int",
+                "currency": "str",
+                "score": "float"
+            }
+        },
+        {
+            "name": "Search",
+            "schema": {
+                "id": "int",
+                "appId": "str",
+                "title": "str",
+                "developer": "str",
+                "icon": "str",
+                "price": "int",
+                "currency": "str",
+                "score": "float"
+            }
+        },
+        {
+            "name": "Reviews by bundle ID",
+            "schema": {
+                "userName": "str",
+                "version": "str",
+                "score": "int",
+                "title": "str",
+                "text": "str"
+            }
+        },
+        {
+            "name": "Reviews by ID",
+            "schema": {
+                "id": "str",
+                "userName": "str",
+                "score": "int",
+                "title": "str",
+                "text": "str"
+            }
+        },
+        {
+            "name": "Application Details By bundle ID",
+            "schema": {
+                "id": "str",
+                "appId": "str",
+                "title": "str",
+                "developer": "str",
+                "primaryGenre": "str",
+                "contentRating": "str",
+                "releaseDate": "str",
+                "description": "str",
+                "price": "str",
+                "currency": "str",
+                "iosVersion": "str",
+                "score": "str",
+                "reviews": "str",
+                "version": "str",
+                "compatibleDevices": [
+                    "list of str with length 1"
+                ],
+                "supportedLanguages": [
+                    "list of str with length 1"
+                ]
+            }
+        },
+        {
+            "name": "Application Details By ID",
+            "schema": {
+                "id": "str",
+                "appId": "str",
+                "title": "str",
+                "developer": "str",
+                "primaryGenre": "str",
+                "contentRating": "str",
+                "releaseDate": "str",
+                "description": "str",
+                "price": "str",
+                "currency": "str",
+                "iosVersion": "str",
+                "score": "str",
+                "reviews": "str",
+                "version": "str"
+            }
+        },
+        {
+            "name": "New paid ios apps",
+            "schema": {
+                "id": "str",
+                "title": "str",
+                "developer": "str",
+                "icon": "str",
+                "price": "float",
+                "currency": "str"
+            }
+        },
+        {
+            "name": "New free ios apps",
+            "schema": {
+                "id": "str",
+                "title": "str",
+                "developer": "str",
+                "icon": "str",
+                "price": "int",
+                "currency": "str"
+            }
+        },
+        {
+            "name": "New ios apps",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Top grossing mac apps",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Top grossing ipad apps",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Top grossing ios apps",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Top paid mac apps",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Top paid ipad apps",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Top paid ios apps",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Top free mac apps",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Top free Ipad apps",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Top free IOS apps",
+            "schema": {
+                "message": "str"
+            }
+        }
+    ]
+}

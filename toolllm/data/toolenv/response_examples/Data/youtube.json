@@ -1,0 +1,414 @@
+{
+    "api_list": [
+        {
+            "name": "Search",
+            "schema": {
+                "contents": [
+                    {
+                        "type": "str",
+                        "video": {
+                            "author": {
+                                "avatar": [
+                                    {
+                                        "url": "str"
+                                    }
+                                ],
+                                "badges": [
+                                    {
+                                        "type": "str"
+                                    }
+                                ],
+                                "channelId": "str",
+                                "title": "str"
+                            },
+                            "badges": [
+                                "list of str with length 1"
+                            ],
+                            "descriptionSnippet": "str",
+                            "isLiveNow": "str",
+                            "lengthSeconds": "str",
+                            "movingThumbnails": [
+                                {
+                                    "url": "str"
+                                }
+                            ],
+                            "publishedTimeText": "str",
+                            "stats": {
+                                "views": "str"
+                            },
+                            "thumbnails": [
+                                {
+                                    "url": "str"
+                                }
+                            ],
+                            "title": "str",
+                            "videoId": "str"
+                        }
+                    }
+                ],
+                "cursorNext": "str",
+                "estimatedResults": "str",
+                "filterGroups": [
+                    {
+                        "filters": [
+                            {
+                                "cursorSelect": "str",
+                                "label": "str",
+                                "selected": "str"
+                            }
+                        ],
+                        "title": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Auto Complete",
+            "schema": {
+                "query": "str",
+                "results": [
+                    "list of str with length 1"
+                ]
+            }
+        },
+        {
+            "name": "Home",
+            "schema": {
+                "contents": [
+                    {
+                        "type": "str",
+                        "video": {
+                            "author": {
+                                "avatar": [
+                                    {
+                                        "url": "str"
+                                    }
+                                ],
+                                "badges": [
+                                    {
+                                        "text": "str",
+                                        "type": "str"
+                                    }
+                                ],
+                                "title": "str"
+                            },
+                            "isLiveNow": "str",
+                            "lengthSeconds": "str",
+                            "publishedTimeText": "str",
+                            "stats": {
+                                "views": "str"
+                            },
+                            "thumbnails": [
+                                {
+                                    "url": "str"
+                                }
+                            ],
+                            "title": "str",
+                            "videoId": "str"
+                        }
+                    }
+                ],
+                "cursorNext": "str"
+            }
+        },
+        {
+            "name": "Channel Community",
+            "schema": {
+                "contents": [
+                    {
+                        "post": {
+                            "attachment": {
+                                "type": "str"
+                            },
+                            "author": {
+                                "title": "str"
+                            },
+                            "postId": "str",
+                            "publishedTimeText": "str",
+                            "stats": {
+                                "comments": "str",
+                                "likes": "str"
+                            },
+                            "text": "str"
+                        },
+                        "type": "str"
+                    }
+                ],
+                "cursorNext": "str"
+            }
+        },
+        {
+            "name": "Channel Details",
+            "schema": {
+                "artistBio": "str",
+                "avatar": [
+                    {
+                        "url": "str"
+                    }
+                ],
+                "badges": [
+                    {
+                        "text": "str",
+                        "type": "str"
+                    }
+                ],
+                "banner": {
+                    "desktop": [
+                        {
+                            "url": "str"
+                        }
+                    ],
+                    "mobile": [
+                        {
+                            "url": "str"
+                        }
+                    ],
+                    "tv": [
+                        {
+                            "url": "str"
+                        }
+                    ]
+                },
+                "canonicalBaseUrl": "str",
+                "channelId": "str",
+                "country": "str",
+                "description": "str",
+                "hasBusinessEmail": "str",
+                "joinedDate": "str",
+                "joinedDateText": "str",
+                "keywords": [
+                    "list of str with length 1"
+                ],
+                "links": [
+                    {
+                        "title": "str"
+                    }
+                ],
+                "stats": {
+                    "subscribers": "str",
+                    "subscribersText": "str",
+                    "videos": "str",
+                    "videosText": "str",
+                    "views": "str"
+                },
+                "title": "str",
+                "username": "str"
+            }
+        },
+        {
+            "name": "Channel Search",
+            "schema": {
+                "contents": [
+                    {
+                        "video": {
+                            "author": {
+                                "avatar": [
+                                    {
+                                        "url": "str"
+                                    }
+                                ],
+                                "badges": [
+                                    {
+                                        "text": "str",
+                                        "type": "str"
+                                    }
+                                ],
+                                "canonicalBaseUrl": "str",
+                                "channelId": "str",
+                                "title": "str"
+                            },
+                            "badges": "str",
+                            "descriptionSnippet": "str",
+                            "lengthSeconds": "str",
+                            "movingThumbnails": [
+                                {
+                                    "url": "str"
+                                }
+                            ],
+                            "publishedTimeText": "str",
+                            "stats": {
+                                "views": "str"
+                            },
+                            "thumbnails": [
+                                {
+                                    "url": "str"
+                                }
+                            ],
+                            "title": "str",
+                            "videoId": "str"
+                        }
+                    }
+                ],
+                "cursorNext": "str"
+            }
+        },
+        {
+            "name": "Community Post Details",
+            "schema": {
+                "post": {
+                    "attachment": {
+                        "type": "str"
+                    },
+                    "author": {
+                        "title": "str"
+                    },
+                    "postId": "str",
+                    "publishedTimeText": "str",
+                    "stats": {
+                        "likes": "str"
+                    },
+                    "text": "str"
+                }
+            }
+        },
+        {
+            "name": "Video Streaming Data",
+            "schema": {
+                "adaptiveFormats": [
+                    {
+                        "itag": "str",
+                        "url": "str"
+                    }
+                ],
+                "formats": [
+                    {
+                        "itag": "str",
+                        "url": "str"
+                    }
+                ],
+                "isProtectedContent": "str",
+                "publishDate": "str"
+            }
+        },
+        {
+            "name": "Video Details",
+            "schema": {
+                "author": {
+                    "title": "str"
+                },
+                "captions": [
+                    {
+                        "language": {
+                            "name": "str"
+                        },
+                        "url": "str"
+                    }
+                ],
+                "cards": "empty list",
+                "category": "str",
+                "chapters": "str",
+                "description": "str",
+                "endScreen": {
+                    "type": "str"
+                },
+                "isLiveContent": "str",
+                "isLiveNow": "str",
+                "keywords": "empty list",
+                "lengthSeconds": "str",
+                "publishedDate": "str",
+                "stats": {
+                    "comments": "str",
+                    "likes": "str",
+                    "views": "str"
+                },
+                "superTitle": {},
+                "thumbnails": {}
+            }
+        },
+        {
+            "name": "Playlist Videos",
+            "schema": {
+                "contents": [
+                    {
+                        "type": "str",
+                        "video": {
+                            "author": {
+                                "title": "str"
+                            },
+                            "lengthSeconds": "int",
+                            "thumbnails": [
+                                {
+                                    "height": "int",
+                                    "url": "str",
+                                    "width": "int"
+                                }
+                            ],
+                            "title": "str",
+                            "videoId": "str"
+                        }
+                    }
+                ],
+                "cursorNext": "NoneType"
+            }
+        },
+        {
+            "name": "Playlist Details",
+            "schema": {
+                "author": {
+                    "title": "str"
+                },
+                "playlistId": "str",
+                "stats": {
+                    "videos": "str",
+                    "views": "str"
+                },
+                "title": "str",
+                "updatedTimeText": "str"
+            }
+        },
+        {
+            "name": "Video Related Contents",
+            "schema": {
+                "contents": [
+                    {
+                        "type": "str",
+                        "video": {
+                            "author": {
+                                "title": "str"
+                            },
+                            "lengthSeconds": "int",
+                            "publishedTimeText": "str",
+                            "stats": {
+                                "views": "int"
+                            },
+                            "thumbnails": [
+                                {
+                                    "height": "int",
+                                    "url": "str",
+                                    "width": "int"
+                                }
+                            ],
+                            "title": "str",
+                            "videoId": "str"
+                        }
+                    }
+                ],
+                "cursorNext": "NoneType"
+            }
+        },
+        {
+            "name": "Video Comments",
+            "schema": {
+                "comments": [
+                    {
+                        "author": {
+                            "title": "str"
+                        },
+                        "commentId": "str",
+                        "content": "str",
+                        "paid": {
+                            "status": "str"
+                        },
+                        "publishedTimeText": "str",
+                        "stats": {
+                            "replies": "str",
+                            "votes": "str"
+                        }
+                    }
+                ],
+                "cursorNext": "str",
+                "totalCommentsCount": "str"
+            }
+        }
+    ]
+}

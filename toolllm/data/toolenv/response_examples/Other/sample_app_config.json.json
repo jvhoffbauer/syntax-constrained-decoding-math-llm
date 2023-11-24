@@ -1,0 +1,23 @@
+{
+    "api_list": [
+        {
+            "name": "sample-app-config_copy",
+            "schema": {
+                "menuVersion": "int",
+                "splashScreenDuration": "int",
+                "version": "int",
+                "translationsVersion": "int",
+                "androidVersion": "str"
+            }
+        },
+        {
+            "name": "version",
+            "schema": {
+                "menuVersion": "int",
+                "version": "int",
+                "translationsVersion": "int",
+                "androidVersion": "str"
+            }
+        }
+    ]
+}

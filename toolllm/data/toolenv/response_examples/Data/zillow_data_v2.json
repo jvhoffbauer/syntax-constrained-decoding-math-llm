@@ -1,0 +1,283 @@
+{
+    "api_list": [
+        {
+            "name": "Search by coordinates",
+            "schema": {
+                "currentPage": "str",
+                "data": [
+                    {
+                        "address": "str",
+                        "addressCity": "str",
+                        "addressState": "str",
+                        "addressStreet": "str",
+                        "addressZipcode": "str",
+                        "area": "str",
+                        "availabilityDate": "str",
+                        "baths": "str",
+                        "beds": "str",
+                        "brokerName": "str",
+                        "builderName": "str",
+                        "countryCurrency": "str",
+                        "detailUrl": "str",
+                        "has3DModel": "str",
+                        "hasImage": "str",
+                        "hasVideo": "str",
+                        "hdpData": {
+                            "homeInfo": {
+                                "bathrooms": "str",
+                                "bedrooms": "str",
+                                "city": "str",
+                                "country": "str",
+                                "currency": "str",
+                                "homeStatus": "str",
+                                "homeType": "str",
+                                "isFeatured": "str",
+                                "isNonOwnerOccupied": "str",
+                                "isPremierBuilder": "str",
+                                "isZillowOwned": "str",
+                                "latitude": "str",
+                                "livingArea": "str",
+                                "longitude": "str"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Property details",
+            "schema": {
+                "NFSHDPBottomSlot": {
+                    "eventId": "str",
+                    "messages": [
+                        {
+                            "bucket": "str",
+                            "decisionContext": {
+                                "countyId": "str",
+                                "displayCategory": "str",
+                                "guid": "str",
+                                "homeStatus": "str",
+                                "homeType": "str",
+                                "isAdsRestricted": "str",
+                                "isEligibleZOFullCriteria": "str",
+                                "isZillowOwned": "str",
+                                "leadType": "str",
+                                "leadTypes": [
+                                    "list of str with length 1"
+                                ],
+                                "placementId": "str",
+                                "shouldDisplayUpsell": "str",
+                                "stateId": "str",
+                                "surfaceId": "str",
+                                "zestimate": "str",
+                                "zipcode": "str",
+                                "zoMarketCode": "str",
+                                "zpid": "str"
+                            },
+                            "eventId": "str",
+                            "isGlobalHoldout": "str",
+                            "isPlacementHoldout": "str",
+                            "lastModified": "str",
+                            "passThrottle": "str",
+                            "placementId": "str",
+                            "placementName": "str",
+                            "qualifiedTreatments": [
+                                {
+                                    "id": "str",
+                                    "lastModified": "str",
+                                    "name": "str",
+                                    "status": "str"
+                                }
+                            ],
+                            "selectedTreatment": {
+                                "component": "str",
+                                "id": "str",
+                                "lastModified": "str",
+                                "name": "str",
+                                "renderingProps": "str",
+                                "status": "str"
+                            },
+                            "shouldDisplay": "str",
+                            "skipDisplayReason": "str",
+                            "testPhase": "str"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Search by URL",
+            "schema": {
+                "currentPage": "str",
+                "data": [
+                    {
+                        "address": "str",
+                        "addressCity": "str",
+                        "addressState": "str",
+                        "addressStreet": "str",
+                        "addressZipcode": "str",
+                        "area": "str",
+                        "baths": "str",
+                        "beds": "str",
+                        "detailUrl": "str",
+                        "hdpData": {
+                            "homeInfo": {
+                                "bathrooms": "str",
+                                "bedrooms": "str",
+                                "city": "str",
+                                "country": "str",
+                                "currency": "str",
+                                "dateSold": "str",
+                                "homeStatus": "str",
+                                "homeType": "str",
+                                "latitude": "str",
+                                "livingArea": "str",
+                                "longitude": "str",
+                                "rentZestimate": "str",
+                                "shouldHighlight": "str",
+                                "zillowPropertyId": "str"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Search",
+            "schema": {
+                "currentPage": "str",
+                "data": [
+                    {
+                        "address": "str",
+                        "addressCity": "str",
+                        "addressState": "str",
+                        "addressStreet": "str",
+                        "addressZipcode": "str",
+                        "area": "str",
+                        "availabilityDate": "str",
+                        "baths": "str",
+                        "beds": "str",
+                        "brokerName": "str",
+                        "builderName": "str",
+                        "detailUrl": "str",
+                        "hdpData": {
+                            "homeInfo": {
+                                "bathrooms": "str",
+                                "bedrooms": "str",
+                                "city": "str",
+                                "country": "str",
+                                "currency": "str",
+                                "daysOnZillow": "str",
+                                "homeStatus": "str",
+                                "homeStatusForHDP": "str",
+                                "homeType": "str",
+                                "isFeatured": "str",
+                                "isNonOwnerOccupied": "str",
+                                "isPreforeclosureAuction": "str",
+                                "isPremierBuilder": "str",
+                                "isShowcaseListing": "str",
+                                "isUnmappable": "str",
+                                "isZillowOwned": "str",
+                                "latitude": "str",
+                                "longitude": "str"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Autocomplete",
+            "schema": {
+                "data": [
+                    "list of str with length 1"
+                ],
+                "status": "bool"
+            }
+        },
+        {
+            "name": "Photos",
+            "schema": {
+                "photos": [
+                    {
+                        "mixedSources": {
+                            "jpeg": [
+                                {
+                                    "url": "str",
+                                    "width": "int"
+                                }
+                            ],
+                            "webp": [
+                                {
+                                    "url": "str",
+                                    "width": "int"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Similar results nearby",
+            "schema": {
+                "currentPage": "int",
+                "data": "str",
+                "resultsPerPage": "int",
+                "totalPages": "int",
+                "totalResultCount": "int"
+            }
+        },
+        {
+            "name": "Get zip code by usps",
+            "schema": {
+                "data": [
+                    {
+                        "city": "str",
+                        "state": "str",
+                        "usps": "str",
+                        "zip_code": "str"
+                    }
+                ],
+                "status": "bool",
+                "total_result": "int"
+            }
+        },
+        {
+            "name": "Get zip code by city",
+            "schema": {
+                "data": [
+                    {
+                        "city": "str",
+                        "country_code": "str",
+                        "state": "str",
+                        "zip_code": "str"
+                    }
+                ],
+                "status": "bool",
+                "total_result": "int"
+            }
+        },
+        {
+            "name": "Get zip code by state",
+            "schema": {
+                "data": [
+                    {
+                        "zip_code": "str",
+                        "state": "str",
+                        "county": "str",
+                        "country_name": "str"
+                    }
+                ],
+                "status": "bool",
+                "total_result": "int"
+            }
+        },
+        {
+            "name": "List of U.S.A States",
+            "schema": {
+                "message": "str"
+            }
+        }
+    ]
+}

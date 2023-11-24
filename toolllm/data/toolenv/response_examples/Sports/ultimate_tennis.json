@@ -1,0 +1,306 @@
+{
+    "api_list": [
+        {
+            "name": "Player Info By ID",
+            "schema": {
+                "player_data": [
+                    {
+                        "Current Ranking (Doubles)": "str",
+                        "Current Ranking (Singles)": "str",
+                        "Doubles Career High (Career)": "str",
+                        "Doubles Titles (Career)": "str",
+                        "Singles Career High (Career)": "str",
+                        "Singles Titles (Career)": "str",
+                        "W/L Doubles (Career)": "str",
+                        "W/L Singles (Career)": "str",
+                        "countryCode": "str",
+                        "dateOfBirth": "str",
+                        "firstName": "str",
+                        "fullName": "str",
+                        "id": "int",
+                        "lastName": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Player Stats by ID and Year",
+            "schema": {
+                "player_code": "str",
+                "player_data": [
+                    {
+                        "Aces": "str",
+                        "Break_Points_Converted": "str",
+                        "Break_Points_Faced": "str",
+                        "Current_Rank": "str",
+                        "Double_Faults": "str",
+                        "First_Name": "str",
+                        "First_Return_Won": "str",
+                        "First_Serves_Played": "str",
+                        "First_Serves_Won": "str",
+                        "Last_Name": "str",
+                        "MatchCount": "str",
+                        "Nationality": "str",
+                        "PlayerNbr": "str",
+                        "Return_Games_Played": "str",
+                        "Second_Return_Chances": "str",
+                        "Second_Return_Won": "str",
+                        "Second_Serves_Played": "str",
+                        "Second_Serves_Won": "str",
+                        "Service_Games_Played": "str",
+                        "Year_End_Rank": "str",
+                        "countryCode": "str",
+                        "dateOfBirth": "str",
+                        "firstName": "str",
+                        "fullName": "str",
+                        "id": "str",
+                        "lastName": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Official WTA Players Rankings",
+            "schema": {
+                "category": "str",
+                "data": [
+                    {
+                        "name": "str",
+                        "points": "int",
+                        "ranking": "int"
+                    }
+                ],
+                "timestamp": "str"
+            }
+        },
+        {
+            "name": "Tournament Results by ID and Year WTA",
+            "schema": {
+                "matches": [
+                    {
+                        "CourtID": "str",
+                        "EventID": "str",
+                        "EventYear": "str",
+                        "MatchID": "str",
+                        "MatchTimeStamp": "str",
+                        "NumSets": "str",
+                        "PlayerCountryA": "str",
+                        "PlayerCountryB": "str",
+                        "PlayerIDA": "str",
+                        "PlayerIDB": "str",
+                        "PlayerNameFirstA": "str",
+                        "PlayerNameFirstB": "str",
+                        "PlayerNameLastA": "str",
+                        "PlayerNameLastB": "str",
+                        "ResultString": "str",
+                        "RoundID": "str",
+                        "ScoreString": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Tournament List WTA",
+            "schema": {
+                "Tournaments": [
+                    {
+                        "ID": "str",
+                        "category": "str",
+                        "city": "str",
+                        "country": "str",
+                        "doublesDrawSize": "int",
+                        "endDate": "str",
+                        "name": "str",
+                        "prizeMoney": "int",
+                        "prizeMoneyCurrency": "str",
+                        "singlesDrawSize": "int",
+                        "startDate": "str",
+                        "surface": "str",
+                        "year": "int"
+                    }
+                ],
+                "Year": "str"
+            }
+        },
+        {
+            "name": "Official ATP Players Rankings",
+            "schema": {
+                "category": "str",
+                "data": [
+                    {
+                        "Name": "str",
+                        "Points": "int",
+                        "Rank": "int",
+                        "Rank Diff": "float"
+                    }
+                ],
+                "timestamp": "str"
+            }
+        },
+        {
+            "name": "Tournament List",
+            "schema": {
+                "Category": "str",
+                "Tournaments": [
+                    {
+                        "ID": "str",
+                        "Location": "str",
+                        "Surface": "str",
+                        "Total Prize Money": "str",
+                        "Tournament Name": "str",
+                        "Winners": "str"
+                    }
+                ],
+                "Year": "str"
+            }
+        },
+        {
+            "name": "ATP Player Stats by ID",
+            "schema": {
+                "player_code": "str",
+                "player_data": [
+                    {
+                        "1st Serve": "str",
+                        "1st Serve Points Won": "str",
+                        "1st Serve Return Points Won": "str",
+                        "2nd Serve Points Won": "str",
+                        "2nd Serve Return Points Won": "str",
+                        "Aces": "str",
+                        "Break Points Converted": "str",
+                        "Break Points Saved": "str",
+                        "Double Faults": "str",
+                        "Return Games Won": "str",
+                        "Return Points Won": "str",
+                        "Service Games Won": "str",
+                        "Total Points Won": "str",
+                        "Total Service Points Won": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Live Matches Stats",
+            "schema": {
+                "Match Id": "str",
+                "statistics": [
+                    {
+                        "Aces P1": "str",
+                        "Aces P2": "str",
+                        "Break points converted P1": "str",
+                        "Break points converted P2": "str",
+                        "First serve P1": "str",
+                        "First serve P2": "str",
+                        "P1 name": "str",
+                        "P2 name": "str",
+                        "Second serve P1": "str",
+                        "Second serve P2": "str",
+                        "Service games played P1": "str",
+                        "Service games played P2": "str",
+                        "Tiebreaks P1": "str",
+                        "Tiebreaks P2": "str",
+                        "Tournament": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Live Scores with Live Betting Odds",
+            "schema": {
+                "matches": [
+                    {
+                        "Away Player": "str",
+                        "Current set": "str",
+                        "Home Player": "str",
+                        "ID": "str",
+                        "Live Away Odd": "float",
+                        "Live Home Odd": "float",
+                        "Player 1 Score": "str",
+                        "Player 2 Score": "str",
+                        "Round": "str",
+                        "Sets Player 1": "int",
+                        "Sets Player 2": "int",
+                        "Surface": "str",
+                        "Tournament": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Global Players Statistics",
+            "schema": {
+                "Season": "str",
+                "Surface": "str",
+                "category": "str",
+                "data": [
+                    {
+                        "Aces": "str",
+                        "ID": "str",
+                        "Name": "str",
+                        "Rank": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Live Players Rankings",
+            "schema": {
+                "Players": "str",
+                "data": [
+                    {
+                        "Name": "str",
+                        "Live Points": "str",
+                        "Points": "str",
+                        "Rank": "int"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Tournament Results by ID and Year",
+            "schema": {
+                "Location": "str",
+                "Tournament ID": "str",
+                "Year": "str",
+                "data": [
+                    {
+                        "Loser": "str",
+                        "Loser Id": "str",
+                        "Round": "str",
+                        "Winner": "str",
+                        "Winner ID": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Player Ranking History by ID",
+            "schema": {
+                "id": "str",
+                "player": "str",
+                "player_data": [
+                    {
+                        "Doubles": "str",
+                        "Singles": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Player Details by ID",
+            "schema": {
+                "player_data": [
+                    {
+                        "Age": "str",
+                        "Name": "str",
+                        "Play Style": "str",
+                        "Rank": "str",
+                        "Prize money Career": "str",
+                        "TItles Career": "str",
+                        "W/L Career": "str",
+                        "Year Turned Pro": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

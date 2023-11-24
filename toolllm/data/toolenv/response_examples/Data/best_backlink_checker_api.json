@@ -1,0 +1,67 @@
+{
+    "api_list": [
+        {
+            "name": "Exact URL (Non English)",
+            "schema": {
+                "url_from": "str",
+                "url_to": "str",
+                "title": "str",
+                "anchor": "str",
+                "nofollow": "bool",
+                "inlink_rank": "int",
+                "domain_inlink_rank": "int",
+                "first_seen": "str",
+                "last_visited": "str"
+            }
+        },
+        {
+            "name": "New Backlinks",
+            "schema": {
+                "backlinks": [
+                    {
+                        "new_lost_date": "str",
+                        "url_from": "str",
+                        "url_to": "str",
+                        "title": "str",
+                        "anchor": "str",
+                        "link_type": "str",
+                        "nofollow": "bool",
+                        "image": "bool"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Poor Backlinks",
+            "schema": {
+                "backlinks": [
+                    {
+                        "url_from": "str",
+                        "url_to": "str",
+                        "title": "str",
+                        "anchor": "str",
+                        "nofollow": "bool",
+                        "image": "bool",
+                        "inlink_rank": "int",
+                        "domain_inlink_rank": "int"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Exact URL",
+            "schema": {
+                "url_from": "str",
+                "url_to": "str",
+                "title": "str",
+                "anchor": "str",
+                "nofollow": "bool",
+                "image": "bool",
+                "inlink_rank": "int",
+                "domain_inlink_rank": "int",
+                "first_seen": "str",
+                "last_visited": "str"
+            }
+        }
+    ]
+}

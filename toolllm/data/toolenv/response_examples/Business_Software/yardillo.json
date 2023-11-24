@@ -1,0 +1,92 @@
+{
+    "api_list": [
+        {
+            "name": "Read Vault",
+            "schema": {
+                "messages": "str"
+            }
+        },
+        {
+            "name": "Read  Case Type By Name",
+            "schema": {
+                "_id": "NoneType",
+                "casetype": "NoneType",
+                "casestypedesc": "NoneType",
+                "defaultactivityid": "NoneType",
+                "activities": "str",
+                "fields": "NoneType",
+                "message": "NoneType"
+            }
+        },
+        {
+            "name": "Read  Case Type By Id",
+            "schema": {
+                "_id": "NoneType",
+                "casetype": "NoneType",
+                "casestypedesc": "NoneType",
+                "defaultactivityid": "NoneType",
+                "activities": "str",
+                "fields": "NoneType",
+                "message": "NoneType"
+            }
+        },
+        {
+            "name": "Get Case By Id",
+            "schema": {
+                "_id": "NoneType",
+                "casenumber": "int",
+                "casetitle": "NoneType",
+                "casetype": "NoneType",
+                "casestatus": "NoneType",
+                "currentactivityid": "NoneType",
+                "currentactionid": "NoneType",
+                "casedescription": "NoneType",
+                "createdate": "NoneType",
+                "createuser": "NoneType",
+                "updatedate": "NoneType",
+                "updateuser": "NoneType",
+                "message": {
+                    "_id": "str",
+                    "messageype": "str",
+                    "messagecode": "str",
+                    "messagedesc": "NoneType"
+                },
+                "itemId": "NoneType",
+                "blob": "NoneType"
+            }
+        },
+        {
+            "name": "Get Tenant",
+            "schema": {
+                "_id": "NoneType",
+                "tenantname": "NoneType",
+                "tenantdesc": "NoneType",
+                "message": {
+                    "_id": "str",
+                    "messageype": "str",
+                    "messagecode": "str"
+                }
+            }
+        },
+        {
+            "name": "Read Vault By Name",
+            "schema": {
+                "name": "NoneType",
+                "macroname": "NoneType",
+                "encryptwithkey": "NoneType",
+                "safekeeptext": "NoneType"
+            }
+        },
+        {
+            "name": "Get All Tenants",
+            "schema": {
+                "tenantname": "str",
+                "tenantdesc": "str",
+                "createdate": "str",
+                "createuser": "str",
+                "rapidhost": "str",
+                "rapidsubscription": "str"
+            }
+        }
+    ]
+}

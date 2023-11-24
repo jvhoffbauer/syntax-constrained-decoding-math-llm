@@ -1,0 +1,19 @@
+{
+    "api_list": [
+        {
+            "name": "search",
+            "schema": {
+                "items": [
+                    {
+                        "id": "str",
+                        "url": "str",
+                        "title": "str",
+                        "channel_name": "str",
+                        "views": "str"
+                    }
+                ],
+                "next_continuation": "str"
+            }
+        }
+    ]
+}

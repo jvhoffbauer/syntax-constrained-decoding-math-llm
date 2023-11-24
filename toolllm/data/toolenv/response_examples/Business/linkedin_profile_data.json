@@ -1,0 +1,44 @@
+{
+    "api_list": [
+        {
+            "name": "Profile data",
+            "schema": {
+                "username": "str",
+                "avatar": "str",
+                "firstName": "str",
+                "lastName": "str",
+                "fullName": "str",
+                "headline": "str",
+                "location": {
+                    "country": "str",
+                    "countryName": "str"
+                },
+                "experiences": [
+                    {
+                        "title": "str",
+                        "company": "str",
+                        "startDate": "str",
+                        "endDate": "str",
+                        "companyUrl": "str"
+                    }
+                ],
+                "activities": [
+                    {
+                        "status": "str"
+                    }
+                ],
+                "articles": [
+                    {
+                        "title": "str",
+                        "url": "str",
+                        "author": "str",
+                        "publishedAt": "str"
+                    }
+                ],
+                "languages": "str",
+                "volunteering": "str",
+                "suggestedProfiles": "str"
+            }
+        }
+    ]
+}

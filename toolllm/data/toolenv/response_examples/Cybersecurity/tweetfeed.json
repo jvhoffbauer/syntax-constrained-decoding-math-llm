@@ -1,0 +1,17 @@
+{
+    "api_list": [
+        {
+            "name": "v1",
+            "schema": {
+                "date": "str",
+                "user": "str",
+                "type": "str",
+                "value": "str",
+                "tags": [
+                    "list of str with length 1"
+                ],
+                "tweet": "str"
+            }
+        }
+    ]
+}

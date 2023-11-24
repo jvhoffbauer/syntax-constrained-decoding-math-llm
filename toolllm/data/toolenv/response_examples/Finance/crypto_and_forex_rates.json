@@ -1,0 +1,53 @@
+{
+    "api_list": [
+        {
+            "name": "ExchangeCurrencies",
+            "schema": {
+                "success": "int",
+                "from": "str",
+                "to": "str",
+                "amount": "str",
+                "sell": "float",
+                "buy": "float",
+                "result": "float"
+            }
+        },
+        {
+            "name": "api/assetInfo",
+            "schema": {
+                "success": "int",
+                "0": {
+                    "symbol": "str",
+                    "AssetType": "str",
+                    "price": "str",
+                    "LastUpdate": "str"
+                }
+            }
+        },
+        {
+            "name": "getPrices",
+            "schema": {
+                "success": "int",
+                "0": [
+                    {
+                        "Symbol": "str",
+                        "Price": "str",
+                        "AssetType": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "getAssets",
+            "schema": {
+                "success": "int",
+                "0": [
+                    {
+                        "Symbol": "str",
+                        "AssetType": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

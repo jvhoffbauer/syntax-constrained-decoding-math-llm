@@ -1,0 +1,30 @@
+{
+    "api_list": [
+        {
+            "name": "Image Search",
+            "schema": {
+                "errors": [
+                    {
+                        "code": "str",
+                        "subCode": "str",
+                        "message": "str",
+                        "parameter": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Trending",
+            "schema": {
+                "errors": [
+                    {
+                        "code": "str",
+                        "subCode": "str",
+                        "message": "str",
+                        "parameter": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

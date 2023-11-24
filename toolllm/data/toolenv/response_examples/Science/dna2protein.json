@@ -1,0 +1,30 @@
+{
+    "api_list": [
+        {
+            "name": "DNA2AminoAcid",
+            "schema": {
+                "aminoAcids": [
+                    {
+                        "letter": "str",
+                        "abbreviation": "str",
+                        "name": "str",
+                        "type": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "mRNA2AminoAcid",
+            "schema": {
+                "aminoAcids": [
+                    {
+                        "letter": "str",
+                        "abbreviation": "str",
+                        "name": "str",
+                        "type": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

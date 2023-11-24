@@ -1,0 +1,237 @@
+{
+    "api_list": [
+        {
+            "name": "Get a List of Bank Sector Groups",
+            "schema": {
+                "reportID": "int",
+                "nameAr": "str",
+                "nameEn": "str"
+            }
+        },
+        {
+            "name": "Get a List of Banks Sector Attributes against each group",
+            "schema": {
+                "attributeID": "int",
+                "displayNameAr": "str",
+                "displayNameEn": "str"
+            }
+        },
+        {
+            "name": "Get a List of Indicator Groups and Subgroups",
+            "schema": {
+                "groupID": "int",
+                "nameAr": "str",
+                "nameEn": "str",
+                "subGroups": [
+                    {
+                        "parentGroupID": "int",
+                        "nameAr": "str",
+                        "nameEn": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Get a List of Indicator against each Subgroup",
+            "schema": {
+                "fieldID": "int",
+                "displayNameAr": "str",
+                "displayNameEn": "str"
+            }
+        },
+        {
+            "name": "Get a List of Fund Managers",
+            "schema": {
+                "fundManagerID": "int",
+                "companyNameAr": "str",
+                "companyNameEn": "str"
+            }
+        },
+        {
+            "name": "Get a List of Funds against each Fund Manager",
+            "schema": {
+                "fundID": "int",
+                "fundNameAr": "str",
+                "fundNameEn": "str"
+            }
+        },
+        {
+            "name": "Get a List of Cement Attributes against each group",
+            "schema": {
+                "errors": {
+                    "reportID": [
+                        "list of str with length 1"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Get a List of Bank Attributes Groups",
+            "schema": {
+                "reportID": "int",
+                "nameAr": "str",
+                "nameEn": "str"
+            }
+        },
+        {
+            "name": "Get a List of Banks Attributes against each group",
+            "schema": {
+                "attributeID": "int",
+                "displayNameAr": "str",
+                "displayNameEn": "str"
+            }
+        },
+        {
+            "name": "Get Popular Articles by Market",
+            "schema": {
+                "articleID": "int",
+                "language": "str",
+                "title": "str",
+                "link": "str",
+                "isLinked": "bool"
+            }
+        },
+        {
+            "name": "Get Company's Profile",
+            "schema": {
+                "companyID": "str",
+                "marketID": "str",
+                "companyProfile": {
+                    "companyID": "str",
+                    "marketID": "str",
+                    "companyNameAr": "str",
+                    "companyNameEn": "str",
+                    "cityNameEn": "str",
+                    "cityNameAr": "str",
+                    "ticker": "str"
+                }
+            }
+        },
+        {
+            "name": "Get All Consumer Goods with Categories",
+            "schema": {
+                "categoryID": "int",
+                "categoryNameAr": "str",
+                "categoryNameEn": "str",
+                "consumerGoods": [
+                    {
+                        "materialID": "int",
+                        "materialNameAr": "str",
+                        "materialNameEn": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Get Markets",
+            "schema": {
+                "marketID": "int",
+                "marketNameAr": "str",
+                "marketNameEn": "str",
+                "bid": "str"
+            }
+        },
+        {
+            "name": "Get Commodities",
+            "schema": {
+                "commodityID": "int",
+                "nameEn": "str",
+                "nameAr": "str",
+                "type": "str"
+            }
+        },
+        {
+            "name": "Get Article Sources",
+            "schema": {
+                "articleSourceName": "str",
+                "languageID": "int",
+                "isActiveForStatistic": "bool"
+            }
+        },
+        {
+            "name": "Get International Market Data",
+            "schema": {
+                "marketID": "int",
+                "tradingDate": "str",
+                "openValue": "float",
+                "closeValue": "float",
+                "high": "float",
+                "low": "float",
+                "change": "float",
+                "percentageChange": "float"
+            }
+        },
+        {
+            "name": "Get Market Data",
+            "schema": {
+                "marketID": "int",
+                "bid": "str",
+                "tradingDate": "str",
+                "openValue": "float",
+                "closeValue": "float",
+                "high": "float",
+                "low": "float",
+                "changeValue": "float",
+                "volume": "float",
+                "amount": "float",
+                "percentageChange": "float"
+            }
+        },
+        {
+            "name": "Get Articles Types",
+            "schema": {
+                "articleTypeID": "int",
+                "nameAr": "str",
+                "nameEn": "str"
+            }
+        },
+        {
+            "name": "Get Inernational Markets",
+            "schema": {
+                "marketID": "int",
+                "marketNameAr": "str",
+                "marketNameEn": "str"
+            }
+        },
+        {
+            "name": "Get Sectors by Market",
+            "schema": {
+                "marketID": "int",
+                "sectorID": "int",
+                "sectorNameAr": "str",
+                "sectorNameEn": "str"
+            }
+        },
+        {
+            "name": "Get Sector's Data",
+            "schema": {
+                "marketID": "int",
+                "sectorID": "int",
+                "tradingDate": "str",
+                "openValue": "float",
+                "closeValue": "float",
+                "high": "float",
+                "low": "float",
+                "change": "float",
+                "percentageChange": "float"
+            }
+        },
+        {
+            "name": "Get Regular Commodities",
+            "schema": {
+                "commodityID": "int",
+                "tickerChartCommodityName": "str",
+                "commodityNameEn": "str",
+                "forDate": "str",
+                "openValue": "float",
+                "closeValue": "float",
+                "high": "float",
+                "low": "float",
+                "indexValue": "float",
+                "change": "float",
+                "percentageChange": "float",
+                "lastUpdated": "str"
+            }
+        }
+    ]
+}

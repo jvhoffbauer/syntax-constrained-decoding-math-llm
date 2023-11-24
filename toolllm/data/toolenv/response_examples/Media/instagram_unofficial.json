@@ -1,0 +1,16 @@
+{
+    "api_list": [
+        {
+            "name": "Search tags",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get a tag",
+            "schema": {
+                "message": "str"
+            }
+        }
+    ]
+}

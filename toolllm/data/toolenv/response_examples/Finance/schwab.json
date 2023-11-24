@@ -1,0 +1,415 @@
+{
+    "api_list": [
+        {
+            "name": "quote/get-chart",
+            "schema": {
+                "Elements": [
+                    {
+                        "Currency": "str",
+                        "Symbol": "str",
+                        "Type": "str",
+                        "DataSeries": {
+                            "open": {
+                                "min": "float",
+                                "max": "float",
+                                "maxDate": "float",
+                                "minDate": "float"
+                            },
+                            "high": {
+                                "min": "float",
+                                "max": "float",
+                                "maxDate": "float",
+                                "minDate": "float"
+                            },
+                            "low": {
+                                "min": "float",
+                                "max": "float",
+                                "maxDate": "float",
+                                "minDate": "float"
+                            },
+                            "close": {
+                                "min": "float",
+                                "max": "float",
+                                "maxDate": "float",
+                                "minDate": "float"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "quote/get-option-chains",
+            "schema": {
+                "OptionChains": {
+                    "Underyling": "str",
+                    "Expirations": [
+                        {
+                            "DaysToExpiration": "str",
+                            "DateDisplay": "str",
+                            "ExpType": "str",
+                            "RootSymbol": "str"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "quote/get-summary",
+            "schema": {
+                "QuoteOutput": {
+                    "Symbol": "str",
+                    "Name": "str",
+                    "Exchange": "str",
+                    "LastPrice": "str",
+                    "Change": "str",
+                    "ChangePercent": "str",
+                    "Volume": "str",
+                    "VolumePace": "str",
+                    "Bid": "str",
+                    "Ask": "str",
+                    "AverageVolume10Day": "str",
+                    "MarketCap": "str",
+                    "High": "str",
+                    "Low": "str",
+                    "High52Week": "str",
+                    "Low52Week": "str",
+                    "AsOfDate": "str",
+                    "PriceOpen": "str",
+                    "PricePreviousClose": "str",
+                    "Error": "str"
+                },
+                "FundamentalsOutput": {
+                    "EarningsPerShare": "str",
+                    "PriceToEarningsRatio": "str",
+                    "ForwardPriceToEarnings": "str",
+                    "Error": "str"
+                },
+                "PutCallOutput": {
+                    "PutCallRatio30Day": "str",
+                    "Error": "str"
+                },
+                "SchwabEquityRatingOutput": {
+                    "SchwabEquityRating": "str",
+                    "EquityRatingUrl": "str",
+                    "AsOfDate": "str",
+                    "Error": "str"
+                }
+            }
+        },
+        {
+            "name": "market/get-volatility",
+            "schema": {
+                "ThirtyDaySPRateOfChangeChartURL": "str",
+                "ThirtyDayVixChartURL": "str",
+                "ThirtyDayPutCallChartURL": "str",
+                "ShortTermImpliedVolatility": "str",
+                "SPOneMonthChange": "str",
+                "ShortTermSentiment": "str"
+            }
+        },
+        {
+            "name": "news/get-market-update-audio",
+            "schema": {
+                "ChannelGroups": [
+                    {
+                        "Title": "str",
+                        "MenuItems": [
+                            {
+                                "SubTitle": "str",
+                                "Command": "str",
+                                "Link": "str",
+                                "PublishedDate": "str",
+                                "Metadata": {
+                                    "MediaType": "str",
+                                    "Thumbnail": "str"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "name": "quote/get-details",
+            "schema": {
+                "Stocks": {
+                    "QuoteOutput": {
+                        "Symbol": "str",
+                        "Name": "str",
+                        "Exchange": "str",
+                        "LastPrice": "str",
+                        "Change": "str",
+                        "ChangePercent": "str",
+                        "Volume": "str",
+                        "Bid": "str",
+                        "Ask": "str",
+                        "High": "str",
+                        "Low": "str",
+                        "High52Week": "str",
+                        "Low52Week": "str",
+                        "AsOfDate": "str"
+                    },
+                    "FundamentalsOutput": {
+                        "SharesHeld": "str",
+                        "EarningsPerShare": "str",
+                        "PriceToEarningsRatio": "str",
+                        "ForwardPriceToEarnings": "str"
+                    },
+                    "PutCallOutput": {
+                        "PutCallRatio30Day": "str"
+                    },
+                    "DividendsOutput": {
+                        "PaysDividends": "str",
+                        "DividendPayDateRaw": "str",
+                        "ExDividendDateRaw": "str"
+                    }
+                }
+            }
+        },
+        {
+            "name": "news/get-market-update",
+            "schema": {
+                "Headline": "str",
+                "Timestamp": "str"
+            }
+        },
+        {
+            "name": "auto-complete",
+            "schema": {
+                "SymbolLookupResponse": {
+                    "Symbols": [
+                        {
+                            "Symbol": "str",
+                            "CompanyName": "str",
+                            "OptionEligibility": "bool"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "market/get-reports",
+            "schema": {
+                "LogoUrls": [
+                    {
+                        "Logo": "str",
+                        "Url": "str"
+                    }
+                ],
+                "MarketReports": [
+                    {
+                        "Name": "str",
+                        "Reports": [
+                            {
+                                "Name": "str",
+                                "Url": "str",
+                                "DateFormatted": "str",
+                                "ReportType": "str"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "name": "market/get-sectors",
+            "schema": {
+                "SectorPerformance": {
+                    "AsOfDateRaw": "str",
+                    "Sectors": [
+                        {
+                            "Name": "str",
+                            "Performance1Day": "str",
+                            "Performance1Month": "str",
+                            "Performance1Year": "str",
+                            "Performance3Month": "str",
+                            "Performance6Month": "str"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "market/get-indices",
+            "schema": {
+                "QuotesAmericas": [
+                    {
+                        "AsOfDate": "str",
+                        "Change": "str",
+                        "Change1M": "str",
+                        "Change1MPercent": "str",
+                        "Change1W": "str",
+                        "Change1WPercent": "str",
+                        "Change1Y": "str",
+                        "Change1YPercent": "str",
+                        "ChangePercent": "str",
+                        "LastPrice": "str",
+                        "Name": "str",
+                        "Region": "str",
+                        "Symbol": "str"
+                    }
+                ],
+                "QuotesAsia": [
+                    {
+                        "AsOfDate": "str",
+                        "Change": "str",
+                        "Change1M": "str",
+                        "Change1MPercent": "str",
+                        "Change1W": "str",
+                        "Change1WPercent": "str",
+                        "Change1Y": "str",
+                        "Change1YPercent": "str",
+                        "ChangePercent": "str",
+                        "LastPrice": "str",
+                        "Name": "str",
+                        "Region": "str",
+                        "Symbol": "str"
+                    }
+                ],
+                "QuotesEurope": [
+                    {
+                        "AsOfDate": "str",
+                        "Change": "str",
+                        "Change1M": "str",
+                        "Change1MPercent": "str",
+                        "Change1W": "str",
+                        "Change1WPercent": "str",
+                        "Change1Y": "str",
+                        "Change1YPercent": "str",
+                        "ChangePercent": "str",
+                        "LastPrice": "str",
+                        "Name": "str",
+                        "Region": "str",
+                        "Symbol": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "quote/get-option-fundamentals",
+            "schema": {
+                "UnderlyingSym": "str",
+                "Roots": [
+                    {
+                        "RootSymbol": "str",
+                        "Deliverable": {
+                            "Multiplier": "str",
+                            "Cash": "str"
+                        }
+                    }
+                ],
+                "SecName": "str",
+                "Expirations": [
+                    {
+                        "Date": "str",
+                        "DaysToExpiration": "int",
+                        "Root": "str",
+                        "StrikePrices": [
+                            "list of str with length 1"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "name": "market/get-top-mentions",
+            "schema": {
+                "TopMentions": [
+                    {
+                        "Symbol": "str",
+                        "NumberOfMentions": "int"
+                    }
+                ],
+                "TopMentionsApiData": [
+                    {
+                        "DisplayName": "str",
+                        "Symbol": "str",
+                        "LastValue": "float",
+                        "LastValueFormatted": "str",
+                        "PriceChange1Day": "float",
+                        "PriceChange1DayFormatted": "str",
+                        "PriceChangePercent1Day": "float",
+                        "PriceChangePercent1DayFormatted": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "news/list-latest",
+            "schema": {
+                "RequestTimestamp": "str",
+                "MarketsNewsOutput": {
+                    "Stories": [
+                        {
+                            "Headline": "str",
+                            "Provider": "str",
+                            "Teaser": "str",
+                            "TimeStamp": "str"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "market/get-movers",
+            "schema": {
+                "ExchangeName": "str",
+                "ExchangeRankSet": "str",
+                "RankingTypeName": "str",
+                "RankingType": "str",
+                "SectorName": "str",
+                "SectorCusip": "str",
+                "CompanyMovers": [
+                    {
+                        "Symbol": "str",
+                        "CompanyName": "str",
+                        "PriceLast": "str",
+                        "PriceChangePercent": "str",
+                        "PriceChange": "str",
+                        "PriceLow52Week": "str",
+                        "PriceHigh52Week": "str",
+                        "Volume": "str",
+                        "HasRatingsData": "str",
+                        "IsSeri": "str",
+                        "CurrentEquityRating": "str",
+                        "CurrentModifier": "str"
+                    }
+                ],
+                "IsAlliance": "str",
+                "Sectors": [
+                    {
+                        "SectorName": "str",
+                        "SectorCusip": "str"
+                    }
+                ],
+                "AdvancersDecliners": [
+                    {
+                        "Name": "str",
+                        "Advancers": "str",
+                        "Decliners": "str",
+                        "Unchanged": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "market/get-futures",
+            "schema": {
+                "HasQuotes": "str",
+                "TimePeriod": "str",
+                "Futures": [
+                    {
+                        "Name": "str",
+                        "Symbol": "str",
+                        "Quote": {
+                            "LastChange": "str",
+                            "LastChangePercent": "str",
+                            "LastValue": "str"
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

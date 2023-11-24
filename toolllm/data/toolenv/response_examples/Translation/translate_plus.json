@@ -1,0 +1,12 @@
+{
+    "api_list": [
+        {
+            "name": "supported_languages",
+            "schema": {
+                "supported_languages": [
+                    "list of str with length 52"
+                ]
+            }
+        }
+    ]
+}

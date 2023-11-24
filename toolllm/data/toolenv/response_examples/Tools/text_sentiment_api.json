@@ -1,0 +1,14 @@
+{
+    "api_list": [
+        {
+            "name": "Sentiment Analysis",
+            "schema": {
+                "Full Text": "str",
+                "Sentiment": "str",
+                "Sentiment Score": "float",
+                "Subjectivity": "str",
+                "Subjectivity Score": "float"
+            }
+        }
+    ]
+}

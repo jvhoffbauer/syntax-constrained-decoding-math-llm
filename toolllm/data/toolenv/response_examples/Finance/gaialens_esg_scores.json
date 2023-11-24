@@ -1,0 +1,12 @@
+{
+    "api_list": [
+        {
+            "name": "getESGScores",
+            "schema": {
+                "request_id": "int",
+                "status": "str",
+                "message": "str"
+            }
+        }
+    ]
+}

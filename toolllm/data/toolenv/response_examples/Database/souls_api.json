@@ -1,0 +1,11 @@
+{
+    "api_list": [
+        {
+            "name": "Items",
+            "schema": {
+                "messages": "str",
+                "info": "str"
+            }
+        }
+    ]
+}

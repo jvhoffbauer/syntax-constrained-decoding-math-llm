@@ -1,0 +1,12 @@
+{
+    "api_list": [
+        {
+            "name": "Fetches articles from a specific newspaper based on the provided search query.",
+            "schema": {
+                "title": "str",
+                "url": "str",
+                "source": "str"
+            }
+        }
+    ]
+}

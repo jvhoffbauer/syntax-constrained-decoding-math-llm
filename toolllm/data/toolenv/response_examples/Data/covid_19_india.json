@@ -1,0 +1,187 @@
+{
+    "api_list": [
+        {
+            "name": "Get Info",
+            "schema": {
+                "21/05/2023": [
+                    {
+                        "info": "str",
+                        "text": "str",
+                        "link": "str"
+                    }
+                ],
+                "20/05/2023": [
+                    {
+                        "info": "str",
+                        "text": "str",
+                        "link": "str"
+                    }
+                ],
+                "19/05/2023": [
+                    {
+                        "info": "str",
+                        "text": "str",
+                        "link": "str"
+                    }
+                ],
+                "18/05/2023": [
+                    {
+                        "info": "str",
+                        "text": "str",
+                        "link": "str"
+                    }
+                ],
+                "17/05/2023": [
+                    {
+                        "info": "str",
+                        "text": "str",
+                        "link": "str"
+                    }
+                ],
+                "16/05/2023": [
+                    {
+                        "info": "str",
+                        "text": "str",
+                        "link": "str"
+                    }
+                ],
+                "15/05/2023": [
+                    {
+                        "info": "str",
+                        "text": "str",
+                        "link": "str"
+                    }
+                ],
+                "14/05/2023": [
+                    {
+                        "info": "str",
+                        "text": "str",
+                        "link": "str"
+                    }
+                ],
+                "13/05/2023": [
+                    {
+                        "info": "str",
+                        "text": "str",
+                        "link": "str"
+                    }
+                ],
+                "12/05/2023": [
+                    {
+                        "info": "str",
+                        "text": "str",
+                        "link": "str"
+                    }
+                ],
+                "11/05/2023": [
+                    {
+                        "info": "str",
+                        "text": "str",
+                        "link": "str"
+                    }
+                ],
+                "10/05/2023": [
+                    {
+                        "info": "str",
+                        "text": "str",
+                        "link": "str"
+                    }
+                ],
+                "09/05/2023": [
+                    {
+                        "info": "str",
+                        "text": "str",
+                        "link": "str"
+                    }
+                ],
+                "08/05/2023": [
+                    {
+                        "info": "str",
+                        "text": "str",
+                        "link": "str"
+                    }
+                ],
+                "07/05/2023": [
+                    {
+                        "info": "str",
+                        "text": "str",
+                        "link": "str"
+                    }
+                ],
+                "06/05/2023": [
+                    {
+                        "info": "str",
+                        "text": "str",
+                        "link": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Get Details",
+            "schema": {
+                "Andaman and Nicobar Islands": {
+                    "confirm": "str",
+                    "cured": "str",
+                    "death": "str",
+                    "total": "str"
+                },
+                "Andhra Pradesh": {
+                    "confirm": "str",
+                    "cured": "str",
+                    "death": "str",
+                    "total": "str"
+                },
+                "Arunachal Pradesh": {
+                    "confirm": "str",
+                    "cured": "str",
+                    "death": "str",
+                    "total": "str"
+                },
+                "Assam": {
+                    "confirm": "str",
+                    "cured": "str",
+                    "death": "str",
+                    "total": "str"
+                },
+                "Bihar": {
+                    "confirm": "str",
+                    "cured": "str",
+                    "death": "str",
+                    "total": "str"
+                },
+                "Chandigarh": {
+                    "confirm": "str",
+                    "cured": "str",
+                    "death": "str",
+                    "total": "str"
+                },
+                "Chhattisgarh": {
+                    "confirm": "str",
+                    "cured": "str",
+                    "death": "str",
+                    "total": "str"
+                },
+                "Dadra and Nagar Haveli and Daman and Diu": {
+                    "confirm": "str",
+                    "cured": "str",
+                    "death": "str",
+                    "total": "str"
+                },
+                "Delhi": {
+                    "confirm": "str",
+                    "cured": "str",
+                    "death": "str",
+                    "total": "str"
+                }
+            }
+        },
+        {
+            "name": "Get Latest Updates",
+            "schema": {
+                "Developed and hosted by": "str",
+                "info": "str"
+            }
+        }
+    ]
+}

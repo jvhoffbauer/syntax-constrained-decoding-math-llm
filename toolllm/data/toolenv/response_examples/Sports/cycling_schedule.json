@@ -1,0 +1,16 @@
+{
+    "api_list": [
+        {
+            "name": "schedule",
+            "schema": {
+                "type": "NoneType",
+                "game": "str",
+                "category": "str",
+                "date": "str",
+                "time": "str",
+                "tv": "str",
+                "tv_link": "str"
+            }
+        }
+    ]
+}

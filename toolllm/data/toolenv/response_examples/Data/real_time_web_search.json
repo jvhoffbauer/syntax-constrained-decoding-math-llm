@@ -1,0 +1,19 @@
+{
+    "api_list": [
+        {
+            "name": "Search",
+            "schema": {
+                "status": "str",
+                "request_id": "str",
+                "data": [
+                    {
+                        "title": "str",
+                        "url": "str",
+                        "domain": "str",
+                        "position": "int"
+                    }
+                ]
+            }
+        }
+    ]
+}

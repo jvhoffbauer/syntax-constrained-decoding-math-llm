@@ -1,0 +1,20 @@
+{
+    "api_list": [
+        {
+            "name": "getBook",
+            "schema": {
+                "books": [
+                    {
+                        "author": "str",
+                        "id": "str",
+                        "price": "int",
+                        "title": "str",
+                        "url": "str",
+                        "date": "str",
+                        "rating": "int"
+                    }
+                ]
+            }
+        }
+    ]
+}

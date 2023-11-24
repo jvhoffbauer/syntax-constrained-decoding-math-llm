@@ -1,0 +1,119 @@
+{
+    "api_list": [
+        {
+            "name": "Burned Calorie From Activity",
+            "schema": {
+                "data": {
+                    "burnedCalorie": "str",
+                    "unit": "str"
+                }
+            }
+        },
+        {
+            "name": "activities",
+            "schema": {
+                "data": [
+                    {
+                        "activity": "str",
+                        "metValue": "str",
+                        "intensityLevel": "int"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Food Names And Ids",
+            "schema": {
+                "data": [
+                    {
+                        "id": "str",
+                        "subDataType": "str",
+                        "foodType": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Sub_Table Names",
+            "schema": {
+                "status_code": "int",
+                "request_result": "str",
+                "data": [
+                    {
+                        "subDataType": "str",
+                        "foodCount": "int"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "tablenames",
+            "schema": {
+                "table_names": "empty list"
+            }
+        },
+        {
+            "name": "macros amounts",
+            "schema": {
+                "status_code": "int",
+                "request_result": "str",
+                "data": {
+                    "calorie": "float",
+                    "balanced": {
+                        "protein": "float",
+                        "fat": "float",
+                        "carbs": "float"
+                    },
+                    "lowfat": {
+                        "protein": "float",
+                        "fat": "float",
+                        "carbs": "float"
+                    },
+                    "lowcarbs": {
+                        "protein": "float",
+                        "fat": "float",
+                        "carbs": "float"
+                    },
+                    "highprotein": {
+                        "protein": "float",
+                        "fat": "float",
+                        "carbs": "float"
+                    }
+                }
+            }
+        },
+        {
+            "name": "Body Fat Percentage",
+            "schema": {
+                "data": {
+                    "Body Fat (U.S. Navy Method)": "float",
+                    "Body Fat Category": "str",
+                    "Body Fat Mass": "float",
+                    "Lean Body Mass": "float",
+                    "Body Fat (BMI method)": "float"
+                }
+            }
+        },
+        {
+            "name": "Ideal weight",
+            "schema": {
+                "data": {
+                    "Hamwi": "float",
+                    "Devine": "float",
+                    "Miller": "float",
+                    "Robinson": "float"
+                }
+            }
+        },
+        {
+            "name": "bmi",
+            "schema": {
+                "data": {
+                    "bmi": "float",
+                    "health": "str",
+                    "healthy_bmi_range": "str"
+                }
+            }
+        }
+    ]
+}

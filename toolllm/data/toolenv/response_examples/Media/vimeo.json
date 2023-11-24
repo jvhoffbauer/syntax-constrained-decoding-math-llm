@@ -1,0 +1,24 @@
+{
+    "api_list": [
+        {
+            "name": "GetAllCategories",
+            "schema": {
+                "stat": "str",
+                "err": {
+                    "code": "str",
+                    "msg": "str"
+                }
+            }
+        },
+        {
+            "name": "GetRelatedPeople",
+            "schema": {
+                "stat": "str",
+                "err": {
+                    "code": "str",
+                    "msg": "str"
+                }
+            }
+        }
+    ]
+}

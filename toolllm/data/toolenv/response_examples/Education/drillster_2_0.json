@@ -1,0 +1,86 @@
+{
+    "api_list": [
+        {
+            "name": "Retrieve drill details",
+            "schema": {
+                "id": "str",
+                "name": "str",
+                "subject": "str",
+                "tags": [
+                    {
+                        "value": "str"
+                    }
+                ],
+                "size": "str",
+                "description": "str",
+                "compatibility": {
+                    "requiredFeatures": [
+                        "list of str with length 1"
+                    ]
+                },
+                "icon": {
+                    "type": "str",
+                    "url": "str"
+                },
+                "cover": {
+                    "type": "str",
+                    "url": "str"
+                },
+                "license": {
+                    "type": "str",
+                    "text": "str",
+                    "icon": {
+                        "url": "str"
+                    },
+                    "link": "str"
+                },
+                "creator": {
+                    "contract": {
+                        "id": "str",
+                        "type": "str",
+                        "created": "str"
+                    },
+                    "created": "str",
+                    "thirdParties": [
+                        "list of str with length 1"
+                    ],
+                    "license": {
+                        "type": "str",
+                        "text": "str"
+                    },
+                    "payPalAccount": "str",
+                    "registeredAddress": "str",
+                    "vatNumber": "str",
+                    "timeZone": "str",
+                    "id": "str",
+                    "name": "str",
+                    "avatar": {
+                        "type": "str",
+                        "url": "str"
+                    },
+                    "emailAddress": "str",
+                    "locale": "str",
+                    "type": "str"
+                },
+                "owner": {
+                    "contract": {
+                        "id": "str",
+                        "type": "str",
+                        "created": "str"
+                    },
+                    "created": "str",
+                    "thirdParties": [
+                        "list of str with length 1"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Retrieve test question",
+            "schema": {
+                "id": "str",
+                "description": "str"
+            }
+        }
+    ]
+}

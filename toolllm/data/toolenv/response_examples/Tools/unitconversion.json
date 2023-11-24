@@ -1,0 +1,112 @@
+{
+    "api_list": [
+        {
+            "name": "/info",
+            "schema": {
+                "units": {
+                    "angle": [
+                        "list of str with length 1"
+                    ],
+                    "area": [
+                        "list of str with length 1"
+                    ],
+                    "data": [
+                        "list of str with length 1"
+                    ],
+                    "force": [
+                        "list of str with length 1"
+                    ],
+                    "length": [
+                        "list of str with length 1"
+                    ],
+                    "mass": [
+                        "list of str with length 1"
+                    ],
+                    "pressure": [
+                        "list of str with length 1"
+                    ],
+                    "temperature": [
+                        "list of str with length 1"
+                    ],
+                    "time": [
+                        "list of str with length 1"
+                    ],
+                    "volume": [
+                        "list of str with length 1"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "/time/:from/:to/:number",
+            "schema": {
+                "from": "str",
+                "to": "str",
+                "input": "int",
+                "result": "int"
+            }
+        },
+        {
+            "name": "/temperature/:from/:to/:number",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "/pressure/:from/:to/:number",
+            "schema": {
+                "from": "str",
+                "to": "str",
+                "input": "int",
+                "result": "float"
+            }
+        },
+        {
+            "name": "/mass/:from/:to/:number",
+            "schema": {
+                "from": "str",
+                "to": "str",
+                "input": "int",
+                "result": "float"
+            }
+        },
+        {
+            "name": "/force/:from/:to/:number",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "/data/:from/:to/:number",
+            "schema": {
+                "from": "str",
+                "to": "str",
+                "result": "int"
+            }
+        },
+        {
+            "name": "/area/:from/:to/:number",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "/angle/:from/:to/:number",
+            "schema": {
+                "input": "int",
+                "from": "str",
+                "to": "str",
+                "result": "float"
+            }
+        },
+        {
+            "name": "/length/:from/:to/:number",
+            "schema": {
+                "from": "str",
+                "to": "str",
+                "input": "int",
+                "roundedResult": "float"
+            }
+        }
+    ]
+}

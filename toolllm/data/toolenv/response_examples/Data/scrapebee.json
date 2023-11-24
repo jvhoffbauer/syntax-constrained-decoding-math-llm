@@ -1,0 +1,14 @@
+{
+    "api_list": [
+        {
+            "name": "Scraper Endpoint",
+            "schema": {
+                "data": {
+                    "name": "str",
+                    "type": "str",
+                    "description": "str"
+                }
+            }
+        }
+    ]
+}

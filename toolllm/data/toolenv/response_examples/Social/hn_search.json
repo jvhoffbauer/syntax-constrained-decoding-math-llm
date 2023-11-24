@@ -1,0 +1,104 @@
+{
+    "api_list": [
+        {
+            "name": "Items",
+            "schema": {
+                "id": "str",
+                "created_at": "str",
+                "type": "str",
+                "author": "str",
+                "title": "str",
+                "url": "str",
+                "points": "str",
+                "children": [
+                    {
+                        "id": "str",
+                        "created_at": "str",
+                        "type": "str",
+                        "author": "str",
+                        "text": "str",
+                        "parent_id": "str",
+                        "story_id": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Users",
+            "schema": {
+                "id": "int",
+                "username": "str",
+                "about": "str",
+                "karma": "int",
+                "created_at": "str",
+                "avg": "float",
+                "submitted": "int",
+                "submission_count": "int",
+                "comment_count": "int",
+                "created_at_i": "int",
+                "objectID": "str"
+            }
+        },
+        {
+            "name": "Search by Date",
+            "schema": {
+                "hits": [
+                    {
+                        "created_at": "str",
+                        "title": "str",
+                        "url": "str",
+                        "author": "str",
+                        "points": "str",
+                        "num_comments": "str",
+                        "story_title": "str",
+                        "story_url": "str",
+                        "created_at_i": "str",
+                        "_tags": [
+                            "list of str with length 1"
+                        ],
+                        "objectID": "str"
+                    }
+                ],
+                "nbHits": "str",
+                "page": "str",
+                "nbPages": "str",
+                "hitsPerPage": "str",
+                "exhaustiveNbHits": "str",
+                "exhaustiveTypo": "str",
+                "query": "str",
+                "params": "str",
+                "processingTimeMS": "str",
+                "serverTimeMS": "str"
+            }
+        },
+        {
+            "name": "Search",
+            "schema": {
+                "hits": [
+                    {
+                        "title": "str",
+                        "url": "str",
+                        "author": "str",
+                        "points": "str",
+                        "num_comments": "str",
+                        "created_at_i": "str",
+                        "relevancy_score": "str",
+                        "_tags": [
+                            "list of str with length 1"
+                        ],
+                        "objectID": "str"
+                    }
+                ],
+                "nbHits": "str",
+                "page": "str",
+                "nbPages": "str",
+                "hitsPerPage": "str",
+                "exhaustiveNbHits": "str",
+                "exhaustiveTypo": "str",
+                "query": "str",
+                "params": "str",
+                "processingTimeMS": "str"
+            }
+        }
+    ]
+}

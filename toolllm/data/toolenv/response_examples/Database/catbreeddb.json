@@ -1,0 +1,158 @@
+{
+    "api_list": [
+        {
+            "name": "Paginated",
+            "schema": {
+                "count": "int",
+                "next": "str",
+                "previous": "NoneType",
+                "results": [
+                    {
+                        "breedName": "str",
+                        "breedType": "str",
+                        "furColor": "str",
+                        "origin": "str",
+                        "minHeightInches": "float",
+                        "maxHeightInches": "float",
+                        "minWeightPounds": "float",
+                        "maxWeightPounds": "float",
+                        "minLifeSpan": "float",
+                        "maxLifeSpan": "float",
+                        "imgThumb": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Order by Descending",
+            "schema": {
+                "id": "int",
+                "breedName": "str",
+                "breedType": "str",
+                "breedDescription": "str",
+                "furColor": "str",
+                "origin": "str",
+                "imgThumb": "str",
+                "imgSourceURL": "str",
+                "imgCreativeCommons": "bool"
+            }
+        },
+        {
+            "name": "Order by Ascending",
+            "schema": {
+                "id": "int",
+                "breedName": "str",
+                "breedType": "str",
+                "breedDescription": "str",
+                "origin": "str",
+                "minHeightInches": "float",
+                "maxHeightInches": "float",
+                "minWeightPounds": "float",
+                "maxWeightPounds": "float",
+                "minLifeSpan": "float",
+                "maxLifeSpan": "float",
+                "imgThumb": "str"
+            }
+        },
+        {
+            "name": "Origin",
+            "schema": {
+                "breedName": "str",
+                "breedType": "str",
+                "breedDescription": "str",
+                "furColor": "str",
+                "origin": "str",
+                "minWeightPounds": "float",
+                "maxWeightPounds": "float",
+                "minLifeSpan": "float",
+                "maxLifeSpan": "float",
+                "imgThumb": "str"
+            }
+        },
+        {
+            "name": "Fur Color",
+            "schema": {
+                "id": "int",
+                "breedName": "str",
+                "breedType": "str",
+                "breedDescription": "str",
+                "furColor": "str",
+                "origin": "str",
+                "minHeightInches": "float",
+                "maxHeightInches": "float",
+                "minWeightPounds": "float",
+                "maxWeightPounds": "float",
+                "minLifeSpan": "float",
+                "maxLifeSpan": "float",
+                "imgThumb": "str"
+            }
+        },
+        {
+            "name": "Breed Type",
+            "schema": {
+                "id": "int",
+                "breedName": "str",
+                "breedType": "str",
+                "breedDescription": "str",
+                "furColor": "str",
+                "origin": "str",
+                "minWeightPounds": "float",
+                "maxWeightPounds": "float",
+                "minLifeSpan": "float",
+                "maxLifeSpan": "float",
+                "imgThumb": "str"
+            }
+        },
+        {
+            "name": "Search",
+            "schema": {
+                "id": "int",
+                "breedName": "str",
+                "breedType": "str",
+                "breedDescription": "str",
+                "furColor": "str",
+                "origin": "str",
+                "minHeightInches": "NoneType",
+                "maxHeightInches": "NoneType",
+                "minWeightPounds": "float",
+                "maxWeightPounds": "float",
+                "minLifeSpan": "float",
+                "maxLifeSpan": "float",
+                "imgThumb": "str"
+            }
+        },
+        {
+            "name": "Single Cat Breed",
+            "schema": {
+                "id": "int",
+                "breedName": "str",
+                "breedType": "str",
+                "breedDescription": "str",
+                "furColor": "str",
+                "origin": "str",
+                "minWeightPounds": "float",
+                "maxWeightPounds": "float",
+                "minLifeSpan": "float",
+                "maxLifeSpan": "float"
+            }
+        },
+        {
+            "name": "All Cats",
+            "schema": {
+                "id": "int",
+                "breedName": "str",
+                "breedType": "str",
+                "breedDescription": "str",
+                "origin": "str",
+                "minHeightInches": "float",
+                "maxHeightInches": "float",
+                "minWeightPounds": "float",
+                "maxWeightPounds": "float",
+                "minLifeSpan": "float",
+                "maxLifeSpan": "float",
+                "imgThumb": "str",
+                "imgSourceURL": "str"
+            }
+        }
+    ]
+}

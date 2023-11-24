@@ -1,0 +1,290 @@
+{
+    "api_list": [
+        {
+            "name": "Basic Search",
+            "schema": {
+                "kanji": {
+                    "character": "str",
+                    "stroke": "int"
+                },
+                "radical": {
+                    "character": "str",
+                    "stroke": "int"
+                }
+            }
+        },
+        {
+            "name": "Onyomi reading",
+            "schema": {
+                "kanji": {
+                    "character": "str",
+                    "stroke": "int"
+                },
+                "radical": {
+                    "character": "str",
+                    "stroke": "int"
+                }
+            }
+        },
+        {
+            "name": "Kunyomi reading",
+            "schema": {
+                "kanji": {
+                    "character": "str",
+                    "stroke": "int"
+                },
+                "radical": {
+                    "character": "str",
+                    "stroke": "int"
+                }
+            }
+        },
+        {
+            "name": "Kanji English meaning",
+            "schema": {
+                "kanji": {
+                    "character": "str",
+                    "stroke": "int"
+                },
+                "radical": {
+                    "character": "str",
+                    "stroke": "int"
+                }
+            }
+        },
+        {
+            "name": "Kanji stroke number",
+            "schema": {
+                "kanji": {
+                    "character": "str",
+                    "stroke": "int"
+                },
+                "radical": {
+                    "character": "str",
+                    "stroke": "int"
+                }
+            }
+        },
+        {
+            "name": "Radical Japanese name",
+            "schema": {
+                "kanji": {
+                    "character": "str",
+                    "stroke": "int"
+                },
+                "radical": {
+                    "character": "str",
+                    "stroke": "int"
+                }
+            }
+        },
+        {
+            "name": "Radical English meaning",
+            "schema": {
+                "kanji": {
+                    "character": "str",
+                    "stroke": "int"
+                },
+                "radical": {
+                    "character": "str",
+                    "stroke": "int"
+                }
+            }
+        },
+        {
+            "name": "Radical position",
+            "schema": {
+                "kanji": {
+                    "character": "str",
+                    "stroke": "int"
+                },
+                "radical": {
+                    "character": "str",
+                    "stroke": "int"
+                }
+            }
+        },
+        {
+            "name": "Radical stroke number",
+            "schema": {
+                "kanji": {
+                    "character": "str",
+                    "stroke": "int"
+                },
+                "radical": {
+                    "character": "str",
+                    "stroke": "int"
+                }
+            }
+        },
+        {
+            "name": "Study list (AP exam)",
+            "schema": {
+                "kanji": {
+                    "character": "str",
+                    "stroke": "int"
+                },
+                "radical": {
+                    "character": "str",
+                    "stroke": "int"
+                }
+            }
+        },
+        {
+            "name": "Kanji character",
+            "schema": {
+                "kanji": {
+                    "character": "str",
+                    "stroke": "int"
+                },
+                "radical": {
+                    "character": "str",
+                    "stroke": "int"
+                }
+            }
+        },
+        {
+            "name": "Single Kanji Details",
+            "schema": {
+                "_id": "str",
+                "rad_name_ja": "str",
+                "grade": "str",
+                "hint_group": "str",
+                "kunyomi": "str",
+                "meaning": "str",
+                "kstroke": "str",
+                "kunyomi_ja": "str",
+                "ka_utf": "str",
+                "luminous": "str",
+                "rad_name_search": [
+                    "list of str with length 1"
+                ],
+                "rad_order": "str",
+                "kname": "str",
+                "rad_utf": "str",
+                "stroketimes": [
+                    "list of str with length 1"
+                ],
+                "kunyomi_ka_display": "str",
+                "dick": "str",
+                "rad_name": "str",
+                "dicn": "str",
+                "mn_hint": "str",
+                "rad_stroke": "str",
+                "onyomi_ja": "str",
+                "rad_meaning": "str",
+                "onyomi": "str",
+                "ka_id": "str",
+                "rad_position": "str",
+                "rad_position_ja": "str",
+                "rad_position_search": [
+                    "list of str with length 1"
+                ],
+                "onyomi_search": [
+                    "list of str with length 1"
+                ],
+                "kunyomi_search": [
+                    "list of str with length 1"
+                ],
+                "meaning_search": [
+                    "list of str with length 1"
+                ],
+                "onyomi_ja_search": [
+                    "list of str with length 1"
+                ]
+            }
+        },
+        {
+            "name": "Study list (Macquarie)",
+            "schema": {
+                "kanji": {
+                    "character": "str",
+                    "stroke": "int"
+                },
+                "radical": {
+                    "character": "str",
+                    "stroke": "int"
+                }
+            }
+        },
+        {
+            "name": "Kanji grade level",
+            "schema": {
+                "kanji": {
+                    "character": "str",
+                    "stroke": "int"
+                },
+                "radical": {
+                    "character": "str",
+                    "stroke": "int"
+                }
+            }
+        },
+        {
+            "name": "All Kanji Details",
+            "schema": {
+                "_id": "str",
+                "rad_name_ja": "str",
+                "grade": "str",
+                "hint_group": "str",
+                "kunyomi": "str",
+                "meaning": "str",
+                "kstroke": "str",
+                "examples": [
+                    {
+                        "japanese": "str",
+                        "meaning": {
+                            "english": "str"
+                        }
+                    }
+                ],
+                "kunyomi_ja": "str",
+                "ka_utf": "str",
+                "luminous": "str",
+                "rad_name_search": [
+                    "list of str with length 1"
+                ],
+                "rad_order": "str",
+                "txt_books": [
+                    {
+                        "chapter": "str",
+                        "txt_bk": "str"
+                    }
+                ],
+                "kname": "str",
+                "rad_utf": "str",
+                "stroketimes": [
+                    "list of str with length 1"
+                ],
+                "kunyomi_ka_display": "str",
+                "dick": "str",
+                "rad_name": "str",
+                "dicn": "str",
+                "mn_hint": "str",
+                "rad_stroke": "str",
+                "onyomi_ja": "str",
+                "rad_meaning": "str",
+                "onyomi": "str",
+                "ka_id": "str",
+                "onyomi_search": [
+                    "list of str with length 1"
+                ],
+                "kunyomi_search": [
+                    "list of str with length 1"
+                ],
+                "meaning_search": [
+                    "list of str with length 1"
+                ],
+                "onyomi_ja_search": [
+                    "list of str with length 1"
+                ],
+                "kunyomi_ja_search": [
+                    "list of str with length 1"
+                ],
+                "rad_meaning_search": [
+                    "list of str with length 1"
+                ]
+            }
+        }
+    ]
+}

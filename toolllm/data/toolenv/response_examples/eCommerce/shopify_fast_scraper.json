@@ -1,0 +1,84 @@
+{
+    "api_list": [
+        {
+            "name": "Collection",
+            "schema": {
+                "id": "str",
+                "title": "str",
+                "handle": "str",
+                "published_at": "str",
+                "products_count": "str",
+                "products": [
+                    {
+                        "title": "str",
+                        "handle": "str",
+                        "product_type": "str",
+                        "variants": [
+                            {
+                                "title": "str",
+                                "price": "str"
+                            }
+                        ],
+                        "images": [
+                            {
+                                "src": "str"
+                            }
+                        ],
+                        "options": [
+                            {
+                                "name": "str",
+                                "values": [
+                                    "list of str with length 1"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Product",
+            "schema": {
+                "product": {
+                    "id": "str",
+                    "title": "str",
+                    "vendor": "str",
+                    "product_type": "str",
+                    "handle": "str",
+                    "published_at": "str",
+                    "variants": [
+                        {
+                            "id": "str",
+                            "title": "str",
+                            "price": "str",
+                            "sku": "str",
+                            "position": "str",
+                            "compare_at_price": "str",
+                            "fulfillment_service": "str",
+                            "inventory_management": "str",
+                            "option1": "str"
+                        }
+                    ],
+                    "options": [
+                        {
+                            "id": "str",
+                            "name": "str",
+                            "position": "str",
+                            "values": [
+                                "list of str with length 1"
+                            ]
+                        }
+                    ],
+                    "images": [
+                        {
+                            "id": "str",
+                            "position": "str",
+                            "created_at": "str",
+                            "updated_at": "str"
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

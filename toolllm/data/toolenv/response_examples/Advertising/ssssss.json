@@ -1,0 +1,15 @@
+{
+    "api_list": [
+        {
+            "name": "s",
+            "schema": {
+                "errors": [
+                    {
+                        "code": "int",
+                        "message": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,21 @@
+{
+    "api_list": [
+        {
+            "name": "Url Download",
+            "schema": {
+                "url": "str",
+                "key": "str"
+            }
+        },
+        {
+            "name": "Search",
+            "schema": {
+                "title": "str",
+                "image": "str",
+                "url": "str",
+                "author": "str",
+                "duration": "str"
+            }
+        }
+    ]
+}

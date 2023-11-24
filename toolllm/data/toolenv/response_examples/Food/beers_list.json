@@ -1,0 +1,20 @@
+{
+    "api_list": [
+        {
+            "name": "Get beers by single country",
+            "schema": {
+                "title": "str",
+                "alchool": "str"
+            }
+        },
+        {
+            "name": "getAllBeersList",
+            "schema": {
+                "title": "str",
+                "alchool": "str",
+                "description": "str",
+                "country": "str"
+            }
+        }
+    ]
+}

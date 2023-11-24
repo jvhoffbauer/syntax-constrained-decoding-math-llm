@@ -1,0 +1,93 @@
+{
+    "api_list": [
+        {
+            "name": "City Details",
+            "schema": {
+                "_id": "int",
+                "name": "str",
+                "state_name": "str",
+                "country_name": "str",
+                "latitude": "str",
+                "longitude": "str"
+            }
+        },
+        {
+            "name": "States Details",
+            "schema": {
+                "id": "int",
+                "name": "str",
+                "state_code": "str",
+                "type": "str",
+                "latitude": "str",
+                "longitude": "str"
+            }
+        },
+        {
+            "name": "Country Details",
+            "schema": {
+                "id": "int",
+                "name": "str",
+                "iso3": "str",
+                "iso2": "str",
+                "numeric_code": "str",
+                "capital": "str",
+                "currency": "str",
+                "currency_name": "str",
+                "currency_symbol": "str",
+                "region": "str",
+                "subregion": "str",
+                "timezones": [
+                    {
+                        "zoneName": "str",
+                        "gmtOffsetName": "str",
+                        "abbreviation": "str"
+                    }
+                ],
+                "translations": {
+                    "pt": "str",
+                    "de": "str",
+                    "es": "str",
+                    "fr": "str",
+                    "ja": "str",
+                    "it": "str",
+                    "cn": "str",
+                    "tr": "str"
+                },
+                "latitude": "str",
+                "longitude": "str",
+                "emoji": "str",
+                "emojiU": "str"
+            }
+        },
+        {
+            "name": "Countries Search",
+            "schema": {
+                "name": "str",
+                "iso2": "str",
+                "native": "str",
+                "emoji": "str"
+            }
+        },
+        {
+            "name": "Countries List",
+            "schema": {
+                "name": "str",
+                "iso2": "str",
+                "native": "str",
+                "emoji": "str"
+            }
+        },
+        {
+            "name": "Search",
+            "schema": {
+                "name": "str",
+                "type": "str",
+                "state_code": "str",
+                "state_name": "str",
+                "country_name": "str",
+                "country_id": "int",
+                "country_code": "str"
+            }
+        }
+    ]
+}

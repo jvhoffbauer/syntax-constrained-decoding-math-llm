@@ -1,0 +1,12 @@
+{
+    "api_list": [
+        {
+            "name": "Build Word Ladders",
+            "schema": {
+                "result": "str",
+                "status": "int",
+                "message": "str"
+            }
+        }
+    ]
+}

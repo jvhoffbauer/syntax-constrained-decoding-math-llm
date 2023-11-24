@@ -1,0 +1,31 @@
+{
+    "api_list": [
+        {
+            "name": "/v1/motorcycles",
+            "schema": {
+                "make": "str",
+                "model": "str",
+                "year": "str",
+                "type": "str",
+                "power": "str",
+                "torque": "str",
+                "frame": "str",
+                "front_suspension": "str",
+                "rear_suspension": "str",
+                "front_tire": "str",
+                "rear_tire": "str",
+                "front_brakes": "str",
+                "rear_brakes": "str",
+                "total_weight": "str",
+                "seat_height": "str",
+                "total_height": "str",
+                "total_length": "str",
+                "total_width": "str",
+                "ground_clearance": "str",
+                "wheelbase": "str",
+                "fuel_capacity": "str",
+                "starter": "str"
+            }
+        }
+    ]
+}

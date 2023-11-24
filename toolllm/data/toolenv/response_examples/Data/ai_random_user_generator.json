@@ -1,0 +1,35 @@
+{
+    "api_list": [
+        {
+            "name": "Get Random User",
+            "schema": {
+                "results": [
+                    {
+                        "gender": "str",
+                        "name": "str",
+                        "location": {
+                            "street": "str",
+                            "city": "str",
+                            "state": "str",
+                            "country": "str",
+                            "postcode": "str"
+                        },
+                        "email": "str",
+                        "dob": {
+                            "date": "str",
+                            "age": "int"
+                        },
+                        "registered": {
+                            "date": "str",
+                            "age": "int"
+                        },
+                        "phone": "str",
+                        "cell": "str",
+                        "id": "str",
+                        "nat": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,89 @@
+{
+    "api_list": [
+        {
+            "name": "product_details",
+            "schema": {
+                "data": {
+                    "product": {
+                        "tcin": "str",
+                        "item": {
+                            "enrichment": {
+                                "images": {
+                                    "primary_image": "str",
+                                    "alternate_image_urls": [
+                                        "list of str with length 1"
+                                    ],
+                                    "content_labels": [
+                                        {
+                                            "image_url": "str"
+                                        }
+                                    ],
+                                    "swatch_image": "str",
+                                    "swatch_image_url": "str"
+                                },
+                                "return_policies": [
+                                    {
+                                        "user_type": "str",
+                                        "day_count": "str"
+                                    }
+                                ],
+                                "buy_url": "str",
+                                "size_chart_fragment_url": "str",
+                                "videos": [
+                                    {
+                                        "video_title": "str",
+                                        "video_poster_image": "str"
+                                    }
+                                ]
+                            },
+                            "is_limited_time_offer": "str",
+                            "relationship_type_code": "str",
+                            "primary_brand": {
+                                "linking_id": "str",
+                                "name": "str",
+                                "canonical_url": "str"
+                            },
+                            "handling": {
+                                "import_designation_description": "str"
+                            },
+                            "return_policies_guest_message": "str",
+                            "product_description": {
+                                "downstream_description": "str"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "nearby_stores",
+            "schema": {
+                "data": {
+                    "nearby_stores": {
+                        "stores": [
+                            {
+                                "store_id": "str",
+                                "mailing_address": {
+                                    "country_code": "str",
+                                    "state": "str",
+                                    "region": "str",
+                                    "postal_code": "str"
+                                },
+                                "location_name": "str",
+                                "distance": "float",
+                                "status": "str"
+                            }
+                        ],
+                        "count": "int"
+                    }
+                }
+            }
+        },
+        {
+            "name": "search_autocomplete",
+            "schema": {
+                "message": "str"
+            }
+        }
+    ]
+}

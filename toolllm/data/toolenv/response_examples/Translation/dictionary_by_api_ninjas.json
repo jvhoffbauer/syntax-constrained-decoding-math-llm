@@ -1,0 +1,12 @@
+{
+    "api_list": [
+        {
+            "name": "/v1/dictionary",
+            "schema": {
+                "definition": "str",
+                "word": "str",
+                "valid": "str"
+            }
+        }
+    ]
+}

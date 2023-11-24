@@ -1,0 +1,118 @@
+{
+    "api_list": [
+        {
+            "name": "Get lottery result by date.",
+            "schema": {
+                "status": "str",
+                "data": {
+                    "roundDate": "str",
+                    "lotteryResult": {
+                        "first": {
+                            "name": "str",
+                            "price": "str",
+                            "number": [
+                                {
+                                    "round": "int",
+                                    "value": "str"
+                                }
+                            ]
+                        },
+                        "second": {
+                            "name": "str",
+                            "price": "str",
+                            "number": [
+                                {
+                                    "round": "int",
+                                    "value": "str"
+                                }
+                            ]
+                        },
+                        "third": {
+                            "name": "str",
+                            "price": "str",
+                            "number": [
+                                {
+                                    "round": "int",
+                                    "value": "str"
+                                }
+                            ]
+                        },
+                        "fourth": {
+                            "name": "str",
+                            "price": "str",
+                            "number": [
+                                {
+                                    "round": "int",
+                                    "value": "str"
+                                }
+                            ]
+                        },
+                        "fifth": {
+                            "name": "str",
+                            "price": "str",
+                            "number": [
+                                {
+                                    "round": "int",
+                                    "value": "str"
+                                }
+                            ]
+                        },
+                        "last2": {
+                            "name": "str",
+                            "price": "str",
+                            "number": [
+                                {
+                                    "round": "int",
+                                    "value": "str"
+                                }
+                            ]
+                        },
+                        "last3b": {
+                            "name": "str",
+                            "price": "str",
+                            "number": [
+                                {
+                                    "round": "int",
+                                    "value": "str"
+                                }
+                            ]
+                        },
+                        "last3f": {
+                            "name": "str",
+                            "price": "str",
+                            "number": [
+                                {
+                                    "round": "int",
+                                    "value": "str"
+                                }
+                            ]
+                        },
+                        "near1": {
+                            "name": "str",
+                            "price": "str",
+                            "number": [
+                                {
+                                    "round": "int",
+                                    "value": "str"
+                                }
+                            ]
+                        }
+                    }
+                },
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get all round dates.",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get latest lottery result",
+            "schema": {
+                "message": "str"
+            }
+        }
+    ]
+}

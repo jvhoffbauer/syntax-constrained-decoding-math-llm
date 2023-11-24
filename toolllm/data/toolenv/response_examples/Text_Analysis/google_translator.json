@@ -1,0 +1,16 @@
+{
+    "api_list": [
+        {
+            "name": "Languages",
+            "schema": {
+                "data": {
+                    "languages": [
+                        {
+                            "language": "str"
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

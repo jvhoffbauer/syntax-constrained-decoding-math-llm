@@ -1,0 +1,400 @@
+{
+    "api_list": [
+        {
+            "name": "Search",
+            "schema": {
+                "results": [
+                    {
+                        "entity": {
+                            "name": "str",
+                            "nameCode": "str",
+                            "shortName": "str",
+                            "slug": "str",
+                            "sport": {
+                                "name": "str",
+                                "slug": "str"
+                            },
+                            "teamColors": {
+                                "primary": "str",
+                                "secondary": "str",
+                                "text": "str"
+                            },
+                            "type": "int"
+                        },
+                        "score": "float",
+                        "type": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "TeamStageSeasons",
+            "schema": {
+                "stageSeasons": [
+                    {
+                        "name": "str",
+                        "slug": "str",
+                        "uniqueStage": {
+                            "category": {
+                                "flag": "str",
+                                "name": "str",
+                                "slug": "str",
+                                "sport": {
+                                    "name": "str",
+                                    "slug": "str"
+                                }
+                            },
+                            "name": "str",
+                            "slug": "str"
+                        },
+                        "year": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "TeamStandings",
+            "schema": {
+                "standings": [
+                    {
+                        "position": "int",
+                        "points": "int",
+                        "team": {
+                            "id": "int",
+                            "name": "str",
+                            "country": {
+                                "alpha2": "str",
+                                "name": "str"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "TeamDriverHistory",
+            "schema": {
+                "bySeason": [
+                    {
+                        "parentTeam": {
+                            "name": "str",
+                            "teamColors": {
+                                "primary": "str",
+                                "secondary": "str",
+                                "text": "str"
+                            },
+                            "type": "int"
+                        },
+                        "podiums": "int",
+                        "points": "int",
+                        "polePositions": "int",
+                        "position": "int",
+                        "racesStarted": "int",
+                        "stage": {
+                            "name": "str",
+                            "year": "str"
+                        },
+                        "victories": "int"
+                    }
+                ],
+                "total": [
+                    {
+                        "podiums": "int",
+                        "polePositions": "int",
+                        "racesStarted": "int",
+                        "victories": "int"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "UniqueStageSeasons",
+            "schema": {
+                "seasons": [
+                    {
+                        "name": "str",
+                        "id": "int",
+                        "year": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "StageDetails",
+            "schema": {
+                "stage": {
+                    "country": {
+                        "alpha2": "str",
+                        "name": "str"
+                    },
+                    "description": "str",
+                    "endDateTimestamp": "str",
+                    "flag": "str",
+                    "id": "str",
+                    "name": "str",
+                    "seasonStageName": "str",
+                    "slug": "str",
+                    "stageParent": {
+                        "description": "str",
+                        "startDateTimestamp": "str"
+                    },
+                    "startDateTimestamp": "str",
+                    "status": {
+                        "description": "str",
+                        "type": "str"
+                    },
+                    "type": {
+                        "name": "str"
+                    },
+                    "uniqueStage": {
+                        "category": {
+                            "name": "str"
+                        },
+                        "name": "str"
+                    },
+                    "winner": {
+                        "country": {
+                            "alpha2": "str",
+                            "name": "str"
+                        },
+                        "id": "str",
+                        "name": "str",
+                        "nameCode": "str"
+                    }
+                }
+            }
+        },
+        {
+            "name": "FeaturedStage",
+            "schema": {
+                "stages": [
+                    {
+                        "country": {
+                            "name": "str"
+                        },
+                        "description": "str",
+                        "endDateTimestamp": "int",
+                        "flag": "str",
+                        "info": {
+                            "circuit": "str",
+                            "circuitCity": "str",
+                            "circuitCountry": "str",
+                            "circuitLength": "int"
+                        },
+                        "name": "str",
+                        "seasonStageName": "str",
+                        "slug": "str",
+                        "startDateTimestamp": "int",
+                        "status": {
+                            "description": "str"
+                        },
+                        "type": {
+                            "name": "str"
+                        },
+                        "uniqueStage": {
+                            "category": {
+                                "flag": "str",
+                                "name": "str",
+                                "sport": {
+                                    "name": "str"
+                                }
+                            },
+                            "name": "str",
+                            "slug": "str"
+                        },
+                        "year": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Categories",
+            "schema": {
+                "categories": [
+                    {
+                        "name": "str",
+                        "slug": "str",
+                        "sport": {
+                            "name": "str",
+                            "slug": "str"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "StageSubstages",
+            "schema": {
+                "stages": [
+                    {
+                        "name": "str",
+                        "description": "str",
+                        "endDateTimestamp": "str",
+                        "id": "str",
+                        "stageParent": {
+                            "id": "str"
+                        },
+                        "startDateTimestamp": "str",
+                        "status": {
+                            "type": "str"
+                        },
+                        "type": {
+                            "name": "str"
+                        },
+                        "uniqueStage": {
+                            "name": "str",
+                            "slug": "str"
+                        },
+                        "winner": {
+                            "name": "str",
+                            "nameCode": "str"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "TeamDetails",
+            "schema": {
+                "team": {
+                    "category": {
+                        "name": "str",
+                        "sport": {
+                            "name": "str",
+                            "slug": "str"
+                        }
+                    },
+                    "country": {
+                        "alpha2": "str",
+                        "name": "str"
+                    },
+                    "disabled": "str",
+                    "fullName": "str",
+                    "gender": "str",
+                    "id": "str",
+                    "name": "str",
+                    "nameCode": "str",
+                    "national": "str",
+                    "shortName": "str",
+                    "slug": "str",
+                    "sport": {
+                        "name": "str",
+                        "slug": "str"
+                    },
+                    "teamColors": {
+                        "primary": "str",
+                        "secondary": "str",
+                        "text": "str"
+                    },
+                    "type": "str",
+                    "userCount": "str"
+                }
+            }
+        },
+        {
+            "name": "StageCompetitorStandings",
+            "schema": {
+                "standings": [
+                    {
+                        "fastestLaps": "str",
+                        "parentTeam": {
+                            "name": "str",
+                            "flag": "str",
+                            "country": {
+                                "alpha2": "str",
+                                "name": "str"
+                            },
+                            "sport": {
+                                "id": "str",
+                                "name": "str"
+                            }
+                        },
+                        "podiums": "str",
+                        "points": "str",
+                        "position": "str",
+                        "racesStarted": "str",
+                        "racesWithPoints": "str",
+                        "team": {
+                            "name": "str",
+                            "flag": "str",
+                            "country": {
+                                "alpha2": "str",
+                                "name": "str"
+                            },
+                            "sport": {
+                                "id": "str",
+                                "name": "str"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "TeamRaces",
+            "schema": {
+                "races": [
+                    {
+                        "position": "str",
+                        "stage": {
+                            "country": {
+                                "alpha2": "str",
+                                "name": "str"
+                            },
+                            "endDateTimestamp": "str",
+                            "flag": "str",
+                            "id": "str",
+                            "name": "str",
+                            "seasonStageName": "str",
+                            "slug": "str",
+                            "startDateTimestamp": "str",
+                            "status": {
+                                "description": "str",
+                                "type": "str"
+                            },
+                            "type": {
+                                "id": "str",
+                                "name": "str"
+                            },
+                            "uniqueStage": {
+                                "id": "str",
+                                "name": "str",
+                                "slug": "str"
+                            }
+                        },
+                        "winner": {
+                            "country": {
+                                "alpha2": "str",
+                                "name": "str"
+                            },
+                            "disabled": "str",
+                            "gender": "str",
+                            "id": "str",
+                            "name": "str",
+                            "nameCode": "str",
+                            "national": "str"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "CategoryStages",
+            "schema": {
+                "uniqueStages": [
+                    {
+                        "category": {
+                            "name": "str",
+                            "slug": "str"
+                        },
+                        "id": "int",
+                        "name": "str",
+                        "primaryColorHex": "str",
+                        "secondaryColorHex": "str",
+                        "slug": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

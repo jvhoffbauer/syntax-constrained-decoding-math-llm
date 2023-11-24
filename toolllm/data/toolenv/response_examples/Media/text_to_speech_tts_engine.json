@@ -1,0 +1,15 @@
+{
+    "api_list": [
+        {
+            "name": "go",
+            "schema": {
+                "s": "int",
+                "data": {
+                    "text": "str",
+                    "lng": "str",
+                    "file": "str"
+                }
+            }
+        }
+    ]
+}

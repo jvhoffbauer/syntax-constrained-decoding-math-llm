@@ -1,0 +1,15 @@
+{
+    "api_list": [
+        {
+            "name": "List position for each crypto",
+            "schema": {
+                "crypto": "str",
+                "amount": {
+                    "cents": "int",
+                    "currency_iso": "str",
+                    "exponent": "int"
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,523 @@
+{
+    "api_list": [
+        {
+            "name": "Get Track Metadata",
+            "schema": {
+                "status": "str",
+                "type": "str",
+                "id": "str",
+                "name": "str",
+                "shareUrl": "str",
+                "durationMs": "str",
+                "durationText": "str",
+                "trackNumber": "str",
+                "playCount": "str",
+                "artists": [
+                    {
+                        "type": "str",
+                        "id": "str",
+                        "name": "str",
+                        "shareUrl": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Get Track ID by Name",
+            "schema": {
+                "status": "bool",
+                "type": "str",
+                "id": "str",
+                "name": "str",
+                "shareUrl": "str",
+                "durationMs": "int",
+                "durationText": "str",
+                "artists": [
+                    {
+                        "type": "str",
+                        "id": "str",
+                        "name": "str",
+                        "shareUrl": "str"
+                    }
+                ],
+                "album": {
+                    "type": "str",
+                    "id": "str",
+                    "name": "str",
+                    "shareUrl": "str"
+                }
+            }
+        },
+        {
+            "name": "Download Track on YouTube (3 Quotas)",
+            "schema": {
+                "status": "str",
+                "youtubeVideo": {
+                    "searchTerm": "str",
+                    "id": "str",
+                    "title": "str",
+                    "channel": {
+                        "name": "str",
+                        "isVerified": "str"
+                    },
+                    "audio": [
+                        {
+                            "url": "str",
+                            "durationMs": "str",
+                            "mimeType": "str",
+                            "format": "str",
+                            "size": "str"
+                        }
+                    ]
+                },
+                "spotifyTrack": {
+                    "type": "str",
+                    "id": "str",
+                    "name": "str",
+                    "shareUrl": "str",
+                    "durationMs": "str",
+                    "artists": [
+                        {
+                            "type": "str",
+                            "id": "str",
+                            "name": "str",
+                            "shareUrl": "str"
+                        }
+                    ],
+                    "album": {
+                        "type": "str",
+                        "id": "str",
+                        "name": "str",
+                        "shareUrl": "str",
+                        "cover": [
+                            {
+                                "url": "str"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "name": "Download Track on SoundCloud (3-4 Quotas)",
+            "schema": {
+                "status": "str",
+                "soundcloudTrack": {
+                    "searchTerm": "str",
+                    "id": "str",
+                    "title": "str",
+                    "user": {
+                        "id": "str",
+                        "name": "str",
+                        "verified": "str"
+                    },
+                    "audio": [
+                        {
+                            "quality": "str",
+                            "url": "str"
+                        }
+                    ]
+                },
+                "spotifyTrack": {
+                    "type": "str",
+                    "id": "str",
+                    "name": "str",
+                    "shareUrl": "str",
+                    "durationMs": "str",
+                    "artists": [
+                        {
+                            "type": "str",
+                            "id": "str",
+                            "name": "str"
+                        }
+                    ],
+                    "album": {
+                        "type": "str",
+                        "id": "str",
+                        "name": "str",
+                        "cover": [
+                            {
+                                "url": "str"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "name": "List User Public Playlists",
+            "schema": {
+                "status": "bool",
+                "playlists": {
+                    "totalCount": "int",
+                    "items": [
+                        {
+                            "type": "str",
+                            "id": "str",
+                            "name": "str",
+                            "shareUrl": "str",
+                            "followerCount": "int"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Get User Profile",
+            "schema": {
+                "status": "bool",
+                "type": "str",
+                "id": "str",
+                "name": "str",
+                "shareUrl": "str",
+                "avatar": [
+                    {
+                        "url": "str"
+                    }
+                ],
+                "followerCount": "int",
+                "followingCount": "int"
+            }
+        },
+        {
+            "name": "List User Recently Played Artists",
+            "schema": {
+                "status": "bool",
+                "artists": [
+                    {
+                        "type": "str",
+                        "id": "str",
+                        "name": "str",
+                        "shareUrl": "str",
+                        "stats": {
+                            "followers": "int"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "List Related Artists",
+            "schema": {
+                "status": "bool",
+                "relatedArtists": {
+                    "totalCount": "int",
+                    "items": [
+                        {
+                            "type": "str",
+                            "id": "str",
+                            "name": "str",
+                            "shareUrl": "str"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "List Artist Playlists/Featuring/DiscoveredOn",
+            "schema": {
+                "status": "bool",
+                "playlists": {
+                    "totalCount": "int",
+                    "items": [
+                        {
+                            "type": "str",
+                            "id": "str",
+                            "name": "str",
+                            "shareUrl": "str",
+                            "owner": {
+                                "type": "str",
+                                "name": "str"
+                            },
+                            "images": [
+                                "list of str with length 1"
+                            ]
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "List Artist Albums/Singles/Compilations/AppearsOn",
+            "schema": {
+                "status": "bool",
+                "albums": {
+                    "totalCount": "int",
+                    "items": [
+                        {
+                            "type": "str",
+                            "id": "str",
+                            "name": "str",
+                            "date": "str",
+                            "trackCount": "int"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "List Artist Concerts",
+            "schema": {
+                "status": "str",
+                "concerts": [
+                    {
+                        "id": "str",
+                        "title": "str",
+                        "date": "str",
+                        "venue": "str",
+                        "location": "str",
+                        "lat": "str",
+                        "lon": "str",
+                        "artists": [
+                            {
+                                "id": "str",
+                                "name": "str"
+                            }
+                        ],
+                        "ticketers": [
+                            {
+                                "name": "str",
+                                "url": "str",
+                                "imageUrl": "str",
+                                "type": "str"
+                            }
+                        ],
+                        "ticketing": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Get Artist ID by Name",
+            "schema": {
+                "status": "bool",
+                "type": "str",
+                "id": "str",
+                "name": "str",
+                "shareUrl": "str",
+                "verified": "bool"
+            }
+        },
+        {
+            "name": "Search",
+            "schema": {
+                "status": "str",
+                "albums": {
+                    "totalCount": "str",
+                    "items": [
+                        {
+                            "type": "str",
+                            "id": "str",
+                            "name": "str",
+                            "shareUrl": "str",
+                            "date": "str",
+                            "artists": [
+                                {
+                                    "type": "str",
+                                    "id": "str",
+                                    "name": "str",
+                                    "shareUrl": "str"
+                                }
+                            ],
+                            "cover": [
+                                {
+                                    "url": "str",
+                                    "width": "str",
+                                    "height": "str"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "artists": {
+                    "totalCount": "str",
+                    "items": [
+                        {
+                            "type": "str",
+                            "id": "str",
+                            "name": "str",
+                            "shareUrl": "str",
+                            "verified": "str"
+                        }
+                    ]
+                },
+                "episodes": {
+                    "totalCount": "str",
+                    "items": [
+                        {
+                            "type": "str",
+                            "id": "str",
+                            "name": "str",
+                            "shareUrl": "str",
+                            "date": "str",
+                            "description": "str",
+                            "durationMs": "str",
+                            "podcast": {
+                                "type": "str",
+                                "id": "str",
+                                "name": "str",
+                                "shareUrl": "str",
+                                "publisherName": "str",
+                                "cover": [
+                                    {
+                                        "url": "str",
+                                        "width": "str",
+                                        "height": "str"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "genres": {
+                    "totalCount": "str",
+                    "items": [
+                        {
+                            "type": "str",
+                            "id": "str",
+                            "name": "str",
+                            "shareUrl": "str"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "List Weekly Top Albums",
+            "schema": {
+                "status": "bool",
+                "type": "str",
+                "title": "str",
+                "description": "str",
+                "date": "str",
+                "albums": [
+                    {
+                        "type": "str",
+                        "name": "str",
+                        "label": "str",
+                        "date": "str",
+                        "artists": [
+                            {
+                                "type": "str",
+                                "name": "str"
+                            }
+                        ],
+                        "cover": [
+                            {
+                                "url": "str"
+                            }
+                        ],
+                        "chartData": {
+                            "currentRank": "int",
+                            "previousRank": "int",
+                            "peakRank": "int",
+                            "peakDate": "str",
+                            "entryRank": "int",
+                            "entryDate": "str",
+                            "appearancesOnChart": "int",
+                            "consecutiveAppearancesOnChart": "int"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "List Top Artists",
+            "schema": {
+                "status": "bool",
+                "type": "str",
+                "title": "str",
+                "description": "str",
+                "date": "str",
+                "artists": [
+                    {
+                        "id": "str",
+                        "name": "str",
+                        "chartData": {
+                            "currentRank": "int",
+                            "previousRank": "int",
+                            "peakRank": "int",
+                            "peakDate": "str",
+                            "entryRank": "int",
+                            "entryDate": "str",
+                            "appearancesOnChart": "int",
+                            "consecutiveAppearancesOnChart": "int"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "List Daily Viral Tracks",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "List Top Tracks",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get Artist Overview",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "List Podcast Episodes",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get Podcast Metadata",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get Episode (Downloadable Audio)",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "List User Followers",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "List Playlist Tracks and Episodes",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get Playlist Metadata",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "List Album Tracks",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get Album Metadata",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get Home Page Overview",
+            "schema": {
+                "message": "str"
+            }
+        }
+    ]
+}

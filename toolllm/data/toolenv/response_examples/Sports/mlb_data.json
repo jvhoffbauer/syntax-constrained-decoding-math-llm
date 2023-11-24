@@ -1,0 +1,296 @@
+{
+    "api_list": [
+        {
+            "name": "Season Pitching Stats",
+            "schema": {
+                "sport_pitching_tm": {
+                    "queryResults": {
+                        "row": {
+                            "sport_id": "str",
+                            "bqs": "str",
+                            "league_short": "str",
+                            "hr": "str",
+                            "team_id": "str",
+                            "whip": "str",
+                            "pip": "str",
+                            "season": "str",
+                            "rs9": "str",
+                            "ab": "str",
+                            "qs": "str",
+                            "hldr": "str",
+                            "league": "str",
+                            "ip": "str",
+                            "ir": "str",
+                            "sport_code": "str",
+                            "er": "str",
+                            "ao": "str",
+                            "k9": "str",
+                            "slg": "str",
+                            "team_full": "str",
+                            "ops": "str",
+                            "team_abbrev": "str",
+                            "tbf": "str",
+                            "go_ao": "str",
+                            "sho": "str",
+                            "hfly": "str",
+                            "spct": "str",
+                            "wpct": "str",
+                            "bb": "str",
+                            "np": "str",
+                            "hgnd": "str",
+                            "bk": "str",
+                            "sb": "str",
+                            "bq": "str",
+                            "h9": "str",
+                            "player_id": "str",
+                            "avg": "str",
+                            "sf": "str",
+                            "sac": "str",
+                            "era": "str",
+                            "team_short": "str",
+                            "wp": "str",
+                            "hpop": "str",
+                            "so": "str",
+                            "gidp_opp": "str",
+                            "pgs": "str",
+                            "gidp": "str",
+                            "gf": "str",
+                            "ppa": "str",
+                            "hld": "str",
+                            "sv": "str",
+                            "cg": "str",
+                            "league_full": "str",
+                            "g": "str",
+                            "h": "str",
+                            "ibb": "str",
+                            "go": "str",
+                            "kbb": "str"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "Broadcast Info",
+            "schema": {
+                "mlb_broadcast_info": {
+                    "queryResults": {
+                        "row": [
+                            {
+                                "home_team_abbrev": "str",
+                                "away_team_abbrev": "str",
+                                "source_type": "str",
+                                "game_time_et": "str",
+                                "home_team_short": "str",
+                                "home_away": "str",
+                                "away_team_full": "str",
+                                "source_id": "str",
+                                "game_date": "str",
+                                "game_pk": "str"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "name": "Career Hitting Stats",
+            "schema": {
+                "sport_career_hitting": {
+                    "queryResults": {
+                        "row": {
+                            "bb": "str",
+                            "np": "str",
+                            "hr": "str",
+                            "sb": "str",
+                            "player_id": "str",
+                            "avg": "str",
+                            "sac": "str",
+                            "wo": "str",
+                            "so": "str",
+                            "gidp": "str",
+                            "ab": "str",
+                            "d": "str",
+                            "g": "str",
+                            "h": "str",
+                            "ibb": "str",
+                            "tb": "str",
+                            "slg": "str",
+                            "cs": "str",
+                            "r": "str",
+                            "ops": "str",
+                            "hbp": "str",
+                            "rbi": "str",
+                            "babip": "str",
+                            "xbh": "str"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "Get Roster by Seasons",
+            "schema": {
+                "roster_team_alltime": {
+                    "queryResults": {
+                        "row": [
+                            {
+                                "primary_position_cd": "str",
+                                "name_last_first": "str",
+                                "team_id": "str",
+                                "throws": "str",
+                                "active_sw": "str",
+                                "name_first_last": "str",
+                                "bats": "str",
+                                "position_desig": "str",
+                                "player_id": "str",
+                                "status_short": "str",
+                                "height_feet": "str",
+                                "name_sort": "str",
+                                "primary_position": "str",
+                                "jersey_number": "str",
+                                "current_sw": "str"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "name": "Get Teams by Season",
+            "schema": {
+                "team_all_season": {
+                    "queryResults": {
+                        "row": [
+                            {
+                                "season": "str",
+                                "name_short": "str",
+                                "name_display_short": "str",
+                                "name_display_long": "str",
+                                "name_display_brief": "str",
+                                "sport_code": "str",
+                                "league": "str",
+                                "division": "str",
+                                "division_id": "str",
+                                "all_star_sw": "str",
+                                "name": "str",
+                                "franchise_code": "str",
+                                "city": "str"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "name": "Career Pitching Stats",
+            "schema": {
+                "sport_career_pitching": {
+                    "queryResults": {
+                        "row": {
+                            "sport_id": "str",
+                            "bqs": "str",
+                            "hr": "str",
+                            "whip": "str",
+                            "pip": "str",
+                            "rs9": "str",
+                            "ab": "str",
+                            "qs": "str",
+                            "hldr": "str",
+                            "ip": "str",
+                            "ir": "str",
+                            "sport_code": "str",
+                            "er": "str",
+                            "ao": "str",
+                            "k9": "str",
+                            "slg": "str",
+                            "ops": "str",
+                            "tbf": "str",
+                            "go_ao": "str",
+                            "sho": "str",
+                            "hfly": "str",
+                            "spct": "str",
+                            "wpct": "str",
+                            "bb": "str",
+                            "np": "str",
+                            "hgnd": "str",
+                            "bk": "str",
+                            "team_count": "str",
+                            "sb": "str",
+                            "bq": "str",
+                            "h9": "str",
+                            "player_id": "str",
+                            "avg": "str",
+                            "sf": "str",
+                            "sac": "str",
+                            "era": "str",
+                            "wp": "str",
+                            "hpop": "str",
+                            "so": "str",
+                            "gidp_opp": "str",
+                            "pgs": "str",
+                            "gidp": "str",
+                            "gf": "str",
+                            "ppa": "str",
+                            "hld": "str",
+                            "sv": "str",
+                            "cg": "str",
+                            "g": "str",
+                            "h": "str",
+                            "ibb": "str",
+                            "go": "str",
+                            "kbb": "str",
+                            "irs": "str",
+                            "l": "str",
+                            "gs": "str",
+                            "svo": "str",
+                            "hr9": "str",
+                            "cs": "str",
+                            "r": "str",
+                            "s": "str",
+                            "w": "str",
+                            "babip": "str",
+                            "bb9": "str"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "Player Teams",
+            "schema": {
+                "player_teams": {
+                    "queryResults": {
+                        "totalSize": "str",
+                        "row": [
+                            {
+                                "end_date": "str",
+                                "status_code": "str",
+                                "league_short": "str",
+                                "team_id": "str",
+                                "team_brief": "str",
+                                "player_id": "str",
+                                "primary_position": "str",
+                                "start_date": "str",
+                                "league_full": "str",
+                                "league": "str",
+                                "league_season": "str",
+                                "team": "str",
+                                "primary_stat_type": "str",
+                                "current_sw": "str",
+                                "league_id": "str",
+                                "status": "str"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "name": "Player Search",
+            "schema": {
+                "messages": "str"
+            }
+        }
+    ]
+}

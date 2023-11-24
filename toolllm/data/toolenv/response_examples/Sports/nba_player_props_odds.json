@@ -1,0 +1,29 @@
+{
+    "api_list": [
+        {
+            "name": "Get Player Odds For Event",
+            "schema": {
+                "market_label": "str",
+                "player": {
+                    "name": "str",
+                    "position": "str",
+                    "team": "str"
+                },
+                "selections": [
+                    {
+                        "label": "str",
+                        "books": [
+                            {
+                                "bookie": "str",
+                                "line": {
+                                    "cost": "float",
+                                    "line": "float"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}

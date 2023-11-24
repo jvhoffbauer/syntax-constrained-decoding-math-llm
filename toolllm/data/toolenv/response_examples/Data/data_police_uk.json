@@ -1,0 +1,13 @@
+{
+    "api_list": [
+        {
+            "name": "Street level availability",
+            "schema": {
+                "date": "str",
+                "stop-and-search": [
+                    "list of str with length 1"
+                ]
+            }
+        }
+    ]
+}

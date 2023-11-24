@@ -1,0 +1,18 @@
+{
+    "api_list": [
+        {
+            "name": "Get all characters",
+            "schema": {
+                "id": "int",
+                "name": "str",
+                "gender": "str",
+                "species": "str",
+                "eye_color": "str",
+                "homeworld": "str",
+                "birth_year": "str",
+                "hair_color": "str",
+                "skin_color": "str"
+            }
+        }
+    ]
+}

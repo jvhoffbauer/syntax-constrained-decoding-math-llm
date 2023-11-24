@@ -1,0 +1,11 @@
+{
+    "api_list": [
+        {
+            "name": "/obd2/{code}",
+            "schema": {
+                "code": "str",
+                "definition": "str"
+            }
+        }
+    ]
+}

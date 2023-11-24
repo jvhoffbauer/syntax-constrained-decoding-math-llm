@@ -1,0 +1,144 @@
+{
+    "api_list": [
+        {
+            "name": "Get Calendar Components",
+            "schema": {
+                "days": "str",
+                "month": "str",
+                "date": "str",
+                "holydays": {
+                    "1": {
+                        "name": "str",
+                        "isSabbath": "str"
+                    },
+                    "9": {
+                        "name": "str",
+                        "isSabbath": "str"
+                    },
+                    "10": {
+                        "name": "str",
+                        "isSabbath": "str"
+                    },
+                    "15": {
+                        "name": "str",
+                        "isSabbath": "str"
+                    },
+                    "16": {
+                        "name": "str",
+                        "isSabbath": "str"
+                    },
+                    "17": {
+                        "name": "str",
+                        "isSabbath": "str"
+                    },
+                    "18": {
+                        "name": "str",
+                        "isSabbath": "str"
+                    },
+                    "19": {
+                        "name": "str",
+                        "isSabbath": "str"
+                    },
+                    "20": {
+                        "name": "str",
+                        "isSabbath": "str"
+                    },
+                    "21": {
+                        "name": "str",
+                        "isSabbath": "str"
+                    },
+                    "22": {
+                        "name": "str",
+                        "isSabbath": "str"
+                    }
+                },
+                "sabbathday": "str"
+            }
+        },
+        {
+            "name": "Get Calendar Components for Today",
+            "schema": {
+                "days": "str",
+                "month": "str",
+                "date": "str",
+                "day_milli": "str",
+                "eng_start_date": "str",
+                "eng_start_date_milli": "str",
+                "holydays": {
+                    "days": {
+                        "1": {
+                            "name": "str",
+                            "isSabbath": "str"
+                        },
+                        "14": {
+                            "name": "str",
+                            "isSabbath": "str"
+                        },
+                        "15": {
+                            "name": "str",
+                            "isSabbath": "str"
+                        },
+                        "16": {
+                            "name": "str",
+                            "isSabbath": "str"
+                        },
+                        "17": {
+                            "name": "str",
+                            "isSabbath": "str"
+                        },
+                        "18": {
+                            "name": "str",
+                            "isSabbath": "str"
+                        },
+                        "19": {
+                            "name": "str",
+                            "isSabbath": "str"
+                        },
+                        "20": {
+                            "name": "str",
+                            "isSabbath": "str"
+                        },
+                        "21": {
+                            "name": "str",
+                            "isSabbath": "str"
+                        }
+                    }
+                },
+                "sabbathday": "str"
+            }
+        },
+        {
+            "name": "Is Holyday",
+            "schema": {
+                "holyday": {
+                    "name": "str",
+                    "isSabbath": "bool"
+                }
+            }
+        },
+        {
+            "name": "Get Hebrew Month and Date",
+            "schema": {
+                "month": "int",
+                "date": {
+                    "holyday": {
+                        "name": "str",
+                        "isSabbath": "bool"
+                    }
+                },
+                "sabbathday": "bool"
+            }
+        },
+        {
+            "name": "Get Hebrew Date",
+            "schema": {
+                "date": {
+                    "holyday": {
+                        "name": "str",
+                        "isSabbath": "bool"
+                    }
+                }
+            }
+        }
+    ]
+}

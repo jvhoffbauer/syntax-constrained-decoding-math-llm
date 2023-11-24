@@ -1,0 +1,10 @@
+{
+    "api_list": [
+        {
+            "name": "Public Holiday Endpoint",
+            "schema": {
+                "message": "str"
+            }
+        }
+    ]
+}

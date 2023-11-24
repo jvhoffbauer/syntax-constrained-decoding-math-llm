@@ -1,0 +1,14 @@
+{
+    "api_list": [
+        {
+            "name": "BlockIt",
+            "schema": {
+                "status": "bool",
+                "ipAddress": "str",
+                "country": "str",
+                "blocked": "str",
+                "tools": "str"
+            }
+        }
+    ]
+}

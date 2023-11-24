@@ -1,0 +1,15 @@
+{
+    "api_list": [
+        {
+            "name": "Carrier Endpoint",
+            "schema": {
+                "Carrier": "str",
+                "Country": "str",
+                "International": "str",
+                "Line Type": "str",
+                "Location": "str",
+                "National": "str"
+            }
+        }
+    ]
+}

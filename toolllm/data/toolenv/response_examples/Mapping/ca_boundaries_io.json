@@ -1,0 +1,118 @@
+{
+    "api_list": [
+        {
+            "name": "Query by FSA Code",
+            "schema": {
+                "type": "str",
+                "features": [
+                    {
+                        "type": "str",
+                        "properties": {
+                            "postal-fsa": "str"
+                        },
+                        "geometry": {
+                            "type": "str"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Query for City names by province/territory name",
+            "schema": {
+                "names": [
+                    "list of str with length 1"
+                ],
+                "count": "int"
+            }
+        },
+        {
+            "name": "Query for City Boundary by City name",
+            "schema": {
+                "features": [
+                    {
+                        "properties": {
+                            "province": [
+                                "list of str with length 1"
+                            ],
+                            "city": [
+                                "list of str with length 1"
+                            ]
+                        },
+                        "geometry": {
+                            "type": "str",
+                            "coordinates": [
+                                "list of str with length 1"
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Query for All Province / Territory names",
+            "schema": {
+                "names": "empty list",
+                "count": "int"
+            }
+        },
+        {
+            "name": "Query for LDU Boundary by Location and Resolution",
+            "schema": {
+                "type": "str",
+                "features": [
+                    {
+                        "type": "str",
+                        "properties": {
+                            "postal-fsa": "str",
+                            "postal-ldu-within-count": "int",
+                            "h3-index": "str"
+                        },
+                        "geometry": {
+                            "type": "str"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Query for LDU Boundary by H3Index",
+            "schema": {
+                "type": "str",
+                "features": [
+                    {
+                        "type": "str",
+                        "properties": {
+                            "postal-fsa": "str",
+                            "postal-ldu-within-count": "int",
+                            "h3-index": "str",
+                            "resolution": "int"
+                        },
+                        "geometry": {
+                            "type": "str"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Query for LDU boundary",
+            "schema": {
+                "features": [
+                    {
+                        "properties": {
+                            "country": "str",
+                            "province": "str",
+                            "city": "str",
+                            "postal-fsa": "str",
+                            "postal-ldu": "str"
+                        },
+                        "geometry": {
+                            "type": "str"
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

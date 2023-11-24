@@ -1,0 +1,34 @@
+{
+    "api_list": [
+        {
+            "name": "Random Skin from Weapon",
+            "schema": {
+                "name": "str",
+                "price": "str",
+                "img": "str",
+                "weapon": "str",
+                "class": "str"
+            }
+        },
+        {
+            "name": "Random Skin from Class",
+            "schema": {
+                "name": "str",
+                "price": "str",
+                "img": "str",
+                "weapon": "str",
+                "class": "str"
+            }
+        },
+        {
+            "name": "Specific Skin",
+            "schema": {
+                "name": "str",
+                "price": "str",
+                "img": "str",
+                "weapon": "str",
+                "class": "str"
+            }
+        }
+    ]
+}

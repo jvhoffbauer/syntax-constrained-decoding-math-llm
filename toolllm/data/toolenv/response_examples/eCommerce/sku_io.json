@@ -1,0 +1,28 @@
+{
+    "api_list": [
+        {
+            "name": "Request list of items for specific search keyword from the store",
+            "schema": {
+                "data": {
+                    "status": "str"
+                }
+            }
+        },
+        {
+            "name": "Request full product information",
+            "schema": {
+                "data": {
+                    "status": "str"
+                }
+            }
+        },
+        {
+            "name": "Request list of items from specific page of store's catalog",
+            "schema": {
+                "data": {
+                    "status": "str"
+                }
+            }
+        }
+    ]
+}

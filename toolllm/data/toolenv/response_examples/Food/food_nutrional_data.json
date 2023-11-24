@@ -1,0 +1,34 @@
+{
+    "api_list": [
+        {
+            "name": "Search a food/recipe item (100g serving)",
+            "schema": {
+                "total": "str",
+                "result": [
+                    {
+                        "_id": "str",
+                        "food_code": "str",
+                        "food_description": "str",
+                        "category_number": "str",
+                        "category_description": "str",
+                        "energy_kj": "str",
+                        "energy_kcal": "str",
+                        "protein_g": "str",
+                        "carbohydrate_g": "str",
+                        "sugar_g": "str",
+                        "fiber_g": "str",
+                        "fat_g": "str",
+                        "fatty_acid_g": "str",
+                        "fatty_acid_monounsaturated_g": "str",
+                        "fatty_acid_polyunsaturated_g": "str",
+                        "cholesterol_mg": "str",
+                        "vitamin_a_rae_mcg_RAE": "str",
+                        "vitamin_c_mg": "str",
+                        "vitamin_d_d2_plus_d3_mcg": "str",
+                        "vitamin_e_al": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

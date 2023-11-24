@@ -1,0 +1,66 @@
+{
+    "api_list": [
+        {
+            "name": "/v1/{folderId}/participants",
+            "schema": {
+                "isError": "bool",
+                "messages": [
+                    "list of str with length 1"
+                ]
+            }
+        },
+        {
+            "name": "GetFolder",
+            "schema": {
+                "isError": "bool",
+                "messages": [
+                    "list of str with length 1"
+                ]
+            }
+        },
+        {
+            "name": "/v1/folders/{folderId}/summary/{documentId}",
+            "schema": {
+                "isError": "bool",
+                "messages": [
+                    "list of str with length 1"
+                ]
+            }
+        },
+        {
+            "name": "/v1/users/{email}",
+            "schema": {
+                "isError": "bool",
+                "messages": [
+                    "list of str with length 1"
+                ]
+            }
+        },
+        {
+            "name": "/v1/{folderId}/payments",
+            "schema": {
+                "isError": "bool",
+                "messages": [
+                    "list of str with length 1"
+                ]
+            }
+        },
+        {
+            "name": "/v1/{folderId}/payments/{paymentId}",
+            "schema": {
+                "id": "str",
+                "isError": "bool",
+                "messages": "empty list"
+            }
+        },
+        {
+            "name": "/v1/folders/{folderId}/content",
+            "schema": {
+                "isError": "bool",
+                "messages": [
+                    "list of str with length 1"
+                ]
+            }
+        }
+    ]
+}

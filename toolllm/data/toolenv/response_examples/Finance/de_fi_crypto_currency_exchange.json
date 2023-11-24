@@ -1,0 +1,22 @@
+{
+    "api_list": [
+        {
+            "name": "rate",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "approve",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "tokens",
+            "schema": {
+                "message": "str"
+            }
+        }
+    ]
+}

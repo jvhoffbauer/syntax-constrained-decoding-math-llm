@@ -1,0 +1,29 @@
+{
+    "api_list": [
+        {
+            "name": "Get Definitions",
+            "schema": {
+                "nature": "str",
+                "source": "str",
+                "mot": "str",
+                "definition": "str"
+            }
+        },
+        {
+            "name": "Get Citations",
+            "schema": {
+                "mot": "str",
+                "citation": "str",
+                "auteur": "str"
+            }
+        },
+        {
+            "name": "Get Expressions",
+            "schema": {
+                "mot": "str",
+                "expression": "str",
+                "semantique": "str"
+            }
+        }
+    ]
+}

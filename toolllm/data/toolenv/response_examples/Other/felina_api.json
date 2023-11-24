@@ -1,0 +1,11 @@
+{
+    "api_list": [
+        {
+            "name": "Faucets",
+            "schema": {
+                "balanceSepolia": "str",
+                "balanceMumbai": "str"
+            }
+        }
+    ]
+}

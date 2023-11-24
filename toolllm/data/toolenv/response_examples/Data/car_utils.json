@@ -1,0 +1,98 @@
+{
+    "api_list": [
+        {
+            "name": "Estimate Ownership Cost",
+            "schema": {
+                "vin": "str",
+                "mileage_year": "int",
+                "vehicle": "str",
+                "depreciation_cost": [
+                    "list of str with length 1"
+                ],
+                "insurance_cost": [
+                    "list of str with length 1"
+                ],
+                "fuel_cost": [
+                    "list of str with length 1"
+                ],
+                "maintenance_cost": [
+                    "list of str with length 1"
+                ],
+                "repairs_cost": [
+                    "list of str with length 1"
+                ],
+                "fees_cost": [
+                    "list of str with length 1"
+                ],
+                "total_cost": [
+                    "list of str with length 1"
+                ],
+                "total_cost_sum": "int"
+            }
+        },
+        {
+            "name": "Estimate Market Value",
+            "schema": {
+                "vin": "str",
+                "vehicle": "str",
+                "mean": "float",
+                "count": "int",
+                "certainty": "int",
+                "prices": {
+                    "average": "float",
+                    "below": "float",
+                    "above": "float"
+                },
+                "adjustments": {
+                    "mileage": {
+                        "input": "int",
+                        "adjustment": "int"
+                    }
+                }
+            }
+        },
+        {
+            "name": "Decode VIN",
+            "schema": {
+                "vin": "str",
+                "errors": [
+                    "list of str with length 1"
+                ],
+                "specs": {
+                    "abs": "str",
+                    "body_class": "str",
+                    "drive_type": "str",
+                    "fuel_type_primary": "str",
+                    "make": "str",
+                    "model": "str",
+                    "model_year": "str",
+                    "vehicle_type": "str"
+                }
+            }
+        },
+        {
+            "name": "Get fuel economy information",
+            "schema": {
+                "city_mpg": "int",
+                "combined_mpg": "int",
+                "highway_mpg": "int",
+                "make": "str",
+                "model": "str",
+                "model_year": "int"
+            }
+        },
+        {
+            "name": "Get vehicle models",
+            "schema": {
+                "make": "str",
+                "models": "empty list"
+            }
+        },
+        {
+            "name": "Get vehicle makes",
+            "schema": {
+                "message": "str"
+            }
+        }
+    ]
+}

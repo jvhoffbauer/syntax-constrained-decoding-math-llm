@@ -1,0 +1,22 @@
+{
+    "api_list": [
+        {
+            "name": "Mail config get",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Template list",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Template download",
+            "schema": {
+                "message": "str"
+            }
+        }
+    ]
+}

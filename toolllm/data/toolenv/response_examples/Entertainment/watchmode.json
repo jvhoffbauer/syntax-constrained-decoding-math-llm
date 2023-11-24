@@ -1,0 +1,200 @@
+{
+    "api_list": [
+        {
+            "name": "Title Episodes",
+            "schema": {
+                "id": "int",
+                "name": "str",
+                "episode_number": "int",
+                "season_number": "int",
+                "thumbnail_url": "str",
+                "release_date": "str",
+                "overview": "str",
+                "sources": [
+                    {
+                        "source_id": "int",
+                        "name": "str",
+                        "type": "str",
+                        "region": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Autocomplete Search",
+            "schema": {
+                "results": [
+                    {
+                        "name": "str",
+                        "type": "str",
+                        "year": "int",
+                        "result_type": "str",
+                        "tmdb_id": "int",
+                        "image_url": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Streaming Release Dates",
+            "schema": {
+                "success": "bool",
+                "statusCode": "int",
+                "statusMessage": "str"
+            }
+        },
+        {
+            "name": "Search",
+            "schema": {
+                "title_results": [
+                    {
+                        "resultType": "str",
+                        "name": "str",
+                        "year": "int",
+                        "imdb_id": "str",
+                        "tmdb_id": "int"
+                    }
+                ],
+                "people_results": "str"
+            }
+        },
+        {
+            "name": "Person",
+            "schema": {
+                "id": "int",
+                "full_name": "str",
+                "date_of_birth": "str",
+                "place_of_birth": "str",
+                "gender": "str",
+                "headshot_url": "str",
+                "known_for": [
+                    "list of str with length 1"
+                ],
+                "relevance_percentile": "int"
+            }
+        },
+        {
+            "name": "Regions",
+            "schema": {
+                "country": "str",
+                "name": "str",
+                "data_tier": "int",
+                "plan_enabled": "bool"
+            }
+        },
+        {
+            "name": "Sources",
+            "schema": {
+                "id": "int",
+                "name": "str",
+                "type": "str",
+                "logo_100px": "str",
+                "ios_appstore_url": "str",
+                "android_playstore_url": "str",
+                "android_scheme": "str",
+                "ios_scheme": "str",
+                "regions": [
+                    "list of str with length 2"
+                ]
+            }
+        },
+        {
+            "name": "New Titles",
+            "schema": {
+                "success": "bool",
+                "statusCode": "int",
+                "statusMessage": "str"
+            }
+        },
+        {
+            "name": "Title Details",
+            "schema": {
+                "id": "str",
+                "title": "str",
+                "original_title": "str",
+                "plot_overview": "str",
+                "type": "str",
+                "year": "str",
+                "release_date": "str",
+                "imdb_id": "str",
+                "tmdb_id": "str",
+                "tmdb_type": "str",
+                "genres": [
+                    "list of str with length 1"
+                ],
+                "genre_names": [
+                    "list of str with length 1"
+                ],
+                "user_rating": "str",
+                "critic_score": "str",
+                "us_rating": "str",
+                "poster": "str",
+                "original_language": "str",
+                "english_title": "str"
+            }
+        },
+        {
+            "name": "Title Seasons",
+            "schema": {
+                "id": "int",
+                "poster_url": "str",
+                "name": "str",
+                "air_date": "str"
+            }
+        },
+        {
+            "name": "Title Streaming Sources",
+            "schema": {
+                "source_id": "int",
+                "name": "str",
+                "type": "str",
+                "region": "str",
+                "ios_url": "str",
+                "android_url": "str",
+                "web_url": "str",
+                "price": "float"
+            }
+        },
+        {
+            "name": "Title Cast & Crew",
+            "schema": {
+                "person_id": "int",
+                "full_name": "str",
+                "role": "str",
+                "episode_count": "int"
+            }
+        },
+        {
+            "name": "Titles with Changed Sources",
+            "schema": {
+                "success": "bool",
+                "statusCode": "int",
+                "statusMessage": "str"
+            }
+        },
+        {
+            "name": "New People",
+            "schema": {
+                "success": "bool",
+                "statusCode": "int",
+                "statusMessage": "str"
+            }
+        },
+        {
+            "name": "Titles with Changed Episodes",
+            "schema": {
+                "success": "bool",
+                "statusCode": "int",
+                "statusMessage": "str"
+            }
+        },
+        {
+            "name": "Titles with Changed Details",
+            "schema": {
+                "success": "bool",
+                "statusCode": "int",
+                "statusMessage": "str"
+            }
+        }
+    ]
+}

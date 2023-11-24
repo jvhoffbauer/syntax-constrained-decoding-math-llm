@@ -1,0 +1,15 @@
+{
+    "api_list": [
+        {
+            "name": "getInventory",
+            "schema": {
+                "Sale": "int",
+                "totvs": "int",
+                "sold": "int",
+                "pending": "int",
+                "available": "int",
+                "not available": "int"
+            }
+        }
+    ]
+}

@@ -1,0 +1,47 @@
+{
+    "api_list": [
+        {
+            "name": "/api/v1/Jobs/Search",
+            "schema": {
+                "status": "int",
+                "errors": {
+                    "PageSize": [
+                        "list of str with length 1"
+                    ],
+                    "PageNumber": [
+                        "list of str with length 1"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "/api/v1/Jobs/{slug}",
+            "schema": {
+                "id": "str",
+                "title": "str",
+                "url": "str",
+                "company": "str",
+                "location": "str",
+                "postDate": "str",
+                "salary": "str",
+                "jobSource": "str",
+                "slug": "str",
+                "sentiment": {
+                    "polarity": "str"
+                },
+                "dateAdded": "str",
+                "keyPhrases": [
+                    {
+                        "text": "str"
+                    }
+                ],
+                "tags": [
+                    {
+                        "text": "str"
+                    }
+                ],
+                "summary": "str"
+            }
+        }
+    ]
+}

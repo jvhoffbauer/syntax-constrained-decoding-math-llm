@@ -1,0 +1,21 @@
+{
+    "api_list": [
+        {
+            "name": "Get Current Count",
+            "schema": {
+                "label": "str",
+                "message": "str",
+                "color": "str"
+            }
+        },
+        {
+            "name": "Get Count And Increase By One",
+            "schema": {
+                "label": "str",
+                "message": "str",
+                "color": "str",
+                "labelColor": "str"
+            }
+        }
+    ]
+}

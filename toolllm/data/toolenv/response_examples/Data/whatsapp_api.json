@@ -1,0 +1,25 @@
+{
+    "api_list": [
+        {
+            "name": "PhoneList",
+            "schema": {
+                "success": "bool",
+                "message": "str"
+            }
+        },
+        {
+            "name": "Logs",
+            "schema": {
+                "success": "bool",
+                "message": "str"
+            }
+        },
+        {
+            "name": "ProductData",
+            "schema": {
+                "success": "bool",
+                "message": "str"
+            }
+        }
+    ]
+}

@@ -1,0 +1,71 @@
+{
+    "api_list": [
+        {
+            "name": "metrics",
+            "schema": {
+                "numSpecs": "int",
+                "numAPIs": "int",
+                "numEndpoints": "int",
+                "unreachable": "int",
+                "invalid": "int",
+                "unofficial": "int",
+                "fixes": "int",
+                "fixedPct": "int",
+                "datasets": [
+                    {
+                        "title": "str",
+                        "data": {}
+                    }
+                ],
+                "stars": "int",
+                "issues": "int",
+                "thisWeek": {
+                    "added": "int",
+                    "updated": "int"
+                },
+                "numDrivers": "int",
+                "numProviders": "int"
+            }
+        },
+        {
+            "name": "list all api",
+            "schema": {
+                "1forge.com": {
+                    "preferred": "str",
+                    "versions": {
+                        "0.0.1": {
+                            "info": {
+                                "title": "str",
+                                "x-apisguru-categories": [
+                                    "list of str with length 1"
+                                ],
+                                "x-providerName": "str"
+                            },
+                            "swaggerUrl": "str",
+                            "openapiVer": "str",
+                            "link": "str"
+                        }
+                    }
+                },
+                "1password.com:events": {
+                    "preferred": "str",
+                    "versions": {
+                        "1.0.0": {
+                            "info": {
+                                "title": "str",
+                                "x-apisguru-categories": [
+                                    "list of str with length 1"
+                                ],
+                                "x-providerName": "str",
+                                "x-serviceName": "str"
+                            },
+                            "swaggerUrl": "str",
+                            "openapiVer": "str",
+                            "link": "str"
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

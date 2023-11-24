@@ -1,0 +1,33 @@
+{
+    "api_list": [
+        {
+            "name": "Find By UDPRN",
+            "schema": {
+                "result": {
+                    "building_number": "str",
+                    "premise": "str",
+                    "line_1": "str",
+                    "postcode": "str",
+                    "thoroughfare": "str",
+                    "post_town": "str",
+                    "ward": "str",
+                    "district": "str",
+                    "county": "str",
+                    "country": "str",
+                    "udprn": "str",
+                    "address": "str",
+                    "postcode_incode": "str",
+                    "postcode_outcode": "str",
+                    "postcode_compact": "str",
+                    "postcode_type": "str",
+                    "geocode": {
+                        "eastings": "str",
+                        "northings": "str",
+                        "lattitude": "str",
+                        "longitude": "str"
+                    }
+                }
+            }
+        }
+    ]
+}

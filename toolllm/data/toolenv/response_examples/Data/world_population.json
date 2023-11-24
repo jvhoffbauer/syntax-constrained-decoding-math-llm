@@ -1,0 +1,32 @@
+{
+    "api_list": [
+        {
+            "name": "getCountriesByContinent",
+            "schema": {
+                "Rank": "int",
+                "CCA3": "str",
+                "Country": "str",
+                "Capital": "str",
+                "Continent": "str",
+                "2022 Population": "int",
+                "2020 Population": "int",
+                "Growth Rate": "float",
+                "World Population Percentage": "float"
+            }
+        },
+        {
+            "name": "getPopulationByCountryCode",
+            "schema": {
+                "Rank": "int",
+                "CCA3": "str",
+                "Country": "str",
+                "Capital": "str",
+                "Continent": "str",
+                "2022 Population": "int",
+                "2020 Population": "int",
+                "Growth Rate": "float",
+                "World Population Percentage": "float"
+            }
+        }
+    ]
+}

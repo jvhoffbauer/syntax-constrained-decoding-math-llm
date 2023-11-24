@@ -1,0 +1,93 @@
+{
+    "api_list": [
+        {
+            "name": "Search by Coordinates Point",
+            "schema": {
+                "status": "str",
+                "request_id": "str",
+                "data": [
+                    {
+                        "id": "str",
+                        "name": "str",
+                        "connectors": [
+                            {
+                                "type": "str"
+                            }
+                        ],
+                        "formatted_address": "str",
+                        "address_components": {
+                            "district": "str",
+                            "street_address": "str",
+                            "city": "str",
+                            "zipcode": "str",
+                            "state": "str",
+                            "country": "str"
+                        },
+                        "latitude": "str",
+                        "longitude": "str",
+                        "place_link": "str",
+                        "phone_number": "str",
+                        "opening_hours": {
+                            "Friday": [
+                                "list of str with length 1"
+                            ],
+                            "Saturday": [
+                                "list of str with length 1"
+                            ],
+                            "Sunday": [
+                                "list of str with length 1"
+                            ],
+                            "Monday": [
+                                "list of str with length 1"
+                            ],
+                            "Tuesday": [
+                                "list of str with length 1"
+                            ],
+                            "Wednesday": [
+                                "list of str with length 1"
+                            ],
+                            "Thursday": [
+                                "list of str with length 1"
+                            ]
+                        },
+                        "website": "str",
+                        "photo": "str",
+                        "google_place_id": "str",
+                        "google_cid": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Search by Location",
+            "schema": {
+                "status": "str",
+                "request_id": "str",
+                "data": [
+                    {
+                        "id": "str",
+                        "name": "str",
+                        "connectors": [
+                            {
+                                "type": "str",
+                                "total": "str",
+                                "available": "str"
+                            }
+                        ],
+                        "formatted_address": "str",
+                        "latitude": "str",
+                        "longitude": "str",
+                        "place_link": "str",
+                        "phone_number": "str",
+                        "rating": "str",
+                        "review_count": "str",
+                        "website": "str",
+                        "photo": "str",
+                        "google_place_id": "str",
+                        "google_cid": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

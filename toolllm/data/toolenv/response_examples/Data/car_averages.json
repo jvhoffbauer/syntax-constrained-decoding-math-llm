@@ -1,0 +1,146 @@
+{
+    "api_list": [
+        {
+            "name": "PL Car averages",
+            "schema": {
+                "topModels": [
+                    {
+                        "model": "str",
+                        "averages": {
+                            "mileage": "float",
+                            "price": "float"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "NZ Car averages",
+            "schema": {
+                "averages": {
+                    "mileage": "int",
+                    "price": "int"
+                },
+                "tiersAverages": {
+                    "lower": {
+                        "price": "int",
+                        "mileage": "int"
+                    },
+                    "middle": {
+                        "price": "int",
+                        "mileage": "int"
+                    },
+                    "top": {
+                        "price": "int",
+                        "mileage": "int"
+                    }
+                },
+                "yearlyAverages": [
+                    {
+                        "year": "int",
+                        "averages": {
+                            "price": "int",
+                            "mileage": "float"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "RO  Car averages",
+            "schema": {
+                "topModels": [
+                    {
+                        "model": "str",
+                        "averages": {
+                            "mileage": "float",
+                            "price": "float"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "ZA  Car averages",
+            "schema": {
+                "averages": {
+                    "mileage": "int",
+                    "price": "int"
+                },
+                "tiersAverages": {
+                    "lower": {
+                        "price": "int",
+                        "mileage": "int"
+                    },
+                    "middle": {
+                        "price": "int",
+                        "mileage": "int"
+                    },
+                    "top": {
+                        "price": "int",
+                        "mileage": "int"
+                    }
+                },
+                "yearlyAverages": [
+                    {
+                        "year": "int",
+                        "averages": {
+                            "price": "int",
+                            "mileage": "int"
+                        }
+                    }
+                ],
+                "topModels": [
+                    {
+                        "model": "str",
+                        "averages": {
+                            "mileage": "float",
+                            "price": "float"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "AU Car averages",
+            "schema": {
+                "averages": {
+                    "mileage": "int",
+                    "price": "int"
+                },
+                "tiersAverages": {
+                    "lower": {
+                        "price": "int",
+                        "mileage": "int"
+                    },
+                    "middle": {
+                        "price": "int",
+                        "mileage": "int"
+                    },
+                    "top": {
+                        "price": "int",
+                        "mileage": "int"
+                    }
+                },
+                "yearlyAverages": [
+                    {
+                        "year": "int",
+                        "averages": {
+                            "price": "float",
+                            "mileage": "float"
+                        }
+                    }
+                ],
+                "topModels": [
+                    {
+                        "model": "str",
+                        "averages": {
+                            "mileage": "float",
+                            "price": "float"
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

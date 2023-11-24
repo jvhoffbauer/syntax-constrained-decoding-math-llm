@@ -1,0 +1,22 @@
+{
+    "api_list": [
+        {
+            "name": "HEALTH",
+            "schema": {
+                "status": "str",
+                "api_name": "str"
+            }
+        },
+        {
+            "name": "CONTESTS",
+            "schema": {
+                "name": "str",
+                "url": "str",
+                "start_time": "str",
+                "end_time": "str",
+                "site": "str",
+                "status": "str"
+            }
+        }
+    ]
+}

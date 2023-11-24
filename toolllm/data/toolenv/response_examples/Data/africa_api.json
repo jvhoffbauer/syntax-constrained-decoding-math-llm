@@ -1,0 +1,86 @@
+{
+    "api_list": [
+        {
+            "name": "tourism[Per Country]",
+            "schema": {
+                "country": "str",
+                "tourism": [
+                    {
+                        "name": "str",
+                        "location": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "independence[All Countries]",
+            "schema": {
+                "country": "str",
+                "independence_date": "str"
+            }
+        },
+        {
+            "name": "languages [Per Country]",
+            "schema": {
+                "other_languages": [
+                    "list of str with length 1"
+                ],
+                "national_language": "str"
+            }
+        },
+        {
+            "name": "countries[AllContries]",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "tourism[AllCountries]",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "languages[AllCountries]",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "sizes[PerCountry]",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "province/state/county[PerCountry]",
+            "schema": {
+                "Kenya": {
+                    "counties": [
+                        {
+                            "county": "str"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "independence[Per Country]",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "resources[AllContries]",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "country [Specific Country]",
+            "schema": {
+                "message": "str"
+            }
+        }
+    ]
+}

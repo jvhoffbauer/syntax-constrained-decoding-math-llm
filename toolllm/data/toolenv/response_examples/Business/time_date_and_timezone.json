@@ -1,0 +1,10 @@
+{
+    "api_list": [
+        {
+            "name": "Current Time Endpoint",
+            "schema": {
+                "message": "str"
+            }
+        }
+    ]
+}

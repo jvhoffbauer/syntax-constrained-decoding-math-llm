@@ -1,0 +1,18 @@
+{
+    "api_list": [
+        {
+            "name": "Validate Card Number",
+            "schema": {
+                "data": {
+                    "niceType": "str",
+                    "type": "str",
+                    "code": {
+                        "name": "str",
+                        "size": "int"
+                    },
+                    "matchStrength": "int"
+                }
+            }
+        }
+    ]
+}

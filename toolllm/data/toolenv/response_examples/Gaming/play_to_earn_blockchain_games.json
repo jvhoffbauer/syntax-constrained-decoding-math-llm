@@ -1,0 +1,19 @@
+{
+    "api_list": [
+        {
+            "name": "Summary",
+            "schema": {
+                "payload": {
+                    "marketCap": "float",
+                    "marketCapChangePercent": "int",
+                    "tradingVolume24h": "int",
+                    "tradingVolume24hChangePercent": "int",
+                    "topGameMarketCap": "int",
+                    "topGameMarketCapChangePercent": "int",
+                    "topGameMarketCapDominance": "int",
+                    "totalGame": "int"
+                }
+            }
+        }
+    ]
+}

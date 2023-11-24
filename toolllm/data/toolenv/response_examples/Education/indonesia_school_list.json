@@ -1,0 +1,120 @@
+{
+    "api_list": [
+        {
+            "name": "School Detail",
+            "schema": {
+                "after_bangunan": "str",
+                "after_gudang": "str",
+                "after_ruang_guru": "str",
+                "after_ruang_ibadah": "str",
+                "after_ruang_kelas": "str",
+                "after_ruang_konseling": "str",
+                "after_ruang_lab": "str",
+                "after_ruang_osis": "str",
+                "after_ruang_perpus": "str",
+                "after_ruang_pimpinan": "str",
+                "after_ruang_praktik": "str",
+                "after_ruang_sirkulasi": "str",
+                "after_ruang_tu": "str",
+                "after_ruang_uks": "str",
+                "after_tempat_bermain_olahraga": "str",
+                "after_toilet": "str",
+                "air_mengalir_wastafel": "str",
+                "before_bangunan": "str",
+                "before_gudang": "str",
+                "before_ruang_guru": "str",
+                "before_ruang_ibadah": "str",
+                "before_ruang_kelas": "str",
+                "before_ruang_konseling": "str",
+                "before_ruang_lab": "str",
+                "before_ruang_osis": "str",
+                "before_ruang_perpus": "str",
+                "before_ruang_pimpinan": "str",
+                "before_ruang_praktik": "str",
+                "before_ruang_sirkulasi": "str",
+                "before_ruang_tu": "str",
+                "before_ruang_uks": "str",
+                "before_tempat_bermain_olahraga": "str",
+                "before_toilet": "str",
+                "guru_agama_budi_pekerti": "str"
+            }
+        },
+        {
+            "name": "List of School in Sub-Disctrict (Kecamatan)",
+            "schema": {
+                "bentuk_pendidikan": "str",
+                "induk_kabupaten": "str",
+                "induk_kecamatan": "str",
+                "induk_provinsi": "str",
+                "nama": "str",
+                "npsn": "int",
+                "sekolah_id_enkrip": "str",
+                "status_sekolah": "str"
+            }
+        },
+        {
+            "name": "Number of Schools in Indonesia Sub-District (Kecamatan)",
+            "schema": {
+                "id_level_wilayah": "int",
+                "induk_kabupaten": "str",
+                "induk_provinsi": "str",
+                "kode_wilayah": "str",
+                "kode_wilayah_induk_kabupaten": "str",
+                "kode_wilayah_induk_provinsi": "str",
+                "mst_kode_wilayah": "str",
+                "nama": "str",
+                "sekolah": "int",
+                "sd": "int",
+                "pkbm": "int",
+                "skb": "int",
+                "slb": "int",
+                "sma": "int",
+                "smk": "int",
+                "smp": "int",
+                "sps": "int",
+                "tk": "int",
+                "tpa": "int"
+            }
+        },
+        {
+            "name": "Number of Schools in Indonesian City / District (Kabupaten / Kota)",
+            "schema": {
+                "kode_wilayah": "str",
+                "kode_wilayah_induk_kabupaten": "NoneType",
+                "kode_wilayah_induk_provinsi": "str",
+                "mst_kode_wilayah": "str",
+                "nama": "str",
+                "kb": "int",
+                "pkbm": "int",
+                "sd": "int",
+                "sekolah": "int",
+                "skb": "int",
+                "slb": "int",
+                "sma": "int",
+                "smk": "int",
+                "smp": "int",
+                "sps": "int",
+                "tk": "int",
+                "tpa": "int"
+            }
+        },
+        {
+            "name": "Number of Schools in the Province of Indonesia",
+            "schema": {
+                "id_level_wilayah": "int",
+                "kode_wilayah": "str",
+                "mst_kode_wilayah": "int",
+                "nama": "str",
+                "sekolah": "int",
+                "skb": "int",
+                "slb": "int",
+                "sma": "int",
+                "smk": "int",
+                "smp": "int",
+                "sps": "int",
+                "tk": "int",
+                "tpa": "int"
+            }
+        }
+    ]
+}

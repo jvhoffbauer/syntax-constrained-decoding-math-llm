@@ -1,0 +1,29 @@
+{
+    "api_list": [
+        {
+            "name": "venue search",
+            "schema": {
+                "meta": {
+                    "code": "int",
+                    "type": "str"
+                },
+                "response": {
+                    "count": "int",
+                    "items": [
+                        {
+                            "id_venue": "str",
+                            "name": "str",
+                            "address": "str",
+                            "city": "str",
+                            "country": "str",
+                            "zip": "str",
+                            "business_type": "str",
+                            "latitude": "str",
+                            "longitude": "str"
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

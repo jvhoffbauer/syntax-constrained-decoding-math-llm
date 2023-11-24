@@ -1,0 +1,21 @@
+{
+    "api_list": [
+        {
+            "name": "Extract Entities",
+            "schema": {
+                "spans": [
+                    {
+                        "text": "str",
+                        "label": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Extract Text [From Webpage]",
+            "schema": {
+                "text": "str"
+            }
+        }
+    ]
+}

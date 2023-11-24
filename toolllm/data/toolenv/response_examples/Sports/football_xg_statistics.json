@@ -1,0 +1,110 @@
+{
+    "api_list": [
+        {
+            "name": "Tournaments List By CountryId",
+            "schema": {
+                "result": [
+                    {
+                        "name": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Seasons List By TournamentId",
+            "schema": {
+                "result": [
+                    {
+                        "name": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Fixture By FixtureId",
+            "schema": {
+                "result": {
+                    "status": "str",
+                    "homeTeam": {
+                        "name": "str"
+                    },
+                    "awayTeam": {
+                        "name": "str"
+                    },
+                    "homeScore": {
+                        "final": "int"
+                    },
+                    "awayScore": {
+                        "final": "int"
+                    },
+                    "xg": {
+                        "home": "float",
+                        "away": "float"
+                    },
+                    "tournament": {
+                        "name": "str"
+                    },
+                    "season": {
+                        "name": "str"
+                    },
+                    "events": [
+                        {
+                            "xg": "float"
+                        }
+                    ],
+                    "odds": [
+                        {
+                            "type": "str",
+                            "open": "float",
+                            "last": "float"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Fixtures List By SeasonId",
+            "schema": {
+                "result": [
+                    {
+                        "status": "str",
+                        "startTime": "int",
+                        "updateTime": "int",
+                        "homeTeam": {
+                            "name": "str"
+                        },
+                        "awayTeam": {
+                            "name": "str"
+                        },
+                        "duration": {
+                            "total": "int",
+                            "firstHalf": "int",
+                            "secondHalf": "int"
+                        },
+                        "homeScore": {
+                            "final": "int",
+                            "firstHalf": "int"
+                        },
+                        "awayScore": {
+                            "final": "int",
+                            "firstHalf": "int"
+                        },
+                        "xg": {
+                            "home": "float",
+                            "away": "float"
+                        },
+                        "country": {
+                            "name": "str"
+                        },
+                        "tournament": {
+                            "name": "str"
+                        },
+                        "season": {
+                            "name": "str"
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

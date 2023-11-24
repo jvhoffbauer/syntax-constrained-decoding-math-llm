@@ -1,0 +1,69 @@
+{
+    "api_list": [
+        {
+            "name": "Sources",
+            "schema": {
+                "success": "bool",
+                "body": [
+                    {
+                        "name": "str",
+                        "urls": {
+                            "base": "str"
+                        },
+                        "tier": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Advanced Search",
+            "schema": {
+                "success": "bool",
+                "body": {
+                    "totalArticles": "int",
+                    "results": [
+                        {
+                            "url": "str",
+                            "author": "str",
+                            "img": "str",
+                            "snippet": "str",
+                            "source": "str",
+                            "title": "str",
+                            "type": "str",
+                            "publishedDate": "str",
+                            "sentiment": "str"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Basic Search",
+            "schema": {
+                "success": "bool",
+                "body": {
+                    "totalArticles": "int",
+                    "results": [
+                        {
+                            "url": "str",
+                            "author": "str",
+                            "img": "str",
+                            "snippet": "str",
+                            "source": "str",
+                            "title": "str",
+                            "type": "str",
+                            "publishedDate": "str",
+                            "sentiment": "str"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Trending",
+            "schema": {
+                "messages": "str"
+            }
+        }
+    ]
+}

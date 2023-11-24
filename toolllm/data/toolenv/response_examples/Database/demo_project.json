@@ -1,0 +1,29 @@
+{
+    "api_list": [
+        {
+            "name": "Get Products",
+            "schema": {
+                "products": [
+                    {
+                        "id": "int",
+                        "name": "str",
+                        "category": "NoneType"
+                    }
+                ],
+                "summary": {
+                    "count": "int"
+                }
+            }
+        },
+        {
+            "name": "Get Categories",
+            "schema": {
+                "categories": [
+                    {
+                        "category": "NoneType"
+                    }
+                ]
+            }
+        }
+    ]
+}

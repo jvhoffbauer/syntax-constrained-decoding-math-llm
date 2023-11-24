@@ -1,0 +1,17 @@
+{
+    "api_list": [
+        {
+            "name": "\u1011\u103d\u1000\u103a\u1002\u100f\u1014\u103a\u1038\u1015\u103c\u101e\u1001\u103c\u1004\u103a\u1038 (Modern & Internet)",
+            "schema": {
+                "afSet": "str",
+                "evSet": "str",
+                "mModern": "str",
+                "eModern": "str",
+                "round": "str",
+                "mRound": "str",
+                "check": "str",
+                "isHoliday": "str"
+            }
+        }
+    ]
+}

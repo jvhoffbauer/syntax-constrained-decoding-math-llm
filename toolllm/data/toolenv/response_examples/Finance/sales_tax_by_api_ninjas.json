@@ -1,0 +1,15 @@
+{
+    "api_list": [
+        {
+            "name": "/v1/salestax",
+            "schema": {
+                "zip_code": "str",
+                "total_rate": "str",
+                "state_rate": "str",
+                "city_rate": "str",
+                "county_rate": "str",
+                "additional_rate": "str"
+            }
+        }
+    ]
+}

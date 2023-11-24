@@ -1,0 +1,37 @@
+{
+    "api_list": [
+        {
+            "name": "History",
+            "schema": {
+                "ipK_TRANSACTION_ID": "str",
+                "transactioN_DATE": "str",
+                "twoD_11_00": "str",
+                "twoD_13_00": "str",
+                "twoD_15_00": "str",
+                "twoD_17_00": "str",
+                "twoD_19_00": "str",
+                "twoD_21_00": "str"
+            }
+        },
+        {
+            "name": "Live",
+            "schema": {
+                "live": {
+                    "transactioN_DATE": "str",
+                    "set": "str",
+                    "value": "str",
+                    "twO_D": "str",
+                    "status": "str"
+                },
+                "result": [
+                    {
+                        "transactioN_DATE": "str",
+                        "set": "str",
+                        "value": "str",
+                        "twO_D": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

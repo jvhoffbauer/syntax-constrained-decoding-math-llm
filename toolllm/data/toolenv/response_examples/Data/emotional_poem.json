@@ -1,0 +1,19 @@
+{
+    "api_list": [
+        {
+            "name": "getPoem",
+            "schema": {
+                "record": {
+                    "poem": {
+                        "type": "str",
+                        "value": "str"
+                    },
+                    "auther": {
+                        "type": "str",
+                        "value": "str"
+                    }
+                }
+            }
+        }
+    ]
+}

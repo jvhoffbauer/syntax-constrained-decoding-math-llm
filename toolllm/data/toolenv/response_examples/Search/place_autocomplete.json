@@ -1,0 +1,26 @@
+{
+    "api_list": [
+        {
+            "name": "Autocomplete",
+            "schema": {
+                "predictions": [
+                    {
+                        "description": "str",
+                        "place_id": "str",
+                        "structured_formatting": {
+                            "main_text": "str",
+                            "secondary_text": "str"
+                        },
+                        "terms": [
+                            {
+                                "offset": "int",
+                                "value": "str"
+                            }
+                        ]
+                    }
+                ],
+                "status": "str"
+            }
+        }
+    ]
+}

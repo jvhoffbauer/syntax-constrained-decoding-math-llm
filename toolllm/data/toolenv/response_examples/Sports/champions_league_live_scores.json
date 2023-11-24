@@ -1,0 +1,10 @@
+{
+    "api_list": [
+        {
+            "name": "ChampionsLeagueScore",
+            "schema": {
+                "messages": "str"
+            }
+        }
+    ]
+}

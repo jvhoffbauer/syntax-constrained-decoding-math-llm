@@ -1,0 +1,57 @@
+{
+    "api_list": [
+        {
+            "name": "Recent Quotes by pagination",
+            "schema": {
+                "animename": "str",
+                "quote": "str",
+                "is_popular": "int"
+            }
+        },
+        {
+            "name": "Search quote based on quote id",
+            "schema": {
+                "animename": "str",
+                "quote": "str",
+                "is_popular": "int"
+            }
+        },
+        {
+            "name": "Search quote by anime name",
+            "schema": {
+                "animename": "str",
+                "quote": "str"
+            }
+        },
+        {
+            "name": "Get Random anime quote",
+            "schema": {
+                "animename": "str",
+                "quote": "str",
+                "is_popular": "int"
+            }
+        },
+        {
+            "name": "Quote of the Day",
+            "schema": {
+                "animename": "str",
+                "quote": "str",
+                "is_popular": "int"
+            }
+        },
+        {
+            "name": "Search quote by character name",
+            "schema": {
+                "animename": "str",
+                "quote": "str",
+                "character": "str"
+            }
+        },
+        {
+            "name": "Popular Quotes by pagination",
+            "schema": {
+                "message": "str"
+            }
+        }
+    ]
+}

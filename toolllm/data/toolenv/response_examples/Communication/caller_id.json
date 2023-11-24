@@ -1,0 +1,27 @@
+{
+    "api_list": [
+        {
+            "name": "search-mobile",
+            "schema": {
+                "data": [
+                    {
+                        "phones": [
+                            {
+                                "e164Format": "str",
+                                "nationalFormat": "str",
+                                "dialingCode": "int",
+                                "countryCode": "str"
+                            }
+                        ],
+                        "addresses": [
+                            {
+                                "countryCode": "str",
+                                "timeZone": "str"
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}

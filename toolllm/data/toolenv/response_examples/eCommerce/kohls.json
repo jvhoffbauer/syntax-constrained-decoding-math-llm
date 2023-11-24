@@ -1,0 +1,132 @@
+{
+    "api_list": [
+        {
+            "name": "stores/list",
+            "schema": {
+                "count": "int",
+                "limit": "int",
+                "offset": "int",
+                "payload": {
+                    "stores": [
+                        {
+                            "storeNum": "str",
+                            "storeName": "str",
+                            "storeHours": {
+                                "days": [
+                                    {
+                                        "name": "str",
+                                        "hours": {
+                                            "open": "str",
+                                            "close": "str"
+                                        }
+                                    }
+                                ]
+                            },
+                            "address": {
+                                "addr1": "str",
+                                "city": "str",
+                                "state": "str",
+                                "postalCode": "str",
+                                "countryCode": "str",
+                                "location": {
+                                    "longitude": "str",
+                                    "latitude": "str"
+                                },
+                                "phoneNumber": "str"
+                            },
+                            "distanceFromOrigin": "str",
+                            "supportsBopus": "bool",
+                            "sephoraFlag": "str"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "categories/list",
+            "schema": {
+                "payload": {
+                    "categories": [
+                        {
+                            "ID": "str",
+                            "name": "str",
+                            "seoURL": "str",
+                            "type": "str",
+                            "categories": [
+                                {
+                                    "name": "str",
+                                    "seoURL": "str"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "reviews/list",
+            "schema": {
+                "payload": {
+                    "Includes": {
+                        "Products": {
+                            "4201989": {
+                                "CategoryId": "str",
+                                "Description": "str",
+                                "ImageUrl": "str",
+                                "BrandExternalId": "str"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "products/list",
+            "schema": {
+                "payload": {
+                    "searchTerm": "str",
+                    "autoCorrectedTerm": "str",
+                    "legalDisclaimer": "str",
+                    "links": "str",
+                    "relatedSearchTerms": "str",
+                    "linkCartridge": {
+                        "linkGroup": "str"
+                    },
+                    "metaInfo": {
+                        "metaTitle": "str",
+                        "metaDescription": "str"
+                    },
+                    "omnitureInfo": "str",
+                    "availableTerms": "str",
+                    "activeDimensions": [
+                        {
+                            "name": "str",
+                            "label": "str",
+                            "index": "str"
+                        }
+                    ],
+                    "sorts": [
+                        {
+                            "name": "str",
+                            "active": "str",
+                            "ID": "str"
+                        }
+                    ],
+                    "dimensions": [
+                        {
+                            "name": "str",
+                            "label": "str",
+                            "index": "str"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "auto-complete (Deprecating)",
+            "schema": {
+                "Suggestions": "empty list"
+            }
+        }
+    ]
+}

@@ -1,0 +1,78 @@
+{
+    "api_list": [
+        {
+            "name": "Artist search",
+            "schema": {
+                "status": "str",
+                "error": {
+                    "message": "str"
+                }
+            }
+        },
+        {
+            "name": "Artist\u2019s upcoming events (calendar)",
+            "schema": {
+                "status": "str",
+                "error": {
+                    "message": "str"
+                }
+            }
+        },
+        {
+            "name": "Venue search",
+            "schema": {
+                "status": "str",
+                "error": {
+                    "message": "str"
+                }
+            }
+        },
+        {
+            "name": "Venue\u2019s upcoming events (calendar)",
+            "schema": {
+                "status": "str",
+                "error": {
+                    "message": "str"
+                }
+            }
+        },
+        {
+            "name": "User\u2019s upcoming events (calendar)",
+            "schema": {
+                "status": "str",
+                "error": {
+                    "message": "str"
+                }
+            }
+        },
+        {
+            "name": "Location search",
+            "schema": {
+                "resultsPage": {
+                    "status": "str",
+                    "error": {
+                        "message": "str"
+                    }
+                }
+            }
+        },
+        {
+            "name": "Metro area\u2019s upcoming events (calendar)",
+            "schema": {
+                "status": "str",
+                "error": {
+                    "message": "str"
+                }
+            }
+        },
+        {
+            "name": "Upcoming event search",
+            "schema": {
+                "status": "str",
+                "error": {
+                    "message": "str"
+                }
+            }
+        }
+    ]
+}

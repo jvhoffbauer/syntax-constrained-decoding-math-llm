@@ -1,0 +1,11 @@
+{
+    "api_list": [
+        {
+            "name": "Scan Headers",
+            "schema": {
+                "url": "NoneType",
+                "statusObject": "NoneType"
+            }
+        }
+    ]
+}

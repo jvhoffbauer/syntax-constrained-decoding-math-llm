@@ -1,0 +1,27 @@
+{
+    "api_list": [
+        {
+            "name": "/proxies.example.json",
+            "schema": {
+                "status": "str",
+                "data": {
+                    "proxies": [
+                        {
+                            "ip": "str",
+                            "port": "str",
+                            "country_code": "str",
+                            "response_time": "str",
+                            "type": "str"
+                        }
+                    ],
+                    "quota_remaining": "int",
+                    "limit": "int",
+                    "page": "int",
+                    "has_next_page": "bool"
+                },
+                "message": "str",
+                "request_id": "str"
+            }
+        }
+    ]
+}

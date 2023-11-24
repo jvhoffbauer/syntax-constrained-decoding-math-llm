@@ -1,0 +1,17 @@
+{
+    "api_list": [
+        {
+            "name": "PlaystationDeals",
+            "schema": {
+                "name": "str",
+                "titleId": "str",
+                "platform": [
+                    "list of str with length 1"
+                ],
+                "basePrice": "str",
+                "discountPrice": "str",
+                "url": "str"
+            }
+        }
+    ]
+}

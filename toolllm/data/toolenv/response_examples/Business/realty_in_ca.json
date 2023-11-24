@@ -1,0 +1,147 @@
+{
+    "api_list": [
+        {
+            "name": "locations/v2/auto-complete",
+            "schema": {
+                "ErrorCode": {
+                    "Id": "int",
+                    "Description": "str",
+                    "ProductName": "str"
+                },
+                "Results": [
+                    {
+                        "ListingId": "str",
+                        "ReferenceNumber": "str",
+                        "Address_EN": "str",
+                        "Address_FR": "str",
+                        "City": "str",
+                        "PostalCode": "str",
+                        "Province": "str",
+                        "RelativeURLEn": "str",
+                        "RelativeURLFr": "str"
+                    }
+                ],
+                "ResultsMapBox": [
+                    {
+                        "location": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "keywords/list",
+            "schema": {
+                "Words": [
+                    {
+                        "Id": "str",
+                        "Value": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "locations/auto-complete",
+            "schema": {
+                "ErrorCode": {
+                    "Id": "int",
+                    "Description": "str",
+                    "ProductName": "str",
+                    "Version": "str"
+                },
+                "SubArea": [
+                    {
+                        "Location": "str",
+                        "Longitude": "str",
+                        "Latitude": "str",
+                        "Viewport": {
+                            "NorthEast": {
+                                "Latitude": "str",
+                                "Longitude": "str"
+                            },
+                            "SouthWest": {
+                                "Latitude": "str",
+                                "Longitude": "str"
+                            }
+                        },
+                        "GEOId": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "properties/list-by-mls",
+            "schema": {
+                "ErrorCode": {
+                    "Id": "int",
+                    "Description": "str",
+                    "ProductName": "str",
+                    "Version": "str"
+                },
+                "Paging": {
+                    "RecordsPerPage": "int",
+                    "CurrentPage": "int",
+                    "TotalRecords": "int",
+                    "MaxRecords": "int",
+                    "TotalPages": "int",
+                    "RecordsShowing": "int",
+                    "Pins": "int"
+                },
+                "Results": "str"
+            }
+        },
+        {
+            "name": "properties/detail",
+            "schema": {
+                "ErrorCode": {
+                    "Id": "int",
+                    "Description": "str"
+                }
+            }
+        },
+        {
+            "name": "properties/list-residential",
+            "schema": {
+                "ErrorCode": {
+                    "Id": "str",
+                    "Description": "str",
+                    "Status": "str",
+                    "ProductName": "str",
+                    "Version": "str"
+                },
+                "Paging": {
+                    "RecordsPerPage": "str",
+                    "CurrentPage": "str",
+                    "TotalRecords": "str",
+                    "MaxRecords": "str",
+                    "TotalPages": "str",
+                    "RecordsShowing": "str",
+                    "Pins": "str"
+                },
+                "Results": [
+                    {
+                        "Id": "str",
+                        "MlsNumber": "str",
+                        "PublicRemarks": "str",
+                        "Building": {
+                            "BathroomTotal": "str",
+                            "Bedrooms": "str",
+                            "StoriesTotal": "str",
+                            "Type": "str"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "properties/get-statistics",
+            "schema": {
+                "Data": [
+                    {
+                        "key": "str",
+                        "value": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

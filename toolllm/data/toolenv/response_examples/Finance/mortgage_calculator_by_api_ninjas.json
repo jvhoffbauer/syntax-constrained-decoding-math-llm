@@ -1,0 +1,18 @@
+{
+    "api_list": [
+        {
+            "name": "/v1/mortgagecalculator",
+            "schema": {
+                "monthly_payment": {
+                    "total": "int",
+                    "mortgage": "int"
+                },
+                "annual_payment": {
+                    "total": "int",
+                    "mortgage": "int"
+                },
+                "total_interest_paid": "int"
+            }
+        }
+    ]
+}

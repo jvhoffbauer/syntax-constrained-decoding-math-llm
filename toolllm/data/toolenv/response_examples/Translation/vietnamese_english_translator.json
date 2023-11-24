@@ -1,0 +1,10 @@
+{
+    "api_list": [
+        {
+            "name": "translator",
+            "schema": {
+                "messages": "str"
+            }
+        }
+    ]
+}

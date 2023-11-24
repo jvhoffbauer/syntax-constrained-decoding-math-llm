@@ -1,0 +1,11 @@
+{
+    "api_list": [
+        {
+            "name": "text to image",
+            "schema": {
+                "status": "str",
+                "url": "str"
+            }
+        }
+    ]
+}

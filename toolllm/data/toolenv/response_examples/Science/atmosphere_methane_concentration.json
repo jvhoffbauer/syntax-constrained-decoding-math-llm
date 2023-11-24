@@ -1,0 +1,16 @@
+{
+    "api_list": [
+        {
+            "name": "Methane endpoint",
+            "schema": {
+                "methane": [
+                    {
+                        "date": "str",
+                        "average": "str",
+                        "trend": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

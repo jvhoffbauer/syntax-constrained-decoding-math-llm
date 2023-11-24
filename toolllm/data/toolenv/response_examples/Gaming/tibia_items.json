@@ -1,0 +1,179 @@
+{
+    "api_list": [
+        {
+            "name": "Get imbuements for  Epiphany (Magic Skillboost)",
+            "schema": {
+                "World": "str",
+                "itemName": "str",
+                "Average": {
+                    "sell": "str",
+                    "buy": "str"
+                },
+                "TypeItem": "str"
+            }
+        },
+        {
+            "name": "Get imbuements for Quara Scale (Ice Protection)",
+            "schema": {
+                "World": "str",
+                "itemName": "str",
+                "Average": {
+                    "sell": "str",
+                    "buy": "str"
+                },
+                "TypeItem": "str"
+            }
+        },
+        {
+            "name": "Get imbuements for Cloud Fabric (Energy Protection)",
+            "schema": {
+                "World": "str",
+                "itemName": "str",
+                "TypeItem": "str",
+                "Average": {
+                    "sellNumberofTransactions": "str",
+                    "buyNumberofTransactions": "str",
+                    "sell": "str",
+                    "buy": "str"
+                }
+            }
+        },
+        {
+            "name": "Get imbuements for Demon Presence (Holy Protection)",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get imbuements for Precision (Distance Skillboost)",
+            "schema": {
+                "World": "str",
+                "itemName": "str",
+                "Average": {
+                    "sell": "str",
+                    "buy": "str"
+                },
+                "TypeItem": "str"
+            }
+        },
+        {
+            "name": "Get imbuements for Snake skin (Earth Protection)",
+            "schema": {
+                "World": "str",
+                "itemName": "str",
+                "Average": {
+                    "sell": "str",
+                    "buy": "str"
+                },
+                "TypeItem": "str"
+            }
+        },
+        {
+            "name": "Get imbuements for Strike (Critical Damage)",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get imbuements for Vampirism (Life steal)",
+            "schema": {
+                "World": "str",
+                "itemName": "str",
+                "Average": {
+                    "sell": "str",
+                    "buy": "str"
+                },
+                "TypeItem": "str"
+            }
+        },
+        {
+            "name": "Get all imbuements Items",
+            "schema": {
+                "World": "str",
+                "itemName": "str",
+                "Average": {
+                    "sell": "str",
+                    "buy": "str"
+                },
+                "TypeItem": "str"
+            }
+        },
+        {
+            "name": "Get history of Item",
+            "schema": {
+                "Data": "str",
+                "Key": "str",
+                "Average": {
+                    "BuyOffers": {
+                        "LowestPrice": "str",
+                        "AveragePrice": "str",
+                        "HighestPrice": "str"
+                    },
+                    "SellOffers": {
+                        "LowestPrice": "str",
+                        "AveragePrice": "str",
+                        "HighestPrice": "str"
+                    }
+                }
+            }
+        },
+        {
+            "name": "Get single Item",
+            "schema": {
+                "World": "str",
+                "ItemName": "str",
+                "Average": {
+                    "BuyOffers": {
+                        "AveragePrice": "str"
+                    },
+                    "SellOffers": {
+                        "AveragePrice": "str"
+                    }
+                },
+                "TypeItem": "str"
+            }
+        },
+        {
+            "name": "Get all valuable Items",
+            "schema": {
+                "World": "str",
+                "itemName": "str",
+                "Average": {
+                    "sell": "str",
+                    "buy": "str"
+                },
+                "TypeItem": "str"
+            }
+        },
+        {
+            "name": "Get imbuements for Lich Shroud (Death Protection)",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get imbuements for Dragon Hide (Fire Protection)",
+            "schema": {
+                "World": "str",
+                "itemName": "str",
+                "Average": {
+                    "sell": "str",
+                    "buy": "str"
+                },
+                "TypeItem": "str"
+            }
+        },
+        {
+            "name": "Get imbuements for Void (Mana Steal)",
+            "schema": {
+                "World": "str",
+                "itemName": "str",
+                "TypeItem": "str",
+                "Average": {
+                    "sell": "str",
+                    "buy": "str"
+                }
+            }
+        }
+    ]
+}

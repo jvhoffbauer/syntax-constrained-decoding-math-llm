@@ -1,0 +1,32 @@
+{
+    "api_list": [
+        {
+            "name": "Free Games",
+            "schema": {
+                "freeGames": {
+                    "current": [
+                        {
+                            "title": "str",
+                            "id": "str",
+                            "description": "str",
+                            "offerType": "str",
+                            "status": "str",
+                            "seller": {
+                                "id": "str",
+                                "name": "str"
+                            },
+                            "urlSlug": "str",
+                            "price": {
+                                "totalPrice": {
+                                    "discountPrice": "str",
+                                    "originalPrice": "str",
+                                    "currencyCode": "str"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

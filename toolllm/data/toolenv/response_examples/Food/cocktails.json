@@ -1,0 +1,32 @@
+{
+    "api_list": [
+        {
+            "name": "Random",
+            "schema": {
+                "success": "bool",
+                "body": [
+                    {
+                        "name": "str",
+                        "ingredients": [
+                            "list of str with length 1"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Random Nonalcoholic",
+            "schema": {
+                "success": "bool",
+                "body": [
+                    {
+                        "name": "str",
+                        "ingredients": [
+                            "list of str with length 1"
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}

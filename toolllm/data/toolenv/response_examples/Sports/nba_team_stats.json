@@ -1,0 +1,40 @@
+{
+    "api_list": [
+        {
+            "name": "Team Stats",
+            "schema": {
+                "leagueYear": "str",
+                "stats": {
+                    "Minnesota Timberwolves": {
+                        "Per Game": {
+                            "Team": "str",
+                            "G": "str",
+                            "MP": "str",
+                            "FG": "str",
+                            "FGA": "str",
+                            "FG%": "str",
+                            "3P": "str",
+                            "3PA": "str",
+                            "3P%": "str",
+                            "2P": "str",
+                            "2PA": "str",
+                            "2P%": "str",
+                            "FT": "str",
+                            "FTA": "str",
+                            "FT%": "str",
+                            "ORB": "str",
+                            "DRB": "str",
+                            "TRB": "str",
+                            "AST": "str",
+                            "STL": "str",
+                            "BLK": "str",
+                            "TOV": "str",
+                            "PF": "str",
+                            "PTS": "str"
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

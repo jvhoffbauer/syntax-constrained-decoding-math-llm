@@ -1,0 +1,39 @@
+{
+    "api_list": [
+        {
+            "name": "/history",
+            "schema": {
+                "action": "str",
+                "status": "str",
+                "code": "int",
+                "message": "str"
+            }
+        },
+        {
+            "name": "/analytics/links",
+            "schema": {
+                "action": "str",
+                "status": "str",
+                "code": "int",
+                "message": "str"
+            }
+        },
+        {
+            "name": "/user",
+            "schema": {
+                "action": "str",
+                "status": "str",
+                "code": "int",
+                "message": "str"
+            }
+        },
+        {
+            "name": "/media",
+            "schema": {
+                "action": "str",
+                "status": "str",
+                "message": "str"
+            }
+        }
+    ]
+}

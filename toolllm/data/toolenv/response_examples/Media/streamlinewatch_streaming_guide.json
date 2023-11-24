@@ -1,0 +1,102 @@
+{
+    "api_list": [
+        {
+            "name": "/shows/{id}/episodes",
+            "schema": {
+                "total": "int",
+                "data": [
+                    {
+                        "episode_number": "int",
+                        "first_aired": "str",
+                        "season_number": "int",
+                        "title": "str",
+                        "sources": [
+                            {
+                                "source": "str",
+                                "link_ios": "str"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "name": "regions",
+            "schema": {
+                "messages": "str"
+            }
+        },
+        {
+            "name": "/shows/{id}",
+            "schema": {
+                "_id": "int",
+                "backdrop_path": "str",
+                "first_aired": "str",
+                "original_title": "str",
+                "overview": "str",
+                "poster_path": "str",
+                "title": "str",
+                "vote_average": "float",
+                "vote_count": "int",
+                "youtube_trailer": "str",
+                "sources": [
+                    {
+                        "source": "str",
+                        "link": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "/movies/{id}",
+            "schema": {
+                "_id": "int",
+                "backdrop_path": "str",
+                "original_title": "str",
+                "overview": "str",
+                "poster_path": "str",
+                "release_date": "str",
+                "title": "str",
+                "sources": [
+                    {
+                        "source": "str",
+                        "link_ios": "str",
+                        "type": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "/movies",
+            "schema": {
+                "_id": "int",
+                "original_title": "str",
+                "overview": "str",
+                "title": "str"
+            }
+        },
+        {
+            "name": "/sources",
+            "schema": {
+                "source": "str",
+                "display_name": "str",
+                "type": "str",
+                "platform": {
+                    "android": "str",
+                    "android_tv": "str",
+                    "ios": "str",
+                    "web": "str"
+                }
+            }
+        },
+        {
+            "name": "/shows",
+            "schema": {
+                "_id": "int",
+                "first_aired": "str",
+                "original_title": "str",
+                "title": "str"
+            }
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "api_list": [
+        {
+            "name": "/api",
+            "schema": {
+                "hasError": "bool",
+                "errorCode": "int",
+                "body": {
+                    "v": "str"
+                }
+            }
+        }
+    ]
+}

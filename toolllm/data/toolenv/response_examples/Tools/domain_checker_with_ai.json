@@ -1,0 +1,28 @@
+{
+    "api_list": [
+        {
+            "name": "DNS Details",
+            "schema": {
+                "dns": {
+                    "A": "empty list",
+                    "AAAA": "empty list"
+                }
+            }
+        },
+        {
+            "name": "Domain WHOIS",
+            "schema": {
+                "domain_name": [
+                    "list of str with length 1"
+                ],
+                "name_servers": [
+                    "list of str with length 1"
+                ],
+                "registrar": "str",
+                "status": [
+                    "list of str with length 1"
+                ]
+            }
+        }
+    ]
+}

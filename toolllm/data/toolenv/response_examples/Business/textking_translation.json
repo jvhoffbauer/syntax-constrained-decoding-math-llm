@@ -1,0 +1,96 @@
+{
+    "api_list": [
+        {
+            "name": "Get language",
+            "schema": {
+                "code": "str",
+                "name": "str"
+            }
+        },
+        {
+            "name": "List source languages",
+            "schema": {
+                "page": "int",
+                "per_page": "int",
+                "total": "int",
+                "items": [
+                    {
+                        "code": "str",
+                        "name": "str",
+                        "localization_language": "str"
+                    }
+                ],
+                "links": [
+                    {
+                        "rel": "str",
+                        "href": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "List topics",
+            "schema": {
+                "page": "int",
+                "per_page": "int",
+                "total": "int",
+                "items": [
+                    {
+                        "id": "str",
+                        "name": "str"
+                    }
+                ],
+                "links": [
+                    {
+                        "rel": "str",
+                        "href": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "List target languages",
+            "schema": {
+                "page": "int",
+                "per_page": "int",
+                "total": "int",
+                "items": [
+                    {
+                        "code": "str",
+                        "name": "str"
+                    }
+                ],
+                "links": [
+                    {
+                        "rel": "str",
+                        "href": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Get price info for word count",
+            "schema": {
+                "source_language": "str",
+                "target_language": "str",
+                "words": "int",
+                "prices": [
+                    {
+                        "quality": "str",
+                        "price_per_word": "float",
+                        "total_price": "float",
+                        "currency": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Get topic",
+            "schema": {
+                "id": "str",
+                "name": "str",
+                "localization_language": "str"
+            }
+        }
+    ]
+}

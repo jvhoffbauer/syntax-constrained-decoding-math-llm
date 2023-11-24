@@ -1,0 +1,162 @@
+{
+    "api_list": [
+        {
+            "name": "Nowcast",
+            "schema": {
+                "forecast": [
+                    {
+                        "time": "str",
+                        "symbolPhrase": "str",
+                        "temperature": "int",
+                        "feelsLikeTemp": "int",
+                        "windDirString": "str",
+                        "precipProb": "int",
+                        "uvIndex": "int",
+                        "pressure": "float"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Three-hourly",
+            "schema": {
+                "forecast": [
+                    {
+                        "time": "str",
+                        "symbolPhrase": "str",
+                        "temperature": "int",
+                        "feelsLikeTemp": "int",
+                        "windSpeed": "int",
+                        "windGust": "int",
+                        "relHumidity": "int",
+                        "dewPoint": "int",
+                        "windDirString": "str",
+                        "precipProb": "int",
+                        "precipAccum": "int",
+                        "snowAccum": "int",
+                        "cloudiness": "int",
+                        "uvIndex": "int",
+                        "pressure": "float",
+                        "visibility": "int",
+                        "solarRadiation": "int"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Daily",
+            "schema": {
+                "forecast": [
+                    {
+                        "date": "str",
+                        "symbolPhrase": "str",
+                        "maxTemp": "int",
+                        "minTemp": "int",
+                        "maxFeelsLikeTemp": "int",
+                        "minFeelsLikeTemp": "int",
+                        "maxWindSpeed": "int",
+                        "windDir": "int",
+                        "maxWindGust": "int",
+                        "precipProb": "int",
+                        "cloudiness": "int",
+                        "sunrise": "str",
+                        "sunset": "str",
+                        "uvIndex": "int",
+                        "minVisibility": "int",
+                        "pressure": "float"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Location info",
+            "schema": {
+                "id": "int",
+                "name": "str",
+                "country": "str",
+                "timezone": "str",
+                "language": "str",
+                "adminArea": "str",
+                "lon": "float",
+                "lat": "float"
+            }
+        },
+        {
+            "name": "Current",
+            "schema": {
+                "current": {
+                    "symbolPhrase": "str",
+                    "temperature": "int",
+                    "feelsLikeTemp": "int",
+                    "windSpeed": "int",
+                    "windDirString": "str",
+                    "precipProb": "int",
+                    "cloudiness": "int",
+                    "pressure": "float"
+                }
+            }
+        },
+        {
+            "name": "Latest observations",
+            "schema": {
+                "observations": [
+                    {
+                        "station": "str",
+                        "temperature": "int",
+                        "feelsLikeTemp": "int",
+                        "symbol": "str",
+                        "windDirString": "str",
+                        "windDir": "int",
+                        "windSpeed": "int",
+                        "pressure": "int",
+                        "relHumidity": "int",
+                        "visibility": "int"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Location search",
+            "schema": {
+                "locations": [
+                    {
+                        "id": "int",
+                        "name": "str",
+                        "country": "str",
+                        "timezone": "str",
+                        "language": "str",
+                        "lon": "float",
+                        "lat": "float"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Hourly",
+            "schema": {
+                "forecast": [
+                    {
+                        "time": "str",
+                        "symbolPhrase": "str",
+                        "temperature": "int",
+                        "feelsLikeTemp": "int",
+                        "windSpeed": "int",
+                        "windGust": "int",
+                        "relHumidity": "int",
+                        "dewPoint": "int",
+                        "windDirString": "str",
+                        "precipProb": "int",
+                        "precipAccum": "int",
+                        "snowAccum": "int",
+                        "cloudiness": "int",
+                        "thunderProb": "int",
+                        "uvIndex": "int",
+                        "pressure": "float",
+                        "visibility": "int",
+                        "solarRadiation": "int"
+                    }
+                ]
+            }
+        }
+    ]
+}

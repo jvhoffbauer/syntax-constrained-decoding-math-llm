@@ -1,0 +1,11 @@
+{
+    "api_list": [
+        {
+            "name": "timezone",
+            "schema": {
+                "City": "str",
+                "TimeZone": "str"
+            }
+        }
+    ]
+}

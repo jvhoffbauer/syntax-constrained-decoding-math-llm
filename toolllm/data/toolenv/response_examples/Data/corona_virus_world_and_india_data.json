@@ -1,0 +1,41 @@
+{
+    "api_list": [
+        {
+            "name": "COVID-19 World data country wise",
+            "schema": {
+                "countries_stat": [
+                    {
+                        "country_name": "str",
+                        "cases": "str",
+                        "deaths": "str",
+                        "total_recovered": "str",
+                        "active_cases": "str",
+                        "total_cases_per_1m_population": "str",
+                        "deaths_per_1m_population": "str",
+                        "total_tests": "str"
+                    }
+                ],
+                "world_total": {
+                    "total_cases": "str",
+                    "total_deaths": "str",
+                    "total_recovered": "str",
+                    "active_cases": "str",
+                    "total_cases_per_1m_population": "str",
+                    "deaths_per_1m_population": "str"
+                }
+            }
+        },
+        {
+            "name": "India Timeline data starting from 30th Jan 2020",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "COVID-19 India data state and district wise",
+            "schema": {
+                "message": "str"
+            }
+        }
+    ]
+}

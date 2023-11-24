@@ -1,0 +1,48 @@
+{
+    "api_list": [
+        {
+            "name": "Get individual publication's news about climate change",
+            "schema": {
+                "headers": {
+                    "accept": "str",
+                    "accept-encoding": "str",
+                    "content-length": "str",
+                    "host": "str",
+                    "user-agent": "str",
+                    "x-rapidapi-host": "str",
+                    "x-rapidapi-subscription": "str",
+                    "x-rapidapi-user": "str",
+                    "x-rapidapi-version": "str",
+                    "connection": "str"
+                },
+                "params": {
+                    "0": "str"
+                }
+            }
+        },
+        {
+            "name": "Get All Climate Change News",
+            "schema": {
+                "at": "str",
+                "method": "str",
+                "hostname": "str",
+                "ip": "str",
+                "query": {},
+                "headers": {
+                    "accept": "str",
+                    "accept-encoding": "str",
+                    "host": "str",
+                    "user-agent": "str",
+                    "x-rapidapi-host": "str",
+                    "x-rapidapi-subscription": "str",
+                    "x-rapidapi-user": "str",
+                    "x-rapidapi-version": "str",
+                    "connection": "str"
+                },
+                "params": {
+                    "0": "str"
+                }
+            }
+        }
+    ]
+}

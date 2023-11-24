@@ -1,0 +1,26 @@
+{
+    "api_list": [
+        {
+            "name": "User Data",
+            "schema": {
+                "users": [
+                    {
+                        "firstName": "str",
+                        "lastName": "str",
+                        "email": "str",
+                        "username": "str",
+                        "avatar": "str",
+                        "posts": [
+                            {
+                                "id": "str",
+                                "image": "str",
+                                "caption": "str",
+                                "likes": "int"
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}

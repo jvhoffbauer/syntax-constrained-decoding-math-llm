@@ -1,0 +1,23 @@
+{
+    "api_list": [
+        {
+            "name": "GET Call",
+            "schema": {
+                "action": "str",
+                "request_id": "str",
+                "result": {
+                    "image_1": {
+                        "face_detected": "bool"
+                    },
+                    "image_2": {
+                        "face_detected": "bool"
+                    },
+                    "is_a_match": "bool",
+                    "match_score": "int"
+                },
+                "status": "str",
+                "type": "str"
+            }
+        }
+    ]
+}

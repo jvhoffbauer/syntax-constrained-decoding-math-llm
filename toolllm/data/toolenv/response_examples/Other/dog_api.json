@@ -1,0 +1,19 @@
+{
+    "api_list": [
+        {
+            "name": "GetBreeds",
+            "schema": {
+                "status": "str",
+                "message": "str"
+            }
+        },
+        {
+            "name": "GetRandom",
+            "schema": {
+                "status": "str",
+                "message": "str",
+                "code": "int"
+            }
+        }
+    ]
+}

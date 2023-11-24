@@ -1,0 +1,10 @@
+{
+    "api_list": [
+        {
+            "name": "\u0110\u1ed3 da Laforce",
+            "schema": {
+                "message": "str"
+            }
+        }
+    ]
+}

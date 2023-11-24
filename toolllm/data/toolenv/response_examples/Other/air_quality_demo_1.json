@@ -1,0 +1,10 @@
+{
+    "api_list": [
+        {
+            "name": "/v1/airquality",
+            "schema": {
+                "messages": "str"
+            }
+        }
+    ]
+}

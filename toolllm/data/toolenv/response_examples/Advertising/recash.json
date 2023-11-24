@@ -1,0 +1,31 @@
+{
+    "api_list": [
+        {
+            "name": "Search",
+            "schema": {
+                "_id": "str",
+                "affiliatelink": "str",
+                "discount": "str",
+                "enddate": "str",
+                "img": "str",
+                "name": "str",
+                "price": "str",
+                "ratting": "float"
+            }
+        },
+        {
+            "name": "All products",
+            "schema": {
+                "_id": "str",
+                "affiliatelink": "str",
+                "discount": "str",
+                "enddate": "str",
+                "img": "str",
+                "name": "str",
+                "price": "str",
+                "ratting": "float",
+                "startdate": "str"
+            }
+        }
+    ]
+}

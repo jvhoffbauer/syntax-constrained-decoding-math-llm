@@ -1,0 +1,11 @@
+{
+    "api_list": [
+        {
+            "name": "wait_for_message",
+            "schema": {
+                "title": "str",
+                "status": "int"
+            }
+        }
+    ]
+}

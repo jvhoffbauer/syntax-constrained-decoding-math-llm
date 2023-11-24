@@ -1,0 +1,109 @@
+{
+    "api_list": [
+        {
+            "name": "GET_videos-videoId-chapters",
+            "schema": {
+                "title": "str",
+                "status": "int"
+            }
+        },
+        {
+            "name": "GET_videos-videoId-captions",
+            "schema": {
+                "title": "str",
+                "status": "int"
+            }
+        },
+        {
+            "name": "GET_analytics-live-streams-liveStreamId",
+            "schema": {
+                "title": "str",
+                "status": "int"
+            }
+        },
+        {
+            "name": "GET_analytics-videos-videoId",
+            "schema": {
+                "status": "int",
+                "title": "str"
+            }
+        },
+        {
+            "name": "GET_analytics-sessions-sessionId-events",
+            "schema": {
+                "title": "str",
+                "status": "int"
+            }
+        },
+        {
+            "name": "GET_videos-videoId-chapters-language",
+            "schema": {
+                "title": "str",
+                "status": "int"
+            }
+        },
+        {
+            "name": "GET_players",
+            "schema": {
+                "title": "str",
+                "status": "int"
+            }
+        },
+        {
+            "name": "GET_live-streams-liveStreamId",
+            "schema": {
+                "title": "str",
+                "status": "int"
+            }
+        },
+        {
+            "name": "LIST-videos",
+            "schema": {
+                "title": "str",
+                "status": "int"
+            }
+        },
+        {
+            "name": "GET-video-status",
+            "schema": {
+                "title": "str",
+                "status": "int"
+            }
+        },
+        {
+            "name": "GET_live-streams",
+            "schema": {
+                "title": "str",
+                "status": "int"
+            }
+        },
+        {
+            "name": "GET_players-playerId",
+            "schema": {
+                "title": "str",
+                "status": "int"
+            }
+        },
+        {
+            "name": "GET-video",
+            "schema": {
+                "title": "str",
+                "status": "int"
+            }
+        },
+        {
+            "name": "GET_account",
+            "schema": {
+                "title": "str",
+                "status": "int"
+            }
+        },
+        {
+            "name": "GET_videos-videoId-captions-language",
+            "schema": {
+                "title": "str",
+                "status": "int"
+            }
+        }
+    ]
+}

@@ -1,0 +1,234 @@
+{
+    "api_list": [
+        {
+            "name": "United States Scheduled Flights Growth",
+            "schema": {
+                "Scheduled Departing Flights by Country and by Week": {
+                    "2020-W02": "str",
+                    "2020-W03": "str",
+                    "2020-W04": "str",
+                    "2020-W05": "str",
+                    "2020-W06": "str",
+                    "2020-W07": "str",
+                    "2020-W08": "str",
+                    "2020-W09": "str",
+                    "2020-W10": "str",
+                    "2020-W11": "str",
+                    "2020-W12": "str",
+                    "2020-W13": "str",
+                    "2020-W14": "str",
+                    "2020-W15": "str",
+                    "2020-W16": "str",
+                    "2020-W17": "str",
+                    "2020-W18": "str",
+                    "2020-W19": "str",
+                    "2020-W20": "str",
+                    "2020-W21": "str",
+                    "2020-W22": "str",
+                    "2020-W23": "str",
+                    "2020-W24": "str",
+                    "2020-W25": "str",
+                    "2020-W26": "str",
+                    "2020-W27": "str",
+                    "2020-W28": "str",
+                    "2020-W29": "str",
+                    "2020-W30": "str",
+                    "2020-W31": "str",
+                    "2020-W32": "str",
+                    "2020-W33": "str",
+                    "2020-W34": "str",
+                    "2020-W35": "str",
+                    "2020-W36": "str",
+                    "2020-W37": "str",
+                    "2020-W38": "str",
+                    "2020-W39": "str",
+                    "2020-W40": "str",
+                    "2020-W41": "str",
+                    "2020-W42": "str",
+                    "2020-W43": "str",
+                    "2020-W44": "str",
+                    "2020-W45": "str",
+                    "2020-W46": "str"
+                }
+            }
+        },
+        {
+            "name": "United States Scheduled Flights Level",
+            "schema": {
+                "Scheduled Departing Flights by Country and by Week": {
+                    "2019-W02": "str",
+                    "2019-W45": "str",
+                    "2019-W46": "str"
+                }
+            }
+        },
+        {
+            "name": "Australia Scheduled Flights Growth",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Australia Scheduled Flights Level",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "China Scheduled Flights Growth",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "China Scheduled Flights Level",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "France Scheduled Flights Level",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Germany Scheduled Flights Growth",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Germany Scheduled Flights Level",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Hong Kong Scheduled Flights Growth",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Hong Kong Scheduled Flights Level",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "India Scheduled Flights Growth",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "India Scheduled Flights Level",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "France Scheduled Flights Growth",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Italy Scheduled Flights Growth",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Italy Scheduled Flights Level",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Japan Scheduled Flights Growth",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Japan Scheduled Flights Level",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Singapore Scheduled Flights Growth",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Singapore Scheduled Flights Level",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "South Korea Scheduled Flights Growth",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "South Korea Scheduled Flights Level",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Spain Scheduled Flights Growth",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Spain Scheduled Flights Level",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Sweden Scheduled Flights Growth",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Sweden Scheduled Flights Level",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "UAE Scheduled Flights Growth",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "UAE Scheduled Flights Level",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "United Kingdom Scheduled Flights Growth",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "United Kingdom Scheduled Flights Level",
+            "schema": {
+                "message": "str"
+            }
+        }
+    ]
+}

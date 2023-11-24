@@ -1,0 +1,121 @@
+{
+    "api_list": [
+        {
+            "name": "Property Details",
+            "schema": {
+                "home": {
+                    "advertisers": [
+                        {
+                            "type": "str"
+                        }
+                    ],
+                    "branding": [
+                        {
+                            "name": "str"
+                        }
+                    ],
+                    "builder": "str",
+                    "coming_soon_date": "str",
+                    "community": "str",
+                    "consumer_advertisers": [
+                        {
+                            "name": "str",
+                            "phone": "str",
+                            "photo": {
+                                "type": "str"
+                            },
+                            "show_realtor_logo": "str",
+                            "type": "str"
+                        }
+                    ],
+                    "description": {
+                        "baths": "str",
+                        "baths_consolidated": "str",
+                        "baths_full": "str",
+                        "baths_half": "str"
+                    }
+                }
+            }
+        },
+        {
+            "name": "Search for region",
+            "schema": {
+                "_id": "str",
+                "area_type": "str",
+                "centroid": {
+                    "lat": "float",
+                    "lon": "float"
+                },
+                "city": "str",
+                "country": "str",
+                "state_code": "str"
+            }
+        },
+        {
+            "name": "Search agents",
+            "schema": {
+                "agents": [
+                    {
+                        "address": {
+                            "city": "str",
+                            "state_code": "str"
+                        },
+                        "agent_rating": "str",
+                        "agent_type": [
+                            "list of str with length 1"
+                        ],
+                        "broker": {
+                            "name": "str"
+                        },
+                        "first_name": "str",
+                        "full_name": "str",
+                        "has_photo": "str",
+                        "href": "str",
+                        "id": "str",
+                        "is_realtor": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Agent details",
+            "schema": {
+                "agentDetails": {
+                    "address": {
+                        "city": "str",
+                        "country": "str",
+                        "postal_code": "str",
+                        "state": "str",
+                        "state_code": "str"
+                    },
+                    "advertiser_id": "str",
+                    "agent_rating": "str",
+                    "agent_type": [
+                        "list of str with length 1"
+                    ],
+                    "broker": {
+                        "name": "str",
+                        "photo": {
+                            "href": "str"
+                        }
+                    },
+                    "description": "str",
+                    "designations": "str",
+                    "first_month": "str",
+                    "first_name": "str",
+                    "first_year": "str",
+                    "full_name": "str",
+                    "has_photo": "str",
+                    "href": "str",
+                    "id": "str",
+                    "is_realtor": "str",
+                    "languages": "str",
+                    "last_name": "str",
+                    "last_updated": "str",
+                    "name": "str",
+                    "nar_only": "str"
+                }
+            }
+        }
+    ]
+}

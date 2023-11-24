@@ -1,0 +1,441 @@
+{
+    "api_list": [
+        {
+            "name": "cities/v2/get-information",
+            "schema": {
+                "data": {
+                    "id": "str",
+                    "city": "str",
+                    "state": "str",
+                    "country": "str",
+                    "location": {
+                        "lat": "str",
+                        "lon": "str"
+                    },
+                    "timezone": "str",
+                    "websiteLink": "str",
+                    "sources": [
+                        {
+                            "id": "str",
+                            "name": "str",
+                            "totalStations": "str",
+                            "type": "str",
+                            "picture": "str",
+                            "url": "str"
+                        }
+                    ],
+                    "currentMeasurement": {
+                        "ts": "str",
+                        "aqius": "str",
+                        "mainus": "str",
+                        "aqicn": "str",
+                        "maincn": "str"
+                    },
+                    "sensorDefinitions": [
+                        {
+                            "pollutant": "str",
+                            "unit": "str",
+                            "name": "str"
+                        }
+                    ],
+                    "currentWeather": {
+                        "ts": "str",
+                        "temperature": "str",
+                        "pressure": "str",
+                        "humidity": "str"
+                    }
+                }
+            }
+        },
+        {
+            "name": "places/v2/list-by-map",
+            "schema": {
+                "status": "str",
+                "data": [
+                    {
+                        "id": "str",
+                        "name": "str",
+                        "city": "str",
+                        "state": "str",
+                        "country": "str",
+                        "location": {
+                            "lat": "float",
+                            "lon": "float"
+                        },
+                        "currentMeasurement": {
+                            "ts": "str",
+                            "aqius": "int",
+                            "aqicn": "int",
+                            "pollutants": [
+                                {
+                                    "conc": "int",
+                                    "aqius": "int",
+                                    "aqicn": "int",
+                                    "pollutant": "str"
+                                }
+                            ]
+                        },
+                        "sensorDefinitions": [
+                            {
+                                "pollutant": "str",
+                                "unit": "str",
+                                "name": "str"
+                            }
+                        ],
+                        "type": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "v2/auto-complete",
+            "schema": {
+                "data": {
+                    "cities": [
+                        {
+                            "city": "str",
+                            "country": "str",
+                            "currentMeasurement": {
+                                "aqicn": "str",
+                                "aqius": "str"
+                            },
+                            "sensorDefinitions": [
+                                {
+                                    "name": "str",
+                                    "pollutant": "str",
+                                    "unit": "str"
+                                }
+                            ],
+                            "type": "str"
+                        }
+                    ],
+                    "stations": [
+                        {
+                            "city": "str",
+                            "country": "str",
+                            "currentMeasurement": {
+                                "aqicn": "str",
+                                "aqius": "str",
+                                "pollutants": [
+                                    {
+                                        "aqicn": "str",
+                                        "aqius": "str",
+                                        "conc": "str",
+                                        "isEstimated": "str",
+                                        "pollutant": "str"
+                                    }
+                                ]
+                            },
+                            "sensorDefinitions": [
+                                {
+                                    "name": "str",
+                                    "pollutant": "str",
+                                    "unit": "str"
+                                }
+                            ],
+                            "type": "str"
+                        }
+                    ],
+                    "contributors": [
+                        {
+                            "id": "str",
+                            "name": "str",
+                            "picture": "str",
+                            "subType": "str",
+                            "type": "str"
+                        }
+                    ],
+                    "news": [
+                        {
+                            "author": "str",
+                            "date": "str",
+                            "status": "str",
+                            "thumbnail": "str",
+                            "title": "str",
+                            "type": "str",
+                            "url": "str"
+                        }
+                    ],
+                    "resources": [
+                        {
+                            "author": "str",
+                            "date": "str",
+                            "status": "str",
+                            "thumbnail": "str",
+                            "title": "str",
+                            "type": "str",
+                            "url": "str"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "stations/get-information (Deprecated)",
+            "schema": {
+                "data": {
+                    "id": "str",
+                    "city": "str",
+                    "country": "str",
+                    "current_weather": {
+                        "ts": "str",
+                        "tp": "str",
+                        "pr": "str",
+                        "hu": "str",
+                        "ws": "str",
+                        "wd": "str",
+                        "ic": "str"
+                    },
+                    "location": {
+                        "type": "str",
+                        "coordinates": [
+                            "list of str with length 1"
+                        ]
+                    },
+                    "name": "str",
+                    "state": "str",
+                    "timezone": "str",
+                    "current_measurement": {
+                        "ts": "str",
+                        "aqius": "str",
+                        "mainus": "str",
+                        "aqicn": "str",
+                        "maincn": "str",
+                        "p1": {
+                            "aqius": "str",
+                            "aqicn": "str"
+                        },
+                        "s2": {
+                            "aqius": "str",
+                            "aqicn": "str"
+                        },
+                        "p2": {
+                            "aqius": "str",
+                            "aqicn": "str"
+                        }
+                    },
+                    "forecasts": [
+                        {
+                            "ts": "str",
+                            "aqius": "str",
+                            "aqicn": "str",
+                            "tp": "str",
+                            "tp_min": "str",
+                            "hu": "str",
+                            "pr": "str",
+                            "ws": "str",
+                            "wd": "str",
+                            "ic": "str"
+                        }
+                    ],
+                    "forecasts_daily": [
+                        {
+                            "aqius": "str",
+                            "aqicn": "str",
+                            "ts": "str",
+                            "ic": "str",
+                            "hu": "str",
+                            "pr": "str",
+                            "tp": "str",
+                            "tp_min": "str",
+                            "wd": "str",
+                            "ws": "str",
+                            "pop": "str"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "cities/get-measurements (Deprecated)",
+            "schema": {
+                "status": "str",
+                "data": {
+                    "id": "str",
+                    "measurements": [
+                        {
+                            "ts": "str",
+                            "p2": {
+                                "aqius": "int",
+                                "aqicn": "int"
+                            },
+                            "aqius": "int",
+                            "mainus": "str",
+                            "aqicn": "int",
+                            "maincn": "str"
+                        }
+                    ],
+                    "measurements_daily": [
+                        {
+                            "ts": "str",
+                            "p2": {
+                                "aqius": "int",
+                                "aqicn": "int"
+                            },
+                            "aqius": "int",
+                            "mainus": "str",
+                            "aqicn": "int",
+                            "maincn": "str",
+                            "p1": {
+                                "aqius": "int",
+                                "aqicn": "int"
+                            },
+                            "o3": {
+                                "aqius": "int",
+                                "aqicn": "int"
+                            },
+                            "s2": {
+                                "aqius": "int",
+                                "aqicn": "int"
+                            },
+                            "co": {
+                                "aqius": "int",
+                                "aqicn": "int"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "stations/v2/get-information",
+            "schema": {
+                "data": {
+                    "id": "str",
+                    "name": "str",
+                    "city": "str",
+                    "state": "str",
+                    "country": "str",
+                    "location": {
+                        "lat": "str",
+                        "lon": "str"
+                    },
+                    "timezone": "str",
+                    "websiteLink": "str",
+                    "type": "str",
+                    "sources": [
+                        {
+                            "id": "str",
+                            "name": "str",
+                            "totalStations": "str",
+                            "type": "str",
+                            "picture": "str",
+                            "url": "str"
+                        }
+                    ],
+                    "currentMeasurement": {
+                        "ts": "str",
+                        "aqius": "str",
+                        "mainus": "str",
+                        "aqicn": "str",
+                        "maincn": "str"
+                    },
+                    "sensorDefinitions": [
+                        {
+                            "pollutant": "str"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "places/list-by-map (Deprecated)",
+            "schema": {
+                "status": "str",
+                "data": [
+                    {
+                        "id": "str",
+                        "name": "str",
+                        "city": "str",
+                        "location": {
+                            "type": "str",
+                            "coordinates": [
+                                "list of str with length 1"
+                            ]
+                        },
+                        "providers": {
+                            "pictures": [
+                                "list of str with length 1"
+                            ],
+                            "label": "str"
+                        },
+                        "type": "str",
+                        "current_measurement": {
+                            "aqius": "int",
+                            "aqicn": "int",
+                            "ts": "str"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "auto-complete (Deprecated)",
+            "schema": {
+                "status": "str",
+                "data": {
+                    "stations": [
+                        {
+                            "id": "str",
+                            "name": "str",
+                            "city": "str",
+                            "state": "str",
+                            "country": "str",
+                            "location": {
+                                "type": "str",
+                                "coordinates": [
+                                    "list of str with length 1"
+                                ]
+                            },
+                            "type": "str",
+                            "current_measurement": {
+                                "aqius": "str",
+                                "aqicn": "str",
+                                "ts": "str"
+                            }
+                        }
+                    ],
+                    "cities": [
+                        {
+                            "id": "str",
+                            "city": "str",
+                            "state": "str",
+                            "country": "str",
+                            "location": {
+                                "type": "str",
+                                "coordinates": [
+                                    "list of str with length 1"
+                                ]
+                            },
+                            "type": "str",
+                            "current_measurement": {
+                                "aqius": "str",
+                                "aqicn": "str",
+                                "ts": "str"
+                            }
+                        }
+                    ],
+                    "news": [
+                        {
+                            "author": "str",
+                            "date": "str",
+                            "status": "str",
+                            "title": "str",
+                            "type": "str",
+                            "url": "str"
+                        }
+                    ],
+                    "contributors": [
+                        {
+                            "id": "str",
+                            "name": "str",
+                            "type": "str",
+                            "picture": "str",
+                            "visibility": "str"
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

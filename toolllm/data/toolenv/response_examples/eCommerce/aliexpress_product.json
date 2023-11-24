@@ -1,0 +1,10 @@
+{
+    "api_list": [
+        {
+            "name": "/scraper",
+            "schema": {
+                "messages": "str"
+            }
+        }
+    ]
+}

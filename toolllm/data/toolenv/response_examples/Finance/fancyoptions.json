@@ -1,0 +1,27 @@
+{
+    "api_list": [
+        {
+            "name": "S&P 500 Verticals",
+            "schema": {
+                "call_side": [
+                    {
+                        "2021-03-03": [
+                            {
+                                "bid_ask_spread": "str",
+                                "break_even": "str",
+                                "est_credit": "str",
+                                "long_side_price": "str",
+                                "max_loss": "str",
+                                "prob_of_success": "str",
+                                "short_side_price": "str",
+                                "stock": "str",
+                                "stock_price": "str",
+                                "strikes": "str"
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}

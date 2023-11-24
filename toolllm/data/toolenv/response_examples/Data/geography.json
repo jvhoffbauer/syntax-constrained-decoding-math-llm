@@ -1,0 +1,333 @@
+{
+    "api_list": [
+        {
+            "name": "Search Countries By Language",
+            "schema": {
+                "name": {
+                    "common": "str",
+                    "official": "str",
+                    "nativeName": [
+                        {
+                            "lang": "str"
+                        }
+                    ],
+                    "translations": [
+                        {
+                            "lang": "str"
+                        }
+                    ]
+                },
+                "cca2": "str",
+                "ccn3": "str",
+                "cca3": "str",
+                "fifa": "str",
+                "independent": "str",
+                "status": "str",
+                "unMember": "str",
+                "currencies": [
+                    {
+                        "name": "str",
+                        "alphaCode": "str",
+                        "symbol": "str"
+                    }
+                ],
+                "capital": [
+                    {
+                        "name": "str"
+                    }
+                ],
+                "region": "str",
+                "subregion": "str",
+                "continents": [
+                    "list of str with length 1"
+                ],
+                "languages": [
+                    {
+                        "code": "str",
+                        "name": "str"
+                    }
+                ],
+                "latLng": {
+                    "lat": "str",
+                    "lng": "str"
+                },
+                "landlocked": "str",
+                "area": "str",
+                "flag": "str"
+            }
+        },
+        {
+            "name": "Search Countries TimeZone",
+            "schema": {
+                "name": {
+                    "common": "str",
+                    "official": "str"
+                },
+                "cca2": "str",
+                "cca3": "str",
+                "capital": [
+                    {
+                        "name": "str"
+                    }
+                ],
+                "region": "str",
+                "subregion": "str",
+                "currencies": [
+                    {
+                        "name": "str",
+                        "alphaCode": "str"
+                    }
+                ],
+                "languages": [
+                    {
+                        "code": "str",
+                        "name": "str"
+                    }
+                ],
+                "flag": "str"
+            }
+        },
+        {
+            "name": "Search Countries By Region",
+            "schema": {
+                "name": {
+                    "common": "str",
+                    "official": "str",
+                    "nativeName": [
+                        {
+                            "lang": "str"
+                        }
+                    ],
+                    "translations": [
+                        {
+                            "lang": "str"
+                        }
+                    ]
+                },
+                "cca2": "str",
+                "ccn3": "str",
+                "cca3": "str",
+                "cioc": "str",
+                "independent": "str",
+                "status": "str",
+                "currencies": [
+                    {
+                        "name": "str",
+                        "alphaCode": "str",
+                        "symbol": "str"
+                    }
+                ],
+                "idd": {
+                    "root": "str"
+                },
+                "capital": [
+                    {
+                        "name": "str"
+                    }
+                ],
+                "region": "str",
+                "subregion": "str",
+                "languages": [
+                    {
+                        "code": "str",
+                        "name": "str"
+                    }
+                ],
+                "latLng": {
+                    "lat": "str",
+                    "lng": "str"
+                },
+                "landlocked": "str",
+                "area": "str",
+                "flag": "str"
+            }
+        },
+        {
+            "name": "Search Countries By Sub-Region",
+            "schema": {
+                "name": {
+                    "common": "str",
+                    "official": "str"
+                },
+                "tld": [
+                    "list of str with length 1"
+                ],
+                "cca2": "str",
+                "ccn3": "str",
+                "cca3": "str",
+                "cioc": "str",
+                "independent": "str",
+                "status": "str",
+                "currencies": [
+                    {
+                        "name": "str",
+                        "alphaCode": "str",
+                        "symbol": "str"
+                    }
+                ],
+                "capital": [
+                    {
+                        "name": "str"
+                    }
+                ],
+                "region": "str",
+                "subregion": "str",
+                "continents": [
+                    "list of str with length 1"
+                ],
+                "latLng": {
+                    "lat": "str",
+                    "lng": "str"
+                },
+                "flag": "str"
+            }
+        },
+        {
+            "name": "Search Countries By Continent",
+            "schema": {
+                "name": {
+                    "common": "str",
+                    "official": "str",
+                    "nativeName": [
+                        {
+                            "lang": "str"
+                        }
+                    ],
+                    "translations": [
+                        {
+                            "lang": "str"
+                        }
+                    ]
+                },
+                "tld": [
+                    "list of str with length 1"
+                ],
+                "cca2": "str",
+                "ccn3": "str",
+                "cca3": "str",
+                "cioc": "str",
+                "fifa": "str",
+                "independent": "str",
+                "status": "str",
+                "unMember": "str",
+                "currencies": [
+                    {
+                        "name": "str",
+                        "alphaCode": "str",
+                        "symbol": "str"
+                    }
+                ],
+                "capital": [
+                    {
+                        "name": "str"
+                    }
+                ],
+                "region": "str",
+                "subregion": "str",
+                "continents": [
+                    "list of str with length 1"
+                ],
+                "languages": [
+                    {
+                        "code": "str",
+                        "name": "str"
+                    }
+                ],
+                "latLng": {
+                    "lat": "str",
+                    "lng": "str"
+                },
+                "area": "str",
+                "flag": "str",
+                "demonyms": [
+                    {
+                        "langCode": "str"
+                    }
+                ],
+                "coatOfArms": {
+                    "png": "str",
+                    "svg": "str"
+                }
+            }
+        },
+        {
+            "name": "Search Countries By Currency",
+            "schema": {
+                "name": {
+                    "common": "str",
+                    "official": "str",
+                    "nativeName": [
+                        {
+                            "lang": "str"
+                        }
+                    ],
+                    "translations": [
+                        {
+                            "lang": "str"
+                        }
+                    ]
+                },
+                "cca2": "str",
+                "cca3": "str",
+                "currencies": [
+                    {
+                        "name": "str",
+                        "alphaCode": "str"
+                    }
+                ],
+                "capital": [
+                    {
+                        "name": "str"
+                    }
+                ],
+                "region": "str",
+                "subregion": "str",
+                "languages": [
+                    {
+                        "code": "str",
+                        "name": "str"
+                    }
+                ],
+                "latLng": {
+                    "lat": "str",
+                    "lng": "str"
+                },
+                "area": "str",
+                "flag": "str",
+                "population": "str"
+            }
+        },
+        {
+            "name": "Get Country By FIFA Code",
+            "schema": {
+                "name": {
+                    "common": "str",
+                    "official": "str"
+                },
+                "cca2": "str",
+                "ccn3": "str",
+                "cca3": "str",
+                "cioc": "str",
+                "capital": [
+                    {
+                        "name": "str"
+                    }
+                ],
+                "region": "str",
+                "subregion": "str",
+                "latLng": {
+                    "lat": "str",
+                    "lng": "str"
+                },
+                "flag": "str"
+            }
+        },
+        {
+            "name": "Get Cities",
+            "schema": {
+                "status": "str",
+                "message": "str"
+            }
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "api_list": [
+        {
+            "name": "getDistanceBetweenPostcodes",
+            "schema": {
+                "distance": {
+                    "milesdistance": "float",
+                    "metersdistance": "int"
+                }
+            }
+        }
+    ]
+}

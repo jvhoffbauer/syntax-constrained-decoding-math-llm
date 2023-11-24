@@ -1,0 +1,19 @@
+{
+    "api_list": [
+        {
+            "name": "Get the latest 30 News from IEEE Spectrum",
+            "schema": {
+                "newsTitle": "str",
+                "newsSubHeadline": "str",
+                "newsUrl": "str",
+                "newsDatePublished": "str",
+                "newsTimetoRead": "str",
+                "newsSections": [
+                    "list of str with length 1"
+                ],
+                "newsImgSrc": "str",
+                "newsImgAlt": "str"
+            }
+        }
+    ]
+}

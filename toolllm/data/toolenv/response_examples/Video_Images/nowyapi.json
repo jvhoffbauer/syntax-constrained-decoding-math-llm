@@ -1,0 +1,10 @@
+{
+    "api_list": [
+        {
+            "name": "rereer_copy",
+            "schema": {
+                "messages": "str"
+            }
+        }
+    ]
+}

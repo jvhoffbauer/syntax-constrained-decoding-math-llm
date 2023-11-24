@@ -1,0 +1,39 @@
+{
+    "api_list": [
+        {
+            "name": "Reverse (Search by Image)",
+            "schema": {
+                "data": {
+                    "results": [
+                        {
+                            "title": "NoneType",
+                            "url": "NoneType",
+                            "id": "NoneType",
+                            "confidence": "float"
+                        }
+                    ],
+                    "results_count": "int",
+                    "number": "int",
+                    "offset": "int"
+                }
+            }
+        },
+        {
+            "name": "Similar",
+            "schema": {
+                "status": "str",
+                "data": {
+                    "results": [
+                        {
+                            "id": "NoneType",
+                            "confidence": "float"
+                        }
+                    ],
+                    "results_count": "int",
+                    "number": "int",
+                    "offset": "int"
+                }
+            }
+        }
+    ]
+}

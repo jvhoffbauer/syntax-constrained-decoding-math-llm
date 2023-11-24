@@ -1,0 +1,15 @@
+{
+    "api_list": [
+        {
+            "name": "Business Email Compromise (BEC) API",
+            "schema": {
+                "Dmarc seurity": "bool",
+                "Email": "str",
+                "High_risk": "bool",
+                "Not spoofable": "bool",
+                "Phishing": "bool",
+                "Valid Email": "bool"
+            }
+        }
+    ]
+}

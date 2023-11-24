@@ -1,0 +1,19 @@
+{
+    "api_list": [
+        {
+            "name": "By Category",
+            "schema": {
+                "num": "int",
+                "name": "str",
+                "stream_type": "str",
+                "stream_icon": "str",
+                "epg_channel_id": "str",
+                "custom_sid": "str",
+                "tv_archive": "int",
+                "direct_source": "str",
+                "tv_archive_duration": "int",
+                "category_id": "str"
+            }
+        }
+    ]
+}

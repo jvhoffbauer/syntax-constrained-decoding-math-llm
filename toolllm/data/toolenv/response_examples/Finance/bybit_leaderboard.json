@@ -1,0 +1,75 @@
+{
+    "api_list": [
+        {
+            "name": "trader/details",
+            "schema": {
+                "status": "int",
+                "errors": {
+                    "product": [
+                        "list of str with length 1"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "trader/positions",
+            "schema": {
+                "status": "int",
+                "detail": "str"
+            }
+        },
+        {
+            "name": "traders/with-positions",
+            "schema": {
+                "errors": {
+                    "metric": [
+                        "list of str with length 1"
+                    ],
+                    "period": [
+                        "list of str with length 1"
+                    ],
+                    "product": [
+                        "list of str with length 1"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "search/master_traders",
+            "schema": {
+                "description": "str",
+                "status": "int",
+                "data": {
+                    "pager": {
+                        "page": "int",
+                        "page_size": "int",
+                        "total_pages": "int",
+                        "has_more_pages": "bool"
+                    },
+                    "traders": [
+                        {
+                            "leader_id": "str",
+                            "user_name": "str",
+                            "last7_days_win_rate": "int",
+                            "last3_weeks_win_rate": "int",
+                            "last7_days_yield": "int",
+                            "last3_weeks_yield": "int",
+                            "followers_count": "int",
+                            "current_follower_count": "int",
+                            "yesterday_profit": "int",
+                            "locate_days": "int",
+                            "profile_photo": "str",
+                            "global_rank": "int"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "search/leaderboard",
+            "schema": {
+                "message": "str"
+            }
+        }
+    ]
+}

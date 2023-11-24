@@ -1,0 +1,229 @@
+{
+    "api_list": [
+        {
+            "name": "GET /categories/v1",
+            "schema": {
+                "List": {
+                    "title": "str",
+                    "httpMethod": "str",
+                    "description": "str",
+                    "version": "str",
+                    "revision": "str",
+                    "preferred": "str",
+                    "path": "str",
+                    "discoveryRestUrl": "str",
+                    "discoveryLink": "str",
+                    "discoveryRootUrl": "str",
+                    "documentationLink": "str",
+                    "parameters": "str",
+                    "returns": {
+                        "result": {
+                            "type": "str",
+                            "description": "str"
+                        },
+                        "categories": {
+                            "id": "str",
+                            "type": "str",
+                            "description": "str",
+                            "properties": {
+                                "<categoryId>": {
+                                    "id": "str",
+                                    "type": "str",
+                                    "description": "str"
+                                }
+                            }
+                        },
+                        "nextActionSuggestions": {
+                            "type": "str",
+                            "description": "str"
+                        }
+                    },
+                    "Get": {
+                        "title": "str",
+                        "httpMethod": "str",
+                        "description": "str",
+                        "version": "str",
+                        "revision": "str",
+                        "preferred": "str",
+                        "path": "str"
+                    }
+                }
+            }
+        },
+        {
+            "name": "GET /orders/cart/v1",
+            "schema": {
+                "List": {
+                    "title": "str",
+                    "httpMethod": "str",
+                    "description": "str",
+                    "version": "str",
+                    "revision": "str",
+                    "preferred": "str",
+                    "path": "str",
+                    "discoveryRestUrl": "str",
+                    "discoveryLink": "str",
+                    "discoveryRootUrl": "str",
+                    "documentationLink": "str",
+                    "parameters": "str",
+                    "returns": {
+                        "result": {
+                            "type": "str",
+                            "description": "str"
+                        },
+                        "itemCount": {
+                            "type": "str",
+                            "description": "str"
+                        },
+                        "items": {
+                            "type": "str",
+                            "description": "str",
+                            "items": {
+                                "type": "str",
+                                "description": "str",
+                                "properties": {
+                                    "modelId": {
+                                        "type": "str",
+                                        "description": "str"
+                                    },
+                                    "spin": {
+                                        "type": "str",
+                                        "description": "str"
+                                    },
+                                    "materialId": {
+                                        "type": "str",
+                                        "description": "str"
+                                    },
+                                    "quantity": {
+                                        "type": "str",
+                                        "description": "str"
+                                    }
+                                }
+                            },
+                            "nextActionSuggestions": {
+                                "type": "str",
+                                "description": "str"
+                            }
+                        },
+                        "error": {
+                            "result": {
+                                "type": "str",
+                                "description": "str"
+                            },
+                            "reason": {
+                                "type": "str",
+                                "description": "str"
+                            },
+                            "oauthErrorMessage": {
+                                "type": "str",
+                                "description": "str",
+                                "dependencies": "str"
+                            }
+                        }
+                    }
+                },
+                "Insert": {
+                    "title": "str",
+                    "httpMethod": "str"
+                }
+            }
+        },
+        {
+            "name": "GET /models/v1",
+            "schema": {
+                "List": {
+                    "title": "str",
+                    "httpMethod": "str",
+                    "description": "str",
+                    "version": "str",
+                    "revision": "str",
+                    "preferred": "str",
+                    "path": "str",
+                    "discoveryRestUrl": "str",
+                    "parameters": {
+                        "title": {
+                            "type": "str",
+                            "location": "str"
+                        },
+                        "page": {
+                            "type": "str",
+                            "location": "str"
+                        }
+                    },
+                    "returns": {
+                        "result": {
+                            "type": "str"
+                        },
+                        "models": {
+                            "type": "str",
+                            "items": {
+                                "modelId": {
+                                    "type": "str"
+                                },
+                                "modelVersion": {
+                                    "type": "str"
+                                },
+                                "title": {
+                                    "type": "str"
+                                }
+                            }
+                        },
+                        "nextActionSuggestions": {
+                            "type": "str"
+                        }
+                    },
+                    "error": {
+                        "result": {
+                            "type": "str"
+                        },
+                        "reason": {
+                            "type": "str"
+                        },
+                        "oauthErrorMessage": {
+                            "type": "str",
+                            "dependencies": "str"
+                        }
+                    }
+                },
+                "Insert": {
+                    "title": "str"
+                }
+            }
+        },
+        {
+            "name": "GET /api/v1/",
+            "schema": {
+                "List": {
+                    "title": "str",
+                    "httpMethod": "str",
+                    "description": "str",
+                    "version": "str",
+                    "revision": "str",
+                    "preferred": "str",
+                    "path": "str",
+                    "discoveryRestUrl": "str",
+                    "discoveryLink": "str",
+                    "discoveryRootUrl": "str",
+                    "documentationLink": "str",
+                    "parameters": "str",
+                    "returns": {
+                        "result": {
+                            "type": "str",
+                            "description": "str"
+                        }
+                    },
+                    "error": {
+                        "result": {
+                            "type": "str",
+                            "description": "str"
+                        },
+                        "reason": {
+                            "type": "str",
+                            "description": "str"
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

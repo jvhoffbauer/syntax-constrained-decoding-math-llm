@@ -1,0 +1,17 @@
+{
+    "api_list": [
+        {
+            "name": "Search on ebay",
+            "schema": {
+                "results": [
+                    {
+                        "title": "str",
+                        "price": "str",
+                        "image": "str",
+                        "url": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,48 @@
+{
+    "api_list": [
+        {
+            "name": "ReverseGeocode",
+            "schema": {
+                "results": [
+                    {
+                        "address": "str",
+                        "postal_code": "str",
+                        "country": "str",
+                        "region": "str",
+                        "locality": "str",
+                        "street": "str",
+                        "house": "str",
+                        "location": {
+                            "lat": "float",
+                            "lng": "float"
+                        },
+                        "location_type": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Geocode",
+            "schema": {
+                "results": [
+                    {
+                        "address": "str",
+                        "postal_code": "str",
+                        "country": "str",
+                        "region": "str",
+                        "area": "str",
+                        "locality": "str",
+                        "neighborhood": "str",
+                        "street": "str",
+                        "house": "str",
+                        "location": {
+                            "lat": "float",
+                            "lng": "float"
+                        },
+                        "type": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,10 @@
+{
+    "api_list": [
+        {
+            "name": "Generate flirty line",
+            "schema": {
+                "title": "str"
+            }
+        }
+    ]
+}

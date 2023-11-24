@@ -1,0 +1,442 @@
+{
+    "api_list": [
+        {
+            "name": "Get Company Quarterly Cash Flow",
+            "schema": {
+                "result": {
+                    "id": "str",
+                    "symbol": "str",
+                    "format": "str",
+                    "netIncomeLoss": {
+                        "isMain": "str",
+                        "twoYrChange": "str",
+                        "fiveYrChage": "str",
+                        "tenYrChange": "str",
+                        "dates": [
+                            {
+                                "date": "str",
+                                "value": "str"
+                            }
+                        ]
+                    },
+                    "totalDepreciationAndAmortization": {
+                        "isMain": "str",
+                        "twoYrChange": "str",
+                        "fiveYrChage": "str",
+                        "tenYrChange": "str",
+                        "dates": [
+                            {
+                                "date": "str",
+                                "value": "str"
+                            }
+                        ]
+                    },
+                    "changeInAccountsReceivable": {
+                        "isMain": "str",
+                        "twoYrChange": "str",
+                        "fiveYrChage": "str",
+                        "tenYrChange": "str",
+                        "dates": [
+                            {
+                                "date": "str",
+                                "value": "str"
+                            }
+                        ]
+                    },
+                    "changeInInventories": {
+                        "isMain": "str",
+                        "twoYrChange": "str",
+                        "fiveYrChage": "str",
+                        "tenYrChange": "str",
+                        "dates": [
+                            {
+                                "date": "str",
+                                "value": "str"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "name": "Get Company Quarterly Balance Sheet",
+            "schema": {
+                "result": {
+                    "id": "str",
+                    "symbol": "str",
+                    "format": "str",
+                    "cashOnHand": {
+                        "isMain": "str"
+                    },
+                    "receivables": {
+                        "isMain": "str"
+                    },
+                    "inventory": {
+                        "isMain": "str"
+                    },
+                    "prePaidExpenses": {
+                        "isMain": "str"
+                    },
+                    "otherCurrentAssets": {
+                        "isMain": "str"
+                    },
+                    "totalCurrentAssets": {
+                        "isMain": "str"
+                    },
+                    "propertyPl": {
+                        "isMain": "str"
+                    }
+                }
+            }
+        },
+        {
+            "name": "Get Company Quarterly  Ratios",
+            "schema": {
+                "result": {
+                    "id": "str",
+                    "symbol": "str",
+                    "format": "str",
+                    "currentRatio": {
+                        "isMain": "str",
+                        "twoYrChange": "str",
+                        "fiveYrChage": "str",
+                        "tenYrChange": "str"
+                    },
+                    "longTermDebtCapital": {
+                        "isMain": "str",
+                        "twoYrChange": "str",
+                        "fiveYrChage": "str",
+                        "tenYrChange": "str"
+                    },
+                    "debtEquityRatio": {
+                        "isMain": "str",
+                        "twoYrChange": "str",
+                        "fiveYrChage": "str",
+                        "tenYrChange": "str"
+                    },
+                    "grossMargin": {
+                        "isMain": "str",
+                        "twoYrChange": "str",
+                        "fiveYrChage": "str",
+                        "tenYrChange": "str"
+                    },
+                    "operatingMargin": {
+                        "isMain": "str",
+                        "twoYrChange": "str",
+                        "fiveYrChage": "str",
+                        "tenYrChange": "str"
+                    },
+                    "EBITMargin": {
+                        "isMain": "str",
+                        "twoYrChange": "str",
+                        "fiveYrChage": "str",
+                        "tenYrChange": "str"
+                    },
+                    "EBITDA": {
+                        "isMain": "str",
+                        "twoYrChange": "str",
+                        "fiveYrChage": "str",
+                        "tenYrChange": "str"
+                    }
+                }
+            }
+        },
+        {
+            "name": "Get Company Ratios",
+            "schema": {
+                "result": {
+                    "id": "str",
+                    "symbol": "str",
+                    "format": "str",
+                    "currentRatio": {
+                        "isMain": "str",
+                        "twoYrChange": "str",
+                        "fiveYrChage": "str",
+                        "tenYrChange": "str"
+                    },
+                    "longTermDebtCapital": {
+                        "isMain": "str",
+                        "twoYrChange": "str",
+                        "fiveYrChage": "str",
+                        "tenYrChange": "str"
+                    },
+                    "debtEquityRatio": {
+                        "isMain": "str",
+                        "twoYrChange": "str",
+                        "fiveYrChage": "str",
+                        "tenYrChange": "str"
+                    },
+                    "grossMargin": {
+                        "isMain": "str",
+                        "twoYrChange": "str",
+                        "fiveYrChage": "str",
+                        "tenYrChange": "str"
+                    },
+                    "operatingMargin": {
+                        "isMain": "str",
+                        "twoYrChange": "str",
+                        "fiveYrChage": "str",
+                        "tenYrChange": "str"
+                    },
+                    "EBITMargin": {
+                        "isMain": "str",
+                        "twoYrChange": "str",
+                        "fiveYrChage": "str",
+                        "tenYrChange": "str"
+                    },
+                    "EBITDA": {
+                        "isMain": "str",
+                        "twoYrChange": "str",
+                        "fiveYrChage": "str",
+                        "tenYrChange": "str"
+                    }
+                }
+            }
+        },
+        {
+            "name": "Get Company Cash Flow",
+            "schema": {
+                "result": {
+                    "id": "str",
+                    "symbol": "str",
+                    "format": "str",
+                    "netIncomeLoss": {
+                        "isMain": "str",
+                        "twoYrChange": "str",
+                        "fiveYrChage": "str",
+                        "tenYrChange": "str",
+                        "dates": [
+                            {
+                                "date": "str",
+                                "value": "str"
+                            }
+                        ]
+                    },
+                    "totalDepreciationAndAmortization": {
+                        "isMain": "str",
+                        "twoYrChange": "str",
+                        "fiveYrChage": "str",
+                        "tenYrChange": "str",
+                        "dates": [
+                            {
+                                "date": "str",
+                                "value": "str"
+                            }
+                        ]
+                    },
+                    "otherNonCashItems": {
+                        "isMain": "str",
+                        "twoYrChange": "str",
+                        "fiveYrChage": "str",
+                        "tenYrChange": "str",
+                        "dates": [
+                            {
+                                "date": "str",
+                                "value": "str"
+                            }
+                        ]
+                    },
+                    "totalNonCashItems": {
+                        "isMain": "str",
+                        "twoYrChange": "str",
+                        "fiveYrChage": "str",
+                        "tenYrChange": "str",
+                        "dates": [
+                            {
+                                "date": "str",
+                                "value": "str"
+                            }
+                        ]
+                    },
+                    "changeInAccountsReceivable": {
+                        "isMain": "str",
+                        "twoYrChange": "str",
+                        "fiveYrChage": "str",
+                        "tenYrChange": "str",
+                        "dates": [
+                            {
+                                "date": "str",
+                                "value": "str"
+                            }
+                        ]
+                    },
+                    "changeInInventories": {
+                        "isMain": "str",
+                        "twoYrChange": "str",
+                        "fiveYrChage": "str",
+                        "tenYrChange": "str",
+                        "dates": [
+                            {
+                                "date": "str",
+                                "value": "str"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "name": "Get Company Balance Sheet",
+            "schema": {
+                "result": {
+                    "id": "str",
+                    "symbol": "str",
+                    "format": "str",
+                    "cashOnHand": {
+                        "isMain": "str",
+                        "twoYrChange": "str",
+                        "fiveYrChage": "str",
+                        "tenYrChange": "str",
+                        "dates": [
+                            {
+                                "date": "str",
+                                "value": "str"
+                            }
+                        ]
+                    },
+                    "receivables": {
+                        "isMain": "str",
+                        "twoYrChange": "str",
+                        "fiveYrChage": "str",
+                        "tenYrChange": "str",
+                        "dates": [
+                            {
+                                "date": "str",
+                                "value": "str"
+                            }
+                        ]
+                    },
+                    "inventory": {
+                        "isMain": "str",
+                        "twoYrChange": "str",
+                        "fiveYrChage": "str",
+                        "tenYrChange": "str",
+                        "dates": [
+                            {
+                                "date": "str",
+                                "value": "str"
+                            }
+                        ]
+                    },
+                    "prePaidExpenses": {
+                        "isMain": "str",
+                        "twoYrChange": "str",
+                        "fiveYrChage": "str",
+                        "tenYrChange": "str",
+                        "dates": [
+                            {
+                                "date": "str",
+                                "value": "str"
+                            }
+                        ]
+                    },
+                    "otherCurrentAssets": {
+                        "isMain": "str",
+                        "twoYrChange": "str",
+                        "fiveYrChage": "str",
+                        "tenYrChange": "str",
+                        "dates": [
+                            {
+                                "date": "str",
+                                "value": "str"
+                            }
+                        ]
+                    },
+                    "totalCurrentAssets": {
+                        "isMain": "str",
+                        "twoYrChange": "str",
+                        "fiveYrChage": "str",
+                        "tenYrChange": "str",
+                        "dates": [
+                            {
+                                "date": "str",
+                                "value": "str"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "name": "Get Company Income Statement",
+            "schema": {
+                "result": {
+                    "id": "str",
+                    "symbol": "str",
+                    "format": "str",
+                    "revenue": {
+                        "isMain": "str",
+                        "twoYrChange": "str",
+                        "fiveYrChage": "str",
+                        "tenYrChange": "str",
+                        "dates": [
+                            {
+                                "date": "str",
+                                "value": "str"
+                            }
+                        ]
+                    },
+                    "costOfGoodsSold": {
+                        "isMain": "str",
+                        "twoYrChange": "str",
+                        "fiveYrChage": "str",
+                        "tenYrChange": "str",
+                        "dates": [
+                            {
+                                "date": "str",
+                                "value": "str"
+                            }
+                        ]
+                    },
+                    "grossProfit": {
+                        "isMain": "str",
+                        "twoYrChange": "str",
+                        "fiveYrChage": "str",
+                        "tenYrChange": "str",
+                        "dates": [
+                            {
+                                "date": "str",
+                                "value": "str"
+                            }
+                        ]
+                    },
+                    "sgAndAExpenses": {
+                        "isMain": "str",
+                        "twoYrChange": "str",
+                        "fiveYrChage": "str",
+                        "tenYrChange": "str",
+                        "dates": [
+                            {
+                                "date": "str",
+                                "value": "str"
+                            }
+                        ]
+                    },
+                    "operatingExpenses": {
+                        "isMain": "str",
+                        "twoYrChange": "str",
+                        "fiveYrChage": "str",
+                        "tenYrChange": "str",
+                        "dates": [
+                            {
+                                "date": "str",
+                                "value": "str"
+                            }
+                        ]
+                    },
+                    "operatingIncome": {
+                        "isMain": "str",
+                        "twoYrChange": "str",
+                        "fiveYrChage": "str"
+                    }
+                }
+            }
+        },
+        {
+            "name": "Get All Symbols",
+            "schema": {
+                "result": "empty list"
+            }
+        }
+    ]
+}

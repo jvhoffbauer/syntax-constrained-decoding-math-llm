@@ -1,0 +1,54 @@
+{
+    "api_list": [
+        {
+            "name": "Social Sentiment Analysis",
+            "schema": {
+                "id": "str",
+                "asset": "str",
+                "date": "str",
+                "compound_positivity_score": "float",
+                "compound_sentiment": "str",
+                "top_url": "str"
+            }
+        },
+        {
+            "name": "ESG Scores",
+            "schema": {
+                "2022-08-01 00:00:00": {
+                    "esgScore": "str",
+                    "governanceScore": "str",
+                    "environmentScore": "str",
+                    "socialScore": "str"
+                },
+                "2022-05-01 00:00:00": {
+                    "esgScore": "str",
+                    "governanceScore": "str",
+                    "environmentScore": "str",
+                    "socialScore": "str"
+                },
+                "2022-02-01 00:00:00": {
+                    "esgScore": "str",
+                    "governanceScore": "str",
+                    "environmentScore": "str",
+                    "socialScore": "str"
+                }
+            }
+        },
+        {
+            "name": "Google PlayStore App Reviews Analysis",
+            "schema": {
+                "AppName": "str",
+                "AverageScore": "str",
+                "MostPositiveComment": "str",
+                "MostNegativeComment": "str",
+                "Reviews_and_Scores": [
+                    {
+                        "Score": "str",
+                        "PositiveScore": "str",
+                        "NegativeScore": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

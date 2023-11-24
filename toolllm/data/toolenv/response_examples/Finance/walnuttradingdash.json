@@ -1,0 +1,11 @@
+{
+    "api_list": [
+        {
+            "name": "free_access",
+            "schema": {
+                "url": "str",
+                "message": "str"
+            }
+        }
+    ]
+}

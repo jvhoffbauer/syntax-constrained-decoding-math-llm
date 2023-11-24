@@ -1,0 +1,12 @@
+{
+    "api_list": [
+        {
+            "name": "/articlesearch.json",
+            "schema": {
+                "fault": {
+                    "faultstring": "str"
+                }
+            }
+        }
+    ]
+}

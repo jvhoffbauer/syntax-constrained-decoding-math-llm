@@ -1,0 +1,21 @@
+{
+    "api_list": [
+        {
+            "name": "index",
+            "schema": {
+                "success": "bool",
+                "found": "int",
+                "result": [
+                    {
+                        "sources": [
+                            "list of str with length 1"
+                        ],
+                        "email_only": "bool",
+                        "last_breach": "str"
+                    }
+                ],
+                "query_time": "float"
+            }
+        }
+    ]
+}

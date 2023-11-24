@@ -1,0 +1,20 @@
+{
+    "api_list": [
+        {
+            "name": "Get All Bitcoin News",
+            "schema": {
+                "title": "str",
+                "url": "str",
+                "source": "str"
+            }
+        },
+        {
+            "name": "Get Individual Bitcoin News Sources",
+            "schema": {
+                "title": "str",
+                "url": "str",
+                "source": "str"
+            }
+        }
+    ]
+}

@@ -1,0 +1,58 @@
+{
+    "api_list": [
+        {
+            "name": "/similar",
+            "schema": {
+                "status": "str",
+                "query": "str",
+                "queries_left": "str",
+                "total_queries": "str",
+                "companies": [
+                    {
+                        "domain_name": "str",
+                        "name": "str",
+                        "similarity": "str",
+                        "country": "str",
+                        "city": "str",
+                        "result_url": "str",
+                        "lkn_url": "str",
+                        "industry": "str",
+                        "sector": "str",
+                        "stock_ticker": "str",
+                        "employees": "str",
+                        "revenue": "str",
+                        "growth": "str",
+                        "growth_trend": "str",
+                        "img_link": "str",
+                        "website": "str",
+                        "rating_points": "str"
+                    }
+                ],
+                "next_companies": "str",
+                "nr_of_remaining_companies": "str",
+                "further_crawling": "str",
+                "frontend_company_info": [
+                    {
+                        "description": "str",
+                        "country": "str",
+                        "city": "str",
+                        "name": "str",
+                        "result_url": "str",
+                        "lkn_url": "str",
+                        "industry": "str",
+                        "sector": "str",
+                        "stock_ticker": "str",
+                        "employees": "str",
+                        "revenue": "str",
+                        "growth": "str",
+                        "growth_trend": "str",
+                        "img_link": "str",
+                        "website": "str",
+                        "domain_name": "str",
+                        "is_queried_company": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

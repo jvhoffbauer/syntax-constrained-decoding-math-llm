@@ -1,0 +1,74 @@
+{
+    "api_list": [
+        {
+            "name": "getGamesById",
+            "schema": {
+                "status": "str",
+                "data": {
+                    "_id": "str",
+                    "name": "str",
+                    "consoles": "str",
+                    "publisher": "str",
+                    "genre": [
+                        "list of str with length 1"
+                    ],
+                    "releaseDate": "str",
+                    "coverUrl": "str",
+                    "metaScore": "str",
+                    "ignScore": "str",
+                    "igdbScore": "str",
+                    "videoUrl": "str",
+                    "isSponsored": "str",
+                    "followersCount": "str",
+                    "updatedAt": "str"
+                }
+            }
+        },
+        {
+            "name": "getAllGames",
+            "schema": {
+                "status": "str",
+                "data": [
+                    {
+                        "_id": "str",
+                        "name": "str",
+                        "consoles": "str",
+                        "publisher": "str",
+                        "genre": [
+                            "list of str with length 1"
+                        ],
+                        "releaseDate": "str",
+                        "coverUrl": "str",
+                        "metaScore": "str",
+                        "ignScore": "str",
+                        "igdbScore": "str",
+                        "followersCount": "str",
+                        "averageRating": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "getGamesByCategory",
+            "schema": {
+                "status": "str",
+                "data": [
+                    {
+                        "_id": "str",
+                        "name": "str",
+                        "consoles": "str",
+                        "publisher": "str",
+                        "genre": [
+                            "list of str with length 1"
+                        ],
+                        "releaseDate": "str",
+                        "coverUrl": "str",
+                        "isSponsored": "str",
+                        "followersCount": "str",
+                        "averageRating": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

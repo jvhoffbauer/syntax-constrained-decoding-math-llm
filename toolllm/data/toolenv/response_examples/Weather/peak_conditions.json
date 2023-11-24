@@ -1,0 +1,16 @@
+{
+    "api_list": [
+        {
+            "name": "get daily report by mountain id",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "get extended report by mountain id",
+            "schema": {
+                "message": "str"
+            }
+        }
+    ]
+}

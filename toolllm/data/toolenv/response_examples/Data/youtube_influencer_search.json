@@ -1,0 +1,26 @@
+{
+    "api_list": [
+        {
+            "name": "getSearchResults",
+            "schema": {
+                "search_id": "int",
+                "channel_id": "str",
+                "channel_title": "str",
+                "description": "str",
+                "subscribers_count": "int",
+                "views_count": "int",
+                "video_count": "int",
+                "country": "NoneType",
+                "email": "str"
+            }
+        },
+        {
+            "name": "getAllSearches",
+            "schema": {
+                "id": "int",
+                "query": "str",
+                "status": "str"
+            }
+        }
+    ]
+}

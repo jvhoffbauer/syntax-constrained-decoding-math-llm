@@ -1,0 +1,10 @@
+{
+    "api_list": [
+        {
+            "name": "/random",
+            "schema": {
+                "names": "empty list"
+            }
+        }
+    ]
+}

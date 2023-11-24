@@ -1,0 +1,10 @@
+{
+    "api_list": [
+        {
+            "name": "IP lookup",
+            "schema": {
+                "message": "str"
+            }
+        }
+    ]
+}

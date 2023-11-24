@@ -1,0 +1,82 @@
+{
+    "api_list": [
+        {
+            "name": "Search News",
+            "schema": {
+                "keyword": "str",
+                "articles": [
+                    {
+                        "source": {
+                            "name": "str"
+                        },
+                        "author": "str",
+                        "title": "str",
+                        "description": "str",
+                        "url": "str",
+                        "urlToImage": "str",
+                        "publishedAt": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Available Region List",
+            "schema": {
+                "ae": "str",
+                "ar": "str",
+                "at": "str",
+                "au": "str",
+                "be": "str",
+                "bg": "str",
+                "br": "str",
+                "ca": "str",
+                "ch": "str",
+                "cn": "str",
+                "co": "str",
+                "cu": "str",
+                "cz": "str",
+                "de": "str",
+                "eg": "str",
+                "fr": "str",
+                "gb": "str",
+                "gr": "str",
+                "hk": "str",
+                "hu": "str",
+                "id": "str",
+                "ie": "str",
+                "il": "str",
+                "in": "str",
+                "it": "str",
+                "jp": "str",
+                "kr": "str",
+                "lt": "str",
+                "lv": "str",
+                "ma": "str",
+                "mx": "str",
+                "my": "str",
+                "ng": "str",
+                "nl": "str",
+                "no": "str",
+                "nz": "str",
+                "ph": "str",
+                "pl": "str",
+                "pt": "str",
+                "ro": "str",
+                "rs": "str",
+                "ru": "str",
+                "sa": "str",
+                "se": "str",
+                "sg": "str",
+                "si": "str",
+                "sk": "str",
+                "th": "str",
+                "tr": "str",
+                "tw": "str",
+                "ua": "str",
+                "us": "str",
+                "ve": "str",
+                "za": "str"
+            }
+        }
+    ]
+}

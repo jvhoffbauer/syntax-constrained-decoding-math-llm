@@ -1,0 +1,17 @@
+{
+    "api_list": [
+        {
+            "name": "dashboard",
+            "schema": {
+                "dashboardUrl": "NoneType",
+                "status": "int",
+                "messages": [
+                    {
+                        "message": "str",
+                        "type": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

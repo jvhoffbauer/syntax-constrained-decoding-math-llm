@@ -1,0 +1,89 @@
+{
+    "api_list": [
+        {
+            "name": "/global",
+            "schema": {
+                "data": {
+                    "active_cryptocurrencies": "str",
+                    "total_market_cap": {
+                        "btc": "str",
+                        "eth": "str",
+                        "ltc": "str",
+                        "bch": "str",
+                        "bnb": "str",
+                        "eos": "str",
+                        "xrp": "str",
+                        "xlm": "str",
+                        "link": "str",
+                        "dot": "str",
+                        "yfi": "str",
+                        "usd": "str"
+                    }
+                }
+            }
+        },
+        {
+            "name": "/exchanges",
+            "schema": {
+                "id": "str",
+                "name": "str",
+                "year_established": "int",
+                "country": "str",
+                "url": "str",
+                "trust_score": "int",
+                "trust_score_rank": "int",
+                "trade_volume_24h_btc": "float",
+                "trade_volume_24h_btc_normalized": "float"
+            }
+        },
+        {
+            "name": "/exchange_rates",
+            "schema": {
+                "rates": {
+                    "btc": {
+                        "value": "str"
+                    },
+                    "eth": {
+                        "value": "str"
+                    },
+                    "ltc": {
+                        "value": "str"
+                    },
+                    "bch": {
+                        "value": "str"
+                    },
+                    "bnb": {
+                        "value": "str"
+                    },
+                    "eos": {
+                        "value": "str"
+                    },
+                    "xrp": {
+                        "value": "str"
+                    },
+                    "xlm": {
+                        "value": "str"
+                    },
+                    "link": {
+                        "value": "str"
+                    },
+                    "dot": {
+                        "value": "str"
+                    },
+                    "yfi": {
+                        "value": "str"
+                    },
+                    "usd": {
+                        "value": "str"
+                    },
+                    "aed": {
+                        "value": "str"
+                    },
+                    "ars": {
+                        "value": "str"
+                    }
+                }
+            }
+        }
+    ]
+}

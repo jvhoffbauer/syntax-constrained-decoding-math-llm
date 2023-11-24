@@ -1,0 +1,67 @@
+{
+    "api_list": [
+        {
+            "name": "Commune par nom",
+            "schema": {
+                "nom": "str",
+                "codeCom": "int",
+                "codePost": "int"
+            }
+        },
+        {
+            "name": "Code postal par code",
+            "schema": {
+                "code": "int",
+                "localite": "str",
+                "codeCommune": "int",
+                "cedex": "bool",
+                "bp": "bool",
+                "domicile": "bool"
+            }
+        },
+        {
+            "name": "All codes postaux",
+            "schema": {
+                "code": "int",
+                "localite": "str",
+                "libelle": "str",
+                "codeCommune": "int",
+                "cedex": "bool",
+                "bp": "bool",
+                "domicile": "bool"
+            }
+        },
+        {
+            "name": "All BPs",
+            "schema": {
+                "bpId": "int",
+                "libelle": "str",
+                "rangeMin": "str",
+                "rangeMax": "str",
+                "codePostal": {
+                    "code": "int",
+                    "localite": "str",
+                    "cedex": "bool",
+                    "bp": "bool",
+                    "domicile": "bool"
+                }
+            }
+        },
+        {
+            "name": "Communes par code Commune",
+            "schema": {
+                "nom": "str",
+                "codeCom": "int",
+                "codePost": "int"
+            }
+        },
+        {
+            "name": "All communes",
+            "schema": {
+                "province": "str",
+                "nom": "str",
+                "codePost": "int"
+            }
+        }
+    ]
+}

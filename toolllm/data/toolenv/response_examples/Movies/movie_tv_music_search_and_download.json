@@ -1,0 +1,71 @@
+{
+    "api_list": [
+        {
+            "name": "Search Torrents",
+            "schema": {
+                "code": "str",
+                "keyword": "str",
+                "quantity": "int",
+                "result": [
+                    {
+                        "title": "str",
+                        "torrent": "str",
+                        "rate": "int"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Get Monthly Top 100 Music Torrents",
+            "schema": {
+                "result": [
+                    {
+                        "title": "str",
+                        "torrent": "str",
+                        "size": "str",
+                        "rate": "int"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Get Monthly Top 100 Games Torrents",
+            "schema": {
+                "result": [
+                    {
+                        "title": "str",
+                        "torrent": "str",
+                        "size": "str",
+                        "rate": "int"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Get Monthly Top 100 TV-shows Torrents",
+            "schema": {
+                "result": [
+                    {
+                        "title": "str",
+                        "torrent": "str",
+                        "size": "str",
+                        "rate": "int"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Get Monthly Top 100 Movies Torrents",
+            "schema": {
+                "code": "str",
+                "result": [
+                    {
+                        "title": "str",
+                        "torrent": "str",
+                        "rate": "int"
+                    }
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "api_list": [
+        {
+            "name": "Search Emails",
+            "schema": {
+                "status": "str",
+                "data": [
+                    "list of str with length 1"
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,15 @@
+{
+    "api_list": [
+        {
+            "name": "/v1/holidays",
+            "schema": {
+                "country": "str",
+                "year": "int",
+                "date": "str",
+                "day": "str",
+                "name": "str",
+                "type": "str"
+            }
+        }
+    ]
+}

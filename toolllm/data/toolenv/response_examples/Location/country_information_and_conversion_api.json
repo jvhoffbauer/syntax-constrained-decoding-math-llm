@@ -1,0 +1,26 @@
+{
+    "api_list": [
+        {
+            "name": "ByCountryName",
+            "schema": {
+                "code": "str",
+                "name": "str",
+                "capital": "str",
+                "population": "int",
+                "language": "str",
+                "currency": "str"
+            }
+        },
+        {
+            "name": "ByCountryCode",
+            "schema": {
+                "name": "str",
+                "code": "str",
+                "capital": "str",
+                "population": "int",
+                "language": "str",
+                "currency": "str"
+            }
+        }
+    ]
+}

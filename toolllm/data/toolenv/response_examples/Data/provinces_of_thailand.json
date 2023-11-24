@@ -1,0 +1,19 @@
+{
+    "api_list": [
+        {
+            "name": "district",
+            "schema": {
+                "district_name": "str",
+                "province_id": "int"
+            }
+        },
+        {
+            "name": "province",
+            "schema": {
+                "province_id": "int",
+                "province_code": "str",
+                "province_name": "str"
+            }
+        }
+    ]
+}

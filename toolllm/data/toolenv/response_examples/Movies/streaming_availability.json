@@ -1,0 +1,196 @@
+{
+    "api_list": [
+        {
+            "name": "Search Basic (FREE)",
+            "schema": {
+                "result": [
+                    {
+                        "title": "str",
+                        "streamingInfo": {
+                            "us": {
+                                "apple": [
+                                    {
+                                        "type": "str",
+                                        "quality": "str",
+                                        "link": "str",
+                                        "audios": [
+                                            {
+                                                "language": "str"
+                                            }
+                                        ],
+                                        "subtitles": [
+                                            {
+                                                "language": "str"
+                                            }
+                                        ],
+                                        "price": {
+                                            "amount": "str",
+                                            "currency": "str"
+                                        }
+                                    }
+                                ],
+                                "prime": [
+                                    {
+                                        "type": "str",
+                                        "quality": "str",
+                                        "link": "str",
+                                        "audios": [
+                                            {
+                                                "language": "str"
+                                            }
+                                        ],
+                                        "subtitles": [
+                                            {
+                                                "language": "str"
+                                            }
+                                        ],
+                                        "price": {
+                                            "amount": "str",
+                                            "currency": "str"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        "cast": [
+                            "list of str with length 1"
+                        ],
+                        "year": "str",
+                        "imdbId": "str",
+                        "imdbRating": "str",
+                        "tmdbId": "str",
+                        "tmdbRating": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Services (FREE)",
+            "schema": {
+                "result": {
+                    "all4": {
+                        "id": "str",
+                        "countries": {
+                            "gb": {
+                                "supportedStreamingTypes": {
+                                    "addon": "str",
+                                    "buy": "str",
+                                    "free": "str",
+                                    "rent": "str",
+                                    "subscription": "str"
+                                }
+                            }
+                        }
+                    },
+                    "apple": {
+                        "id": "str",
+                        "countries": {
+                            "ae": {
+                                "supportedStreamingTypes": {
+                                    "addon": "str",
+                                    "buy": "str",
+                                    "free": "str",
+                                    "rent": "str",
+                                    "subscription": "str"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "Get Basic (FREE)",
+            "schema": {
+                "result": {
+                    "streamingInfo": {
+                        "us": [
+                            {
+                                "type": "str",
+                                "quality": "str",
+                                "addOn": "str",
+                                "link": "str",
+                                "watchLink": "str",
+                                "price": {
+                                    "amount": "str",
+                                    "currency": "str",
+                                    "formatted": "str"
+                                },
+                                "leaving": "str",
+                                "availableSince": "str"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "name": "Search By Title (FREE)",
+            "schema": {
+                "result": [
+                    {
+                        "title": "str",
+                        "streamingInfo": {
+                            "us": [
+                                {
+                                    "type": "str",
+                                    "addOn": "str",
+                                    "link": "str",
+                                    "audios": [
+                                        {
+                                            "language": "str"
+                                        }
+                                    ],
+                                    "subtitles": [
+                                        {
+                                            "locale": {
+                                                "language": "str"
+                                            }
+                                        }
+                                    ],
+                                    "price": {
+                                        "amount": "str",
+                                        "currency": "str"
+                                    },
+                                    "leaving": "str",
+                                    "availableSince": "str"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Genres (FREE)",
+            "schema": {
+                "result": {
+                    "1": "str",
+                    "10402": "str",
+                    "10749": "str",
+                    "10751": "str",
+                    "10752": "str",
+                    "10763": "str",
+                    "10764": "str",
+                    "10767": "str",
+                    "12": "str",
+                    "14": "str",
+                    "16": "str",
+                    "18": "str",
+                    "27": "str",
+                    "28": "str",
+                    "35": "str",
+                    "36": "str",
+                    "37": "str",
+                    "4": "str",
+                    "5": "str",
+                    "53": "str",
+                    "80": "str",
+                    "878": "str",
+                    "9648": "str",
+                    "99": "str"
+                }
+            }
+        }
+    ]
+}

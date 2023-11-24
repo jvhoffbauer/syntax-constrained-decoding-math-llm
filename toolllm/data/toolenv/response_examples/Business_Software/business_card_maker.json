@@ -1,0 +1,30 @@
+{
+    "api_list": [
+        {
+            "name": "/api/business-card/{fromat}",
+            "schema": {
+                "hasError": "bool",
+                "errorCode": "int",
+                "errorMessage": "str"
+            }
+        },
+        {
+            "name": "/api/templates",
+            "schema": {
+                "hasError": "bool",
+                "errorMessage": "NoneType",
+                "body": [
+                    "list of str with length 1"
+                ]
+            }
+        },
+        {
+            "name": "/api",
+            "schema": {
+                "body": {
+                    "v": "str"
+                }
+            }
+        }
+    ]
+}

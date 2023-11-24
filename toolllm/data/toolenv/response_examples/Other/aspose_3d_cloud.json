@@ -1,0 +1,68 @@
+{
+    "api_list": [
+        {
+            "name": "GetFilesList",
+            "schema": {
+                "Error": {
+                    "Code": "str",
+                    "Message": "str"
+                }
+            }
+        },
+        {
+            "name": "GetFileVersions",
+            "schema": {
+                "Error": {
+                    "Code": "str",
+                    "Message": "str"
+                }
+            }
+        },
+        {
+            "name": "DownloadFile",
+            "schema": {
+                "Error": {
+                    "Code": "str",
+                    "Message": "str",
+                    "Description": "str"
+                }
+            }
+        },
+        {
+            "name": "GetAllFileFormats",
+            "schema": {
+                "Error": {
+                    "Code": "str",
+                    "Message": "str"
+                }
+            }
+        },
+        {
+            "name": "ObjectExists",
+            "schema": {
+                "Error": {
+                    "Code": "str",
+                    "Message": "str"
+                }
+            }
+        },
+        {
+            "name": "GetDiscUsage",
+            "schema": {
+                "Error": {
+                    "Code": "str",
+                    "Message": "str"
+                }
+            }
+        },
+        {
+            "name": "StorageExists",
+            "schema": {
+                "Error": {
+                    "Code": "str",
+                    "Message": "str"
+                }
+            }
+        }
+    ]
+}

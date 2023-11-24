@@ -1,0 +1,24 @@
+{
+    "api_list": [
+        {
+            "name": "create_client",
+            "schema": {
+                "messages_good": [
+                    "list of str with length 1"
+                ],
+                "client": {
+                    "client": {
+                        "exp_date": "NoneType",
+                        "lastname": "str",
+                        "status": "int",
+                        "telephone_mobile": "str",
+                        "firstname": "str",
+                        "id": "int",
+                        "email": "str"
+                    }
+                },
+                "success": "bool"
+            }
+        }
+    ]
+}

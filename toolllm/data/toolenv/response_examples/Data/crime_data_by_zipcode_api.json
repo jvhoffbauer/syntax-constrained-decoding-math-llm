@@ -1,0 +1,50 @@
+{
+    "api_list": [
+        {
+            "name": "Get Crime Rates by ZIP",
+            "schema": {
+                "Overall": {
+                    "Zipcode": "str",
+                    "Overall Crime Grade": "str",
+                    "Violent Crime Grade": "str",
+                    "Property Crime Grade": "str",
+                    "Other Crime Grade": "str",
+                    "Fact": "str",
+                    "Risk": "str"
+                },
+                "Crime BreakDown": [
+                    {
+                        "Violent Crime Rates": {
+                            "Assault": "str",
+                            "Robbery": "str",
+                            "Rape": "str",
+                            "Murder": "str"
+                        },
+                        "0": {
+                            "Total Violent Crime": "str",
+                            "Total Violent Crime Score": "str"
+                        }
+                    }
+                ],
+                "Crime Rates Nearby": [
+                    {
+                        "Nearby Zip": "str",
+                        "Overall Crime Grade": "str",
+                        "Violent Crime Grade": "str",
+                        "Property Crime Grade": "str"
+                    }
+                ],
+                "Similar Population Crime Rates": [
+                    {
+                        "Similar Zip": "str",
+                        "Overall Crime Grade": "str",
+                        "Violent Crime Grade": "str",
+                        "Property Crime Grade": "str"
+                    }
+                ],
+                "success": "bool",
+                "status code": "int"
+            }
+        }
+    ]
+}

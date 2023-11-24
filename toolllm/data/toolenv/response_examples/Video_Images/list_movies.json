@@ -1,0 +1,132 @@
+{
+    "api_list": [
+        {
+            "name": "Sort By",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Query Term",
+            "schema": {
+                "status": "str",
+                "data": {
+                    "movie_count": "str",
+                    "limit": "str",
+                    "page_number": "str",
+                    "movies": [
+                        {
+                            "id": "str",
+                            "url": "str",
+                            "imdb_code": "str",
+                            "title": "str",
+                            "title_long": "str",
+                            "slug": "str",
+                            "year": "str",
+                            "rating": "str",
+                            "runtime": "str",
+                            "genres": [
+                                "list of str with length 1"
+                            ],
+                            "summary": "str",
+                            "language": "str",
+                            "mpa_rating": "str",
+                            "background_image": "str",
+                            "small_cover_image": "str",
+                            "medium_cover_image": "str",
+                            "large_cover_image": "str",
+                            "torrents": [
+                                {
+                                    "url": "str",
+                                    "hash": "str",
+                                    "quality": "str",
+                                    "type": "str",
+                                    "seeds": "str",
+                                    "peers": "str",
+                                    "size": "str",
+                                    "date_uploaded": "str",
+                                    "date_uploaded_unix": "str"
+                                }
+                            ],
+                            "date_uploaded": "str",
+                            "date_uploaded_unix": "str"
+                        }
+                    ]
+                },
+                "@meta": {
+                    "server_time": "str",
+                    "server_timezone": "str",
+                    "api_version": "str",
+                    "execution_time": "str"
+                }
+            }
+        },
+        {
+            "name": "Minimum Rating",
+            "schema": {
+                "status": "str",
+                "data": {
+                    "movie_count": "str",
+                    "limit": "str",
+                    "page_number": "str",
+                    "movies": [
+                        {
+                            "id": "str",
+                            "url": "str",
+                            "imdb_code": "str",
+                            "title": "str",
+                            "title_english": "str",
+                            "title_long": "str",
+                            "slug": "str",
+                            "year": "str",
+                            "rating": "str",
+                            "runtime": "str",
+                            "genres": [
+                                "list of str with length 1"
+                            ],
+                            "summary": "str",
+                            "language": "str",
+                            "mpa_rating": "str",
+                            "background_image": "str",
+                            "small_cover_image": "str",
+                            "medium_cover_image": "str",
+                            "large_cover_image": "str",
+                            "state": "str",
+                            "torrents": [
+                                {
+                                    "url": "str",
+                                    "hash": "str",
+                                    "quality": "str",
+                                    "type": "str",
+                                    "seeds": "str",
+                                    "peers": "str",
+                                    "size": "str",
+                                    "date_uploaded": "str"
+                                }
+                            ],
+                            "date_uploaded": "str"
+                        }
+                    ]
+                },
+                "@meta": {
+                    "server_time": "str",
+                    "server_timezone": "str",
+                    "api_version": "str",
+                    "execution_time": "str"
+                }
+            }
+        },
+        {
+            "name": "Page",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "List Movies",
+            "schema": {
+                "message": "str"
+            }
+        }
+    ]
+}

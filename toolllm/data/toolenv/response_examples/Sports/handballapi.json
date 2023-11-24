@@ -1,0 +1,1172 @@
+{
+    "api_list": [
+        {
+            "name": "Search",
+            "schema": {
+                "results": [
+                    {
+                        "entity": {
+                            "category": {
+                                "alpha2": "str",
+                                "name": "str",
+                                "slug": "str",
+                                "sport": {
+                                    "name": "str",
+                                    "slug": "str"
+                                }
+                            },
+                            "name": "str",
+                            "slug": "str",
+                            "userCount": "int"
+                        },
+                        "score": "float",
+                        "type": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "PlayerImage",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "MatchDetails",
+            "schema": {
+                "event": {
+                    "attendance": "str",
+                    "awayScore": {
+                        "current": "str",
+                        "normaltime": "str",
+                        "period1": "str",
+                        "period2": "str"
+                    },
+                    "awayTeam": {
+                        "fullName": "str",
+                        "name": "str",
+                        "shortName": "str"
+                    },
+                    "changes": {
+                        "changeTimestamp": "str"
+                    },
+                    "crowdsourcingDataDisplayEnabled": "str",
+                    "currentPeriodStartTimestamp": "str",
+                    "customId": "str"
+                }
+            }
+        },
+        {
+            "name": "PlayerDetails",
+            "schema": {
+                "player": {
+                    "country": {
+                        "alpha2": "str",
+                        "name": "str"
+                    },
+                    "dateOfBirthTimestamp": "str",
+                    "firstName": "str",
+                    "gender": "str",
+                    "height": "str",
+                    "id": "str",
+                    "jerseyNumber": "str",
+                    "lastName": "str",
+                    "name": "str",
+                    "position": "str",
+                    "shirtNumber": "str",
+                    "shortName": "str",
+                    "slug": "str",
+                    "team": {
+                        "country": {
+                            "alpha2": "str",
+                            "name": "str"
+                        },
+                        "disabled": "str",
+                        "gender": "str",
+                        "id": "str",
+                        "name": "str",
+                        "nameCode": "str",
+                        "national": "str",
+                        "shortName": "str",
+                        "slug": "str",
+                        "sport": {
+                            "id": "str",
+                            "name": "str",
+                            "slug": "str"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "MatchHeadToHeadDuel",
+            "schema": {
+                "teamDuel": {
+                    "awayWins": "int",
+                    "draws": "int",
+                    "homeWins": "int"
+                }
+            }
+        },
+        {
+            "name": "PreMatchForm",
+            "schema": {
+                "awayTeam": {
+                    "position": "int",
+                    "value": "str"
+                },
+                "homeTeam": {
+                    "position": "int",
+                    "value": "str"
+                },
+                "label": "str"
+            }
+        },
+        {
+            "name": "MatchIncidents",
+            "schema": {
+                "incidents": [
+                    {
+                        "incidentType": "str",
+                        "isLive": "bool",
+                        "text": "str",
+                        "time": "int"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "MatchSchedules",
+            "schema": {
+                "events": [
+                    {
+                        "awayScore": {
+                            "current": "str",
+                            "display": "str"
+                        },
+                        "awayTeam": {
+                            "country": {
+                                "alpha2": "str",
+                                "name": "str"
+                            },
+                            "name": "str",
+                            "shortName": "str"
+                        },
+                        "homeScore": {
+                            "current": "str",
+                            "display": "str"
+                        },
+                        "homeTeam": {
+                            "country": {
+                                "alpha2": "str",
+                                "name": "str"
+                            },
+                            "name": "str",
+                            "shortName": "str"
+                        },
+                        "changes": {
+                            "changeTimestamp": "str"
+                        },
+                        "customId": "str",
+                        "finalResultOnly": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "PlayerOverallStatistics",
+            "schema": {
+                "statistics": {
+                    "appearances": "str",
+                    "assists": "str",
+                    "goals": "str",
+                    "saves": "str",
+                    "shootingEfficiencyPercentage": "str",
+                    "steals": "str",
+                    "technicalFaults": "str",
+                    "twoMinutePenalties": "str",
+                    "yellowCards": "str"
+                },
+                "team": {
+                    "disabled": "str",
+                    "gender": "str",
+                    "id": "str"
+                }
+            }
+        },
+        {
+            "name": "PlayerStatisticsSeasons",
+            "schema": {
+                "typesMap": {
+                    "149": {
+                        "24126": [
+                            "list of str with length 1"
+                        ],
+                        "32529": [
+                            "list of str with length 1"
+                        ],
+                        "37809": [
+                            "list of str with length 1"
+                        ],
+                        "42967": [
+                            "list of str with length 1"
+                        ]
+                    },
+                    "57": {
+                        "23913": [
+                            "list of str with length 1"
+                        ],
+                        "37612": [
+                            "list of str with length 1"
+                        ],
+                        "42563": [
+                            "list of str with length 1"
+                        ]
+                    },
+                    "77": {
+                        "42647": [
+                            "list of str with length 1"
+                        ]
+                    }
+                },
+                "uniqueTournamentSeasons": [
+                    {
+                        "seasons": [
+                            {
+                                "id": "int",
+                                "name": "str"
+                            }
+                        ],
+                        "uniqueTournament": {
+                            "category": {
+                                "alpha2": "str",
+                                "name": "str",
+                                "sport": {
+                                    "name": "str"
+                                }
+                            },
+                            "id": "int",
+                            "name": "str",
+                            "primaryColorHex": "str",
+                            "secondaryColorHex": "str"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "PlayerLastMatches",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "TeamNextMatches",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "TeamStandingsSeasons",
+            "schema": {
+                "tournamentSeasons": [
+                    {
+                        "seasons": [
+                            {
+                                "id": "int",
+                                "name": "str",
+                                "year": "str"
+                            }
+                        ],
+                        "tournament": {
+                            "name": "str",
+                            "slug": "str",
+                            "uniqueTournament": {
+                                "name": "str",
+                                "slug": "str"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "CategorySchedules",
+            "schema": {
+                "events": [
+                    {
+                        "awayScore": {
+                            "current": "str",
+                            "display": "str"
+                        },
+                        "awayTeam": {
+                            "country": {
+                                "alpha2": "str",
+                                "name": "str"
+                            },
+                            "name": "str",
+                            "nameCode": "str",
+                            "shortName": "str"
+                        },
+                        "homeScore": {
+                            "current": "str",
+                            "display": "str"
+                        },
+                        "homeTeam": {
+                            "country": {
+                                "alpha2": "str",
+                                "name": "str"
+                            },
+                            "name": "str",
+                            "nameCode": "str",
+                            "shortName": "str"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "MatchStatistics",
+            "schema": {
+                "statistics": [
+                    {
+                        "groups": [
+                            {
+                                "groupName": "str",
+                                "statisticsItems": [
+                                    {
+                                        "away": "str",
+                                        "home": "str",
+                                        "name": "str"
+                                    }
+                                ]
+                            }
+                        ],
+                        "period": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "PlayerNearMatches",
+            "schema": {
+                "previousEvent": {
+                    "awayScore": {
+                        "current": "str",
+                        "display": "str"
+                    },
+                    "awayTeam": {
+                        "name": "str",
+                        "nameCode": "str",
+                        "sport": {
+                            "name": "str"
+                        }
+                    },
+                    "homeScore": {
+                        "current": "str",
+                        "display": "str"
+                    },
+                    "homeTeam": {
+                        "name": "str",
+                        "nameCode": "str",
+                        "sport": {
+                            "name": "str"
+                        }
+                    },
+                    "id": "str",
+                    "slug": "str",
+                    "startTimestamp": "str",
+                    "status": {
+                        "code": "str",
+                        "description": "str"
+                    }
+                }
+            }
+        },
+        {
+            "name": "HeadToHeadMatches",
+            "schema": {
+                "events": [
+                    {
+                        "awayScore": {
+                            "current": "str",
+                            "display": "str"
+                        },
+                        "awayTeam": {
+                            "name": "str",
+                            "nameCode": "str",
+                            "national": "str"
+                        },
+                        "customId": "str",
+                        "finalResultOnly": "str",
+                        "hasEventPlayerStatistics": "str",
+                        "hasGlobalHighlights": "str",
+                        "homeScore": {
+                            "current": "str",
+                            "display": "str"
+                        },
+                        "homeTeam": {
+                            "name": "str",
+                            "nameCode": "str",
+                            "national": "str"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "TeamLogoImage",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "MatchLineups",
+            "schema": {
+                "away": {
+                    "players": [
+                        {
+                            "player": {
+                                "country": {
+                                    "name": "str"
+                                },
+                                "name": "str",
+                                "position": "str"
+                            },
+                            "position": "str",
+                            "statistics": {
+                                "goals": "str",
+                                "goals6m": "str",
+                                "goals7m": "str",
+                                "saves": "str",
+                                "shots6m": "str"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "LeagueAwayStandings",
+            "schema": {
+                "standings": [
+                    {
+                        "name": "str",
+                        "rows": [
+                            {
+                                "draws": "str",
+                                "losses": "str",
+                                "matches": "str",
+                                "points": "str",
+                                "position": "str",
+                                "scoresAgainst": "str",
+                                "scoresFor": "str",
+                                "team": {
+                                    "name": "str",
+                                    "nameCode": "str",
+                                    "shortName": "str",
+                                    "teamColors": {
+                                        "primary": "str",
+                                        "secondary": "str"
+                                    },
+                                    "type": "str"
+                                },
+                                "wins": "str"
+                            }
+                        ],
+                        "tournament": {
+                            "id": "str",
+                            "name": "str",
+                            "slug": "str"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "TeamPlayersStatisticsSeasons",
+            "schema": {
+                "typesMap": {
+                    "149": {
+                        "11959": [
+                            "list of str with length 1"
+                        ],
+                        "13512": [
+                            "list of str with length 1"
+                        ],
+                        "17647": [
+                            "list of str with length 1"
+                        ],
+                        "24126": [
+                            "list of str with length 1"
+                        ],
+                        "32529": [
+                            "list of str with length 1"
+                        ],
+                        "37809": [
+                            "list of str with length 1"
+                        ],
+                        "42967": [
+                            "list of str with length 1"
+                        ]
+                    },
+                    "57": {
+                        "17464": [
+                            "list of str with length 1"
+                        ],
+                        "23913": [
+                            "list of str with length 1"
+                        ],
+                        "37612": [
+                            "list of str with length 1"
+                        ],
+                        "42563": [
+                            "list of str with length 1"
+                        ]
+                    }
+                },
+                "uniqueTournamentSeasons": [
+                    {
+                        "seasons": [
+                            {
+                                "id": "int",
+                                "name": "str",
+                                "year": "str"
+                            }
+                        ],
+                        "uniqueTournament": {
+                            "category": {
+                                "alpha2": "str",
+                                "name": "str",
+                                "sport": {
+                                    "name": "str"
+                                }
+                            },
+                            "id": "int",
+                            "name": "str",
+                            "primaryColorHex": "str",
+                            "secondaryColorHex": "str",
+                            "slug": "str"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "LeagueOverallTopPlayers",
+            "schema": {
+                "topPlayers": [
+                    {
+                        "player": {
+                            "id": "str",
+                            "name": "str",
+                            "position": "str",
+                            "shortName": "str",
+                            "slug": "str"
+                        },
+                        "statistics": {
+                            "assists": "str"
+                        },
+                        "team": {
+                            "name": "str",
+                            "shortName": "str"
+                        }
+                    }
+                ],
+                "gk7mSaves": [
+                    {
+                        "player": {
+                            "id": "str",
+                            "name": "str",
+                            "position": "str",
+                            "shortName": "str",
+                            "slug": "str"
+                        },
+                        "statistics": {
+                            "gk7mSaves": "str",
+                            "gk7mShots": "str"
+                        },
+                        "team": {
+                            "name": "str",
+                            "shortName": "str"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "LeagueAwayTeamEvents",
+            "schema": {
+                "tournamentTeamEvents": {
+                    "95": {
+                        "3980": [
+                            {
+                                "awayScore": {
+                                    "current": "str"
+                                },
+                                "awayTeam": {
+                                    "id": "str",
+                                    "name": "str",
+                                    "nameCode": "str",
+                                    "shortName": "str",
+                                    "slug": "str"
+                                },
+                                "homeScore": {
+                                    "current": "str"
+                                },
+                                "homeTeam": {
+                                    "id": "str",
+                                    "name": "str",
+                                    "nameCode": "str",
+                                    "shortName": "str",
+                                    "slug": "str"
+                                },
+                                "id": "str",
+                                "slug": "str",
+                                "startTimestamp": "str",
+                                "status": {
+                                    "code": "str",
+                                    "description": "str"
+                                }
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "name": "TeamNearMatches",
+            "schema": {
+                "previousEvent": {
+                    "awayScore": {
+                        "current": "str",
+                        "display": "str"
+                    },
+                    "awayTeam": {
+                        "id": "str",
+                        "name": "str",
+                        "nameCode": "str",
+                        "national": "str",
+                        "shortName": "str"
+                    },
+                    "homeScore": {
+                        "current": "str",
+                        "display": "str"
+                    },
+                    "homeTeam": {
+                        "id": "str",
+                        "name": "str",
+                        "nameCode": "str",
+                        "national": "str",
+                        "shortName": "str"
+                    }
+                },
+                "finalResultOnly": "str",
+                "hasEventPlayerStatistics": "str",
+                "hasGlobalHighlights": "str"
+            }
+        },
+        {
+            "name": "TeamTournaments",
+            "schema": {
+                "uniqueTournaments": [
+                    {
+                        "category": {
+                            "name": "str",
+                            "slug": "str",
+                            "sport": {
+                                "name": "str",
+                                "slug": "str"
+                            }
+                        },
+                        "id": "int",
+                        "name": "str",
+                        "primaryColorHex": "str",
+                        "secondaryColorHex": "str",
+                        "slug": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "MatchStreaks",
+            "schema": {
+                "general": [
+                    {
+                        "name": "str",
+                        "team": "str",
+                        "value": "str"
+                    }
+                ],
+                "head2head": [
+                    {
+                        "name": "str",
+                        "team": "str",
+                        "value": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "MatchOdds",
+            "schema": {
+                "eventId": "int",
+                "markets": [
+                    {
+                        "fid": "int",
+                        "id": "int",
+                        "marketName": "str",
+                        "sourceId": "int",
+                        "structureType": "int",
+                        "suspended": "bool"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "TeamDetails",
+            "schema": {
+                "team": {
+                    "category": {
+                        "alpha2": "str",
+                        "flag": "str",
+                        "id": "str",
+                        "name": "str",
+                        "slug": "str",
+                        "sport": {
+                            "id": "str",
+                            "name": "str",
+                            "slug": "str"
+                        }
+                    },
+                    "country": {
+                        "alpha2": "str",
+                        "name": "str"
+                    },
+                    "disabled": "str",
+                    "fullName": "str",
+                    "gender": "str",
+                    "id": "str",
+                    "name": "str",
+                    "nameCode": "str",
+                    "national": "str",
+                    "shortName": "str",
+                    "slug": "str",
+                    "sport": {
+                        "id": "str",
+                        "name": "str",
+                        "slug": "str"
+                    },
+                    "teamColors": {
+                        "primary": "str",
+                        "secondary": "str",
+                        "text": "str"
+                    }
+                }
+            }
+        },
+        {
+            "name": "LeagueLastMatches",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "TeamLastMatches",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "MatchHighlights",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Categories",
+            "schema": {
+                "categories": [
+                    {
+                        "alpha2": "str",
+                        "name": "str",
+                        "sport": {
+                            "name": "str"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "TeamOverallTopPlayers",
+            "schema": {
+                "topPlayers": {
+                    "assists": [
+                        {
+                            "player": {
+                                "id": "str",
+                                "name": "str",
+                                "position": "str",
+                                "shortName": "str",
+                                "slug": "str"
+                            },
+                            "statistics": {
+                                "assists": "str"
+                            }
+                        }
+                    ],
+                    "gk7mSaves": [
+                        {
+                            "player": {
+                                "id": "str",
+                                "name": "str",
+                                "position": "str",
+                                "shortName": "str",
+                                "slug": "str"
+                            },
+                            "statistics": {
+                                "gk7mSaves": "str"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "LeagueGroupMatches",
+            "schema": {
+                "events": [
+                    {
+                        "awayScore": {
+                            "current": "str",
+                            "display": "str"
+                        },
+                        "awayTeam": {
+                            "name": "str",
+                            "shortName": "str"
+                        },
+                        "crowdsourcingDataDisplayEnabled": "str",
+                        "customId": "str",
+                        "finalResultOnly": "str",
+                        "hasEventPlayerStatistics": "str",
+                        "hasGlobalHighlights": "str",
+                        "homeScore": {
+                            "current": "str",
+                            "display": "str"
+                        },
+                        "homeTeam": {
+                            "name": "str",
+                            "shortName": "str"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "LeagueEventsByRound",
+            "schema": {
+                "events": [
+                    {
+                        "awayScore": {
+                            "current": "str",
+                            "display": "str"
+                        },
+                        "awayTeam": {
+                            "name": "str",
+                            "national": "str",
+                            "slug": "str"
+                        },
+                        "changes": {
+                            "changeTimestamp": "str",
+                            "changes": [
+                                "list of str with length 1"
+                            ]
+                        },
+                        "customId": "str",
+                        "finalResultOnly": "str",
+                        "hasEventPlayerStatistics": "str",
+                        "homeScore": {
+                            "current": "str",
+                            "display": "str"
+                        },
+                        "homeTeam": {
+                            "name": "str",
+                            "national": "str",
+                            "slug": "str"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "LeagueOverallTopTeams",
+            "schema": {
+                "topTeams": {
+                    "fastbreakGoals": [
+                        {
+                            "statistics": {
+                                "fastbreakGoals": "str",
+                                "id": "str"
+                            },
+                            "team": {
+                                "name": "str",
+                                "shortName": "str",
+                                "sport": {
+                                    "name": "str"
+                                },
+                                "teamColors": {
+                                    "primary": "str",
+                                    "secondary": "str"
+                                }
+                            }
+                        }
+                    ],
+                    "goalsConceded": [
+                        {
+                            "statistics": {
+                                "goalsConceded": "str",
+                                "id": "str"
+                            },
+                            "team": {
+                                "name": "str",
+                                "shortName": "str",
+                                "sport": {
+                                    "name": "str"
+                                },
+                                "teamColors": {
+                                    "primary": "str",
+                                    "secondary": "str"
+                                }
+                            }
+                        }
+                    ],
+                    "goalsInPowerplay": [
+                        {
+                            "statistics": {
+                                "goalsInPowerplay": "str",
+                                "id": "str"
+                            },
+                            "team": {
+                                "name": "str",
+                                "shortName": "str",
+                                "sport": {
+                                    "name": "str"
+                                },
+                                "teamColors": {
+                                    "primary": "str",
+                                    "secondary": "str"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "LeagueLogoImage",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "LeagueNextMatches",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "LeagueMedia",
+            "schema": {
+                "media": [
+                    {
+                        "mediaType": "int",
+                        "sourceUrl": "str",
+                        "thumbnailUrl": "str",
+                        "title": "str",
+                        "url": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "LeagueRounds",
+            "schema": {
+                "currentRound": {
+                    "round": "int"
+                },
+                "rounds": [
+                    {
+                        "round": "int"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "LeagueEventsByRoundAndSlug",
+            "schema": {
+                "events": [
+                    {
+                        "awayScore": {
+                            "current": "str",
+                            "display": "str"
+                        },
+                        "awayTeam": {
+                            "name": "str",
+                            "nameCode": "str",
+                            "national": "str",
+                            "shortName": "str",
+                            "slug": "str"
+                        },
+                        "homeScore": {
+                            "current": "str",
+                            "display": "str"
+                        },
+                        "homeTeam": {
+                            "name": "str",
+                            "nameCode": "str",
+                            "national": "str",
+                            "shortName": "str",
+                            "slug": "str"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "LeagueDetails",
+            "schema": {
+                "uniqueTournament": {
+                    "category": {
+                        "alpha2": "str",
+                        "flag": "str",
+                        "id": "str",
+                        "name": "str",
+                        "slug": "str",
+                        "sport": {
+                            "id": "str",
+                            "name": "str",
+                            "slug": "str"
+                        }
+                    },
+                    "endDateTimestamp": "str",
+                    "hasPlayoffSeries": "str",
+                    "hasRounds": "str",
+                    "hasStandingsGroups": "str",
+                    "id": "str",
+                    "logo": {
+                        "id": "str",
+                        "md5": "str"
+                    },
+                    "name": "str",
+                    "primaryColorHex": "str"
+                }
+            }
+        },
+        {
+            "name": "LeagueSeasons",
+            "schema": {
+                "seasons": [
+                    {
+                        "id": "int",
+                        "name": "str",
+                        "year": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "LeagueGroups",
+            "schema": {
+                "groups": [
+                    {
+                        "groupName": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "CategoryTournaments",
+            "schema": {
+                "groups": [
+                    {
+                        "uniqueTournaments": [
+                            {
+                                "category": {
+                                    "name": "str",
+                                    "sport": {
+                                        "name": "str"
+                                    }
+                                },
+                                "name": "str",
+                                "primaryColorHex": "str",
+                                "secondaryColorHex": "str",
+                                "slug": "str",
+                                "userCount": "int"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "name": "LeagueCupTrees",
+            "schema": {
+                "cupTrees": [
+                    {
+                        "name": "str",
+                        "thirdPlaceCupBlock": {
+                            "awayTeamScore": "str",
+                            "homeTeamScore": "str",
+                            "result": "str"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "LeagueHomeTeamEvents",
+            "schema": {
+                "tournamentTeamEvents": {
+                    "95": {
+                        "3980": [
+                            {
+                                "awayScore": {
+                                    "current": "str"
+                                },
+                                "awayTeam": {
+                                    "id": "str",
+                                    "name": "str"
+                                },
+                                "homeScore": {
+                                    "current": "str"
+                                },
+                                "homeTeam": {
+                                    "id": "str",
+                                    "name": "str"
+                                },
+                                "id": "str",
+                                "slug": "str",
+                                "startTimestamp": "str",
+                                "status": {
+                                    "code": "str"
+                                }
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "name": "LeagueHomeStandings",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "LeagueTotalStandings",
+            "schema": {
+                "message": "str"
+            }
+        }
+    ]
+}

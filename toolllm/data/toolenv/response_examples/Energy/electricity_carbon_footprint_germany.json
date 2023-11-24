@@ -1,0 +1,11 @@
+{
+    "api_list": [
+        {
+            "name": "CO2 Emission",
+            "schema": {
+                "date": "str",
+                "co2perKwh": "int"
+            }
+        }
+    ]
+}

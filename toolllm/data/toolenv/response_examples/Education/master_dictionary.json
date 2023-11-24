@@ -1,0 +1,29 @@
+{
+    "api_list": [
+        {
+            "name": "Word infos",
+            "schema": {
+                "word": "str",
+                "phonetics": [
+                    {
+                        "audio": "str"
+                    }
+                ],
+                "meanings": [
+                    {
+                        "partOfSpeech": "str",
+                        "definitions": [
+                            {
+                                "definition": "str"
+                            }
+                        ]
+                    }
+                ],
+                "license": {
+                    "name": "str",
+                    "url": "str"
+                }
+            }
+        }
+    ]
+}

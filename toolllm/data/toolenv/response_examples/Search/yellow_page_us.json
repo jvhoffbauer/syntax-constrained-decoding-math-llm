@@ -1,0 +1,27 @@
+{
+    "api_list": [
+        {
+            "name": "BusinessSearch",
+            "schema": {
+                "business_listings": [
+                    {
+                        "average_rating": "str",
+                        "distance": "str",
+                        "name": "str",
+                        "rating_count": "str",
+                        "source": "str",
+                        "has_detail_page": "str",
+                        "mappable": "str",
+                        "description": {
+                            "op_hours": "str"
+                        },
+                        "coupon_flag": "str",
+                        "id": "str",
+                        "listing_id": "str",
+                        "impression_id": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

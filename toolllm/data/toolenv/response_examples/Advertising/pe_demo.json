@@ -1,0 +1,26 @@
+{
+    "api_list": [
+        {
+            "name": "View a personalized greeting",
+            "schema": {
+                "fault": {
+                    "faultstring": "str"
+                }
+            }
+        },
+        {
+            "name": "View request headers and body",
+            "schema": {
+                "headers": {
+                    "host": "str",
+                    "user-agent": "str",
+                    "accept-encoding": "str",
+                    "accept": "str"
+                },
+                "method": "str",
+                "url": "str",
+                "body": "str"
+            }
+        }
+    ]
+}

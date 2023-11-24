@@ -1,0 +1,12 @@
+{
+    "api_list": [
+        {
+            "name": "/v1/riddles",
+            "schema": {
+                "title": "str",
+                "question": "str",
+                "answer": "str"
+            }
+        }
+    ]
+}

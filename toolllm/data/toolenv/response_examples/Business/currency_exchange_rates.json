@@ -1,0 +1,22 @@
+{
+    "api_list": [
+        {
+            "name": "Getting the latest exchange rate(s)",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Converting currencies",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Getting historical exchange rate(s)",
+            "schema": {
+                "message": "str"
+            }
+        }
+    ]
+}

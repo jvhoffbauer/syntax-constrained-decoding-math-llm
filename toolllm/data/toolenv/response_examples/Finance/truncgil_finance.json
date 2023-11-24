@@ -1,0 +1,206 @@
+{
+    "api_list": [
+        {
+            "name": "Version1",
+            "schema": {
+                "Update_Date": "str",
+                "USD": {
+                    "Al\u0131\u015f": "str",
+                    "T\u00fcr": "str",
+                    "Sat\u0131\u015f": "str",
+                    "De\u011fi\u015fim": "str"
+                },
+                "EUR": {
+                    "Al\u0131\u015f": "str",
+                    "T\u00fcr": "str",
+                    "Sat\u0131\u015f": "str",
+                    "De\u011fi\u015fim": "str"
+                },
+                "GBP": {
+                    "Al\u0131\u015f": "str",
+                    "T\u00fcr": "str",
+                    "Sat\u0131\u015f": "str",
+                    "De\u011fi\u015fim": "str"
+                },
+                "CHF": {
+                    "Al\u0131\u015f": "str",
+                    "T\u00fcr": "str",
+                    "Sat\u0131\u015f": "str",
+                    "De\u011fi\u015fim": "str"
+                },
+                "CAD": {
+                    "Al\u0131\u015f": "str",
+                    "T\u00fcr": "str",
+                    "Sat\u0131\u015f": "str",
+                    "De\u011fi\u015fim": "str"
+                },
+                "RUB": {
+                    "Al\u0131\u015f": "str",
+                    "T\u00fcr": "str",
+                    "Sat\u0131\u015f": "str",
+                    "De\u011fi\u015fim": "str"
+                },
+                "AED": {
+                    "Al\u0131\u015f": "str",
+                    "T\u00fcr": "str",
+                    "Sat\u0131\u015f": "str",
+                    "De\u011fi\u015fim": "str"
+                },
+                "AUD": {
+                    "Al\u0131\u015f": "str",
+                    "T\u00fcr": "str",
+                    "Sat\u0131\u015f": "str",
+                    "De\u011fi\u015fim": "str"
+                },
+                "DKK": {
+                    "Al\u0131\u015f": "str",
+                    "T\u00fcr": "str",
+                    "Sat\u0131\u015f": "str",
+                    "De\u011fi\u015fim": "str"
+                }
+            }
+        },
+        {
+            "name": "Version4",
+            "schema": {
+                "Update_Date": "str",
+                "USD": {
+                    "Buying": "str",
+                    "Selling": "str",
+                    "Change": "str"
+                },
+                "EUR": {
+                    "Buying": "str",
+                    "Selling": "str",
+                    "Change": "str"
+                },
+                "GBP": {
+                    "Buying": "str",
+                    "Selling": "str",
+                    "Change": "str"
+                },
+                "CHF": {
+                    "Buying": "str",
+                    "Selling": "str",
+                    "Change": "str"
+                },
+                "CAD": {
+                    "Buying": "str",
+                    "Selling": "str",
+                    "Change": "str"
+                },
+                "RUB": {
+                    "Buying": "str",
+                    "Selling": "str",
+                    "Change": "str"
+                },
+                "AED": {
+                    "Buying": "str",
+                    "Selling": "str",
+                    "Change": "str"
+                },
+                "AUD": {
+                    "Buying": "str",
+                    "Selling": "str",
+                    "Change": "str"
+                },
+                "DKK": {
+                    "Buying": "str",
+                    "Selling": "str",
+                    "Change": "str"
+                },
+                "SEK": {
+                    "Buying": "str",
+                    "Selling": "str",
+                    "Change": "str"
+                },
+                "NOK": {
+                    "Buying": "str",
+                    "Selling": "str",
+                    "Change": "str"
+                },
+                "JPY": {
+                    "Buying": "str",
+                    "Selling": "str",
+                    "Change": "str"
+                },
+                "KWD": {
+                    "Buying": "str",
+                    "Selling": "str",
+                    "Change": "str"
+                }
+            }
+        },
+        {
+            "name": "Version3",
+            "schema": {
+                "Update_Date": "str",
+                "USD": {
+                    "Buying": "str",
+                    "Selling": "str",
+                    "Change": "str"
+                },
+                "EUR": {
+                    "Buying": "str",
+                    "Selling": "str",
+                    "Change": "str"
+                },
+                "GBP": {
+                    "Buying": "str",
+                    "Selling": "str",
+                    "Change": "str"
+                },
+                "CHF": {
+                    "Buying": "str",
+                    "Selling": "str",
+                    "Change": "str"
+                },
+                "CAD": {
+                    "Buying": "str",
+                    "Selling": "str",
+                    "Change": "str"
+                },
+                "RUB": {
+                    "Buying": "str",
+                    "Selling": "str",
+                    "Change": "str"
+                },
+                "AED": {
+                    "Buying": "str",
+                    "Selling": "str",
+                    "Change": "str"
+                },
+                "AUD": {
+                    "Buying": "str",
+                    "Selling": "str",
+                    "Change": "str"
+                },
+                "DKK": {
+                    "Buying": "str",
+                    "Selling": "str",
+                    "Change": "str"
+                },
+                "SEK": {
+                    "Buying": "str",
+                    "Selling": "str",
+                    "Change": "str"
+                },
+                "NOK": {
+                    "Buying": "str",
+                    "Selling": "str",
+                    "Change": "str"
+                },
+                "JPY": {
+                    "Buying": "str",
+                    "Selling": "str",
+                    "Change": "str"
+                },
+                "KWD": {
+                    "Buying": "str",
+                    "Selling": "str",
+                    "Change": "str"
+                }
+            }
+        }
+    ]
+}

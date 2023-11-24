@@ -1,0 +1,422 @@
+{
+    "api_list": [
+        {
+            "name": "Season Skill Rating MW 2 Ranked",
+            "schema": {
+                "status": "str",
+                "data": {
+                    "mode": "str",
+                    "ranks": [
+                        {
+                            "gamertag": "str",
+                            "rank": "int",
+                            "maxRank": "int",
+                            "skillRating": "int",
+                            "isPro": "bool"
+                        }
+                    ],
+                    "nextPageToken": "NoneType"
+                }
+            }
+        },
+        {
+            "name": "Season Career Leaderboard WZ2",
+            "schema": {
+                "status": "str",
+                "data": {
+                    "status": "str",
+                    "data": {
+                        "mode": "str",
+                        "ranks": [
+                            {
+                                "gamertag": "str",
+                                "rank": "int",
+                                "sortKeyStat": "float",
+                                "stats": {
+                                    "avgScorePerMin": "float",
+                                    "timePlayed": "float",
+                                    "totalGames": "float",
+                                    "globalScore": "float"
+                                }
+                            }
+                        ],
+                        "nextPageToken": "str"
+                    }
+                }
+            }
+        },
+        {
+            "name": "Season Wins Leaderboard WZ2",
+            "schema": {
+                "data": {
+                    "data": {
+                        "mode": "str",
+                        "ranks": [
+                            {
+                                "gamertag": "str",
+                                "rank": "int",
+                                "stats": {
+                                    "top10": "float",
+                                    "totalWins": "float",
+                                    "top5": "float",
+                                    "highestWinstreak": "float",
+                                    "top25": "float"
+                                }
+                            }
+                        ],
+                        "nextPageToken": "str"
+                    }
+                }
+            }
+        },
+        {
+            "name": "Season Critical Damage Leaderboard WZ2",
+            "schema": {
+                "status": "str",
+                "data": {
+                    "columns": [
+                        "list of str with length 1"
+                    ],
+                    "mode": "str",
+                    "ranks": [
+                        {
+                            "gamertag": "str",
+                            "rank": "int",
+                            "sortKeyStat": "float",
+                            "stats": {
+                                "headshotPerGame": "float",
+                                "totalOneshotKills": "float",
+                                "headshotPercent": "float",
+                                "globalHeadshots": "float",
+                                "avgDamage": "float"
+                            }
+                        }
+                    ],
+                    "nextPageToken": "str"
+                }
+            }
+        },
+        {
+            "name": "Critical Damage Leaderboard WZ2",
+            "schema": {
+                "status": "str",
+                "data": {
+                    "columns": [
+                        "list of str with length 1"
+                    ],
+                    "mode": "str",
+                    "ranks": [
+                        {
+                            "gamertag": "str",
+                            "rank": "int",
+                            "sortKeyStat": "float",
+                            "stats": {
+                                "headshotPerGame": "float",
+                                "totalOneshotKills": "float",
+                                "headshotPercent": "float",
+                                "globalHeadshots": "float",
+                                "avgDamage": "float"
+                            }
+                        }
+                    ],
+                    "nextPageToken": "str"
+                }
+            }
+        },
+        {
+            "name": "Season Critical Damage Leaderboard MW2",
+            "schema": {
+                "status": "str",
+                "data": {
+                    "status": "str",
+                    "data": {
+                        "columns": [
+                            "list of str with length 1"
+                        ],
+                        "mode": "str",
+                        "ranks": [
+                            {
+                                "gamertag": "str",
+                                "rank": "int",
+                                "sortKeyStat": "float",
+                                "stats": {
+                                    "headshotPerGame": "float",
+                                    "totalOneshotKills": "float",
+                                    "headshotPercent": "float",
+                                    "globalHeadshots": "float",
+                                    "avgDamage": "float"
+                                }
+                            }
+                        ],
+                        "nextPageToken": "str"
+                    }
+                }
+            }
+        },
+        {
+            "name": "Critical Damage Leaderboard MW2",
+            "schema": {
+                "status": "str",
+                "data": {
+                    "mode": "str",
+                    "ranks": [
+                        {
+                            "gamertag": "str",
+                            "rank": "int",
+                            "sortKeyStat": "float",
+                            "stats": {
+                                "headshotPerGame": "float",
+                                "totalOneshotKills": "float",
+                                "headshotPercent": "float",
+                                "globalHeadshots": "float",
+                                "avgDamage": "float"
+                            }
+                        }
+                    ],
+                    "nextPageToken": "str"
+                }
+            }
+        },
+        {
+            "name": "Wins Leaderboard WZ2",
+            "schema": {
+                "data": {
+                    "data": {
+                        "columns": [
+                            "list of str with length 1"
+                        ],
+                        "mode": "str",
+                        "ranks": [
+                            {
+                                "gamertag": "str",
+                                "rank": "int",
+                                "stats": {
+                                    "top10": "float",
+                                    "totalWins": "float",
+                                    "top5": "float",
+                                    "highestWinstreak": "float",
+                                    "top25": "float"
+                                }
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "name": "Season Kills Leaderboard MW 2",
+            "schema": {
+                "data": {
+                    "data": {
+                        "columns": [
+                            "list of str with length 1"
+                        ],
+                        "mode": "str",
+                        "ranks": [
+                            {
+                                "gamertag": "str",
+                                "rank": "int",
+                                "stats": {
+                                    "kdRatio": "float",
+                                    "highestKillstreak": "float",
+                                    "avgKillsPerGame": "float",
+                                    "globalKills": "float",
+                                    "deaths": "float"
+                                }
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "name": "Kills Leaderboard MW2",
+            "schema": {
+                "status": "str",
+                "data": {
+                    "columns": [
+                        "list of str with length 1"
+                    ],
+                    "mode": "str",
+                    "ranks": [
+                        {
+                            "gamertag": "str",
+                            "rank": "int",
+                            "percentileRank": "NoneType",
+                            "sortKeyStat": "float",
+                            "stats": {
+                                "kdRatio": "float",
+                                "highestKillstreak": "float",
+                                "avgKillsPerGame": "float",
+                                "globalKills": "float",
+                                "deaths": "float"
+                            }
+                        }
+                    ],
+                    "nextPageToken": "str"
+                }
+            }
+        },
+        {
+            "name": "Season Wins Leaderboard MW 2",
+            "schema": {
+                "status": "str",
+                "data": {
+                    "mode": "str",
+                    "ranks": [
+                        {
+                            "gamertag": "str",
+                            "rank": "int",
+                            "stats": {
+                                "totalWins": "float",
+                                "totalLosses": "float",
+                                "highestWinstreak": "float",
+                                "globalWlRatio": "float"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Career Leaderboard MW2",
+            "schema": {
+                "status": "str",
+                "data": {
+                    "status": "str",
+                    "data": {
+                        "columns": [
+                            "list of str with length 1"
+                        ],
+                        "mode": "str",
+                        "ranks": [
+                            {
+                                "gamertag": "str",
+                                "rank": "int",
+                                "sortKeyStat": "float",
+                                "stats": {
+                                    "avgScorePerMin": "float",
+                                    "timePlayed": "float",
+                                    "totalGames": "float",
+                                    "globalScore": "float"
+                                }
+                            }
+                        ],
+                        "nextPageToken": "str"
+                    }
+                }
+            }
+        },
+        {
+            "name": "Wins Leaderboard MW2",
+            "schema": {
+                "status": "str",
+                "data": {
+                    "status": "str",
+                    "data": {
+                        "columns": [
+                            "list of str with length 1"
+                        ],
+                        "mode": "str",
+                        "ranks": [
+                            {
+                                "gamertag": "str",
+                                "rank": "int",
+                                "sortKeyStat": "float",
+                                "stats": {
+                                    "totalWins": "float",
+                                    "totalLosses": "float",
+                                    "highestWinstreak": "float",
+                                    "globalWlRatio": "float"
+                                }
+                            }
+                        ],
+                        "nextPageToken": "str"
+                    }
+                }
+            }
+        },
+        {
+            "name": "Season Gulag Leaderboard WZ2",
+            "schema": {
+                "data": {
+                    "data": {
+                        "columns": [
+                            "list of str with length 1"
+                        ],
+                        "mode": "str",
+                        "ranks": [
+                            {
+                                "gamertag": "str",
+                                "rank": "int",
+                                "stats": {
+                                    "gulagJailorKills": "float",
+                                    "gulagKills": "float",
+                                    "gulagWins": "float",
+                                    "gulagLosses": "float",
+                                    "gulagWinLossRatio": "float"
+                                }
+                            }
+                        ],
+                        "nextPageToken": "str"
+                    }
+                }
+            }
+        },
+        {
+            "name": "Gulag Leaderboard WZ2",
+            "schema": {
+                "status": "str",
+                "data": {
+                    "status": "str",
+                    "data": {
+                        "columns": [
+                            "list of str with length 1"
+                        ],
+                        "mode": "str",
+                        "ranks": [
+                            {
+                                "gamertag": "str",
+                                "rank": "int",
+                                "stats": {
+                                    "gulagJailorKills": "float",
+                                    "gulagKills": "float",
+                                    "gulagWins": "float",
+                                    "gulagLosses": "float",
+                                    "gulagWinLossRatio": "float"
+                                }
+                            }
+                        ],
+                        "nextPageToken": "str"
+                    }
+                }
+            }
+        },
+        {
+            "name": "Kills Leaderboard WZ2",
+            "schema": {
+                "status": "str",
+                "data": {
+                    "status": "str",
+                    "data": {
+                        "mode": "str",
+                        "ranks": [
+                            {
+                                "gamertag": "str",
+                                "rank": "int",
+                                "stats": {
+                                    "kdRatio": "float",
+                                    "highestKillstreak": "float",
+                                    "operatorKills": "float",
+                                    "globalKills": "float",
+                                    "deaths": "float"
+                                }
+                            }
+                        ],
+                        "nextPageToken": "str"
+                    }
+                }
+            }
+        }
+    ]
+}

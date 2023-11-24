@@ -1,0 +1,11 @@
+{
+    "api_list": [
+        {
+            "name": "getMsgs",
+            "schema": {
+                "Category": "str",
+                "Message": "str"
+            }
+        }
+    ]
+}

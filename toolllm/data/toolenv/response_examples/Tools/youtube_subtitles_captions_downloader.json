@@ -1,0 +1,13 @@
+{
+    "api_list": [
+        {
+            "name": "Get Subtitles- Plain Text",
+            "schema": {
+                "data": {
+                    "url": "str",
+                    "subtitles": "str"
+                }
+            }
+        }
+    ]
+}

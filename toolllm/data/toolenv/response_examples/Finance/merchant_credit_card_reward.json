@@ -1,0 +1,48 @@
+{
+    "api_list": [
+        {
+            "name": "Merchant credit card reward lookup",
+            "schema": {
+                "credit_cards": [
+                    {
+                        "card_type": "str",
+                        "long_name": "str",
+                        "owned": "str",
+                        "public_remarks": [
+                            "list of str with length 1"
+                        ],
+                        "rewards": [
+                            {
+                                "reward_type": "str",
+                                "rewards_list": [
+                                    {
+                                        "_reward_per_dollar": "str",
+                                        "reward_type": "str"
+                                    }
+                                ],
+                                "status": "str"
+                            }
+                        ],
+                        "short_name": "str"
+                    }
+                ],
+                "icon": "str",
+                "mcc_info": [
+                    {
+                        "code": "str",
+                        "name": "str"
+                    }
+                ],
+                "merchant_details": {
+                    "address": "str",
+                    "business_legal_names": [
+                        "list of str with length 1"
+                    ],
+                    "country_code": "str",
+                    "enterprise": "str",
+                    "icon_url": "str"
+                }
+            }
+        }
+    ]
+}

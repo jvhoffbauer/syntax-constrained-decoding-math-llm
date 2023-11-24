@@ -1,0 +1,18 @@
+{
+    "api_list": [
+        {
+            "name": "Events Detail",
+            "schema": {
+                "title": "str",
+                "city": "str",
+                "openingDate": "str",
+                "closingDate": "str",
+                "genres": [
+                    "list of str with length 1"
+                ],
+                "artists": "str",
+                "id": "str"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "api_list": [
+        {
+            "name": "companies",
+            "schema": {
+                "value": [
+                    {
+                        "name": "str",
+                        "image": "str"
+                    }
+                ],
+                "success": "bool",
+                "message": "str"
+            }
+        }
+    ]
+}

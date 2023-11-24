@@ -1,0 +1,12 @@
+{
+    "api_list": [
+        {
+            "name": "getHistoricalScoresByYear",
+            "schema": {
+                "request_id": "int",
+                "status": "str",
+                "message": "str"
+            }
+        }
+    ]
+}

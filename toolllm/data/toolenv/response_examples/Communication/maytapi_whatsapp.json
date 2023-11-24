@@ -1,0 +1,107 @@
+{
+    "api_list": [
+        {
+            "name": "queue",
+            "schema": {
+                "success": "bool",
+                "message": "str"
+            }
+        },
+        {
+            "name": "purgeQueue",
+            "schema": {
+                "success": "bool",
+                "message": "str"
+            }
+        },
+        {
+            "name": "getStatus",
+            "schema": {
+                "success": "bool",
+                "message": "str"
+            }
+        },
+        {
+            "name": "getQRCode",
+            "schema": {
+                "success": "bool",
+                "message": "str"
+            }
+        },
+        {
+            "name": "getProduct",
+            "schema": {
+                "pid": "str",
+                "webhook": "NoneType",
+                "ack_delivery": "bool"
+            }
+        },
+        {
+            "name": "getScreen",
+            "schema": {
+                "success": "bool",
+                "message": "str"
+            }
+        },
+        {
+            "name": "getGroups",
+            "schema": {
+                "success": "bool",
+                "message": "str"
+            }
+        },
+        {
+            "name": "redeploy",
+            "schema": {
+                "success": "bool",
+                "message": "str"
+            }
+        },
+        {
+            "name": "checkNumberStatus",
+            "schema": {
+                "success": "bool",
+                "message": "str"
+            }
+        },
+        {
+            "name": "logs",
+            "schema": {
+                "success": "bool",
+                "data": {
+                    "count": "str",
+                    "list": [
+                        {
+                            "id": "int",
+                            "pid": "str",
+                            "phone": "int",
+                            "created_at": "str",
+                            "updated_at": "str",
+                            "data": {
+                                "body": {
+                                    "pid": "str",
+                                    "type": "str",
+                                    "status": "str",
+                                    "phoneId": "int",
+                                    "phone_id": "int",
+                                    "product_id": "str"
+                                },
+                                "response": {
+                                    "message": "str"
+                                }
+                            },
+                            "type": "str"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "contacts",
+            "schema": {
+                "success": "bool",
+                "message": "str"
+            }
+        }
+    ]
+}

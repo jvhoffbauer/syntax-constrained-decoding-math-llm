@@ -1,0 +1,15 @@
+{
+    "api_list": [
+        {
+            "name": "Facts",
+            "schema": {
+                "status": {
+                    "verified": "bool"
+                },
+                "text": "str",
+                "source": "str",
+                "type": "str"
+            }
+        }
+    ]
+}

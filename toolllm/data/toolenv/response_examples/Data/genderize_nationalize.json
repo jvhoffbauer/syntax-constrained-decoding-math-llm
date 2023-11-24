@@ -1,0 +1,11 @@
+{
+    "api_list": [
+        {
+            "name": "nationalize",
+            "schema": {
+                "name": "str",
+                "country": "str"
+            }
+        }
+    ]
+}

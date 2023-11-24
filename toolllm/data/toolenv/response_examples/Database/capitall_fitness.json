@@ -1,0 +1,10 @@
+{
+    "api_list": [
+        {
+            "name": "login",
+            "schema": {
+                "messages": "str"
+            }
+        }
+    ]
+}

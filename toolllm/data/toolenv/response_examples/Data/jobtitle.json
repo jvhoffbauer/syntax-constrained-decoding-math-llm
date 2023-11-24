@@ -1,0 +1,22 @@
+{
+    "api_list": [
+        {
+            "name": "/status/",
+            "schema": {
+                "models": {
+                    "job_titles": {
+                        "precision": "str",
+                        "recall": "str"
+                    },
+                    "roles": {
+                        "precision": "str",
+                        "recall": "str"
+                    }
+                },
+                "total_corrected": "int",
+                "total_fails": "int",
+                "total_success": "int"
+            }
+        }
+    ]
+}

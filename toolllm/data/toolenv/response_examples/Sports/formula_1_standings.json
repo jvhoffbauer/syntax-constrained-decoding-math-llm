@@ -1,0 +1,29 @@
+{
+    "api_list": [
+        {
+            "name": "Races",
+            "schema": {
+                "results": [
+                    {
+                        "race_name": "str",
+                        "race_date": "str",
+                        "race_location": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Constructor Standings",
+            "schema": {
+                "results": [
+                    {
+                        "team_name": "str",
+                        "position": "int",
+                        "points": "str",
+                        "season": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,106 @@
+{
+    "api_list": [
+        {
+            "name": "Get NFT metadata V2",
+            "schema": {
+                "tokenId": "str",
+                "uri": "str",
+                "contractInfo": {
+                    "contract": "str",
+                    "name": "str",
+                    "symbol": "str"
+                }
+            }
+        },
+        {
+            "name": "Get raw block data V2",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get address V2",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get xpub V2",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get Balance History V2",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get Tickers V2",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get block hash V2",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Blockchain Info Summary",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "List available blockchains",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get Block V2",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get Mempool V2",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get transaction (as is from Backend) V2",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get transaction V2",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Send transaction (in URL) V2",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get Tickers list V2",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "JSON-RPC over HTTP",
+            "schema": {
+                "message": "str"
+            }
+        }
+    ]
+}

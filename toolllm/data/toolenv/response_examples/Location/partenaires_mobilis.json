@@ -1,0 +1,72 @@
+{
+    "api_list": [
+        {
+            "name": "Partenaire par id",
+            "schema": {
+                "id": "int",
+                "nom": "str",
+                "position": {
+                    "x": "float",
+                    "y": "float"
+                },
+                "ville": "str",
+                "url_gmaps": "str",
+                "url_fb": "str"
+            }
+        },
+        {
+            "name": "Get ALL partenaires",
+            "schema": {
+                "type": "str",
+                "features": [
+                    {
+                        "type": "str",
+                        "properties": {
+                            "id": "int",
+                            "nom": "str",
+                            "adresse": "str",
+                            "ville": "str",
+                            "code_postal": "str",
+                            "telephone": "str",
+                            "url_gmaps": "str",
+                            "url_fb": "str"
+                        },
+                        "geometry": {
+                            "type": "str",
+                            "coordinates": [
+                                "list of str with length 1"
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "G\u00e9olocaliser les partenaires",
+            "schema": {
+                "type": "str",
+                "features": [
+                    {
+                        "type": "str",
+                        "properties": {
+                            "nom": "str",
+                            "adresse": "str",
+                            "quartier": "str",
+                            "ville": "str",
+                            "code_postal": "str",
+                            "telephone": "str",
+                            "url_gmaps": "str",
+                            "url_fb": "str"
+                        },
+                        "geometry": {
+                            "type": "str",
+                            "coordinates": [
+                                "list of str with length 1"
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

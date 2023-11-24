@@ -1,0 +1,134 @@
+{
+    "api_list": [
+        {
+            "name": "Disciplina-1",
+            "schema": {
+                "date": "str",
+                "stage": "str",
+                "incidence": "str",
+                "description": "str"
+            }
+        },
+        {
+            "name": "Disciplina-2",
+            "schema": {
+                "date": "str",
+                "stage": "str",
+                "incidence": "str",
+                "description": "str"
+            }
+        },
+        {
+            "name": "Inasistencias-2",
+            "schema": {
+                "stage": "str",
+                "nonattendance": "str",
+                "justify": "str"
+            }
+        },
+        {
+            "name": "Mensajes-1",
+            "schema": {
+                "id": "str",
+                "date": "str",
+                "body": "str",
+                "subject": "str",
+                "sender": "str",
+                "role": "str",
+                "type": "str",
+                "child_name": "str",
+                "attachmentList": [
+                    {
+                        "name": "str",
+                        "url": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Mensajes-2",
+            "schema": {
+                "id": "str",
+                "date": "str",
+                "body": "str",
+                "subject": "str",
+                "sender": "str",
+                "role": "str",
+                "type": "str",
+                "child_name": "str",
+                "attachmentList": [
+                    {
+                        "name": "str",
+                        "url": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Comunicado-2",
+            "schema": {
+                "id": "str",
+                "date": "str",
+                "body": "str",
+                "subject": "str",
+                "sender": "str",
+                "role": "str",
+                "type": "str",
+                "child_name": "str",
+                "web_url": "str",
+                "attachmentList": [
+                    {
+                        "name": "str",
+                        "url": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Mensajes",
+            "schema": {
+                "id": "str",
+                "date": "str",
+                "body": "str",
+                "subject": "str",
+                "sender": "str",
+                "role": "str",
+                "type": "str",
+                "child_name": "str"
+            }
+        },
+        {
+            "name": "Inasistencias-1",
+            "schema": {
+                "date": "str",
+                "stage": "str",
+                "nonattendance": "str",
+                "justify": "str"
+            }
+        },
+        {
+            "name": "Evaluaciones-2",
+            "schema": {
+                "date": "str",
+                "stage": "str",
+                "subject": "str",
+                "type": "str",
+                "result": "str",
+                "grade": "str",
+                "name": "str"
+            }
+        },
+        {
+            "name": "Evaluaciones-1",
+            "schema": {
+                "date": "str",
+                "stage": "str",
+                "subject": "str",
+                "type": "str",
+                "result": "str",
+                "grade": "str",
+                "name": "str"
+            }
+        }
+    ]
+}

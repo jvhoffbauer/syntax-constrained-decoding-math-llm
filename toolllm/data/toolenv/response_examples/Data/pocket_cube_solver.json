@@ -1,0 +1,21 @@
+{
+    "api_list": [
+        {
+            "name": "getRandomSolution",
+            "schema": {
+                "position": "str",
+                "sol": "str"
+            }
+        },
+        {
+            "name": "getAllSolutions",
+            "schema": {
+                "position": "str",
+                "depth": "int",
+                "sols": [
+                    "list of str with length 1"
+                ]
+            }
+        }
+    ]
+}

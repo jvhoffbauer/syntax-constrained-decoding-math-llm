@@ -1,0 +1,34 @@
+{
+    "api_list": [
+        {
+            "name": "GET Logo Detection",
+            "schema": {
+                "objects": [
+                    {
+                        "text": "str",
+                        "score": "float",
+                        "boundingBox": {
+                            "tl": {
+                                "x": "float",
+                                "y": "float"
+                            },
+                            "tr": {
+                                "x": "float",
+                                "y": "float"
+                            },
+                            "br": {
+                                "x": "float",
+                                "y": "float"
+                            },
+                            "bl": {
+                                "x": "float",
+                                "y": "float"
+                            }
+                        }
+                    }
+                ],
+                "success": "bool"
+            }
+        }
+    ]
+}

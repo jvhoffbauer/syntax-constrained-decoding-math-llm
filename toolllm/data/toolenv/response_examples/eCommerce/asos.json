@@ -1,0 +1,237 @@
+{
+    "api_list": [
+        {
+            "name": "countries/list",
+            "schema": {
+                "country": "str",
+                "store": "str",
+                "name": "str",
+                "imageUrl": "str",
+                "siteUrl": "str",
+                "siteId": "int",
+                "languages": [
+                    {
+                        "language": "str",
+                        "name": "str",
+                        "languageShort": "str",
+                        "isPrimary": "bool"
+                    }
+                ],
+                "currencies": [
+                    {
+                        "currency": "str",
+                        "symbol": "str",
+                        "text": "str",
+                        "isPrimary": "bool"
+                    }
+                ],
+                "sizeSchemas": [
+                    {
+                        "sizeSchema": "str",
+                        "text": "str",
+                        "isPrimary": "bool"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "products/v2/list",
+            "schema": {
+                "searchTerm": "str",
+                "categoryName": "str",
+                "itemCount": "str",
+                "redirectUrl": "str",
+                "products": [
+                    {
+                        "id": "str",
+                        "name": "str",
+                        "price": {
+                            "current": {
+                                "value": "str",
+                                "text": "str"
+                            },
+                            "previous": {
+                                "value": "str",
+                                "text": "str"
+                            },
+                            "rrp": {
+                                "value": "str",
+                                "text": "str"
+                            },
+                            "isMarkedDown": "str",
+                            "isOutletPrice": "str",
+                            "currency": "str"
+                        },
+                        "colour": "str",
+                        "colourWayId": "str",
+                        "brandName": "str",
+                        "hasVariantColours": "str",
+                        "hasMultiplePrices": "str",
+                        "productCode": "str",
+                        "productType": "str",
+                        "url": "str",
+                        "imageUrl": "str",
+                        "videoUrl": "str",
+                        "showVideo": "str",
+                        "isSellingFast": "str",
+                        "facetGroupings": "str",
+                        "advertisement": "str"
+                    }
+                ],
+                "facets": [
+                    {
+                        "id": "str",
+                        "name": "str",
+                        "facetValues": [
+                            {
+                                "count": "str",
+                                "id": "str",
+                                "name": "str",
+                                "isSelected": "str"
+                            }
+                        ],
+                        "hasSelectedValues": "str"
+                    }
+                ],
+                "diagnostics": {
+                    "requestId": "str"
+                }
+            }
+        },
+        {
+            "name": "products/v2/list-similarities (Deprecating)",
+            "schema": {
+                "id": "str",
+                "products": [
+                    {
+                        "order": "str",
+                        "product": {
+                            "id": "str",
+                            "name": "str",
+                            "brandName": "str",
+                            "images": [
+                                {
+                                    "url": "str",
+                                    "type": "str",
+                                    "colourCode": "str",
+                                    "colour": "str",
+                                    "isPrimary": "str"
+                                }
+                            ],
+                            "price": {
+                                "current": {
+                                    "value": "str",
+                                    "text": "str"
+                                },
+                                "previous": {
+                                    "value": "str",
+                                    "text": "str"
+                                },
+                                "rrp": {
+                                    "value": "str",
+                                    "text": "str"
+                                },
+                                "xrp": {
+                                    "value": "str",
+                                    "text": "str"
+                                },
+                                "currency": "str",
+                                "isMarkedDown": "str",
+                                "isOutletPrice": "str"
+                            },
+                            "isNoSize": "str",
+                            "isOneSize": "str",
+                            "isInStock": "str",
+                            "hasMultipleColoursInStock": "str",
+                            "hasMultiplePricesInStock": "str",
+                            "isAvailable": "str",
+                            "productCode": "str",
+                            "colour": "str",
+                            "variants": [
+                                {
+                                    "id": "str",
+                                    "productCode": "str",
+                                    "name": "str",
+                                    "isPrimary": "str",
+                                    "isLowInStock": "str",
+                                    "isInStock": "str",
+                                    "isAvailable": "str",
+                                    "colourCode": "str"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "v2/auto-complete",
+            "schema": {
+                "suggestionGroups": [
+                    {
+                        "indexName": "str",
+                        "suggestions": [
+                            {
+                                "searchTerm": "str",
+                                "numberOfResults": "int"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "name": "categories/list",
+            "schema": {
+                "navigation": [
+                    {
+                        "id": "str",
+                        "alias": "str",
+                        "type": "str",
+                        "channelExclusions": "str",
+                        "webLargePriority": "str",
+                        "content": {
+                            "title": "str",
+                            "subTitle": "str"
+                        },
+                        "display": "str",
+                        "style": {
+                            "webLargeStyleType": "str",
+                            "mobileStyleType": "str"
+                        },
+                        "link": {
+                            "linkType": "str",
+                            "webUrl": "str"
+                        },
+                        "children": [
+                            {
+                                "id": "str",
+                                "alias": "str",
+                                "type": "str",
+                                "channelExclusions": "str",
+                                "webLargePriority": "str",
+                                "content": {
+                                    "title": "str",
+                                    "subTitle": "str"
+                                },
+                                "display": {
+                                    "webLargeTemplateId": "str",
+                                    "webLargeTemplateName": "str",
+                                    "webLargeColumnSpan": "str",
+                                    "mobileTemplateId": "str",
+                                    "mobileTemplateName": "str",
+                                    "mobileDisplayLayout": "str"
+                                },
+                                "style": {
+                                    "webLargeStyleType": "str",
+                                    "mobileStyleType": "str"
+                                },
+                                "link": "str"
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}

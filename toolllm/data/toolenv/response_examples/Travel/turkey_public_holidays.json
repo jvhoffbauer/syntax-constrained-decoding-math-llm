@@ -1,0 +1,19 @@
+{
+    "api_list": [
+        {
+            "name": "IsUpdate",
+            "schema": {
+                "success": "bool",
+                "status": "str",
+                "resmitatiller": [
+                    {
+                        "gun": "str",
+                        "haftagunu": "str",
+                        "tarih": "str",
+                        "uzuntarih": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

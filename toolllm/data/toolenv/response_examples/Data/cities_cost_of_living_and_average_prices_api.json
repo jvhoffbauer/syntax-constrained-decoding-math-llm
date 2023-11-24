@@ -1,0 +1,148 @@
+{
+    "api_list": [
+        {
+            "name": "Cost Of Living By City",
+            "schema": {
+                "Version": "str",
+                "Country Name": "str",
+                "City Name": "str",
+                "Cost of Living Month Total": "str",
+                "Currency": "str",
+                "Note": "str",
+                "Status": "str",
+                "Success": "str",
+                "Restaurants prices": [
+                    {
+                        "Cost": "str",
+                        "Value": "str"
+                    }
+                ],
+                "Markets prices": [
+                    {
+                        "Cost": "str",
+                        "Value": "str"
+                    }
+                ],
+                "Transportation prices": [
+                    {
+                        "Cost": "str",
+                        "Value": "str"
+                    }
+                ],
+                "Utilities Per Month prices": [
+                    {
+                        "Cost": "str",
+                        "Value": "str"
+                    }
+                ],
+                "Sports And Leisure prices": [
+                    {
+                        "Cost": "str",
+                        "Value": "str"
+                    }
+                ],
+                "Salaries And Financing prices": [
+                    {
+                        "Cost": "str",
+                        "Value": "str"
+                    }
+                ],
+                "Rent Per Month prices": [
+                    {
+                        "Cost": "str",
+                        "Value": "str"
+                    }
+                ],
+                "Buy Apartment prices": [
+                    {
+                        "Cost": "str",
+                        "Value": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Cost of Living By Country",
+            "schema": {
+                "Version": "str",
+                "Country Name": "str",
+                "City Name": "str",
+                "Cost of Living Month Total": "str",
+                "Currency": "str",
+                "Note": "str",
+                "Status": "str",
+                "Success": "str",
+                "Restaurants prices": [
+                    {
+                        "Cost": "str",
+                        "Value": "str"
+                    }
+                ],
+                "Markets prices": [
+                    {
+                        "Cost": "str",
+                        "Value": "str"
+                    }
+                ],
+                "Transportation prices": [
+                    {
+                        "Cost": "str",
+                        "Value": "str"
+                    }
+                ],
+                "Utilities Per Month prices": [
+                    {
+                        "Cost": "str",
+                        "Value": "str"
+                    }
+                ],
+                "Sports And Leisure prices": [
+                    {
+                        "Cost": "str",
+                        "Value": "str"
+                    }
+                ],
+                "Salaries And Financing prices": [
+                    {
+                        "Cost": "str",
+                        "Value": "str"
+                    }
+                ],
+                "Childcare prices": [
+                    {
+                        "Cost": "str",
+                        "Value": "str"
+                    }
+                ],
+                "Clothing And Shoes prices": [
+                    {
+                        "Cost": "str",
+                        "Value": "str"
+                    }
+                ],
+                "Rent Per Month prices": [
+                    {
+                        "Cost": "str",
+                        "Value": "str"
+                    }
+                ],
+                "Buy Apartment prices": [
+                    {
+                        "Cost": "str",
+                        "Value": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Get Cities by Country",
+            "schema": {
+                "country": "str",
+                "name": "str",
+                "city": "str",
+                "url": "str",
+                "iso3": "str"
+            }
+        }
+    ]
+}

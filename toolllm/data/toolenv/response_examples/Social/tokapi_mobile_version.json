@@ -1,0 +1,293 @@
+{
+    "api_list": [
+        {
+            "name": "/v1/search/location",
+            "schema": {
+                "cursor": "str",
+                "extra": {
+                    "fatal_item_ids": "str",
+                    "logid": "str",
+                    "now": "str",
+                    "search_request_id": "str"
+                },
+                "feedback_type": "str",
+                "global_doodle_config": {
+                    "display_filter_bar": "str",
+                    "hide_results": "str",
+                    "hit_dolphin": "str",
+                    "hit_shark": "str",
+                    "keyword": "str",
+                    "new_source": "str",
+                    "search_channel": "str",
+                    "tns_search_result": "str"
+                },
+                "has_more": "str",
+                "log_pb": {
+                    "impr_id": "str"
+                },
+                "poi_info": {
+                    "poi_info": [
+                        {
+                            "img_url": "str",
+                            "is_collected": "str",
+                            "lat": "str",
+                            "lng": "str",
+                            "poi_id": "str",
+                            "poi_id_str": "str",
+                            "poi_location": "str",
+                            "poi_name": "str",
+                            "poi_type": "str",
+                            "search_source": "str"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "/v1/location/posts/{location_id}",
+            "schema": {
+                "aweme_list": [
+                    {
+                        "added_sound_music_info": {
+                            "album": "str",
+                            "artists": "str",
+                            "author": "str",
+                            "cover_large": {
+                                "uri": "str",
+                                "url_list": [
+                                    "list of str with length 1"
+                                ]
+                            },
+                            "cover_medium": {
+                                "uri": "str",
+                                "url_list": [
+                                    "list of str with length 1"
+                                ]
+                            },
+                            "cover_thumb": {
+                                "uri": "str",
+                                "url_list": [
+                                    "list of str with length 1"
+                                ]
+                            },
+                            "duration": "str",
+                            "duration_high_precision": {
+                                "duration_precision": "str"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "/v1/location/{location_id}",
+            "schema": {
+                "city_code": "str",
+                "cover": {
+                    "uri": "str"
+                },
+                "location": {
+                    "lat": "str",
+                    "lng": "str"
+                },
+                "poi_name": "str",
+                "share_info": {
+                    "share_desc": "str",
+                    "share_url": "str"
+                },
+                "status_code": "str",
+                "type_level": "str",
+                "video_count": "str"
+            }
+        },
+        {
+            "name": "/v1/user/{user_id}/followings",
+            "schema": {
+                "status_code": "int",
+                "status_msg": "str"
+            }
+        },
+        {
+            "name": "/v1/user/{user_id}/followers",
+            "schema": {
+                "status_code": "int",
+                "status_msg": "str"
+            }
+        },
+        {
+            "name": "/v1/user/{user_id}/qr_code",
+            "schema": {
+                "qrcode_url": {
+                    "uri": "str",
+                    "url_list": [
+                        "list of str with length 1"
+                    ]
+                },
+                "status_code": "int"
+            }
+        },
+        {
+            "name": "/v1/user/{user_id}",
+            "schema": {
+                "user": {
+                    "account_type": "str",
+                    "ad_virtual": "str",
+                    "apple_account": "str",
+                    "aweme_count": "str",
+                    "commerce_user_level": "str",
+                    "custom_verify": "str",
+                    "favoriting_count": "str",
+                    "follow_status": "str",
+                    "follower_count": "str",
+                    "follower_status": "str",
+                    "following_count": "str",
+                    "forward_count": "str"
+                }
+            }
+        },
+        {
+            "name": "/v1/user/username/{username}",
+            "schema": {
+                "extra": {},
+                "log_pb": {
+                    "impr_id": "str"
+                },
+                "sec_uid": "str",
+                "status_code": "int",
+                "uid": "str"
+            }
+        },
+        {
+            "name": "/v1/user/{user_id}/playlist",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "/v1/user/{user_id}/playlist/{playlist_id}",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "/v1/user/{username}",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "/v1/post/user/{user_id}/posts",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "/v1/search/live",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "/v1/post/user/{user_id}/liked_posts",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "/v1/search/music",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "/v1/search/user",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "/v1/search/post",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "/v1/post",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "/v1/post/{post_id}",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "/v1/search/hashtag",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "/v1/post/{post_id}/comments",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "/v1/category",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "/v1/feed/recommended",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "/v1/music/{music_id}",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "/v1/music/posts/{music_id}",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "/v1/sticker",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "/v1/hashtag/posts/{hashtag_id}",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "/v1/hashtag/{hashtag_id}",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "/v1/sticker/{sticker_id}",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "/v1/sticker/posts/{sticker_id}",
+            "schema": {
+                "message": "str"
+            }
+        }
+    ]
+}

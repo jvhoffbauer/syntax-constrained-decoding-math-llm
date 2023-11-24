@@ -1,0 +1,88 @@
+{
+    "api_list": [
+        {
+            "name": "Advanced Search",
+            "schema": {
+                "page": "int",
+                "results": [
+                    {
+                        "imdbid": "str",
+                        "title": "str",
+                        "imdbrating": "float",
+                        "released": "int",
+                        "type": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Basic Info",
+            "schema": {
+                "peopleid": "str",
+                "name": "str",
+                "profession": [
+                    "list of str with length 1"
+                ],
+                "knownForTitles": [
+                    "list of str with length 1"
+                ],
+                "birthYear": "str",
+                "deathYear": "str"
+            }
+        },
+        {
+            "name": "Search",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Title Details",
+            "schema": {
+                "imageurl": [
+                    "list of str with length 1"
+                ],
+                "genre": [
+                    "list of str with length 1"
+                ],
+                "imdbid": "str",
+                "title": "str",
+                "runtime": "str",
+                "imdbrating": "float",
+                "released": "int",
+                "synopsis": "str",
+                "type": "str",
+                "language": [
+                    "list of str with length 1"
+                ],
+                "streamingAvailability": {
+                    "country": {
+                        "US": [
+                            {
+                                "platform": "str"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "name": "Additional Title Details",
+            "schema": {
+                "imdbid": "str",
+                "title": "str",
+                "numVotes": "str",
+                "trailerUrl": [
+                    "list of str with length 1"
+                ],
+                "plotSummary": "str"
+            }
+        },
+        {
+            "name": "OTT Providers",
+            "schema": {
+                "message": "str"
+            }
+        }
+    ]
+}

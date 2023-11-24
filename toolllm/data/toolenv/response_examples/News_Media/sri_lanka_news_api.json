@@ -1,0 +1,28 @@
+{
+    "api_list": [
+        {
+            "name": "Get news from one news source",
+            "schema": {
+                "title": "str",
+                "url": "str",
+                "timestamp": "str",
+                "img": "str",
+                "source": "str"
+            }
+        },
+        {
+            "name": "Get all latest news",
+            "schema": {
+                "data": [
+                    {
+                        "title": "str",
+                        "url": "str",
+                        "timestamp": "str",
+                        "source": "str"
+                    }
+                ],
+                "succes": "str"
+            }
+        }
+    ]
+}

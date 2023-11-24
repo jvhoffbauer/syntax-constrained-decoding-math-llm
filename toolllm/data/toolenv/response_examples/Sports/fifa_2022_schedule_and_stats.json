@@ -1,0 +1,47 @@
+{
+    "api_list": [
+        {
+            "name": "Get matches on a specific date",
+            "schema": {
+                "matches": [
+                    {
+                        "CompetitionName": [
+                            {
+                                "Locale": "str",
+                                "Description": "str"
+                            }
+                        ],
+                        "SeasonName": [
+                            {
+                                "Locale": "str",
+                                "Description": "str"
+                            }
+                        ],
+                        "Date": "str",
+                        "LocalDate": "str",
+                        "Home": {
+                            "IdTeam": "str",
+                            "TeamName": [
+                                {
+                                    "Locale": "str",
+                                    "Description": "str"
+                                }
+                            ]
+                        },
+                        "Away": {
+                            "IdTeam": "str",
+                            "TeamName": [
+                                {
+                                    "Locale": "str",
+                                    "Description": "str"
+                                }
+                            ]
+                        },
+                        "HomeTeamScore": "str",
+                        "AwayTeamScore": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

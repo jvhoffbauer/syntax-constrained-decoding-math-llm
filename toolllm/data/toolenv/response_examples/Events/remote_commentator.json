@@ -1,0 +1,63 @@
+{
+    "api_list": [
+        {
+            "name": "initConfig",
+            "schema": {
+                "result": {
+                    "urlInfo": {
+                        "driver": "str",
+                        "record": "str",
+                        "gateway": "str",
+                        "userservice": "str",
+                        "front": "str",
+                        "joinLink": "str",
+                        "partyline": "str",
+                        "purchaseLink": "str",
+                        "producerStudioUrl": "str",
+                        "ccWebsocket": "str",
+                        "audioMixerUrl": "str",
+                        "mediaApiUrl": "str",
+                        "mediaServerUrl": "str",
+                        "shareServerUrl": "str",
+                        "centralAudioMixerUrl": "str"
+                    },
+                    "serviceNames": [
+                        "list of str with length 1"
+                    ],
+                    "serverName": "str",
+                    "gaCode": "str",
+                    "apiEnv": "str",
+                    "versionControl": {
+                        "versionUrl": "str",
+                        "versionApiUrl": "str",
+                        "versionCode": "str"
+                    },
+                    "eventMaxParty": "str",
+                    "wsInvokeServerName": "str",
+                    "cc": {
+                        "mediaServerUrl": "str",
+                        "shareServerUrl": "str",
+                        "mediaApiUrl": "str",
+                        "demandPlatform": "str"
+                    },
+                    "applicationName": "str"
+                }
+            }
+        },
+        {
+            "name": "Get Running Task Ids",
+            "schema": {
+                "errorCode": "str",
+                "result": "str"
+            }
+        },
+        {
+            "name": "Get User Setting List",
+            "schema": {
+                "errorInfo": "str",
+                "errorCode": "str",
+                "result": "str"
+            }
+        }
+    ]
+}

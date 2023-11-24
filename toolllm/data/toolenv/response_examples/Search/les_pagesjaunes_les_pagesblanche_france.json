@@ -1,0 +1,37 @@
+{
+    "api_list": [
+        {
+            "name": "PagesBlanches",
+            "schema": {
+                "keyword": "str",
+                "location": "str",
+                "count": "int",
+                "page": "str",
+                "items": [
+                    {
+                        "name": "str",
+                        "address": {
+                            "acc": "str",
+                            "city": "str",
+                            "st": "str",
+                            "st_nb": "str",
+                            "zip": "str"
+                        },
+                        "phone": [
+                            {
+                                "num": "str"
+                            }
+                        ],
+                        "website": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "PagesJaunes",
+            "schema": {
+                "message": "str"
+            }
+        }
+    ]
+}

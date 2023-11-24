@@ -1,0 +1,86 @@
+{
+    "api_list": [
+        {
+            "name": "Author with his photo",
+            "schema": {
+                "name": "str",
+                "img": "str"
+            }
+        },
+        {
+            "name": "Driver's quotes with pagination of 10 quotes each page",
+            "schema": {
+                "quote": "str",
+                "author": "str"
+            }
+        },
+        {
+            "name": "Driver's quotes by ID",
+            "schema": {
+                "quote": "str",
+                "author": "str"
+            }
+        },
+        {
+            "name": "List of authors with photos",
+            "schema": {
+                "name": "str",
+                "img": "str",
+                "id": "str"
+            }
+        },
+        {
+            "name": "List of drivers and personalities",
+            "schema": {
+                "Alexander_Albon": "str",
+                "Jean_Alesi": "str",
+                "Fernando_Alonso": "str",
+                "Mario_Andretti": "str",
+                "Alberto_Ascari": "str",
+                "Rubens_Barrichello": "str",
+                "Mattia_Binotto": "str",
+                "Valtteri_Bottas": "str",
+                "Jack_Brabham": "str",
+                "Ross_Brawn": "str",
+                "Flavio_Briatore": "str",
+                "Jenson_Button": "str",
+                "David_Coulthard": "str",
+                "Ron_Dennis": "str",
+                "Bernie_Ecclestone": "str",
+                "Marcus_Ericsson": "str",
+                "Juan_Manuel_Fangio": "str",
+                "Giancarlo_Fisichella": "str",
+                "Emerson_Fittipaldi": "str",
+                "Pierre_Gasly": "str",
+                "Romain_Grosjean": "str",
+                "Mika_H\u00e4kkinen": "str",
+                "Lewis_Hamilton": "str",
+                "Damon_Hill": "str",
+                "Graham_Hill": "str",
+                "Phil_Hill": "str",
+                "Christian_Horner": "str",
+                "Nico_H\u00fclkenberg": "str",
+                "Jacky_Ickx": "str",
+                "Eddie_Irvine": "str",
+                "Kamui_Kobayashi": "str",
+                "Heikki_Kovalainen": "str",
+                "Robert_Kubica": "str",
+                "Daniil_Kvyat": "str",
+                "Nicholas_Latifi": "str",
+                "Niki_Lauda": "str",
+                "Charles_Leclerc": "str",
+                "Kevin_Magnussen": "str",
+                "Pastor_Maldonado": "str",
+                "Nigel_Mansell": "str"
+            }
+        },
+        {
+            "name": "Driver's quotes",
+            "schema": {
+                "id": "int",
+                "quote": "str",
+                "author": "str"
+            }
+        }
+    ]
+}

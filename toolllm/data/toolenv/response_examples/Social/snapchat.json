@@ -1,0 +1,250 @@
+{
+    "api_list": [
+        {
+            "name": "getStoryEpisodes",
+            "schema": {
+                "success": "bool",
+                "data": {
+                    "businessProfileId": "str",
+                    "publishedPremiumStoriesConnection": {
+                        "premiumStories": [
+                            {
+                                "story": {
+                                    "id": "str",
+                                    "title": "str",
+                                    "thumbnailUrl": "str",
+                                    "type": "str",
+                                    "__typename": "str"
+                                },
+                                "publishedTimeInSec": "int",
+                                "seasonNumber": "int",
+                                "episodeNumber": "int",
+                                "__typename": "str"
+                            }
+                        ],
+                        "__typename": "str"
+                    },
+                    "__typename": "str"
+                }
+            }
+        },
+        {
+            "name": "getStoryById",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "getUserLenses",
+            "schema": {
+                "success": "bool",
+                "data": [
+                    {
+                        "scannableUuid": "str",
+                        "lensName": "str",
+                        "lensPreviewImageUrl": "str",
+                        "iconUrl": "str",
+                        "unlockUrl": "str",
+                        "lensId": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "getLensItem",
+            "schema": {
+                "success": "str",
+                "data": {
+                    "lensDisplayInfo": {
+                        "lensName": "str",
+                        "lensPreviewImageUrl": "str",
+                        "lensPreviewVideoUrl": "str",
+                        "iconUrl": "str",
+                        "lensCreatorUsername": "str",
+                        "lensId": "str",
+                        "isOfficialSnapLens": "str"
+                    },
+                    "linkPreview": {
+                        "title": "str",
+                        "description": "str",
+                        "canonicalUrl": "str"
+                    },
+                    "pageMetadata": {
+                        "pageType": "str",
+                        "pageTitle": "str",
+                        "shareId": "str"
+                    }
+                }
+            }
+        },
+        {
+            "name": "getProfile",
+            "schema": {
+                "success": "str",
+                "data": {
+                    "username": "str",
+                    "title": "str",
+                    "snapcodeImageUrl": "str",
+                    "badge": "str",
+                    "categoryStringId": "str",
+                    "subcategoryStringId": "str",
+                    "subscriberCount": "str",
+                    "bio": "str",
+                    "websiteUrl": "str",
+                    "profilePictureUrl": "str",
+                    "address": "str",
+                    "hasCuratedHighlights": "str",
+                    "hasSpotlightHighlights": "str",
+                    "mutableName": "str",
+                    "publisherType": "str",
+                    "squareHeroImageUrl": "str",
+                    "primaryColor": "str",
+                    "hasStory": "str"
+                }
+            }
+        },
+        {
+            "name": "getStoryByLink",
+            "schema": {
+                "success": "str",
+                "data": {
+                    "viewerInfo": {
+                        "country": "str",
+                        "locale": "str",
+                        "isGdprCountry": "str"
+                    },
+                    "localization": {
+                        "direction": "str"
+                    },
+                    "pageLinks": {
+                        "oneLinkUrl": "str",
+                        "snapcodeImageUrl": "str",
+                        "deepLinkUrl": "str",
+                        "iosAppStoreUrl": "str"
+                    },
+                    "pageMetadata": {
+                        "pageType": "str",
+                        "pageTitle": "str",
+                        "shareId": "str"
+                    },
+                    "linkPreview": {
+                        "title": "str",
+                        "description": "str",
+                        "canonicalUrl": "str",
+                        "twitterImage": {
+                            "url": "str"
+                        },
+                        "facebookImage": {
+                            "url": "str"
+                        }
+                    },
+                    "publicProfileInfo": {
+                        "username": "str",
+                        "title": "str"
+                    }
+                }
+            }
+        },
+        {
+            "name": "getLensesByHashtag",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "getLensCreators",
+            "schema": {
+                "success": "bool",
+                "data": {
+                    "hasMore": "bool",
+                    "nextCursorId": "str",
+                    "creatorDisplayInfos": [
+                        {
+                            "name": "str",
+                            "username": "str",
+                            "isOfficialCreator": "bool",
+                            "profilePicUrl": "str",
+                            "lensPreviewInfos": [
+                                {
+                                    "iconUrl": "str",
+                                    "thumbnailMediaUrl": "str"
+                                }
+                            ],
+                            "hasStory": "bool"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "getMusicLenses",
+            "schema": {
+                "success": "str",
+                "data": {
+                    "hasMore": "str",
+                    "nextCursorId": "str",
+                    "topLenses": [
+                        {
+                            "lensName": "str",
+                            "lensPreviewImageUrl": "str",
+                            "lensPreviewVideoUrl": "str",
+                            "iconUrl": "str",
+                            "lensId": "str"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "getWorldLenses",
+            "schema": {
+                "success": "str",
+                "data": {
+                    "hasMore": "str",
+                    "nextCursorId": "str",
+                    "topLenses": [
+                        {
+                            "lensName": "str",
+                            "lensCreatorDisplayName": "str",
+                            "lensPreviewImageUrl": "str",
+                            "iconUrl": "str",
+                            "lensCreatorUsername": "str",
+                            "lensId": "str",
+                            "isOfficialSnapLens": "str"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "getFaceLenses",
+            "schema": {
+                "success": "str",
+                "data": {
+                    "hasMore": "str",
+                    "nextCursorId": "str",
+                    "topLenses": [
+                        {
+                            "lensName": "str",
+                            "lensCreatorDisplayName": "str",
+                            "lensPreviewImageUrl": "str",
+                            "lensPreviewVideoUrl": "str",
+                            "iconUrl": "str",
+                            "unlockUrl": "str",
+                            "userProfileUrl": "str",
+                            "lensCreatorUsername": "str",
+                            "lensId": "str",
+                            "isOfficialSnapLens": "str"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "getTrendingLenses",
+            "schema": {
+                "message": "str"
+            }
+        }
+    ]
+}

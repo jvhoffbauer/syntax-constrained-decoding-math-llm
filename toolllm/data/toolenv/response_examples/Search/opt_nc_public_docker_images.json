@@ -1,0 +1,50 @@
+{
+    "api_list": [
+        {
+            "name": "GET D\u00e9tails image",
+            "schema": {
+                "user": "str",
+                "name": "str",
+                "namespace": "str",
+                "repository_type": "str",
+                "status": "str",
+                "status_description": "str",
+                "description": "str",
+                "is_private": "str",
+                "is_automated": "str",
+                "star_count": "str",
+                "pull_count": "str",
+                "last_updated": "str",
+                "date_registered": "str",
+                "collaborator_count": "str",
+                "hub_user": "str",
+                "has_starred": "str",
+                "permissions": {
+                    "read": "str",
+                    "write": "str",
+                    "admin": "str"
+                }
+            }
+        },
+        {
+            "name": "GET ALL Images",
+            "schema": {
+                "count": "int",
+                "next": "str",
+                "results": [
+                    {
+                        "name": "str",
+                        "namespace": "str",
+                        "repository_type": "str",
+                        "description": "str",
+                        "is_private": "bool",
+                        "star_count": "int",
+                        "pull_count": "int",
+                        "last_updated": "str",
+                        "date_registered": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

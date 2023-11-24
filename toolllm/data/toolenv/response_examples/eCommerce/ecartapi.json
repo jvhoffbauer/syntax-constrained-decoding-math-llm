@@ -1,0 +1,28 @@
+{
+    "api_list": [
+        {
+            "name": "GetasingleWebhoook",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "GetallstoreWebhoooks",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Getallcarts",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Getsinglecart",
+            "schema": {
+                "message": "str"
+            }
+        }
+    ]
+}

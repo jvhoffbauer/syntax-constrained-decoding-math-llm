@@ -1,0 +1,19 @@
+{
+    "api_list": [
+        {
+            "name": "/api/TripDetails/{MFRef}",
+            "schema": {
+                "Success": "bool",
+                "Data": "NoneType",
+                "Message": "str"
+            }
+        },
+        {
+            "name": "/api/ScheduleChangeAccept/{MFRef}/{FlightId}",
+            "schema": {
+                "Success": "bool",
+                "Message": "str"
+            }
+        }
+    ]
+}

@@ -1,0 +1,1180 @@
+{
+    "api_list": [
+        {
+            "name": "title/get-sound-tracks",
+            "schema": {
+                "base": {
+                    "id": "str",
+                    "title": "str",
+                    "titleType": "str",
+                    "year": "str"
+                },
+                "soundtracks": [
+                    {
+                        "name": "str",
+                        "products": [
+                            {
+                                "productId": {
+                                    "key": "str",
+                                    "keyType": "str",
+                                    "region": "str"
+                                }
+                            }
+                        ],
+                        "relatedNames": [
+                            {
+                                "name": "str"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "name": "title/get-releases",
+            "schema": {
+                "attributes": [
+                    "list of str with length 1"
+                ],
+                "date": "str",
+                "region": "str"
+            }
+        },
+        {
+            "name": "title/get-all-images",
+            "schema": {
+                "resource": {
+                    "@type": "str",
+                    "images": [
+                        {
+                            "attribution": "str",
+                            "caption": "str",
+                            "copyright": "str",
+                            "url": "str",
+                            "relatedTitles": [
+                                {
+                                    "title": "str",
+                                    "titleType": "str",
+                                    "year": "int"
+                                }
+                            ],
+                            "source": "str",
+                            "type": "str"
+                        }
+                    ],
+                    "totalImageCount": "int"
+                }
+            }
+        },
+        {
+            "name": "title/get-charname-list",
+            "schema": {
+                "nm3964231": {
+                    "name": {
+                        "@type": "str",
+                        "akas": [
+                            "list of str with length 1"
+                        ],
+                        "id": "str",
+                        "image": {
+                            "url": "str"
+                        },
+                        "name": "str"
+                    },
+                    "charname": [
+                        {
+                            "akas": [
+                                "list of str with length 1"
+                            ],
+                            "id": "str",
+                            "image": {
+                                "url": "str"
+                            },
+                            "name": "str",
+                            "category": "str",
+                            "characters": [
+                                "list of str with length 1"
+                            ],
+                            "endYear": "str",
+                            "episodeCount": "str",
+                            "roles": [
+                                {
+                                    "character": "str",
+                                    "characterId": "str"
+                                }
+                            ],
+                            "startYear": "str"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "title/v2/get-business",
+            "schema": {
+                "titleBoxOffice": {
+                    "title": "str",
+                    "year": "int",
+                    "budget": {
+                        "amount": "int",
+                        "currency": "str"
+                    },
+                    "gross": {
+                        "aggregations": [
+                            {
+                                "area": "str",
+                                "total": {
+                                    "amount": "int",
+                                    "currency": "str"
+                                }
+                            }
+                        ],
+                        "regional": [
+                            {
+                                "region": "str",
+                                "total": {
+                                    "amount": "int",
+                                    "currency": "str"
+                                }
+                            }
+                        ]
+                    },
+                    "openingWeekendGross": {
+                        "aggregations": [
+                            {
+                                "area": "str",
+                                "total": {
+                                    "amount": "int",
+                                    "currency": "str"
+                                }
+                            }
+                        ],
+                        "regional": [
+                            {
+                                "region": "str",
+                                "total": {
+                                    "amount": "int",
+                                    "currency": "str"
+                                }
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "name": "title/get-base",
+            "schema": {
+                "@type": "str",
+                "id": "str",
+                "image": {
+                    "url": "str"
+                },
+                "title": "str",
+                "titleType": "str",
+                "year": "int"
+            }
+        },
+        {
+            "name": "title/get-hero-with-promoted-video",
+            "schema": {
+                "promotedVideo": "str",
+                "heroImages": [
+                    {
+                        "id": "str",
+                        "url": "str"
+                    }
+                ],
+                "topVideos": [
+                    {
+                        "primaryTitle": {
+                            "title": "str",
+                            "titleType": "str",
+                            "year": "str"
+                        },
+                        "title": "str"
+                    }
+                ],
+                "defaultTrailer": {
+                    "videoId": "str"
+                },
+                "fullLengthVideo": "str",
+                "fallbackVideo": "str",
+                "galleryTeaserImages": [
+                    {
+                        "id": "str",
+                        "url": "str"
+                    }
+                ],
+                "totalVideoCount": "str",
+                "totalImageCount": "str"
+            }
+        },
+        {
+            "name": "title/get-awards-summary",
+            "schema": {
+                "awardsSummary": {
+                    "highlighted": {
+                        "awardName": "str",
+                        "count": "int",
+                        "isWinner": "bool"
+                    },
+                    "otherNominationsCount": "int",
+                    "otherWinsCount": "int"
+                },
+                "highlightedRanking": {
+                    "rank": "int",
+                    "rankType": "str"
+                },
+                "title": "str",
+                "titleType": "str",
+                "year": "int"
+            }
+        },
+        {
+            "name": "title/get-awards",
+            "schema": {
+                "resource": {
+                    "awards": [
+                        {
+                            "awardName": "str",
+                            "category": "str",
+                            "eventName": "str",
+                            "isWinner": "str",
+                            "nominations": {
+                                "titles": [
+                                    {
+                                        "title": "str"
+                                    }
+                                ]
+                            },
+                            "year": "str"
+                        }
+                    ],
+                    "id": "str"
+                }
+            }
+        },
+        {
+            "name": "title/get-top-crew",
+            "schema": {
+                "directors": [
+                    {
+                        "name": "str",
+                        "category": "str",
+                        "endYear": "int",
+                        "episodeCount": "int",
+                        "startYear": "int"
+                    }
+                ],
+                "writers": [
+                    {
+                        "name": "str",
+                        "category": "str",
+                        "endYear": "int",
+                        "episodeCount": "int",
+                        "job": "str",
+                        "startYear": "int"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "title/get-plots",
+            "schema": {
+                "base": {
+                    "@type": "str",
+                    "id": "str",
+                    "image": {
+                        "height": "int",
+                        "url": "str",
+                        "width": "int"
+                    },
+                    "title": "str",
+                    "titleType": "str",
+                    "year": "int"
+                },
+                "plots": [
+                    {
+                        "text": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "title/get-versions",
+            "schema": {
+                "alternateTitles": [
+                    {
+                        "region": "str",
+                        "title": "str",
+                        "types": [
+                            "list of str with length 1"
+                        ]
+                    }
+                ],
+                "defaultTitle": "str",
+                "silent": "bool",
+                "spokenLanguages": [
+                    "list of str with length 1"
+                ],
+                "originalTitle": "str",
+                "runningTimes": [
+                    {
+                        "timeMinutes": "int"
+                    }
+                ],
+                "id": "str",
+                "title": "str",
+                "titleType": "str",
+                "year": "int"
+            }
+        },
+        {
+            "name": "title/get-full-credits",
+            "schema": {
+                "base": {
+                    "id": "str",
+                    "title": "str",
+                    "titleType": "str",
+                    "year": "int"
+                },
+                "cast": [
+                    {
+                        "name": "str",
+                        "characters": [
+                            "list of str with length 1"
+                        ]
+                    }
+                ],
+                "crew": {
+                    "director": [
+                        {
+                            "name": "str"
+                        }
+                    ],
+                    "producer": [
+                        {
+                            "name": "str"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "title/get-details",
+            "schema": {
+                "@type": "str",
+                "id": "str",
+                "image": {
+                    "url": "str"
+                },
+                "runningTimeInMinutes": "int",
+                "numberOfEpisodes": "int",
+                "seriesEndYear": "int",
+                "seriesStartYear": "int",
+                "title": "str",
+                "titleType": "str",
+                "year": "int"
+            }
+        },
+        {
+            "name": "title/get-videos",
+            "schema": {
+                "resource": {
+                    "@type": "str",
+                    "id": "str",
+                    "image": {
+                        "url": "str"
+                    },
+                    "title": "str",
+                    "titleType": "str",
+                    "year": "str",
+                    "size": "str",
+                    "videoCounts": [
+                        {
+                            "count": "str"
+                        }
+                    ],
+                    "videos": [
+                        {
+                            "contentType": "str",
+                            "description": "str",
+                            "durationInSeconds": "str",
+                            "image": {
+                                "url": "str"
+                            },
+                            "primaryTitle": {
+                                "episode": "str",
+                                "season": "str",
+                                "title": "str",
+                                "titleType": "str",
+                                "year": "str"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "title/find",
+            "schema": {
+                "@meta": {},
+                "query": "str",
+                "results": [
+                    {
+                        "id": "str",
+                        "image": {
+                            "url": "str"
+                        },
+                        "title": "str",
+                        "titleType": "str",
+                        "year": "str",
+                        "principals": [
+                            {
+                                "name": "str",
+                                "category": "str"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "name": "title/v2/find",
+            "schema": {
+                "@meta": {
+                    "operation": "str",
+                    "requestId": "str",
+                    "serviceTimeMs": "float"
+                },
+                "paginationKey": "str",
+                "results": [
+                    {
+                        "id": "str",
+                        "image": {
+                            "url": "str"
+                        },
+                        "title": "str",
+                        "titleType": "str",
+                        "year": "int"
+                    }
+                ],
+                "totalMatches": "int"
+            }
+        },
+        {
+            "name": "title/get-company-credits",
+            "schema": {
+                "categories": [
+                    {
+                        "name": "str",
+                        "section": {
+                            "items": [
+                                {
+                                    "id": "str",
+                                    "rowTitle": "str"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "title/get-synopses",
+            "schema": {
+                "id": "str",
+                "language": "str",
+                "text": "str"
+            }
+        },
+        {
+            "name": "actors/get-filmography-appearances",
+            "schema": {
+                "episodeAppearances": "str",
+                "category": "str",
+                "endYear": "str",
+                "episodeCount": "str",
+                "startYear": "str",
+                "id": "str",
+                "status": "str",
+                "title": "str",
+                "titleType": "str",
+                "year": "str",
+                "episodes": [
+                    {
+                        "billing": "str",
+                        "category": "str",
+                        "id": "str",
+                        "status": "str",
+                        "title": "str",
+                        "titleType": "str",
+                        "year": "str",
+                        "episodeNumber": "str",
+                        "releaseDate": "str",
+                        "seasonNumber": "str"
+                    }
+                ],
+                "seriesEndYear": "str",
+                "seriesStartYear": "str"
+            }
+        },
+        {
+            "name": "actors/get-all-images",
+            "schema": {
+                "resource": {
+                    "images": [
+                        {
+                            "attribution": "str",
+                            "caption": "str",
+                            "copyright": "str",
+                            "createdOn": "str",
+                            "height": "str",
+                            "id": "str",
+                            "url": "str",
+                            "width": "str",
+                            "relatedNames": [
+                                {
+                                    "id": "str",
+                                    "image": {
+                                        "id": "str",
+                                        "url": "str"
+                                    },
+                                    "name": "str"
+                                }
+                            ],
+                            "relatedTitles": [
+                                {
+                                    "id": "str",
+                                    "image": {
+                                        "id": "str",
+                                        "url": "str"
+                                    },
+                                    "title": "str",
+                                    "titleType": "str",
+                                    "year": "str"
+                                }
+                            ],
+                            "source": "str",
+                            "type": "str"
+                        }
+                    ],
+                    "totalImageCount": "str"
+                }
+            }
+        },
+        {
+            "name": "title/get-quotes",
+            "schema": {
+                "base": {
+                    "@type": "str",
+                    "id": "str",
+                    "image": {
+                        "height": "int",
+                        "url": "str",
+                        "width": "int"
+                    },
+                    "title": "str",
+                    "titleType": "str",
+                    "year": "int"
+                },
+                "quotes": [
+                    {
+                        "interestingVotes": {
+                            "up": "int"
+                        },
+                        "lines": [
+                            {
+                                "characters": [
+                                    {
+                                        "character": "str"
+                                    }
+                                ],
+                                "text": "str"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "name": "title/get-filming-locations",
+            "schema": {
+                "base": {
+                    "id": "str",
+                    "image": {
+                        "id": "str",
+                        "url": "str"
+                    },
+                    "runningTimeInMinutes": "int",
+                    "nextEpisode": "str",
+                    "numberOfEpisodes": "int",
+                    "seriesEndYear": "int",
+                    "seriesStartYear": "int",
+                    "title": "str",
+                    "titleType": "str",
+                    "year": "int"
+                },
+                "id": "str",
+                "locations": [
+                    {
+                        "location": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "title/get-images",
+            "schema": {
+                "images": [
+                    {
+                        "attribution": "str",
+                        "caption": "str",
+                        "copyright": "str",
+                        "createdOn": "str",
+                        "height": "int",
+                        "id": "str",
+                        "url": "str",
+                        "width": "int",
+                        "relatedTitles": [
+                            {
+                                "id": "str",
+                                "title": "str",
+                                "titleType": "str",
+                                "year": "int"
+                            }
+                        ],
+                        "source": "str",
+                        "type": "str"
+                    }
+                ],
+                "totalImageCount": "int"
+            }
+        },
+        {
+            "name": "title/auto-complete (Deprecated)",
+            "schema": {
+                "d": [
+                    {
+                        "i": {
+                            "imageUrl": "str"
+                        },
+                        "id": "str",
+                        "l": "str",
+                        "s": "str"
+                    }
+                ],
+                "q": "str",
+                "v": "int"
+            }
+        },
+        {
+            "name": "title/get-crazycredits",
+            "schema": {
+                "title": "str",
+                "titleType": "str",
+                "year": "int",
+                "crazycredits": [
+                    {
+                        "interestingVotes": {
+                            "down": "int",
+                            "up": "int"
+                        },
+                        "text": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "title/get-news",
+            "schema": {
+                "items": [
+                    {
+                        "head": "str",
+                        "image": {
+                            "url": "str"
+                        },
+                        "link": "str",
+                        "publishDateTime": "str",
+                        "source": {
+                            "label": "str"
+                        }
+                    }
+                ],
+                "title": "str",
+                "titleType": "str",
+                "year": "str"
+            }
+        },
+        {
+            "name": "title/get-user-reviews",
+            "schema": {
+                "base": {
+                    "title": "str",
+                    "titleType": "str",
+                    "year": "str"
+                },
+                "paginationKey": "str",
+                "reviews": [
+                    {
+                        "author": {
+                            "displayName": "str"
+                        },
+                        "authorRating": "str",
+                        "helpfulnessScore": "str",
+                        "reviewText": "str",
+                        "reviewTitle": "str",
+                        "spoiler": "str",
+                        "submissionDate": "str"
+                    }
+                ],
+                "totalReviews": "str"
+            }
+        },
+        {
+            "name": "title/get-ratings",
+            "schema": {
+                "id": "str",
+                "title": "str",
+                "titleType": "str",
+                "year": "str",
+                "canRate": "str",
+                "rating": "str",
+                "ratingCount": "str",
+                "ratingsHistograms": {
+                    "Females Aged 18-29": {
+                        "aggregateRating": "str",
+                        "totalRatings": "str"
+                    },
+                    "Males Aged under 18": {
+                        "aggregateRating": "str",
+                        "totalRatings": "str"
+                    },
+                    "Males Aged 18-29": {
+                        "aggregateRating": "str",
+                        "totalRatings": "str"
+                    },
+                    "Females Aged 30-44": {
+                        "aggregateRating": "str",
+                        "totalRatings": "str"
+                    }
+                }
+            }
+        },
+        {
+            "name": "auto-complete",
+            "schema": {
+                "d": [
+                    {
+                        "i": {
+                            "imageUrl": "str"
+                        },
+                        "id": "str",
+                        "l": "str",
+                        "s": "str"
+                    }
+                ],
+                "q": "str",
+                "v": "int"
+            }
+        },
+        {
+            "name": "actors/get-awards-summary",
+            "schema": {
+                "awardsSummary": {
+                    "highlighted": {
+                        "awardName": "str",
+                        "count": "int",
+                        "isWinner": "bool"
+                    },
+                    "otherNominationsCount": "int",
+                    "otherWinsCount": "int"
+                },
+                "id": "str",
+                "image": {
+                    "url": "str"
+                },
+                "legacyNameText": "str",
+                "name": "str"
+            }
+        },
+        {
+            "name": "actors/get-awards",
+            "schema": {
+                "@meta": {
+                    "requestId": "str",
+                    "serviceTimeMs": "str"
+                },
+                "resource": {
+                    "awards": [
+                        {
+                            "awardName": "str",
+                            "category": "str",
+                            "eventName": "str",
+                            "isWinner": "str",
+                            "nominations": {
+                                "names": [
+                                    {
+                                        "name": "str"
+                                    }
+                                ],
+                                "titles": [
+                                    {
+                                        "title": "str",
+                                        "titleType": "str",
+                                        "year": "str"
+                                    }
+                                ]
+                            },
+                            "year": "str"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "actors/get-known-for",
+            "schema": {
+                "title": {
+                    "@type": "str",
+                    "id": "str",
+                    "image": {
+                        "url": "str"
+                    },
+                    "title": "str",
+                    "titleType": "str",
+                    "year": "int"
+                },
+                "imdbRating": "float",
+                "summary": {
+                    "category": "str"
+                },
+                "categories": [
+                    "list of str with length 1"
+                ],
+                "whereToWatch": {
+                    "releaseDate": "str",
+                    "hasDigitalOffers": "bool"
+                }
+            }
+        },
+        {
+            "name": "actors/get-bio",
+            "schema": {
+                "@type": "str",
+                "id": "str",
+                "image": {
+                    "url": "str"
+                },
+                "name": "str",
+                "birthDate": "str",
+                "birthPlace": "str",
+                "gender": "str",
+                "realName": "str",
+                "spouses": [
+                    {
+                        "name": "str"
+                    }
+                ],
+                "trademarks": [
+                    "list of str with length 1"
+                ]
+            }
+        },
+        {
+            "name": "title/get-goofs",
+            "schema": {
+                "base": {
+                    "id": "str",
+                    "image": {
+                        "url": "str"
+                    },
+                    "runningTimeInMinutes": "str",
+                    "title": "str",
+                    "titleType": "str",
+                    "year": "str"
+                },
+                "goofs": {
+                    "spoilt": [
+                        {
+                            "interestingVotes": {
+                                "down": "str",
+                                "up": "str"
+                            },
+                            "spoiler": "str",
+                            "text": "str",
+                            "type": "str"
+                        }
+                    ],
+                    "unspoilt": [
+                        {
+                            "interestingVotes": {
+                                "down": "str",
+                                "up": "str"
+                            },
+                            "spoiler": "str",
+                            "text": "str",
+                            "type": "str"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "title/get-trivia",
+            "schema": {
+                "spoilt": [
+                    {
+                        "id": "str",
+                        "spoiler": "str",
+                        "text": "str"
+                    }
+                ],
+                "unspoilt": [
+                    {
+                        "id": "str",
+                        "spoiler": "str",
+                        "text": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "title/list-popular-genres",
+            "schema": {
+                "genres": [
+                    {
+                        "description": "str",
+                        "endpoint": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "title/get-video-playback",
+            "schema": {
+                "resource": {
+                    "encodings": [
+                        {
+                            "definition": "str",
+                            "mimeType": "str",
+                            "playUrl": "str"
+                        }
+                    ],
+                    "previews": [
+                        {
+                            "definition": "str",
+                            "mimeType": "str",
+                            "playUrl": "str"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "title/get-seasons",
+            "schema": {
+                "episodes": [
+                    {
+                        "episode": "int",
+                        "season": "int",
+                        "title": "str",
+                        "year": "int"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "title/get-technical",
+            "schema": {
+                "@type": "str",
+                "id": "str",
+                "title": "str",
+                "titleType": "str",
+                "year": "int",
+                "aspectRatios": [
+                    "list of str with length 1"
+                ],
+                "cameras": [
+                    "list of str with length 1"
+                ],
+                "colorations": [
+                    "list of str with length 1"
+                ],
+                "negativeFormats": [
+                    "list of str with length 1"
+                ],
+                "printedFormats": [
+                    "list of str with length 1"
+                ],
+                "processes": [
+                    "list of str with length 1"
+                ],
+                "soundMixes": [
+                    "list of str with length 1"
+                ]
+            }
+        },
+        {
+            "name": "title/get-metacritic",
+            "schema": {
+                "@type": "str",
+                "id": "str",
+                "title": {
+                    "id": "str",
+                    "image": {
+                        "url": "str"
+                    },
+                    "runningTimeInMinutes": "int",
+                    "nextEpisode": "str",
+                    "numberOfEpisodes": "int",
+                    "seriesEndYear": "int",
+                    "seriesStartYear": "int",
+                    "title": "str",
+                    "titleType": "str",
+                    "year": "int"
+                }
+            }
+        },
+        {
+            "name": "title/get-parental-guide",
+            "schema": {
+                "parentalguide": [
+                    {
+                        "items": [
+                            {
+                                "hasProfanity": "bool",
+                                "isSpoiler": "bool",
+                                "language": "str",
+                                "text": "str"
+                            }
+                        ],
+                        "label": "str",
+                        "severityVotes": {
+                            "status": "str"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "title/get-taglines",
+            "schema": {
+                "taglines": "empty list"
+            }
+        },
+        {
+            "name": "title/get-overview-details",
+            "schema": {
+                "id": "str",
+                "title": {
+                    "@type": "str",
+                    "id": "str",
+                    "title": "str",
+                    "titleType": "str",
+                    "year": "str"
+                },
+                "certificates": {
+                    "US": [
+                        {
+                            "certificate": "str",
+                            "country": "str"
+                        }
+                    ]
+                },
+                "ratings": {
+                    "rating": "str",
+                    "ratingCount": "str"
+                },
+                "genres": [
+                    "list of str with length 1"
+                ],
+                "releaseDate": "str"
+            }
+        },
+        {
+            "name": "actors/get-all-videos",
+            "schema": {
+                "resource": {
+                    "id": "str",
+                    "image": {
+                        "url": "str"
+                    },
+                    "legacyNameText": "str",
+                    "name": "str",
+                    "videoCounts": [
+                        {
+                            "count": "str"
+                        }
+                    ],
+                    "videos": [
+                        {
+                            "primaryTitle": {
+                                "image": {
+                                    "url": "str"
+                                },
+                                "title": "str"
+                            },
+                            "title": "str"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "actors/get-all-news",
+            "schema": {
+                "items": [
+                    {
+                        "body": "str",
+                        "head": "str",
+                        "id": "str",
+                        "image": {
+                            "url": "str"
+                        },
+                        "link": "str",
+                        "publishDateTime": "str",
+                        "source": {
+                            "label": "str"
+                        }
+                    }
+                ],
+                "label": "str",
+                "akas": [
+                    "list of str with length 1"
+                ],
+                "name": "str",
+                "paginationKey": "str"
+            }
+        },
+        {
+            "name": "actors/get-all-filmography",
+            "schema": {
+                "id": "str",
+                "base": {
+                    "@type": "str",
+                    "image": {
+                        "height": "int",
+                        "url": "str",
+                        "width": "int"
+                    },
+                    "name": "str"
+                },
+                "filmography": [
+                    {
+                        "category": "str",
+                        "image": {
+                            "height": "int",
+                            "url": "str",
+                            "width": "int"
+                        },
+                        "status": "str",
+                        "title": "str",
+                        "titleType": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

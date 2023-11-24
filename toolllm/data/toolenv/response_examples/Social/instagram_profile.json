@@ -1,0 +1,376 @@
+{
+    "api_list": [
+        {
+            "name": "GET Video",
+            "schema": {
+                "status": "str",
+                "message": "str",
+                "data": {
+                    "owner": {
+                        "id": "str",
+                        "username": "str",
+                        "full_name": "str",
+                        "is_private": "str",
+                        "is_verified": "str",
+                        "profile_pic_url_proxy": "str",
+                        "followers": "str",
+                        "following": "str"
+                    },
+                    "page_info": {
+                        "has_next_page": "str",
+                        "next": "str"
+                    },
+                    "count_media": "str",
+                    "media": [
+                        {
+                            "id": "str",
+                            "shortcode": "str",
+                            "link_to_post": "str",
+                            "display_url_proxy": "str",
+                            "is_video": "str",
+                            "comment_count": "str",
+                            "like": "str",
+                            "caption": "str",
+                            "thumbnail_src_proxy": "str",
+                            "timestamp": "str",
+                            "video_views": "str"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "GET Profile Info",
+            "schema": {
+                "id": "str",
+                "username": "str",
+                "full_name": "str",
+                "bio": "str",
+                "followers": "str",
+                "following": "str",
+                "category_name": "str",
+                "is_private": "str",
+                "is_verified": "str",
+                "is_business": "str",
+                "profile_pic_url_proxy": "str",
+                "lastMedia": {
+                    "count": "str",
+                    "media": [
+                        {
+                            "shortcode": "str",
+                            "link_to_post": "str",
+                            "display_url_proxy": "str",
+                            "is_video": "str",
+                            "comment_count": "str",
+                            "like": "str",
+                            "caption": "str",
+                            "thumbnail_src_proxy": "str"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "GET Comments",
+            "schema": {
+                "status": "str",
+                "message": "str",
+                "data": {
+                    "comment_likes_enabled": "str",
+                    "count_all_comment": "str",
+                    "count_comment": "str",
+                    "comments": [
+                        {
+                            "comment": {
+                                "id": "str",
+                                "status": "str",
+                                "text": "str",
+                                "has_liked_comment": "str",
+                                "comment_like_count": "str"
+                            },
+                            "owner": {
+                                "username": "str",
+                                "full_name": "str",
+                                "is_private": "str",
+                                "is_verified": "str",
+                                "profile_pic_url_proxy": "str"
+                            }
+                        }
+                    ],
+                    "next": "str"
+                }
+            }
+        },
+        {
+            "name": "GET Info",
+            "schema": {
+                "status": "str",
+                "message": "str",
+                "data": {
+                    "id": "str",
+                    "username": "str",
+                    "full_name": "str",
+                    "is_private": "str",
+                    "is_verified": "str",
+                    "profile_pic_url_proxy": "str",
+                    "followers": "str",
+                    "following": "str"
+                }
+            }
+        },
+        {
+            "name": "GET Likers",
+            "schema": {
+                "data": {
+                    "link_to_post": "str",
+                    "likers": "str"
+                }
+            }
+        },
+        {
+            "name": "GET Reel",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "GET Feed",
+            "schema": {
+                "owner": {
+                    "id": "str",
+                    "username": "str",
+                    "full_name": "str",
+                    "is_private": "str",
+                    "is_verified": "str",
+                    "profile_pic_url_proxy": "str",
+                    "followers": "str",
+                    "following": "str",
+                    "fbid": "str"
+                },
+                "page_info": {
+                    "has_next_page": "str",
+                    "next": "str"
+                },
+                "count_media": "str",
+                "media": [
+                    {
+                        "shortcode": "str",
+                        "link_to_post": "str",
+                        "display_url_proxy": "str",
+                        "is_video": "str",
+                        "comment_count": "str",
+                        "like": "str",
+                        "caption": "str",
+                        "thumbnail_src_proxy": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "GET Detail Post",
+            "schema": {
+                "owner": {
+                    "full_name": "str",
+                    "profile_pic_url_proxy": "str",
+                    "username": "str"
+                },
+                "media": {
+                    "shortcode": "str",
+                    "link_to_post": "str",
+                    "display_url_proxy": "str",
+                    "like": "str",
+                    "comment_count": "str",
+                    "caption": "str"
+                }
+            }
+        },
+        {
+            "name": "GET Username",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "GET Story",
+            "schema": {
+                "count": "str",
+                "story": [
+                    {
+                        "id": "str",
+                        "link_to_story": "str",
+                        "taken_at": "str",
+                        "static_image_proxy": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "GET Profile",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "GET ID",
+            "schema": {
+                "id": "str",
+                "username": "str",
+                "full_name": "str",
+                "is_private": "bool",
+                "profile_pic_url_proxy": "str",
+                "is_verified": "bool"
+            }
+        },
+        {
+            "name": "GET Highlight Item",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "GET Highlights",
+            "schema": {
+                "status": "str",
+                "message": "str",
+                "data": {
+                    "owner": {
+                        "id": "str",
+                        "username": "str",
+                        "full_name": "str",
+                        "is_private": "str",
+                        "profile_pic_url_proxy": "str",
+                        "is_verified": "str"
+                    },
+                    "is_live": "str",
+                    "highlights": [
+                        {
+                            "id": "str",
+                            "title": "str",
+                            "thumbnail_src_proxy": "str",
+                            "link_to_post": "str"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "GET Search Keyword",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "GET Searchuser",
+            "schema": {
+                "search_param": "str",
+                "count": "int",
+                "result": [
+                    {
+                        "username": "str",
+                        "full_name": "str",
+                        "is_private": "bool",
+                        "is_verified": "bool",
+                        "has_anonymous_profile_picture": "bool",
+                        "profile_pic_url_proxy": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "GET Hashtags",
+            "schema": {
+                "status": "str",
+                "message": "str",
+                "data": {
+                    "media_count": "str",
+                    "media": [
+                        {
+                            "id": "str",
+                            "shortcode": "str",
+                            "link_to_post": "str",
+                            "carousel_media_count": "str",
+                            "like_count": "str",
+                            "comment_count": "str",
+                            "caption": "str",
+                            "created_at": "str",
+                            "owner": {
+                                "username": "str",
+                                "full_name": "str",
+                                "is_private": "str",
+                                "profile_pic_url_proxy": "str"
+                            }
+                        }
+                    ],
+                    "has_next_page": "str",
+                    "next": "str"
+                }
+            }
+        },
+        {
+            "name": "GET Places",
+            "schema": {
+                "status": "str",
+                "message": "str",
+                "data": {
+                    "media_count": "str",
+                    "media": [
+                        {
+                            "id": "str",
+                            "shortcode": "str",
+                            "link_to_post": "str",
+                            "carousel_media_count": "str",
+                            "like_count": "str",
+                            "comment_count": "str",
+                            "location": {
+                                "name": "str"
+                            },
+                            "owner": {
+                                "username": "str",
+                                "full_name": "str",
+                                "profile_pic_url_proxy": "str"
+                            }
+                        }
+                    ],
+                    "has_next_page": "str"
+                }
+            }
+        },
+        {
+            "name": "GET Following by id",
+            "schema": {
+                "user_id": "str",
+                "count": "int",
+                "following": [
+                    {
+                        "username": "str",
+                        "full_name": "str",
+                        "is_private": "bool",
+                        "profile_pic_url_proxy": "str",
+                        "is_verified": "bool"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "GET Followers by username",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "GET Followers by id",
+            "schema": {
+                "user_id": "str",
+                "count": "int",
+                "followers": [
+                    {
+                        "username": "str",
+                        "is_private": "bool",
+                        "profile_pic_url_proxy": "str",
+                        "is_verified": "bool"
+                    }
+                ]
+            }
+        }
+    ]
+}

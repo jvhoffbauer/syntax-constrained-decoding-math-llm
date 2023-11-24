@@ -1,0 +1,101 @@
+{
+    "api_list": [
+        {
+            "name": "Get Amazon Product Offers",
+            "schema": {
+                "item": {
+                    "name": "str",
+                    "brand": "str",
+                    "listings_link": "str",
+                    "image": "str",
+                    "average_rating": "float",
+                    "total_reviews": "int"
+                },
+                "listings": [
+                    {
+                        "price_with_currency": "str",
+                        "price": "NoneType",
+                        "shipping_price": "NoneType",
+                        "has_prime_shipping": "bool",
+                        "sold_by": "str",
+                        "fullfilled_by_amazon": "bool"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Get Amazon Search Results",
+            "schema": {
+                "ads": "str",
+                "amazons_choice": "str",
+                "results": [
+                    {
+                        "name": "str",
+                        "image": "str",
+                        "has_prime": "str",
+                        "is_best_seller": "str",
+                        "is_amazon_choice": "str",
+                        "is_limited_deal": "str",
+                        "stars": "str",
+                        "total_reviews": "str",
+                        "url": "str",
+                        "price_string": "str",
+                        "price_symbol": "str",
+                        "price": "str"
+                    }
+                ],
+                "explore_more_items": "str",
+                "pagination": [
+                    "list of str with length 1"
+                ]
+            }
+        },
+        {
+            "name": "Get Amazon Product Details",
+            "schema": {
+                "name": "str",
+                "product_information": {
+                    "OS": "str",
+                    "RAM": "str",
+                    "Product Dimensions": "str",
+                    "Batteries": "str",
+                    "Wireless communication technologies": "str",
+                    "Connectivity technologies": "str",
+                    "Special features": "str",
+                    "Device interface - primary": "str",
+                    "Audio Jack": "str",
+                    "Form factor": "str",
+                    "Colour": "str",
+                    "Battery Power Rating": "str",
+                    "Manufacturer": "str",
+                    "Country of Origin": "str",
+                    "Item Weight": "str",
+                    "ASIN": "str",
+                    "Customer Reviews": {
+                        "ratings_count": "str",
+                        "stars": "str"
+                    },
+                    "Best Sellers Rank": [
+                        "list of str with length 1"
+                    ],
+                    "Date First Available": "str",
+                    "Packer": "str",
+                    "Importer": "str",
+                    "Item Dimensions LxWxH": "str",
+                    "Net Quantity": "str",
+                    "Generic Name": "str"
+                },
+                "brand": "str",
+                "brand_url": "str",
+                "full_description": "str",
+                "pricing": "str",
+                "list_price": "str",
+                "shipping_price": "str",
+                "availability_status": "str",
+                "images": [
+                    "list of str with length 1"
+                ]
+            }
+        }
+    ]
+}

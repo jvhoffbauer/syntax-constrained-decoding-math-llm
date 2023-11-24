@@ -1,0 +1,10 @@
+{
+    "api_list": [
+        {
+            "name": "List existing Compensations",
+            "schema": {
+                "messages": "str"
+            }
+        }
+    ]
+}

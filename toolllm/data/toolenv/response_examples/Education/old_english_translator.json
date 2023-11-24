@@ -1,0 +1,16 @@
+{
+    "api_list": [
+        {
+            "name": "Translate to Old English",
+            "schema": {
+                "success": {
+                    "total": "int"
+                },
+                "contents": {
+                    "translated": "str",
+                    "text": "str"
+                }
+            }
+        }
+    ]
+}

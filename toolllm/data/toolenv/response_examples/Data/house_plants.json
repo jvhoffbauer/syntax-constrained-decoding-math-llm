@@ -1,0 +1,28 @@
+{
+    "api_list": [
+        {
+            "name": "GetAllLite",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "GetAllCategories",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "GetById",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "GetByCategory",
+            "schema": {
+                "message": "str"
+            }
+        }
+    ]
+}

@@ -1,0 +1,196 @@
+{
+    "api_list": [
+        {
+            "name": "properties/detail",
+            "schema": {
+                "id": "str",
+                "objectID": "str",
+                "externalID": "str",
+                "title": "str",
+                "title_l1": "str",
+                "description": "str",
+                "description_l1": "str",
+                "location": [
+                    {
+                        "id": "str",
+                        "level": "str",
+                        "name": "str",
+                        "name_l1": "str",
+                        "slug": "str",
+                        "slug_l1": "str"
+                    }
+                ],
+                "category": [
+                    {
+                        "id": "str",
+                        "level": "str",
+                        "name": "str",
+                        "name_l1": "str",
+                        "slug": "str",
+                        "slug_l1": "str"
+                    }
+                ],
+                "geography": {
+                    "lat": "str",
+                    "lng": "str"
+                },
+                "purpose": "str",
+                "price": "str",
+                "product": "str",
+                "productLabel": "str",
+                "createdAt": "str",
+                "score": "str",
+                "score_l1": "str",
+                "coverPhoto": {
+                    "id": "str"
+                }
+            }
+        },
+        {
+            "name": "agencies/list",
+            "schema": {
+                "hits": [
+                    {
+                        "id": "str",
+                        "name": "str",
+                        "location": "str",
+                        "licenses": [
+                            {
+                                "number": "str",
+                                "authority": "str"
+                            }
+                        ],
+                        "logo": {
+                            "id": "str",
+                            "url": "str"
+                        },
+                        "slug": "str",
+                        "locations": [
+                            {
+                                "id": "str",
+                                "name": "str",
+                                "externalID": "str",
+                                "_geoloc": {
+                                    "lat": "str",
+                                    "lng": "str"
+                                }
+                            }
+                        ],
+                        "stats": {
+                            "categoryTypes": [
+                                "list of str with length 1"
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "agencies/get-listings",
+            "schema": {
+                "hits": "str",
+                "nbHits": "str",
+                "page": "str",
+                "nbPages": "str",
+                "hitsPerPage": "str",
+                "exhaustiveNbHits": "str",
+                "query": "str",
+                "params": "str",
+                "processingTimeMS": "str",
+                "serverTimeMS": "str"
+            }
+        },
+        {
+            "name": "properties/list",
+            "schema": {
+                "hits": [
+                    {
+                        "id": "str",
+                        "ownerID": "str",
+                        "userExternalID": "str",
+                        "sourceID": "str",
+                        "state": "str",
+                        "_geoloc": {
+                            "lat": "str",
+                            "lng": "str"
+                        },
+                        "geography": {
+                            "lat": "str",
+                            "lng": "str"
+                        },
+                        "purpose": "str",
+                        "price": "str",
+                        "product": "str",
+                        "productLabel": "str",
+                        "productScore": "str",
+                        "rentFrequency": "str",
+                        "referenceNumber": "str",
+                        "title": "str",
+                        "externalID": "str",
+                        "location": [
+                            {
+                                "id": "str",
+                                "level": "str",
+                                "externalID": "str",
+                                "name": "str"
+                            }
+                        ],
+                        "category": [
+                            {
+                                "id": "str",
+                                "level": "str",
+                                "externalID": "str",
+                                "name": "str"
+                            }
+                        ],
+                        "createdAt": "str",
+                        "updatedAt": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "auto-complete",
+            "schema": {
+                "hits": [
+                    {
+                        "id": "str",
+                        "name": "str",
+                        "name_l1": "str",
+                        "name_l2": "str",
+                        "externalID": "str",
+                        "slug": "str",
+                        "slug_l1": "str",
+                        "slug_l2": "str",
+                        "_geoloc": {
+                            "lat": "str",
+                            "lng": "str"
+                        },
+                        "level": "str",
+                        "hierarchy": [
+                            {
+                                "id": "str",
+                                "level": "str",
+                                "externalID": "str",
+                                "name": "str",
+                                "name_l1": "str",
+                                "name_l2": "str",
+                                "slug": "str",
+                                "slug_l1": "str",
+                                "slug_l2": "str"
+                            }
+                        ],
+                        "adCount": "str",
+                        "aliases": "str",
+                        "type": "str",
+                        "hasBuilding": "str",
+                        "trackID": "str",
+                        "roles": "str",
+                        "completionStatus": "str",
+                        "objectID": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

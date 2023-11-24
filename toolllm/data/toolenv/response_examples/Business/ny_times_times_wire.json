@@ -1,0 +1,28 @@
+{
+    "api_list": [
+        {
+            "name": "/content/{source}/{section}.json",
+            "schema": {
+                "fault": {
+                    "faultstring": "str"
+                }
+            }
+        },
+        {
+            "name": "/content/section-list.json",
+            "schema": {
+                "fault": {
+                    "faultstring": "str"
+                }
+            }
+        },
+        {
+            "name": "/content.json",
+            "schema": {
+                "fault": {
+                    "faultstring": "str"
+                }
+            }
+        }
+    ]
+}

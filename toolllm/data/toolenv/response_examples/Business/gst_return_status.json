@@ -1,0 +1,36 @@
+{
+    "api_list": [
+        {
+            "name": "/gstin",
+            "schema": {
+                "data": {
+                    "gstin": "str",
+                    "compCategory": "str",
+                    "dty": "str",
+                    "hsn": [
+                        "list of str with length 1"
+                    ],
+                    "nba": [
+                        "list of str with length 1"
+                    ],
+                    "rgdt": "str",
+                    "fillingFreq": {
+                        "2023_Q1": "str",
+                        "2023_Q2": "str",
+                        "2023_Q3": "str",
+                        "2023_Q4": "str"
+                    },
+                    "returns": [
+                        {
+                            "fy": "str",
+                            "dof": "str",
+                            "rtntype": "str",
+                            "taxp": "str"
+                        }
+                    ]
+                },
+                "success": "str"
+            }
+        }
+    ]
+}

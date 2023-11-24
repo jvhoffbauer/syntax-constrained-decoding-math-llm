@@ -1,0 +1,131 @@
+{
+    "api_list": [
+        {
+            "name": "get_profiles",
+            "schema": {
+                "result_info": {
+                    "count": "str",
+                    "page_number": "str",
+                    "limit": "str"
+                },
+                "profiles": [
+                    {
+                        "profile_id": "str",
+                        "name": "str",
+                        "image_url": "str",
+                        "profile_url": "str",
+                        "job_title": "str",
+                        "Company": "str",
+                        "social": {
+                            "linkedin": "str",
+                            "twitter": "str"
+                        },
+                        "location": "str",
+                        "os_friend_since": "str",
+                        "is_mvp": "str",
+                        "is_speaker": "str",
+                        "is_champion": "str",
+                        "is_staff": "str",
+                        "community_rank": "str",
+                        "total_kudos": "str",
+                        "total_components": "str",
+                        "total_marked_as_solution": "str",
+                        "community_score": {
+                            "total_score": "str"
+                        },
+                        "forums": {
+                            "total_posts": "str",
+                            "total_comments": "str"
+                        },
+                        "ideas": {
+                            "total_submitted": "str",
+                            "total_commented": "str"
+                        },
+                        "forge": {
+                            "total_components": "str"
+                        },
+                        "publications": {
+                            "total_articles": "str"
+                        },
+                        "description": "str",
+                        "TotalCertifications": "str",
+                        "CertificationsCount": "str",
+                        "SpecializationCount": "str"
+                    }
+                ],
+                "status": "str",
+                "status_message": "str"
+            }
+        },
+        {
+            "name": "get_profile_series",
+            "schema": {
+                "profile_series": [
+                    {
+                        "ProfileId": "str",
+                        "CommunityRank": "int",
+                        "Kudos": "int",
+                        "Components": "int",
+                        "MarkedAsSolution": "int",
+                        "ProfileScore": "int",
+                        "TrainingScore": "int",
+                        "ForumsScore": "int",
+                        "ForgeScore": "int",
+                        "IdeasScore": "int",
+                        "TotalScore": "int",
+                        "Forums_Posts": "int",
+                        "Ideas_Submitted": "int",
+                        "Forge_Components": "int",
+                        "Publications_Articles": "int",
+                        "CreatedAt": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "get_profile",
+            "schema": {
+                "profile": {
+                    "name": "str",
+                    "image_url": "str",
+                    "job_title": "str",
+                    "social": {
+                        "linkedin": "str",
+                        "twitter": "str"
+                    },
+                    "location": "str",
+                    "is_mvp": "bool",
+                    "is_speaker": "bool",
+                    "is_champion": "bool",
+                    "is_staff": "bool",
+                    "total_kudos": "int",
+                    "total_components": "int",
+                    "total_marked_as_solution": "int",
+                    "forums": {
+                        "total_posts": "int",
+                        "total_comments": "int"
+                    },
+                    "ideas": {
+                        "total_submitted": "int",
+                        "total_commented": "int"
+                    },
+                    "forge": {
+                        "total_components": "int"
+                    },
+                    "publications": {
+                        "total_articles": "int"
+                    },
+                    "description": "str",
+                    "CertificationsCount": "int"
+                },
+                "status": "str",
+                "status_message": "str",
+                "@meta": {
+                    "api_version": "str",
+                    "execution_time": "str",
+                    "cache_hit": "bool"
+                }
+            }
+        }
+    ]
+}

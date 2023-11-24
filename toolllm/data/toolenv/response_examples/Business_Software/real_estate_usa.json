@@ -1,0 +1,120 @@
+{
+    "api_list": [
+        {
+            "name": "get property by id",
+            "schema": {
+                "meta": {
+                    "version": "str",
+                    "transformVersion": "str",
+                    "debug": [
+                        {
+                            "url": "str",
+                            "headers": {
+                                "x-forwarded-for": "str",
+                                "x-forwarded-proto": "str",
+                                "x-forwarded-port": "str",
+                                "host": "str",
+                                "x-amzn-trace-id": "str",
+                                "content-type": "str",
+                                "accept-encoding": "str",
+                                "accept": "str",
+                                "x-newrelic-id": "str",
+                                "x-newrelic-transaction": "str",
+                                "x-rdc-correlation-id": "str"
+                            }
+                        }
+                    ],
+                    "transformApi": "str",
+                    "data_key": "str",
+                    "api": "str"
+                },
+                "property": {
+                    "id": "str",
+                    "rethink_id": "str",
+                    "prop_status": "str",
+                    "public_records": [
+                        {
+                            "prop_type": "str",
+                            "baths": "str",
+                            "beds": "str",
+                            "distinct_baths": "str",
+                            "sqft": "str",
+                            "building_sqft": "str"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "list finance rates",
+            "schema": {
+                "rates": {
+                    "property_tax": "float",
+                    "insurance_rate": "float",
+                    "average_rate_30_year": "str",
+                    "average_rate_30_year_fha": "str",
+                    "average_rate_30_year_va": "str",
+                    "average_rate_20_year": "str",
+                    "average_rate_15_year": "str",
+                    "average_rate_10_year": "str",
+                    "average_rate_51_arm": "str",
+                    "average_rate_71_arm": "str"
+                }
+            }
+        },
+        {
+            "name": "calculate mortgage",
+            "schema": {
+                "mortgage": {
+                    "loan_amount": "int",
+                    "rate": "float",
+                    "term": "int",
+                    "monthly_payment": "int",
+                    "principal_and_interest": "int",
+                    "monthly_property_taxes": "int",
+                    "monthly_home_insurance": "int",
+                    "hoa_fees": "int",
+                    "monthly_mortgage_insurance": "int",
+                    "total_payment": "int",
+                    "down_payment": "int"
+                }
+            }
+        },
+        {
+            "name": "search properties by zip",
+            "schema": {
+                "properties": [
+                    {
+                        "id": "str",
+                        "prop_status": "str",
+                        "permalink": "str",
+                        "address": {
+                            "line": "str",
+                            "street": "str",
+                            "city": "str",
+                            "state_code": "str",
+                            "postal_code": "str",
+                            "county": "str",
+                            "country": "str",
+                            "lat": "str",
+                            "long": "str"
+                        },
+                        "agent": {
+                            "name": "str"
+                        },
+                        "mls_id": "str",
+                        "mls": {
+                            "name": "str",
+                            "id": "str",
+                            "abbreviation": "str"
+                        },
+                        "broker": {
+                            "name": "str"
+                        },
+                        "photo_count": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

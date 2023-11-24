@@ -1,0 +1,59 @@
+{
+    "api_list": [
+        {
+            "name": "Get districts",
+            "schema": {
+                "metadata": {
+                    "totalCount": "int",
+                    "region_name": "str",
+                    "country_name": "str"
+                },
+                "data": [
+                    {
+                        "name": "str",
+                        "region_code": "str",
+                        "country_code": "str",
+                        "num_code": "int",
+                        "type": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Get cities",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get region details",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get regions",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get country details",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Get all countries",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "Health Check",
+            "schema": {
+                "message": "str"
+            }
+        }
+    ]
+}

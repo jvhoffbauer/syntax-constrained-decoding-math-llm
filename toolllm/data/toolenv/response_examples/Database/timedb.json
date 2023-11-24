@@ -1,0 +1,28 @@
+{
+    "api_list": [
+        {
+            "name": "webhooks",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "measurements",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "provision",
+            "schema": {
+                "message": "str"
+            }
+        },
+        {
+            "name": "query",
+            "schema": {
+                "message": "str"
+            }
+        }
+    ]
+}

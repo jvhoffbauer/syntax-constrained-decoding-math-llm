@@ -1,0 +1,142 @@
+{
+    "api_list": [
+        {
+            "name": "Airplanes ordered by descending",
+            "schema": {
+                "id": "int",
+                "plane": "str",
+                "brand": "str",
+                "passenger_capacity": "int",
+                "priceUSD": "float",
+                "fuel_capacity_litres": "float",
+                "max_takeoff_weight_kg": "float",
+                "max_landing_weight_kg": "float",
+                "empty_weight_kg": "float",
+                "range_km": "float",
+                "length_ft": "float",
+                "wingspan_ft": "float",
+                "height_ft": "float",
+                "engine": "str",
+                "cruise_speed_kmph": "float",
+                "ceiling_ft": "float",
+                "imgThumb": "str"
+            }
+        },
+        {
+            "name": "Airplanes ordered by ascending",
+            "schema": {
+                "plane": "str",
+                "brand": "str",
+                "passenger_capacity": "int",
+                "priceUSD": "float",
+                "fuel_capacity_litres": "float",
+                "max_takeoff_weight_kg": "float",
+                "max_landing_weight_kg": "float",
+                "range_km": "float",
+                "engine": "str",
+                "cruise_speed_kmph": "float",
+                "ceiling_ft": "float",
+                "imgThumb": "str"
+            }
+        },
+        {
+            "name": "Search by Engine",
+            "schema": {
+                "id": "int",
+                "plane": "str",
+                "brand": "str",
+                "passenger_capacity": "int",
+                "priceUSD": "float",
+                "fuel_capacity_litres": "float",
+                "max_takeoff_weight_kg": "float",
+                "max_landing_weight_kg": "float",
+                "empty_weight_kg": "float",
+                "range_km": "float",
+                "length_ft": "float",
+                "wingspan_ft": "float",
+                "height_ft": "float",
+                "engine": "str",
+                "cruise_speed_kmph": "float",
+                "ceiling_ft": "float"
+            }
+        },
+        {
+            "name": "Airplanes by Brand",
+            "schema": {
+                "id": "int",
+                "plane": "str",
+                "brand": "str",
+                "passenger_capacity": "int",
+                "priceUSD": "float",
+                "fuel_capacity_litres": "float",
+                "max_takeoff_weight_kg": "float",
+                "max_landing_weight_kg": "float",
+                "range_km": "float",
+                "length_ft": "float",
+                "wingspan_ft": "float",
+                "engine": "str",
+                "cruise_speed_kmph": "float",
+                "ceiling_ft": "float",
+                "imgThumb": "str"
+            }
+        },
+        {
+            "name": "Search",
+            "schema": {
+                "id": "int",
+                "plane": "str",
+                "brand": "str",
+                "passenger_capacity": "int",
+                "priceUSD": "float",
+                "fuel_capacity_litres": "float",
+                "max_takeoff_weight_kg": "float",
+                "range_km": "float",
+                "engine": "str",
+                "cruise_speed_kmph": "float",
+                "imgThumb": "str"
+            }
+        },
+        {
+            "name": "Single Airplane",
+            "schema": {
+                "id": "int",
+                "plane": "str",
+                "brand": "str",
+                "passenger_capacity": "int",
+                "priceUSD": "float",
+                "fuel_capacity_litres": "float",
+                "max_takeoff_weight_kg": "float",
+                "max_landing_weight_kg": "float",
+                "range_km": "float",
+                "length_ft": "float",
+                "wingspan_ft": "float",
+                "height_ft": "float",
+                "engine": "str",
+                "cruise_speed_kmph": "float",
+                "ceiling_ft": "float",
+                "imgThumb": "str"
+            }
+        },
+        {
+            "name": "All Airplanes",
+            "schema": {
+                "id": "int",
+                "plane": "str",
+                "brand": "str",
+                "passenger_capacity": "int",
+                "priceUSD": "float",
+                "fuel_capacity_litres": "float",
+                "max_takeoff_weight_kg": "float",
+                "max_landing_weight_kg": "float",
+                "range_km": "float",
+                "wingspan_ft": "float",
+                "engine": "str",
+                "cruise_speed_kmph": "float",
+                "ceiling_ft": "float",
+                "imgThumb": "str",
+                "img_attribution": "str",
+                "img_creative_commons": "bool"
+            }
+        }
+    ]
+}

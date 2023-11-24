@@ -1,0 +1,13 @@
+{
+    "api_list": [
+        {
+            "name": "searchSong",
+            "schema": {
+                "id": "str",
+                "title": "str",
+                "channelName": "str",
+                "duration": "str"
+            }
+        }
+    ]
+}

@@ -1,0 +1,81 @@
+{
+    "api_list": [
+        {
+            "name": "Config",
+            "schema": {
+                "1337x": {
+                    "title": "str",
+                    "code": "str"
+                },
+                "piratebay": {
+                    "title": "str",
+                    "code": "str"
+                },
+                "rarbg": {
+                    "title": "str",
+                    "code": "str"
+                },
+                "nyaasi": {
+                    "title": "str",
+                    "code": "str"
+                },
+                "yts": {
+                    "title": "str",
+                    "code": "str"
+                },
+                "eztv": {
+                    "title": "str",
+                    "code": "str"
+                },
+                "ettv": {
+                    "title": "str",
+                    "code": "str"
+                },
+                "torlock": {
+                    "title": "str",
+                    "code": "str"
+                },
+                "tgx": {
+                    "title": "str",
+                    "code": "str"
+                },
+                "kickass": {
+                    "title": "str",
+                    "code": "str"
+                },
+                "bitsearch": {
+                    "title": "str",
+                    "code": "str"
+                },
+                "glodls": {
+                    "title": "str",
+                    "code": "str"
+                },
+                "magnetdl": {
+                    "title": "str",
+                    "code": "str"
+                },
+                "limetorrent": {
+                    "title": "str",
+                    "code": "str"
+                },
+                "torrentfunk": {
+                    "title": "str",
+                    "code": "str"
+                },
+                "torrentproject": {
+                    "title": "str",
+                    "code": "str"
+                },
+                "libgen": {
+                    "title": "str",
+                    "code": "str"
+                },
+                "ybt": {
+                    "title": "str",
+                    "code": "str"
+                }
+            }
+        }
+    ]
+}

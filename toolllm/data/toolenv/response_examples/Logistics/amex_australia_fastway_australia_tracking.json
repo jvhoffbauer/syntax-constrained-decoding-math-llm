@@ -1,0 +1,19 @@
+{
+    "api_list": [
+        {
+            "name": "Track Package",
+            "schema": {
+                "success": "bool",
+                "data": {
+                    "status_info": "str",
+                    "history": [
+                        {
+                            "date": "str",
+                            "location": "str"
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "api_list": [
+        {
+            "name": "Check",
+            "schema": {
+                "bin_number": "int",
+                "bank": "str",
+                "scheme": "str",
+                "type": "str",
+                "country": "str"
+            }
+        }
+    ]
+}

@@ -1,0 +1,57 @@
+{
+    "api_list": [
+        {
+            "name": "users",
+            "schema": {
+                "id": "int",
+                "name": "str",
+                "username": "str",
+                "email": "str",
+                "address": {
+                    "street": "str",
+                    "city": "str",
+                    "zipcode": "str",
+                    "geo": {
+                        "lat": "str",
+                        "lng": "str"
+                    }
+                },
+                "phone": "str",
+                "website": "str",
+                "company": {
+                    "name": "str",
+                    "catchPhrase": "str"
+                }
+            }
+        },
+        {
+            "name": "photos",
+            "schema": {
+                "albumId": "int",
+                "id": "int",
+                "title": "str",
+                "url": "str",
+                "thumbnailUrl": "str"
+            }
+        },
+        {
+            "name": "comments",
+            "schema": {
+                "postId": "int",
+                "id": "int",
+                "name": "str",
+                "email": "str",
+                "body": "str"
+            }
+        },
+        {
+            "name": "posts",
+            "schema": {
+                "userId": "int",
+                "id": "int",
+                "title": "str",
+                "body": "str"
+            }
+        }
+    ]
+}

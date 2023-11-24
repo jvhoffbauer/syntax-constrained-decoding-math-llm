@@ -1,0 +1,47 @@
+{
+    "api_list": [
+        {
+            "name": "Temps d'attente d'une agence",
+            "schema": {
+                "idAgence": "int",
+                "designation": "str",
+                "position": {
+                    "lat": "float",
+                    "lon": "float"
+                },
+                "commune": "str",
+                "type": "str",
+                "codePostal": "str",
+                "localite": "str"
+            }
+        },
+        {
+            "name": "Temps d'attente des agences/commune",
+            "schema": {
+                "idAgence": "int",
+                "designation": "str",
+                "realMaxWaitingTimeMs": "int",
+                "commune": "str",
+                "type": "str",
+                "codeESirius": "str",
+                "codePostal": "str",
+                "localite": "str"
+            }
+        },
+        {
+            "name": "Agences",
+            "schema": {
+                "idAgence": "int",
+                "designation": "str",
+                "realMaxWaitingTimeMs": "int",
+                "position": {
+                    "lat": "float",
+                    "lon": "float"
+                },
+                "commune": "str",
+                "type": "str",
+                "codePostal": "str"
+            }
+        }
+    ]
+}

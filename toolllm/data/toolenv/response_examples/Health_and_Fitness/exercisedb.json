@@ -1,0 +1,14 @@
+{
+    "api_list": [
+        {
+            "name": "List of all exercises",
+            "schema": {
+                "bodyPart": "str",
+                "equipment": "str",
+                "gifUrl": "str",
+                "name": "str",
+                "target": "str"
+            }
+        }
+    ]
+}

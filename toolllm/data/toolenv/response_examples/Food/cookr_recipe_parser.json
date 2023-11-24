@@ -1,0 +1,53 @@
+{
+    "api_list": [
+        {
+            "name": "/getRecipe",
+            "schema": {
+                "status": "str",
+                "recipe": {
+                    "recipeCuisine": [
+                        "list of str with length 1"
+                    ],
+                    "recipeCategory": [
+                        "list of str with length 1"
+                    ],
+                    "name": "str",
+                    "image": "str",
+                    "description": "str",
+                    "cookTime": "str",
+                    "prepTime": "str",
+                    "totalTime": "str",
+                    "recipeYield": "str",
+                    "recipeIngredients": [
+                        "list of str with length 1"
+                    ],
+                    "recipeInstructions": [
+                        {
+                            "type": "str",
+                            "text": "str"
+                        }
+                    ],
+                    "keywords": "str",
+                    "ratingValue": "str",
+                    "nutritionServingSize": "str",
+                    "nutritionCalories": "str",
+                    "nutritionFatContent": "str",
+                    "nutritionSaturatedFatContent": "str",
+                    "nutritionCholesterolContent": "str",
+                    "nutritionSodiumContent": "str",
+                    "nutritionCarbohydrateContent": "str",
+                    "nutritionFiberContent": "str",
+                    "nutritionSugarContent": "str",
+                    "nutritionProteinContent": "str",
+                    "recipeTags": [
+                        {
+                            "name": "str"
+                        }
+                    ],
+                    "searchTerms": "str"
+                },
+                "url": "str"
+            }
+        }
+    ]
+}

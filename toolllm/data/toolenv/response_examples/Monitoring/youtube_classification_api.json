@@ -1,0 +1,240 @@
+{
+    "api_list": [
+        {
+            "name": "Channel name + description",
+            "schema": {
+                "0": {
+                    "video_id": "str",
+                    "channelTitle": "str",
+                    "title": "str",
+                    "description": "str",
+                    "tags": "str",
+                    "publishedAt": "str",
+                    "viewCount": "str",
+                    "likeCount": "str",
+                    "commentCount": "str",
+                    "duration": "str",
+                    "definition": "str",
+                    "caption": "str",
+                    "subscribers": "str",
+                    "totalViews": "str",
+                    "totalVideos": "str",
+                    "avg polarity score": "str",
+                    "Label": "str"
+                }
+            }
+        },
+        {
+            "name": "Tags + video_id",
+            "schema": {
+                "0": {
+                    "video_id": "str",
+                    "avg polarity score": "str",
+                    "channelTitle": "str",
+                    "title": "str",
+                    "description": "str",
+                    "tags": "str",
+                    "publishedAt": "str",
+                    "viewCount": "str",
+                    "likeCount": "str",
+                    "commentCount": "str",
+                    "duration": "str",
+                    "definition": "str",
+                    "caption": "str",
+                    "subscribers": "str",
+                    "totalViews": "str",
+                    "totalVideos": "str"
+                },
+                "1": {
+                    "video_id": "str",
+                    "avg polarity score": "str",
+                    "channelTitle": "str",
+                    "title": "str",
+                    "description": "str",
+                    "tags": "str",
+                    "publishedAt": "str",
+                    "viewCount": "str",
+                    "likeCount": "str",
+                    "commentCount": "str",
+                    "duration": "str",
+                    "definition": "str",
+                    "caption": "str",
+                    "subscribers": "str",
+                    "totalViews": "str",
+                    "totalVideos": "str"
+                }
+            }
+        },
+        {
+            "name": "Inside on description",
+            "schema": {
+                "0": {
+                    "video_id": "str",
+                    "avg polarity score": "str",
+                    "channelTitle": "str",
+                    "title": "str",
+                    "description": "str",
+                    "tags": "str",
+                    "publishedAt": "str",
+                    "viewCount": "str",
+                    "likeCount": "str",
+                    "commentCount": "str",
+                    "duration": "str",
+                    "definition": "str",
+                    "caption": "str",
+                    "subscribers": "str",
+                    "totalViews": "str",
+                    "totalVideos": "str"
+                },
+                "1": {
+                    "video_id": "str",
+                    "avg polarity score": "str",
+                    "channelTitle": "str",
+                    "title": "str",
+                    "description": "str",
+                    "tags": "str",
+                    "publishedAt": "str",
+                    "viewCount": "str",
+                    "likeCount": "str",
+                    "commentCount": "str",
+                    "duration": "str",
+                    "definition": "str",
+                    "caption": "str",
+                    "subscribers": "str",
+                    "totalViews": "str",
+                    "totalVideos": "str"
+                },
+                "2": {
+                    "video_id": "str",
+                    "avg polarity score": "str",
+                    "channelTitle": "str",
+                    "title": "str",
+                    "description": "str",
+                    "tags": "str",
+                    "publishedAt": "str",
+                    "viewCount": "str",
+                    "likeCount": "str",
+                    "commentCount": "str",
+                    "duration": "str",
+                    "definition": "str",
+                    "caption": "str",
+                    "subscribers": "str",
+                    "totalViews": "str",
+                    "totalVideos": "str"
+                }
+            }
+        },
+        {
+            "name": "More on inside",
+            "schema": {
+                "0": {
+                    "channelTitle": "str",
+                    "viewCount": "str",
+                    "likeCount": "str",
+                    "commentCount": "str",
+                    "definition": "str",
+                    "caption": "str",
+                    "subscribers": "str",
+                    "totalViews": "str",
+                    "totalVideos": "str",
+                    "avg polarity score": "str",
+                    "pushblishYear": "str",
+                    "durationSecs": "str",
+                    "tagCount": "str",
+                    "title length": "str",
+                    "description length": "str",
+                    "Label": "str"
+                }
+            }
+        },
+        {
+            "name": "Clean channel data",
+            "schema": {
+                "0": {
+                    "channelTitle": "str",
+                    "viewCount": "str",
+                    "likeCount": "str",
+                    "commentCount": "str",
+                    "definition": "str",
+                    "caption": "str",
+                    "subscribers": "str",
+                    "totalViews": "str",
+                    "totalVideos": "str",
+                    "avg polarity score": "str",
+                    "pushblishYear": "str",
+                    "durationSecs": "str",
+                    "tagCount": "str",
+                    "title length": "str",
+                    "description length": "str",
+                    "Label": "str"
+                }
+            }
+        },
+        {
+            "name": "Video descriptions",
+            "schema": {
+                "0": {
+                    "video_id": "str",
+                    "channelTitle": "str",
+                    "title": "str",
+                    "description": "str",
+                    "tags": "str",
+                    "publishedAt": "str",
+                    "viewCount": "str",
+                    "likeCount": "str",
+                    "commentCount": "str",
+                    "duration": "str",
+                    "definition": "str",
+                    "caption": "str",
+                    "subscribers": "str",
+                    "totalViews": "str",
+                    "totalVideos": "str",
+                    "avg polarity score": "str",
+                    "Label": "str"
+                },
+                "1": {
+                    "video_id": "str",
+                    "channelTitle": "str",
+                    "title": "str",
+                    "description": "str",
+                    "tags": "str",
+                    "publishedAt": "str",
+                    "viewCount": "str",
+                    "likeCount": "str",
+                    "commentCount": "str",
+                    "duration": "str",
+                    "definition": "str",
+                    "caption": "str",
+                    "subscribers": "str",
+                    "totalViews": "str",
+                    "totalVideos": "str",
+                    "avg polarity score": "str",
+                    "Label": "str"
+                }
+            }
+        },
+        {
+            "name": "Overview of channels",
+            "schema": {
+                "0": {
+                    "channelTitle": "str",
+                    "viewCount": "str",
+                    "likeCount": "str",
+                    "commentCount": "str",
+                    "definition": "str",
+                    "caption": "str",
+                    "subscribers": "str",
+                    "totalViews": "str",
+                    "totalVideos": "str",
+                    "avg polarity score": "str",
+                    "Label": "str",
+                    "pushblishYear": "str",
+                    "durationSecs": "str",
+                    "tagCount": "str",
+                    "title length": "str",
+                    "description length": "str"
+                }
+            }
+        }
+    ]
+}

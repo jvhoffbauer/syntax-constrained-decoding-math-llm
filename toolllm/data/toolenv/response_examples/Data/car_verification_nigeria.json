@@ -1,0 +1,13 @@
+{
+    "api_list": [
+        {
+            "name": "Verify Plate Number Location",
+            "schema": {
+                "status": "str",
+                "information": {
+                    "error": "str"
+                }
+            }
+        }
+    ]
+}

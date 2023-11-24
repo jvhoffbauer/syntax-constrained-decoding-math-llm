@@ -1,0 +1,50 @@
+{
+    "api_list": [
+        {
+            "name": "Get A Specific Champion's Base Stats",
+            "schema": {
+                "name": "str",
+                "hp": "float",
+                "hp_gain_per_lvl": "float",
+                "mana": "float",
+                "mana_gain_per_lvl": "float",
+                "attack_damage": "float",
+                "attack_damage_gain_per_lvl": "float",
+                "attack_speed": "float",
+                "attack_speed_gain_per_lvl": "float",
+                "armor": "float",
+                "armor_gain_per_lvl": "float",
+                "magic_resist": "float",
+                "magic_resist_gain_per_lvl": "float",
+                "movement_speed": "float",
+                "range": "float"
+            }
+        },
+        {
+            "name": "Get All Champion Base Stats",
+            "schema": {
+                "name": "str",
+                "hp": "float",
+                "hp_gain_per_lvl": "float",
+                "hp_regen": "float",
+                "mana_gain_per_lvl": "float",
+                "attack_damage": "float",
+                "attack_damage_gain_per_lvl": "float",
+                "attack_speed": "float",
+                "attack_speed_gain_per_lvl": "float",
+                "armor": "float",
+                "armor_gain_per_lvl": "float",
+                "magic_resist": "float",
+                "magic_resist_gain_per_lvl": "float",
+                "movement_speed": "float",
+                "range": "float"
+            }
+        },
+        {
+            "name": "Get List of All Champion Names",
+            "schema": {
+                "champ_names": "empty list"
+            }
+        }
+    ]
+}

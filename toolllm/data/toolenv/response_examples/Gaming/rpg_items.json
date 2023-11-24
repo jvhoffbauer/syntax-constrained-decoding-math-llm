@@ -1,0 +1,34 @@
+{
+    "api_list": [
+        {
+            "name": "Get Item by ID",
+            "schema": {
+                "name": "str",
+                "type": "str",
+                "slot": "str",
+                "rank": "int",
+                "rarity": "str"
+            }
+        },
+        {
+            "name": "Get Items by query",
+            "schema": {
+                "name": "str",
+                "type": "str",
+                "slot": "str",
+                "rank": "int",
+                "rarity": "str"
+            }
+        },
+        {
+            "name": "Get All Items",
+            "schema": {
+                "name": "str",
+                "type": "str",
+                "slot": "str",
+                "rank": "int",
+                "rarity": "str"
+            }
+        }
+    ]
+}

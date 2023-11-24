@@ -1,0 +1,33 @@
+{
+    "api_list": [
+        {
+            "name": "/user-info",
+            "schema": {
+                "user": {
+                    "id": "str",
+                    "nickname": "str",
+                    "avatarLarger": "str",
+                    "signature": "str",
+                    "verified": "str",
+                    "secUid": "str",
+                    "relation": "str",
+                    "bioLink": {
+                        "link": "str"
+                    },
+                    "commerceUserInfo": {
+                        "commerceUser": "str"
+                    },
+                    "privateAccount": "str",
+                    "roomId": "str",
+                    "ttSeller": "str",
+                    "followingVisibility": "str",
+                    "canExpPlaylist": "str",
+                    "profileEmbedPermission": "str"
+                },
+                "stats": {
+                    "followerCount": "str"
+                }
+            }
+        }
+    ]
+}

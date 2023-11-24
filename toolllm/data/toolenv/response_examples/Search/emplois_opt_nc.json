@@ -1,0 +1,23 @@
+{
+    "api_list": [
+        {
+            "name": "All",
+            "schema": {
+                "nid": "str",
+                "titre": "str",
+                "intitule_poste": "str",
+                "reference_se": "str",
+                "niveau_diplome": "str",
+                "duree_contrat": "str",
+                "date_mise_en_ligne": "str",
+                "date_recrutement": "str",
+                "direction": "str",
+                "service": "str",
+                "site": "str",
+                "url_fiche_poste": "str",
+                "lien": "str",
+                "langcode": "str"
+            }
+        }
+    ]
+}

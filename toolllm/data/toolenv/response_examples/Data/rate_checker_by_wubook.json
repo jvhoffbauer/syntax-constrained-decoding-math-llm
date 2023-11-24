@@ -1,0 +1,22 @@
+{
+    "api_list": [
+        {
+            "name": "Monitored competitors from a given user",
+            "schema": {
+                "error_code": "str"
+            }
+        },
+        {
+            "name": "Snapshots available from a given stay",
+            "schema": {
+                "error_code": "str"
+            }
+        },
+        {
+            "name": "Stays from a given competitor",
+            "schema": {
+                "error_code": "str"
+            }
+        }
+    ]
+}

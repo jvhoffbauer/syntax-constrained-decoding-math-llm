@@ -1,0 +1,13 @@
+{
+    "api_list": [
+        {
+            "name": "Extract Video Download Links",
+            "schema": {
+                "status": "str",
+                "title": "str",
+                "sd": "str",
+                "hd": "str"
+            }
+        }
+    ]
+}

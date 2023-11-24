@@ -1,0 +1,23 @@
+{
+    "api_list": [
+        {
+            "name": "Search Artist",
+            "schema": {
+                "status": "bool",
+                "result": {
+                    "artists": {
+                        "hits": [
+                            {
+                                "artist": {
+                                    "name": "str",
+                                    "weburl": "str",
+                                    "adamid": "str"
+                                }
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    ]
+}

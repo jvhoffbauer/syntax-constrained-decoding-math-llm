@@ -1,0 +1,94 @@
+{
+    "api_list": [
+        {
+            "name": "Search",
+            "schema": {
+                "meta": {
+                    "status": "int",
+                    "msg": "str"
+                }
+            }
+        },
+        {
+            "name": "Get GIF by ID",
+            "schema": {
+                "meta": {
+                    "status": "int",
+                    "msg": "str"
+                }
+            }
+        },
+        {
+            "name": "Get GIFs by ID",
+            "schema": {
+                "meta": {
+                    "status": "int",
+                    "msg": "str"
+                }
+            }
+        },
+        {
+            "name": "Translate",
+            "schema": {
+                "meta": {
+                    "status": "int",
+                    "msg": "str"
+                }
+            }
+        },
+        {
+            "name": "Random",
+            "schema": {
+                "meta": {
+                    "status": "int",
+                    "msg": "str"
+                }
+            }
+        },
+        {
+            "name": "Trending GIFs",
+            "schema": {
+                "meta": {
+                    "status": "int",
+                    "msg": "str"
+                }
+            }
+        },
+        {
+            "name": "Sticker Search",
+            "schema": {
+                "meta": {
+                    "status": "int",
+                    "msg": "str"
+                }
+            }
+        },
+        {
+            "name": "STICKER Roulette",
+            "schema": {
+                "meta": {
+                    "status": "int",
+                    "msg": "str"
+                }
+            }
+        },
+        {
+            "name": "STICKER Trending",
+            "schema": {
+                "data": "str",
+                "meta": {
+                    "status": "int"
+                }
+            }
+        },
+        {
+            "name": "STICKER Translate",
+            "schema": {
+                "meta": {
+                    "status": "int",
+                    "msg": "str"
+                }
+            }
+        }
+    ]
+}

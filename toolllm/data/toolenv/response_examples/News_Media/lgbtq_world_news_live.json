@@ -1,0 +1,20 @@
+{
+    "api_list": [
+        {
+            "name": "Get Individual News from Source",
+            "schema": {
+                "title": "str",
+                "url": "str",
+                "source": "str"
+            }
+        },
+        {
+            "name": "Get All LGBTQ+ News",
+            "schema": {
+                "title": "str",
+                "url": "str",
+                "source": "str"
+            }
+        }
+    ]
+}

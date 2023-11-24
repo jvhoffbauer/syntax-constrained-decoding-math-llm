@@ -1,0 +1,20 @@
+{
+    "api_list": [
+        {
+            "name": "CSW21",
+            "schema": {
+                "prob": "int",
+                "def": "str",
+                "id": "str"
+            }
+        },
+        {
+            "name": "NWL20",
+            "schema": {
+                "prob": "int",
+                "def": "str",
+                "id": "str"
+            }
+        }
+    ]
+}

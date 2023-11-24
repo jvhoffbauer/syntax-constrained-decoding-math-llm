@@ -1,0 +1,11 @@
+{
+    "api_list": [
+        {
+            "name": "Get Comments from product id",
+            "schema": {
+                "comments": "empty list",
+                "stars": "empty list"
+            }
+        }
+    ]
+}

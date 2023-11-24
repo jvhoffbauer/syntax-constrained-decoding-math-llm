@@ -1,0 +1,28 @@
+{
+    "api_list": [
+        {
+            "name": "getPlatformList",
+            "schema": {
+                "status": "int",
+                "data": [
+                    {
+                        "id": "int",
+                        "title": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "getGameList",
+            "schema": {
+                "status": "int",
+                "data": [
+                    {
+                        "id": "int",
+                        "title": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

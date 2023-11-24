@@ -1,0 +1,13 @@
+{
+    "api_list": [
+        {
+            "name": "getInfo",
+            "schema": {
+                "Number": "str",
+                "State": "str",
+                "Provider": "str",
+                "Service": "str"
+            }
+        }
+    ]
+}

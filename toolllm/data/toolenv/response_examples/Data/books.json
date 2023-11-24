@@ -1,0 +1,16 @@
+{
+    "api_list": [
+        {
+            "name": "Get All Books",
+            "schema": {
+                "id": "int",
+                "ISBN": "str",
+                "LANG": "str",
+                "YEAR": "str",
+                "TITLE": "str",
+                "AUTHOR": "str",
+                "PUBLISHER": "str"
+            }
+        }
+    ]
+}

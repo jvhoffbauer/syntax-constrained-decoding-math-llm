@@ -1,0 +1,315 @@
+{
+    "api_list": [
+        {
+            "name": "Get NBA Games and Stats for a Single Player",
+            "schema": {
+                "body": {
+                    "20230414_CHI@MIA": {
+                        "blk": "str",
+                        "OffReb": "str",
+                        "ftp": "str",
+                        "DefReb": "str",
+                        "plusMinus": "str",
+                        "stl": "str",
+                        "pts": "str",
+                        "tech": "str",
+                        "team": "str",
+                        "TOV": "str",
+                        "fga": "str",
+                        "ast": "str",
+                        "tptfgp": "str",
+                        "teamAbv": "str",
+                        "mins": "str",
+                        "fgm": "str",
+                        "fgp": "str",
+                        "reb": "str",
+                        "teamID": "str",
+                        "tptfgm": "str",
+                        "fta": "str",
+                        "tptfga": "str",
+                        "longName": "str",
+                        "PF": "str",
+                        "playerID": "str",
+                        "ftm": "str",
+                        "gameID": "str"
+                    }
+                }
+            }
+        },
+        {
+            "name": "Get Teams",
+            "schema": {
+                "body": [
+                    {
+                        "teamAbv": "str",
+                        "teamCity": "str",
+                        "teamSchedule": {
+                            "20221223_SA@ORL": {
+                                "gameID": "str",
+                                "seasonType": "str",
+                                "away": "str",
+                                "gameTime": "str",
+                                "gameDate": "str",
+                                "teamIDHome": "str",
+                                "teamIDAway": "str",
+                                "home": "str"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Get NBA Betting Odds",
+            "schema": {
+                "body": {
+                    "20230304_ATL@MIA": {
+                        "last_updated_e_time": "str",
+                        "betmgm": {
+                            "awayTeamSpread": "str",
+                            "awayTeamSpreadOdds": "str",
+                            "homeTeamSpread": "str",
+                            "homeTeamSpreadOdds": "str",
+                            "totalOverOdds": "str",
+                            "totalUnderOdds": "str",
+                            "awayTeamMLOdds": "str",
+                            "homeTeamMLOdds": "str"
+                        },
+                        "gameDate": "str",
+                        "fanduel": {
+                            "awayTeamSpread": "str",
+                            "awayTeamSpreadOdds": "str",
+                            "homeTeamSpread": "str",
+                            "homeTeamSpreadOdds": "str",
+                            "totalOverOdds": "str",
+                            "totalUnderOdds": "str",
+                            "awayTeamMLOdds": "str",
+                            "homeTeamMLOdds": "str"
+                        },
+                        "wynnbet": {
+                            "awayTeamSpread": "str",
+                            "awayTeamSpreadOdds": "str",
+                            "homeTeamSpread": "str",
+                            "homeTeamSpreadOdds": "str",
+                            "totalOverOdds": "str",
+                            "totalUnderOdds": "str",
+                            "awayTeamMLOdds": "str",
+                            "homeTeamMLOdds": "str"
+                        },
+                        "unibet": {
+                            "awayTeamSpread": "str",
+                            "awayTeamSpreadOdds": "str",
+                            "homeTeamSpread": "str",
+                            "homeTeamSpreadOdds": "str",
+                            "totalOverOdds": "str",
+                            "totalUnderOdds": "str",
+                            "awayTeamMLOdds": "str",
+                            "homeTeamMLOdds": "str"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "Get Player Information",
+            "schema": {
+                "statusCode": "str",
+                "body": [
+                    {
+                        "espnID": "str",
+                        "espnName": "str",
+                        "nbaComName": "str",
+                        "college": "str",
+                        "weight": "str",
+                        "nbaComHeadshot": "str",
+                        "jerseyNum": "str",
+                        "team": "str",
+                        "espnLink": "str",
+                        "bDay": "str",
+                        "espnHeadshot": "str",
+                        "nbaComID": "str",
+                        "shortName": "str",
+                        "nbaComLink": "str",
+                        "teamID": "str",
+                        "bRefName": "str",
+                        "pos": "str",
+                        "cbsPlayerID": "str",
+                        "longName": "str",
+                        "height": "str",
+                        "bRefID": "str",
+                        "lastGamePlayed": "str",
+                        "playerID": "str",
+                        "exp": "str",
+                        "stats": {
+                            "pts": "str",
+                            "reb": "str",
+                            "ast": "str",
+                            "stl": "str",
+                            "blk": "str",
+                            "TOV": "str",
+                            "fgm": "str",
+                            "fga": "str",
+                            "fgp": "str",
+                            "ftm": "str",
+                            "fta": "str",
+                            "ftp": "str",
+                            "tptfgm": "str",
+                            "tptfga": "str",
+                            "tptfgp": "str",
+                            "trueShootingPercentage": "str",
+                            "effectiveShootingPercentage": "str",
+                            "OffReb": "str",
+                            "DefReb": "str",
+                            "mins": "str",
+                            "gamesPlayed": "str"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Get NBA Injury List History",
+            "schema": {
+                "body": [
+                    {
+                        "designation": "str",
+                        "injDate": "str",
+                        "playerID": "str",
+                        "description": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Get Team Roster",
+            "schema": {
+                "statusCode": "str",
+                "body": {
+                    "team": "str",
+                    "teamID": "str",
+                    "roster": [
+                        {
+                            "college": "str",
+                            "jerseyNum": "str",
+                            "pos": "str",
+                            "injury": {
+                                "description": "str",
+                                "injDate": "str",
+                                "designation": "str"
+                            },
+                            "exp": "str",
+                            "height": "str",
+                            "weight": "str",
+                            "team": "str",
+                            "shortName": "str",
+                            "longName": "str",
+                            "playerID": "str",
+                            "stats": {
+                                "blk": "str",
+                                "fga": "str",
+                                "DefReb": "str",
+                                "ast": "str",
+                                "ftp": "str",
+                                "pts": "str",
+                                "reb": "str",
+                                "fgp": "str",
+                                "fta": "str",
+                                "mins": "str",
+                                "gamesPlayed": "str",
+                                "TOV": "str"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Get Team Schedule",
+            "schema": {
+                "body": {
+                    "team": "str",
+                    "schedule": [
+                        {
+                            "gameID": "str",
+                            "seasonType": "str",
+                            "away": "str",
+                            "home": "str",
+                            "awayResult": "str",
+                            "homePts": "str",
+                            "homeResult": "str",
+                            "awayPts": "str"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Get Player List",
+            "schema": {
+                "body": [
+                    {
+                        "playerID": "str",
+                        "longName": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Get Daily Schedule",
+            "schema": {
+                "body": [
+                    {
+                        "gameID": "str",
+                        "teamIDAway": "str",
+                        "away": "str",
+                        "gameDate": "str",
+                        "teamIDHome": "str",
+                        "home": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Get General Game Information",
+            "schema": {
+                "statusCode": "int",
+                "body": {
+                    "season": "str",
+                    "gameDate": "str",
+                    "neutralSite": "str",
+                    "teamIDHome": "str",
+                    "gameTime": "str",
+                    "teamIDAway": "str",
+                    "away": "str",
+                    "gameID": "str",
+                    "seasonType": "str",
+                    "home": "str"
+                }
+            }
+        },
+        {
+            "name": "Get Game Box Score - Live - Real Time",
+            "schema": {
+                "statusCode": "str",
+                "body": {
+                    "teamStats": {
+                        "GS": {
+                            "teamID": "str",
+                            "team": "str",
+                            "teamAbv": "str",
+                            "pts": "str"
+                        },
+                        "CHI": {
+                            "teamID": "str",
+                            "team": "str",
+                            "teamAbv": "str",
+                            "pts": "str"
+                        }
+                    },
+                    "gameDate": "str",
+                    "network": "str"
+                }
+            }
+        }
+    ]
+}

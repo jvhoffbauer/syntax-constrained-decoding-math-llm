@@ -1,0 +1,10 @@
+{
+    "api_list": [
+        {
+            "name": "query",
+            "schema": {
+                "zip": "str"
+            }
+        }
+    ]
+}

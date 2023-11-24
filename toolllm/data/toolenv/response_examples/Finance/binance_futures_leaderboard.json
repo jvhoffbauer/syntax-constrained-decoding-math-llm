@@ -1,0 +1,105 @@
+{
+    "api_list": [
+        {
+            "name": "get_other_performance",
+            "schema": {
+                "detail": [
+                    {
+                        "msg": "str",
+                        "type": "str",
+                        "ctx": {
+                            "pattern": "str"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "get_trader_positions",
+            "schema": {
+                "detail": [
+                    {
+                        "msg": "str",
+                        "type": "str",
+                        "ctx": {
+                            "pattern": "str"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "get_other_leaderboard_base_info",
+            "schema": {
+                "detail": [
+                    {
+                        "type": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "get_trader_info",
+            "schema": {
+                "detail": [
+                    {
+                        "type": "str"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "get_other_trade_record",
+            "schema": {
+                "detail": [
+                    {
+                        "type": "str",
+                        "ctx": {
+                            "pattern": "str"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "get_leaderboard_rank",
+            "schema": {
+                "detail": [
+                    {
+                        "loc": "empty list",
+                        "msg": "str",
+                        "type": "str",
+                        "ctx": {
+                            "enum_values": [
+                                "list of str with length 4"
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "get_other_position",
+            "schema": {
+                "detail": [
+                    {
+                        "type": "str",
+                        "ctx": {
+                            "pattern": "str"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "search_leaderboard",
+            "schema": {
+                "detail": [
+                    {
+                        "msg": "str"
+                    }
+                ]
+            }
+        }
+    ]
+}

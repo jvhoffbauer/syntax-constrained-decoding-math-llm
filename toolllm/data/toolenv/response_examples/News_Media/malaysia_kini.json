@@ -1,0 +1,13 @@
+{
+    "api_list": [
+        {
+            "name": "Get Article by SID",
+            "schema": {
+                "id": "str",
+                "title": "str",
+                "text": "str",
+                "top-image": "str"
+            }
+        }
+    ]
+}

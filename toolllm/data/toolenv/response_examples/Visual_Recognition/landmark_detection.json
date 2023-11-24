@@ -1,0 +1,40 @@
+{
+    "api_list": [
+        {
+            "name": "GET Landmark Detection",
+            "schema": {
+                "landmarks": [
+                    {
+                        "locations": [
+                            {
+                                "latitude": "float",
+                                "longitude": "float"
+                            }
+                        ],
+                        "text": "str",
+                        "score": "float",
+                        "boundingBox": {
+                            "tl": {
+                                "x": "int",
+                                "y": "int"
+                            },
+                            "tr": {
+                                "x": "int",
+                                "y": "int"
+                            },
+                            "br": {
+                                "x": "int",
+                                "y": "int"
+                            },
+                            "bl": {
+                                "x": "int",
+                                "y": "int"
+                            }
+                        }
+                    }
+                ],
+                "success": "bool"
+            }
+        }
+    ]
+}

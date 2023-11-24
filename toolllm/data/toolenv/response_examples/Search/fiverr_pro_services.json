@@ -1,0 +1,10 @@
+{
+    "api_list": [
+        {
+            "name": "Services",
+            "schema": {
+                "message": "str"
+            }
+        }
+    ]
+}

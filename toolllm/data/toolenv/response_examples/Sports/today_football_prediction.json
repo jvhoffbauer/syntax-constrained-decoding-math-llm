@@ -1,0 +1,50 @@
+{
+    "api_list": [
+        {
+            "name": "Stats - Performance",
+            "schema": {
+                "date": "str",
+                "featured": {
+                    "classic": {
+                        "profit_loss": "float",
+                        "winning_percentage": "float",
+                        "avg_prob": "float",
+                        "avg_odd": "float"
+                    },
+                    "ou25": {
+                        "profit_loss": "float",
+                        "winning_percentage": "float",
+                        "avg_prob": "float",
+                        "avg_odd": "float"
+                    },
+                    "both": {
+                        "profit_loss": "float",
+                        "winning_percentage": "float",
+                        "avg_prob": "float",
+                        "avg_odd": "float"
+                    }
+                },
+                "all": {
+                    "classic": {
+                        "profit_loss": "float",
+                        "winning_percentage": "float",
+                        "avg_prob": "float",
+                        "avg_odd": "float"
+                    },
+                    "ou25": {
+                        "profit_loss": "float",
+                        "winning_percentage": "float",
+                        "avg_prob": "float",
+                        "avg_odd": "float"
+                    },
+                    "both": {
+                        "profit_loss": "float",
+                        "winning_percentage": "float",
+                        "avg_prob": "float",
+                        "avg_odd": "float"
+                    }
+                }
+            }
+        }
+    ]
+}
