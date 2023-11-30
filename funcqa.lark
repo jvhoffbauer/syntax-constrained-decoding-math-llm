@@ -1,5 +1,5 @@
 ?start: functioncall
-    ?functioncall: "<T>" name "(" args ")" "</T>"
+    ?functioncall: "<T>" name "(" args ")"
     name: "multiply" | "add" | "subtract" | "divide"
     args: (value "," value)
     value: INT+
