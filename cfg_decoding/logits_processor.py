@@ -20,8 +20,8 @@ class GrammarConstrainedLogitsProcessor(LogitsProcessor):
         # Get parsing states per sequence 
         parsing_states = [self.parsing_stepper.get_parsing_state(seq) for seq in decoded_sequences]
 
-        print("Decoded sequences: ", [d[-10:] for d in decoded_sequences])
-        print("Parsing states: ", parsing_states)
+        # print("Decoded sequences: ", [d[-10:] for d in decoded_sequences])
+        # print("Parsing states: ", parsing_states)
 
         # Part of the current terminal that is already generated
         existing_tokens_for_terminal = [
@@ -39,8 +39,8 @@ class GrammarConstrainedLogitsProcessor(LogitsProcessor):
             for tokens in valid_tokens
         ]  
 
-        print("Existing tokens for terminal: ", existing_tokens_for_terminal)
-        print("Valid tokens: ", valid_tokens)
+        # print("Existing tokens for terminal: ", existing_tokens_for_terminal)
+        # print("Valid tokens: ", valid_tokens)
 
         # Mask out scores 
         scores_mask = torch.ones_like(scores) * float('inf') * -1
@@ -49,7 +49,7 @@ class GrammarConstrainedLogitsProcessor(LogitsProcessor):
 
         scores = scores + scores_mask
         
-        print("-" * 20)
+        # print("-" * 20)
         return scores
         
 
