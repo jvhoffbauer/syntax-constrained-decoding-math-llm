@@ -59,27 +59,15 @@ def change_operation_format(row):
     cols_to_change = ["func", "prompt"]
     for col in cols_to_change:
         row[col] = row[col].replace("<", "[T]").replace(">", "").replace("[T]", "<T>")
+        # Avoid replacing instructions
+        row[col] = row[col].replace(f"the operator <T>{row['operation']}", f"the operator {row['operation']}")
     return row
 
 
 def load():
     dataset = get_funcqa_dataset()
     dataset = dataset.map(create_prompt, batched=False)
+    # Disable caching for this step
     dataset = dataset.map(change_operation_format, batched=False)
     dataset = dataset.filter(lambda row: row["operation"] in ["add", "subtract", "multiply", "divide"])
     return dataset
-
-
-def main():
-    import json
-    from collections import Counter
-
-    dataset = load()
-
-    print(dataset)
-    print(json.dumps(dataset[0], indent=2))
-    print(Counter([row["operation"] for row in dataset]))
-
-
-if __name__ == "__main__":
-    main()

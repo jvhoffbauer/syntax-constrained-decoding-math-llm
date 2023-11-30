@@ -2,7 +2,7 @@
     ?functioncall: "<T>" name "(" args ")"
     name: "multiply" | "add" | "subtract" | "divide"
     args: (value "," value)
-    value: INT+
+    value: INT+ | INT+ "." INT+
 
     %import common.STRING
     %import common.SIGNED_NUMBER
