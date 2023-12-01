@@ -1,7 +1,8 @@
 ?start: functioncall
     ?functioncall: "<T>" name "(" args ")"
     name: "multiply" | "add" | "subtract" | "divide"
-    args: (value "," value)
+    args: arg ("," arg)*
+    arg: value | functioncall
     value: INT+ | INT+ "." INT+
 
     %import common.STRING
