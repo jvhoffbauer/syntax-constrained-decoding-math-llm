@@ -1,12 +1,35 @@
 import ast
 
-from toolmode.data.funcqa.math_operators import add_, divide_, multiply_, subtract_
+from toolmode.data.funcqa.math_operators import (
+    add_,
+    choose_,
+    divide_,
+    gcd_,
+    lcm_,
+    ln_,
+    log_,
+    multiply_,
+    permutate_,
+    power_,
+    remainder_,
+    sqrt_,
+    subtract_,
+)
 
 OPERATORS = {
     "add": add_,
     "subtract": subtract_,
     "multiply": multiply_,
     "divide": divide_,
+    "power": power_,
+    "sqrt": sqrt_,
+    "log": log_,
+    "ln": ln_,
+    "choose": choose_,
+    "permutate": permutate_,
+    "gcd": gcd_,
+    "lcm": lcm_,
+    "remainder": remainder_,
 }
 
 

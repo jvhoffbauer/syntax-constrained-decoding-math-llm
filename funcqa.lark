@@ -1,6 +1,6 @@
 ?start: functioncall
-    ?functioncall: "<T>" name "(" args ")"
-    name: "multiply" | "add" | "subtract" | "divide"
+    ?functioncall: name "(" args ")"
+    name: "add" | "subtract" | "multiply" | "divide" | "power" | "sqrt" | "log" | "ln" | "choose" | "permutate" | "gcd" | "lcm" | "remainder"
     args: arg ("," arg)*
     arg: value | functioncall
     value: INT+ | INT+ "." INT+

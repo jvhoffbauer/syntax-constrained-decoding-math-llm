@@ -73,7 +73,7 @@
         "question": "A company has a budget of $1028137.23. They spent $79952.88 on office expenses. How much money is left?",
         "answer": 948184.35,
         "func": "<subtract>(1028137.23, 79952.88)=948184.35"
-    },    
+    },
     {
         "question": " A reader is reading a really long book. She reads 67 pages per day, and it takes her 253 days to finish the book. How many pages are in the book at most?",
         "answer": 16951,
@@ -228,7 +228,6 @@
         "question": " A sqaure swimming pool has an area of 7876.56 square meters. What is the length of one side of the pool?",
         "answer": 88.7468,
         "func": "<sqrt>(7876.56)=88.7468"
-
     },
     {
         "question": " The variance of a set of data is 0.0284. What is the standard deviation of the data?",
@@ -300,4 +299,4 @@
         "answer": 3,
         "func": "<remainder>(12345, 33)=3"
     }
-] 
+]

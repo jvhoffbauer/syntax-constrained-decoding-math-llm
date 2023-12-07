@@ -7,22 +7,6 @@ FUNCQA_DATASET_FILE_PATH = "data/funcqa/funcqa_oh.json"
 FUNCQA_PROMPT_TEMPLATE_FILE_FMT = "data/funcqa/template_oh/llama_<{operation}>.txt"
 DATASETS_CACHE_DIR_PATH = "/scratch1/redditqa/cached_datasets"
 
-FUNC_NUM_PARAMS = {
-    "<add>": 2,
-    "<subtract>": 2,
-    "<multiply>": 2,
-    "<divide>": 2,
-    "<power>": 2,
-    "<sqrt>": 1,
-    "<log>": 1,
-    "<ln>": 1,
-    "<lcm>": 2,
-    "<gcd>": 2,
-    "<remainder>": 2,
-    "<choose>": 2,
-    "<permutate>": 2,
-}
-
 
 def get_funcqa_dataset():
     # Load the dataset
@@ -40,10 +24,6 @@ def create_prompt(row):
     # Get first text in angle brackets, i.e. <TEXT>
     operation = row["func"].split("<")[1].split(">")[0]
     row["operation"] = operation
-
-    # Get the number of parameters
-    num_params = FUNC_NUM_PARAMS[f"<{operation}>"]
-    row["operation_num_params"] = num_params
 
     # Get the prompt
     prompt_template_file_path = FUNCQA_PROMPT_TEMPLATE_FILE_FMT.format(operation=operation)
@@ -69,5 +49,4 @@ def load():
     dataset = dataset.map(create_prompt, batched=False)
     # Disable caching for this step
     dataset = dataset.map(change_operation_format, batched=False)
-    dataset = dataset.filter(lambda row: row["operation"] in ["add", "subtract", "multiply", "divide"])
     return dataset
