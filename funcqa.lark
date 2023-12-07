@@ -1,5 +1,5 @@
 ?start: functioncall
-    ?functioncall: name "(" args ")"
+    ?functioncall: name "(" args ")" "="
     name: "add" | "subtract" | "multiply" | "divide" | "power" | "sqrt" | "log" | "ln" | "choose" | "permutate" | "gcd" | "lcm" | "remainder"
     args: arg ("," arg)*
     arg: value | functioncall
