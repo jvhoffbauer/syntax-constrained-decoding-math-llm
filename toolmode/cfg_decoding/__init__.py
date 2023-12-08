@@ -1,18 +1,38 @@
+from dataclasses import dataclass
+from typing import Literal
+
 import torch
-from transformers import AutoModelForCausalLM, AutoTokenizer, LogitsProcessorList
+from transformers import LogitsProcessorList
 
 from toolmode.cfg_decoding import logits_processor, parsing, stopping_criteria
+from toolmode.data.funcqa import runner as funcqa_runner
+
+
+@dataclass
+class GenerationStep:
+    generation_type: Literal["free", "constrained", "operation"]
+    text: str
+
+    def __str__(self):
+        return f"{self.generation_type}: {self.text}"
+
+
+@dataclass
+class GenerationResult:
+    steps: list[GenerationStep]
+    result: float | None
+
+    def __str__(self):
+        return f"Result: {self.result}. Steps:" + " | ".join([str(step) for step in self.steps])
+
+    def get_generations(self, generation_type: Literal["free", "constrained", "operation"]):
+        return [generation for generation in self.steps if generation.generation_type == generation_type]
 
 
 class CfgDecoder:
-    def __init__(self, model_name: str, grammar_path="funcqa.lark", device_map="cuda:0"):
-        # Load model and tokenizer
-        self.tokenizer = AutoTokenizer.from_pretrained(model_name)
-        self.model = AutoModelForCausalLM.from_pretrained(model_name, load_in_4bit=True, device_map=device_map)
-
-        # Set up model for generation
-        self.model.config.pad_token_id = self.model.config.eos_token_id
-        self.tokenizer.pad_token = self.tokenizer.eos_token
+    def __init__(self, model, tokenizer, grammar_path="funcqa.lark", device_map="cuda:0"):
+        self.model = model
+        self.tokenizer = tokenizer
 
         # Load grammar
         with open(grammar_path, "r") as f:
@@ -40,8 +60,8 @@ class CfgDecoder:
             pad_token_id=self.tokenizer.eos_token_id,
             # No sampling
             do_sample=False,
-            temperature=None,
-            top_p=0,
+            # temperature=None,
+            # top_p=0,
         )
 
         output_text = self.tokenizer.batch_decode(output_ids[:, prompt_end_index:], skip_special_tokens=True)
@@ -66,8 +86,8 @@ class CfgDecoder:
             pad_token_id=self.tokenizer.eos_token_id,
             # No sampling
             do_sample=False,
-            temperature=None,
-            top_p=0,
+            # temperature=None,
+            # top_p=0,
             # Stop on first <T>
             stopping_criteria=stopping_criteria.TargetSequencetoppingCriteria(
                 target_sequence=target_sequence, prompt=prompt, tokenizer=self.tokenizer
@@ -79,47 +99,49 @@ class CfgDecoder:
 
         return output_text
 
-    def generate_interleaving(self, prompt: str, max_new_tokens: int, max_operations: int, use_constrained: bool): 
-        
+    def generate_interleaving(
+        self, prompt: str, max_new_tokens: int, max_operations: int, use_constrained: bool
+    ) -> GenerationResult:
         answer_parts = []
         current_prompt = prompt
-        last_result = None
+        last_result = -1
 
         num_operations = 0
-        while num_operations < max_operations:
-
+        while num_operations < max_operations and last_result is not None:
             # First generate free text. This will stop on the first <T> or when max_new_tokens is reached
             # The answer is the free text up to the first <T>, including the <T>
             free_text = self.generate_free(current_prompt, max_new_tokens)
+
+            # It can happen that the model stops generating before the first <T> is reached
+            # In this case, manually add the <T> to the answer
+            if not free_text.endswith("<T>"):
+                free_text += "<T>"
 
             # Update the prompt
             current_prompt += free_text
 
             # Ggenerate constrained text until max_operations is reached or the model stops generating
-            constrained_text = self.generate_constrained(current_prompt, max_new_tokens)
+            if use_constrained:
+                operation_text = self.generate_constrained(current_prompt, max_new_tokens)
+            else:
+                operation_text = self.generate_free(current_prompt, max_new_tokens)
 
             # Extract the operation: After the last <T>, excluding the (last) "="
-            operation = result.split("<T>")[-1].replace("=", "")
+            operation = operation_text.replace("=", "")
 
             # Evaluate the constrained text (as it is a formula)
             result = funcqa_runner.evaluate_toolcall(operation)
 
             # Add the constrained text to the prompt
-            current_prompt += constrained_text + "=" + result
+            current_prompt += operation + "=" + str(result) + " "
 
             answer_parts += [
-                ("free", free_text),
-                ("constrained", constrained_text),
-                ("result", result),
+                GenerationStep("free", free_text),
+                GenerationStep("constrained" if use_constrained else "free", operation_text),
+                GenerationStep("operation", result),
             ]
 
             num_operations += 1
             last_result = result
 
-        
-
-            
-
-
-            
-
+        return GenerationResult(answer_parts, last_result)
