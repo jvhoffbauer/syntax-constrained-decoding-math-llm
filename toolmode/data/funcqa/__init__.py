@@ -9,7 +9,7 @@ DATASETS_CACHE_DIR_PATH = "/scratch1/redditqa/cached_datasets"
 
 
 def get_funcqa_multi_hop_dataset():
-    # Load the dataset 
+    # Load the dataset
     dataset = ds.Dataset.from_pandas(pd.read_json(FUNCQA_MULTI_HOP_DATASET_FILE_PATH, orient="records"))
 
     # # Save and load the dataset to enable caching
@@ -22,14 +22,22 @@ def get_funcqa_multi_hop_dataset():
 
 def change_operation_format(row):
     calculations = []
-    for calculation in row["calculation"]: 
+    for calculation in row["calculation"]:
         # Replace < with [T] to avoid <T> being interpreted as a tag
         calculation = calculation.replace("<", "[T]").replace(">", "").replace("[T]", "<T>")
         calculations.append(calculation)
-    return row
+    return {**row, "calculation": calculations}
+
+
+def add_prompt(row):
+    with open(FUNCQA_PROMPT_MULTI_HOP, "r") as f:
+        prompt = f.read()
+    prompt = prompt.replace("[QUESTION]", row["question"])
+    return {**row, "prompt": prompt}
 
 
 def load():
     dataset = get_funcqa_multi_hop_dataset()
     dataset = dataset.map(change_operation_format, batched=False)
+    dataset = dataset.map(add_prompt, batched=False)
     return dataset

@@ -9,8 +9,6 @@ def main():
 
     print(dataset)
     print(json.dumps(dataset[0], indent=2))
-    print(Counter([row["operation"] for row in dataset]))
-    print(dataset[0]["prompt"])
 
 
 if __name__ == "__main__":
