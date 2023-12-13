@@ -6,9 +6,10 @@ from transformers import AutoModelForCausalLM, AutoTokenizer, LogitsProcessorLis
 from toolmode.cfg_decoding import CfgDecoder
 from toolmode.data.funcqa import load
 
-# MODEL_NAME = "01-ai/Yi-34B-Chat"
+MODEL_NAME = "01-ai/Yi-34B-Chat"
 # MODEL_NAME = "pankajmathur/orca_mini_3b"
-MODEL_NAME = "01-ai/Yi-6B-Chat"
+# MODEL_NAME = "01-ai/Yi-6B-Chat"
+# MODEL_NAME = "HuggingFaceH4/zephyr-7b-alpha"
 
 
 def main():
@@ -16,7 +17,7 @@ def main():
     data = load()
 
     # Load model
-    device_map = "cuda:0"
+    device_map = "cuda:1"
     tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
     model = AutoModelForCausalLM.from_pretrained(MODEL_NAME, load_in_8bit=True, device_map=device_map)
     model.config.pad_token_id = model.config.eos_token_id
@@ -33,7 +34,7 @@ def main():
         answer = row["answer"]
         num_operations = len(row["calculation"])
         result = decoder.generate_interleaving(
-            prompt, max_new_tokens=100, max_operations=num_operations, use_constrained=True
+            prompt, max_new_tokens=100, max_operations=num_operations, use_constrained=False
         )
         result_float = float(result.result) if result.result is not None else float("nan")
         is_correct = math.isclose(result_float, answer, rel_tol=0.1)

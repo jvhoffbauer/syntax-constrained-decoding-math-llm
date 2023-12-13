@@ -124,7 +124,7 @@ class CfgDecoder:
             if use_constrained:
                 operation_text = self.generate_constrained(current_prompt, max_new_tokens)
             else:
-                operation_text = self.generate_free(current_prompt, max_new_tokens)
+                operation_text = self.generate_free(current_prompt, max_new_tokens, target_sequence="=")
 
             # Extract the operation: After the last <T>, excluding the (last) "="
             operation = operation_text.replace("=", "")
