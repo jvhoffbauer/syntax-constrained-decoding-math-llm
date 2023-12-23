@@ -1,6 +1,3 @@
-
-
-
 FORMAT_INSTRUCTIONS_SYSTEM_FUNCTION = """You are AutoGPT, you can use many tools(functions) to do the following task.
 First I will give you the task description, and your task start.
 At each step, you need to give your thought to analyze the status now and what to do next, with a function call to actually excute your step.
@@ -42,4 +39,3 @@ Question: {question}
 
 Here are the history actions and observations:
 """
-        
