@@ -1,5 +1,5 @@
-from transformers import LogitsProcessor
 import torch
+from transformers import LogitsProcessor
 
 
 class GrammarConstrainedLogitsProcessor(LogitsProcessor):

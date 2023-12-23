@@ -1,11 +1,12 @@
 import math
 
+import torch
 from tqdm import tqdm
-from transformers import AutoModelForCausalLM, AutoTokenizer, LogitsProcessorList
+from transformers import (AutoModelForCausalLM, AutoTokenizer,
+                          LogitsProcessorList)
 
 from toolmode.cfg_decoding import CfgDecoder
 from toolmode.data.funcqa import load
-import torch
 
 MODEL_NAME = "funcqa_zephyr/merged_model_final"
 # MODEL_NAME = "01-ai/Yi-34B-Chat"

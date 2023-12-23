@@ -1,20 +1,15 @@
-import regex
-from lark import UnexpectedInput, Lark, UnexpectedCharacters, UnexpectedToken, UnexpectedEOF, UnexpectedInput
-from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
-
-import numpy as np
-from transformers import (
-    LogitsProcessor,
-    AutoModelForCausalLM,
-    AutoTokenizer,
-    BeamSearchScorer,
-    LogitsProcessorList,
-    MaxLengthCriteria,
-    StoppingCriteriaList,
-)
-import torch
 from dataclasses import dataclass
 from typing import List, Optional, Union
+
+import numpy as np
+import regex
+import torch
+from lark import (Lark, UnexpectedCharacters, UnexpectedEOF, UnexpectedInput,
+                  UnexpectedToken)
+from transformers import (AutoModelForCausalLM, AutoModelForSeq2SeqLM,
+                          AutoTokenizer, BeamSearchScorer, LogitsProcessor,
+                          LogitsProcessorList, MaxLengthCriteria,
+                          StoppingCriteriaList)
 
 
 @dataclass

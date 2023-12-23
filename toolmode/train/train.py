@@ -1,10 +1,3 @@
-from datasets import load_dataset
-from trl import SFTTrainer
-from transformers import AutoModelForCausalLM, AutoTokenizer, LogitsProcessorList
-from peft import LoraConfig
-from toolmode.data.funcqa import training_set
-from peft import get_peft_config, get_peft_model, LoraConfig, TaskType
-from transformers.training_args import TrainingArguments
 import argparse
 import os
 from dataclasses import dataclass, field
@@ -13,22 +6,17 @@ from typing import Optional
 
 import peft
 import torch
-from peft import (
-    LoraConfig,
-    PeftConfig,
-    PeftModel,
-    TaskType,
-    get_peft_model,
-    set_peft_model_state_dict,
-)
+from datasets import load_dataset
+from peft import (LoraConfig, PeftConfig, PeftModel, TaskType, get_peft_config,
+                  get_peft_model, set_peft_model_state_dict)
 from peft.utils import _get_submodules
-from transformers import (
-    AutoConfig,
-    AutoModelForCausalLM,
-    AutoModelForSequenceClassification,
-    AutoTokenizer,
-    HfArgumentParser,
-)
+from transformers import (AutoConfig, AutoModelForCausalLM,
+                          AutoModelForSequenceClassification, AutoTokenizer,
+                          HfArgumentParser, LogitsProcessorList)
+from transformers.training_args import TrainingArguments
+from trl import SFTTrainer
+
+from toolmode.data.funcqa import training_set
 
 MODEL_NAME = "HuggingFaceH4/zephyr-7b-alpha"
 
