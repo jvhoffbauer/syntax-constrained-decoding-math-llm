@@ -1,4 +1,4 @@
-?start: functioncall
+?start: toolcall
     ?toolcall: functioncall "="
     functioncall: name "(" args ")"
     name: "add" | "subtract" | "multiply" | "divide" | "power" | "sqrt" | "log" | "ln" | "choose" | "permutate" | "gcd" | "lcm" | "remainder"
