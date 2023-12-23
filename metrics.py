@@ -1,15 +1,16 @@
 from toolmode.data.funcqa.math_operators import custom_round
 import re
 
-def parse_answer(answer, pattern:str="####"):
-    if pattern=="####":
+
+def parse_answer(answer, pattern: str = "####"):
+    if pattern == "####":
         answer = answer.split("####")[-1]
-        answer = answer.strip().strip("\n").strip('\\n')
+        answer = answer.strip().strip("\n").strip("\\n")
         # 32,333 -> 32333
         answer = answer.replace(",", "")
-    elif pattern=="answer is":
+    elif pattern == "answer is":
         answer = answer.split("answer is")[-1]
-        answer = answer.strip().strip("\n").strip('\\n')
+        answer = answer.strip().strip("\n").strip("\\n")
         # 32,333 -> 32333
         answer = answer.replace(",", "")
 
@@ -23,14 +24,14 @@ def parse_answer(answer, pattern:str="####"):
 
     return answer
 
-def accuracy(preds, labels, type="em"):
 
+def accuracy(preds, labels, type="em"):
     if len(preds) != len(labels):
         print(f"Noticed different length of pred and label: {len(preds)} vs {len(labels)}")
         print(f"Only the first {len(preds)} elements will be evaluated")
         # only keep the first len(preds) elements
-        labels = labels[:len(preds)]
-        
+        labels = labels[: len(preds)]
+
     if type == "em":
         tuple_labels = []
         # interate through the label
@@ -44,14 +45,13 @@ def accuracy(preds, labels, type="em"):
                 tuple_labels.append(("int", int(label)))
             else:
                 tuple_labels.append(("float", label))
-        
+
         correct = 0
         # check the preds
         for p, l in zip(preds, tuple_labels):
-            
             try:
                 # strip some characters
-                p = p.strip().strip("\n").strip('\\n').strip("$")
+                p = p.strip().strip("\n").strip("\\n").strip("$")
                 # convert it to float
                 p = float(p)
                 # round it to precision
@@ -59,13 +59,13 @@ def accuracy(preds, labels, type="em"):
 
                 if l[0] == "int":
                     p = int(p)
-                
+
                 if p == l[1]:
                     correct += 1
-                
+
             except:
                 pass
-        
+
         return correct / len(labels)
 
     elif type == "approx":
@@ -73,7 +73,7 @@ def accuracy(preds, labels, type="em"):
         for p, l in zip(preds, labels):
             try:
                 # strip some characters
-                p = p.strip().strip("\n").strip('\\n').strip("$")
+                p = p.strip().strip("\n").strip("\\n").strip("$")
                 # convert all the numbers to float
                 p = float(p)
                 l = float(l)
@@ -83,12 +83,10 @@ def accuracy(preds, labels, type="em"):
                     correct += 1
             except:
                 pass
-        
+
         return correct / len(labels)
-    
+
     else:
-        raise NotImplementedError(f"Accuracy type should be either em for exact match or approx for approximate match, but got {type}")
-
-
-
-    
+        raise NotImplementedError(
+            f"Accuracy type should be either em for exact match or approx for approximate match, but got {type}"
+        )
