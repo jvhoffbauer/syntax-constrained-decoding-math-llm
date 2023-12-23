@@ -11,7 +11,7 @@ class TargetSequencetoppingCriteria(StoppingCriteria):
         # Get the generated text as a string
         generated_text = self.tokenizer.decode(input_ids[0])
         generated_text = generated_text.replace(self.prompt, "")
-        
+
         # Check if the target sequence appears in the generated text
         if self.target_sequence in generated_text:
             return True  # Stop generation
