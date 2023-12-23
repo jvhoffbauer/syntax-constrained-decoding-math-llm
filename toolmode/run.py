@@ -5,8 +5,10 @@ from transformers import AutoModelForCausalLM, AutoTokenizer, LogitsProcessorLis
 
 from toolmode.cfg_decoding import CfgDecoder
 from toolmode.data.funcqa import load
+import torch
 
-MODEL_NAME = "01-ai/Yi-34B-Chat"
+MODEL_NAME = "funcqa_zephyr/merged_model_final"
+# MODEL_NAME = "01-ai/Yi-34B-Chat"
 # MODEL_NAME = "pankajmathur/orca_mini_3b"
 # MODEL_NAME = "01-ai/Yi-6B-Chat"
 # MODEL_NAME = "HuggingFaceH4/zephyr-7b-alpha"
@@ -17,9 +19,9 @@ def main():
     data = load()
 
     # Load model
-    device_map = "cuda:1"
+    device_map = "cuda:2"
     tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
-    model = AutoModelForCausalLM.from_pretrained(MODEL_NAME, load_in_8bit=True, device_map=device_map)
+    model = AutoModelForCausalLM.from_pretrained(MODEL_NAME, load_in_4bit=True, device_map=device_map, torch_dtype=torch.bfloat16)
     model.config.pad_token_id = model.config.eos_token_id
     tokenizer.pad_token = tokenizer.eos_token
 
@@ -34,7 +36,7 @@ def main():
         answer = row["answer"]
         num_operations = len(row["calculation"])
         result = decoder.generate_interleaving(
-            prompt, max_new_tokens=100, max_operations=num_operations, use_constrained=False
+            prompt, max_new_tokens=100, max_operations=num_operations, use_constrained=True
         )
         result_float = float(result.result) if result.result is not None else float("nan")
         is_correct = math.isclose(result_float, answer, rel_tol=0.1)
@@ -56,6 +58,7 @@ def main():
                 "is_correct": is_correct,
             }
         )
+        print("Accuracy until now:", sum([1 for r in results if r["is_correct"]]) / len(results))
 
     print(results)
     print("Accuracy:", sum([1 for r in results if r["is_correct"]]) / len(results))
