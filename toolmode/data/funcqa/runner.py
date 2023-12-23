@@ -1,20 +1,9 @@
 import ast
 
-from toolmode.data.funcqa.math_operators import (
-    add_,
-    choose_,
-    divide_,
-    gcd_,
-    lcm_,
-    ln_,
-    log_,
-    multiply_,
-    permutate_,
-    power_,
-    remainder_,
-    sqrt_,
-    subtract_,
-)
+from toolmode.data.funcqa.math_operators import (add_, choose_, divide_, gcd_,
+                                                 lcm_, ln_, log_, multiply_,
+                                                 permutate_, power_,
+                                                 remainder_, sqrt_, subtract_)
 
 OPERATORS = {
     "add": add_,
