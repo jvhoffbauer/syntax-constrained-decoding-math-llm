@@ -1,11 +1,13 @@
 from dataclasses import dataclass
-from typing import Literal
+from typing import List, Literal
 
 import torch
 from transformers import LogitsProcessorList
 
 from toolmode.cfg_decoding import logits_processor, parsing, stopping_criteria
 from toolmode.data.funcqa import runner as funcqa_runner
+
+MAX_GENERATION_STEPS = 3
 
 
 @dataclass
@@ -39,109 +41,145 @@ class CfgDecoder:
             self.grammar_definition = f.read()
         self.parsing_stepper = parsing.create_parsing_stepper(self.grammar_definition, self.tokenizer)
 
-    def generate_constrained(self, prompt: str, max_new_tokens: int):
-        input_ids = self.tokenizer(prompt, return_tensors="pt").input_ids
-        bos_ids = torch.ones((1, 1), dtype=torch.long) * self.model.config.bos_token_id
+    def generate(
+        self, prompts: str, max_new_tokens: int, mask: List[bool], use_constrained: bool, target_sequence: str = "<T>"
+    ):
+        """
+        Will skip prompts where mask is False
+        """
+        # Filter prompts that are not masked
+        prompts = [prompt for m, prompt in zip(mask, prompts) if mask]
+
+        # Create input ids
+        input_ids = self._create_input_ids(prompts)
+
+        # Generate
+        if use_constrained:
+            output_ids = self.model.generate(
+                input_ids,
+                logits_processor=LogitsProcessorList(
+                    [
+                        logits_processor.GrammarConstrainedLogitsProcessor(
+                            self.tokenizer, self.parsing_stepper, prompt_end_index=input_ids.shape[1]
+                        )
+                    ]
+                ),
+                max_new_tokens=max_new_tokens,
+                pad_token_id=self.tokenizer.eos_token_id,
+                # No sampling
+                do_sample=False,
+            )
+        else:
+            output_ids = self.model.generate(
+                input_ids,
+                max_new_tokens=max_new_tokens,
+                pad_token_id=self.tokenizer.eos_token_id,
+                # No sampling
+                do_sample=False,
+                # Stop on first <T>
+                stopping_criteria=stopping_criteria.TargetSequencetoppingCriteria(
+                    target_sequence=target_sequence, prompt=prompts, tokenizer=self.tokenizer
+                ),
+            )
+
+        # Extract texts from ids
+        texts = self._get_texts_from_ids(output_ids, input_ids.shape[1])
+
+        # Reorder texts to match the original order (as some texts might have been skipped)
+        texts_full = [""] * len(mask)
+        for i, m in enumerate(mask):
+            if m:
+                texts_full[i] = texts.pop(0)
+
+        return texts_full
+
+    def _create_input_ids(self, prompts: List[str]):
+        input_ids = self.tokenizer(prompts, return_tensors="pt").input_ids
+        bos_ids = torch.ones((len(prompts), 1), dtype=torch.long) * self.model.config.bos_token_id
         input_ids = torch.cat([bos_ids, input_ids], dim=-1)
         input_ids = input_ids.to(self.model.device)
+        return input_ids
 
-        prompt_end_index = input_ids.shape[1]
-
-        output_ids = self.model.generate(
-            input_ids,
-            logits_processor=LogitsProcessorList(
-                [
-                    logits_processor.GrammarConstrainedLogitsProcessor(
-                        self.tokenizer, self.parsing_stepper, prompt_end_index=prompt_end_index
-                    )
-                ]
-            ),
-            max_new_tokens=max_new_tokens,
-            pad_token_id=self.tokenizer.eos_token_id,
-            # No sampling
-            do_sample=False,
-            # temperature=None,
-            # top_p=0,
-        )
-
+    def _get_texts_from_ids(self, output_ids, prompt_end_index) -> List[str]:
         output_text = self.tokenizer.batch_decode(output_ids[:, prompt_end_index:], skip_special_tokens=True)
-        output_text = output_text[0]
-        return output_text
-
-    def generate_free(self, prompt: str, max_new_tokens: int, target_sequence: str = "<T>"):
-        """
-        Generate free text until the target sequence was generated or max_new_tokens is reached
-        Return (only) the generated text including the target sequence
-        """
-        input_ids = self.tokenizer(prompt, return_tensors="pt").input_ids
-        bos_ids = torch.ones((1, 1), dtype=torch.long) * self.model.config.bos_token_id
-        input_ids = torch.cat([bos_ids, input_ids], dim=-1)
-        input_ids = input_ids.to(self.model.device)
-
-        prompt_end_index = input_ids.shape[1]
-
-        output_ids = self.model.generate(
-            input_ids,
-            max_new_tokens=max_new_tokens,
-            pad_token_id=self.tokenizer.eos_token_id,
-            # No sampling
-            do_sample=False,
-            # temperature=None,
-            # top_p=0,
-            # Stop on first <T>
-            stopping_criteria=stopping_criteria.TargetSequencetoppingCriteria(
-                target_sequence=target_sequence, prompt=prompt, tokenizer=self.tokenizer
-            ),
-        )
-
-        output_text = self.tokenizer.batch_decode(output_ids[:, prompt_end_index:], skip_special_tokens=True)
-        output_text = output_text[0]
-
         return output_text
 
     def generate_interleaving(
-        self, prompt: str, max_new_tokens: int, max_operations: int, use_constrained: bool
+        self, prompts: List[str], max_new_tokens_thinking: int, max_new_tokens_operation: int, use_constrained: bool
     ) -> GenerationResult:
-        answer_parts = []
-        current_prompt = prompt
-        last_result = -1
+        """ """
+        batch_size = len(prompts)
+        current_prompts = prompts
+        answer_parts = [[]] * batch_size
+        last_results = [None] * batch_size
+        is_done = [False] * batch_size
 
-        num_operations = 0
-        while num_operations < max_operations and last_result is not None:
+        while any(not done for done in is_done):
             # First generate free text. This will stop on the first <T> or when max_new_tokens is reached
             # The answer is the free text up to the first <T>, including the <T>
-            free_text = self.generate_free(current_prompt, max_new_tokens)
+            free_texts = self.generate(
+                prompts=current_prompts,
+                max_new_tokens=max_new_tokens_thinking,
+                use_constrained=False,
+                target_sequence="<T>",
+                mask=[not done for done in is_done],
+            )
 
             # It can happen that the model stops generating before the first <T> is reached
             # In this case, manually add the <T> to the answer
-            if not free_text.endswith("<T>"):
-                free_text += "<T>"
+            free_texts = [t + "<T>" if t.endswith("<T>") else t for t in free_texts]
 
             # Update the prompt
-            current_prompt += free_text
+            current_prompts = [p + t for p, t in zip(current_prompts, free_texts)]
 
-            # Ggenerate constrained text until max_operations is reached or the model stops generating
+            # Generate constrained text until max_operations is reached or the model stops generating
             if use_constrained:
-                operation_text = self.generate_constrained(current_prompt, max_new_tokens)
+                operation_texts = self.generate(
+                    prompts=current_prompts,
+                    max_new_tokens=max_new_tokens_operation,
+                    use_constrained=True,
+                    mask=[not done for done in is_done],
+                )
             else:
-                operation_text = self.generate_free(current_prompt, max_new_tokens, target_sequence="=")
+                operation_texts = self.generate(
+                    prompts=current_prompts,
+                    max_new_tokens=max_new_tokens_operation,
+                    target_sequence="=",
+                    use_constrained=False,
+                    mask=[not done for done in is_done],
+                )
 
             # Extract the operation: After the last <T>, excluding the (last) "="
-            operation = operation_text.replace("=", "")
+            operations = [o.replace("=", "") for o in operation_texts]
 
             # Evaluate the constrained text (as it is a formula)
-            result = funcqa_runner.evaluate_toolcall(operation)
+            results = [funcqa_runner.evaluate_toolcall(o) for o in operations]
 
             # Add the constrained text to the prompt
-            current_prompt += operation + "=" + str(result) + " "
-
-            answer_parts += [
-                GenerationStep("free", free_text),
-                GenerationStep("constrained" if use_constrained else "free", operation_text),
-                GenerationStep("operation", result),
+            current_prompts = [
+                prompt + op + "=" + res + " " for prompt, op, res in zip(current_prompts, operation_texts, results)
             ]
 
-            num_operations += 1
-            last_result = result
+            # Store the answer
+            for i, _ in enumerate(answer_parts):
+                if is_done[i]:
+                    continue
+                answer_parts[i] += [
+                    GenerationStep("free", free_texts[i]),
+                    GenerationStep("constrained" if use_constrained else "free", operation_texts[i]),
+                    GenerationStep("operation", results[i]),
+                ]
+                last_results[i] = results[i]
 
-        return GenerationResult(answer_parts, last_result)
+            # Check if we are done
+            for i, result in enumerate(results):
+                if is_done[i]:
+                    continue
+                elif result is None:
+                    is_done[i] = True
+                elif len(answer_parts[i] / 3) >= MAX_GENERATION_STEPS:
+                    is_done[i] = True
+                elif free_texts[i] in ["", "."]:
+                    is_done[i] = True
+
+        return [GenerationResult(a, l) for a, l in zip(answer_parts, last_results)]
