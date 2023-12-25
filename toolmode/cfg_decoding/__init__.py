@@ -42,16 +42,22 @@ class CfgDecoder:
         self.parsing_stepper = parsing.create_parsing_stepper(self.grammar_definition, self.tokenizer)
 
     def generate(
-        self, prompts: str, max_new_tokens: int, mask: List[bool], use_constrained: bool, target_sequence: str = "<T>"
+        self,
+        prompts: str,
+        max_new_tokens: int,
+        mask: List[bool],
+        use_constrained: bool,
+        target_sequence: str | None = None,
     ):
         """
         Will skip prompts where mask is False
         """
         # Filter prompts that are not masked
-        prompts = [prompt for m, prompt in zip(mask, prompts) if mask]
+        prompts = [prompt for m, prompt in zip(mask, prompts) if m]
 
         # Create input ids
-        input_ids = self._create_input_ids(prompts)
+        input_ids = self.tokenizer(prompts, return_tensors="pt", padding=True).input_ids
+        input_ids = input_ids.to(self.model.device)
 
         # Generate
         if use_constrained:
@@ -78,12 +84,17 @@ class CfgDecoder:
                 do_sample=False,
                 # Stop on first <T>
                 stopping_criteria=stopping_criteria.TargetSequencetoppingCriteria(
-                    target_sequence=target_sequence, prompt=prompts, tokenizer=self.tokenizer
+                    target_sequence=target_sequence, prompts=prompts, tokenizer=self.tokenizer
                 ),
             )
 
         # Extract texts from ids
-        texts = self._get_texts_from_ids(output_ids, input_ids.shape[1])
+        texts = self.tokenizer.batch_decode(output_ids[:, input_ids.shape[1] :], skip_special_tokens=True)
+
+        # Remove everything after the target sequence
+        # This is needed as the model might generate more than the target sequence for the batch indices that hit it first
+        if target_sequence is not None:
+            texts = [t.split(target_sequence)[0] for t in texts]
 
         # Reorder texts to match the original order (as some texts might have been skipped)
         texts_full = [""] * len(mask)
@@ -93,24 +104,13 @@ class CfgDecoder:
 
         return texts_full
 
-    def _create_input_ids(self, prompts: List[str]):
-        input_ids = self.tokenizer(prompts, return_tensors="pt").input_ids
-        bos_ids = torch.ones((len(prompts), 1), dtype=torch.long) * self.model.config.bos_token_id
-        input_ids = torch.cat([bos_ids, input_ids], dim=-1)
-        input_ids = input_ids.to(self.model.device)
-        return input_ids
-
-    def _get_texts_from_ids(self, output_ids, prompt_end_index) -> List[str]:
-        output_text = self.tokenizer.batch_decode(output_ids[:, prompt_end_index:], skip_special_tokens=True)
-        return output_text
-
     def generate_interleaving(
         self, prompts: List[str], max_new_tokens_thinking: int, max_new_tokens_operation: int, use_constrained: bool
     ) -> GenerationResult:
         """ """
         batch_size = len(prompts)
         current_prompts = prompts
-        answer_parts = [[]] * batch_size
+        answer_parts = [[] for _ in prompts]
         last_results = [None] * batch_size
         is_done = [False] * batch_size
 
@@ -157,18 +157,16 @@ class CfgDecoder:
 
             # Add the constrained text to the prompt
             current_prompts = [
-                prompt + op + "=" + res + " " for prompt, op, res in zip(current_prompts, operation_texts, results)
+                prompt + op + "=" + str(res) + " " for prompt, op, res in zip(current_prompts, operations, results)
             ]
 
             # Store the answer
             for i, _ in enumerate(answer_parts):
                 if is_done[i]:
                     continue
-                answer_parts[i] += [
-                    GenerationStep("free", free_texts[i]),
-                    GenerationStep("constrained" if use_constrained else "free", operation_texts[i]),
-                    GenerationStep("operation", results[i]),
-                ]
+                answer_parts[i].append(GenerationStep("free", free_texts[i]))
+                answer_parts[i].append(GenerationStep("constrained" if use_constrained else "free", operation_texts[i]))
+                answer_parts[i].append(GenerationStep("operation", results[i]))
                 last_results[i] = results[i]
 
             # Check if we are done
@@ -177,7 +175,7 @@ class CfgDecoder:
                     continue
                 elif result is None:
                     is_done[i] = True
-                elif len(answer_parts[i] / 3) >= MAX_GENERATION_STEPS:
+                elif len(answer_parts[i]) / 3 >= MAX_GENERATION_STEPS:
                     is_done[i] = True
                 elif free_texts[i] in ["", "."]:
                     is_done[i] = True

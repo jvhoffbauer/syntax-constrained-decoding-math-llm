@@ -6,16 +6,10 @@ import datasets as ds
 import pandas as pd
 
 FUNCQA_MULTI_HOP_DATASET_FILE_PATH = "data/funcqa/funcqa_mh.json"
-FUNCQA_PROMPT_MULTI_HOP = "data/funcqa/template_mh/llama_general_tooldec.txt"
 DATASETS_CACHE_DIR_PATH = "/scratch1/redditqa/cached_datasets"
 FUNCQA_TRAINING_DATA = "data/funcqa/training_data"
 FUNCQA_PROMPT_MULTI_HOP = "data/funcqa/template_mh/llama_general_tooldec.txt"
 DATASETS_CACHE_DIR_PATH = "~/cache"
-
-
-# Load the multi hop prompt
-with open(FUNCQA_PROMPT_MULTI_HOP, "r") as f:
-    funcqa_prompt_multi_hop = f.read()
 
 
 def change_operation_format_in_answer(row: dict) -> dict:
@@ -47,11 +41,6 @@ def get_answer_numerical(row: dict) -> dict:
     return {"answer_number": answer}
 
 
-def add_prompt(row):
-    prompt = funcqa_prompt_multi_hop.replace("[QUESTION]", row["question"])
-    return {"prompt": prompt}
-
-
 def load():
     # Load test data
     test = ds.Dataset.from_pandas(pd.read_json(FUNCQA_MULTI_HOP_DATASET_FILE_PATH, orient="records"))
@@ -74,7 +63,6 @@ def load():
 
     # Create dataset dict
     dataset = ds.DatasetDict({"train": train, "test": test})
-    dataset = dataset.map(add_prompt, batched=False)
 
     # Push to hub
     dataset.push_to_hub("jvhoffbauer/funcqa", private=True)

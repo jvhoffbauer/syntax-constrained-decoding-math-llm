@@ -11,6 +11,3 @@ Answer: log(x)=2, so x=10^2=<T>power(10,2)=100; log(y)=0.1, so y=10^0.1=<T>power
 
 Question: How many degrees does the hour hand travel when the clock goes 246 minutes?
 Answer: The hour hand travels 360 degrees in 12 hours, so every hour it travels 360/12=<T>divide(360,12)=30 degrees. 246 minutes is 246/60=<T>divide(246,60)=4.1 hours. The hour hand travels 4.1*30=<T>multiply(4.1,30)=123 degrees.
-
-Question: [QUESTION]
-Answer:
