@@ -76,12 +76,24 @@ FSA = {
         "remainder": "OPEN_BRACKET",
     },
     "OPEN_BRACKET": {
-        "(": "NUMBER_P1",
+        "(": "NUMBER_P0",
+    },
+    "NUMBER_P0": {
+        "0": "NUMBER_P1",
+        "1": "NUMBER_P1",
+        "2": "NUMBER_P1",
+        "3": "NUMBER_P1",
+        "4": "NUMBER_P1",
+        "5": "NUMBER_P1",
+        "6": "NUMBER_P1",
+        "7": "NUMBER_P1",
+        "8": "NUMBER_P1",
+        "9": "NUMBER_P1",
     },
     "NUMBER_P1": {
         ".": "NUMBER_P2",
         ",": "ARGUMENT_SPACE",
-        ")": "CLOSE_BRACKET",
+        ")=": "FINAL",
         "0": "NUMBER_P1",
         "1": "NUMBER_P1",
         "2": "NUMBER_P1",
@@ -95,7 +107,7 @@ FSA = {
     },
     "NUMBER_P2": {
         ",": "ARGUMENT_SPACE",
-        ")": "CLOSE_BRACKET",
+        ")=": "FINAL",
         "0": "NUMBER_P2",
         "1": "NUMBER_P2",
         "2": "NUMBER_P2",
@@ -108,15 +120,11 @@ FSA = {
         "9": "NUMBER_P2",
     },
     "ARGUMENT_SPACE": {
-        " ": "NUMBER_P1",
+        " ": "NUMBER_P0",
     },
-    "CLOSE_BRACKET": {
-        ")": "EQUALITY",
+    "FINAL": {
+        "</s>": "FINAL",
     },
-    "EQUALITY": {
-        "=": "FINAL",
-    },
-    "FINAL": {},
 }
 
 
@@ -155,9 +163,6 @@ class GpuGrammar:
                 ), f"Transition {transition} from {state} to {next_state} is not a single token"
                 token_id = token_ids[0]
                 self.fsa[state][token_id] = next_state
-
-        # Insert final state
-        self.fsa["FINAL"] = {id: "FINAL" for id in range(self.tokenizer.vocab_size)}
 
         # Create mapping of state ids
         self.state_ids2state = {i: state for i, state in enumerate(self.fsa.keys())}
@@ -199,25 +204,28 @@ class GpuGrammar:
         # First, apply the grammar to the input_ids
         states = torch.ones((B,), dtype=torch.int32, device=input_ids.device) * self.state2state_ids["S"]
         indices = start_indices.clone().to(input_ids.device)
+        is_finished = torch.zeros((B,), dtype=torch.bool, device=input_ids.device)
 
         # Get num steps
         num_steps = input_ids.shape[1] - start_indices
-        num_steps = torch.min(num_steps)
+        num_steps = torch.max(num_steps)
         num_steps = num_steps.item()
 
         # Run the automata until we reach the final state
         for _ in range(num_steps):
             # Get the next tokens
-            next_tokens = input_ids[torch.arange(B), indices]
+            next_tokens = torch.where(~is_finished, input_ids[torch.arange(B), indices], -1)
 
             # Get the next states
-            next_states = self.fsa_tensor[states, next_tokens]
+            next_states = torch.where(~is_finished, self.fsa_tensor[states, next_tokens], states)
 
             # Update states
             states = next_states
 
             # Update indices
             indices += 1
+            is_finished = indices >= input_ids.shape[1]
+            indices = torch.min(indices, torch.ones_like(indices) * (input_ids.shape[1] - 1))
 
         # Get the enabled tokens for the final states
         mask = self.fsa_tensor[states] != -1
@@ -284,7 +292,7 @@ def main():
 
     g = GpuGrammar(AutoTokenizer.from_pretrained("HuggingFaceH4/zephyr-7b-beta"))
 
-    input_tokens = torch.Tensor(g._encode("multiply(1")).long().unsqueeze(0)
+    input_tokens = torch.Tensor(g._encode("ln(1, 2)=")).long().unsqueeze(0)
     mask, states = g.get_token_mask(input_tokens, torch.tensor([0]))
     tokens = g.tokenizer.convert_ids_to_tokens(torch.where(mask)[1].tolist())
     print(states)
