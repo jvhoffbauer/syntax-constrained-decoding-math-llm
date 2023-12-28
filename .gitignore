@@ -1,8 +1,14 @@
+# IDE / Runtime 
 .venv
 __pycache__
 .vscode
+wandb
 
 # Dev container
 .devcontainer/
 .dockerignore
 Dockerfile
+
+# Huggingface data 
+gsm8k-toolcalls/
+funcqa_zephyr_e*/
