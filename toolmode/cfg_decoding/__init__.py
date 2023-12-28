@@ -30,6 +30,9 @@ class GenerationResult:
     def get_generations(self, generation_type: Literal["free", "constrained", "operation"]):
         return [generation for generation in self.steps if generation.generation_type == generation_type]
 
+    def to_sentence(self):
+        return "".join([str(step.text) for step in self.steps])
+
 
 class CfgDecoder:
     def __init__(self, model, tokenizer, grammar_path="funcqa.lark", device_map="cuda:0"):
@@ -65,8 +68,10 @@ class CfgDecoder:
                 input_ids,
                 logits_processor=LogitsProcessorList(
                     [
-                        logits_processor.GrammarConstrainedLogitsProcessor(
-                            self.tokenizer, self.parsing_stepper, prompt_end_index=input_ids.shape[1]
+                        logits_processor.GrammarConstrainedLogitsProcessorGpu(
+                            self.tokenizer,
+                            torch.ones((len(prompts),)).long().to(self.model.device) * (input_ids.shape[1]),
+                            self.model.device,
                         )
                     ]
                 ),
@@ -84,7 +89,9 @@ class CfgDecoder:
                 do_sample=False,
                 # Stop on first <T>
                 stopping_criteria=stopping_criteria.TargetSequencetoppingCriteria(
-                    target_sequence=target_sequence, prompts=prompts, tokenizer=self.tokenizer
+                    target_sequence=target_sequence,
+                    prompt_end_indices=torch.ones((len(prompts),)).long().to(self.model.device) * (input_ids.shape[1]),
+                    tokenizer=self.tokenizer,
                 ),
             )
 
@@ -127,7 +134,7 @@ class CfgDecoder:
 
             # It can happen that the model stops generating before the first <T> is reached
             # In this case, manually add the <T> to the answer
-            free_texts = [t + "<T>" if t.endswith("<T>") else t for t in free_texts]
+            free_texts = [t + "<T>" if not t.endswith("<T>") else t for t in free_texts]
 
             # Update the prompt
             current_prompts = [p + t for p, t in zip(current_prompts, free_texts)]
@@ -160,15 +167,6 @@ class CfgDecoder:
                 prompt + op + "=" + str(res) + " " for prompt, op, res in zip(current_prompts, operations, results)
             ]
 
-            # Store the answer
-            for i, _ in enumerate(answer_parts):
-                if is_done[i]:
-                    continue
-                answer_parts[i].append(GenerationStep("free", free_texts[i]))
-                answer_parts[i].append(GenerationStep("constrained" if use_constrained else "free", operation_texts[i]))
-                answer_parts[i].append(GenerationStep("operation", results[i]))
-                last_results[i] = results[i]
-
             # Check if we are done
             for i, result in enumerate(results):
                 if is_done[i]:
@@ -177,7 +175,18 @@ class CfgDecoder:
                     is_done[i] = True
                 elif len(answer_parts[i]) / 3 >= MAX_GENERATION_STEPS:
                     is_done[i] = True
-                elif free_texts[i] in ["", "."]:
+                elif "####" in free_texts[i]:
                     is_done[i] = True
+
+            # Store the answer
+            for i, _ in enumerate(answer_parts):
+                answer_parts[i].append(GenerationStep("free", free_texts[i]))
+
+                if is_done[i]:
+                    continue
+
+                answer_parts[i].append(GenerationStep("constrained" if use_constrained else "free", operation_texts[i]))
+                answer_parts[i].append(GenerationStep("operation", results[i]))
+                last_results[i] = results[i]
 
         return [GenerationResult(a, l) for a, l in zip(answer_parts, last_results)]
