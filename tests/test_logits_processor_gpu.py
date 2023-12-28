@@ -1,14 +1,11 @@
-import copy
-from pprint import pprint
-
 import torch
 from transformers import AutoTokenizer
 
-from toolmode.cfg_decoding.logits_processor import GpuGrammar
+from toolmode.cfg_decoding.logits_processor import FsaGpu
 
 
 def test_gpu_fsa():
-    g = GpuGrammar(AutoTokenizer.from_pretrained("HuggingFaceH4/zephyr-7b-beta"))
+    g = FsaGpu(AutoTokenizer.from_pretrained("HuggingFaceH4/zephyr-7b-beta"))
 
     test_cases = [
         (
@@ -39,7 +36,7 @@ def test_gpu_fsa():
 
 
 def test_gpu_fsa_multibatch():
-    g = GpuGrammar(AutoTokenizer.from_pretrained("HuggingFaceH4/zephyr-7b-beta"))
+    g = FsaGpu(AutoTokenizer.from_pretrained("HuggingFaceH4/zephyr-7b-beta"))
 
     test_cases = [
         (
