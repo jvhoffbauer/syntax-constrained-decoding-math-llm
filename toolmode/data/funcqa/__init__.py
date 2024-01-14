@@ -61,8 +61,19 @@ def load():
     train = train.map(get_answer_numerical, batched=False)
     train = train.map(change_operation_format_in_answer, batched=False)
 
+    # Split train data into train and validation
+    train_orig = train.shuffle(seed=42)
+    train_len_frac = lambda frac: int(len(train_orig) * frac)
+    # Train is 80% of train_orig
+    train = train_orig.select(range(0, train_len_frac(0.8)))
+    # Val is 10% of train_orig
+    val = train_orig.select(range(train_len_frac(0.8), train_len_frac(0.9)))
+    # Also add 10% of the single hop test data to the validation set
+    test_single = train_orig.select(range(train_len_frac(0.9), len(train_orig)))
+    test = ds.concatenate_datasets([test, test_single])
+
     # Create dataset dict
-    dataset = ds.DatasetDict({"train": train, "test": test})
+    dataset = ds.DatasetDict({"train": train, "eval": val, "test": test})
 
     # Push to hub
     dataset.push_to_hub("jvhoffbauer/funcqa", private=True)
