@@ -1,0 +1,1214 @@
+Run Report: eval/zephyr_untrained_8bit
+
+Config: 
+  output_dir: eval/zephyr_untrained_8bit
+  model_name: HuggingFaceH4/zephyr-7b-beta
+  adapter_name: None
+  do_not_use_constained: False
+  quantization: 8bit
+  use_chat_template: False
+  device: cuda:0
+  sanity_check: False
+
+Accuracy: 0.015037593984962405
+
+
+---------------
+
+Question: ['If a train travels at a speed of 67 km/h for 29 minutes, how far does it travel?']
+Answers: ['1 km is approximately 0.67 miles, so <T>']
+Result Numbers: [nan]
+Correct Answer: [32.38]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.0
+[False]
+Question: ['What is the area of a circle with a diameter of 7.45 cm? (take π as 3.14)']
+Answers: ['The diameter is <T>']
+Result Numbers: [nan]
+Correct Answer: [43.5694625]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.0
+[False, False]
+Question: ['A square patio has an area of 47.4 m^2. If a 1.36 m wide flower bed is installed around the sqaure each side, what is the area of the new patio?']
+Answers: ['1.36 m is the width of the flower bed, so the distance between the flower beds is the width of the square patio minus the width of the flower bed: 4 m -  1.<T>']
+Result Numbers: [nan]
+Correct Answer: [92.256]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.0
+[False, False, False]
+Question: ['A company had a profit of $ 535323 this year. If the profit increases by 23.8% every year, what will the profit be after 5 years?']
+Answers: ['5<T>']
+Result Numbers: [nan]
+Correct Answer: [1556750.9]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.0
+[False, False, False, False]
+Question: ['A company had a profit of $ 535323 this year. If the profit decreases by 3% every year, what will the profit be after 3 years?']
+Answers: ['5<T>']
+Result Numbers: [nan]
+Correct Answer: [488574.848379]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.0
+[False, False, False, False, False]
+Question: ['Rectangular A has a length of 3.64 cm, its width is 1.23 cm shorter than the length, the area of the  A is ?']
+Answers: ['The length of rectangular A is <T>']
+Result Numbers: [nan]
+Correct Answer: [8.7824]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.0
+[False, False, False, False, False, False]
+Question: ['The population of a city was 387659, assuming that the population increases at a rate of 3%, what will the population be after 50 years ?']
+Answers: ['3<T>']
+Result Numbers: [nan]
+Correct Answer: [1699458.2901]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.0
+[False, False, False, False, False, False, False]
+Question: ['If a sephere has a surface area of 12, what is the volume of it? (take π as 3.14)']
+Answers: ['The surface area of a sphere is 4*3.<T>power(1, 3)=1π*r^<T>power(2, 2)=4π*r^<T>']
+Result Numbers: [4.0]
+Correct Answer: [3.91]
+Is correct: [True]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.125
+[False, False, False, False, False, False, False, True]
+Question: ['Given the radius of the sephere is 2.4, calculate the volume. (take π as 3.14)']
+Answers: ['The volume of a sphere is 4/ * r^<T>']
+Result Numbers: [nan]
+Correct Answer: [57.8765]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.1111111111111111
+[False, False, False, False, False, False, False, True, False]
+Question: ['A square has a side length of 55.6 cm, what is the area of the sqaure in square meters?']
+Answers: ['1 cm is 0.01 m, so <T>']
+Result Numbers: [nan]
+Correct Answer: [0.3091]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.1
+[False, False, False, False, False, False, False, True, False, False]
+Question: ['A right triangle has a base of length 8.9 and a height length 9.8. What is the length of the hypotenuse of the triangle?']
+Answers: ['The hypotenuse is the longest side of a right triangle, and it is opposite the right angle. The length of the hypotenuse can be found using the Pythagorean theorem: c^=a^+b<T>']
+Result Numbers: [nan]
+Correct Answer: [13.24]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.09090909090909091
+[False, False, False, False, False, False, False, True, False, False, False]
+Question: ['What is the diagonal of a square of premeter is 7.99?']
+Answers: ['The diagonal of a square is the square root of the sum of the squares of its side lengths. The side length is <T>']
+Result Numbers: [nan]
+Correct Answer: [2.8245]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.08333333333333333
+[False, False, False, False, False, False, False, True, False, False, False, False]
+Question: ['If a quantity triples every day, after 6 days, what will the sqaure root of the the quantity be if the initial value is 1.78?']
+Answers: ['1.<T>']
+Result Numbers: [nan]
+Correct Answer: [27.0]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.07692307692307693
+[False, False, False, False, False, False, False, True, False, False, False, False, False]
+Question: ['A sqaure has surface of 4.8 cm^2, if there is a cube has the same side length of the sqaure, what is the volume of the cube?']
+Answers: ['The surface area of the square is <T>']
+Result Numbers: [nan]
+Correct Answer: [10.5034]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.07142857142857142
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False]
+Question: ['A Ferris wheel has a diameter of 40 meters and takes 1 minutes to complete one revolution. If you are at the top of the Ferris wheel, how high above the ground are you after 12 s? (take π as 3.14)']
+Answers: ['1 revolution takes 1 minute=<T>']
+Result Numbers: [nan]
+Correct Answer: [14.88]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.06666666666666667
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False]
+Question: ['If the hydrogen ion concentration is 0.0003162 moles per liter, what is the pH value of it?']
+Answers: ['0.000<T>']
+Result Numbers: [nan]
+Correct Answer: [3.5]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.0625
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False]
+Question: ['A certain bacteria population doubles in size every 4 hours. how many hours will it take for the population to reach 1000 times?']
+Answers: ['1) When the bacteria population doubles, the new population is twice the old population. Let P(t) be the bacteria population at time t. Then P(t+<T>']
+Result Numbers: [nan]
+Correct Answer: [40.0]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.058823529411764705
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False]
+Question: ['If k is an integer and 0.0010101 x 18 ^ k is greater than 10.0, what is the least possible value of k?']
+Answers: ['0.<T>']
+Result Numbers: [nan]
+Correct Answer: [3.18]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.05555555555555555
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False]
+Question: ['How many digits 3 ^ 108 has ?']
+Answers: ['10<T>log(3)=0.48\n\nThe number of digits in a number is the same<T>']
+Result Numbers: [0.48]
+Correct Answer: [52.0]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.05263157894736842
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False]
+Question: ["Joan took out a mortgage from hel local bank . each monthly mortgage payment she makes must be triple the amount of the previous month ' s payment . if her first payment is $ 100.0 , and the total amount she must pay back is $ 12100.0 , how many months will it take joan to pay back her mortgage ?"]
+Answers: ['1) Let x be the number of months it<T>']
+Result Numbers: [nan]
+Correct Answer: [5.0]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.05
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False]
+Question: ['If log(x) is 1/2, and log(y) is 1/3, what is log(log(a+b))?']
+Answers: ['log(<T>']
+Result Numbers: [nan]
+Correct Answer: [-0.1393]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.047619047619047616
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False]
+Question: ['If x^31 = 8, what is the value of x^3?']
+Answers: ['8 is 2^3, so x^<T>']
+Result Numbers: [nan]
+Correct Answer: [1.223]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.045454545454545456
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+Question: ['The value of an investment after t years is given by the formula V = 5566e^(0.03t). If the investment is worth at least $6657, at least how many years has it been invested?']
+Answers: ['66 55<T>']
+Result Numbers: [nan]
+Correct Answer: [6.0]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.043478260869565216
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+Question: ['If an account earns an annual interest rate of 3.4% compounded continously, approximately how many years will the account money be doubled (round to nearest integer)?']
+Answers: ['1) The continuous compounding formula is I = P * r * t, where<T>subtract(1, 100)=-99is the decimal interest rate, P is the<T>subtract(1, 3.4)=-2.4100th of the<T>']
+Result Numbers: [-2.4]
+Correct Answer: [21.0]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.041666666666666664
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+Question: ['Suppose you deposit $11234.8 in an account and the annual interest is compounded continuously. After 35, there are a total of 34786.3 in the bank account. What is the anual interest ?']
+Answers: ['1. The principal is $11<T>']
+Result Numbers: [nan]
+Correct Answer: [3.23]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.04
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+Question: ['If e^(8x) = √2222, what is the value of x?']
+Answers: ['8x is the exponent of e, so e^(<T>']
+Result Numbers: [nan]
+Correct Answer: [0.48]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.038461538461538464
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+Question: ['If x = ln(89095)+3.6, what is the nearest integer to x?']
+Answers: ['1st, we calculate the value of x: ln(<T>']
+Result Numbers: [nan]
+Correct Answer: [15.0]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.037037037037037035
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+Question: ['A certain class of students is being divided into teams, the class can either be divided into 36 teams with an equal number of players on each team or 68 teams with an equal number of players on each team. For each student, we need to buy 3 apples, what is the lowest possible number of apples we need to buy?']
+Answers: ['36 teams, so each team has 36/<T>']
+Result Numbers: [nan]
+Correct Answer: [1836.0]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.03571428571428571
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+Question: ['How many integers between 1 and 14488 are divisible by 25 , and 45 ?']
+Answers: ['14488 is divisibleby 2<T>power(2, 8)=256and 45 is not divisible 2<T>']
+Result Numbers: [256.0]
+Correct Answer: [64.0]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.034482758620689655
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+Question: ['x is the lowest positive integer that is divisible by 546 through 777, what is the value of log(x)?']
+Answers: ['54<T>']
+Result Numbers: [nan]
+Correct Answer: [4.3054]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.03333333333333333
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+Question: ['Find the least positive integer which when divided by 5624 and 4921 leaves a remainder of 2 in each case.']
+Answers: ['56<T>']
+Result Numbers: [nan]
+Correct Answer: [393610.0]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.03225806451612903
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+Question: ['Jane wants to buy some yarn to knit a sweater and a scarf. The sweater requires 798 skeins of yarn, and the scarf requires 987 skeins of yarn. If the yarn is sold in packages of 3 skeins, what is the minimum number of packages that Jane needs to buy to have enough yarn for both the sweater and the scarf?']
+Answers: ['7<T>']
+Result Numbers: [nan]
+Correct Answer: [12502.0]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.03125
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+Question: ['A school has three different schedules for its classes: Schedule A, Schedule B, and Schedule C. Schedule A repeats every 14 days, Schedule B repeats every 4 weeks, and Schedule C repeats every 2 months. If all three schedules start on the same day, on what day will they all repeat on the same day again?']
+Answers: ['1<T>']
+Result Numbers: [nan]
+Correct Answer: [420.0]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.030303030303030304
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+Question: ['John and Jane are taking a math course. John has a homework assignment that is due every 6 days, while Jane has a homework assignment due every 8 days. Today, when they chat with each other, they find they both need to submit their homework the day after tomorrow. How many days ago was the last time they submitted their homework together?']
+Answers: ["1. John's last homework was due <T>subtract(6, 1)=5days ago. <T>"]
+Result Numbers: [5.0]
+Correct Answer: [22.0]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.029411764705882353
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+Question: ['John, Tom, and Mary are running around a circular track. John completes a lap in 92 seconds, Tom in 138 seconds. Mary takes the average time of Tom and Jack to complete one lap.. If they all start at the same point and time, in how many seconds will they next meet at the starting point?']
+Answers: ['1. John completes one lap in <T>']
+Result Numbers: [nan]
+Correct Answer: [1380.0]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.02857142857142857
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+Question: ['A room is 138 meters 24 centimeters in length and 182 meters 32 centimeters in width, find the number of tiles (196.8731 m^2) required to cover the entire floor of the room.']
+Answers: ['138 meters is 1<T>']
+Result Numbers: [nan]
+Correct Answer: [128.0]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.027777777777777776
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+Question: ['What are the greatest number which on dividing 78628 and 52143 leaves remainders 13 and 3 respectively?']
+Answers: ['78<T>']
+Result Numbers: [nan]
+Correct Answer: [15.0]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.02702702702702703
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+Question: ['There are 1930 pens, the number of pencils is 579 less than pens. What is the maximum number of students among them so that pens and pencils can be distributed in such a way that each student get the same number of pens and same number of pencils ?']
+Answers: ['1<T>']
+Result Numbers: [nan]
+Correct Answer: [193.0]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.02631578947368421
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+Question: ['John wants to fence his rectangular garden, with a area of 58729482 square meters. The length of the garden is 8666 meters. He wants to divide the garden into identical square sections, each with the largest possible area. What is the area of each section?']
+Answers: ['5   8666 <T>']
+Result Numbers: [nan]
+Correct Answer: [1.0]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.02564102564102564
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+Question: ['In how many ways can a committee of 6 people be selected from a group of 17 people if two specific people must be included in the committee?']
+Answers: ['1<T>']
+Result Numbers: [nan]
+Correct Answer: [1365.0]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.025
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+Question: ['A gardener is going to plant 14 red rosebushes and 7 white rosebushes. If the gardener is to select 5 rosebushes randomly, what is the probability that the 2 rosebushes will be the red rosebushes ?']
+Answers: ['1<T>']
+Result Numbers: [nan]
+Correct Answer: [0.0045]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.024390243902439025
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+Question: ['Kim has 23 pairs of shoes, each pair is a different color. If kim randomly selects 2 shoes without replacement from the shoes, what is the probability that she will select 2 shoes of the same color ?']
+Answers: ['1) The total number of possible outcomes is 2<T>']
+Result Numbers: [nan]
+Correct Answer: [0.0222]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.023809523809523808
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+Question: ['From a group of 19 boys and 21 girls, 7 children are to be randomly selected . what is the probability that 3 boys and 4 girls will be selected ?']
+Answers: ['1<T>']
+Result Numbers: [nan]
+Correct Answer: [0.3111]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.023255813953488372
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+Question: ['A lottery game requires a player to select 4 numbers from 1 to 32. What is the probability of selecting all numbers correctly?']
+Answers: ['1 number can be selected in 3<T>']
+Result Numbers: [nan]
+Correct Answer: [2.8e-05]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.022727272727272728
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+Question: ['A company has 33 employees, and they want to form a committee with 13 members. In how many ways can the committee be formed?']
+Answers: ['3<T>']
+Result Numbers: [nan]
+Correct Answer: [573166440.0]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.022222222222222223
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+Question: ["A child want to buy 6 new toys,  if there are 37 toys that satisfy the child' s criteria, in how many different ways can the child select the 6 new toys if the order of selection does n't matter?"]
+Answers: ['The number of ways of selecting <T>']
+Result Numbers: [nan]
+Correct Answer: [2324784.0]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.021739130434782608
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+Question: ['Given a positive integer n = 13567, find the largest integer k such that  e^(k-4.83) / 2 <= n.']
+Answers: ['The largest integer k such that e^(<T>']
+Result Numbers: [nan]
+Correct Answer: [15.04]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.02127659574468085
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+Question: ['Find the largest integer n such that (ln(n+2.2))^2 ≤ 3.89 (take e = 2.71828).']
+Answers: ['1st, we calculate ln(n+<T>']
+Result Numbers: [nan]
+Correct Answer: [4.0]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.020833333333333332
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+Question: ['5 men and 15 women are competing in a race. How many different ways can the top 5 positions be filled?']
+Answers: ['5 men and <T>']
+Result Numbers: [nan]
+Correct Answer: [1860480.0]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.02040816326530612
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+Question: ['In how many ways can 7 boys and 5 girls be arranged in a row if the first position and the last two positions are occupied by boys?']
+Answers: ['7 boys and <T>']
+Result Numbers: [nan]
+Correct Answer: [152409600.0]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.02
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+Question: ["A password consists of 8 non-repeat letters where the first two letters must be 'AB', and the letters can be any of the 24 letters in the alphabet. In how many ways can the password be created?"]
+Answers: ['2 choices for the first letter (A or B), and 1 choice for the second letter (A or B), so 2^2=<>power(<T>']
+Result Numbers: [nan]
+Correct Answer: [537214360.0]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.0196078431372549
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+Question: ['What is the remainder when 13 to the power of 6 is divided by 28?']
+Answers: ['1<T>']
+Result Numbers: [nan]
+Correct Answer: [1.0]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.019230769230769232
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+Question: ['A university has 2611 students and wants to divide them into groups of 83 for a project. How many students will be left over after all the groups are formed?']
+Answers: ['2<T>']
+Result Numbers: [nan]
+Correct Answer: [38.0]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.018867924528301886
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+Question: ['A group of 333 friends want to share 77 pizzas (each pizza can be sliced into 6 pieces) equally among themselves, how many whole pizza will be left over?']
+Answers: ['33<T>']
+Result Numbers: [nan]
+Correct Answer: [21.0]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.018518518518518517
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+Question: ['87 students bought burgers for 7777 dollars, if the bill has to be divided among these students, how much amount should be added to the amound to make it divided amoung them equally in dollars ( in whole number of dollars )']
+Answers: ['8<T>']
+Result Numbers: [nan]
+Correct Answer: [53.0]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.01818181818181818
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+Question: ['Suppose you deposit $ 1000000 into a bank account that earns 3.38% continuously compounded interest annually. How much money will you have in the account after 27 years (round to nearest integer) ? (take e = 2.71828)']
+Answers: ['1) The formula for continuously compounded interest is A = P * e^(r * t), where A is the amount,<T>']
+Result Numbers: [nan]
+Correct Answer: [2491079.0]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.017857142857142856
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+Question: ['Suppose you deposit $ 100000 into a bank account that earns 0.823% continuously compounded interest monthly. How much money will you have in the account after 21 years (round to nearest integer) ? (take e = 2.71828)']
+Answers: ['1) The monthly interest rate is 0.823% = 0.00 82<T>']
+Result Numbers: [nan]
+Correct Answer: [795660.0]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.017543859649122806
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+Question: ['The volume of a sphere S is 234.56 cm 3, what is the diameter of S.(set π = 3.1416)']
+Answers: ['The formula for the volume of a sphere is V=4/<T>']
+Result Numbers: [nan]
+Correct Answer: [7.652]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.017241379310344827
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+Question: ['A company had a profit of $ 778899 this year, after 10 years, the profit becomes 3456789, what is the average annual increase rate for the profit?']
+Answers: ['3<T>']
+Result Numbers: [nan]
+Correct Answer: [0.1607]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.01694915254237288
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+Question: ['The profit of a company doubled in 9 years, on average, what is the increase rate every year in percentage (round to the nearest integer)?']
+Answers: ['1. Let x be the profit in the first year. After<T>']
+Result Numbers: [nan]
+Correct Answer: [8.0]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.016666666666666666
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+Question: ['If n = 3^7 and n ^ b = 15.74 , b must equal to?']
+Answers: ['n = 3^<T>']
+Result Numbers: [nan]
+Correct Answer: [0.3584]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.01639344262295082
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+Question: ['An investment compounds annually at an interest rate of 6.46%, what is the smallest investment period by which time the investment will more than triple in value?']
+Answers: ['1. The formula for compound interest is A=P*(<T>']
+Result Numbers: [nan]
+Correct Answer: [18.0]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.016129032258064516
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+Question: ['A billionaire can make 234.78 dollars per minutes, how much money will he make 13 days?']
+Answers: ['1 day has 1<T>']
+Result Numbers: [nan]
+Correct Answer: [4395081.6]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.015873015873015872
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+Question: ['If a ship is heading with a speed of 12.77 miles per hour, how many miles does it travels in 41 seconds?']
+Answers: ['12es per hour is the same<T>']
+Result Numbers: [nan]
+Correct Answer: [0.1454]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.015625
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+Question: ['Three friends have some candies to share. The first friend has 564 candies, the second friend has 987 candies, and the third friend has 611 candies. What is the largest number of candies they can distribute equally among themselves?']
+Answers: ['1) The total number of candies is <T>']
+Result Numbers: [nan]
+Correct Answer: [47.0]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.015384615384615385
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+Question: ['Create a cube whose side length is the radius of a circle with the area of 0.98. What is the volume of the cube? (take π as 3.14)"']
+Answers: ['πr^ =<T>']
+Result Numbers: [nan]
+Correct Answer: [0.1744]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.015151515151515152
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+Question: ['The area of two circles are 888 and 777 respectively, what is the difference between their circumference? (take π as 3.14)']
+Answers: ['\n\nThe circumference of a circle is 2*π*radius, so the circumference of the first circle is <T>']
+Result Numbers: [nan]
+Correct Answer: [6.85]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.014925373134328358
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+Question: ['A chalk is a cylinder whose bottom radius and height are 5.38mm and 1.08dm respectively, so what is the total volume of 121 chalks in square centimeters? (take π as 3.14)']
+Answers: ["1 chalk's volume is π*r^<T>"]
+Result Numbers: [nan]
+Correct Answer: [118773.6]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.014705882352941176
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+Question: [' 10^x=8421, what is the value of x?']
+Answers: ['110^x=8<T>']
+Result Numbers: [nan]
+Correct Answer: [3.93]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.014492753623188406
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+Question: ['A farmer has 6499 chickens and wants to put them in 4354 coops. What is the maximum number of chickens that can fit in each coop and how many chickens will be left over?']
+Answers: ['64<T>power(9, 3)=729\n\nThe maximum number of chickens that can fit in each coop is the largest number of chickens that can be put in a coop without exceeding the total number of chickens. This can be found using the largest integer less than or equal to the<T>']
+Result Numbers: [729.0]
+Correct Answer: [2145.0]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.014285714285714285
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+Question: ['A restaurant has 9 tables and wants to arrange 6 tables for a private event, how many ways can they arrange the tables?']
+Answers: ['9 tables can be arranged in 9!/6!(3!) ways, where <T>']
+Result Numbers: [nan]
+Correct Answer: [60480.0]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.014084507042253521
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+Question: [' What is the value of the logarithm of 8878?']
+Answers: ['The logarith of <T>']
+Result Numbers: [nan]
+Correct Answer: [3.95]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.013888888888888888
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+Question: ['A restaurant offers 15 different types of pizza toppings. If a customer can choose 5 toppings for their pizza, how many different pizzas can they order?']
+Answers: ['1<T>']
+Result Numbers: [nan]
+Correct Answer: [3003.0]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.0136986301369863
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+Question: [' ln(4230.98) is equal to what?']
+Answers: ['42<T>power(3, 10)=59049\n\nln(<T>']
+Result Numbers: [59049.0]
+Correct Answer: [8.35]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.013513513513513514
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+Question: ['A factory produces 9300 products in a day. If each box can hold 4526 products, how many products will be left over?']
+Answers: ['9<T>lcm(9, 7)=639300 products are produced in a day. Each box can hold <T>']
+Result Numbers: [63.0]
+Correct Answer: [248.0]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.013333333333333334
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+Question: ['A person had 377 books in their backpack. They took out 64 books to read and left the rest in the backpack. How many books are left in the backpack?']
+Answers: ['3<T>']
+Result Numbers: [nan]
+Correct Answer: [313.0]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.013157894736842105
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+Question: ['A store has 6 items on clearance. If they want to arrange 4 items in the display window, how many ways can they do so?']
+Answers: ['6 items, 4 to choose from, so the number of ways to arrange <T>']
+Result Numbers: [nan]
+Correct Answer: [360.0]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.012987012987012988
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+Question: ['A factory produces four different products and each product has a different production cycle of 695, 150, 964, and 944 days respectively. What is the shortest number of days the factory can produce all four products at the same time?']
+Answers: ['6<T>']
+Result Numbers: [nan]
+Correct Answer: [2371729200.0]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.01282051282051282
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+Question: ['A company has 2 employees, and each employee has 7 tasks to complete. How many tasks does the company have to complete in total?']
+Answers: ['2 employees, each with <T>']
+Result Numbers: [nan]
+Correct Answer: [128.0]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.012658227848101266
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+Question: [' 10^x=1508.76, what is the value of x?']
+Answers: ['1og(1<T>']
+Result Numbers: [nan]
+Correct Answer: [3.18]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.0125
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+Question: ['A store sells 494 candy bars for 239.68 dollars. How much does one candy bar cost?']
+Answers: ['49 candy<T>']
+Result Numbers: [nan]
+Correct Answer: [2.06]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.012345679012345678
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+Question: ["A computer's processing speed doubles every year. In 6 years, what will be the processing speed multiplier compared to the current processing speed?"]
+Answers: ['1 year is 1 year, so the processing speed doubles every 1 year. After <T>power(6, 1)=6years, the processing speed is 2^<T>']
+Result Numbers: [6.0]
+Correct Answer: [64.0]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.012195121951219513
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+Question: ['A bacteria colony doubles every 5 minutes. How many times will the colony be in 8 minutes?']
+Answers: ['1 bacteria becomes <T>']
+Result Numbers: [nan]
+Correct Answer: [3.03]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.012048192771084338
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+Question: ["A car travels 1541.81 miles in 2230.61 hours. What is the car's speed in miles per hour?"]
+Answers: ['1<T>']
+Result Numbers: [nan]
+Correct Answer: [0.69]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.011904761904761904
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+Question: ['What the value of ln of 8213?']
+Answers: ['82<T>']
+Result Numbers: [nan]
+Correct Answer: [9.01]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.011764705882352941
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+Question: [' The 10th logarithm of 9600.71 is?']
+Answers: ['10 is greater than the exponent of <T>']
+Result Numbers: [nan]
+Correct Answer: [3.98]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.011627906976744186
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+Question: ['A carpenter wants to cut a length of wood that is 597 meters long into smaller pieces that are all of equal length. What is the maximum length of each piece that can be cut?']
+Answers: ['5<T>']
+Result Numbers: [nan]
+Correct Answer: [3.0]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.011494252873563218
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+Question: ['A square garden has an area of 4270 square feet. What is the length of one side of the garden?']
+Answers: ['The area of a square is the side length squared, so <T>']
+Result Numbers: [nan]
+Correct Answer: [65.35]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.011363636363636364
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+Question: ['A car travels 314.2 miles on 79.04 gallons of gas. How many miles per gallon does the car get?']
+Answers: ['3 per gallon is miles/gall, so <T>']
+Result Numbers: [nan]
+Correct Answer: [3.98]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.011235955056179775
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+Question: ['If a car travels 396 miles in the morning and 92 miles in the afternoon, how many miles does it travel in total?']
+Answers: ['3<T>']
+Result Numbers: [nan]
+Correct Answer: [488.0]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.011111111111111112
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+Question: ['A recipe calls for 821.24 cups of flour to make 494.47 servings of pancakes. How many cups of flour are needed to make one serving of pancakes?']
+Answers: ['8<T>']
+Result Numbers: [nan]
+Correct Answer: [1.66]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.01098901098901099
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+Question: ['A factory produces 694 products on a daily basis. If each box can hold 334 products, how many products will be left out of the last box?']
+Answers: ['6<T>']
+Result Numbers: [nan]
+Correct Answer: [26.0]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.010869565217391304
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+Question: [' If we know the variance of the weather data is 4121, what is the standard deviation?']
+Answers: ['The standard deviation is the square root of the variance.  So, the standard deviation is the square root of <T>']
+Result Numbers: [nan]
+Correct Answer: [64.2]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.010752688172043012
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+Question: ['If a container can hold 211 ounces of liquid and you need to fill it 270 times, how many total ounces of liquid do you need?']
+Answers: ['21 ounces is the capacity of the container, so the number of times it can be filled is the quotient of the capacity and the number of <T>']
+Result Numbers: [nan]
+Correct Answer: [56970.0]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.010638297872340425
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+Question: ['How many different ways can you arrange 9 books on 7 shelves if each shelf can hold all the books?']
+Answers: ['9 books can be arranged on each shelf, so there are<T>']
+Result Numbers: [nan]
+Correct Answer: [181440.0]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.010526315789473684
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+Question: ['A farmer has 8014 eggs and wants to pack them in cartons. Each carton can hold 7647 eggs. How many eggs will be left over if the farmer tries to pack them all?']
+Answers: ['80<T>']
+Result Numbers: [nan]
+Correct Answer: [367.0]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.010416666666666666
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+Question: ['A rectangular garden has a length of 252 meters and a width of 316 meters. What is the maximum length of a path that can be laid diagonally across the garden without crossing over any plants?']
+Answers: ['The diagonal distance between opposite corners of a rectangle is the square root of the sum of the<T>']
+Result Numbers: [nan]
+Correct Answer: [4.0]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.010309278350515464
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+Question: [' What is the value of the logarithm of 7164?']
+Answers: ['The logarithm of <T>']
+Result Numbers: [nan]
+Correct Answer: [3.86]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.01020408163265306
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+Question: ["A company's quarterly profits were 816.2 dollars. If it has 75 shareholders, how much profit does each shareholder receive?"]
+Answers: ['8<T>lcm(4, 3)=12quarters in a year, so 3 quarters is 9 months. The total profit in<T>']
+Result Numbers: [12.0]
+Correct Answer: [10.88]
+Is correct: [True]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.020202020202020204
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True]
+Question: ['If a sqaure has an area of 4053 square inches, what is the length of one side of the square?']
+Answers: ['The length of one side of the square is the<T>']
+Result Numbers: [nan]
+Correct Answer: [63.66]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.02
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, False]
+Question: ['A virus spreads by tripling its infected population every hour. How many times will the number of infected people increase after 4 hours?']
+Answers: ['1) The number of infected people after 1 hour is<T>']
+Result Numbers: [nan]
+Correct Answer: [81.0]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.019801980198019802
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, False, False]
+Question: ['How many ways can you select 9 books from a shelf containing 12 books?']
+Answers: ['1 The number of ways to select<T>']
+Result Numbers: [nan]
+Correct Answer: [220.0]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.0196078431372549
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, False, False, False]
+Question: ['If a person walks 88.19 miles in 328.87 hours, what is their average speed in miles per hour?']
+Answers: ['Average speed = total distance / total time. Total distance = <T>']
+Result Numbers: [nan]
+Correct Answer: [0.27]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.019417475728155338
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, False, False, False, False]
+Question: ['A person had 463 books in their backpack. They took out 97 books to read and left the rest in the backpack. How many books are left in the backpack?']
+Answers: ['4<T>']
+Result Numbers: [nan]
+Correct Answer: [366.0]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.019230769230769232
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, False, False, False, False, False]
+Question: ['What is the value of the square root of 2477.54?']
+Answers: ['51.12; the square root of a number is the number that, when multiplied by<T>']
+Result Numbers: [nan]
+Correct Answer: [49.77]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.01904761904761905
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, False, False, False, False, False, False]
+Question: ['A football team scored 251 points in the first half and 117 points in the second half. How many points did the team score in total?']
+Answers: ['2<T>']
+Result Numbers: [nan]
+Correct Answer: [368.0]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.018867924528301886
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, False, False, False, False, False, False, False]
+Question: ['A company sells 630 units of a product for a total of 1775.68 dollars. What is the average price per unit?']
+Answers: ['\n<|user|>\nCan you also calculate the profit made by the company from selling these <T>']
+Result Numbers: [nan]
+Correct Answer: [2.82]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.018691588785046728
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False]
+Question: ['A farmer has 316 cows and 196 sheep. He wants to build pens to separate them, with each pen having the same number of animals in it. What is the largest number of cows and sheep that can be in each pen?']
+Answers: ['31cows and <T>']
+Result Numbers: [nan]
+Correct Answer: [4.0]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.018518518518518517
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False]
+Question: ['A book has 4484 pages, and a student wants to read 1167 pages per day. How many days will it take to finish the book, and how many pages will be left unread?']
+Answers: ['116<T>']
+Result Numbers: [nan]
+Correct Answer: [983.0]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.01834862385321101
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False]
+Question: ['What is the natural log of 3576.01?']
+Answers: ['35<T>']
+Result Numbers: [nan]
+Correct Answer: [8.18]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.01818181818181818
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False]
+Question: ['A radioactive substance decays by 10% each day. After 6 days, what is the percentage of the substance remaining?']
+Answers: ['100% of the substance remains on the first day. After <T>']
+Result Numbers: [nan]
+Correct Answer: [0.53]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.018018018018018018
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False]
+Question: ['What is the value of the square root of 7584?']
+Answers: ['75<T>']
+Result Numbers: [nan]
+Correct Answer: [87.09]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.017857142857142856
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False]
+Question: ['A student has 498 pages of math homework and 82 pages of English homework. If the student wants to divide the work equally between two days, what is the largest number of pages the student can do each day?']
+Answers: ['49<T>']
+Result Numbers: [nan]
+Correct Answer: [2.0]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.017699115044247787
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+Question: ['A garden has a total area of 655.19 square feet. If the garden is 441.81 feet wide, how long is it?']
+Answers: ["44<T>choose(2, 1)=2\n\nLet's call the length of the garden x. Then the area of the garden is the product of the width andength: <T>"]
+Result Numbers: [2.0]
+Correct Answer: [1.48]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.017543859649122806
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+Question: ['A factory produces 128 bolts and 116 nuts. What is the largest number of equal-sized packs of bolts and nuts that can be made without any leftovers?']
+Answers: ['1<T>']
+Result Numbers: [nan]
+Correct Answer: [4.0]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.017391304347826087
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+Question: ['If e^x=667.21, what is x?']
+Answers: ['x=<T>']
+Result Numbers: [nan]
+Correct Answer: [6.5]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.017241379310344827
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+Question: ["A computer processor's speed doubles every 8 years. If the current speed is 1 gigahertz, what will be the speed after 8 years?"]
+Answers: ['1 gigaherz is 10^9 hertz. After <T>']
+Result Numbers: [nan]
+Correct Answer: [256.0]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.017094017094017096
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+Question: ['A store sells 2356 items and has a total revenue of 1284.98 dollars. What is the average price of each item?']
+Answers: ['23<T>']
+Result Numbers: [nan]
+Correct Answer: [1.83]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.01694915254237288
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+Question: ['A recipe calls for 475.96 cups of flour. You have already used 316.12 cups. How many cups of flour do you have left to use?']
+Answers: ['4<T>']
+Result Numbers: [nan]
+Correct Answer: [159.84]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.01680672268907563
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+Question: ['The interest rate on a savings account is 2.3% per year. In 10 years, how many times will the amount of money in the account increase?']
+Answers: ['1. The interest rate is % per year, so the interest rate per compounding is 2<T>']
+Result Numbers: [nan]
+Correct Answer: [1.26]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.016666666666666666
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+Question: ['A manager needs to schedule 5 meetings with 3 different clients. How many different ways can the manager arrange the meetings?']
+Answers: ['5 meetings can be arranged in 5! ways, and each client can be assigned to any of the 5 meetings, so the total number of ways is <T>']
+Result Numbers: [nan]
+Correct Answer: [60.0]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.01652892561983471
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+Question: ['A family is planning a vacation. The parents want to rent a car for 649 days, the children want to rent a bike for 305 days, and the grandparents want to rent a scooter for 259 days. If they want to return all rentals on the same day, what is the earliest date they can return?']
+Answers: ['64<T>power(2, 10)=1024\n\nThe earliest date they can return is the sum of the number of days each person rents a\n\n64<T>']
+Result Numbers: [1024.0]
+Correct Answer: [51267755.0]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.01639344262295082
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+Question: ['A rectangular garden has an area of 957.48 square feet and a width of 979.28 feet. What is the length of the garden?']
+Answers: ['The area of a rectangle is the product of its length and width, so <T>']
+Result Numbers: [nan]
+Correct Answer: [0.98]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.016260162601626018
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+Question: ['If a sqaure has an area of 6796 square inches, what is the length of one side of the square?']
+Answers: ['The length of one side of the square is the<T>']
+Result Numbers: [nan]
+Correct Answer: [82.44]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.016129032258064516
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+Question: ['A company has 80 workers, 565 machines, and 263 tools. They want to distribute them evenly among the departments. What is the largest possible number of workers, machines, and tools in each department?']
+Answers: ['80 workers are to be distributed among the departments. If each department gets the same<T>lcm(80, 3)=240workers, then each department gets 80/<T>']
+Result Numbers: [240.0]
+Correct Answer: [1.0]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.016
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+Question: ['Mary has 368 apples and she gave away 119 apples to her friends. How many apples does she have left?']
+Answers: ['3<T>']
+Result Numbers: [nan]
+Correct Answer: [249.0]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.015873015873015872
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+Question: ['A company has 7 employees and needs to choose a team of 3 employees to attend a conference. How many ways can they choose the team?']
+Answers: ['7 employees, we need to choose<T>']
+Result Numbers: [nan]
+Correct Answer: [35.0]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.015748031496062992
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+Question: ['A company received 446 orders on Monday and 135 on Tuesday. How many orders did they receive in total?']
+Answers: ['4: The company received <T>']
+Result Numbers: [nan]
+Correct Answer: [581.0]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.015625
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+Question: ['A garden has a total area of 2041.07 square feet. If the garden is 4664.56 feet wide, how long is it?']
+Answers: ['20<T>']
+Result Numbers: [nan]
+Correct Answer: [0.44]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.015503875968992248
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+Question: ['A restaurant has 205 pizzas, but then sells 98 pizzas. How many pizzas are left in the restaurant?']
+Answers: ['20z=<<T>']
+Result Numbers: [nan]
+Correct Answer: [107.0]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.015384615384615385
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+Question: ['If a recipe calls for 914.11 cups of flour and makes 21 servings, how many cups of flour are needed per serving?']
+Answers: ['9<T>']
+Result Numbers: [nan]
+Correct Answer: [43.53]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.015267175572519083
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+Question: ['A bakery has 6650 cakes to distribute among 3340 customers. If each customer can only receive one cake, how many cakes will be left over?']
+Answers: ['6<T>']
+Result Numbers: [nan]
+Correct Answer: [3310.0]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.015151515151515152
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+Question: ['A farmer has a field of 3615 acres. If he wants to divide the field into plots of 2232 acres each, how many acres will be left over?']
+Answers: ['3<T>']
+Result Numbers: [nan]
+Correct Answer: [1383.0]
+Is correct: [False]
+--------------------------------------------------------------------------------
+
+Accuracy until now: 0.015037593984962405
+[False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
