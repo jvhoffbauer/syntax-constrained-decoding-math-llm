@@ -1,6 +1,7 @@
 import argparse
 import os
 
+import datasets as ds
 import torch
 from peft import LoraConfig, PeftModel
 from transformers import AutoModelForCausalLM, AutoTokenizer, logging, set_seed
@@ -26,6 +27,7 @@ def main():
     parser.add_argument("--max_seq_length", type=int, default=860)
     parser.add_argument("--quantization", type=str, default="none")
     parser.add_argument("--device", type=str, default="cuda:0")
+    parser.add_argument("--add_gsm8k", action="store_true", default=False)
     args = parser.parse_args()
 
     # Init wandb logging
@@ -34,7 +36,18 @@ def main():
 
     # Load dataset
     dataset = load_funcqa()
-    dataset = dataset.map(lambda row: {"text": create_prompt(row["question"], use_chat_template=False) + row["answer"]})
+    if args.add_gsm8k:
+        dataset_gsm8k = ds.load_dataset("jvhoffbauer/gsm8k-toolcalls")
+        print(f"Loaded gsm8k dataset: {dataset_gsm8k}")
+        dataset_new = ds.DatasetDict(
+            {split: ds.concatenate_datasets([dataset[split], dataset_gsm8k[split]]) for split in dataset.keys()}
+        )
+        dataset_new = dataset_new.shuffle(42)
+        dataset = dataset_new
+
+    dataset = dataset.map(
+        lambda row: {"text": create_prompt(row["question"], use_chat_template=False) + row["answer"] + " ####"}
+    )
     print(f"Has dataset: {dataset}")
     tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
     sequence_lengths_tokens = [len(tokenizer.encode(row["text"])) for row in dataset["train"]]
@@ -52,7 +65,7 @@ def main():
     )
 
     # Load the model
-    print(f"Quantization kwargs: {quantization_kwargs}")
+    # print(f"Quantization kwargs: {quantization_kwargs}")
     model = AutoModelForCausalLM.from_pretrained(
         MODEL_NAME,
         device_map=args.device,
