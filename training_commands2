@@ -1,0 +1,7 @@
+
+
+export CUDA_VISIBLE_DEVICES=0
+
+python3 -m toolmode.train --output_dir="models/zephyr_funcqa_16bit_endtoken" --epochs=5 --quantization="16bit"
+
+python3 -m toolmode.train --output_dir="models/zephyr_funcqa_16bit_endtoken_gsm8k" --epochs=3 --quantization="16bit" --add_gsm8k
