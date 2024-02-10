@@ -1,16 +1,18 @@
+import argparse
+import inspect
 import math
 import os
 
+import datasets as ds
 import torch
-import inspect
+from peft import LoraConfig, PeftModel
 from tqdm import tqdm
-import argparse
 from transformers import AutoModelForCausalLM, AutoTokenizer, LogitsProcessorList
+
 from toolmode.cfg_decoding import CfgDecoder
-from toolmode.data.funcqa import load
+from toolmode.data.funcqa import load as load_funcqa
 from toolmode.prompt import create_prompt
 from toolmode.train import get_quantization_kwargs
-from peft import LoraConfig, PeftModel
 
 
 class RunReport:
@@ -53,6 +55,7 @@ def main():
     parser.add_argument("--output_dir", type=str)
     parser.add_argument("--model_name", type=str)
     parser.add_argument("--adapter_name", type=str, default=None)
+    parser.add_argument("--dataset", default="funcqa")
     parser.add_argument("--do_not_use_constained", default=False, action="store_true")
     parser.add_argument("--quantization", type=str, default="none")
     parser.add_argument("--use_chat_template", action="store_true", default=False)
@@ -64,7 +67,12 @@ def main():
     report = RunReport(args.output_dir, args)
 
     # Load data
-    data = load()["test"]
+    if args.dataset == "funcqa":
+        data = load_funcqa()["test"]
+    elif args.dataset == "gsm8k":
+        data = ds.load_dataset("jvhoffbauer/gsm8k-toolcalls")
+        data = data["test"]
+        data = data.shuffle().select(range(100))
     if args.sanity_check:
         data = data.select(range(2))
 
@@ -92,6 +100,8 @@ def main():
 
     # Generate
     is_correct_all = []
+    is_correct_single_hop = []
+    is_correct_multi_hop = []
     for batch in tqdm(batches):
         questions = batch["question"]
         prompts = [create_prompt(q, tokenizer=tokenizer, use_chat_template=args.use_chat_template) for q in questions]
@@ -116,11 +126,23 @@ def main():
         report.print()
 
         is_correct_all += is_correct
-        report.print(f"Accuracy until now: { sum([1 for r in is_correct_all if r]) / len(is_correct_all)}")
+        report.print(f"Accuracy until now: {accuracy(is_correct_all)}")
         report.print(str(is_correct_all))
 
-    report.print_top(f"Accuracy: {sum([1 for r in is_correct_all if r]) / len(is_correct_all)}")
+        # for task_type in batch["task_type"]:
+        #     if task_type == "single_hop":
+        #         is_correct_single_hop += is_correct
+        #     elif task_type == "multi_hop":
+        #         is_correct_multi_hop += is_correct
+
+    report.print_top(f"Accuracy: {accuracy(is_correct_all)}")
+    # report.print_top(f"Accuracy (single-hop): {accuracy(is_correct_single_hop)}")
+    # report.print_top(f"Accuracy (multi-hop): {accuracy(is_correct_multi_hop)}")
     report.save()
+
+
+def accuracy(bools):
+    return sum([1 for r in bools if r]) / len(bools)
 
 
 if __name__ == "__main__":
