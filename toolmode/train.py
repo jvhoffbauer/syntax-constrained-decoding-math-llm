@@ -123,7 +123,7 @@ def get_quantization_kwargs(quantization: str):
     elif quantization == "none":
         return {}
     else:
-        raise ValueError(f"Unknown quantization: {args.quantization}")
+        raise ValueError(f"Unknown quantization: {quantization}")
 
 
 if __name__ == "__main__":
