@@ -151,6 +151,8 @@ class FsaGpu:
                         transition_tokens[-1]: next_state
                     }
 
+        pprint(self.fsa)
+
         # Convert all string transitions to single ids
         for state, transitions in list(self.fsa.items()):
             for transition, next_state in list(transitions.items()):
@@ -252,7 +254,7 @@ class GrammarConstrainedLogitsProcessorGpu(LogitsProcessor):
 def main():
     from transformers import AutoTokenizer
 
-    g = FsaGpu(AutoTokenizer.from_pretrained("HuggingFaceH4/zephyr-7b-beta"))
+    g = FsaGpu(AutoTokenizer.from_pretrained("HuggingFaceH4/zephyr-7b-beta"), device="cpu")
 
     input_tokens = torch.Tensor(g._encode("ln(1, 2)=")).long().unsqueeze(0)
     mask, states = g.get_token_mask(input_tokens, torch.tensor([0]))
