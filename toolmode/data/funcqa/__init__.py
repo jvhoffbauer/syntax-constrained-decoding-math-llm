@@ -57,6 +57,10 @@ def load():
     test = test.rename_column("answer", "answer_number")
     test = test.map(lambda _: {"answer": ""}, batched=False)
 
+    # Add type field to dataset 
+    train = train.map(lambda _: {"task_type": "single_hop"}, batched=False)
+    test = test.map(lambda _: {"task_type": "multi_hop"}, batched=False)
+
     # Preprocess train data
     train = train.map(get_answer_numerical, batched=False)
     train = train.map(change_operation_format_in_answer, batched=False)
