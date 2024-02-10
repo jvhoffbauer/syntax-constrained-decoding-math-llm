@@ -11,6 +11,8 @@ Config:
   sanity_check: False
 
 Accuracy: 0.3684210526315789
+Accuracy (single-hop): 0.6
+Accuracy (multi-hop): 0.14705882352941177
 
 
 ---------------
