@@ -1,7 +1,7 @@
 # Stop on error
 set -e
 
-export CUDA_VISIBLE_DEVICES=1
+export CUDA_VISIBLE_DEVICES=0
 
 # # Untrained model, different configs
 # python3 -m toolmode.run --output_dir=eval/zephyr_untrained_16bit --model_name="HuggingFaceH4/zephyr-7b-beta" --quantization="16bit" 
@@ -18,5 +18,9 @@ export CUDA_VISIBLE_DEVICES=1
 # # Model with GSM8k
 # python3 -m toolmode.run --output_dir=eval/zephyr_trained_16bit_gsm8k  --model_name="HuggingFaceH4/zephyr-7b-beta" --quantization="16bit" --adapter_name=models/zephyr_funcqa_16bit_gsm8k/output/checkpoint-470
 
-python3 -m toolmode.run --output_dir=eval/zephyr_funcqa_16bit_endtoken  --model_name="HuggingFaceH4/zephyr-7b-beta" --quantization="16bit" --adapter_name=models/zephyr_funcqa_16bit_endtoken/output/checkpoint-80
-python3 -m toolmode.run --output_dir=eval/zephyr_funcqa_16bit_endtoken_gsm8k  --model_name="HuggingFaceH4/zephyr-7b-beta" --quantization="16bit" --adapter_name=models/zephyr_funcqa_16bit_endtoken_gsm8k/output/checkpoint-430
+# python3 -m toolmode.run --output_dir=eval/zephyr_funcqa_16bit_endtoken  --model_name="HuggingFaceH4/zephyr-7b-beta" --quantization="16bit" --adapter_name=models/zephyr_funcqa_16bit_endtoken/output/checkpoint-80
+# python3 -m toolmode.run --output_dir=eval/zephyr_funcqa_16bit_endtoken_gsm8k  --model_name="HuggingFaceH4/zephyr-7b-beta" --quantization="16bit" --adapter_name=models/zephyr_funcqa_16bit_endtoken_gsm8k/output/checkpoint-430
+
+# Eval models on GSM8k
+python3 -m toolmode.run --output_dir=eval/gsm8k_test/zephyr_trained_16bit_gsm8k --dataset=gsm8k --model_name="HuggingFaceH4/zephyr-7b-beta" --quantization="16bit" --adapter_name=models/zephyr_funcqa_16bit_gsm8k/output/checkpoint-470
+python3 -m toolmode.run --output_dir=eval/gsm8k_test/zephyr_trained_16bit --dataset=gsm8k --model_name="HuggingFaceH4/zephyr-7b-beta" --quantization="16bit" --adapter_name=models/zephyr_funcqa_16bit/final_checkpoint
