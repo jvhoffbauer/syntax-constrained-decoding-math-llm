@@ -12,3 +12,6 @@ Dockerfile
 # Huggingface data 
 gsm8k-toolcalls/
 funcqa_zephyr_e*/
+
+# MACOS
+.DS_Store
