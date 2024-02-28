@@ -1,10 +1,20 @@
-{"question": "If a number is divided by 4 and the result is 123, what is the original number?", "answer": "Let the original number be x. Given that x/4 = 123, to find x, we multiply both sides by 4: x = 123 * 4 = 492<eoe>492."}
-{"question": "If a number is divided by 3 and the result is 789, what is the original number?", "answer": "Let the original number be x. Given that x/3 = 789, to find x, we multiply both sides by 3: x = 789 * 3 = 2367<eoe>2367."}
-{"question": "If a number is divided by 5 and the result is 1054, what is the original number?", "answer": "Let the original number be x. Given that x/5 = 1054, to find x, we multiply both sides by 5: x = 1054 * 5 = 5270<eoe>5270."}
-{"question": "If a number is divided by 6 and the result is 2048, what is the original number?", "answer": "Let the original number be x. Given that x/6 = 2048, to find x, we multiply both sides by 6: x = 2048 * 6 = 12288<eoe>12288."}
-{"question": "If a number is divided by 7 and the result is 350, what is the original number?", "answer": "Let the original number be x. Given that x/7 = 350, to find x, we multiply both sides by 7: x = 350 * 7 = 2450<eoe>2450."}
-{"question": "If a number is divided by 8 and the result is 512, what is the original number?", "answer": "Let the original number be x. Given that x/8 = 512, to find x, we multiply both sides by 8: x = 512 * 8 = 4096<eoe>4096."}
-{"question": "If a number is divided by 4 and the result is 625, what is the original number?", "answer": "Let the original number be x. Given that x/4 = 625, to find x, we multiply both sides by 4: x = 625 * 4 = 2500<eoe>2500."}
-{"question": "If a number is divided by 9 and the result is 567, what is the original number?", "answer": "Let the original number be x. Given that x/9 = 567, to find x, we multiply both sides by 9: x = 567 * 9 = 5103<eoe>5103."}
-{"question": "If a number is divided by 5 and the result is 1024, what is the original number?", "answer": "Let the original number be x. Given that x/5 = 1024, to find x, we multiply both sides by 5: x = 1024 * 5 = 5120<eoe>5120."}
-{"question": "If a number is divided by 6 and the result is 300, what is the original number?", "answer": "Let the original number be x. Given that x/6 = 300, to find x, we multiply both sides by 6: x = 300 * 6 = 1800<eoe>1800."}
+{"question": "If you divide 10000 by 250, what do you get?", "answer": "Dividing 10000 by 250 equals 10000 / 250 = <log>(40) = 1.60<eoe>40."}
+{"question": "What is the result of dividing 600 by 3?", "answer": "Dividing 600 by 3 results in 600 / 3 = <log>(200) = 2.30<eoe>200."}
+{"question": "What do you get when you divide 4500 by 15?", "answer": "When you divide 4500 by 15, the result is 4500 / 15 = <log>(300) = 2.48<eoe>300."}
+{"question": "What is the outcome when you divide 720 by 24?", "answer": "Dividing 720 by 24 yields 720 / 24 = <log>(30) = 1.48<eoe>30."}
+{"question": "What is the quotient when you divide 3600 by 60?", "answer": "When you divide 3600 by 60, you get 3600 / 60 = <log>(60) = 1.78<eoe>60."}
+{"question": "What is the result of dividing 800 by 20?", "answer": "Dividing 800 by 20 gives 800 / 20 = <log>(40) = 1.60<eoe>40."}
+{"question": "What do you find when you divide 900 by 30?", "answer": "When dividing 900 by 30, the outcome is 900 / 30 = <log>(30) = 1.48<eoe>30."}
+{"question": "What is the division of 1800 by 45?", "answer": "The division of 1800 by 45 results in 1800 / 45 = <log>(40) = 1.60<eoe>40."}
+{"question": "What do you get when you divide 5000 by 100?", "answer": "When you divide 5000 by 100, the result is 5000 / 100 = <log>(50) = 1.70<eoe>50."}
+{"question": "What is the outcome when you divide 1200 by 60?", "answer": "The outcome of dividing 1200 by 60 is 1200 / 60 = <log>(20) = 1.30<eoe>20."}
+{"question": "What happens when you divide 2500 by 50?", "answer": "Dividing 2500 by 50 results in 2500 / 50 = <log>(50) = 1.70<eoe>50."}
+{"question": "What is the result of dividing 3600 by 72?", "answer": "Dividing 3600 by 72 gives 3600 / 72 = <log>(50) = 1.70<eoe>50."}
+{"question": "How do you calculate 800 divided by 40?", "answer": "To calculate 800 divided by 40, you perform 800 / 40 = <log>(20) = 1.30<eoe>20."}
+{"question": "How much is 1000 divided by 25?", "answer": "Calculating 1000 divided by 25 results in 1000 / 25 = <log>(40) = 1.60<eoe>40."}
+{"question": "What do you get when you divide 4800 by 80?", "answer": "When you divide 4800 by 80, the result is 4800 / 80 = <log>(60) = 1.78<eoe>60."}
+{"question": "What is the quotient when 2000 is divided by 100?", "answer": "The quotient when dividing 2000 by 100 is 2000 / 100 = <log>(20) = 1.30<eoe>20."}
+{"question": "How do you determine the outcome of 640 divided by 32?", "answer": "Determining the outcome of 640 divided by 32, you get 640 / 32 = <log>(20) = 1.30<eoe>20."}
+{"question": "How is 5000 divided by 50 calculated?", "answer": "To calculate 5000 divided by 50, you perform 5000 / 50 = <log>(100) = 2.00<eoe>100."}
+{"question": "What is the result of dividing 3600 by 90?", "answer": "Dividing 3600 by 90 gives 3600 / 90 = <log>(40) = 1.60<eoe>40."}
+{"question": "What is the outcome when 800 is divided by 20?", "answer": "The outcome of dividing 800 by 20 is 800 / 20 = <log>(40) = 1.60<eoe>40."}

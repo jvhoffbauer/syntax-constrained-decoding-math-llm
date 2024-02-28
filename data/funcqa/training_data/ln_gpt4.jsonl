@@ -1,10 +1,20 @@
-{"question": "What is the value of ln of 2048?", "answer": "The value of ln of 2048 is ln(2048)=<ln>(2048)=7.62<eoe>7.62."}
-{"question": "What is the result of ln divided by 2 for 4096?", "answer": "The result of ln(4096) divided by 2 is ln(4096)/2=<ln>(4096)/2=6.29<eoe>6.29."}
-{"question": "What is the half of the natural log of 8192?", "answer": "The half of the natural log of 8192 is ln(8192)/2=<ln>(8192)/2=6.63<eoe>6.63."}
-{"question": "What is the quotient when the natural log of 10000 is divided by 4?", "answer": "The quotient when the natural log of 10000 is divided by 4 is ln(10000)/4=<ln>(10000)/4=2.30<eoe>2.30."}
-{"question": "What is the result of dividing the natural log of 5000 by 3?", "answer": "The result of dividing the natural log of 5000 by 3 is ln(5000)/3=<ln>(5000)/3=2.54<eoe>2.54."}
-{"question": "What is the value of ln of 2048?", "answer": "The value of ln of 2048 is ln(2048)=<ln>(2048)=7.62<eoe>7.62."}
-{"question": "What is the outcome of dividing the natural log of 256 by 8?", "answer": "The outcome of dividing the natural log of 256 by 8 is ln(256)/8=<ln>(256)/8=0.72<eoe>0.72."}
-{"question": "What is the result of dividing the natural log of 1024 by 2?", "answer": "The result of dividing the natural log of 1024 by 2 is ln(1024)/2=<ln>(1024)/2=5.03<eoe>5.03."}
-{"question": "What is the quotient when dividing the natural log of 8192 by 6?", "answer": "The quotient when dividing the natural log of 8192 by 6 is ln(8192)/6=<ln>(8192)/6=1.52<eoe>1.52."}
-{"question": "What is the result of dividing the natural log of 100 by 4?", "answer": "The result of dividing the natural log of 100 by 4 is ln(100)/4=<ln>(100)/4=1.15<eoe>1.15."}
+{"question": "What is ln(1729)?", "answer": "ln(1729)=<ln>(1729)=7.455<eoe>7.455."}
+{"question": "How do you calculate the natural logarithm of 3125?", "answer": "To calculate the natural logarithm of 3125, you use the formula ln(3125)=<ln>(3125)=8.04<eoe>8.04."}
+{"question": "What is the result of dividing 1000 by 250?", "answer": "To find the result of dividing 1000 by 250, you calculate 1000 / 250 = <div>(1000,250)=4<eoe>4."}
+{"question": "What is the result of dividing 360 by 60?", "answer": "To determine the result of dividing 360 by 60, you perform the calculation 360 / 60 = <div>(360,60)=6<eoe>6."}
+{"question": "What is the quotient when you divide 5000 by 100?", "answer": "When you divide 5000 by 100, the quotient is calculated as 5000 / 100 = <div>(5000,100)=50<eoe>50."}
+{"question": "What do you get when you divide 450 by 90?", "answer": "Dividing 450 by 90 results in 450 / 90 = <div>(450,90)=5<eoe>5."}
+{"question": "What is the natural logarithm of 1024?", "answer": "To calculate the natural logarithm of 1024, you use the formula ln(1024) = <ln>(1024) = 6.93<eoe>6.93."}
+{"question": "What is the division result of 800 by 200?", "answer": "To calculate the division result of 800 by 200, you find 800 / 200 = <div>(800,200)=4<eoe>4."}
+{"question": "How much is 1000 divided by 250?", "answer": "Dividing 1000 by 250 gives us the result of 1000 / 250 = <div>(1000,250)=4<eoe>4."}
+{"question": "What is the result when 300 is divided by 50?", "answer": "When you divide 300 by 50, the quotient is 300 / 50 = <div>(300,50)=6<eoe>6."}
+{"question": "What is the outcome when you divide 1200 by 300?", "answer": "The outcome of dividing 1200 by 300 is calculated as 1200 / 300 = <div>(1200,300)=4<eoe>4."}
+{"question": "What is the natural logarithm of 256?", "answer": "To find the natural logarithm of 256, you apply the equation ln(256) = <ln>(256) = 5.55<eoe>5.55."}
+{"question": "What do you get when you divide 720 by 90?", "answer": "The result of dividing 720 by 90 is found by calculating 720 / 90 = <div>(720,90)=8<eoe>8."}
+{"question": "How do you calculate the quotient of 800 divided by 100?", "answer": "Calculating the quotient of 800 divided by 100 results in 800 / 100 = <div>(800,100)=8<eoe>8."}
+{"question": "What is the quotient when 450 is divided by 75?", "answer": "The quotient when dividing 450 by 75 can be calculated as 450 / 75 = <div>(450,75)=6<eoe>6."}
+{"question": "What is the result of dividing 360 by 60?", "answer": "The result of dividing 360 by 60 is obtained by performing the calculation 360 / 60 = <div>(360,60)=6<eoe>6."}
+{"question": "What is the natural logarithm of 16?", "answer": "To find the natural logarithm of 16, you apply the equation ln(16) = <ln>(16) = 2.77<eoe>2.77."}
+{"question": "How do you find the outcome when 1000 is divided by 250?", "answer": "The outcome of dividing 1000 by 250 is determined by performing the calculation 1000 / 250 = <div>(1000,250)=4<eoe>4."}
+{"question": "What is the quotient obtained when 1200 is divided by 300?", "answer": "When 1200 is divided by 300, the quotient obtained is calculated by 1200 / 300 = <div>(1200,300)=4<eoe>4."}
+{"question": "What is the quotient when 450 is divided by 75?", "answer": "The quotient when dividing 450 by 75 can be calculated as 450 / 75 = <div>(450,75)=6<eoe>6."}
