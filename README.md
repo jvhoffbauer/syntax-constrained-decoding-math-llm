@@ -1,7 +1,7 @@
 # FuncQA Experiments: Syntax error-free decoding for Math Equations
 
 <p align="center">
-    <img src="./docs/example.png" width="400">
+    <img src="./docs/example.png" width="600">
 </p>
 
 This repo shows two methods for syntax error-free decoding 
@@ -25,7 +25,7 @@ The results of this results vs. the ToolDec baseline from the literature and Cha
 |------------------------------------|---------|
 | Zephyr 7B Chat (ours) + CFG        | 14.7%   |
 | Zephyr 7B Chat (ours) + CFG + SFT  | 19.1%   |
-| ToolDec                            | *13.2%  |
+| ToolDec                            | *13.2%* |
 | ChatGPT (0-shot)                   | *9.0%*  |
 
 
